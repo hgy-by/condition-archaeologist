@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "status": "partial_computation",
+  "claims_pass": true,
+  "checks": {
+    "integral_power": true,
+    "integral_coefficient": true
+  },
+  "actual": {
+    "integral_power": 0,
+    "integral_coefficient": "1"
+  },
+  "details": {
+    "integral": "1*n**(0)",
+    "scope": "arithmetic identity only; measurable support and convergence require argument"
+  },
+  "elapsed_seconds": 0.0002474000211805105,
+  "limitation": "Does not establish all retained hypotheses or whole counterexample validity."
+}

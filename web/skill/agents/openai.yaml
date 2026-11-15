@@ -1,0 +1,6 @@
+interface:
+  display_name: "条件考古学"
+  short_description: "逐项拆解四科数学定理假设，搜索反例并核对保留条件、结论和证据"
+  default_prompt: "使用 $condition-archaeologist 分析下面定理的假设，逐项寻找反例并说明验证缺口。"
+policy:
+  allow_implicit_invocation: true

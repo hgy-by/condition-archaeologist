@@ -1,0 +1,29 @@
+{
+  "AL07": {
+    "status": "pass",
+    "kind": "exhaustive_finite_computation",
+    "field": "F2",
+    "vectors": 4,
+    "symmetry_pairs": 16,
+    "additivity_triples_per_slot": 64,
+    "scalar_checks_per_slot": 32,
+    "alternating_diagonal_checks": 4,
+    "nonzero_value": "B(e1,e2)=1",
+    "scope": "Exactly the supplied F2² witness; does not prove the original theorem over all fields."
+  },
+  "RA07": {
+    "status": "pass",
+    "kind": "exact_rational_arithmetic",
+    "signed_integral": "0",
+    "absolute_integral": "1",
+    "scope": "Arithmetic for the stated measurable two-step function; measurability and nonzero a.e. are mathematical arguments."
+  },
+  "CA09": {
+    "status": "pass",
+    "kind": "symbolic_finite_sum",
+    "partial_sum": "N+1",
+    "scope": "Boundary divergence supported by explicit partial sums; radius and general theorem use mathematical arguments."
+  },
+  "human_review": "pending_for_all_three",
+  "formal_verification": false
+}

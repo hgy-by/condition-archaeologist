@@ -1,0 +1,31 @@
+{
+  "version": "1.0.0",
+  "reviewer_type": "ai",
+  "reviewer": "Codex主Agent",
+  "reviewed_at": "2026-11-05",
+  "human_review_required": false,
+  "core_complete_theorem_tests": {
+    "passed": 4,
+    "total": 4,
+    "budget": 12000
+  },
+  "edge_and_ambiguity_tests": {
+    "passed": 9,
+    "total": 9,
+    "budget": 6000
+  },
+  "same_budget_comparison_report": "final-experiment-2026-11-05/AI-score.json",
+  "confirmation_report": "final-confirmation-12000/AI-score.json",
+  "initial_truncated_outputs_preserved": true,
+  "source_case_gold_auto_promoted": false,
+  "RSI_improvement_proven": false,
+  "RSI_gate_decision": "reject_or_collect_more_evidence",
+  "scope": "Four-subject auxiliary release, all essential single interventions and at most one joint in a bounded internal test.",
+  "remaining_release_checks": [
+    "software suite",
+    "runtime self-check",
+    "package integrity",
+    "installation sync"
+  ],
+  "model_acceptance_passed": true
+}

@@ -1,0 +1,11 @@
+{
+  "command": [
+    "powershell",
+    "-NoProfile",
+    "-Command",
+    "codex --help"
+  ],
+  "exit_code": 1,
+  "stdout": "",
+  "stderr": "codex : File C:\\Users\\hougu\\AppData\\Roaming\\npm\\codex.ps1 cannot be loaded because running scripts is disabled on this \nsystem. For more information, see about_Execution_Policies at https:/go.microsoft.com/fwlink/?LinkID=135170.\nAt line:1 char:1\n+ codex --help\n+ ~~~~~\n    + CategoryInfo          : SecurityError: (:) [], PSSecurityException\n    + FullyQualifiedErrorId : UnauthorizedAccess\n"
+}

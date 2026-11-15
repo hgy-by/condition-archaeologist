@@ -1,0 +1,25 @@
+{
+  "checked_at_utc": "2026-11-05T14:00:11.583480+00:00",
+  "version": "0.1.1",
+  "purpose": "small_group_web_prototype",
+  "skill_version": "1.0.0",
+  "backend_tests_passed": 49,
+  "javascript_syntax": "pass",
+  "browser_ui_and_visual_review": "blocked_not_completed",
+  "live_model_adapter": "implemented_not_live_tested",
+  "supported_api_modes": [
+    "responses",
+    "chat_completions"
+  ],
+  "chatecnu_launcher": "implemented",
+  "live_model_calls": 0,
+  "example_modes": 4,
+  "public_deployment": false,
+  "remote_access_configured": false,
+  "next_required": [
+    "Local token entry and models preflight",
+    "Real theorem request and mathematical review",
+    "Browser/phone visual inspection",
+    "Small group trial before public hosting"
+  ]
+}

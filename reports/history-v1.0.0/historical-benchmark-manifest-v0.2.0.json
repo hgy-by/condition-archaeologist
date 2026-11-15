@@ -1,0 +1,37 @@
+{
+  "version": "0.2.0",
+  "status": "AI_rechecked_human_gold_pending",
+  "subjects": [
+    "数学分析",
+    "高等代数",
+    "实分析",
+    "复分析"
+  ],
+  "tasks": 29,
+  "family_count": 20,
+  "sources": {
+    "analysis": {
+      "url": "https://www.jirka.org/ra/html/lim_chapter.html",
+      "title": "Jiří Lebl, Basic Analysis, Continuous Functions",
+      "status": "author_page_opened; exact passage mapping pending"
+    },
+    "algebra": {
+      "url": "https://linear.axler.net/",
+      "title": "Sheldon Axler, Linear Algebra Done Right",
+      "status": "author_page_opened; exact theorem mapping pending"
+    },
+    "measure": {
+      "url": "https://terrytao.wordpress.com/books/an-introduction-to-measure-theory/",
+      "title": "Terence Tao, An Introduction to Measure Theory",
+      "status": "author_page_opened; exact passage and errata mapping pending"
+    },
+    "complex": {
+      "url": "https://www.jirka.org/ca/",
+      "title": "Jiří Lebl, Guide to Cultivating Complex Analysis",
+      "status": "author_page_opened; exact passage mapping pending"
+    }
+  },
+  "split_policy": "same family never crosses splits; mechanism overlaps remain; all cases pending independent mathematical/source review",
+  "strict_blind": "Requires separate account/container; directory separation alone is not access isolation. Author has seen all supplied tasks; use fresh tasks for independent evaluation.",
+  "updated": "2026-11-03"
+}

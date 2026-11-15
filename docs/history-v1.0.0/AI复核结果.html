@@ -1,0 +1,1269 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>条件考古学AI复核结果</title><style>body{font:17px/1.8 system-ui,sans-serif;max-width:1000px;margin:30px auto;padding:18px;color:#182539;background:#f7f9fc}article{background:white;border:1px solid #dbe2ec;border-radius:8px;padding:18px;margin:18px 0}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:14px/1.6 monospace}summary{cursor:pointer;color:#175aae}h1{font-size:30px}</style></head><body><h1>条件考古学：AI复核结果</h1><p>不需要你继续填写人工审核表。以下按原清单由AI复核，不能冒充独立人工或形式化验证。</p><p>11题比较：数学论证两组均11/11；严格分类直接组10/11、Skill组11/11。这是v0.2.1回答的内部成绩，不是v0.2.2已测能力或RSI收益。</p><p>共30个条目，28份实际回答，2项没有模型答案。整题只完成部分分析，不能计为完整能力通过。</p><article><h3>MA05 · 直接回答</h3><p>数学复核：认可；严格分类：不符合，见具体理由。</p><details><summary>查看逐项AI复核和来源摘要</summary><pre>{
+  &quot;task_id&quot;: &quot;MA05&quot;,
+  &quot;arm&quot;: &quot;direct_model&quot;,
+  &quot;reviewer_type&quot;: &quot;ai&quot;,
+  &quot;reviewer&quot;: &quot;Codex（本聊天主Agent，读取实际回答后逐义务复核）&quot;,
+  &quot;reviewed_at&quot;: &quot;2026-11-05&quot;,
+  &quot;independent&quot;: false,
+  &quot;case_digest&quot;: &quot;43bbc70622b3235ad0f6474fe1128e67e84e0cacc93ffe3bc4337d25ccdf2d11&quot;,
+  &quot;source_file&quot;: &quot;raw/direct_model/MA05/attempt-1.json&quot;,
+  &quot;source_sha256&quot;: &quot;b73b6b813c8370434f48dbc3a8f5aa3474339e1cb8a0197ba12589a566a67c0a&quot;,
+  &quot;prediction_digest&quot;: &quot;44b19a8a09e50b0270c1edd12714f696ff0f470b4849d86f015fb421456e49dc&quot;,
+  &quot;objects&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;实际对象符合题目固定背景。对每个x，f(x+h)−f(x)=h·差商→0，故各点连续；这还直接推出被删H3。&quot;
+  },
+  &quot;intervention&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;原输出removed及replacement与输入逐项相同；未改变指定目标结论。&quot;
+  },
+  &quot;hypothesis_alignment&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;逐ID对照输入及中文含义，未删改保留条件。输入已提供假设，这不是从自然语言提取测试。&quot;
+  },
+  &quot;retained&quot;: {
+    &quot;H1&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;开区间保证每点可在域内取趋零增量。&quot;
+    },
+    &quot;H2&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;差商趋于有限实导数；乘趋零增量后函数增量趋零。&quot;
+    }
+  },
+  &quot;replacement&quot;: {},
+  &quot;deleted&quot;: {},
+  &quot;target&quot;: null,
+  &quot;preservation_proof&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;对每个x，f(x+h)−f(x)=h·差商→0，故各点连续；这还直接推出被删H3。&quot;
+  },
+  &quot;argument&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;对每个x，f(x+h)−f(x)=h·差商→0，故各点连续；这还直接推出被删H3。&quot;
+  },
+  &quot;evidence_honesty&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;原输出只列数学论证，未声称调用计算、人工审阅或形式化核验；未知费用保持null。&quot;
+  },
+  &quot;witness_claimed&quot;: false,
+  &quot;dependency_report&quot;: {
+    &quot;complete&quot;: false,
+    &quot;reason&quot;: &quot;未给出完整带背景的结构化依赖边；该缺口与单次干预是否数学正确分开记录。&quot;
+  },
+  &quot;notes&quot;: [
+    &quot;直接组removable的数学保留结论正确，但本协议优先implied，属于分类精度差异。&quot;
+  ]
+}</pre></details></article><article><h3>MA06 · 直接回答</h3><p>数学复核：认可；严格分类：符合。</p><details><summary>查看逐项AI复核和来源摘要</summary><pre>{
+  &quot;task_id&quot;: &quot;MA06&quot;,
+  &quot;arm&quot;: &quot;direct_model&quot;,
+  &quot;reviewer_type&quot;: &quot;ai&quot;,
+  &quot;reviewer&quot;: &quot;Codex（本聊天主Agent，读取实际回答后逐义务复核）&quot;,
+  &quot;reviewed_at&quot;: &quot;2026-11-05&quot;,
+  &quot;independent&quot;: false,
+  &quot;case_digest&quot;: &quot;7b51ce62e59710f5eb2ef4c2fd1e6e8d7930659b1921731218816aa8c29cfebd&quot;,
+  &quot;source_file&quot;: &quot;raw/direct_model/MA06/attempt-1.json&quot;,
+  &quot;source_sha256&quot;: &quot;326bdf4aac22bd22944531d7a3b2262e4386489426789a7bd2bb037f4cc3d71c&quot;,
+  &quot;prediction_digest&quot;: &quot;ef5d26bb177ed2b49d6a98f2abc05695ec7ea92edb792046fbb094f82e44a6dd&quot;,
+  &quot;objects&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;实际对象符合题目固定背景。M=max_i|ai|是所有元素绝对值的共同上界，证明作用于任意非空有限实数集。&quot;
+  },
+  &quot;intervention&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;原输出removed及replacement与输入逐项相同；未改变指定目标结论。&quot;
+  },
+  &quot;hypothesis_alignment&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;逐ID对照输入及中文含义，未删改保留条件。输入已提供假设，这不是从自然语言提取测试。&quot;
+  },
+  &quot;retained&quot;: {
+    &quot;H1&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;A是非空实数集合；n≥1使有限最大值存在。&quot;
+    },
+    &quot;H3&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;A有限，可列为a1,…,an。&quot;
+    }
+  },
+  &quot;replacement&quot;: {},
+  &quot;deleted&quot;: {},
+  &quot;target&quot;: null,
+  &quot;preservation_proof&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;M=max_i|ai|是所有元素绝对值的共同上界，证明作用于任意非空有限实数集。&quot;
+  },
+  &quot;argument&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;M=max_i|ai|是所有元素绝对值的共同上界，证明作用于任意非空有限实数集。&quot;
+  },
+  &quot;evidence_honesty&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;原输出只列数学论证，未声称调用计算、人工审阅或形式化核验；未知费用保持null。&quot;
+  },
+  &quot;witness_claimed&quot;: false,
+  &quot;dependency_report&quot;: {
+    &quot;complete&quot;: false,
+    &quot;reason&quot;: &quot;未给出完整带背景的结构化依赖边；该缺口与单次干预是否数学正确分开记录。&quot;
+  },
+  &quot;notes&quot;: [
+    &quot;有限并不推出A⊂[0,1]，例如{2}；因此应为removable而非implied。&quot;
+  ]
+}</pre></details></article><article><h3>MA07 · 直接回答</h3><p>数学复核：认可；严格分类：符合。</p><details><summary>查看逐项AI复核和来源摘要</summary><pre>{
+  &quot;task_id&quot;: &quot;MA07&quot;,
+  &quot;arm&quot;: &quot;direct_model&quot;,
+  &quot;reviewer_type&quot;: &quot;ai&quot;,
+  &quot;reviewer&quot;: &quot;Codex（本聊天主Agent，读取实际回答后逐义务复核）&quot;,
+  &quot;reviewed_at&quot;: &quot;2026-11-05&quot;,
+  &quot;independent&quot;: false,
+  &quot;case_digest&quot;: &quot;c71d025aaab217a5d7951816b2621108bf5dadc2b51f9fa84eb483ff4464f2d3&quot;,
+  &quot;source_file&quot;: &quot;raw/direct_model/MA07/attempt-1.json&quot;,
+  &quot;source_sha256&quot;: &quot;c2b16f57fe780ecc645f69cdf991a16a9721de06b0124d666e5f348b05e249de&quot;,
+  &quot;prediction_digest&quot;: &quot;8c98777baa7e2d350f323e8241e05a892d6a53d3f8ee66dd0ff56e0e7d47c7e2&quot;,
+  &quot;objects&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;实际对象符合题目固定背景。取共同界1，不需要有限性；例如[0,1]本身表明保留条件不推出有限。&quot;
+  },
+  &quot;intervention&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;原输出removed及replacement与输入逐项相同；未改变指定目标结论。&quot;
+  },
+  &quot;hypothesis_alignment&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;逐ID对照输入及中文含义，未删改保留条件。输入已提供假设，这不是从自然语言提取测试。&quot;
+  },
+  &quot;retained&quot;: {
+    &quot;H1&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;非空实数集对象约定保留。&quot;
+    },
+    &quot;H2&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;每个a满足0≤a≤1，即−1≤a≤1。&quot;
+    }
+  },
+  &quot;replacement&quot;: {},
+  &quot;deleted&quot;: {},
+  &quot;target&quot;: null,
+  &quot;preservation_proof&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;取共同界1，不需要有限性；例如[0,1]本身表明保留条件不推出有限。&quot;
+  },
+  &quot;argument&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;取共同界1，不需要有限性；例如[0,1]本身表明保留条件不推出有限。&quot;
+  },
+  &quot;evidence_honesty&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;原输出只列数学论证，未声称调用计算、人工审阅或形式化核验；未知费用保持null。&quot;
+  },
+  &quot;witness_claimed&quot;: false,
+  &quot;dependency_report&quot;: {
+    &quot;complete&quot;: false,
+    &quot;reason&quot;: &quot;未给出完整带背景的结构化依赖边；该缺口与单次干预是否数学正确分开记录。&quot;
+  },
+  &quot;notes&quot;: []
+}</pre></details></article><article><h3>MA08 · 直接回答</h3><p>数学复核：认可；严格分类：符合。</p><details><summary>查看逐项AI复核和来源摘要</summary><pre>{
+  &quot;task_id&quot;: &quot;MA08&quot;,
+  &quot;arm&quot;: &quot;direct_model&quot;,
+  &quot;reviewer_type&quot;: &quot;ai&quot;,
+  &quot;reviewer&quot;: &quot;Codex（本聊天主Agent，读取实际回答后逐义务复核）&quot;,
+  &quot;reviewed_at&quot;: &quot;2026-11-05&quot;,
+  &quot;independent&quot;: false,
+  &quot;case_digest&quot;: &quot;cc3904740a63f6d836af46fd02cbc8970f7cf5fc94831a56c6f268469e7d306e&quot;,
+  &quot;source_file&quot;: &quot;raw/direct_model/MA08/attempt-1.json&quot;,
+  &quot;source_sha256&quot;: &quot;b242c9b2b01d7980df1a28f3a9c839e70d50bcd050e6df8b5e81570a63bfa021&quot;,
+  &quot;prediction_digest&quot;: &quot;26cb457bd64f3c0f05bb3cea3bd77417c44bd205ae1210fa1499ad265673cd87&quot;,
+  &quot;objects&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;实际对象符合题目固定背景。直接组对M≥0取M+1；Skill组用阿基米德性取整数n&gt;M。均否定有界性。&quot;
+  },
+  &quot;intervention&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;原输出removed及replacement与输入逐项相同；未改变指定目标结论。&quot;
+  },
+  &quot;hypothesis_alignment&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;逐ID对照输入及中文含义，未删改保留条件。输入已提供假设，这不是从自然语言提取测试。&quot;
+  },
+  &quot;retained&quot;: {
+    &quot;H1&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;直接组A=R非空；Skill组正整数集含1，二者均为实数集。&quot;
+    }
+  },
+  &quot;replacement&quot;: {},
+  &quot;deleted&quot;: {
+    &quot;H2&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;R和正整数集都含2，故均非[0,1]的子集。&quot;
+    },
+    &quot;H3&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;R及正整数集均为无限集。&quot;
+    }
+  },
+  &quot;target&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;直接组对M≥0取M+1；Skill组用阿基米德性取整数n&gt;M。均否定有界性。&quot;
+  },
+  &quot;preservation_proof&quot;: null,
+  &quot;argument&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;直接组对M≥0取M+1；Skill组用阿基米德性取整数n&gt;M。均否定有界性。&quot;
+  },
+  &quot;evidence_honesty&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;原输出只列数学论证，未声称调用计算、人工审阅或形式化核验；未知费用保持null。&quot;
+  },
+  &quot;witness_claimed&quot;: true,
+  &quot;dependency_report&quot;: {
+    &quot;complete&quot;: false,
+    &quot;reason&quot;: &quot;未给出完整带背景的结构化依赖边；该缺口与单次干预是否数学正确分开记录。&quot;
+  },
+  &quot;notes&quot;: [
+    &quot;两份输出dependencies均为空。指定联合删除的反例成立，但未在该答案中证明两项单删仍成立，不能算完整依赖分析。&quot;
+  ]
+}</pre></details></article><article><h3>AL05 · 直接回答</h3><p>数学复核：认可；严格分类：符合。</p><details><summary>查看逐项AI复核和来源摘要</summary><pre>{
+  &quot;task_id&quot;: &quot;AL05&quot;,
+  &quot;arm&quot;: &quot;direct_model&quot;,
+  &quot;reviewer_type&quot;: &quot;ai&quot;,
+  &quot;reviewer&quot;: &quot;Codex（本聊天主Agent，读取实际回答后逐义务复核）&quot;,
+  &quot;reviewed_at&quot;: &quot;2026-11-05&quot;,
+  &quot;independent&quot;: false,
+  &quot;case_digest&quot;: &quot;541baa9e08a6b5a74336c5a86686371d4d50c1eeb9462f839bf398a65484a9d9&quot;,
+  &quot;source_file&quot;: &quot;raw/direct_model/AL05/attempt-1.json&quot;,
+  &quot;source_sha256&quot;: &quot;7f317e7d0e2c56f957f2c67cf6fc6b36d90102da2fd7ca7248eb7005cb20860d&quot;,
+  &quot;prediction_digest&quot;: &quot;f72a9e405cb49971e2ae718e0df67343714cfbdbc145443a7fca493ee60557e6&quot;,
+  &quot;objects&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;实际对象符合题目固定背景。det(A)det(A⁻¹)=1，故det(A)≠0；逆也直接保证单射。&quot;
+  },
+  &quot;intervention&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;原输出removed及replacement与输入逐项相同；未改变指定目标结论。&quot;
+  },
+  &quot;hypothesis_alignment&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;逐ID对照输入及中文含义，未删改保留条件。输入已提供假设，这不是从自然语言提取测试。&quot;
+  },
+  &quot;retained&quot;: {
+    &quot;H1&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;有限阶实方阵的行列式与线性算子均有定义。&quot;
+    },
+    &quot;H2&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;存在双侧逆A⁻¹；Ax=0时左乘逆得到x=0。&quot;
+    }
+  },
+  &quot;replacement&quot;: {},
+  &quot;deleted&quot;: {},
+  &quot;target&quot;: null,
+  &quot;preservation_proof&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;det(A)det(A⁻¹)=1，故det(A)≠0；逆也直接保证单射。&quot;
+  },
+  &quot;argument&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;det(A)det(A⁻¹)=1，故det(A)≠0；逆也直接保证单射。&quot;
+  },
+  &quot;evidence_honesty&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;原输出只列数学论证，未声称调用计算、人工审阅或形式化核验；未知费用保持null。&quot;
+  },
+  &quot;witness_claimed&quot;: false,
+  &quot;dependency_report&quot;: {
+    &quot;complete&quot;: false,
+    &quot;reason&quot;: &quot;未给出完整带背景的结构化依赖边；该缺口与单次干预是否数学正确分开记录。&quot;
+  },
+  &quot;notes&quot;: []
+}</pre></details></article><article><h3>RA05 · 直接回答</h3><p>数学复核：认可；严格分类：符合。</p><details><summary>查看逐项AI复核和来源摘要</summary><pre>{
+  &quot;task_id&quot;: &quot;RA05&quot;,
+  &quot;arm&quot;: &quot;direct_model&quot;,
+  &quot;reviewer_type&quot;: &quot;ai&quot;,
+  &quot;reviewer&quot;: &quot;Codex（本聊天主Agent，读取实际回答后逐义务复核）&quot;,
+  &quot;reviewed_at&quot;: &quot;2026-11-05&quot;,
+  &quot;independent&quot;: false,
+  &quot;case_digest&quot;: &quot;538979c3f0c024f8b351c11f51130f1fbbbe4b5de6e6e6a46b2ba7cb9b4caa0b&quot;,
+  &quot;source_file&quot;: &quot;raw/direct_model/RA05/attempt-2.json&quot;,
+  &quot;source_sha256&quot;: &quot;5c5b2e79ac7f6c82318fe7f36bb1e8ab1a8279589de4ed90e2bed13a90fe9000&quot;,
+  &quot;prediction_digest&quot;: &quot;a8b859c37a506bff636129cb6671452458908ee9dd95bdd9d940d5d3be5504f1&quot;,
+  &quot;objects&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;实际对象符合题目固定背景。∫|f|≤Mμ(X)&lt;∞，这正是题中L1条件及结论；不需要反例。&quot;
+  },
+  &quot;intervention&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;原输出removed及replacement与输入逐项相同；未改变指定目标结论。&quot;
+  },
+  &quot;hypothesis_alignment&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;逐ID对照输入及中文含义，未删改保留条件。输入已提供假设，这不是从自然语言提取测试。&quot;
+  },
+  &quot;retained&quot;: {
+    &quot;H1&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;总测度有限，因此常数M的积分有限。&quot;
+    },
+    &quot;H2&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;f可测、|f|≤M，所以|f|为非负可测函数且可用单调性。&quot;
+    }
+  },
+  &quot;replacement&quot;: {},
+  &quot;deleted&quot;: {},
+  &quot;target&quot;: null,
+  &quot;preservation_proof&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;∫|f|≤Mμ(X)&lt;∞，这正是题中L1条件及结论；不需要反例。&quot;
+  },
+  &quot;argument&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;∫|f|≤Mμ(X)&lt;∞，这正是题中L1条件及结论；不需要反例。&quot;
+  },
+  &quot;evidence_honesty&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;原输出只列数学论证，未声称调用计算、人工审阅或形式化核验；未知费用保持null。&quot;
+  },
+  &quot;witness_claimed&quot;: false,
+  &quot;dependency_report&quot;: {
+    &quot;complete&quot;: false,
+    &quot;reason&quot;: &quot;未给出完整带背景的结构化依赖边；该缺口与单次干预是否数学正确分开记录。&quot;
+  },
+  &quot;notes&quot;: []
+}</pre></details></article><article><h3>CA06 · 直接回答</h3><p>数学复核：认可；严格分类：符合。</p><details><summary>查看逐项AI复核和来源摘要</summary><pre>{
+  &quot;task_id&quot;: &quot;CA06&quot;,
+  &quot;arm&quot;: &quot;direct_model&quot;,
+  &quot;reviewer_type&quot;: &quot;ai&quot;,
+  &quot;reviewer&quot;: &quot;Codex（本聊天主Agent，读取实际回答后逐义务复核）&quot;,
+  &quot;reviewed_at&quot;: &quot;2026-11-05&quot;,
+  &quot;independent&quot;: false,
+  &quot;case_digest&quot;: &quot;3983b20a843976df906364362e29516ad54f4fa7c8434ca4da65d55ce1e0824a&quot;,
+  &quot;source_file&quot;: &quot;raw/direct_model/CA06/attempt-2.json&quot;,
+  &quot;source_sha256&quot;: &quot;2449b7d523fb0fc7517e90b868007906a38919f14c9effc82496681fe036066c&quot;,
+  &quot;prediction_digest&quot;: &quot;8d822f2594e870634248d65a85761cca7c2d0323c1953f7cb2149d4e8c70746f&quot;,
+  &quot;objects&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;实际对象符合题目固定背景。代入dz=ie^(it)dt，积分为∫0到2π i dt=2πi≠0。&quot;
+  },
+  &quot;intervention&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;原输出removed及replacement与输入逐项相同；未改变指定目标结论。&quot;
+  },
+  &quot;hypothesis_alignment&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;逐ID对照输入及中文含义，未删改保留条件。输入已提供假设，这不是从自然语言提取测试。&quot;
+  },
+  &quot;retained&quot;: {
+    &quot;H2&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;z≠0时1/z复可微，导数−1/z²。&quot;
+    },
+    &quot;H3&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;e^(it)在[0,2π]上光滑、首尾1、模恒1，所以路径不穿过0。&quot;
+    },
+    &quot;H4&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;C去原点为非空开集；任意两点可由径向与圆弧路径连通。&quot;
+    }
+  },
+  &quot;replacement&quot;: {},
+  &quot;deleted&quot;: {
+    &quot;H1&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;单位圆绕0的绕数1在避开0的同伦中不变，故不能缩到点；穿孔平面非单连通。&quot;
+    }
+  },
+  &quot;target&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;代入dz=ie^(it)dt，积分为∫0到2π i dt=2πi≠0。&quot;
+  },
+  &quot;preservation_proof&quot;: null,
+  &quot;argument&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;代入dz=ie^(it)dt，积分为∫0到2π i dt=2πi≠0。&quot;
+  },
+  &quot;evidence_honesty&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;原输出只列数学论证，未声称调用计算、人工审阅或形式化核验；未知费用保持null。&quot;
+  },
+  &quot;witness_claimed&quot;: true,
+  &quot;dependency_report&quot;: {
+    &quot;complete&quot;: false,
+    &quot;reason&quot;: &quot;未给出完整带背景的结构化依赖边；该缺口与单次干预是否数学正确分开记录。&quot;
+  },
+  &quot;notes&quot;: [
+    &quot;直接组没有显式写非单连通论证。AI确认该性质，但不把本条补充冒充原回答已写内容。&quot;
+  ]
+}</pre></details></article><article><h3>CA07 · 直接回答</h3><p>数学复核：认可；严格分类：符合。</p><details><summary>查看逐项AI复核和来源摘要</summary><pre>{
+  &quot;task_id&quot;: &quot;CA07&quot;,
+  &quot;arm&quot;: &quot;direct_model&quot;,
+  &quot;reviewer_type&quot;: &quot;ai&quot;,
+  &quot;reviewer&quot;: &quot;Codex（本聊天主Agent，读取实际回答后逐义务复核）&quot;,
+  &quot;reviewed_at&quot;: &quot;2026-11-05&quot;,
+  &quot;independent&quot;: false,
+  &quot;case_digest&quot;: &quot;4d66e0146024921288f599e732a8afdf84117ed0bf2e2583510d271baff318f8&quot;,
+  &quot;source_file&quot;: &quot;raw/direct_model/CA07/attempt-2.json&quot;,
+  &quot;source_sha256&quot;: &quot;a4a88cc130b655fe1bd19a45c10541ca913aa57f29f9c899b284d69d1b828607&quot;,
+  &quot;prediction_digest&quot;: &quot;8ec9a6c79bfc571141f9aceaeaeb72177640202f1d0bab86e92177766e1d070b&quot;,
+  &quot;objects&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;实际对象符合题目固定背景。函数增量=复增量×有界差商→0，各点连续，故保留条件推出H3。&quot;
+  },
+  &quot;intervention&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;原输出removed及replacement与输入逐项相同；未改变指定目标结论。&quot;
+  },
+  &quot;hypothesis_alignment&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;逐ID对照输入及中文含义，未删改保留条件。输入已提供假设，这不是从自然语言提取测试。&quot;
+  },
+  &quot;retained&quot;: {
+    &quot;H1&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;题中Ω为域，尤其为开集，可在每个点附近取复增量。&quot;
+    },
+    &quot;H2&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;全纯意味着每点复差商有有限极限。&quot;
+    }
+  },
+  &quot;replacement&quot;: {},
+  &quot;deleted&quot;: {},
+  &quot;target&quot;: null,
+  &quot;preservation_proof&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;函数增量=复增量×有界差商→0，各点连续，故保留条件推出H3。&quot;
+  },
+  &quot;argument&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;函数增量=复增量×有界差商→0，各点连续，故保留条件推出H3。&quot;
+  },
+  &quot;evidence_honesty&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;原输出只列数学论证，未声称调用计算、人工审阅或形式化核验；未知费用保持null。&quot;
+  },
+  &quot;witness_claimed&quot;: false,
+  &quot;dependency_report&quot;: {
+    &quot;complete&quot;: false,
+    &quot;reason&quot;: &quot;未给出完整带背景的结构化依赖边；该缺口与单次干预是否数学正确分开记录。&quot;
+  },
+  &quot;notes&quot;: []
+}</pre></details></article><article><h3>AL07 · 直接回答</h3><p>数学复核：认可；严格分类：符合。</p><details><summary>查看逐项AI复核和来源摘要</summary><pre>{
+  &quot;task_id&quot;: &quot;AL07&quot;,
+  &quot;arm&quot;: &quot;direct_model&quot;,
+  &quot;reviewer_type&quot;: &quot;ai&quot;,
+  &quot;reviewer&quot;: &quot;Codex（本聊天主Agent，读取实际回答后逐义务复核）&quot;,
+  &quot;reviewed_at&quot;: &quot;2026-11-05&quot;,
+  &quot;independent&quot;: false,
+  &quot;case_digest&quot;: &quot;61288cabad751cc5a96415434a454d2775a9f2310a5be51e8fb405c4e2669276&quot;,
+  &quot;source_file&quot;: &quot;raw/direct_model/AL07/attempt-1.json&quot;,
+  &quot;source_sha256&quot;: &quot;dda792bd7cf8243e6eedca68522fbea95fa674aece057a33709d1f5948e57ff3&quot;,
+  &quot;prediction_digest&quot;: &quot;7bb8e5e5348eadad1642350d286f2d3c031026d594360e56ec568f98769ef50d&quot;,
+  &quot;objects&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;实际对象符合题目固定背景。B(e1,e2)=1，故不是零双线性形式。&quot;
+  },
+  &quot;intervention&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;原输出removed及replacement与输入逐项相同；未改变指定目标结论。&quot;
+  },
+  &quot;hypothesis_alignment&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;逐ID对照输入及中文含义，未删改保留条件。输入已提供假设，这不是从自然语言提取测试。&quot;
+  },
+  &quot;retained&quot;: {
+    &quot;H2&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;F2上xt+ys（或ad+bc）对每个变量分别线性；交换变量因乘加交换而不变。&quot;
+    },
+    &quot;H3&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;B((x,y),(x,y))=2xy=0，因char(F2)=2。&quot;
+    }
+  },
+  &quot;replacement&quot;: {},
+  &quot;deleted&quot;: {
+    &quot;H1&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;F2的特征为2，与char(F)≠2相反。&quot;
+    }
+  },
+  &quot;target&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;B(e1,e2)=1，故不是零双线性形式。&quot;
+  },
+  &quot;preservation_proof&quot;: null,
+  &quot;argument&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;B(e1,e2)=1，故不是零双线性形式。&quot;
+  },
+  &quot;evidence_honesty&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;原输出只列数学论证，未声称调用计算、人工审阅或形式化核验；未知费用保持null。&quot;
+  },
+  &quot;witness_claimed&quot;: true,
+  &quot;dependency_report&quot;: {
+    &quot;complete&quot;: false,
+    &quot;reason&quot;: &quot;未给出完整带背景的结构化依赖边；该缺口与单次干预是否数学正确分开记录。&quot;
+  },
+  &quot;notes&quot;: []
+}</pre></details></article><article><h3>RA07 · 直接回答</h3><p>数学复核：认可；严格分类：符合。</p><details><summary>查看逐项AI复核和来源摘要</summary><pre>{
+  &quot;task_id&quot;: &quot;RA07&quot;,
+  &quot;arm&quot;: &quot;direct_model&quot;,
+  &quot;reviewer_type&quot;: &quot;ai&quot;,
+  &quot;reviewer&quot;: &quot;Codex（本聊天主Agent，读取实际回答后逐义务复核）&quot;,
+  &quot;reviewed_at&quot;: &quot;2026-11-05&quot;,
+  &quot;independent&quot;: false,
+  &quot;case_digest&quot;: &quot;e01b244dc7bb71d2e78550c3d97e42fe12896e5e4ba51a45aefd15327635e625&quot;,
+  &quot;source_file&quot;: &quot;raw/direct_model/RA07/attempt-1.json&quot;,
+  &quot;source_sha256&quot;: &quot;2c9aac6535e76df514782dec69f15ce0f5ba9fca9a0d20764cbbb2eacf26113d&quot;,
+  &quot;prediction_digest&quot;: &quot;317f2906fa91da7fe66387e5f0b6b1a1b6fa2b17297feefc0efedf651f3e7de8&quot;,
+  &quot;objects&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;实际对象符合题目固定背景。非零集合的测度均为2，因此非几乎处处为零。&quot;
+  },
+  &quot;intervention&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;原输出removed及replacement与输入逐项相同；未改变指定目标结论。&quot;
+  },
+  &quot;hypothesis_alignment&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;逐ID对照输入及中文含义，未删改保留条件。输入已提供假设，这不是从自然语言提取测试。&quot;
+  },
+  &quot;retained&quot;: {
+    &quot;H1&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;直接组有限计数空间f取±1，绝对积分2；Skill组两个不交单位区间上的指示函数差，可测且绝对积分2。&quot;
+    },
+    &quot;H3&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;直接组1−1=0；Skill组两个单位区间测度之差1−1=0。&quot;
+    }
+  },
+  &quot;replacement&quot;: {},
+  &quot;deleted&quot;: {
+    &quot;H2&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;直接组b点测度1且f(b)=−1；Skill组[1,2)测度1且函数为−1。&quot;
+    }
+  },
+  &quot;target&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;非零集合的测度均为2，因此非几乎处处为零。&quot;
+  },
+  &quot;preservation_proof&quot;: null,
+  &quot;argument&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;非零集合的测度均为2，因此非几乎处处为零。&quot;
+  },
+  &quot;evidence_honesty&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;原输出只列数学论证，未声称调用计算、人工审阅或形式化核验；未知费用保持null。&quot;
+  },
+  &quot;witness_claimed&quot;: true,
+  &quot;dependency_report&quot;: {
+    &quot;complete&quot;: false,
+    &quot;reason&quot;: &quot;未给出完整带背景的结构化依赖边；该缺口与单次干预是否数学正确分开记录。&quot;
+  },
+  &quot;notes&quot;: [
+    &quot;两个构造均合法；测度空间不必与参考答案[0,1]相同。&quot;
+  ]
+}</pre></details></article><article><h3>CA09 · 直接回答</h3><p>数学复核：认可；严格分类：符合。</p><details><summary>查看逐项AI复核和来源摘要</summary><pre>{
+  &quot;task_id&quot;: &quot;CA09&quot;,
+  &quot;arm&quot;: &quot;direct_model&quot;,
+  &quot;reviewer_type&quot;: &quot;ai&quot;,
+  &quot;reviewer&quot;: &quot;Codex（本聊天主Agent，读取实际回答后逐义务复核）&quot;,
+  &quot;reviewed_at&quot;: &quot;2026-11-05&quot;,
+  &quot;independent&quot;: false,
+  &quot;case_digest&quot;: &quot;b8009db7d0a208a55291317929d40b892ffab6080530e56fee20e9e0bf72bd40&quot;,
+  &quot;source_file&quot;: &quot;raw/direct_model/CA09/attempt-1.json&quot;,
+  &quot;source_sha256&quot;: &quot;2ab0f7f843ad1c842bf295a7b71cd71a018556a1446379c9754f633486b2c49f&quot;,
+  &quot;prediction_digest&quot;: &quot;0e54dfe7110db5299c43c21772253fa74e92d73519c7522d486ad458c1c225d9&quot;,
+  &quot;objects&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;实际对象符合题目固定背景。绝对值级数各项均1，前N+1项和为N+1，发散。&quot;
+  },
+  &quot;intervention&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;原输出removed及replacement与输入逐项相同；未改变指定目标结论。&quot;
+  },
+  &quot;hypothesis_alignment&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;逐ID对照输入及中文含义，未删改保留条件。输入已提供假设，这不是从自然语言提取测试。&quot;
+  },
+  &quot;retained&quot;: {
+    &quot;H1&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;几何级数在|z|&lt;1收敛、|z|&gt;1通项不趋零，所以收敛半径恰为1，正且有限。&quot;
+    }
+  },
+  &quot;replacement&quot;: {
+    &quot;H2w&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;取z=1、R=1，有|z|≤R。&quot;
+    }
+  },
+  &quot;deleted&quot;: {
+    &quot;H2&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;|z|=R=1，不满足严格不等式。&quot;
+    }
+  },
+  &quot;target&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;绝对值级数各项均1，前N+1项和为N+1，发散。&quot;
+  },
+  &quot;preservation_proof&quot;: null,
+  &quot;argument&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;绝对值级数各项均1，前N+1项和为N+1，发散。&quot;
+  },
+  &quot;evidence_honesty&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;原输出只列数学论证，未声称调用计算、人工审阅或形式化核验；未知费用保持null。&quot;
+  },
+  &quot;witness_claimed&quot;: true,
+  &quot;dependency_report&quot;: {
+    &quot;complete&quot;: false,
+    &quot;reason&quot;: &quot;未给出完整带背景的结构化依赖边；该缺口与单次干预是否数学正确分开记录。&quot;
+  },
+  &quot;notes&quot;: []
+}</pre></details></article><article><h3>MA05 · Skill回答</h3><p>数学复核：认可；严格分类：符合。</p><details><summary>查看逐项AI复核和来源摘要</summary><pre>{
+  &quot;task_id&quot;: &quot;MA05&quot;,
+  &quot;arm&quot;: &quot;full_skill&quot;,
+  &quot;reviewer_type&quot;: &quot;ai&quot;,
+  &quot;reviewer&quot;: &quot;Codex（本聊天主Agent，读取实际回答后逐义务复核）&quot;,
+  &quot;reviewed_at&quot;: &quot;2026-11-05&quot;,
+  &quot;independent&quot;: false,
+  &quot;case_digest&quot;: &quot;43bbc70622b3235ad0f6474fe1128e67e84e0cacc93ffe3bc4337d25ccdf2d11&quot;,
+  &quot;source_file&quot;: &quot;raw/full_skill/MA05/attempt-1.json&quot;,
+  &quot;source_sha256&quot;: &quot;f7ea275df08025656b282e7bb932b61a099b41ebd5f9b399a224a4ec9a4fe014&quot;,
+  &quot;prediction_digest&quot;: &quot;53c349103eb44703cc4742c0fdf309311540da24180a951ab370de2abd5b82c2&quot;,
+  &quot;objects&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;实际对象符合题目固定背景。对每个x，f(x+h)−f(x)=h·差商→0，故各点连续；这还直接推出被删H3。&quot;
+  },
+  &quot;intervention&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;原输出removed及replacement与输入逐项相同；未改变指定目标结论。&quot;
+  },
+  &quot;hypothesis_alignment&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;逐ID对照输入及中文含义，未删改保留条件。输入已提供假设，这不是从自然语言提取测试。&quot;
+  },
+  &quot;retained&quot;: {
+    &quot;H1&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;开区间保证每点可在域内取趋零增量。&quot;
+    },
+    &quot;H2&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;差商趋于有限实导数；乘趋零增量后函数增量趋零。&quot;
+    }
+  },
+  &quot;replacement&quot;: {},
+  &quot;deleted&quot;: {},
+  &quot;target&quot;: null,
+  &quot;preservation_proof&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;对每个x，f(x+h)−f(x)=h·差商→0，故各点连续；这还直接推出被删H3。&quot;
+  },
+  &quot;argument&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;对每个x，f(x+h)−f(x)=h·差商→0，故各点连续；这还直接推出被删H3。&quot;
+  },
+  &quot;evidence_honesty&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;原输出只列数学论证，未声称调用计算、人工审阅或形式化核验；未知费用保持null。&quot;
+  },
+  &quot;witness_claimed&quot;: false,
+  &quot;dependency_report&quot;: {
+    &quot;complete&quot;: false,
+    &quot;reason&quot;: &quot;未给出完整带背景的结构化依赖边；该缺口与单次干预是否数学正确分开记录。&quot;
+  },
+  &quot;notes&quot;: [
+    &quot;直接组removable的数学保留结论正确，但本协议优先implied，属于分类精度差异。&quot;
+  ]
+}</pre></details></article><article><h3>MA06 · Skill回答</h3><p>数学复核：认可；严格分类：符合。</p><details><summary>查看逐项AI复核和来源摘要</summary><pre>{
+  &quot;task_id&quot;: &quot;MA06&quot;,
+  &quot;arm&quot;: &quot;full_skill&quot;,
+  &quot;reviewer_type&quot;: &quot;ai&quot;,
+  &quot;reviewer&quot;: &quot;Codex（本聊天主Agent，读取实际回答后逐义务复核）&quot;,
+  &quot;reviewed_at&quot;: &quot;2026-11-05&quot;,
+  &quot;independent&quot;: false,
+  &quot;case_digest&quot;: &quot;7b51ce62e59710f5eb2ef4c2fd1e6e8d7930659b1921731218816aa8c29cfebd&quot;,
+  &quot;source_file&quot;: &quot;raw/full_skill/MA06/attempt-1.json&quot;,
+  &quot;source_sha256&quot;: &quot;c277ee96d88e64427773cb9db06d7219983a7620b424f9e2a95b157465a030e8&quot;,
+  &quot;prediction_digest&quot;: &quot;5b7f7d2f766e3c1619efadfb76ee5e332c75c1398835bca35a53834cdfbf195b&quot;,
+  &quot;objects&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;实际对象符合题目固定背景。M=max_i|ai|是所有元素绝对值的共同上界，证明作用于任意非空有限实数集。&quot;
+  },
+  &quot;intervention&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;原输出removed及replacement与输入逐项相同；未改变指定目标结论。&quot;
+  },
+  &quot;hypothesis_alignment&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;逐ID对照输入及中文含义，未删改保留条件。输入已提供假设，这不是从自然语言提取测试。&quot;
+  },
+  &quot;retained&quot;: {
+    &quot;H1&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;A是非空实数集合；n≥1使有限最大值存在。&quot;
+    },
+    &quot;H3&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;A有限，可列为a1,…,an。&quot;
+    }
+  },
+  &quot;replacement&quot;: {},
+  &quot;deleted&quot;: {},
+  &quot;target&quot;: null,
+  &quot;preservation_proof&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;M=max_i|ai|是所有元素绝对值的共同上界，证明作用于任意非空有限实数集。&quot;
+  },
+  &quot;argument&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;M=max_i|ai|是所有元素绝对值的共同上界，证明作用于任意非空有限实数集。&quot;
+  },
+  &quot;evidence_honesty&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;原输出只列数学论证，未声称调用计算、人工审阅或形式化核验；未知费用保持null。&quot;
+  },
+  &quot;witness_claimed&quot;: false,
+  &quot;dependency_report&quot;: {
+    &quot;complete&quot;: false,
+    &quot;reason&quot;: &quot;未给出完整带背景的结构化依赖边；该缺口与单次干预是否数学正确分开记录。&quot;
+  },
+  &quot;notes&quot;: [
+    &quot;有限并不推出A⊂[0,1]，例如{2}；因此应为removable而非implied。&quot;
+  ]
+}</pre></details></article><article><h3>MA07 · Skill回答</h3><p>数学复核：认可；严格分类：符合。</p><details><summary>查看逐项AI复核和来源摘要</summary><pre>{
+  &quot;task_id&quot;: &quot;MA07&quot;,
+  &quot;arm&quot;: &quot;full_skill&quot;,
+  &quot;reviewer_type&quot;: &quot;ai&quot;,
+  &quot;reviewer&quot;: &quot;Codex（本聊天主Agent，读取实际回答后逐义务复核）&quot;,
+  &quot;reviewed_at&quot;: &quot;2026-11-05&quot;,
+  &quot;independent&quot;: false,
+  &quot;case_digest&quot;: &quot;c71d025aaab217a5d7951816b2621108bf5dadc2b51f9fa84eb483ff4464f2d3&quot;,
+  &quot;source_file&quot;: &quot;raw/full_skill/MA07/attempt-1.json&quot;,
+  &quot;source_sha256&quot;: &quot;9fccbca9cd5688936007b295ae24404ecba16cc02f1f40477af9c062bf4d9b21&quot;,
+  &quot;prediction_digest&quot;: &quot;59e7f6987b44c9e5cd60e72c5d202208b3e3734665f658a7c8b208917b9df10c&quot;,
+  &quot;objects&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;实际对象符合题目固定背景。取共同界1，不需要有限性；例如[0,1]本身表明保留条件不推出有限。&quot;
+  },
+  &quot;intervention&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;原输出removed及replacement与输入逐项相同；未改变指定目标结论。&quot;
+  },
+  &quot;hypothesis_alignment&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;逐ID对照输入及中文含义，未删改保留条件。输入已提供假设，这不是从自然语言提取测试。&quot;
+  },
+  &quot;retained&quot;: {
+    &quot;H1&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;非空实数集对象约定保留。&quot;
+    },
+    &quot;H2&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;每个a满足0≤a≤1，即−1≤a≤1。&quot;
+    }
+  },
+  &quot;replacement&quot;: {},
+  &quot;deleted&quot;: {},
+  &quot;target&quot;: null,
+  &quot;preservation_proof&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;取共同界1，不需要有限性；例如[0,1]本身表明保留条件不推出有限。&quot;
+  },
+  &quot;argument&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;取共同界1，不需要有限性；例如[0,1]本身表明保留条件不推出有限。&quot;
+  },
+  &quot;evidence_honesty&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;原输出只列数学论证，未声称调用计算、人工审阅或形式化核验；未知费用保持null。&quot;
+  },
+  &quot;witness_claimed&quot;: false,
+  &quot;dependency_report&quot;: {
+    &quot;complete&quot;: false,
+    &quot;reason&quot;: &quot;未给出完整带背景的结构化依赖边；该缺口与单次干预是否数学正确分开记录。&quot;
+  },
+  &quot;notes&quot;: []
+}</pre></details></article><article><h3>MA08 · Skill回答</h3><p>数学复核：认可；严格分类：符合。</p><details><summary>查看逐项AI复核和来源摘要</summary><pre>{
+  &quot;task_id&quot;: &quot;MA08&quot;,
+  &quot;arm&quot;: &quot;full_skill&quot;,
+  &quot;reviewer_type&quot;: &quot;ai&quot;,
+  &quot;reviewer&quot;: &quot;Codex（本聊天主Agent，读取实际回答后逐义务复核）&quot;,
+  &quot;reviewed_at&quot;: &quot;2026-11-05&quot;,
+  &quot;independent&quot;: false,
+  &quot;case_digest&quot;: &quot;cc3904740a63f6d836af46fd02cbc8970f7cf5fc94831a56c6f268469e7d306e&quot;,
+  &quot;source_file&quot;: &quot;raw/full_skill/MA08/attempt-1.json&quot;,
+  &quot;source_sha256&quot;: &quot;0702141dd6555900f59c8bcf7443ddd1ba6d4e072b244073e90af97e400f1f45&quot;,
+  &quot;prediction_digest&quot;: &quot;65a9063e131b973730f904584c445f32e626e516fcde2b0a9cb5ef7b42b1b85b&quot;,
+  &quot;objects&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;实际对象符合题目固定背景。直接组对M≥0取M+1；Skill组用阿基米德性取整数n&gt;M。均否定有界性。&quot;
+  },
+  &quot;intervention&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;原输出removed及replacement与输入逐项相同；未改变指定目标结论。&quot;
+  },
+  &quot;hypothesis_alignment&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;逐ID对照输入及中文含义，未删改保留条件。输入已提供假设，这不是从自然语言提取测试。&quot;
+  },
+  &quot;retained&quot;: {
+    &quot;H1&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;直接组A=R非空；Skill组正整数集含1，二者均为实数集。&quot;
+    }
+  },
+  &quot;replacement&quot;: {},
+  &quot;deleted&quot;: {
+    &quot;H2&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;R和正整数集都含2，故均非[0,1]的子集。&quot;
+    },
+    &quot;H3&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;R及正整数集均为无限集。&quot;
+    }
+  },
+  &quot;target&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;直接组对M≥0取M+1；Skill组用阿基米德性取整数n&gt;M。均否定有界性。&quot;
+  },
+  &quot;preservation_proof&quot;: null,
+  &quot;argument&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;直接组对M≥0取M+1；Skill组用阿基米德性取整数n&gt;M。均否定有界性。&quot;
+  },
+  &quot;evidence_honesty&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;原输出只列数学论证，未声称调用计算、人工审阅或形式化核验；未知费用保持null。&quot;
+  },
+  &quot;witness_claimed&quot;: true,
+  &quot;dependency_report&quot;: {
+    &quot;complete&quot;: false,
+    &quot;reason&quot;: &quot;未给出完整带背景的结构化依赖边；该缺口与单次干预是否数学正确分开记录。&quot;
+  },
+  &quot;notes&quot;: [
+    &quot;两份输出dependencies均为空。指定联合删除的反例成立，但未在该答案中证明两项单删仍成立，不能算完整依赖分析。&quot;
+  ]
+}</pre></details></article><article><h3>AL05 · Skill回答</h3><p>数学复核：认可；严格分类：符合。</p><details><summary>查看逐项AI复核和来源摘要</summary><pre>{
+  &quot;task_id&quot;: &quot;AL05&quot;,
+  &quot;arm&quot;: &quot;full_skill&quot;,
+  &quot;reviewer_type&quot;: &quot;ai&quot;,
+  &quot;reviewer&quot;: &quot;Codex（本聊天主Agent，读取实际回答后逐义务复核）&quot;,
+  &quot;reviewed_at&quot;: &quot;2026-11-05&quot;,
+  &quot;independent&quot;: false,
+  &quot;case_digest&quot;: &quot;541baa9e08a6b5a74336c5a86686371d4d50c1eeb9462f839bf398a65484a9d9&quot;,
+  &quot;source_file&quot;: &quot;raw/full_skill/AL05/attempt-1.json&quot;,
+  &quot;source_sha256&quot;: &quot;662a2228a2a05fef7734b8d3b989af54549dc025955fd7c1540d1e10061bd707&quot;,
+  &quot;prediction_digest&quot;: &quot;f261dbaf9f38670bc8278d8db50c6207ae74300611c0d72bd14795de98a2dc72&quot;,
+  &quot;objects&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;实际对象符合题目固定背景。det(A)det(A⁻¹)=1，故det(A)≠0；逆也直接保证单射。&quot;
+  },
+  &quot;intervention&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;原输出removed及replacement与输入逐项相同；未改变指定目标结论。&quot;
+  },
+  &quot;hypothesis_alignment&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;逐ID对照输入及中文含义，未删改保留条件。输入已提供假设，这不是从自然语言提取测试。&quot;
+  },
+  &quot;retained&quot;: {
+    &quot;H1&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;有限阶实方阵的行列式与线性算子均有定义。&quot;
+    },
+    &quot;H2&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;存在双侧逆A⁻¹；Ax=0时左乘逆得到x=0。&quot;
+    }
+  },
+  &quot;replacement&quot;: {},
+  &quot;deleted&quot;: {},
+  &quot;target&quot;: null,
+  &quot;preservation_proof&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;det(A)det(A⁻¹)=1，故det(A)≠0；逆也直接保证单射。&quot;
+  },
+  &quot;argument&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;det(A)det(A⁻¹)=1，故det(A)≠0；逆也直接保证单射。&quot;
+  },
+  &quot;evidence_honesty&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;原输出只列数学论证，未声称调用计算、人工审阅或形式化核验；未知费用保持null。&quot;
+  },
+  &quot;witness_claimed&quot;: false,
+  &quot;dependency_report&quot;: {
+    &quot;complete&quot;: true,
+    &quot;reason&quot;: &quot;有明确背景、目标及证据的限定关系。&quot;
+  },
+  &quot;notes&quot;: []
+}</pre></details></article><article><h3>RA05 · Skill回答</h3><p>数学复核：认可；严格分类：符合。</p><details><summary>查看逐项AI复核和来源摘要</summary><pre>{
+  &quot;task_id&quot;: &quot;RA05&quot;,
+  &quot;arm&quot;: &quot;full_skill&quot;,
+  &quot;reviewer_type&quot;: &quot;ai&quot;,
+  &quot;reviewer&quot;: &quot;Codex（本聊天主Agent，读取实际回答后逐义务复核）&quot;,
+  &quot;reviewed_at&quot;: &quot;2026-11-05&quot;,
+  &quot;independent&quot;: false,
+  &quot;case_digest&quot;: &quot;538979c3f0c024f8b351c11f51130f1fbbbe4b5de6e6e6a46b2ba7cb9b4caa0b&quot;,
+  &quot;source_file&quot;: &quot;raw/full_skill/RA05/attempt-2.json&quot;,
+  &quot;source_sha256&quot;: &quot;f0c3cc8470386fb9e811d71cd3c62ede415facb5cab4068113aa6569f28c67d3&quot;,
+  &quot;prediction_digest&quot;: &quot;33bc6d7672e49bbd36c233ced0451416b4f95e7f9b9ee06d9e9e200afa029f17&quot;,
+  &quot;objects&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;实际对象符合题目固定背景。∫|f|≤Mμ(X)&lt;∞，这正是题中L1条件及结论；不需要反例。&quot;
+  },
+  &quot;intervention&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;原输出removed及replacement与输入逐项相同；未改变指定目标结论。&quot;
+  },
+  &quot;hypothesis_alignment&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;逐ID对照输入及中文含义，未删改保留条件。输入已提供假设，这不是从自然语言提取测试。&quot;
+  },
+  &quot;retained&quot;: {
+    &quot;H1&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;总测度有限，因此常数M的积分有限。&quot;
+    },
+    &quot;H2&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;f可测、|f|≤M，所以|f|为非负可测函数且可用单调性。&quot;
+    }
+  },
+  &quot;replacement&quot;: {},
+  &quot;deleted&quot;: {},
+  &quot;target&quot;: null,
+  &quot;preservation_proof&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;∫|f|≤Mμ(X)&lt;∞，这正是题中L1条件及结论；不需要反例。&quot;
+  },
+  &quot;argument&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;∫|f|≤Mμ(X)&lt;∞，这正是题中L1条件及结论；不需要反例。&quot;
+  },
+  &quot;evidence_honesty&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;原输出只列数学论证，未声称调用计算、人工审阅或形式化核验；未知费用保持null。&quot;
+  },
+  &quot;witness_claimed&quot;: false,
+  &quot;dependency_report&quot;: {
+    &quot;complete&quot;: true,
+    &quot;reason&quot;: &quot;有明确背景、目标及证据的限定关系。&quot;
+  },
+  &quot;notes&quot;: []
+}</pre></details></article><article><h3>CA06 · Skill回答</h3><p>数学复核：认可；严格分类：符合。</p><details><summary>查看逐项AI复核和来源摘要</summary><pre>{
+  &quot;task_id&quot;: &quot;CA06&quot;,
+  &quot;arm&quot;: &quot;full_skill&quot;,
+  &quot;reviewer_type&quot;: &quot;ai&quot;,
+  &quot;reviewer&quot;: &quot;Codex（本聊天主Agent，读取实际回答后逐义务复核）&quot;,
+  &quot;reviewed_at&quot;: &quot;2026-11-05&quot;,
+  &quot;independent&quot;: false,
+  &quot;case_digest&quot;: &quot;3983b20a843976df906364362e29516ad54f4fa7c8434ca4da65d55ce1e0824a&quot;,
+  &quot;source_file&quot;: &quot;raw/full_skill/CA06/attempt-2.json&quot;,
+  &quot;source_sha256&quot;: &quot;cc7575985f4dabfb2774fbecc6572a1ee3a7866b92a871dc121325817a0d4af6&quot;,
+  &quot;prediction_digest&quot;: &quot;50cb0d54fdaae67ba6809052c3d91bae2ccee9c6851eb855a80969ed652cac0c&quot;,
+  &quot;objects&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;实际对象符合题目固定背景。代入dz=ie^(it)dt，积分为∫0到2π i dt=2πi≠0。&quot;
+  },
+  &quot;intervention&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;原输出removed及replacement与输入逐项相同；未改变指定目标结论。&quot;
+  },
+  &quot;hypothesis_alignment&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;逐ID对照输入及中文含义，未删改保留条件。输入已提供假设，这不是从自然语言提取测试。&quot;
+  },
+  &quot;retained&quot;: {
+    &quot;H2&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;z≠0时1/z复可微，导数−1/z²。&quot;
+    },
+    &quot;H3&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;e^(it)在[0,2π]上光滑、首尾1、模恒1，所以路径不穿过0。&quot;
+    },
+    &quot;H4&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;C去原点为非空开集；任意两点可由径向与圆弧路径连通。&quot;
+    }
+  },
+  &quot;replacement&quot;: {},
+  &quot;deleted&quot;: {
+    &quot;H1&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;单位圆绕0的绕数1在避开0的同伦中不变，故不能缩到点；穿孔平面非单连通。&quot;
+    }
+  },
+  &quot;target&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;代入dz=ie^(it)dt，积分为∫0到2π i dt=2πi≠0。&quot;
+  },
+  &quot;preservation_proof&quot;: null,
+  &quot;argument&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;代入dz=ie^(it)dt，积分为∫0到2π i dt=2πi≠0。&quot;
+  },
+  &quot;evidence_honesty&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;原输出只列数学论证，未声称调用计算、人工审阅或形式化核验；未知费用保持null。&quot;
+  },
+  &quot;witness_claimed&quot;: true,
+  &quot;dependency_report&quot;: {
+    &quot;complete&quot;: false,
+    &quot;reason&quot;: &quot;未给出完整带背景的结构化依赖边；该缺口与单次干预是否数学正确分开记录。&quot;
+  },
+  &quot;notes&quot;: [
+    &quot;直接组没有显式写非单连通论证。AI确认该性质，但不把本条补充冒充原回答已写内容。&quot;
+  ]
+}</pre></details></article><article><h3>CA07 · Skill回答</h3><p>数学复核：认可；严格分类：符合。</p><details><summary>查看逐项AI复核和来源摘要</summary><pre>{
+  &quot;task_id&quot;: &quot;CA07&quot;,
+  &quot;arm&quot;: &quot;full_skill&quot;,
+  &quot;reviewer_type&quot;: &quot;ai&quot;,
+  &quot;reviewer&quot;: &quot;Codex（本聊天主Agent，读取实际回答后逐义务复核）&quot;,
+  &quot;reviewed_at&quot;: &quot;2026-11-05&quot;,
+  &quot;independent&quot;: false,
+  &quot;case_digest&quot;: &quot;4d66e0146024921288f599e732a8afdf84117ed0bf2e2583510d271baff318f8&quot;,
+  &quot;source_file&quot;: &quot;raw/full_skill/CA07/attempt-1.json&quot;,
+  &quot;source_sha256&quot;: &quot;ed8dde0c347bd235e419e9e30aed28c00657245c54fec84c5e85ce01c3489160&quot;,
+  &quot;prediction_digest&quot;: &quot;05ea672109e30193bef441a32340c4b60b6999e4d8847724897c755ab3eadb6b&quot;,
+  &quot;objects&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;实际对象符合题目固定背景。函数增量=复增量×有界差商→0，各点连续，故保留条件推出H3。&quot;
+  },
+  &quot;intervention&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;原输出removed及replacement与输入逐项相同；未改变指定目标结论。&quot;
+  },
+  &quot;hypothesis_alignment&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;逐ID对照输入及中文含义，未删改保留条件。输入已提供假设，这不是从自然语言提取测试。&quot;
+  },
+  &quot;retained&quot;: {
+    &quot;H1&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;题中Ω为域，尤其为开集，可在每个点附近取复增量。&quot;
+    },
+    &quot;H2&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;全纯意味着每点复差商有有限极限。&quot;
+    }
+  },
+  &quot;replacement&quot;: {},
+  &quot;deleted&quot;: {},
+  &quot;target&quot;: null,
+  &quot;preservation_proof&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;函数增量=复增量×有界差商→0，各点连续，故保留条件推出H3。&quot;
+  },
+  &quot;argument&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;函数增量=复增量×有界差商→0，各点连续，故保留条件推出H3。&quot;
+  },
+  &quot;evidence_honesty&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;原输出只列数学论证，未声称调用计算、人工审阅或形式化核验；未知费用保持null。&quot;
+  },
+  &quot;witness_claimed&quot;: false,
+  &quot;dependency_report&quot;: {
+    &quot;complete&quot;: false,
+    &quot;reason&quot;: &quot;未给出完整带背景的结构化依赖边；该缺口与单次干预是否数学正确分开记录。&quot;
+  },
+  &quot;notes&quot;: []
+}</pre></details></article><article><h3>AL07 · Skill回答</h3><p>数学复核：认可；严格分类：符合。</p><details><summary>查看逐项AI复核和来源摘要</summary><pre>{
+  &quot;task_id&quot;: &quot;AL07&quot;,
+  &quot;arm&quot;: &quot;full_skill&quot;,
+  &quot;reviewer_type&quot;: &quot;ai&quot;,
+  &quot;reviewer&quot;: &quot;Codex（本聊天主Agent，读取实际回答后逐义务复核）&quot;,
+  &quot;reviewed_at&quot;: &quot;2026-11-05&quot;,
+  &quot;independent&quot;: false,
+  &quot;case_digest&quot;: &quot;61288cabad751cc5a96415434a454d2775a9f2310a5be51e8fb405c4e2669276&quot;,
+  &quot;source_file&quot;: &quot;raw/full_skill/AL07/attempt-1.json&quot;,
+  &quot;source_sha256&quot;: &quot;93914caafe1243da0c218164d020da6f4b525188566be1ccd134ab8dae02e077&quot;,
+  &quot;prediction_digest&quot;: &quot;c481be1694572571c1b6f20252c2ca94b5dc6935c3aed621bab67d13f77683e6&quot;,
+  &quot;objects&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;实际对象符合题目固定背景。B(e1,e2)=1，故不是零双线性形式。&quot;
+  },
+  &quot;intervention&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;原输出removed及replacement与输入逐项相同；未改变指定目标结论。&quot;
+  },
+  &quot;hypothesis_alignment&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;逐ID对照输入及中文含义，未删改保留条件。输入已提供假设，这不是从自然语言提取测试。&quot;
+  },
+  &quot;retained&quot;: {
+    &quot;H2&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;F2上xt+ys（或ad+bc）对每个变量分别线性；交换变量因乘加交换而不变。&quot;
+    },
+    &quot;H3&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;B((x,y),(x,y))=2xy=0，因char(F2)=2。&quot;
+    }
+  },
+  &quot;replacement&quot;: {},
+  &quot;deleted&quot;: {
+    &quot;H1&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;F2的特征为2，与char(F)≠2相反。&quot;
+    }
+  },
+  &quot;target&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;B(e1,e2)=1，故不是零双线性形式。&quot;
+  },
+  &quot;preservation_proof&quot;: null,
+  &quot;argument&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;B(e1,e2)=1，故不是零双线性形式。&quot;
+  },
+  &quot;evidence_honesty&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;原输出只列数学论证，未声称调用计算、人工审阅或形式化核验；未知费用保持null。&quot;
+  },
+  &quot;witness_claimed&quot;: true,
+  &quot;dependency_report&quot;: {
+    &quot;complete&quot;: false,
+    &quot;reason&quot;: &quot;未给出完整带背景的结构化依赖边；该缺口与单次干预是否数学正确分开记录。&quot;
+  },
+  &quot;notes&quot;: []
+}</pre></details></article><article><h3>RA07 · Skill回答</h3><p>数学复核：认可；严格分类：符合。</p><details><summary>查看逐项AI复核和来源摘要</summary><pre>{
+  &quot;task_id&quot;: &quot;RA07&quot;,
+  &quot;arm&quot;: &quot;full_skill&quot;,
+  &quot;reviewer_type&quot;: &quot;ai&quot;,
+  &quot;reviewer&quot;: &quot;Codex（本聊天主Agent，读取实际回答后逐义务复核）&quot;,
+  &quot;reviewed_at&quot;: &quot;2026-11-05&quot;,
+  &quot;independent&quot;: false,
+  &quot;case_digest&quot;: &quot;e01b244dc7bb71d2e78550c3d97e42fe12896e5e4ba51a45aefd15327635e625&quot;,
+  &quot;source_file&quot;: &quot;raw/full_skill/RA07/attempt-1.json&quot;,
+  &quot;source_sha256&quot;: &quot;8c40adf02230998236e1d226968c6f2d9d221df617632baea75f5d8b4c2dbf79&quot;,
+  &quot;prediction_digest&quot;: &quot;27aa0f20563d2988fd6b7eb26637a82a8f2c4e2e2778ef7810ea288c9352a3f2&quot;,
+  &quot;objects&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;实际对象符合题目固定背景。非零集合的测度均为2，因此非几乎处处为零。&quot;
+  },
+  &quot;intervention&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;原输出removed及replacement与输入逐项相同；未改变指定目标结论。&quot;
+  },
+  &quot;hypothesis_alignment&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;逐ID对照输入及中文含义，未删改保留条件。输入已提供假设，这不是从自然语言提取测试。&quot;
+  },
+  &quot;retained&quot;: {
+    &quot;H1&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;直接组有限计数空间f取±1，绝对积分2；Skill组两个不交单位区间上的指示函数差，可测且绝对积分2。&quot;
+    },
+    &quot;H3&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;直接组1−1=0；Skill组两个单位区间测度之差1−1=0。&quot;
+    }
+  },
+  &quot;replacement&quot;: {},
+  &quot;deleted&quot;: {
+    &quot;H2&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;直接组b点测度1且f(b)=−1；Skill组[1,2)测度1且函数为−1。&quot;
+    }
+  },
+  &quot;target&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;非零集合的测度均为2，因此非几乎处处为零。&quot;
+  },
+  &quot;preservation_proof&quot;: null,
+  &quot;argument&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;非零集合的测度均为2，因此非几乎处处为零。&quot;
+  },
+  &quot;evidence_honesty&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;原输出只列数学论证，未声称调用计算、人工审阅或形式化核验；未知费用保持null。&quot;
+  },
+  &quot;witness_claimed&quot;: true,
+  &quot;dependency_report&quot;: {
+    &quot;complete&quot;: false,
+    &quot;reason&quot;: &quot;未给出完整带背景的结构化依赖边；该缺口与单次干预是否数学正确分开记录。&quot;
+  },
+  &quot;notes&quot;: [
+    &quot;两个构造均合法；测度空间不必与参考答案[0,1]相同。&quot;
+  ]
+}</pre></details></article><article><h3>CA09 · Skill回答</h3><p>数学复核：认可；严格分类：符合。</p><details><summary>查看逐项AI复核和来源摘要</summary><pre>{
+  &quot;task_id&quot;: &quot;CA09&quot;,
+  &quot;arm&quot;: &quot;full_skill&quot;,
+  &quot;reviewer_type&quot;: &quot;ai&quot;,
+  &quot;reviewer&quot;: &quot;Codex（本聊天主Agent，读取实际回答后逐义务复核）&quot;,
+  &quot;reviewed_at&quot;: &quot;2026-11-05&quot;,
+  &quot;independent&quot;: false,
+  &quot;case_digest&quot;: &quot;b8009db7d0a208a55291317929d40b892ffab6080530e56fee20e9e0bf72bd40&quot;,
+  &quot;source_file&quot;: &quot;raw/full_skill/CA09/attempt-1.json&quot;,
+  &quot;source_sha256&quot;: &quot;934766166a315c082c62e275cf465f97df702854386d75583778b77bc383964a&quot;,
+  &quot;prediction_digest&quot;: &quot;ba3225ee5ebfbccf8efce7c0d8e98028eaabff04c4bbaf09ccfd2b5dea733d50&quot;,
+  &quot;objects&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;实际对象符合题目固定背景。绝对值级数各项均1，前N+1项和为N+1，发散。&quot;
+  },
+  &quot;intervention&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;原输出removed及replacement与输入逐项相同；未改变指定目标结论。&quot;
+  },
+  &quot;hypothesis_alignment&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;逐ID对照输入及中文含义，未删改保留条件。输入已提供假设，这不是从自然语言提取测试。&quot;
+  },
+  &quot;retained&quot;: {
+    &quot;H1&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;几何级数在|z|&lt;1收敛、|z|&gt;1通项不趋零，所以收敛半径恰为1，正且有限。&quot;
+    }
+  },
+  &quot;replacement&quot;: {
+    &quot;H2w&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;取z=1、R=1，有|z|≤R。&quot;
+    }
+  },
+  &quot;deleted&quot;: {
+    &quot;H2&quot;: {
+      &quot;valid&quot;: true,
+      &quot;reason&quot;: &quot;|z|=R=1，不满足严格不等式。&quot;
+    }
+  },
+  &quot;target&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;绝对值级数各项均1，前N+1项和为N+1，发散。&quot;
+  },
+  &quot;preservation_proof&quot;: null,
+  &quot;argument&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;绝对值级数各项均1，前N+1项和为N+1，发散。&quot;
+  },
+  &quot;evidence_honesty&quot;: {
+    &quot;valid&quot;: true,
+    &quot;reason&quot;: &quot;原输出只列数学论证，未声称调用计算、人工审阅或形式化核验；未知费用保持null。&quot;
+  },
+  &quot;witness_claimed&quot;: true,
+  &quot;dependency_report&quot;: {
+    &quot;complete&quot;: false,
+    &quot;reason&quot;: &quot;未给出完整带背景的结构化依赖边；该缺口与单次干预是否数学正确分开记录。&quot;
+  },
+  &quot;notes&quot;: []
+}</pre></details></article><article><h3>U-MA</h3><p>通过（限定版本）</p><p>准确指出收敛方式、积分种类与域未指定。有限测度的一致收敛估计成立，因f−fn0有界可积可补足f可积；n·1_(0,1/n)逐点趋零而积分1；一般测度DCT不需要总测度有限。</p><p>并非任意收敛都可交换；未完成原始歧义定理的唯一解释。</p></article><article><h3>U-AL</h3><p>通过（限定版本）</p><p>复对称矩阵[[1,i],[i,−1]]非零且平方零，不能相似对角化；有理对称矩阵特征多项式t²−t−1在Q无根。Hermitian酉对角化明确是另一个版本。</p><p>没有给出所有底域的完整分类；未误称复对称必酉对角化。</p></article><article><h3>U-RA</h3><p>通过，附论证省略提示</p><p>非负阈值集论证正确；ae非负时还需将负值零测集并入例外集，输出未写此句。f(x)=x在[−1,1]积分零非ae零；单点指示函数可反驳处处为零。</p><p>原文集合花括号多余转义属显示问题；ae非负的负值例外集步骤有省略，AI在此补充而不改原答。</p></article><article><h3>U-CA</h3><p>通过（限定版本）</p><p>sin(πz)无穷零点但无域内有限聚点；不连通两圆盘分别常0/1全纯；dist(z,S)连续非恒零且在1/n为零，明确是放宽函数类别。</p><p>这些是限定解释；不构成所有可能解析含义的分类。</p></article><article><h3>B-MA</h3><p>未取得模型回答</p><p>HTTP 200包含service_unavailable_error；没有数学答案可审核。</p><p>运行缺口，不计数学反例正确或错误。</p></article><article><h3>B-AL</h3><p>已回答部分数学通过</p><p>零维约定明确，n=0空基对角化合法；n≥1用互异特征值特征向量成基；非零二阶Jordan块核一维不可对角化。</p><p>仅2/4单项，组合未分析。正维改为非负维为明示约定，原文若坚持正整数对象背景则需条件化解释。</p></article><article><h3>B-RA</h3><p>未取得模型回答</p><p>HTTP 200包含service_unavailable_error；没有数学答案可审核。</p><p>运行缺口，不计数学反例正确或错误。</p></article><article><h3>B-CA</h3><p>数学反例通过；原始结构失败</p><p>单位圆盘恒等函数全纯有界且非恒定；全平面恒等函数全纯、非恒定，并显式沿n无界。</p><p>两个干预task_id均为B-CA，另加id不能满足原协议；原答不修补、不重计通过。仅2/3单项，组合未分析。</p></article></body></html>

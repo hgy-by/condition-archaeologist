@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-05",
+  "model": "gpt-6-sol",
+  "model_version": "capture_actual_response_model",
+  "provider_origin": "api.aixhan.com",
+  "reasoning_effort": "high",
+  "max_output_tokens": 8000,
+  "timeout_seconds": 180,
+  "concurrent_requests": 2,
+  "task_count": 15,
+  "planned_model_calls": 30,
+  "permissions": "no model tools, filesystem or conversation history",
+  "sampling_settings": "temperature omitted; provider default; effort and token cap fixed",
+  "retrieval": "none; seeds and all reference answers excluded",
+  "skill_mode": "text-loaded workflow; not native Codex skill discovery or tool-use evaluation",
+  "skill_files_sha256": {
+    "SKILL.md": "71944e3b42abc391bd0686816c5809bff47558a6914cf83178b4dcce94033d1f",
+    "references/judgment-protocol.md": "544364d91419716ce057d51fe23d215933ced52244af7f2176efbffa97af8c8b",
+    "references/strategies.md": "0d5311bc3eeaec630ac95319a27c6346f89c5f4ea6f3dd2a165e08f21167f23a",
+    "references/verification.md": "a39d4bf923e7f50dc80031c9e73ce3657e2ff3af756613d5519dddc4ad2a614a",
+    "references/output-schema.md": "e6aa07a6702690b0da6b0b8b46f62fd6d0e88bc2a94b698bf703030807af5b09"
+  },
+  "shared_format_instructions_sha256": "db4129d6ed10ec9eca67906e01ff26a90d708fdae28a6ad417933f23fede65d3",
+  "dataset": "development only; familiar tasks; no generalization or blind score claim",
+  "human_reference_result": "user reports all 29 passed without corrections",
+  "item_review_files_received": false,
+  "formal_scoring": "not performed; actual model answers require independent review",
+  "retries": 0,
+  "cost_usd": null,
+  "source": "https://developers.openai.com/api/docs/guides/reasoning"
+}

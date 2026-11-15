@@ -1,0 +1,286 @@
+{
+  "note": "This is an audit bundle of multiple explicit runs, not one model experiment.",
+  "paired_comparison": "balanced validation only",
+  "sources": [
+    {
+      "task_id": "MA05",
+      "arm": "direct_model",
+      "source_run": "validation-balanced-v0.2.1-2026-11-05",
+      "source_file": "validation-balanced-v0.2.1-2026-11-05/raw/direct_model/MA05/attempt-1.json",
+      "review_bundle_file": "raw/direct_model/MA05/attempt-1.json",
+      "sha256": "b73b6b813c8370434f48dbc3a8f5aa3474339e1cb8a0197ba12589a566a67c0a"
+    },
+    {
+      "task_id": "MA05",
+      "arm": "full_skill",
+      "source_run": "validation-balanced-v0.2.1-2026-11-05",
+      "source_file": "validation-balanced-v0.2.1-2026-11-05/raw/full_skill/MA05/attempt-1.json",
+      "review_bundle_file": "raw/full_skill/MA05/attempt-1.json",
+      "sha256": "f7ea275df08025656b282e7bb932b61a099b41ebd5f9b399a224a4ec9a4fe014"
+    },
+    {
+      "task_id": "MA06",
+      "arm": "direct_model",
+      "source_run": "validation-balanced-v0.2.1-2026-11-05",
+      "source_file": "validation-balanced-v0.2.1-2026-11-05/raw/direct_model/MA06/attempt-1.json",
+      "review_bundle_file": "raw/direct_model/MA06/attempt-1.json",
+      "sha256": "326bdf4aac22bd22944531d7a3b2262e4386489426789a7bd2bb037f4cc3d71c"
+    },
+    {
+      "task_id": "MA06",
+      "arm": "full_skill",
+      "source_run": "validation-balanced-v0.2.1-2026-11-05",
+      "source_file": "validation-balanced-v0.2.1-2026-11-05/raw/full_skill/MA06/attempt-1.json",
+      "review_bundle_file": "raw/full_skill/MA06/attempt-1.json",
+      "sha256": "c277ee96d88e64427773cb9db06d7219983a7620b424f9e2a95b157465a030e8"
+    },
+    {
+      "task_id": "MA07",
+      "arm": "direct_model",
+      "source_run": "validation-balanced-v0.2.1-2026-11-05",
+      "source_file": "validation-balanced-v0.2.1-2026-11-05/raw/direct_model/MA07/attempt-1.json",
+      "review_bundle_file": "raw/direct_model/MA07/attempt-1.json",
+      "sha256": "c2b16f57fe780ecc645f69cdf991a16a9721de06b0124d666e5f348b05e249de"
+    },
+    {
+      "task_id": "MA07",
+      "arm": "full_skill",
+      "source_run": "validation-balanced-v0.2.1-2026-11-05",
+      "source_file": "validation-balanced-v0.2.1-2026-11-05/raw/full_skill/MA07/attempt-1.json",
+      "review_bundle_file": "raw/full_skill/MA07/attempt-1.json",
+      "sha256": "9fccbca9cd5688936007b295ae24404ecba16cc02f1f40477af9c062bf4d9b21"
+    },
+    {
+      "task_id": "MA08",
+      "arm": "direct_model",
+      "source_run": "validation-balanced-v0.2.1-2026-11-05",
+      "source_file": "validation-balanced-v0.2.1-2026-11-05/raw/direct_model/MA08/attempt-1.json",
+      "review_bundle_file": "raw/direct_model/MA08/attempt-1.json",
+      "sha256": "b242c9b2b01d7980df1a28f3a9c839e70d50bcd050e6df8b5e81570a63bfa021"
+    },
+    {
+      "task_id": "MA08",
+      "arm": "full_skill",
+      "source_run": "validation-balanced-v0.2.1-2026-11-05",
+      "source_file": "validation-balanced-v0.2.1-2026-11-05/raw/full_skill/MA08/attempt-1.json",
+      "review_bundle_file": "raw/full_skill/MA08/attempt-1.json",
+      "sha256": "0702141dd6555900f59c8bcf7443ddd1ba6d4e072b244073e90af97e400f1f45"
+    },
+    {
+      "task_id": "AL05",
+      "arm": "direct_model",
+      "source_run": "validation-balanced-v0.2.1-2026-11-05",
+      "source_file": "validation-balanced-v0.2.1-2026-11-05/raw/direct_model/AL05/attempt-1.json",
+      "review_bundle_file": "raw/direct_model/AL05/attempt-1.json",
+      "sha256": "7f317e7d0e2c56f957f2c67cf6fc6b36d90102da2fd7ca7248eb7005cb20860d"
+    },
+    {
+      "task_id": "AL05",
+      "arm": "full_skill",
+      "source_run": "validation-balanced-v0.2.1-2026-11-05",
+      "source_file": "validation-balanced-v0.2.1-2026-11-05/raw/full_skill/AL05/attempt-1.json",
+      "review_bundle_file": "raw/full_skill/AL05/attempt-1.json",
+      "sha256": "662a2228a2a05fef7734b8d3b989af54549dc025955fd7c1540d1e10061bd707"
+    },
+    {
+      "task_id": "RA05",
+      "arm": "direct_model",
+      "source_run": "validation-balanced-v0.2.1-2026-11-05",
+      "source_file": "validation-balanced-v0.2.1-2026-11-05/raw/direct_model/RA05/attempt-1.json",
+      "review_bundle_file": "raw/direct_model/RA05/attempt-1.json",
+      "sha256": "c96daa6d0306002a8dd12ddf41cd7680d56ca0fdbc81f35263fd4600bc8316ad"
+    },
+    {
+      "task_id": "RA05",
+      "arm": "direct_model",
+      "source_run": "validation-balanced-v0.2.1-2026-11-05",
+      "source_file": "validation-balanced-v0.2.1-2026-11-05/raw/direct_model/RA05/attempt-2.json",
+      "review_bundle_file": "raw/direct_model/RA05/attempt-2.json",
+      "sha256": "5c5b2e79ac7f6c82318fe7f36bb1e8ab1a8279589de4ed90e2bed13a90fe9000"
+    },
+    {
+      "task_id": "RA05",
+      "arm": "full_skill",
+      "source_run": "validation-balanced-v0.2.1-2026-11-05",
+      "source_file": "validation-balanced-v0.2.1-2026-11-05/raw/full_skill/RA05/attempt-1.json",
+      "review_bundle_file": "raw/full_skill/RA05/attempt-1.json",
+      "sha256": "6aab1a35ba0acd5313048bc257cf4c3ca7df806fa5101fc6775abea59fa76634"
+    },
+    {
+      "task_id": "RA05",
+      "arm": "full_skill",
+      "source_run": "validation-balanced-v0.2.1-2026-11-05",
+      "source_file": "validation-balanced-v0.2.1-2026-11-05/raw/full_skill/RA05/attempt-2.json",
+      "review_bundle_file": "raw/full_skill/RA05/attempt-2.json",
+      "sha256": "f0c3cc8470386fb9e811d71cd3c62ede415facb5cab4068113aa6569f28c67d3"
+    },
+    {
+      "task_id": "CA06",
+      "arm": "direct_model",
+      "source_run": "validation-balanced-v0.2.1-2026-11-05",
+      "source_file": "validation-balanced-v0.2.1-2026-11-05/raw/direct_model/CA06/attempt-1.json",
+      "review_bundle_file": "raw/direct_model/CA06/attempt-1.json",
+      "sha256": "92433e248b92318939be68e54d427107bb5b8a460f8fb2dfa1f15bc09e2e49bf"
+    },
+    {
+      "task_id": "CA06",
+      "arm": "direct_model",
+      "source_run": "validation-balanced-v0.2.1-2026-11-05",
+      "source_file": "validation-balanced-v0.2.1-2026-11-05/raw/direct_model/CA06/attempt-2.json",
+      "review_bundle_file": "raw/direct_model/CA06/attempt-2.json",
+      "sha256": "2449b7d523fb0fc7517e90b868007906a38919f14c9effc82496681fe036066c"
+    },
+    {
+      "task_id": "CA06",
+      "arm": "full_skill",
+      "source_run": "validation-balanced-v0.2.1-2026-11-05",
+      "source_file": "validation-balanced-v0.2.1-2026-11-05/raw/full_skill/CA06/attempt-1.json",
+      "review_bundle_file": "raw/full_skill/CA06/attempt-1.json",
+      "sha256": "fad236ebe4c88b3b8948feb0afda6623774933aafe70f436b0e0fc63151a21f4"
+    },
+    {
+      "task_id": "CA06",
+      "arm": "full_skill",
+      "source_run": "validation-balanced-v0.2.1-2026-11-05",
+      "source_file": "validation-balanced-v0.2.1-2026-11-05/raw/full_skill/CA06/attempt-2.json",
+      "review_bundle_file": "raw/full_skill/CA06/attempt-2.json",
+      "sha256": "cc7575985f4dabfb2774fbecc6572a1ee3a7866b92a871dc121325817a0d4af6"
+    },
+    {
+      "task_id": "CA07",
+      "arm": "direct_model",
+      "source_run": "validation-balanced-v0.2.1-2026-11-05",
+      "source_file": "validation-balanced-v0.2.1-2026-11-05/raw/direct_model/CA07/attempt-1.json",
+      "review_bundle_file": "raw/direct_model/CA07/attempt-1.json",
+      "sha256": "ee819d96ac42b9b9eb549c36c47fb1a538798acafb75bd3f35ec545636862fcc"
+    },
+    {
+      "task_id": "CA07",
+      "arm": "direct_model",
+      "source_run": "validation-balanced-v0.2.1-2026-11-05",
+      "source_file": "validation-balanced-v0.2.1-2026-11-05/raw/direct_model/CA07/attempt-2.json",
+      "review_bundle_file": "raw/direct_model/CA07/attempt-2.json",
+      "sha256": "a4a88cc130b655fe1bd19a45c10541ca913aa57f29f9c899b284d69d1b828607"
+    },
+    {
+      "task_id": "CA07",
+      "arm": "full_skill",
+      "source_run": "validation-balanced-v0.2.1-2026-11-05",
+      "source_file": "validation-balanced-v0.2.1-2026-11-05/raw/full_skill/CA07/attempt-1.json",
+      "review_bundle_file": "raw/full_skill/CA07/attempt-1.json",
+      "sha256": "ed8dde0c347bd235e419e9e30aed28c00657245c54fec84c5e85ce01c3489160"
+    },
+    {
+      "task_id": "AL07",
+      "arm": "direct_model",
+      "source_run": "validation-balanced-v0.2.1-2026-11-05",
+      "source_file": "validation-balanced-v0.2.1-2026-11-05/raw/direct_model/AL07/attempt-1.json",
+      "review_bundle_file": "raw/direct_model/AL07/attempt-1.json",
+      "sha256": "dda792bd7cf8243e6eedca68522fbea95fa674aece057a33709d1f5948e57ff3"
+    },
+    {
+      "task_id": "AL07",
+      "arm": "full_skill",
+      "source_run": "validation-balanced-v0.2.1-2026-11-05",
+      "source_file": "validation-balanced-v0.2.1-2026-11-05/raw/full_skill/AL07/attempt-1.json",
+      "review_bundle_file": "raw/full_skill/AL07/attempt-1.json",
+      "sha256": "93914caafe1243da0c218164d020da6f4b525188566be1ccd134ab8dae02e077"
+    },
+    {
+      "task_id": "RA07",
+      "arm": "direct_model",
+      "source_run": "validation-balanced-v0.2.1-2026-11-05",
+      "source_file": "validation-balanced-v0.2.1-2026-11-05/raw/direct_model/RA07/attempt-1.json",
+      "review_bundle_file": "raw/direct_model/RA07/attempt-1.json",
+      "sha256": "2c9aac6535e76df514782dec69f15ce0f5ba9fca9a0d20764cbbb2eacf26113d"
+    },
+    {
+      "task_id": "RA07",
+      "arm": "full_skill",
+      "source_run": "validation-balanced-v0.2.1-2026-11-05",
+      "source_file": "validation-balanced-v0.2.1-2026-11-05/raw/full_skill/RA07/attempt-1.json",
+      "review_bundle_file": "raw/full_skill/RA07/attempt-1.json",
+      "sha256": "8c40adf02230998236e1d226968c6f2d9d221df617632baea75f5d8b4c2dbf79"
+    },
+    {
+      "task_id": "CA09",
+      "arm": "direct_model",
+      "source_run": "validation-balanced-v0.2.1-2026-11-05",
+      "source_file": "validation-balanced-v0.2.1-2026-11-05/raw/direct_model/CA09/attempt-1.json",
+      "review_bundle_file": "raw/direct_model/CA09/attempt-1.json",
+      "sha256": "2ab0f7f843ad1c842bf295a7b71cd71a018556a1446379c9754f633486b2c49f"
+    },
+    {
+      "task_id": "CA09",
+      "arm": "full_skill",
+      "source_run": "validation-balanced-v0.2.1-2026-11-05",
+      "source_file": "validation-balanced-v0.2.1-2026-11-05/raw/full_skill/CA09/attempt-1.json",
+      "review_bundle_file": "raw/full_skill/CA09/attempt-1.json",
+      "sha256": "934766166a315c082c62e275cf465f97df702854386d75583778b77bc383964a"
+    },
+    {
+      "task_id": "U-MA",
+      "arm": "full_skill",
+      "source_run": "validation-comparison-v0.2.1-2026-11-05",
+      "source_file": "validation-comparison-v0.2.1-2026-11-05/raw/full_skill/U-MA/attempt-1.json",
+      "review_bundle_file": "raw/full_skill/U-MA/attempt-1.json",
+      "sha256": "b3dc1b97c4db947ed065bcde4dac46182ca9c5ff1f0c5fe76391b5cddcb11f92"
+    },
+    {
+      "task_id": "U-AL",
+      "arm": "full_skill",
+      "source_run": "validation-comparison-v0.2.1-2026-11-05",
+      "source_file": "validation-comparison-v0.2.1-2026-11-05/raw/full_skill/U-AL/attempt-1.json",
+      "review_bundle_file": "raw/full_skill/U-AL/attempt-1.json",
+      "sha256": "f8f3aacb3050c299f15cf93fabb3dda2681df75ddcc6583f25a3e0930644ac58"
+    },
+    {
+      "task_id": "U-RA",
+      "arm": "full_skill",
+      "source_run": "validation-comparison-v0.2.1-2026-11-05",
+      "source_file": "validation-comparison-v0.2.1-2026-11-05/raw/full_skill/U-RA/attempt-1.json",
+      "review_bundle_file": "raw/full_skill/U-RA/attempt-1.json",
+      "sha256": "0238c6c9e085c5303c19b38a5f2ba9ac929b0022ccba29aecc6414fe8b277945"
+    },
+    {
+      "task_id": "U-CA",
+      "arm": "full_skill",
+      "source_run": "validation-comparison-v0.2.1-2026-11-05",
+      "source_file": "validation-comparison-v0.2.1-2026-11-05/raw/full_skill/U-CA/attempt-1.json",
+      "review_bundle_file": "raw/full_skill/U-CA/attempt-1.json",
+      "sha256": "fef2c2e0c50409523b694028f7971c1bf3fc657c9386365f2de577000abc8805"
+    },
+    {
+      "task_id": "B-MA",
+      "arm": "full_skill",
+      "source_run": "full-theorem-bounded-v0.2.1-2026-11-05",
+      "source_file": "full-theorem-bounded-v0.2.1-2026-11-05/raw/full_skill/B-MA/attempt-1.json",
+      "review_bundle_file": "raw/full_skill/B-MA/attempt-1.json",
+      "sha256": "14abe3705fec601ab693217809f76bd27af1abb67f803a74d3ba872c065b5a8c"
+    },
+    {
+      "task_id": "B-AL",
+      "arm": "full_skill",
+      "source_run": "full-theorem-bounded-v0.2.1-2026-11-05",
+      "source_file": "full-theorem-bounded-v0.2.1-2026-11-05/raw/full_skill/B-AL/attempt-1.json",
+      "review_bundle_file": "raw/full_skill/B-AL/attempt-1.json",
+      "sha256": "3edbffb397950172d625b497d8f4e97bce92876bc080f430e5caa7214ced818f"
+    },
+    {
+      "task_id": "B-RA",
+      "arm": "full_skill",
+      "source_run": "full-theorem-bounded-v0.2.1-2026-11-05",
+      "source_file": "full-theorem-bounded-v0.2.1-2026-11-05/raw/full_skill/B-RA/attempt-1.json",
+      "review_bundle_file": "raw/full_skill/B-RA/attempt-1.json",
+      "sha256": "e8d33606fb9d4f616131468f7c75eb77ec5916dc0e302de04c65d260a2f28771"
+    },
+    {
+      "task_id": "B-CA",
+      "arm": "full_skill",
+      "source_run": "full-theorem-bounded-v0.2.1-2026-11-05",
+      "source_file": "full-theorem-bounded-v0.2.1-2026-11-05/raw/full_skill/B-CA/attempt-1.json",
+      "review_bundle_file": "raw/full_skill/B-CA/attempt-1.json",
+      "sha256": "f7feea29bb2bdb938e624ded38c4e7ea0759c21584040d872b4208be80048d54"
+    }
+  ]
+}

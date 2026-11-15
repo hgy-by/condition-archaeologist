@@ -1,0 +1,1867 @@
+{
+  "status": "ai_reviewed_internal",
+  "review_mode": "controller_AI_source_bound_review",
+  "reviewer_blinded_to_arms": false,
+  "independent_human": false,
+  "run_config_digest": "80c216cad0c73a42bcca6f3355ff3c1cc2c0c7212b14740644e59658e339b6bc",
+  "reviews_digest": "57fe9c68f5b3898c2e78aba6f427886130375b4970a5b27b5fcab635b8100f60",
+  "metrics": {
+    "direct_model": {
+      "planned": 4,
+      "answers": 4,
+      "full_theorem_math_success": {
+        "numerator": 4,
+        "denominator": 4,
+        "rate": 1.0
+      },
+      "full_theorem_protocol_success": {
+        "numerator": 0,
+        "denominator": 4,
+        "rate": 0.0
+      },
+      "raw_text_hypothesis_recall": {
+        "numerator": 17,
+        "denominator": 17,
+        "rate": 1.0
+      },
+      "raw_text_hypothesis_precision": {
+        "numerator": 17,
+        "denominator": 17,
+        "rate": 1.0
+      },
+      "witness_precision": {
+        "numerator": 13,
+        "denominator": 13,
+        "rate": 1.0
+      },
+      "full_theorem_witness_precision": {
+        "numerator": 13,
+        "denominator": 13,
+        "rate": 1.0
+      },
+      "intervention_math_success": {
+        "numerator": 14,
+        "denominator": 14,
+        "rate": 1.0
+      },
+      "evidence_honesty": {
+        "numerator": 4,
+        "denominator": 4,
+        "rate": 1.0
+      },
+      "by_judgment": {
+        "indispensable": {
+          "numerator": 9,
+          "denominator": 9,
+          "rate": 1.0
+        },
+        "implied": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "removable": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "joint": {
+          "numerator": 4,
+          "denominator": 4,
+          "rate": 1.0
+        },
+        "type_constraint": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "unresolved": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "statement_issue": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      }
+    },
+    "old_skill": {
+      "planned": 4,
+      "answers": 4,
+      "full_theorem_math_success": {
+        "numerator": 4,
+        "denominator": 4,
+        "rate": 1.0
+      },
+      "full_theorem_protocol_success": {
+        "numerator": 4,
+        "denominator": 4,
+        "rate": 1.0
+      },
+      "raw_text_hypothesis_recall": {
+        "numerator": 17,
+        "denominator": 17,
+        "rate": 1.0
+      },
+      "raw_text_hypothesis_precision": {
+        "numerator": 17,
+        "denominator": 17,
+        "rate": 1.0
+      },
+      "witness_precision": {
+        "numerator": 13,
+        "denominator": 13,
+        "rate": 1.0
+      },
+      "full_theorem_witness_precision": {
+        "numerator": 13,
+        "denominator": 13,
+        "rate": 1.0
+      },
+      "intervention_math_success": {
+        "numerator": 16,
+        "denominator": 16,
+        "rate": 1.0
+      },
+      "evidence_honesty": {
+        "numerator": 4,
+        "denominator": 4,
+        "rate": 1.0
+      },
+      "by_judgment": {
+        "indispensable": {
+          "numerator": 9,
+          "denominator": 9,
+          "rate": 1.0
+        },
+        "implied": {
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1.0
+        },
+        "removable": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "joint": {
+          "numerator": 4,
+          "denominator": 4,
+          "rate": 1.0
+        },
+        "type_constraint": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "unresolved": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "statement_issue": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      }
+    },
+    "full_skill": {
+      "planned": 13,
+      "answers": 13,
+      "full_theorem_math_success": {
+        "numerator": 3,
+        "denominator": 4,
+        "rate": 0.75
+      },
+      "full_theorem_protocol_success": {
+        "numerator": 3,
+        "denominator": 4,
+        "rate": 0.75
+      },
+      "raw_text_hypothesis_recall": {
+        "numerator": 12,
+        "denominator": 17,
+        "rate": 0.7058823529411765
+      },
+      "raw_text_hypothesis_precision": {
+        "numerator": 12,
+        "denominator": 12,
+        "rate": 1.0
+      },
+      "witness_precision": {
+        "numerator": 13,
+        "denominator": 13,
+        "rate": 1.0
+      },
+      "full_theorem_witness_precision": {
+        "numerator": 8,
+        "denominator": 8,
+        "rate": 1.0
+      },
+      "intervention_math_success": {
+        "numerator": 18,
+        "denominator": 18,
+        "rate": 1.0
+      },
+      "evidence_honesty": {
+        "numerator": 12,
+        "denominator": 12,
+        "rate": 1.0
+      },
+      "by_judgment": {
+        "indispensable": {
+          "numerator": 6,
+          "denominator": 6,
+          "rate": 1.0
+        },
+        "implied": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "removable": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "joint": {
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1.0
+        },
+        "type_constraint": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "unresolved": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "statement_issue": {
+          "numerator": 4,
+          "denominator": 4,
+          "rate": 1.0
+        }
+      }
+    },
+    "without_strategies": {
+      "planned": 4,
+      "answers": 4,
+      "full_theorem_math_success": {
+        "numerator": 3,
+        "denominator": 4,
+        "rate": 0.75
+      },
+      "full_theorem_protocol_success": {
+        "numerator": 3,
+        "denominator": 4,
+        "rate": 0.75
+      },
+      "raw_text_hypothesis_recall": {
+        "numerator": 12,
+        "denominator": 17,
+        "rate": 0.7058823529411765
+      },
+      "raw_text_hypothesis_precision": {
+        "numerator": 12,
+        "denominator": 12,
+        "rate": 1.0
+      },
+      "witness_precision": {
+        "numerator": 9,
+        "denominator": 9,
+        "rate": 1.0
+      },
+      "full_theorem_witness_precision": {
+        "numerator": 9,
+        "denominator": 9,
+        "rate": 1.0
+      },
+      "intervention_math_success": {
+        "numerator": 11,
+        "denominator": 11,
+        "rate": 1.0
+      },
+      "evidence_honesty": {
+        "numerator": 3,
+        "denominator": 3,
+        "rate": 1.0
+      },
+      "by_judgment": {
+        "indispensable": {
+          "numerator": 6,
+          "denominator": 6,
+          "rate": 1.0
+        },
+        "implied": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "removable": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "joint": {
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1.0
+        },
+        "type_constraint": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "unresolved": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "statement_issue": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      }
+    },
+    "without_verification": {
+      "planned": 4,
+      "answers": 4,
+      "full_theorem_math_success": {
+        "numerator": 4,
+        "denominator": 4,
+        "rate": 1.0
+      },
+      "full_theorem_protocol_success": {
+        "numerator": 4,
+        "denominator": 4,
+        "rate": 1.0
+      },
+      "raw_text_hypothesis_recall": {
+        "numerator": 17,
+        "denominator": 17,
+        "rate": 1.0
+      },
+      "raw_text_hypothesis_precision": {
+        "numerator": 17,
+        "denominator": 17,
+        "rate": 1.0
+      },
+      "witness_precision": {
+        "numerator": 13,
+        "denominator": 13,
+        "rate": 1.0
+      },
+      "full_theorem_witness_precision": {
+        "numerator": 13,
+        "denominator": 13,
+        "rate": 1.0
+      },
+      "intervention_math_success": {
+        "numerator": 16,
+        "denominator": 16,
+        "rate": 1.0
+      },
+      "evidence_honesty": {
+        "numerator": 4,
+        "denominator": 4,
+        "rate": 1.0
+      },
+      "by_judgment": {
+        "indispensable": {
+          "numerator": 9,
+          "denominator": 9,
+          "rate": 1.0
+        },
+        "implied": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "removable": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "joint": {
+          "numerator": 4,
+          "denominator": 4,
+          "rate": 1.0
+        },
+        "type_constraint": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "unresolved": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "statement_issue": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      }
+    }
+  },
+  "per_task": [
+    {
+      "task_id": "FINAL-MA",
+      "arm": "direct_model",
+      "kind": "full_theorem",
+      "family_id": "monotone-sequence-completeness",
+      "answer": true,
+      "math_success": true,
+      "protocol_success": false,
+      "interventions": [
+        {
+          "index": 0,
+          "task_id": "FINAL-MA",
+          "label": "indispensable",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        },
+        {
+          "index": 1,
+          "task_id": "FINAL-MA",
+          "label": "indispensable",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        },
+        {
+          "index": 2,
+          "task_id": "FINAL-MA",
+          "label": "joint",
+          "removed_count": 2,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        }
+      ],
+      "hypothesis_matches": 3,
+      "hypothesis_expected": 3,
+      "hypothesis_reported": 3,
+      "uncertainty_honest": true,
+      "runtime_failure": false,
+      "component_findings": {
+        "objects": true,
+        "mathematical_correctness": true,
+        "uncertainty_honesty": true,
+        "hypothesis_extraction": true,
+        "conclusion_extraction": true,
+        "single_condition_coverage": true,
+        "dependency_reporting": true,
+        "remaining_work": true
+      },
+      "limitations": [
+        "抽取计数按原文语义单元：包括固定背景，不因不同原子化/编号方式惩罚；不是形式化解析器的输出。",
+        "只检验全部单项干预及至多一个组合，不检验任意弱化或全组合。",
+        "直接组共同提示提供单项字段示例但没有Skill里的唯一编号细则；其格式失败不据以宣称数学能力差。AL保留核验还带额外背景ID，按原结构协议失败。"
+      ]
+    },
+    {
+      "task_id": "FINAL-MA",
+      "arm": "old_skill",
+      "kind": "full_theorem",
+      "family_id": "monotone-sequence-completeness",
+      "answer": true,
+      "math_success": true,
+      "protocol_success": true,
+      "interventions": [
+        {
+          "index": 0,
+          "task_id": "FINAL-MA-H1",
+          "label": "indispensable",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        },
+        {
+          "index": 1,
+          "task_id": "FINAL-MA-H2",
+          "label": "indispensable",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        },
+        {
+          "index": 2,
+          "task_id": "FINAL-MA-H1-H2",
+          "label": "joint",
+          "removed_count": 2,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        }
+      ],
+      "hypothesis_matches": 3,
+      "hypothesis_expected": 3,
+      "hypothesis_reported": 3,
+      "uncertainty_honest": true,
+      "runtime_failure": false,
+      "component_findings": {
+        "objects": true,
+        "mathematical_correctness": true,
+        "uncertainty_honesty": true,
+        "hypothesis_extraction": true,
+        "conclusion_extraction": true,
+        "single_condition_coverage": true,
+        "dependency_reporting": true,
+        "remaining_work": true
+      },
+      "limitations": [
+        "抽取计数按原文语义单元：包括固定背景，不因不同原子化/编号方式惩罚；不是形式化解析器的输出。",
+        "只检验全部单项干预及至多一个组合，不检验任意弱化或全组合。"
+      ]
+    },
+    {
+      "task_id": "FINAL-MA",
+      "arm": "full_skill",
+      "kind": "full_theorem",
+      "family_id": "monotone-sequence-completeness",
+      "answer": true,
+      "math_success": true,
+      "protocol_success": true,
+      "interventions": [
+        {
+          "index": 0,
+          "task_id": "FINAL-MA-H1",
+          "label": "indispensable",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        },
+        {
+          "index": 1,
+          "task_id": "FINAL-MA-H2",
+          "label": "indispensable",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        }
+      ],
+      "hypothesis_matches": 3,
+      "hypothesis_expected": 3,
+      "hypothesis_reported": 3,
+      "uncertainty_honest": true,
+      "runtime_failure": false,
+      "component_findings": {
+        "objects": true,
+        "mathematical_correctness": true,
+        "uncertainty_honesty": true,
+        "hypothesis_extraction": true,
+        "conclusion_extraction": true,
+        "single_condition_coverage": true,
+        "dependency_reporting": true,
+        "remaining_work": true
+      },
+      "limitations": [
+        "抽取计数按原文语义单元：包括固定背景，不因不同原子化/编号方式惩罚；不是形式化解析器的输出。",
+        "只检验全部单项干预及至多一个组合，不检验任意弱化或全组合。"
+      ]
+    },
+    {
+      "task_id": "FINAL-MA",
+      "arm": "without_strategies",
+      "kind": "full_theorem",
+      "family_id": "monotone-sequence-completeness",
+      "answer": true,
+      "math_success": true,
+      "protocol_success": true,
+      "interventions": [
+        {
+          "index": 0,
+          "task_id": "FINAL-MA-H1",
+          "label": "indispensable",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        },
+        {
+          "index": 1,
+          "task_id": "FINAL-MA-H2",
+          "label": "indispensable",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        },
+        {
+          "index": 2,
+          "task_id": "FINAL-MA-H1H2",
+          "label": "joint",
+          "removed_count": 2,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        }
+      ],
+      "hypothesis_matches": 3,
+      "hypothesis_expected": 3,
+      "hypothesis_reported": 3,
+      "uncertainty_honest": true,
+      "runtime_failure": false,
+      "component_findings": {
+        "objects": true,
+        "mathematical_correctness": true,
+        "uncertainty_honesty": true,
+        "hypothesis_extraction": true,
+        "conclusion_extraction": true,
+        "single_condition_coverage": true,
+        "dependency_reporting": true,
+        "remaining_work": true
+      },
+      "limitations": [
+        "抽取计数按原文语义单元：包括固定背景，不因不同原子化/编号方式惩罚；不是形式化解析器的输出。",
+        "只检验全部单项干预及至多一个组合，不检验任意弱化或全组合。"
+      ]
+    },
+    {
+      "task_id": "FINAL-MA",
+      "arm": "without_verification",
+      "kind": "full_theorem",
+      "family_id": "monotone-sequence-completeness",
+      "answer": true,
+      "math_success": true,
+      "protocol_success": true,
+      "interventions": [
+        {
+          "index": 0,
+          "task_id": "FINAL-MA-H1",
+          "label": "indispensable",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        },
+        {
+          "index": 1,
+          "task_id": "FINAL-MA-H2",
+          "label": "indispensable",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        },
+        {
+          "index": 2,
+          "task_id": "FINAL-MA-H1-H2",
+          "label": "joint",
+          "removed_count": 2,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        }
+      ],
+      "hypothesis_matches": 3,
+      "hypothesis_expected": 3,
+      "hypothesis_reported": 3,
+      "uncertainty_honest": true,
+      "runtime_failure": false,
+      "component_findings": {
+        "objects": true,
+        "mathematical_correctness": true,
+        "uncertainty_honesty": true,
+        "hypothesis_extraction": true,
+        "conclusion_extraction": true,
+        "single_condition_coverage": true,
+        "dependency_reporting": true,
+        "remaining_work": true
+      },
+      "limitations": [
+        "抽取计数按原文语义单元：包括固定背景，不因不同原子化/编号方式惩罚；不是形式化解析器的输出。",
+        "只检验全部单项干预及至多一个组合，不检验任意弱化或全组合。"
+      ]
+    },
+    {
+      "task_id": "FINAL-AL",
+      "arm": "direct_model",
+      "kind": "full_theorem",
+      "family_id": "quadratic-positive-spectrum",
+      "answer": true,
+      "math_success": true,
+      "protocol_success": false,
+      "interventions": [
+        {
+          "index": 0,
+          "task_id": "FINAL-AL",
+          "label": "indispensable",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        },
+        {
+          "index": 1,
+          "task_id": "FINAL-AL",
+          "label": "indispensable",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        },
+        {
+          "index": 2,
+          "task_id": "FINAL-AL",
+          "label": "joint",
+          "removed_count": 2,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        }
+      ],
+      "hypothesis_matches": 4,
+      "hypothesis_expected": 4,
+      "hypothesis_reported": 4,
+      "uncertainty_honest": true,
+      "runtime_failure": false,
+      "component_findings": {
+        "objects": true,
+        "mathematical_correctness": true,
+        "uncertainty_honesty": true,
+        "hypothesis_extraction": true,
+        "conclusion_extraction": true,
+        "single_condition_coverage": true,
+        "dependency_reporting": true,
+        "remaining_work": true
+      },
+      "limitations": [
+        "抽取计数按原文语义单元：包括固定背景，不因不同原子化/编号方式惩罚；不是形式化解析器的输出。",
+        "只检验全部单项干预及至多一个组合，不检验任意弱化或全组合。",
+        "直接组共同提示提供单项字段示例但没有Skill里的唯一编号细则；其格式失败不据以宣称数学能力差。AL保留核验还带额外背景ID，按原结构协议失败。"
+      ]
+    },
+    {
+      "task_id": "FINAL-AL",
+      "arm": "old_skill",
+      "kind": "full_theorem",
+      "family_id": "quadratic-positive-spectrum",
+      "answer": true,
+      "math_success": true,
+      "protocol_success": true,
+      "interventions": [
+        {
+          "index": 0,
+          "task_id": "FINAL-AL-H1",
+          "label": "indispensable",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        },
+        {
+          "index": 1,
+          "task_id": "FINAL-AL-H2",
+          "label": "indispensable",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        },
+        {
+          "index": 2,
+          "task_id": "FINAL-AL-H1H2",
+          "label": "joint",
+          "removed_count": 2,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        }
+      ],
+      "hypothesis_matches": 4,
+      "hypothesis_expected": 4,
+      "hypothesis_reported": 4,
+      "uncertainty_honest": true,
+      "runtime_failure": false,
+      "component_findings": {
+        "objects": true,
+        "mathematical_correctness": true,
+        "uncertainty_honesty": true,
+        "hypothesis_extraction": true,
+        "conclusion_extraction": true,
+        "single_condition_coverage": true,
+        "dependency_reporting": true,
+        "remaining_work": true
+      },
+      "limitations": [
+        "抽取计数按原文语义单元：包括固定背景，不因不同原子化/编号方式惩罚；不是形式化解析器的输出。",
+        "只检验全部单项干预及至多一个组合，不检验任意弱化或全组合。"
+      ]
+    },
+    {
+      "task_id": "FINAL-AL",
+      "arm": "full_skill",
+      "kind": "full_theorem",
+      "family_id": "quadratic-positive-spectrum",
+      "answer": true,
+      "math_success": true,
+      "protocol_success": true,
+      "interventions": [
+        {
+          "index": 0,
+          "task_id": "FINAL-AL-H1",
+          "label": "removable",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": false,
+          "witness_valid": false
+        },
+        {
+          "index": 1,
+          "task_id": "FINAL-AL-H2",
+          "label": "indispensable",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        },
+        {
+          "index": 2,
+          "task_id": "FINAL-AL-H3",
+          "label": "indispensable",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        },
+        {
+          "index": 3,
+          "task_id": "FINAL-AL-H2-H3",
+          "label": "joint",
+          "removed_count": 2,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        }
+      ],
+      "hypothesis_matches": 4,
+      "hypothesis_expected": 4,
+      "hypothesis_reported": 4,
+      "uncertainty_honest": true,
+      "runtime_failure": false,
+      "component_findings": {
+        "objects": true,
+        "mathematical_correctness": true,
+        "uncertainty_honesty": true,
+        "hypothesis_extraction": true,
+        "conclusion_extraction": true,
+        "single_condition_coverage": true,
+        "dependency_reporting": true,
+        "remaining_work": true
+      },
+      "limitations": [
+        "抽取计数按原文语义单元：包括固定背景，不因不同原子化/编号方式惩罚；不是形式化解析器的输出。",
+        "只检验全部单项干预及至多一个组合，不检验任意弱化或全组合。"
+      ]
+    },
+    {
+      "task_id": "FINAL-AL",
+      "arm": "without_strategies",
+      "kind": "full_theorem",
+      "family_id": "quadratic-positive-spectrum",
+      "answer": true,
+      "math_success": true,
+      "protocol_success": true,
+      "interventions": [
+        {
+          "index": 0,
+          "task_id": "FINAL-AL-H1",
+          "label": "indispensable",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        },
+        {
+          "index": 1,
+          "task_id": "FINAL-AL-H2",
+          "label": "indispensable",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        },
+        {
+          "index": 2,
+          "task_id": "FINAL-AL-H1-H2",
+          "label": "joint",
+          "removed_count": 2,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        }
+      ],
+      "hypothesis_matches": 4,
+      "hypothesis_expected": 4,
+      "hypothesis_reported": 4,
+      "uncertainty_honest": true,
+      "runtime_failure": false,
+      "component_findings": {
+        "objects": true,
+        "mathematical_correctness": true,
+        "uncertainty_honesty": true,
+        "hypothesis_extraction": true,
+        "conclusion_extraction": true,
+        "single_condition_coverage": true,
+        "dependency_reporting": true,
+        "remaining_work": true
+      },
+      "limitations": [
+        "抽取计数按原文语义单元：包括固定背景，不因不同原子化/编号方式惩罚；不是形式化解析器的输出。",
+        "只检验全部单项干预及至多一个组合，不检验任意弱化或全组合。"
+      ]
+    },
+    {
+      "task_id": "FINAL-AL",
+      "arm": "without_verification",
+      "kind": "full_theorem",
+      "family_id": "quadratic-positive-spectrum",
+      "answer": true,
+      "math_success": true,
+      "protocol_success": true,
+      "interventions": [
+        {
+          "index": 0,
+          "task_id": "FINAL-AL-H1",
+          "label": "removable",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": false,
+          "witness_valid": false
+        },
+        {
+          "index": 1,
+          "task_id": "FINAL-AL-H2",
+          "label": "indispensable",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        },
+        {
+          "index": 2,
+          "task_id": "FINAL-AL-H3",
+          "label": "indispensable",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        },
+        {
+          "index": 3,
+          "task_id": "FINAL-AL-H2-H3",
+          "label": "joint",
+          "removed_count": 2,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        }
+      ],
+      "hypothesis_matches": 4,
+      "hypothesis_expected": 4,
+      "hypothesis_reported": 4,
+      "uncertainty_honest": true,
+      "runtime_failure": false,
+      "component_findings": {
+        "objects": true,
+        "mathematical_correctness": true,
+        "uncertainty_honesty": true,
+        "hypothesis_extraction": true,
+        "conclusion_extraction": true,
+        "single_condition_coverage": true,
+        "dependency_reporting": true,
+        "remaining_work": true
+      },
+      "limitations": [
+        "抽取计数按原文语义单元：包括固定背景，不因不同原子化/编号方式惩罚；不是形式化解析器的输出。",
+        "只检验全部单项干预及至多一个组合，不检验任意弱化或全组合。"
+      ]
+    },
+    {
+      "task_id": "FINAL-RA",
+      "arm": "direct_model",
+      "kind": "full_theorem",
+      "family_id": "zero-integral-sign-cancellation",
+      "answer": true,
+      "math_success": true,
+      "protocol_success": false,
+      "interventions": [
+        {
+          "index": 0,
+          "task_id": "FINAL-RA",
+          "label": "implied",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": false,
+          "witness_valid": false
+        },
+        {
+          "index": 1,
+          "task_id": "FINAL-RA",
+          "label": "indispensable",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        },
+        {
+          "index": 2,
+          "task_id": "FINAL-RA",
+          "label": "indispensable",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        },
+        {
+          "index": 3,
+          "task_id": "FINAL-RA",
+          "label": "joint",
+          "removed_count": 2,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        }
+      ],
+      "hypothesis_matches": 5,
+      "hypothesis_expected": 5,
+      "hypothesis_reported": 5,
+      "uncertainty_honest": true,
+      "runtime_failure": false,
+      "component_findings": {
+        "objects": true,
+        "mathematical_correctness": true,
+        "uncertainty_honesty": true,
+        "hypothesis_extraction": true,
+        "conclusion_extraction": true,
+        "single_condition_coverage": true,
+        "dependency_reporting": true,
+        "remaining_work": true
+      },
+      "limitations": [
+        "抽取计数按原文语义单元：包括固定背景，不因不同原子化/编号方式惩罚；不是形式化解析器的输出。",
+        "只检验全部单项干预及至多一个组合，不检验任意弱化或全组合。",
+        "直接组共同提示提供单项字段示例但没有Skill里的唯一编号细则；其格式失败不据以宣称数学能力差。AL保留核验还带额外背景ID，按原结构协议失败。"
+      ]
+    },
+    {
+      "task_id": "FINAL-RA",
+      "arm": "old_skill",
+      "kind": "full_theorem",
+      "family_id": "zero-integral-sign-cancellation",
+      "answer": true,
+      "math_success": true,
+      "protocol_success": true,
+      "interventions": [
+        {
+          "index": 0,
+          "task_id": "FINAL-RA-H1",
+          "label": "implied",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": false,
+          "witness_valid": false
+        },
+        {
+          "index": 1,
+          "task_id": "FINAL-RA-H2",
+          "label": "implied",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": false,
+          "witness_valid": false
+        },
+        {
+          "index": 2,
+          "task_id": "FINAL-RA-H3",
+          "label": "indispensable",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        },
+        {
+          "index": 3,
+          "task_id": "FINAL-RA-H4",
+          "label": "indispensable",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        },
+        {
+          "index": 4,
+          "task_id": "FINAL-RA-H2-H4",
+          "label": "joint",
+          "removed_count": 2,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        }
+      ],
+      "hypothesis_matches": 5,
+      "hypothesis_expected": 5,
+      "hypothesis_reported": 5,
+      "uncertainty_honest": true,
+      "runtime_failure": false,
+      "component_findings": {
+        "objects": true,
+        "mathematical_correctness": true,
+        "uncertainty_honesty": true,
+        "hypothesis_extraction": true,
+        "conclusion_extraction": true,
+        "single_condition_coverage": true,
+        "dependency_reporting": true,
+        "remaining_work": true
+      },
+      "limitations": [
+        "抽取计数按原文语义单元：包括固定背景，不因不同原子化/编号方式惩罚；不是形式化解析器的输出。",
+        "只检验全部单项干预及至多一个组合，不检验任意弱化或全组合。"
+      ]
+    },
+    {
+      "task_id": "FINAL-RA",
+      "arm": "full_skill",
+      "kind": "full_theorem",
+      "family_id": "zero-integral-sign-cancellation",
+      "answer": true,
+      "math_success": true,
+      "protocol_success": true,
+      "interventions": [
+        {
+          "index": 0,
+          "task_id": "FINAL-RA-H1",
+          "label": "implied",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": false,
+          "witness_valid": false
+        },
+        {
+          "index": 1,
+          "task_id": "FINAL-RA-H2",
+          "label": "indispensable",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        },
+        {
+          "index": 2,
+          "task_id": "FINAL-RA-H3",
+          "label": "indispensable",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        },
+        {
+          "index": 3,
+          "task_id": "FINAL-RA-H1-H3",
+          "label": "joint",
+          "removed_count": 2,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        }
+      ],
+      "hypothesis_matches": 5,
+      "hypothesis_expected": 5,
+      "hypothesis_reported": 5,
+      "uncertainty_honest": true,
+      "runtime_failure": false,
+      "component_findings": {
+        "objects": true,
+        "mathematical_correctness": true,
+        "uncertainty_honesty": true,
+        "hypothesis_extraction": true,
+        "conclusion_extraction": true,
+        "single_condition_coverage": true,
+        "dependency_reporting": true,
+        "remaining_work": true
+      },
+      "limitations": [
+        "抽取计数按原文语义单元：包括固定背景，不因不同原子化/编号方式惩罚；不是形式化解析器的输出。",
+        "只检验全部单项干预及至多一个组合，不检验任意弱化或全组合。"
+      ]
+    },
+    {
+      "task_id": "FINAL-RA",
+      "arm": "without_strategies",
+      "kind": "full_theorem",
+      "family_id": "zero-integral-sign-cancellation",
+      "answer": true,
+      "math_success": true,
+      "protocol_success": true,
+      "interventions": [
+        {
+          "index": 0,
+          "task_id": "FINAL-RA-H1",
+          "label": "implied",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": false,
+          "witness_valid": false
+        },
+        {
+          "index": 1,
+          "task_id": "FINAL-RA-H2",
+          "label": "implied",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": false,
+          "witness_valid": false
+        },
+        {
+          "index": 2,
+          "task_id": "FINAL-RA-H3",
+          "label": "indispensable",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        },
+        {
+          "index": 3,
+          "task_id": "FINAL-RA-H4",
+          "label": "indispensable",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        },
+        {
+          "index": 4,
+          "task_id": "FINAL-RA-H2-H4",
+          "label": "joint",
+          "removed_count": 2,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        }
+      ],
+      "hypothesis_matches": 5,
+      "hypothesis_expected": 5,
+      "hypothesis_reported": 5,
+      "uncertainty_honest": true,
+      "runtime_failure": false,
+      "component_findings": {
+        "objects": true,
+        "mathematical_correctness": true,
+        "uncertainty_honesty": true,
+        "hypothesis_extraction": true,
+        "conclusion_extraction": true,
+        "single_condition_coverage": true,
+        "dependency_reporting": true,
+        "remaining_work": true
+      },
+      "limitations": [
+        "抽取计数按原文语义单元：包括固定背景，不因不同原子化/编号方式惩罚；不是形式化解析器的输出。",
+        "只检验全部单项干预及至多一个组合，不检验任意弱化或全组合。"
+      ]
+    },
+    {
+      "task_id": "FINAL-RA",
+      "arm": "without_verification",
+      "kind": "full_theorem",
+      "family_id": "zero-integral-sign-cancellation",
+      "answer": true,
+      "math_success": true,
+      "protocol_success": true,
+      "interventions": [
+        {
+          "index": 0,
+          "task_id": "FINAL-RA-H1",
+          "label": "implied",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": false,
+          "witness_valid": false
+        },
+        {
+          "index": 1,
+          "task_id": "FINAL-RA-H2",
+          "label": "indispensable",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        },
+        {
+          "index": 2,
+          "task_id": "FINAL-RA-H3",
+          "label": "indispensable",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        },
+        {
+          "index": 3,
+          "task_id": "FINAL-RA-H1-H2",
+          "label": "joint",
+          "removed_count": 2,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        }
+      ],
+      "hypothesis_matches": 5,
+      "hypothesis_expected": 5,
+      "hypothesis_reported": 5,
+      "uncertainty_honest": true,
+      "runtime_failure": false,
+      "component_findings": {
+        "objects": true,
+        "mathematical_correctness": true,
+        "uncertainty_honesty": true,
+        "hypothesis_extraction": true,
+        "conclusion_extraction": true,
+        "single_condition_coverage": true,
+        "dependency_reporting": true,
+        "remaining_work": true
+      },
+      "limitations": [
+        "抽取计数按原文语义单元：包括固定背景，不因不同原子化/编号方式惩罚；不是形式化解析器的输出。",
+        "只检验全部单项干预及至多一个组合，不检验任意弱化或全组合。"
+      ]
+    },
+    {
+      "task_id": "FINAL-CA",
+      "arm": "direct_model",
+      "kind": "full_theorem",
+      "family_id": "linear-growth-polynomial",
+      "answer": true,
+      "math_success": true,
+      "protocol_success": false,
+      "interventions": [
+        {
+          "index": 0,
+          "task_id": "FINAL-CA",
+          "label": "indispensable",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        },
+        {
+          "index": 1,
+          "task_id": "FINAL-CA",
+          "label": "indispensable",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        },
+        {
+          "index": 2,
+          "task_id": "FINAL-CA",
+          "label": "indispensable",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        },
+        {
+          "index": 3,
+          "task_id": "FINAL-CA",
+          "label": "joint",
+          "removed_count": 2,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        }
+      ],
+      "hypothesis_matches": 5,
+      "hypothesis_expected": 5,
+      "hypothesis_reported": 5,
+      "uncertainty_honest": true,
+      "runtime_failure": false,
+      "component_findings": {
+        "objects": true,
+        "mathematical_correctness": true,
+        "uncertainty_honesty": true,
+        "hypothesis_extraction": true,
+        "conclusion_extraction": true,
+        "single_condition_coverage": true,
+        "dependency_reporting": true,
+        "remaining_work": true
+      },
+      "limitations": [
+        "抽取计数按原文语义单元：包括固定背景，不因不同原子化/编号方式惩罚；不是形式化解析器的输出。",
+        "只检验全部单项干预及至多一个组合，不检验任意弱化或全组合。",
+        "直接组共同提示提供单项字段示例但没有Skill里的唯一编号细则；其格式失败不据以宣称数学能力差。AL保留核验还带额外背景ID，按原结构协议失败。"
+      ]
+    },
+    {
+      "task_id": "FINAL-CA",
+      "arm": "old_skill",
+      "kind": "full_theorem",
+      "family_id": "linear-growth-polynomial",
+      "answer": true,
+      "math_success": true,
+      "protocol_success": true,
+      "interventions": [
+        {
+          "index": 0,
+          "task_id": "FINAL-CA-H1",
+          "label": "implied",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": false,
+          "witness_valid": false
+        },
+        {
+          "index": 1,
+          "task_id": "FINAL-CA-H2",
+          "label": "indispensable",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        },
+        {
+          "index": 2,
+          "task_id": "FINAL-CA-H3",
+          "label": "indispensable",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        },
+        {
+          "index": 3,
+          "task_id": "FINAL-CA-H4",
+          "label": "indispensable",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        },
+        {
+          "index": 4,
+          "task_id": "FINAL-CA-H1-H2",
+          "label": "joint",
+          "removed_count": 2,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        }
+      ],
+      "hypothesis_matches": 5,
+      "hypothesis_expected": 5,
+      "hypothesis_reported": 5,
+      "uncertainty_honest": true,
+      "runtime_failure": false,
+      "component_findings": {
+        "objects": true,
+        "mathematical_correctness": true,
+        "uncertainty_honesty": true,
+        "hypothesis_extraction": true,
+        "conclusion_extraction": true,
+        "single_condition_coverage": true,
+        "dependency_reporting": true,
+        "remaining_work": true
+      },
+      "limitations": [
+        "抽取计数按原文语义单元：包括固定背景，不因不同原子化/编号方式惩罚；不是形式化解析器的输出。",
+        "只检验全部单项干预及至多一个组合，不检验任意弱化或全组合。"
+      ]
+    },
+    {
+      "task_id": "FINAL-CA",
+      "arm": "full_skill",
+      "kind": "full_theorem",
+      "family_id": "linear-growth-polynomial",
+      "answer": true,
+      "math_success": false,
+      "protocol_success": false,
+      "interventions": [],
+      "hypothesis_matches": 0,
+      "hypothesis_expected": 5,
+      "hypothesis_reported": 0,
+      "uncertainty_honest": null,
+      "runtime_failure": false,
+      "output_failure": true
+    },
+    {
+      "task_id": "FINAL-CA",
+      "arm": "without_strategies",
+      "kind": "full_theorem",
+      "family_id": "linear-growth-polynomial",
+      "answer": true,
+      "math_success": false,
+      "protocol_success": false,
+      "interventions": [],
+      "hypothesis_matches": 0,
+      "hypothesis_expected": 5,
+      "hypothesis_reported": 0,
+      "uncertainty_honest": null,
+      "runtime_failure": false,
+      "output_failure": true
+    },
+    {
+      "task_id": "FINAL-CA",
+      "arm": "without_verification",
+      "kind": "full_theorem",
+      "family_id": "linear-growth-polynomial",
+      "answer": true,
+      "math_success": true,
+      "protocol_success": true,
+      "interventions": [
+        {
+          "index": 0,
+          "task_id": "FINAL-CA-H1",
+          "label": "implied",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": false,
+          "witness_valid": false
+        },
+        {
+          "index": 1,
+          "task_id": "FINAL-CA-H2",
+          "label": "indispensable",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        },
+        {
+          "index": 2,
+          "task_id": "FINAL-CA-H3",
+          "label": "indispensable",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        },
+        {
+          "index": 3,
+          "task_id": "FINAL-CA-H4",
+          "label": "indispensable",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        },
+        {
+          "index": 4,
+          "task_id": "FINAL-CA-H2-H3",
+          "label": "joint",
+          "removed_count": 2,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        }
+      ],
+      "hypothesis_matches": 5,
+      "hypothesis_expected": 5,
+      "hypothesis_reported": 5,
+      "uncertainty_honest": true,
+      "runtime_failure": false,
+      "component_findings": {
+        "objects": true,
+        "mathematical_correctness": true,
+        "uncertainty_honesty": true,
+        "hypothesis_extraction": true,
+        "conclusion_extraction": true,
+        "single_condition_coverage": true,
+        "dependency_reporting": true,
+        "remaining_work": true
+      },
+      "limitations": [
+        "抽取计数按原文语义单元：包括固定背景，不因不同原子化/编号方式惩罚；不是形式化解析器的输出。",
+        "只检验全部单项干预及至多一个组合，不检验任意弱化或全组合。"
+      ]
+    },
+    {
+      "task_id": "EDGE-MA-ISSUE",
+      "arm": "full_skill",
+      "kind": "intervention",
+      "family_id": "derivative-continuity-false-converse",
+      "answer": true,
+      "math_success": true,
+      "protocol_success": true,
+      "interventions": [
+        {
+          "index": 0,
+          "task_id": "EDGE-MA-ISSUE",
+          "label": "statement_issue",
+          "removed_count": 0,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        }
+      ],
+      "hypothesis_matches": 0,
+      "hypothesis_expected": 0,
+      "hypothesis_reported": 0,
+      "uncertainty_honest": true,
+      "runtime_failure": false,
+      "component_findings": {
+        "objects": true,
+        "mathematical_correctness": true,
+        "uncertainty_honesty": true
+      },
+      "limitations": []
+    },
+    {
+      "task_id": "EDGE-AL-ISSUE",
+      "arm": "full_skill",
+      "kind": "intervention",
+      "family_id": "real-spectrum-jordan",
+      "answer": true,
+      "math_success": true,
+      "protocol_success": true,
+      "interventions": [
+        {
+          "index": 0,
+          "task_id": "EDGE-AL-ISSUE",
+          "label": "statement_issue",
+          "removed_count": 0,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        }
+      ],
+      "hypothesis_matches": 0,
+      "hypothesis_expected": 0,
+      "hypothesis_reported": 0,
+      "uncertainty_honest": true,
+      "runtime_failure": false,
+      "component_findings": {
+        "objects": true,
+        "mathematical_correctness": true,
+        "uncertainty_honesty": true
+      },
+      "limitations": []
+    },
+    {
+      "task_id": "EDGE-RA-ISSUE",
+      "arm": "full_skill",
+      "kind": "intervention",
+      "family_id": "pointwise-spike-integral",
+      "answer": true,
+      "math_success": true,
+      "protocol_success": true,
+      "interventions": [
+        {
+          "index": 0,
+          "task_id": "EDGE-RA-ISSUE",
+          "label": "statement_issue",
+          "removed_count": 0,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        }
+      ],
+      "hypothesis_matches": 0,
+      "hypothesis_expected": 0,
+      "hypothesis_reported": 0,
+      "uncertainty_honest": true,
+      "runtime_failure": false,
+      "component_findings": {
+        "objects": true,
+        "mathematical_correctness": true,
+        "uncertainty_honesty": true
+      },
+      "limitations": []
+    },
+    {
+      "task_id": "EDGE-CA-ISSUE",
+      "arm": "full_skill",
+      "kind": "intervention",
+      "family_id": "local-vs-global-injectivity",
+      "answer": true,
+      "math_success": true,
+      "protocol_success": true,
+      "interventions": [
+        {
+          "index": 0,
+          "task_id": "EDGE-CA-ISSUE",
+          "label": "statement_issue",
+          "removed_count": 0,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        }
+      ],
+      "hypothesis_matches": 0,
+      "hypothesis_expected": 0,
+      "hypothesis_reported": 0,
+      "uncertainty_honest": true,
+      "runtime_failure": false,
+      "component_findings": {
+        "objects": true,
+        "mathematical_correctness": true,
+        "uncertainty_honesty": true
+      },
+      "limitations": []
+    },
+    {
+      "task_id": "EDGE-TYPE",
+      "arm": "full_skill",
+      "kind": "intervention",
+      "family_id": "undefined-derivative-type",
+      "answer": true,
+      "math_success": true,
+      "protocol_success": true,
+      "interventions": [
+        {
+          "index": 0,
+          "task_id": "EDGE-TYPE",
+          "label": "type_constraint",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": false,
+          "witness_valid": false
+        }
+      ],
+      "hypothesis_matches": 0,
+      "hypothesis_expected": 0,
+      "hypothesis_reported": 0,
+      "uncertainty_honest": true,
+      "runtime_failure": false,
+      "component_findings": {
+        "objects": true,
+        "mathematical_correctness": true,
+        "uncertainty_honesty": true
+      },
+      "limitations": []
+    },
+    {
+      "task_id": "EDGE-AL-IMPLIED",
+      "arm": "full_skill",
+      "kind": "intervention",
+      "family_id": "symmetry-vs-diagonal-sufficiency",
+      "answer": true,
+      "math_success": true,
+      "protocol_success": true,
+      "interventions": [
+        {
+          "index": 0,
+          "task_id": "EDGE-AL-IMPLIED",
+          "label": "implied",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": false,
+          "witness_valid": false
+        }
+      ],
+      "hypothesis_matches": 0,
+      "hypothesis_expected": 0,
+      "hypothesis_reported": 0,
+      "uncertainty_honest": true,
+      "runtime_failure": false,
+      "component_findings": {
+        "objects": true,
+        "mathematical_correctness": true,
+        "uncertainty_honesty": true
+      },
+      "limitations": []
+    },
+    {
+      "task_id": "EDGE-AL-REMOVABLE",
+      "arm": "full_skill",
+      "kind": "intervention",
+      "family_id": "symmetry-vs-diagonal-sufficiency",
+      "answer": true,
+      "math_success": true,
+      "protocol_success": true,
+      "interventions": [
+        {
+          "index": 0,
+          "task_id": "EDGE-AL-REMOVABLE",
+          "label": "removable",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": false,
+          "witness_valid": false
+        }
+      ],
+      "hypothesis_matches": 0,
+      "hypothesis_expected": 0,
+      "hypothesis_reported": 0,
+      "uncertainty_honest": true,
+      "runtime_failure": false,
+      "component_findings": {
+        "objects": true,
+        "mathematical_correctness": true,
+        "uncertainty_honesty": true
+      },
+      "limitations": []
+    },
+    {
+      "task_id": "EDGE-AL-JOINT",
+      "arm": "full_skill",
+      "kind": "intervention",
+      "family_id": "symmetry-vs-diagonal-sufficiency",
+      "answer": true,
+      "math_success": true,
+      "protocol_success": true,
+      "interventions": [
+        {
+          "index": 0,
+          "task_id": "EDGE-AL-JOINT",
+          "label": "joint",
+          "removed_count": 2,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        }
+      ],
+      "hypothesis_matches": 0,
+      "hypothesis_expected": 0,
+      "hypothesis_reported": 0,
+      "uncertainty_honest": true,
+      "runtime_failure": false,
+      "component_findings": {
+        "objects": true,
+        "mathematical_correctness": true,
+        "uncertainty_honesty": true
+      },
+      "limitations": []
+    },
+    {
+      "task_id": "EDGE-AMBIGUOUS",
+      "arm": "full_skill",
+      "kind": "uncertainty",
+      "family_id": "ambiguous-Lebesgue-convergence",
+      "answer": true,
+      "math_success": true,
+      "protocol_success": true,
+      "interventions": [],
+      "hypothesis_matches": 0,
+      "hypothesis_expected": 0,
+      "hypothesis_reported": 0,
+      "uncertainty_honest": true,
+      "runtime_failure": false,
+      "component_findings": {
+        "objects": true,
+        "mathematical_correctness": true,
+        "uncertainty_honesty": true,
+        "ambiguity_handling": true
+      },
+      "limitations": []
+    }
+  ],
+  "scope": "Small internal release-acceptance tasks; not strict independent blind testing, a universal theorem solver, or automatic mathematical proof."
+}

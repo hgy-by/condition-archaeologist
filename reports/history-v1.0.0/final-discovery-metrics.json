@@ -1,0 +1,41 @@
+{
+  "reference_unit": "Raw theorem essential single deletions, 2+2+2+3=9; excludes joint and original-statement issues.",
+  "reviewer_type": "ai",
+  "metrics": {
+    "primary_6000": {
+      "direct_model": {
+        "valid_essential_single_counterexamples": 9,
+        "expected_essential_single_tasks": 9,
+        "discovery_rate": 1.0
+      },
+      "old_skill": {
+        "valid_essential_single_counterexamples": 9,
+        "expected_essential_single_tasks": 9,
+        "discovery_rate": 1.0
+      },
+      "full_skill": {
+        "valid_essential_single_counterexamples": 6,
+        "expected_essential_single_tasks": 9,
+        "discovery_rate": 0.6666666666666666
+      },
+      "without_strategies": {
+        "valid_essential_single_counterexamples": 6,
+        "expected_essential_single_tasks": 9,
+        "discovery_rate": 0.6666666666666666
+      },
+      "without_verification": {
+        "valid_essential_single_counterexamples": 9,
+        "expected_essential_single_tasks": 9,
+        "discovery_rate": 1.0
+      }
+    },
+    "confirmation_12000": {
+      "full_skill": {
+        "valid_essential_single_counterexamples": 9,
+        "expected_essential_single_tasks": 9,
+        "discovery_rate": 1.0
+      }
+    }
+  },
+  "not_independent_blind_score": true
+}

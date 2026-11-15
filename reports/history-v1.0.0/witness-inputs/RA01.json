@@ -1,0 +1,10 @@
+{
+  "kind": "spike_integral",
+  "height": 1,
+  "p": 1,
+  "q": 1,
+  "claims": {
+    "integral_power": 0,
+    "integral_coefficient": 1
+  }
+}

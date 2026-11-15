@@ -1,0 +1,217 @@
+{
+  "theorem": {
+    "statement": "固定有限整数n≥1，A⊂R^n；若A闭且有界，则A紧。",
+    "ambient": "R^n使用通常欧氏距离和拓扑；空集允许，n=0情形单独讨论。紧致按每个开覆盖存在有限子覆盖定义。有限维与欧氏度量属于本版本的对象背景。",
+    "hypotheses": [
+      {
+        "id": "H1",
+        "text": "A在R^n中闭"
+      },
+      {
+        "id": "H2",
+        "text": "A在R^n中有界"
+      }
+    ],
+    "conclusions": [
+      {
+        "id": "C1",
+        "text": "A紧致"
+      }
+    ]
+  },
+  "interventions": [
+    {
+      "task_id": "F-MA-closed",
+      "hypotheses": [
+        {
+          "id": "H1",
+          "text": "A在R^n中闭"
+        },
+        {
+          "id": "H2",
+          "text": "A在R^n中有界"
+        }
+      ],
+      "intervention": {
+        "removed": [
+          "H1"
+        ],
+        "replacement": null
+      },
+      "judgment": "indispensable",
+      "witness": "n=1，A=(0,1)",
+      "retained_checks": [
+        {
+          "id": "H2",
+          "argument": "对每个x∈A，|x|<1，故有界。"
+        }
+      ],
+      "replacement_checks": [],
+      "target_failure": {
+        "id": "C1",
+        "argument": "A有开覆盖而无有限子覆盖，故非紧。"
+      },
+      "argument": "A非闭。开集U_m=(1/m,1)，m≥2，覆盖A；任取有限个，只能覆盖(1/M,1)，M为这些m的最大值，因此不能覆盖全部A。",
+      "evidence": [
+        {
+          "kind": "mathematical_argument",
+          "artifact": null,
+          "scope": "所写明确命题版本下的数学论证；未经独立人工核验或形式化核验。"
+        }
+      ],
+      "dependencies": [],
+      "uncertainties": [],
+      "next_steps": [
+        "独立数学审阅本次构造及对象约定。"
+      ],
+      "cost": {
+        "elapsed_seconds": null,
+        "model_calls": null,
+        "tool_calls": null,
+        "usd": null
+      }
+    },
+    {
+      "task_id": "F-MA-bounded",
+      "hypotheses": [
+        {
+          "id": "H1",
+          "text": "A在R^n中闭"
+        },
+        {
+          "id": "H2",
+          "text": "A在R^n中有界"
+        }
+      ],
+      "intervention": {
+        "removed": [
+          "H2"
+        ],
+        "replacement": null
+      },
+      "judgment": "indispensable",
+      "witness": "n=1，A=R",
+      "retained_checks": [
+        {
+          "id": "H1",
+          "argument": "R是R自身的闭集。"
+        }
+      ],
+      "replacement_checks": [],
+      "target_failure": {
+        "id": "C1",
+        "argument": "R非紧。"
+      },
+      "argument": "A无界。U_m=(−m,m)，m≥1，是R的开覆盖；有限子族的并为某个(−M,M)，不能覆盖R。",
+      "evidence": [
+        {
+          "kind": "mathematical_argument",
+          "artifact": null,
+          "scope": "所写明确命题版本下的数学论证；未经独立人工核验或形式化核验。"
+        }
+      ],
+      "dependencies": [],
+      "uncertainties": [],
+      "next_steps": [
+        "独立数学审阅本次构造及对象约定。"
+      ],
+      "cost": {
+        "elapsed_seconds": null,
+        "model_calls": null,
+        "tool_calls": null,
+        "usd": null
+      }
+    },
+    {
+      "task_id": "F-MA-finite-dimension",
+      "hypotheses": [
+        {
+          "id": "H1",
+          "text": "A在R^n中闭"
+        },
+        {
+          "id": "H2",
+          "text": "A在R^n中有界"
+        }
+      ],
+      "intervention": {
+        "removed": [],
+        "replacement": null
+      },
+      "judgment": "type_constraint",
+      "witness": "改写到无限维Hilbert空间ℓ²，取闭单位球B。",
+      "retained_checks": [
+        {
+          "id": "H1",
+          "argument": "在改写空间中，范数连续，B={x:||x||≤1}是闭集。"
+        },
+        {
+          "id": "H2",
+          "argument": "B中元素范数均≤1。"
+        }
+      ],
+      "replacement_checks": [],
+      "target_failure": null,
+      "argument": "有限维不是hs中的独立可删条件，原命题对象固定为R^n。改写命题为“任意Hilbert空间的闭有界集紧”后，该命题失败：标准正交序列e_k均属B且任意两项距离√2，所以不存在收敛子列；度量空间紧致必序列紧，因此B非紧。此结果只针对明确改写的命题。",
+      "evidence": [
+        {
+          "kind": "mathematical_argument",
+          "artifact": null,
+          "scope": "所写明确命题版本下的数学论证；未经独立人工核验或形式化核验。"
+        }
+      ],
+      "dependencies": [],
+      "uncertainties": [
+        "未把改变对象类别记为原命题的普通删条件成功。"
+      ],
+      "next_steps": [
+        "独立数学审阅本次构造及对象约定。"
+      ],
+      "cost": {
+        "elapsed_seconds": null,
+        "model_calls": null,
+        "tool_calls": null,
+        "usd": null
+      }
+    }
+  ],
+  "dependency_map": [
+    {
+      "background": "有限维通常欧氏空间",
+      "conditions": [
+        "H1",
+        "H2"
+      ],
+      "conclusion": "C1",
+      "evidence": "各条件单独删除都有反例；二者合用是定理本身。",
+      "unexplored": "未遍历任意替代拓扑或所有弱化条件。"
+    }
+  ],
+  "remaining_work": [
+    "对n=0时R^0为单点空间，所有子集均紧，条件必要性结论不能照搬；已限定n≥1且用n=1构造。",
+    "空集本就紧，故原定理无须添加非空性。"
+  ],
+  "run_metadata": {
+    "run_kind": "AI_forward_execution_revised_after_explicit_classification_review",
+    "date": "2026-11-03",
+    "skill_used": "condition-archaeologist",
+    "sources_accessed": [
+      "SKILL.md",
+      "references/judgment-protocol.md",
+      "references/output-schema.md",
+      "references/strategies.md",
+      "references/verification.md"
+    ],
+    "forbidden_sources_not_read": [
+      "references/seeds.json",
+      "evaluation",
+      "prior reports",
+      "other agent conclusions"
+    ],
+    "human_reviewed": false,
+    "benchmark_score": null,
+    "original_run_preserved_at": "original-run/math-analysis.json",
+    "revision_status": "rechecked_no_mathematical_content_change",
+    "revision_note": "修订输出不等同原始运行结果；原始JSON、中文报告和结构日志已保留。"
+  }
+}

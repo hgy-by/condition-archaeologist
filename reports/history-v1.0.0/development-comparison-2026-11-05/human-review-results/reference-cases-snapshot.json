@@ -1,0 +1,1248 @@
+[
+  {
+    "task_id": "MA01",
+    "subject": "数学分析",
+    "cross_tags": [
+      "实分析"
+    ],
+    "family_id": "rolle",
+    "split": "development",
+    "statement": "设a<b为有限实数，f:[a,b]→R在[a,b]连续、在(a,b)可微，且f(a)=f(b)，则存在c∈(a,b)使f′(c)=0。",
+    "hypotheses": [
+      {
+        "id": "H1",
+        "text": "f 在 [a,b] 连续"
+      },
+      {
+        "id": "H2",
+        "text": "f 在 (a,b) 可微"
+      },
+      {
+        "id": "H3",
+        "text": "a<b 为有限实数"
+      },
+      {
+        "id": "H4",
+        "text": "f(a)=f(b)"
+      }
+    ],
+    "intervention": {
+      "removed": [
+        "H2"
+      ],
+      "replacement": null
+    },
+    "conclusions": [
+      {
+        "id": "C1",
+        "text": "存在内部导数为0的点"
+      }
+    ],
+    "reference": {
+      "judgment": "indispensable",
+      "witness": "[a,b]=[-1,1], f(x)=|x|",
+      "retained_checks": {
+        "H1": "绝对值连续",
+        "H3": "−1<1",
+        "H4": "两端值均为1"
+      },
+      "failure": "除0外导数±1，0处不可微",
+      "argument": "可微性不能删",
+      "strategy_ids": [
+        "S03"
+      ],
+      "computation": null
+    },
+    "sources": [
+      {
+        "url": "https://www.jirka.org/ra/html/sec_mvt.html",
+        "title": "Jiří Lebl, Basic Analysis, §4.2 Mean value theorem",
+        "locator": "Theorem 4.2.3 (Rolle), 网页抓取行641–643",
+        "verified_scope": "已打开原始作者网页，核对f:[a,b]→R、闭区间连续、开区间可微和端点相等。",
+        "status": "located_by_independent_AI_not_human_verified",
+        "note": "来源用于原定理核对；本项目自拟反例与冗余题不冒称逐字出自教材。"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "record": null
+    },
+    "evidence_status": [
+      "authored_mathematical_argument",
+      "independent_AI_review_not_human"
+    ],
+    "gold_eligible": false,
+    "ambient": "f:[a,b]→R；a,b为实数，导数为实导数。",
+    "dataset_version": "0.2.0",
+    "ai_review": {
+      "status": "rechecked_with_corrections",
+      "date": "2026-11-03",
+      "kind": "AI_mathematical_review_not_human",
+      "gold_eligible": false,
+      "change_note": "明确罗尔定理的实值函数类型，防止误用到复值函数。",
+      "report": "reports/review-2026-11-03-analysis.json"
+    }
+  },
+  {
+    "task_id": "MA02",
+    "subject": "数学分析",
+    "cross_tags": [
+      "实分析"
+    ],
+    "family_id": "rolle",
+    "split": "development",
+    "statement": "设a<b为有限实数，f:[a,b]→R在[a,b]连续、在(a,b)可微，且f(a)=f(b)，则存在c∈(a,b)使f′(c)=0。",
+    "hypotheses": [
+      {
+        "id": "H1",
+        "text": "f 在 [a,b] 连续"
+      },
+      {
+        "id": "H2",
+        "text": "f 在 (a,b) 可微"
+      },
+      {
+        "id": "H3",
+        "text": "a<b 为有限实数"
+      },
+      {
+        "id": "H4",
+        "text": "f(a)=f(b)"
+      }
+    ],
+    "intervention": {
+      "removed": [
+        "H1"
+      ],
+      "replacement": null
+    },
+    "conclusions": [
+      {
+        "id": "C1",
+        "text": "存在内部导数为0的点"
+      }
+    ],
+    "reference": {
+      "judgment": "indispensable",
+      "witness": "[0,1]; f(x)=x (x<1), f(1)=0",
+      "retained_checks": {
+        "H2": "内部导数恒1",
+        "H3": "0<1",
+        "H4": "f(0)=f(1)=0"
+      },
+      "failure": "内部导数恒1",
+      "argument": "只在右端点不连续",
+      "strategy_ids": [
+        "S03"
+      ],
+      "computation": null
+    },
+    "sources": [
+      {
+        "url": "https://www.jirka.org/ra/html/sec_mvt.html",
+        "title": "Jiří Lebl, Basic Analysis, §4.2 Mean value theorem",
+        "locator": "Theorem 4.2.3 (Rolle), 网页抓取行641–643",
+        "verified_scope": "已打开原始作者网页，核对f:[a,b]→R、闭区间连续、开区间可微和端点相等。",
+        "status": "located_by_independent_AI_not_human_verified",
+        "note": "来源用于原定理核对；本项目自拟反例与冗余题不冒称逐字出自教材。"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "record": null
+    },
+    "evidence_status": [
+      "authored_mathematical_argument",
+      "independent_AI_review_not_human"
+    ],
+    "gold_eligible": false,
+    "ambient": "f:[a,b]→R；a,b为实数，导数为实导数。",
+    "dataset_version": "0.2.0",
+    "ai_review": {
+      "status": "rechecked_with_corrections",
+      "date": "2026-11-03",
+      "kind": "AI_mathematical_review_not_human",
+      "gold_eligible": false,
+      "change_note": "明确罗尔定理的实值函数类型，防止误用到复值函数。",
+      "report": "reports/review-2026-11-03-analysis.json"
+    }
+  },
+  {
+    "task_id": "MA03",
+    "subject": "数学分析",
+    "cross_tags": [
+      "实分析"
+    ],
+    "family_id": "extreme",
+    "split": "development",
+    "statement": "非空紧集 K⊂R 上连续实函数取到最大最小值",
+    "hypotheses": [
+      {
+        "id": "H1",
+        "text": "K为紧集"
+      },
+      {
+        "id": "H2",
+        "text": "f:K→R连续"
+      },
+      {
+        "id": "H3",
+        "text": "K非空"
+      }
+    ],
+    "intervention": {
+      "removed": [
+        "H1"
+      ],
+      "replacement": null
+    },
+    "conclusions": [
+      {
+        "id": "C1",
+        "text": "取到最大最小值"
+      }
+    ],
+    "reference": {
+      "judgment": "indispensable",
+      "witness": "K=(0,1), f(x)=x",
+      "retained_checks": {
+        "H2": "f(x)=x在K=(0,1)上连续。",
+        "H3": "1/2∈K，所以K非空。"
+      },
+      "failure": "上确界1、下确界0均不属于像",
+      "argument": "K=(0,1)在R中不紧：它非闭。f(K)=(0,1)，没有最大元或最小元。这里只删除H1，H3非空性明确保留。",
+      "strategy_ids": [
+        "S02"
+      ],
+      "computation": null
+    },
+    "sources": [
+      {
+        "url": "https://jirilebl.github.io/ra/html/sec_minmaxint.html",
+        "title": "Jiří Lebl, Basic Analysis, §3.3 Extreme and intermediate value theorems",
+        "locator": "Theorem 3.3.2为闭区间极值版本；Theorem 3.3.8为介值定理",
+        "verified_scope": "已打开作者网页。MA09准确对应介值定理；MA03是紧子集推广，需独立使用紧集连续像紧证明，不能把闭区间来源冒称完全相同版本。",
+        "status": "located_by_independent_AI_not_human_verified",
+        "note": "来源用于原定理核对；本项目自拟反例与冗余题不冒称逐字出自教材。"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "record": null
+    },
+    "evidence_status": [
+      "authored_mathematical_argument",
+      "independent_AI_review_not_human"
+    ],
+    "gold_eligible": false,
+    "ambient": "K⊂R，f为定义在K上的实值函数。",
+    "dataset_version": "0.2.0",
+    "ai_review": {
+      "status": "rechecked_with_corrections",
+      "date": "2026-11-03",
+      "kind": "AI_mathematical_review_not_human",
+      "gold_eligible": false,
+      "change_note": "把紧致性与非空性拆成独立假设，只删除紧致性。",
+      "report": "reports/review-2026-11-03-analysis.json"
+    }
+  },
+  {
+    "task_id": "MA04",
+    "subject": "数学分析",
+    "cross_tags": [
+      "实分析"
+    ],
+    "family_id": "uniform-limit",
+    "split": "development",
+    "statement": "连续实函数列f_n:[0,1]→R一致收敛于f，则f在[0,1]连续。",
+    "hypotheses": [
+      {
+        "id": "H1",
+        "text": "各 f_n 在[0,1]连续"
+      },
+      {
+        "id": "H2",
+        "text": "f_n一致收敛于f"
+      }
+    ],
+    "intervention": {
+      "removed": [
+        "H2"
+      ],
+      "replacement": {
+        "id": "H2w",
+        "text": "f_n逐点收敛于f"
+      }
+    },
+    "conclusions": [
+      {
+        "id": "C1",
+        "text": "极限f连续"
+      }
+    ],
+    "reference": {
+      "judgment": "indispensable",
+      "witness": "f_n(x)=x^n，改为仅逐点收敛",
+      "retained_checks": {
+        "H1": "多项式连续"
+      },
+      "failure": "f在[0,1)为0，在1为1",
+      "argument": "取f_n(x)=x^n，极限f在[0,1)为0而f(1)=1。f在1不连续。sup_{x∈[0,1]}|f_n(x)−f(x)|=1（上确界，无须取到），故收敛非一致。",
+      "strategy_ids": [
+        "S04"
+      ],
+      "computation": null,
+      "replacement_checks": {
+        "H2w": "x∈[0,1)时x^n→0，x=1时始终为1，故逐点极限f已明确。"
+      }
+    },
+    "sources": [
+      {
+        "url": "https://www.jirka.org/ra/html/sec_liminter.html",
+        "title": "Jiří Lebl, Basic Analysis, §6.2 Interchange of limits",
+        "locator": "Theorem 6.2.2, 网页抓取行627–629",
+        "verified_scope": "已打开作者网页，核对连续函数一致极限连续。",
+        "status": "located_by_independent_AI_not_human_verified",
+        "note": "来源用于原定理核对；本项目自拟反例与冗余题不冒称逐字出自教材。"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "record": null
+    },
+    "evidence_status": [
+      "authored_mathematical_argument",
+      "independent_AI_review_not_human"
+    ],
+    "gold_eligible": false,
+    "ambient": "n=1,2,...；f_n,f均为[0,1]上的实值函数。",
+    "dataset_version": "0.2.0",
+    "ai_review": {
+      "status": "rechecked_with_corrections",
+      "date": "2026-11-03",
+      "kind": "AI_mathematical_review_not_human",
+      "gold_eligible": false,
+      "change_note": "将均匀收敛明确弱化为逐点收敛，避免删除后极限函数身份不明。",
+      "report": "reports/review-2026-11-03-analysis.json"
+    }
+  },
+  {
+    "task_id": "AL01",
+    "subject": "高等代数",
+    "cross_tags": [],
+    "family_id": "jordan-diagonalization",
+    "split": "development",
+    "statement": "实对称方阵可实正交对角化",
+    "hypotheses": [
+      {
+        "id": "H1",
+        "text": "A为实方阵"
+      },
+      {
+        "id": "H2",
+        "text": "A^T=A"
+      }
+    ],
+    "intervention": {
+      "removed": [
+        "H2"
+      ],
+      "replacement": null
+    },
+    "conclusions": [
+      {
+        "id": "C1",
+        "text": "A可实正交对角化"
+      }
+    ],
+    "reference": {
+      "judgment": "indispensable",
+      "witness": "A=[[0,1],[0,0]]",
+      "retained_checks": {
+        "H1": "实2×2矩阵"
+      },
+      "failure": "A非零幂零，甚至不可对角化",
+      "argument": "唯一特征值0，特征空间维数1",
+      "strategy_ids": [
+        "S06"
+      ],
+      "computation": {
+        "kind": "matrix",
+        "A": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "field": "real",
+        "claims": {
+          "square": true,
+          "symmetric": false,
+          "diagonalizable": false
+        }
+      }
+    },
+    "sources": [
+      {
+        "url": "https://linear.axler.net/LADRslides.pdf",
+        "locator": "PDF页260，Real Spectral Theorem",
+        "accessed": "2026-11-03",
+        "page_convention": "PDF页均为1-based PDF页，不是印刷页",
+        "status": "located_by_independent_AI_not_human_verified",
+        "title": "作者原始教材；详见locator",
+        "note": "来源用于原定理核对；本项目自拟反例与冗余题不冒称逐字出自教材。"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "record": null
+    },
+    "evidence_status": [
+      "authored_mathematical_argument",
+      "independent_AI_review_not_human"
+    ],
+    "gold_eligible": false,
+    "dataset_version": "0.2.0",
+    "ai_review": {
+      "status": "rechecked_no_core_error_found",
+      "date": "2026-11-03",
+      "kind": "AI_mathematical_review_not_human",
+      "gold_eligible": false,
+      "change_note": "数学构造未发现核心错误；继续保留人工待核验。",
+      "report": "reports/review-2026-11-03-algebra-complex.json"
+    }
+  },
+  {
+    "task_id": "AL02",
+    "subject": "高等代数",
+    "cross_tags": [],
+    "family_id": "eigenvalue",
+    "split": "development",
+    "statement": "令F∈{R,C}，V为正维有限维F向量空间，T:V→V为F线性映射。若F=C，则T在F中有特征值。",
+    "hypotheses": [
+      {
+        "id": "H1",
+        "text": "F=C"
+      },
+      {
+        "id": "H2",
+        "text": "V为正维有限维F向量空间"
+      },
+      {
+        "id": "H3",
+        "text": "T:V→V为F线性自映射"
+      }
+    ],
+    "intervention": {
+      "removed": [
+        "H1"
+      ],
+      "replacement": null
+    },
+    "conclusions": [
+      {
+        "id": "C1",
+        "text": "在声明底域中有特征值"
+      }
+    ],
+    "reference": {
+      "judgment": "indispensable",
+      "witness": "将底域改为R，V=R²，T矩阵[[0,-1],[1,0]]",
+      "retained_checks": {
+        "H2": "取F=R，V=R²，维数为2，正且有限。",
+        "H3": "给定实2×2矩阵定义R线性自映射。"
+      },
+      "failure": "实特征多项式λ²+1无实根",
+      "argument": "取F=R，旋转矩阵A=[[0,−1],[1,0]]。det(λI−A)=λ²+1，对任意实λ严格为正，故无实特征值。目标H1失效，其余假设保留。不可实对角化只是附带性质，不能单独证明没有实特征值。",
+      "strategy_ids": [
+        "S07"
+      ],
+      "computation": {
+        "kind": "matrix",
+        "A": [
+          [
+            0,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "field": "real",
+        "claims": {
+          "square": true,
+          "diagonalizable": false,
+          "has_eigenvalue_in_field": false
+        }
+      }
+    },
+    "sources": [
+      {
+        "url": "https://linear.axler.net/LADRslides.pdf",
+        "locator": "PDF页177–178，复非零有限维算子特征值存在及实平面旋转反例",
+        "accessed": "2026-11-03",
+        "page_convention": "PDF页均为1-based PDF页，不是印刷页",
+        "status": "located_by_independent_AI_not_human_verified",
+        "title": "作者原始教材；详见locator",
+        "note": "来源用于原定理核对；本项目自拟反例与冗余题不冒称逐字出自教材。"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "record": null
+    },
+    "evidence_status": [
+      "authored_mathematical_argument",
+      "independent_AI_review_not_human"
+    ],
+    "gold_eligible": false,
+    "ambient": "F∈{R,C}；特征值和线性性均相对于所声明的F。",
+    "dataset_version": "0.2.0",
+    "ai_review": {
+      "status": "rechecked_with_corrections",
+      "date": "2026-11-03",
+      "kind": "AI_mathematical_review_not_human",
+      "gold_eligible": false,
+      "change_note": "将底域与维数分开；以F∈{R,C}为背景，仅删除F=C。",
+      "report": "reports/review-2026-11-03-algebra-complex.json"
+    }
+  },
+  {
+    "task_id": "AL03",
+    "subject": "高等代数",
+    "cross_tags": [],
+    "family_id": "rank-nullity",
+    "split": "development",
+    "statement": "有限维 V 上线性自映射单射当且仅当满射",
+    "hypotheses": [
+      {
+        "id": "H1",
+        "text": "V有限维"
+      },
+      {
+        "id": "H2",
+        "text": "T:V→V线性"
+      }
+    ],
+    "intervention": {
+      "removed": [
+        "H1"
+      ],
+      "replacement": null
+    },
+    "conclusions": [
+      {
+        "id": "C1",
+        "text": "单射当且仅当满射"
+      }
+    ],
+    "reference": {
+      "judgment": "indispensable",
+      "witness": "V为实有限支撑序列，T(x1,x2,...)=(0,x1,x2,...)",
+      "retained_checks": {
+        "H2": "右移保持有限支撑且线性、自映射"
+      },
+      "failure": "单射但首坐标为1的向量不在像内",
+      "argument": "无限基e_n右移到e_(n+1)",
+      "strategy_ids": [
+        "S05"
+      ],
+      "computation": null
+    },
+    "sources": [
+      {
+        "url": "https://linear.axler.net/LADRslides.pdf",
+        "locator": "PDF页113，有限维自映射的可逆/单射/满射等价",
+        "accessed": "2026-11-03",
+        "page_convention": "PDF页均为1-based PDF页，不是印刷页",
+        "status": "located_by_independent_AI_not_human_verified",
+        "title": "作者原始教材；详见locator",
+        "note": "来源用于原定理核对；本项目自拟反例与冗余题不冒称逐字出自教材。"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "record": null
+    },
+    "evidence_status": [
+      "authored_mathematical_argument",
+      "independent_AI_review_not_human"
+    ],
+    "gold_eligible": false,
+    "dataset_version": "0.2.0",
+    "ai_review": {
+      "status": "rechecked_no_core_error_found",
+      "date": "2026-11-03",
+      "kind": "AI_mathematical_review_not_human",
+      "gold_eligible": false,
+      "change_note": "数学构造未发现核心错误；继续保留人工待核验。",
+      "report": "reports/review-2026-11-03-algebra-complex.json"
+    }
+  },
+  {
+    "task_id": "AL04",
+    "subject": "高等代数",
+    "cross_tags": [],
+    "family_id": "jordan-diagonalization",
+    "split": "development",
+    "statement": "n×n复矩阵有n个互异特征值则可对角化",
+    "hypotheses": [
+      {
+        "id": "H1",
+        "text": "A为n×n复矩阵 n≥1"
+      },
+      {
+        "id": "H2",
+        "text": "A有n个互异特征值"
+      }
+    ],
+    "intervention": {
+      "removed": [
+        "H2"
+      ],
+      "replacement": null
+    },
+    "conclusions": [
+      {
+        "id": "C1",
+        "text": "A可对角化"
+      }
+    ],
+    "reference": {
+      "judgment": "indispensable",
+      "witness": "n=2,A=[[1,1],[0,1]]",
+      "retained_checks": {
+        "H1": "复2×2矩阵"
+      },
+      "failure": "特征值1重数2，特征空间维数1",
+      "argument": "重根Jordan块",
+      "strategy_ids": [
+        "S08"
+      ],
+      "computation": {
+        "kind": "matrix",
+        "A": [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "field": "complex",
+        "claims": {
+          "diagonalizable": false
+        }
+      }
+    },
+    "sources": [
+      {
+        "url": "https://linear.axler.net/LADRslides.pdf",
+        "locator": "PDF页193，dim V个互异特征值推出可对角化",
+        "accessed": "2026-11-03",
+        "page_convention": "PDF页均为1-based PDF页，不是印刷页",
+        "status": "located_by_independent_AI_not_human_verified",
+        "title": "作者原始教材；详见locator",
+        "note": "来源用于原定理核对；本项目自拟反例与冗余题不冒称逐字出自教材。"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "record": null
+    },
+    "evidence_status": [
+      "authored_mathematical_argument",
+      "independent_AI_review_not_human"
+    ],
+    "gold_eligible": false,
+    "dataset_version": "0.2.0",
+    "ai_review": {
+      "status": "rechecked_no_core_error_found",
+      "date": "2026-11-03",
+      "kind": "AI_mathematical_review_not_human",
+      "gold_eligible": false,
+      "change_note": "数学构造未发现核心错误；继续保留人工待核验。",
+      "report": "reports/review-2026-11-03-algebra-complex.json"
+    }
+  },
+  {
+    "task_id": "RA01",
+    "subject": "实分析",
+    "cross_tags": [
+      "数学分析"
+    ],
+    "family_id": "shrinking-spikes",
+    "split": "development",
+    "statement": "在固定测度空间上，设实可测f_n逐项可积，f∈L¹，且f_n→f a.e.。若存在可积g≥|f_n| a.e.对所有n成立，则∫f_n→∫f。",
+    "hypotheses": [
+      {
+        "id": "H1",
+        "text": "f_n可测且逐项可积"
+      },
+      {
+        "id": "H2",
+        "text": "f_n→f a.e."
+      },
+      {
+        "id": "H3",
+        "text": "存在可积g使|f_n|≤g"
+      },
+      {
+        "id": "H4",
+        "text": "f∈L¹(X,μ)"
+      }
+    ],
+    "intervention": {
+      "removed": [
+        "H3"
+      ],
+      "replacement": null
+    },
+    "conclusions": [
+      {
+        "id": "C1",
+        "text": "∫f_n→∫f"
+      }
+    ],
+    "reference": {
+      "judgment": "indispensable",
+      "witness": "在(0,1)，f_n=n·1_(0,1/n)",
+      "retained_checks": {
+        "H1": "区间示性函数可测且积分有限",
+        "H2": "每个x>0最终不在支撑上",
+        "H4": "反例中f=0，故∫|f|=0<∞。"
+      },
+      "failure": "每项积分1而极限f=0积分0",
+      "argument": "∫f_n=1，f_n逐点趋于0，故积分不交换。若可积g≥f_n a.e.对所有n成立，可去掉可数个例外集的并。对m≥2及x∈(1/(m+1),1/m)，有g(x)≥f_m(x)=m，因此∫g≥Σ_{m≥2}m(1/m−1/(m+1))=Σ_{m≥2}1/(m+1)=∞，矛盾。",
+      "strategy_ids": [
+        "S09"
+      ],
+      "computation": {
+        "kind": "spike_integral",
+        "height": 1,
+        "p": 1,
+        "q": 1,
+        "claims": {
+          "integral_power": 0,
+          "integral_coefficient": 1
+        }
+      }
+    },
+    "sources": [
+      {
+        "url": "https://terrytao.wordpress.com/wp-content/uploads/2010/02/epsilon.pdf",
+        "title": "Terence Tao, An epsilon of room",
+        "locator": "Theorem 1.1.21：印刷12页/PDF第24页，Fatou行597–602、DCT行603–610",
+        "verified_scope": "已打开作者PDF，核对Fatou非负性和DCT共同绝对可积支配；不是所有本项目反例的出处。",
+        "status": "located_by_independent_AI_not_human_verified",
+        "note": "来源用于原定理核对；本项目自拟反例与冗余题不冒称逐字出自教材。"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "record": null
+    },
+    "evidence_status": [
+      "authored_mathematical_argument",
+      "independent_AI_review_not_human"
+    ],
+    "gold_eligible": false,
+    "ambient": "固定测度空间；f_n及f为实可测函数，积分为Lebesgue积分；反例取(0,1)上的Lebesgue测度。",
+    "dataset_version": "0.2.0",
+    "ai_review": {
+      "status": "rechecked_with_corrections",
+      "date": "2026-11-03",
+      "kind": "AI_mathematical_review_not_human",
+      "gold_eligible": false,
+      "change_note": "补充不依赖待核验定理的共同支配函数不存在证明，并明确Lebesgue积分约定。 同时显式保留f∈L¹，避免删除支配性后积分无定义。 同时显式保留f∈L¹，避免删除支配性后积分无定义。",
+      "report": "reports/review-2026-11-03-analysis.json"
+    }
+  },
+  {
+    "task_id": "RA02",
+    "subject": "实分析",
+    "cross_tags": [
+      "数学分析"
+    ],
+    "family_id": "shrinking-spikes",
+    "split": "development",
+    "statement": "非负可测函数列满足∫liminf f_n≤liminf∫f_n",
+    "hypotheses": [
+      {
+        "id": "H1",
+        "text": "f_n可测"
+      },
+      {
+        "id": "H2",
+        "text": "f_n≥0"
+      },
+      {
+        "id": "H3",
+        "text": "每个∫f_n及∫liminf f_n均有定义，允许扩展实数"
+      }
+    ],
+    "intervention": {
+      "removed": [
+        "H2"
+      ],
+      "replacement": null
+    },
+    "conclusions": [
+      {
+        "id": "C1",
+        "text": "Fatou不等式"
+      }
+    ],
+    "reference": {
+      "judgment": "indispensable",
+      "witness": "(0,1)上 f_n=−n·1_(0,1/n)",
+      "retained_checks": {
+        "H1": "−n乘区间示性函数是可测简单函数。",
+        "H3": "每项积分为−1，逐点liminf为0且其积分0；全部为有限实数。"
+      },
+      "failure": "左边0，右边−1",
+      "argument": "f_n(x)对每个x∈(0,1)最终为0；∫liminf f_n=0，而liminf∫f_n=−1，得到错误不等式0≤−1。H2明确失效，H1/H3保留。",
+      "strategy_ids": [
+        "S11"
+      ],
+      "computation": {
+        "kind": "spike_integral",
+        "height": -1,
+        "p": 1,
+        "q": 1,
+        "claims": {
+          "integral_power": 0,
+          "integral_coefficient": -1
+        }
+      }
+    },
+    "sources": [
+      {
+        "url": "https://terrytao.wordpress.com/wp-content/uploads/2010/02/epsilon.pdf",
+        "title": "Terence Tao, An epsilon of room",
+        "locator": "Theorem 1.1.21：印刷12页/PDF第24页，Fatou行597–602、DCT行603–610",
+        "verified_scope": "已打开作者PDF，核对Fatou非负性和DCT共同绝对可积支配；不是所有本项目反例的出处。",
+        "status": "located_by_independent_AI_not_human_verified",
+        "note": "来源用于原定理核对；本项目自拟反例与冗余题不冒称逐字出自教材。"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "record": null
+    },
+    "evidence_status": [
+      "authored_mathematical_argument",
+      "independent_AI_review_not_human"
+    ],
+    "gold_eligible": false,
+    "ambient": "固定测度空间，函数实值；使用Lebesgue积分，排除∞−∞。",
+    "dataset_version": "0.2.0",
+    "ai_review": {
+      "status": "rechecked_with_corrections",
+      "date": "2026-11-03",
+      "kind": "AI_mathematical_review_not_human",
+      "gold_eligible": false,
+      "change_note": "删除非负性时仍要求相关有符号积分有定义，避免无定义表达式。",
+      "report": "reports/review-2026-11-03-analysis.json"
+    }
+  },
+  {
+    "task_id": "RA03",
+    "subject": "实分析",
+    "cross_tags": [
+      "数学分析"
+    ],
+    "family_id": "continuity-above",
+    "split": "development",
+    "statement": "测度可测集E_n递减且μ(E1)<∞，则μ(∩E_n)=lim μ(E_n)",
+    "hypotheses": [
+      {
+        "id": "H1",
+        "text": "E_n可测且递减"
+      },
+      {
+        "id": "H2",
+        "text": "μ(E1)<∞"
+      }
+    ],
+    "intervention": {
+      "removed": [
+        "H2"
+      ],
+      "replacement": null
+    },
+    "conclusions": [
+      {
+        "id": "C1",
+        "text": "测度从上连续"
+      }
+    ],
+    "reference": {
+      "judgment": "indispensable",
+      "witness": "R上Lebesgue测度，E_n=[n,∞)",
+      "retained_checks": {
+        "H1": "闭集可测且递减"
+      },
+      "failure": "交集空测度0，每项测度∞",
+      "argument": "缺少首项有限测度",
+      "strategy_ids": [
+        "S10"
+      ],
+      "computation": null
+    },
+    "sources": [
+      {
+        "url": "https://terrytao.wordpress.com/wp-content/uploads/2012/12/gsm-126-tao5-measure-book.pdf",
+        "title": "Terence Tao, An Introduction to Measure Theory, author-hosted preliminary version",
+        "locator": "Exercise 1.4.23(iii)：印刷93页/PDF第109页；bounded convergence讨论：印刷112页/PDF第128页；Egorov Theorem1.5.9：印刷123页/PDF第139页",
+        "verified_scope": "已打开并定位相应原文；从上连续的有限项条件、有限测度上一致有界作为可积支配、a.e.收敛的有限测度背景。",
+        "status": "located_by_independent_AI_not_human_verified",
+        "note": "来源用于原定理核对；本项目自拟反例与冗余题不冒称逐字出自教材。"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "record": null
+    },
+    "evidence_status": [
+      "authored_mathematical_argument",
+      "independent_AI_review_not_human"
+    ],
+    "gold_eligible": false,
+    "dataset_version": "0.2.0",
+    "ai_review": {
+      "status": "rechecked_no_core_error_found",
+      "date": "2026-11-03",
+      "kind": "AI_mathematical_review_not_human",
+      "gold_eligible": false,
+      "change_note": "数学构造未发现核心错误；继续保留人工待核验。",
+      "report": "reports/review-2026-11-03-analysis.json"
+    }
+  },
+  {
+    "task_id": "CA01",
+    "subject": "复分析",
+    "cross_tags": [],
+    "family_id": "liouville",
+    "split": "development",
+    "statement": "有界整函数为常数",
+    "hypotheses": [
+      {
+        "id": "H1",
+        "text": "f在C上全纯"
+      },
+      {
+        "id": "H2",
+        "text": "f在C上有界"
+      }
+    ],
+    "intervention": {
+      "removed": [
+        "H2"
+      ],
+      "replacement": null
+    },
+    "conclusions": [
+      {
+        "id": "C1",
+        "text": "f为常数"
+      }
+    ],
+    "reference": {
+      "judgment": "indispensable",
+      "witness": "f(z)=z",
+      "retained_checks": {
+        "H1": "多项式整函数"
+      },
+      "failure": "f(0)=0，f(1)=1",
+      "argument": "整性保留而增长无界",
+      "strategy_ids": [
+        "S13"
+      ],
+      "computation": null
+    },
+    "sources": [
+      {
+        "url": "https://www.jirka.org/ca/ca.pdf",
+        "locator": "v1.9，定理3.3.10，PDF页80",
+        "accessed": "2026-11-03",
+        "page_convention": "PDF页均为1-based PDF页，不是印刷页",
+        "status": "located_by_independent_AI_not_human_verified",
+        "title": "作者原始教材；详见locator",
+        "note": "来源用于原定理核对；本项目自拟反例与冗余题不冒称逐字出自教材。"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "record": null
+    },
+    "evidence_status": [
+      "authored_mathematical_argument",
+      "independent_AI_review_not_human"
+    ],
+    "gold_eligible": false,
+    "dataset_version": "0.2.0",
+    "ai_review": {
+      "status": "rechecked_no_core_error_found",
+      "date": "2026-11-03",
+      "kind": "AI_mathematical_review_not_human",
+      "gold_eligible": false,
+      "change_note": "数学构造未发现核心错误；继续保留人工待核验。",
+      "report": "reports/review-2026-11-03-algebra-complex.json"
+    }
+  },
+  {
+    "task_id": "CA02",
+    "subject": "复分析",
+    "cross_tags": [],
+    "family_id": "liouville",
+    "split": "development",
+    "statement": "有界整函数为常数",
+    "hypotheses": [
+      {
+        "id": "H1",
+        "text": "f在C上全纯"
+      },
+      {
+        "id": "H2",
+        "text": "f在C上有界"
+      }
+    ],
+    "intervention": {
+      "removed": [
+        "H1"
+      ],
+      "replacement": null
+    },
+    "conclusions": [
+      {
+        "id": "C1",
+        "text": "f为常数"
+      }
+    ],
+    "reference": {
+      "judgment": "indispensable",
+      "witness": "f(z)=conj(z)/(1+|z|²)",
+      "retained_checks": {
+        "H2": "r/(1+r²)≤1/2"
+      },
+      "failure": "f(0)=0,f(1)=1/2；在0沿实/虚方向差商分别1,-1",
+      "argument": "全局有界但不整",
+      "strategy_ids": [
+        "S14"
+      ],
+      "computation": null
+    },
+    "sources": [
+      {
+        "url": "https://www.jirka.org/ca/ca.pdf",
+        "locator": "v1.9，定理3.3.10，PDF页80；反例为本项目构造与直接验证",
+        "accessed": "2026-11-03",
+        "page_convention": "PDF页均为1-based PDF页，不是印刷页",
+        "status": "located_by_independent_AI_not_human_verified",
+        "title": "作者原始教材；详见locator",
+        "note": "来源用于原定理核对；本项目自拟反例与冗余题不冒称逐字出自教材。"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "record": null
+    },
+    "evidence_status": [
+      "authored_mathematical_argument",
+      "independent_AI_review_not_human"
+    ],
+    "gold_eligible": false,
+    "dataset_version": "0.2.0",
+    "ai_review": {
+      "status": "rechecked_no_core_error_found",
+      "date": "2026-11-03",
+      "kind": "AI_mathematical_review_not_human",
+      "gold_eligible": false,
+      "change_note": "数学构造未发现核心错误；继续保留人工待核验。",
+      "report": "reports/review-2026-11-03-algebra-complex.json"
+    }
+  },
+  {
+    "task_id": "CA04",
+    "subject": "复分析",
+    "cross_tags": [],
+    "family_id": "identity-boundary",
+    "split": "development",
+    "statement": "连通开集Ω上全纯f的零点在Ω有聚点，则f恒零",
+    "hypotheses": [
+      {
+        "id": "H1",
+        "text": "Ω连通"
+      },
+      {
+        "id": "H2",
+        "text": "f在Ω全纯"
+      },
+      {
+        "id": "H3",
+        "text": "零点在Ω内有聚点"
+      },
+      {
+        "id": "H4",
+        "text": "Ω为非空开集"
+      }
+    ],
+    "intervention": {
+      "removed": [
+        "H3"
+      ],
+      "replacement": null
+    },
+    "conclusions": [
+      {
+        "id": "C1",
+        "text": "f恒零"
+      }
+    ],
+    "reference": {
+      "judgment": "indispensable",
+      "witness": "Ω=C\\{0}, f(z)=sin(π/z)",
+      "retained_checks": {
+        "H1": "穿孔平面连通开",
+        "H2": "复合全纯",
+        "H4": "C\\{0}为非空开集。"
+      },
+      "failure": "f(2)=1；零点1/n聚于域外0",
+      "argument": "边界聚点不满足原H3",
+      "strategy_ids": [
+        "S15"
+      ],
+      "computation": null
+    },
+    "sources": [
+      {
+        "url": "https://www.jirka.org/ca/ca.pdf",
+        "locator": "v1.9，定理2.4.7 Identity，PDF页49",
+        "accessed": "2026-11-03",
+        "page_convention": "PDF页均为1-based PDF页，不是印刷页",
+        "status": "located_by_independent_AI_not_human_verified",
+        "title": "作者原始教材；详见locator",
+        "note": "来源用于原定理核对；本项目自拟反例与冗余题不冒称逐字出自教材。"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "record": null
+    },
+    "evidence_status": [
+      "authored_mathematical_argument",
+      "independent_AI_review_not_human"
+    ],
+    "gold_eligible": false,
+    "ambient": "Ω⊂C，f:Ω→C；全纯按开集上的逐点定义，不预设连通性。",
+    "dataset_version": "0.2.0",
+    "ai_review": {
+      "status": "rechecked_with_corrections",
+      "date": "2026-11-03",
+      "kind": "AI_mathematical_review_not_human",
+      "gold_eligible": false,
+      "change_note": "把开集和连通性分开，保留函数全纯的合法定义域。",
+      "report": "reports/review-2026-11-03-algebra-complex.json"
+    }
+  },
+  {
+    "task_id": "CA05",
+    "subject": "复分析",
+    "cross_tags": [],
+    "family_id": "maximum",
+    "split": "development",
+    "statement": "连通域上全纯函数若模在内点取得局部最大则为常数",
+    "hypotheses": [
+      {
+        "id": "H1",
+        "text": "Ω连通开"
+      },
+      {
+        "id": "H2",
+        "text": "f在Ω全纯"
+      },
+      {
+        "id": "H3",
+        "text": "|f|在内点有局部最大"
+      }
+    ],
+    "intervention": {
+      "removed": [
+        "H2"
+      ],
+      "replacement": null
+    },
+    "conclusions": [
+      {
+        "id": "C1",
+        "text": "f为常数"
+      }
+    ],
+    "reference": {
+      "judgment": "indispensable",
+      "witness": "Ω=D(0,1), f(z)=1−|z|²",
+      "retained_checks": {
+        "H1": "单位盘为域",
+        "H3": "模在0取得严格最大1"
+      },
+      "failure": "f(0)=1,f(1/2)=3/4",
+      "argument": "实光滑不代替全纯",
+      "strategy_ids": [
+        "S14"
+      ],
+      "computation": null
+    },
+    "sources": [
+      {
+        "url": "https://www.jirka.org/ca/ca.pdf",
+        "locator": "v1.9，定理3.3.6 Maximum modulus principle，PDF页77",
+        "accessed": "2026-11-03",
+        "page_convention": "PDF页均为1-based PDF页，不是印刷页",
+        "status": "located_by_independent_AI_not_human_verified",
+        "title": "作者原始教材；详见locator",
+        "note": "来源用于原定理核对；本项目自拟反例与冗余题不冒称逐字出自教材。"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "record": null
+    },
+    "evidence_status": [
+      "authored_mathematical_argument",
+      "independent_AI_review_not_human"
+    ],
+    "gold_eligible": false,
+    "dataset_version": "0.2.0",
+    "ai_review": {
+      "status": "rechecked_no_core_error_found",
+      "date": "2026-11-03",
+      "kind": "AI_mathematical_review_not_human",
+      "gold_eligible": false,
+      "change_note": "数学构造未发现核心错误；继续保留人工待核验。",
+      "report": "reports/review-2026-11-03-algebra-complex.json"
+    }
+  }
+]

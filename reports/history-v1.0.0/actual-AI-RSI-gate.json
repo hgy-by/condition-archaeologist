@@ -1,0 +1,28 @@
+{
+  "decision": "reject_or_collect_more_evidence",
+  "review_mode": "ai_internal",
+  "reasons": [
+    "Tasks overlap rule-development sources",
+    "Tasks overlap rule-development sources",
+    "Insufficient improvement",
+    "Insufficient families",
+    "Improvement interval includes zero"
+  ],
+  "comparison": {
+    "paired_success_gain": -0.25,
+    "family_count": 4,
+    "bootstrap_samples": 2000,
+    "family_cluster_bootstrap95": [
+      -0.75,
+      0
+    ],
+    "seed": 20261102
+  },
+  "baseline_tree_hash": "9b210d02e4161ec8c39ea1882ee4ca7b53b9a3882b471568522f2747401123b6",
+  "candidate_tree_hash": "570004a032846c098f5b4f339a302b0c702d638cf09604f7ebb2365ae349c611",
+  "baseline_report_digest": "96ec5eeaf6a217bfec146ad52ec2fe1e1db783e89b957537f01412efa2953a7a",
+  "candidate_report_digest": "830d917c8c42b65fb0499ba364d5a518b8c5c393f2ef482bf81835422647262f",
+  "policy_digest": "476a57a07f32745f31fae9041fd4385dd195b95483945686b5233bb3d730dd77",
+  "automatic_installation": false,
+  "independent_human_validation": false
+}

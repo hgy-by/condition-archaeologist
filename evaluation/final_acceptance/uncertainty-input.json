@@ -1,0 +1,5 @@
+{
+  "task_id": "EDGE-AMBIGUOUS",
+  "subject": "实分析",
+  "request": "请拆解Lebesgue收敛定理，逐个删除条件。"
+}

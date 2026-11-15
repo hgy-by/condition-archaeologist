@@ -1,0 +1,42 @@
+{
+  "release_version": "1.0.0",
+  "date": "2026-11-06",
+  "runtime_strategy_logic_changed": false,
+  "reference_review_reported_by_user": {
+    "tasks": 29,
+    "result": "all_passed_no_changes",
+    "source_statements": [
+      "经人工检验29个案例全部通过",
+      "核验记录无改动"
+    ],
+    "item_level_explanations_received": false
+  },
+  "development_model_outputs": {
+    "answers": 30,
+    "user_feedback": [
+      "CA01-B 未显式验证 f(z)=z 无界",
+      "其余均不需要修改"
+    ],
+    "core_valid_witnesses": "15/15 in both arms",
+    "scope": "development-only human-reported acceptance; not blind certification"
+  },
+  "formal_proof": false,
+  "RSI_improvement_proven": false,
+  "do_not_read_evaluation_answers_when_testing": true,
+  "review_workflow": "AI review authorized; no additional human review requested for current delivery",
+  "output_identity_instruction_changed": true,
+  "new_three_user_report": {
+    "ids": [
+      "AL07",
+      "RA07",
+      "CA09"
+    ],
+    "source_statement": "新增的三个例子通过",
+    "item_level_explanations_received": false
+  },
+  "ai_review_scope": "Existing v0.2.1 model outputs; does not measure v0.2.2 generation performance",
+  "release_type": "AI-reviewed four-subject auxiliary skill",
+  "human_review_required_for_current_release": false,
+  "capability_claim": "Bounded internal AI evaluation only; see external release reports for actual run results.",
+  "maintenance_change": "Reconcile RSI workflow with existing authorized AI review mode; no new capability certification."
+}

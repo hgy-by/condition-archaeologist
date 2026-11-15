@@ -1,0 +1,571 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>条件考古学：29道人工核验题目</title><style>body{font-family:"Microsoft YaHei","Segoe UI",sans-serif;line-height:1.85;color:#172b3a;background:#f3f6f8;margin:0}main{max-width:1000px;margin:auto;padding:28px}h1{line-height:1.4}a{color:#145a91}nav,.intro,article{background:white;border:1px solid #d9e2e8;border-radius:12px;padding:22px;margin:20px 0}article{scroll-margin-top:20px}h2{border-bottom:2px solid #277b91;padding-bottom:8px}h3{font-size:18px;margin-bottom:5px}p{white-space:pre-wrap;overflow-wrap:anywhere}.muted{color:#566875}.warning{border-left:5px solid #b37a1a;padding:12px;background:#fff7e8}.tag{display:inline-block;background:#eaf2f7;padding:2px 10px;border-radius:4px;margin-right:8px}li{margin:5px 0}.review{border:1px dashed #8299a8;padding:14px}.source{font-size:14px}.back{font-size:14px}@media print{body{background:white}main{padding:0;max-width:none}nav{display:none}article{break-before:page;border:none;padding:0}article:first-of-type{break-before:auto}.back{display:none}a{color:#172b3a;text-decoration:none}}</style></head><body><main id="top">
+<h1>条件考古学：29道人工核验题目</h1>
+<div class="intro"><p class="warning">本题册由现有29条原始题目转换而来，未新增数学结论。全部参考答案仍待独立人工核验。浏览器版用于阅读，不能直接保存审阅意见。请在记事本版中填写并另存，或打印后填写。</p><p>使用方法：先在下面的目录中选择科目和题号。每题按顺序给出原定理、假设、删除目标、参考构造、保留假设核对、失效原因与来源。请按这条顺序逐项审阅。</p><p>MA＝数学分析；AL＝高等代数；RA＝实分析；CA＝复分析。题号只用于定位，不代表题目已核验通过。</p></div><nav><h2>题目目录</h2>
+<h3>数学分析（9题）</h3><ul>
+<li><a href="#MA01">MA01：有限闭区间[a,b]上连续、内部可微且f(a)=f(b)，a&lt;b，则存在c∈(a,b)使f&#x27;(c)=0。</a></li>
+<li><a href="#MA02">MA02：有限闭区间[a,b]上连续、内部可微且f(a)=f(b)，a&lt;b，则存在c∈(a,b)使f&#x27;(c)=0。</a></li>
+<li><a href="#MA03">MA03：非空紧集 K⊂R 上连续实函数取到最大最小值</a></li>
+<li><a href="#MA04">MA04：同一域上一致收敛的连续实函数列，其极限连续</a></li>
+<li><a href="#MA05">MA05：f 在开区间 I 可微且连续，则 f 在 I 连续</a></li>
+<li><a href="#MA06">MA06：非空集合A⊂R，若 A⊂[0,1] 且 A有限，则A有界</a></li>
+<li><a href="#MA07">MA07：非空集合A⊂R，若 A⊂[0,1] 且 A有限，则A有界</a></li>
+<li><a href="#MA08">MA08：非空集合A⊂R，若 A⊂[0,1] 且 A有限，则A有界</a></li>
+<li><a href="#MA09">MA09：连续 f:[0,1]→R 且 f(0)&lt;0&lt;f(1)，则存在内部零点</a></li>
+</ul>
+<h3>高等代数（6题）</h3><ul>
+<li><a href="#AL01">AL01：实对称方阵可实正交对角化</a></li>
+<li><a href="#AL02">AL02：正维有限维复向量空间的线性算子有特征值</a></li>
+<li><a href="#AL03">AL03：有限维 V 上线性自映射单射当且仅当满射</a></li>
+<li><a href="#AL04">AL04：n×n复矩阵有n个互异特征值则可对角化</a></li>
+<li><a href="#AL05">AL05：可逆 n×n实矩阵且行列式非零，则对应算子为单射</a></li>
+<li><a href="#AL06">AL06：同阶方阵A,B，若A可逆且AB=0，则B=0</a></li>
+</ul>
+<h3>实分析（6题）</h3><ul>
+<li><a href="#RA01">RA01：可测 f_n→f a.e. 且存在可积 g≥|f_n|，则积分收敛</a></li>
+<li><a href="#RA02">RA02：非负可测函数列满足∫liminf f_n≤liminf∫f_n</a></li>
+<li><a href="#RA03">RA03：测度可测集E_n递减且μ(E1)&lt;∞，则μ(∩E_n)=lim μ(E_n)</a></li>
+<li><a href="#RA04">RA04：有限测度空间中，可测f_n→f a.e.且有统一有限界M，则积分收敛</a></li>
+<li><a href="#RA05">RA05：有限测度空间上，可测且有界并可积的f具有有限绝对积分</a></li>
+<li><a href="#RA06">RA06：有限测度空间中可测f_n a.e.收敛到0，则依测度收敛到0</a></li>
+</ul>
+<h3>复分析（8题）</h3><ul>
+<li><a href="#CA01">CA01：有界整函数为常数</a></li>
+<li><a href="#CA02">CA02：有界整函数为常数</a></li>
+<li><a href="#CA03">CA03：连通开集Ω上全纯f的零点在Ω有聚点，则f恒零</a></li>
+<li><a href="#CA04">CA04：连通开集Ω上全纯f的零点在Ω有聚点，则f恒零</a></li>
+<li><a href="#CA05">CA05：连通域上全纯函数若模在内点取得局部最大则为常数</a></li>
+<li><a href="#CA06">CA06：单连通域Ω内全纯f沿任意分段光滑闭曲线积分为0</a></li>
+<li><a href="#CA07">CA07：全纯且连续的域上函数连续</a></li>
+<li><a href="#CA08">CA08：连通域上全纯函数导数恒0则为常数</a></li>
+</ul>
+</nav>
+<article id="MA01">
+<h2>MA01 · 数学分析</h2>
+<span class="tag">开发集</span><span class="tag">待独立人工核验</span>
+<h3>一、原定理</h3><p>有限闭区间[a,b]上连续、内部可微且f(a)=f(b)，a&lt;b，则存在c∈(a,b)使f&#x27;(c)=0。</p>
+<h3>二、原定理的全部假设</h3><p>H1：f 在 [a,b] 连续
+H2：f 在 (a,b) 可微
+H3：a&lt;b 为有限实数
+H4：f(a)=f(b)</p>
+<h3>三、本题准备删除的条件</h3><p>H2
+H2：f 在 (a,b) 可微</p>
+<h3>四、原定理要保证的结论</h3><p>C1：存在内部导数为0的点</p>
+<h3>五、参考判断（待人工核验）</h3><p>在保留其他假设的背景下，该条件不可删</p>
+<h3>六、参考反例或删后成立论证</h3><p>[a,b]=[-1,1], f(x)=|x|</p>
+<h3>七、保留假设的逐项核对</h3><p>H1：绝对值连续
+H3：−1&lt;1
+H4：两端值均为1</p>
+<h3>八、结论为什么失败，或为什么仍成立</h3><p>除0外导数±1，0处不可微</p>
+<h3>九、补充解释</h3><p>可微性不能删</p>
+<h3>十、来源与核验缺口</h3>
+<p class="source">Jiří Lebl, Basic Analysis, Continuous Functions<br><a href="https://www.jirka.org/ra/html/lim_chapter.html">https://www.jirka.org/ra/html/lim_chapter.html</a><br>当前仅定位到作者资料入口，尚需核对具体版本、章节、定理或页码。本项目构造不冒称出自该来源。</p>
+<p>本题当前依据为项目编写的数学论证，尚无独立人工核验。</p><div class="review"><strong>请逐项核验</strong><ol><li>原定理、量词、定义和隐含条件是否准确？</li><li>是否确实只删去了指定条件？类型改写是否明确？</li><li>所有保留假设是否都满足？</li><li>指定结论是否真的失败，或删后成立的证明是否充分？</li><li>来源能否定位到具体教材位置？</li></ol><p>审阅结论：通过 / 需要修改 / 暂不能确认<br>审阅人：________________　日期：________________<br>修改意见：________________________________________________</p></div><p class="source">原始文件：C:\Users\hougu\Documents\Codex\2026-11-02\du\outputs\condition-archaeologist-release\evaluation\development\cases.jsonl</p><p class="back"><a href="#top">返回目录</a></p></article>
+<article id="MA02">
+<h2>MA02 · 数学分析</h2>
+<span class="tag">开发集</span><span class="tag">待独立人工核验</span>
+<h3>一、原定理</h3><p>有限闭区间[a,b]上连续、内部可微且f(a)=f(b)，a&lt;b，则存在c∈(a,b)使f&#x27;(c)=0。</p>
+<h3>二、原定理的全部假设</h3><p>H1：f 在 [a,b] 连续
+H2：f 在 (a,b) 可微
+H3：a&lt;b 为有限实数
+H4：f(a)=f(b)</p>
+<h3>三、本题准备删除的条件</h3><p>H1
+H1：f 在 [a,b] 连续</p>
+<h3>四、原定理要保证的结论</h3><p>C1：存在内部导数为0的点</p>
+<h3>五、参考判断（待人工核验）</h3><p>在保留其他假设的背景下，该条件不可删</p>
+<h3>六、参考反例或删后成立论证</h3><p>[0,1]; f(x)=x (x&lt;1), f(1)=0</p>
+<h3>七、保留假设的逐项核对</h3><p>H2：内部导数恒1
+H3：0&lt;1
+H4：f(0)=f(1)=0</p>
+<h3>八、结论为什么失败，或为什么仍成立</h3><p>内部导数恒1</p>
+<h3>九、补充解释</h3><p>只在右端点不连续</p>
+<h3>十、来源与核验缺口</h3>
+<p class="source">Jiří Lebl, Basic Analysis, Continuous Functions<br><a href="https://www.jirka.org/ra/html/lim_chapter.html">https://www.jirka.org/ra/html/lim_chapter.html</a><br>当前仅定位到作者资料入口，尚需核对具体版本、章节、定理或页码。本项目构造不冒称出自该来源。</p>
+<p>本题当前依据为项目编写的数学论证，尚无独立人工核验。</p><div class="review"><strong>请逐项核验</strong><ol><li>原定理、量词、定义和隐含条件是否准确？</li><li>是否确实只删去了指定条件？类型改写是否明确？</li><li>所有保留假设是否都满足？</li><li>指定结论是否真的失败，或删后成立的证明是否充分？</li><li>来源能否定位到具体教材位置？</li></ol><p>审阅结论：通过 / 需要修改 / 暂不能确认<br>审阅人：________________　日期：________________<br>修改意见：________________________________________________</p></div><p class="source">原始文件：C:\Users\hougu\Documents\Codex\2026-11-02\du\outputs\condition-archaeologist-release\evaluation\development\cases.jsonl</p><p class="back"><a href="#top">返回目录</a></p></article>
+<article id="MA03">
+<h2>MA03 · 数学分析</h2>
+<span class="tag">开发集</span><span class="tag">待独立人工核验</span>
+<h3>一、原定理</h3><p>非空紧集 K⊂R 上连续实函数取到最大最小值</p>
+<h3>二、原定理的全部假设</h3><p>H1：K非空紧
+H2：f:K→R连续</p>
+<h3>三、本题准备删除的条件</h3><p>H1
+H1：K非空紧</p>
+<h3>四、原定理要保证的结论</h3><p>C1：取到最大最小值</p>
+<h3>五、参考判断（待人工核验）</h3><p>在保留其他假设的背景下，该条件不可删</p>
+<h3>六、参考反例或删后成立论证</h3><p>K=(0,1), f(x)=x</p>
+<h3>七、保留假设的逐项核对</h3><p>H2：恒等函数连续</p>
+<h3>八、结论为什么失败，或为什么仍成立</h3><p>上确界1、下确界0均不属于像</p>
+<h3>九、补充解释</h3><p>非空仍保留，只破坏紧致性足够</p>
+<h3>十、来源与核验缺口</h3>
+<p class="source">Jiří Lebl, Basic Analysis, Continuous Functions<br><a href="https://www.jirka.org/ra/html/lim_chapter.html">https://www.jirka.org/ra/html/lim_chapter.html</a><br>当前仅定位到作者资料入口，尚需核对具体版本、章节、定理或页码。本项目构造不冒称出自该来源。</p>
+<p>本题当前依据为项目编写的数学论证，尚无独立人工核验。</p><div class="review"><strong>请逐项核验</strong><ol><li>原定理、量词、定义和隐含条件是否准确？</li><li>是否确实只删去了指定条件？类型改写是否明确？</li><li>所有保留假设是否都满足？</li><li>指定结论是否真的失败，或删后成立的证明是否充分？</li><li>来源能否定位到具体教材位置？</li></ol><p>审阅结论：通过 / 需要修改 / 暂不能确认<br>审阅人：________________　日期：________________<br>修改意见：________________________________________________</p></div><p class="source">原始文件：C:\Users\hougu\Documents\Codex\2026-11-02\du\outputs\condition-archaeologist-release\evaluation\development\cases.jsonl</p><p class="back"><a href="#top">返回目录</a></p></article>
+<article id="MA04">
+<h2>MA04 · 数学分析</h2>
+<span class="tag">开发集</span><span class="tag">待独立人工核验</span>
+<h3>一、原定理</h3><p>同一域上一致收敛的连续实函数列，其极限连续</p>
+<h3>二、原定理的全部假设</h3><p>H1：各 f_n 在[0,1]连续
+H2：f_n一致收敛于f</p>
+<h3>三、本题准备删除的条件</h3><p>H2
+H2：f_n一致收敛于f</p>
+<h3>四、原定理要保证的结论</h3><p>C1：极限f连续</p>
+<h3>五、参考判断（待人工核验）</h3><p>在保留其他假设的背景下，该条件不可删</p>
+<h3>六、参考反例或删后成立论证</h3><p>f_n(x)=x^n，改为仅逐点收敛</p>
+<h3>七、保留假设的逐项核对</h3><p>H1：多项式连续</p>
+<h3>八、结论为什么失败，或为什么仍成立</h3><p>f在[0,1)为0，在1为1</p>
+<h3>九、补充解释</h3><p>弱化为逐点会失败；干预为删除一致收敛并给明确逐点极限</p>
+<h3>十、来源与核验缺口</h3>
+<p class="source">Jiří Lebl, Basic Analysis, Continuous Functions<br><a href="https://www.jirka.org/ra/html/lim_chapter.html">https://www.jirka.org/ra/html/lim_chapter.html</a><br>当前仅定位到作者资料入口，尚需核对具体版本、章节、定理或页码。本项目构造不冒称出自该来源。</p>
+<p>本题当前依据为项目编写的数学论证，尚无独立人工核验。</p><div class="review"><strong>请逐项核验</strong><ol><li>原定理、量词、定义和隐含条件是否准确？</li><li>是否确实只删去了指定条件？类型改写是否明确？</li><li>所有保留假设是否都满足？</li><li>指定结论是否真的失败，或删后成立的证明是否充分？</li><li>来源能否定位到具体教材位置？</li></ol><p>审阅结论：通过 / 需要修改 / 暂不能确认<br>审阅人：________________　日期：________________<br>修改意见：________________________________________________</p></div><p class="source">原始文件：C:\Users\hougu\Documents\Codex\2026-11-02\du\outputs\condition-archaeologist-release\evaluation\development\cases.jsonl</p><p class="back"><a href="#top">返回目录</a></p></article>
+<article id="MA05">
+<h2>MA05 · 数学分析</h2>
+<span class="tag">验证集</span><span class="tag">待独立人工核验</span>
+<h3>一、原定理</h3><p>f 在开区间 I 可微且连续，则 f 在 I 连续</p>
+<h3>二、原定理的全部假设</h3><p>H1：I为开区间
+H2：f在I可微
+H3：f在I连续</p>
+<h3>三、本题准备删除的条件</h3><p>H3
+H3：f在I连续</p>
+<h3>四、原定理要保证的结论</h3><p>C1：f在I连续</p>
+<h3>五、参考判断（待人工核验）</h3><p>该条件可由其余假设推出</p>
+<h3>六、参考反例或删后成立论证</h3><p>本题不主张存在反例。参考论证：f(x+h)-f(x)=h·差商→0；每点可微故连续</p>
+<h3>七、保留假设的逐项核对</h3><p>H1：原条件保留
+H2：可微推出每点连续</p>
+<h3>八、结论为什么失败，或为什么仍成立</h3><p>f(x+h)-f(x)=h·差商→0；每点可微故连续</p>
+<h3>九、补充解释</h3><p>f(x+h)-f(x)=h·差商→0；每点可微故连续</p>
+<h3>十、来源与核验缺口</h3>
+<p class="source">Jiří Lebl, Basic Analysis, Continuous Functions<br><a href="https://www.jirka.org/ra/html/lim_chapter.html">https://www.jirka.org/ra/html/lim_chapter.html</a><br>当前仅定位到作者资料入口，尚需核对具体版本、章节、定理或页码。本项目构造不冒称出自该来源。</p>
+<p>本题当前依据为项目编写的数学论证，尚无独立人工核验。</p><div class="review"><strong>请逐项核验</strong><ol><li>原定理、量词、定义和隐含条件是否准确？</li><li>是否确实只删去了指定条件？类型改写是否明确？</li><li>所有保留假设是否都满足？</li><li>指定结论是否真的失败，或删后成立的证明是否充分？</li><li>来源能否定位到具体教材位置？</li></ol><p>审阅结论：通过 / 需要修改 / 暂不能确认<br>审阅人：________________　日期：________________<br>修改意见：________________________________________________</p></div><p class="source">原始文件：C:\Users\hougu\Documents\Codex\2026-11-02\du\outputs\condition-archaeologist-release\evaluation\validation\cases.jsonl</p><p class="back"><a href="#top">返回目录</a></p></article>
+<article id="MA06">
+<h2>MA06 · 数学分析</h2>
+<span class="tag">验证集</span><span class="tag">待独立人工核验</span>
+<h3>一、原定理</h3><p>非空集合A⊂R，若 A⊂[0,1] 且 A有限，则A有界</p>
+<h3>二、原定理的全部假设</h3><p>H1：A非空
+H2：A⊂[0,1]
+H3：A有限</p>
+<h3>三、本题准备删除的条件</h3><p>H2
+H2：A⊂[0,1]</p>
+<h3>四、原定理要保证的结论</h3><p>C1：A有界</p>
+<h3>五、参考判断（待人工核验）</h3><p>删去后结论仍成立</p>
+<h3>六、参考反例或删后成立论证</h3><p>本题不主张存在反例。参考论证：取有限个绝对值的最大值作为界</p>
+<h3>七、保留假设的逐项核对</h3><p>H1：保留
+H3：有限实数集有界</p>
+<h3>八、结论为什么失败，或为什么仍成立</h3><p>取有限个绝对值的最大值作为界</p>
+<h3>九、补充解释</h3><p>取有限个绝对值的最大值作为界</p>
+<h3>十、来源与核验缺口</h3>
+<p class="source">Jiří Lebl, Basic Analysis, Continuous Functions<br><a href="https://www.jirka.org/ra/html/lim_chapter.html">https://www.jirka.org/ra/html/lim_chapter.html</a><br>当前仅定位到作者资料入口，尚需核对具体版本、章节、定理或页码。本项目构造不冒称出自该来源。</p>
+<p>本题当前依据为项目编写的数学论证，尚无独立人工核验。</p><div class="review"><strong>请逐项核验</strong><ol><li>原定理、量词、定义和隐含条件是否准确？</li><li>是否确实只删去了指定条件？类型改写是否明确？</li><li>所有保留假设是否都满足？</li><li>指定结论是否真的失败，或删后成立的证明是否充分？</li><li>来源能否定位到具体教材位置？</li></ol><p>审阅结论：通过 / 需要修改 / 暂不能确认<br>审阅人：________________　日期：________________<br>修改意见：________________________________________________</p></div><p class="source">原始文件：C:\Users\hougu\Documents\Codex\2026-11-02\du\outputs\condition-archaeologist-release\evaluation\validation\cases.jsonl</p><p class="back"><a href="#top">返回目录</a></p></article>
+<article id="MA07">
+<h2>MA07 · 数学分析</h2>
+<span class="tag">验证集</span><span class="tag">待独立人工核验</span>
+<h3>一、原定理</h3><p>非空集合A⊂R，若 A⊂[0,1] 且 A有限，则A有界</p>
+<h3>二、原定理的全部假设</h3><p>H1：A非空
+H2：A⊂[0,1]
+H3：A有限</p>
+<h3>三、本题准备删除的条件</h3><p>H3
+H3：A有限</p>
+<h3>四、原定理要保证的结论</h3><p>C1：A有界</p>
+<h3>五、参考判断（待人工核验）</h3><p>删去后结论仍成立</p>
+<h3>六、参考反例或删后成立论证</h3><p>本题不主张存在反例。参考论证：1为统一界</p>
+<h3>七、保留假设的逐项核对</h3><p>H1：保留
+H2：所有元素绝对值≤1</p>
+<h3>八、结论为什么失败，或为什么仍成立</h3><p>1为统一界</p>
+<h3>九、补充解释</h3><p>1为统一界</p>
+<h3>十、来源与核验缺口</h3>
+<p class="source">Jiří Lebl, Basic Analysis, Continuous Functions<br><a href="https://www.jirka.org/ra/html/lim_chapter.html">https://www.jirka.org/ra/html/lim_chapter.html</a><br>当前仅定位到作者资料入口，尚需核对具体版本、章节、定理或页码。本项目构造不冒称出自该来源。</p>
+<p>本题当前依据为项目编写的数学论证，尚无独立人工核验。</p><div class="review"><strong>请逐项核验</strong><ol><li>原定理、量词、定义和隐含条件是否准确？</li><li>是否确实只删去了指定条件？类型改写是否明确？</li><li>所有保留假设是否都满足？</li><li>指定结论是否真的失败，或删后成立的证明是否充分？</li><li>来源能否定位到具体教材位置？</li></ol><p>审阅结论：通过 / 需要修改 / 暂不能确认<br>审阅人：________________　日期：________________<br>修改意见：________________________________________________</p></div><p class="source">原始文件：C:\Users\hougu\Documents\Codex\2026-11-02\du\outputs\condition-archaeologist-release\evaluation\validation\cases.jsonl</p><p class="back"><a href="#top">返回目录</a></p></article>
+<article id="MA08">
+<h2>MA08 · 数学分析</h2>
+<span class="tag">验证集</span><span class="tag">待独立人工核验</span>
+<h3>一、原定理</h3><p>非空集合A⊂R，若 A⊂[0,1] 且 A有限，则A有界</p>
+<h3>二、原定理的全部假设</h3><p>H1：A非空
+H2：A⊂[0,1]
+H3：A有限</p>
+<h3>三、本题准备删除的条件</h3><p>H2、H3
+H2：A⊂[0,1]
+H3：A有限</p>
+<h3>四、原定理要保证的结论</h3><p>C1：A有界</p>
+<h3>五、参考判断（待人工核验）</h3><p>联合删除这些条件后，结论失效</p>
+<h3>六、参考反例或删后成立论证</h3><p>A=N</p>
+<h3>七、保留假设的逐项核对</h3><p>H1：自然数集合非空</p>
+<h3>八、结论为什么失败，或为什么仍成立</h3><p>自然数集无上界</p>
+<h3>九、补充解释</h3><p>两个条件分别足够，联合删除才破坏保证</p>
+<h3>十、来源与核验缺口</h3>
+<p class="source">Jiří Lebl, Basic Analysis, Continuous Functions<br><a href="https://www.jirka.org/ra/html/lim_chapter.html">https://www.jirka.org/ra/html/lim_chapter.html</a><br>当前仅定位到作者资料入口，尚需核对具体版本、章节、定理或页码。本项目构造不冒称出自该来源。</p>
+<p>本题当前依据为项目编写的数学论证，尚无独立人工核验。</p><div class="review"><strong>请逐项核验</strong><ol><li>原定理、量词、定义和隐含条件是否准确？</li><li>是否确实只删去了指定条件？类型改写是否明确？</li><li>所有保留假设是否都满足？</li><li>指定结论是否真的失败，或删后成立的证明是否充分？</li><li>来源能否定位到具体教材位置？</li></ol><p>审阅结论：通过 / 需要修改 / 暂不能确认<br>审阅人：________________　日期：________________<br>修改意见：________________________________________________</p></div><p class="source">原始文件：C:\Users\hougu\Documents\Codex\2026-11-02\du\outputs\condition-archaeologist-release\evaluation\validation\cases.jsonl</p><p class="back"><a href="#top">返回目录</a></p></article>
+<article id="MA09">
+<h2>MA09 · 数学分析</h2>
+<span class="tag">盲测集</span><span class="tag">待独立人工核验</span>
+<h3>一、原定理</h3><p>连续 f:[0,1]→R 且 f(0)&lt;0&lt;f(1)，则存在内部零点</p>
+<h3>二、原定理的全部假设</h3><p>H1：f在[0,1]连续
+H2：f(0)&lt;0&lt;f(1)</p>
+<h3>三、本题准备删除的条件</h3><p>H1
+H1：f在[0,1]连续</p>
+<h3>四、原定理要保证的结论</h3><p>C1：存在内部零点</p>
+<h3>五、参考判断（待人工核验）</h3><p>在保留其他假设的背景下，该条件不可删</p>
+<h3>六、参考反例或删后成立论证</h3><p>f(x)=−1 (x&lt;1/2), f(x)=1 (x≥1/2)</p>
+<h3>七、保留假设的逐项核对</h3><p>H2：端点值为−1与1</p>
+<h3>八、结论为什么失败，或为什么仍成立</h3><p>值域只有−1,1</p>
+<h3>九、补充解释</h3><p>跳跃越过0</p>
+<h3>十、来源与核验缺口</h3>
+<p class="source">Jiří Lebl, Basic Analysis, Continuous Functions<br><a href="https://www.jirka.org/ra/html/lim_chapter.html">https://www.jirka.org/ra/html/lim_chapter.html</a><br>当前仅定位到作者资料入口，尚需核对具体版本、章节、定理或页码。本项目构造不冒称出自该来源。</p>
+<p>本题当前依据为项目编写的数学论证，尚无独立人工核验。</p><div class="review"><strong>请逐项核验</strong><ol><li>原定理、量词、定义和隐含条件是否准确？</li><li>是否确实只删去了指定条件？类型改写是否明确？</li><li>所有保留假设是否都满足？</li><li>指定结论是否真的失败，或删后成立的证明是否充分？</li><li>来源能否定位到具体教材位置？</li></ol><p>审阅结论：通过 / 需要修改 / 暂不能确认<br>审阅人：________________　日期：________________<br>修改意见：________________________________________________</p></div><p class="source">原始文件：C:\Users\hougu\Documents\Codex\2026-11-02\du\outputs\condition-archaeologist-release\evaluation\heldout\cases.jsonl</p><p class="back"><a href="#top">返回目录</a></p></article>
+<article id="AL01">
+<h2>AL01 · 高等代数</h2>
+<span class="tag">开发集</span><span class="tag">待独立人工核验</span>
+<h3>一、原定理</h3><p>实对称方阵可实正交对角化</p>
+<h3>二、原定理的全部假设</h3><p>H1：A为实方阵
+H2：A^T=A</p>
+<h3>三、本题准备删除的条件</h3><p>H2
+H2：A^T=A</p>
+<h3>四、原定理要保证的结论</h3><p>C1：A可实正交对角化</p>
+<h3>五、参考判断（待人工核验）</h3><p>在保留其他假设的背景下，该条件不可删</p>
+<h3>六、参考反例或删后成立论证</h3><p>A=[[0,1],[0,0]]</p>
+<h3>七、保留假设的逐项核对</h3><p>H1：实2×2矩阵</p>
+<h3>八、结论为什么失败，或为什么仍成立</h3><p>A非零幂零，甚至不可对角化</p>
+<h3>九、补充解释</h3><p>唯一特征值0，特征空间维数1</p>
+<h3>十、来源与核验缺口</h3>
+<p class="source">Sheldon Axler, Linear Algebra Done Right<br><a href="https://linear.axler.net/">https://linear.axler.net/</a><br>当前仅定位到作者资料入口，尚需核对具体版本、章节、定理或页码。本项目构造不冒称出自该来源。</p>
+<p>本题已有局部计算结果：C:\Users\hougu\Documents\Codex\2026-11-02\du\outputs\condition-archaeologist-release\reports\witness-results\AL01.json。局部计算不能代替全部假设和结论的人工审阅。</p><div class="review"><strong>请逐项核验</strong><ol><li>原定理、量词、定义和隐含条件是否准确？</li><li>是否确实只删去了指定条件？类型改写是否明确？</li><li>所有保留假设是否都满足？</li><li>指定结论是否真的失败，或删后成立的证明是否充分？</li><li>来源能否定位到具体教材位置？</li></ol><p>审阅结论：通过 / 需要修改 / 暂不能确认<br>审阅人：________________　日期：________________<br>修改意见：________________________________________________</p></div><p class="source">原始文件：C:\Users\hougu\Documents\Codex\2026-11-02\du\outputs\condition-archaeologist-release\evaluation\development\cases.jsonl</p><p class="back"><a href="#top">返回目录</a></p></article>
+<article id="AL02">
+<h2>AL02 · 高等代数</h2>
+<span class="tag">开发集</span><span class="tag">待独立人工核验</span>
+<h3>一、原定理</h3><p>正维有限维复向量空间的线性算子有特征值</p>
+<h3>二、原定理的全部假设</h3><p>H1：V为正维有限维复向量空间
+H2：T:V→V线性</p>
+<h3>三、本题准备删除的条件</h3><p>H1
+H1：V为正维有限维复向量空间</p>
+<h3>四、原定理要保证的结论</h3><p>C1：在声明底域中有特征值</p>
+<h3>五、参考判断（待人工核验）</h3><p>在保留其他假设的背景下，该条件不可删</p>
+<h3>六、参考反例或删后成立论证</h3><p>将底域改为R，V=R²，T矩阵[[0,-1],[1,0]]</p>
+<h3>七、保留假设的逐项核对</h3><p>H2：实线性自映射</p>
+<h3>八、结论为什么失败，或为什么仍成立</h3><p>实特征多项式λ²+1无实根</p>
+<h3>九、补充解释</h3><p>此任务放宽复底域，保持正有限维</p>
+<h3>十、来源与核验缺口</h3>
+<p class="source">Sheldon Axler, Linear Algebra Done Right<br><a href="https://linear.axler.net/">https://linear.axler.net/</a><br>当前仅定位到作者资料入口，尚需核对具体版本、章节、定理或页码。本项目构造不冒称出自该来源。</p>
+<p>本题已有局部计算结果：C:\Users\hougu\Documents\Codex\2026-11-02\du\outputs\condition-archaeologist-release\reports\witness-results\AL02.json。局部计算不能代替全部假设和结论的人工审阅。</p><div class="review"><strong>请逐项核验</strong><ol><li>原定理、量词、定义和隐含条件是否准确？</li><li>是否确实只删去了指定条件？类型改写是否明确？</li><li>所有保留假设是否都满足？</li><li>指定结论是否真的失败，或删后成立的证明是否充分？</li><li>来源能否定位到具体教材位置？</li></ol><p>审阅结论：通过 / 需要修改 / 暂不能确认<br>审阅人：________________　日期：________________<br>修改意见：________________________________________________</p></div><p class="source">原始文件：C:\Users\hougu\Documents\Codex\2026-11-02\du\outputs\condition-archaeologist-release\evaluation\development\cases.jsonl</p><p class="back"><a href="#top">返回目录</a></p></article>
+<article id="AL03">
+<h2>AL03 · 高等代数</h2>
+<span class="tag">开发集</span><span class="tag">待独立人工核验</span>
+<h3>一、原定理</h3><p>有限维 V 上线性自映射单射当且仅当满射</p>
+<h3>二、原定理的全部假设</h3><p>H1：V有限维
+H2：T:V→V线性</p>
+<h3>三、本题准备删除的条件</h3><p>H1
+H1：V有限维</p>
+<h3>四、原定理要保证的结论</h3><p>C1：单射当且仅当满射</p>
+<h3>五、参考判断（待人工核验）</h3><p>在保留其他假设的背景下，该条件不可删</p>
+<h3>六、参考反例或删后成立论证</h3><p>V为实有限支撑序列，T(x1,x2,...)=(0,x1,x2,...)</p>
+<h3>七、保留假设的逐项核对</h3><p>H2：右移保持有限支撑且线性、自映射</p>
+<h3>八、结论为什么失败，或为什么仍成立</h3><p>单射但首坐标为1的向量不在像内</p>
+<h3>九、补充解释</h3><p>无限基e_n右移到e_(n+1)</p>
+<h3>十、来源与核验缺口</h3>
+<p class="source">Sheldon Axler, Linear Algebra Done Right<br><a href="https://linear.axler.net/">https://linear.axler.net/</a><br>当前仅定位到作者资料入口，尚需核对具体版本、章节、定理或页码。本项目构造不冒称出自该来源。</p>
+<p>本题当前依据为项目编写的数学论证，尚无独立人工核验。</p><div class="review"><strong>请逐项核验</strong><ol><li>原定理、量词、定义和隐含条件是否准确？</li><li>是否确实只删去了指定条件？类型改写是否明确？</li><li>所有保留假设是否都满足？</li><li>指定结论是否真的失败，或删后成立的证明是否充分？</li><li>来源能否定位到具体教材位置？</li></ol><p>审阅结论：通过 / 需要修改 / 暂不能确认<br>审阅人：________________　日期：________________<br>修改意见：________________________________________________</p></div><p class="source">原始文件：C:\Users\hougu\Documents\Codex\2026-11-02\du\outputs\condition-archaeologist-release\evaluation\development\cases.jsonl</p><p class="back"><a href="#top">返回目录</a></p></article>
+<article id="AL04">
+<h2>AL04 · 高等代数</h2>
+<span class="tag">开发集</span><span class="tag">待独立人工核验</span>
+<h3>一、原定理</h3><p>n×n复矩阵有n个互异特征值则可对角化</p>
+<h3>二、原定理的全部假设</h3><p>H1：A为n×n复矩阵 n≥1
+H2：A有n个互异特征值</p>
+<h3>三、本题准备删除的条件</h3><p>H2
+H2：A有n个互异特征值</p>
+<h3>四、原定理要保证的结论</h3><p>C1：A可对角化</p>
+<h3>五、参考判断（待人工核验）</h3><p>在保留其他假设的背景下，该条件不可删</p>
+<h3>六、参考反例或删后成立论证</h3><p>n=2,A=[[1,1],[0,1]]</p>
+<h3>七、保留假设的逐项核对</h3><p>H1：复2×2矩阵</p>
+<h3>八、结论为什么失败，或为什么仍成立</h3><p>特征值1重数2，特征空间维数1</p>
+<h3>九、补充解释</h3><p>重根Jordan块</p>
+<h3>十、来源与核验缺口</h3>
+<p class="source">Sheldon Axler, Linear Algebra Done Right<br><a href="https://linear.axler.net/">https://linear.axler.net/</a><br>当前仅定位到作者资料入口，尚需核对具体版本、章节、定理或页码。本项目构造不冒称出自该来源。</p>
+<p>本题已有局部计算结果：C:\Users\hougu\Documents\Codex\2026-11-02\du\outputs\condition-archaeologist-release\reports\witness-results\AL04.json。局部计算不能代替全部假设和结论的人工审阅。</p><div class="review"><strong>请逐项核验</strong><ol><li>原定理、量词、定义和隐含条件是否准确？</li><li>是否确实只删去了指定条件？类型改写是否明确？</li><li>所有保留假设是否都满足？</li><li>指定结论是否真的失败，或删后成立的证明是否充分？</li><li>来源能否定位到具体教材位置？</li></ol><p>审阅结论：通过 / 需要修改 / 暂不能确认<br>审阅人：________________　日期：________________<br>修改意见：________________________________________________</p></div><p class="source">原始文件：C:\Users\hougu\Documents\Codex\2026-11-02\du\outputs\condition-archaeologist-release\evaluation\development\cases.jsonl</p><p class="back"><a href="#top">返回目录</a></p></article>
+<article id="AL05">
+<h2>AL05 · 高等代数</h2>
+<span class="tag">验证集</span><span class="tag">待独立人工核验</span>
+<h3>一、原定理</h3><p>可逆 n×n实矩阵且行列式非零，则对应算子为单射</p>
+<h3>二、原定理的全部假设</h3><p>H1：A为实方阵
+H2：A可逆
+H3：det A≠0</p>
+<h3>三、本题准备删除的条件</h3><p>H3
+H3：det A≠0</p>
+<h3>四、原定理要保证的结论</h3><p>C1：对应算子单射</p>
+<h3>五、参考判断（待人工核验）</h3><p>该条件可由其余假设推出</p>
+<h3>六、参考反例或删后成立论证</h3><p>本题不主张存在反例。参考论证：det(A)det(A⁻¹)=1推出det A≠0；Ax=0左乘逆得x=0</p>
+<h3>七、保留假设的逐项核对</h3><p>H1：保留
+H2：逆矩阵存在</p>
+<h3>八、结论为什么失败，或为什么仍成立</h3><p>det(A)det(A⁻¹)=1推出det A≠0；Ax=0左乘逆得x=0</p>
+<h3>九、补充解释</h3><p>det(A)det(A⁻¹)=1推出det A≠0；Ax=0左乘逆得x=0</p>
+<h3>十、来源与核验缺口</h3>
+<p class="source">Sheldon Axler, Linear Algebra Done Right<br><a href="https://linear.axler.net/">https://linear.axler.net/</a><br>当前仅定位到作者资料入口，尚需核对具体版本、章节、定理或页码。本项目构造不冒称出自该来源。</p>
+<p>本题当前依据为项目编写的数学论证，尚无独立人工核验。</p><div class="review"><strong>请逐项核验</strong><ol><li>原定理、量词、定义和隐含条件是否准确？</li><li>是否确实只删去了指定条件？类型改写是否明确？</li><li>所有保留假设是否都满足？</li><li>指定结论是否真的失败，或删后成立的证明是否充分？</li><li>来源能否定位到具体教材位置？</li></ol><p>审阅结论：通过 / 需要修改 / 暂不能确认<br>审阅人：________________　日期：________________<br>修改意见：________________________________________________</p></div><p class="source">原始文件：C:\Users\hougu\Documents\Codex\2026-11-02\du\outputs\condition-archaeologist-release\evaluation\validation\cases.jsonl</p><p class="back"><a href="#top">返回目录</a></p></article>
+<article id="AL06">
+<h2>AL06 · 高等代数</h2>
+<span class="tag">盲测集</span><span class="tag">待独立人工核验</span>
+<h3>一、原定理</h3><p>同阶方阵A,B，若A可逆且AB=0，则B=0</p>
+<h3>二、原定理的全部假设</h3><p>H1：A,B同阶方阵
+H2：A可逆
+H3：AB=0</p>
+<h3>三、本题准备删除的条件</h3><p>H2
+H2：A可逆</p>
+<h3>四、原定理要保证的结论</h3><p>C1：B=0</p>
+<h3>五、参考判断（待人工核验）</h3><p>在保留其他假设的背景下，该条件不可删</p>
+<h3>六、参考反例或删后成立论证</h3><p>A=[[0,0],[0,0]], B=I₂</p>
+<h3>七、保留假设的逐项核对</h3><p>H1：同阶实方阵
+H3：零矩阵乘B仍为0</p>
+<h3>八、结论为什么失败，或为什么仍成立</h3><p>B=I₂非零</p>
+<h3>九、补充解释</h3><p>可逆性排除非平凡核</p>
+<h3>十、来源与核验缺口</h3>
+<p class="source">Sheldon Axler, Linear Algebra Done Right<br><a href="https://linear.axler.net/">https://linear.axler.net/</a><br>当前仅定位到作者资料入口，尚需核对具体版本、章节、定理或页码。本项目构造不冒称出自该来源。</p>
+<p>本题当前依据为项目编写的数学论证，尚无独立人工核验。</p><div class="review"><strong>请逐项核验</strong><ol><li>原定理、量词、定义和隐含条件是否准确？</li><li>是否确实只删去了指定条件？类型改写是否明确？</li><li>所有保留假设是否都满足？</li><li>指定结论是否真的失败，或删后成立的证明是否充分？</li><li>来源能否定位到具体教材位置？</li></ol><p>审阅结论：通过 / 需要修改 / 暂不能确认<br>审阅人：________________　日期：________________<br>修改意见：________________________________________________</p></div><p class="source">原始文件：C:\Users\hougu\Documents\Codex\2026-11-02\du\outputs\condition-archaeologist-release\evaluation\heldout\cases.jsonl</p><p class="back"><a href="#top">返回目录</a></p></article>
+<article id="RA01">
+<h2>RA01 · 实分析</h2>
+<span class="tag">开发集</span><span class="tag">待独立人工核验</span>
+<h3>一、原定理</h3><p>可测 f_n→f a.e. 且存在可积 g≥|f_n|，则积分收敛</p>
+<h3>二、原定理的全部假设</h3><p>H1：f_n可测且逐项可积
+H2：f_n→f a.e.
+H3：存在可积g使|f_n|≤g</p>
+<h3>三、本题准备删除的条件</h3><p>H3
+H3：存在可积g使|f_n|≤g</p>
+<h3>四、原定理要保证的结论</h3><p>C1：∫f_n→∫f</p>
+<h3>五、参考判断（待人工核验）</h3><p>在保留其他假设的背景下，该条件不可删</p>
+<h3>六、参考反例或删后成立论证</h3><p>在(0,1)，f_n=n·1_(0,1/n)</p>
+<h3>七、保留假设的逐项核对</h3><p>H1：区间示性函数可测且积分有限
+H2：每个x&gt;0最终不在支撑上</p>
+<h3>八、结论为什么失败，或为什么仍成立</h3><p>每项积分1而极限f=0积分0</p>
+<h3>九、补充解释</h3><p>若存在共同可积支配则DCT矛盾；直接支配下界可给调和发散论证</p>
+<h3>十、来源与核验缺口</h3>
+<p class="source">Terence Tao, An Introduction to Measure Theory<br><a href="https://terrytao.wordpress.com/books/an-introduction-to-measure-theory/">https://terrytao.wordpress.com/books/an-introduction-to-measure-theory/</a><br>当前仅定位到作者资料入口，尚需核对具体版本、章节、定理或页码。本项目构造不冒称出自该来源。</p>
+<p>本题已有局部计算结果：C:\Users\hougu\Documents\Codex\2026-11-02\du\outputs\condition-archaeologist-release\reports\witness-results\RA01.json。局部计算不能代替全部假设和结论的人工审阅。</p><div class="review"><strong>请逐项核验</strong><ol><li>原定理、量词、定义和隐含条件是否准确？</li><li>是否确实只删去了指定条件？类型改写是否明确？</li><li>所有保留假设是否都满足？</li><li>指定结论是否真的失败，或删后成立的证明是否充分？</li><li>来源能否定位到具体教材位置？</li></ol><p>审阅结论：通过 / 需要修改 / 暂不能确认<br>审阅人：________________　日期：________________<br>修改意见：________________________________________________</p></div><p class="source">原始文件：C:\Users\hougu\Documents\Codex\2026-11-02\du\outputs\condition-archaeologist-release\evaluation\development\cases.jsonl</p><p class="back"><a href="#top">返回目录</a></p></article>
+<article id="RA02">
+<h2>RA02 · 实分析</h2>
+<span class="tag">开发集</span><span class="tag">待独立人工核验</span>
+<h3>一、原定理</h3><p>非负可测函数列满足∫liminf f_n≤liminf∫f_n</p>
+<h3>二、原定理的全部假设</h3><p>H1：f_n可测
+H2：f_n≥0</p>
+<h3>三、本题准备删除的条件</h3><p>H2
+H2：f_n≥0</p>
+<h3>四、原定理要保证的结论</h3><p>C1：Fatou不等式</p>
+<h3>五、参考判断（待人工核验）</h3><p>在保留其他假设的背景下，该条件不可删</p>
+<h3>六、参考反例或删后成立论证</h3><p>(0,1)上 f_n=−n·1_(0,1/n)</p>
+<h3>七、保留假设的逐项核对</h3><p>H1：可测简单函数</p>
+<h3>八、结论为什么失败，或为什么仍成立</h3><p>左边0，右边−1</p>
+<h3>九、补充解释</h3><p>各函数可积，不等式方向失败</p>
+<h3>十、来源与核验缺口</h3>
+<p class="source">Terence Tao, An Introduction to Measure Theory<br><a href="https://terrytao.wordpress.com/books/an-introduction-to-measure-theory/">https://terrytao.wordpress.com/books/an-introduction-to-measure-theory/</a><br>当前仅定位到作者资料入口，尚需核对具体版本、章节、定理或页码。本项目构造不冒称出自该来源。</p>
+<p>本题已有局部计算结果：C:\Users\hougu\Documents\Codex\2026-11-02\du\outputs\condition-archaeologist-release\reports\witness-results\RA02.json。局部计算不能代替全部假设和结论的人工审阅。</p><div class="review"><strong>请逐项核验</strong><ol><li>原定理、量词、定义和隐含条件是否准确？</li><li>是否确实只删去了指定条件？类型改写是否明确？</li><li>所有保留假设是否都满足？</li><li>指定结论是否真的失败，或删后成立的证明是否充分？</li><li>来源能否定位到具体教材位置？</li></ol><p>审阅结论：通过 / 需要修改 / 暂不能确认<br>审阅人：________________　日期：________________<br>修改意见：________________________________________________</p></div><p class="source">原始文件：C:\Users\hougu\Documents\Codex\2026-11-02\du\outputs\condition-archaeologist-release\evaluation\development\cases.jsonl</p><p class="back"><a href="#top">返回目录</a></p></article>
+<article id="RA03">
+<h2>RA03 · 实分析</h2>
+<span class="tag">开发集</span><span class="tag">待独立人工核验</span>
+<h3>一、原定理</h3><p>测度可测集E_n递减且μ(E1)&lt;∞，则μ(∩E_n)=lim μ(E_n)</p>
+<h3>二、原定理的全部假设</h3><p>H1：E_n可测且递减
+H2：μ(E1)&lt;∞</p>
+<h3>三、本题准备删除的条件</h3><p>H2
+H2：μ(E1)&lt;∞</p>
+<h3>四、原定理要保证的结论</h3><p>C1：测度从上连续</p>
+<h3>五、参考判断（待人工核验）</h3><p>在保留其他假设的背景下，该条件不可删</p>
+<h3>六、参考反例或删后成立论证</h3><p>R上Lebesgue测度，E_n=[n,∞)</p>
+<h3>七、保留假设的逐项核对</h3><p>H1：闭集可测且递减</p>
+<h3>八、结论为什么失败，或为什么仍成立</h3><p>交集空测度0，每项测度∞</p>
+<h3>九、补充解释</h3><p>缺少首项有限测度</p>
+<h3>十、来源与核验缺口</h3>
+<p class="source">Terence Tao, An Introduction to Measure Theory<br><a href="https://terrytao.wordpress.com/books/an-introduction-to-measure-theory/">https://terrytao.wordpress.com/books/an-introduction-to-measure-theory/</a><br>当前仅定位到作者资料入口，尚需核对具体版本、章节、定理或页码。本项目构造不冒称出自该来源。</p>
+<p>本题当前依据为项目编写的数学论证，尚无独立人工核验。</p><div class="review"><strong>请逐项核验</strong><ol><li>原定理、量词、定义和隐含条件是否准确？</li><li>是否确实只删去了指定条件？类型改写是否明确？</li><li>所有保留假设是否都满足？</li><li>指定结论是否真的失败，或删后成立的证明是否充分？</li><li>来源能否定位到具体教材位置？</li></ol><p>审阅结论：通过 / 需要修改 / 暂不能确认<br>审阅人：________________　日期：________________<br>修改意见：________________________________________________</p></div><p class="source">原始文件：C:\Users\hougu\Documents\Codex\2026-11-02\du\outputs\condition-archaeologist-release\evaluation\development\cases.jsonl</p><p class="back"><a href="#top">返回目录</a></p></article>
+<article id="RA04">
+<h2>RA04 · 实分析</h2>
+<span class="tag">盲测集</span><span class="tag">待独立人工核验</span>
+<h3>一、原定理</h3><p>有限测度空间中，可测f_n→f a.e.且有统一有限界M，则积分收敛</p>
+<h3>二、原定理的全部假设</h3><p>H1：μ(X)&lt;∞
+H2：f_n可测且a.e.收敛
+H3：|f_n|≤M&lt;∞</p>
+<h3>三、本题准备删除的条件</h3><p>H1
+H1：μ(X)&lt;∞</p>
+<h3>四、原定理要保证的结论</h3><p>C1：积分收敛到极限积分</p>
+<h3>五、参考判断（待人工核验）</h3><p>在保留其他假设的背景下，该条件不可删</p>
+<h3>六、参考反例或删后成立论证</h3><p>R上f_n=1_[n,n+1]</p>
+<h3>七、保留假设的逐项核对</h3><p>H2：每个实数最终离开区间；可测
+H3：统一界1</p>
+<h3>八、结论为什么失败，或为什么仍成立</h3><p>每项积分1，极限积分0</p>
+<h3>九、补充解释</h3><p>质量逃向无穷</p>
+<h3>十、来源与核验缺口</h3>
+<p class="source">Terence Tao, An Introduction to Measure Theory<br><a href="https://terrytao.wordpress.com/books/an-introduction-to-measure-theory/">https://terrytao.wordpress.com/books/an-introduction-to-measure-theory/</a><br>当前仅定位到作者资料入口，尚需核对具体版本、章节、定理或页码。本项目构造不冒称出自该来源。</p>
+<p>本题当前依据为项目编写的数学论证，尚无独立人工核验。</p><div class="review"><strong>请逐项核验</strong><ol><li>原定理、量词、定义和隐含条件是否准确？</li><li>是否确实只删去了指定条件？类型改写是否明确？</li><li>所有保留假设是否都满足？</li><li>指定结论是否真的失败，或删后成立的证明是否充分？</li><li>来源能否定位到具体教材位置？</li></ol><p>审阅结论：通过 / 需要修改 / 暂不能确认<br>审阅人：________________　日期：________________<br>修改意见：________________________________________________</p></div><p class="source">原始文件：C:\Users\hougu\Documents\Codex\2026-11-02\du\outputs\condition-archaeologist-release\evaluation\heldout\cases.jsonl</p><p class="back"><a href="#top">返回目录</a></p></article>
+<article id="RA05">
+<h2>RA05 · 实分析</h2>
+<span class="tag">验证集</span><span class="tag">待独立人工核验</span>
+<h3>一、原定理</h3><p>有限测度空间上，可测且有界并可积的f具有有限绝对积分</p>
+<h3>二、原定理的全部假设</h3><p>H1：μ(X)&lt;∞
+H2：f可测且|f|≤M&lt;∞
+H3：f可积</p>
+<h3>三、本题准备删除的条件</h3><p>H3
+H3：f可积</p>
+<h3>四、原定理要保证的结论</h3><p>C1：∫|f|&lt;∞</p>
+<h3>五、参考判断（待人工核验）</h3><p>该条件可由其余假设推出</p>
+<h3>六、参考反例或删后成立论证</h3><p>本题不主张存在反例。参考论证：∫|f|≤M μ(X)&lt;∞</p>
+<h3>七、保留假设的逐项核对</h3><p>H1：保留
+H2：可测有界</p>
+<h3>八、结论为什么失败，或为什么仍成立</h3><p>∫|f|≤M μ(X)&lt;∞</p>
+<h3>九、补充解释</h3><p>∫|f|≤M μ(X)&lt;∞</p>
+<h3>十、来源与核验缺口</h3>
+<p class="source">Terence Tao, An Introduction to Measure Theory<br><a href="https://terrytao.wordpress.com/books/an-introduction-to-measure-theory/">https://terrytao.wordpress.com/books/an-introduction-to-measure-theory/</a><br>当前仅定位到作者资料入口，尚需核对具体版本、章节、定理或页码。本项目构造不冒称出自该来源。</p>
+<p>本题当前依据为项目编写的数学论证，尚无独立人工核验。</p><div class="review"><strong>请逐项核验</strong><ol><li>原定理、量词、定义和隐含条件是否准确？</li><li>是否确实只删去了指定条件？类型改写是否明确？</li><li>所有保留假设是否都满足？</li><li>指定结论是否真的失败，或删后成立的证明是否充分？</li><li>来源能否定位到具体教材位置？</li></ol><p>审阅结论：通过 / 需要修改 / 暂不能确认<br>审阅人：________________　日期：________________<br>修改意见：________________________________________________</p></div><p class="source">原始文件：C:\Users\hougu\Documents\Codex\2026-11-02\du\outputs\condition-archaeologist-release\evaluation\validation\cases.jsonl</p><p class="back"><a href="#top">返回目录</a></p></article>
+<article id="RA06">
+<h2>RA06 · 实分析</h2>
+<span class="tag">盲测集</span><span class="tag">待独立人工核验</span>
+<h3>一、原定理</h3><p>有限测度空间中可测f_n a.e.收敛到0，则依测度收敛到0</p>
+<h3>二、原定理的全部假设</h3><p>H1：μ(X)&lt;∞
+H2：f_n可测且a.e.→0</p>
+<h3>三、本题准备删除的条件</h3><p>H1
+H1：μ(X)&lt;∞</p>
+<h3>四、原定理要保证的结论</h3><p>C1：依测度收敛到0</p>
+<h3>五、参考判断（待人工核验）</h3><p>在保留其他假设的背景下，该条件不可删</p>
+<h3>六、参考反例或删后成立论证</h3><p>R上f_n=1_[n,∞)</p>
+<h3>七、保留假设的逐项核对</h3><p>H2：每个固定x最终f_n(x)=0，可测</p>
+<h3>八、结论为什么失败，或为什么仍成立</h3><p>ε=1/2时超水平集[n,∞)测度∞</p>
+<h3>九、补充解释</h3><p>无限测度下a.e.不保证全空间依测度收敛</p>
+<h3>十、来源与核验缺口</h3>
+<p class="source">Terence Tao, An Introduction to Measure Theory<br><a href="https://terrytao.wordpress.com/books/an-introduction-to-measure-theory/">https://terrytao.wordpress.com/books/an-introduction-to-measure-theory/</a><br>当前仅定位到作者资料入口，尚需核对具体版本、章节、定理或页码。本项目构造不冒称出自该来源。</p>
+<p>本题当前依据为项目编写的数学论证，尚无独立人工核验。</p><div class="review"><strong>请逐项核验</strong><ol><li>原定理、量词、定义和隐含条件是否准确？</li><li>是否确实只删去了指定条件？类型改写是否明确？</li><li>所有保留假设是否都满足？</li><li>指定结论是否真的失败，或删后成立的证明是否充分？</li><li>来源能否定位到具体教材位置？</li></ol><p>审阅结论：通过 / 需要修改 / 暂不能确认<br>审阅人：________________　日期：________________<br>修改意见：________________________________________________</p></div><p class="source">原始文件：C:\Users\hougu\Documents\Codex\2026-11-02\du\outputs\condition-archaeologist-release\evaluation\heldout\cases.jsonl</p><p class="back"><a href="#top">返回目录</a></p></article>
+<article id="CA01">
+<h2>CA01 · 复分析</h2>
+<span class="tag">开发集</span><span class="tag">待独立人工核验</span>
+<h3>一、原定理</h3><p>有界整函数为常数</p>
+<h3>二、原定理的全部假设</h3><p>H1：f在C上全纯
+H2：f在C上有界</p>
+<h3>三、本题准备删除的条件</h3><p>H2
+H2：f在C上有界</p>
+<h3>四、原定理要保证的结论</h3><p>C1：f为常数</p>
+<h3>五、参考判断（待人工核验）</h3><p>在保留其他假设的背景下，该条件不可删</p>
+<h3>六、参考反例或删后成立论证</h3><p>f(z)=z</p>
+<h3>七、保留假设的逐项核对</h3><p>H1：多项式整函数</p>
+<h3>八、结论为什么失败，或为什么仍成立</h3><p>f(0)=0，f(1)=1</p>
+<h3>九、补充解释</h3><p>整性保留而增长无界</p>
+<h3>十、来源与核验缺口</h3>
+<p class="source">Jiří Lebl, Guide to Cultivating Complex Analysis<br><a href="https://www.jirka.org/ca/">https://www.jirka.org/ca/</a><br>当前仅定位到作者资料入口，尚需核对具体版本、章节、定理或页码。本项目构造不冒称出自该来源。</p>
+<p>本题当前依据为项目编写的数学论证，尚无独立人工核验。</p><div class="review"><strong>请逐项核验</strong><ol><li>原定理、量词、定义和隐含条件是否准确？</li><li>是否确实只删去了指定条件？类型改写是否明确？</li><li>所有保留假设是否都满足？</li><li>指定结论是否真的失败，或删后成立的证明是否充分？</li><li>来源能否定位到具体教材位置？</li></ol><p>审阅结论：通过 / 需要修改 / 暂不能确认<br>审阅人：________________　日期：________________<br>修改意见：________________________________________________</p></div><p class="source">原始文件：C:\Users\hougu\Documents\Codex\2026-11-02\du\outputs\condition-archaeologist-release\evaluation\development\cases.jsonl</p><p class="back"><a href="#top">返回目录</a></p></article>
+<article id="CA02">
+<h2>CA02 · 复分析</h2>
+<span class="tag">开发集</span><span class="tag">待独立人工核验</span>
+<h3>一、原定理</h3><p>有界整函数为常数</p>
+<h3>二、原定理的全部假设</h3><p>H1：f在C上全纯
+H2：f在C上有界</p>
+<h3>三、本题准备删除的条件</h3><p>H1
+H1：f在C上全纯</p>
+<h3>四、原定理要保证的结论</h3><p>C1：f为常数</p>
+<h3>五、参考判断（待人工核验）</h3><p>在保留其他假设的背景下，该条件不可删</p>
+<h3>六、参考反例或删后成立论证</h3><p>f(z)=conj(z)/(1+|z|²)</p>
+<h3>七、保留假设的逐项核对</h3><p>H2：r/(1+r²)≤1/2</p>
+<h3>八、结论为什么失败，或为什么仍成立</h3><p>f(0)=0,f(1)=1/2；在0沿实/虚方向差商分别1,-1</p>
+<h3>九、补充解释</h3><p>全局有界但不整</p>
+<h3>十、来源与核验缺口</h3>
+<p class="source">Jiří Lebl, Guide to Cultivating Complex Analysis<br><a href="https://www.jirka.org/ca/">https://www.jirka.org/ca/</a><br>当前仅定位到作者资料入口，尚需核对具体版本、章节、定理或页码。本项目构造不冒称出自该来源。</p>
+<p>本题当前依据为项目编写的数学论证，尚无独立人工核验。</p><div class="review"><strong>请逐项核验</strong><ol><li>原定理、量词、定义和隐含条件是否准确？</li><li>是否确实只删去了指定条件？类型改写是否明确？</li><li>所有保留假设是否都满足？</li><li>指定结论是否真的失败，或删后成立的证明是否充分？</li><li>来源能否定位到具体教材位置？</li></ol><p>审阅结论：通过 / 需要修改 / 暂不能确认<br>审阅人：________________　日期：________________<br>修改意见：________________________________________________</p></div><p class="source">原始文件：C:\Users\hougu\Documents\Codex\2026-11-02\du\outputs\condition-archaeologist-release\evaluation\development\cases.jsonl</p><p class="back"><a href="#top">返回目录</a></p></article>
+<article id="CA03">
+<h2>CA03 · 复分析</h2>
+<span class="tag">盲测集</span><span class="tag">待独立人工核验</span>
+<h3>一、原定理</h3><p>连通开集Ω上全纯f的零点在Ω有聚点，则f恒零</p>
+<h3>二、原定理的全部假设</h3><p>H1：Ω为连通开集
+H2：f在Ω全纯
+H3：零点在Ω内有聚点</p>
+<h3>三、本题准备删除的条件</h3><p>H1
+H1：Ω为连通开集</p>
+<h3>四、原定理要保证的结论</h3><p>C1：f在Ω恒零</p>
+<h3>五、参考判断（待人工核验）</h3><p>在保留其他假设的背景下，该条件不可删</p>
+<h3>六、参考反例或删后成立论证</h3><p>Ω=D(0,1)∪D(3,1)，左盘f=0，右盘f=1</p>
+<h3>七、保留假设的逐项核对</h3><p>H2：各分支常数故全纯
+H3：0是域内零点聚点</p>
+<h3>八、结论为什么失败，或为什么仍成立</h3><p>右盘恒1</p>
+<h3>九、补充解释</h3><p>保留开性，只删除连通性分量</p>
+<h3>十、来源与核验缺口</h3>
+<p class="source">Jiří Lebl, Guide to Cultivating Complex Analysis<br><a href="https://www.jirka.org/ca/">https://www.jirka.org/ca/</a><br>当前仅定位到作者资料入口，尚需核对具体版本、章节、定理或页码。本项目构造不冒称出自该来源。</p>
+<p>本题当前依据为项目编写的数学论证，尚无独立人工核验。</p><div class="review"><strong>请逐项核验</strong><ol><li>原定理、量词、定义和隐含条件是否准确？</li><li>是否确实只删去了指定条件？类型改写是否明确？</li><li>所有保留假设是否都满足？</li><li>指定结论是否真的失败，或删后成立的证明是否充分？</li><li>来源能否定位到具体教材位置？</li></ol><p>审阅结论：通过 / 需要修改 / 暂不能确认<br>审阅人：________________　日期：________________<br>修改意见：________________________________________________</p></div><p class="source">原始文件：C:\Users\hougu\Documents\Codex\2026-11-02\du\outputs\condition-archaeologist-release\evaluation\heldout\cases.jsonl</p><p class="back"><a href="#top">返回目录</a></p></article>
+<article id="CA04">
+<h2>CA04 · 复分析</h2>
+<span class="tag">开发集</span><span class="tag">待独立人工核验</span>
+<h3>一、原定理</h3><p>连通开集Ω上全纯f的零点在Ω有聚点，则f恒零</p>
+<h3>二、原定理的全部假设</h3><p>H1：Ω为连通开集
+H2：f在Ω全纯
+H3：零点在Ω内有聚点</p>
+<h3>三、本题准备删除的条件</h3><p>H3
+H3：零点在Ω内有聚点</p>
+<h3>四、原定理要保证的结论</h3><p>C1：f恒零</p>
+<h3>五、参考判断（待人工核验）</h3><p>在保留其他假设的背景下，该条件不可删</p>
+<h3>六、参考反例或删后成立论证</h3><p>Ω=C\{0}, f(z)=sin(π/z)</p>
+<h3>七、保留假设的逐项核对</h3><p>H1：穿孔平面连通开
+H2：复合全纯</p>
+<h3>八、结论为什么失败，或为什么仍成立</h3><p>f(2)=1；零点1/n聚于域外0</p>
+<h3>九、补充解释</h3><p>边界聚点不满足原H3</p>
+<h3>十、来源与核验缺口</h3>
+<p class="source">Jiří Lebl, Guide to Cultivating Complex Analysis<br><a href="https://www.jirka.org/ca/">https://www.jirka.org/ca/</a><br>当前仅定位到作者资料入口，尚需核对具体版本、章节、定理或页码。本项目构造不冒称出自该来源。</p>
+<p>本题当前依据为项目编写的数学论证，尚无独立人工核验。</p><div class="review"><strong>请逐项核验</strong><ol><li>原定理、量词、定义和隐含条件是否准确？</li><li>是否确实只删去了指定条件？类型改写是否明确？</li><li>所有保留假设是否都满足？</li><li>指定结论是否真的失败，或删后成立的证明是否充分？</li><li>来源能否定位到具体教材位置？</li></ol><p>审阅结论：通过 / 需要修改 / 暂不能确认<br>审阅人：________________　日期：________________<br>修改意见：________________________________________________</p></div><p class="source">原始文件：C:\Users\hougu\Documents\Codex\2026-11-02\du\outputs\condition-archaeologist-release\evaluation\development\cases.jsonl</p><p class="back"><a href="#top">返回目录</a></p></article>
+<article id="CA05">
+<h2>CA05 · 复分析</h2>
+<span class="tag">开发集</span><span class="tag">待独立人工核验</span>
+<h3>一、原定理</h3><p>连通域上全纯函数若模在内点取得局部最大则为常数</p>
+<h3>二、原定理的全部假设</h3><p>H1：Ω连通开
+H2：f在Ω全纯
+H3：|f|在内点有局部最大</p>
+<h3>三、本题准备删除的条件</h3><p>H2
+H2：f在Ω全纯</p>
+<h3>四、原定理要保证的结论</h3><p>C1：f为常数</p>
+<h3>五、参考判断（待人工核验）</h3><p>在保留其他假设的背景下，该条件不可删</p>
+<h3>六、参考反例或删后成立论证</h3><p>Ω=D(0,1), f(z)=1−|z|²</p>
+<h3>七、保留假设的逐项核对</h3><p>H1：单位盘为域
+H3：模在0取得严格最大1</p>
+<h3>八、结论为什么失败，或为什么仍成立</h3><p>f(0)=1,f(1/2)=3/4</p>
+<h3>九、补充解释</h3><p>实光滑不代替全纯</p>
+<h3>十、来源与核验缺口</h3>
+<p class="source">Jiří Lebl, Guide to Cultivating Complex Analysis<br><a href="https://www.jirka.org/ca/">https://www.jirka.org/ca/</a><br>当前仅定位到作者资料入口，尚需核对具体版本、章节、定理或页码。本项目构造不冒称出自该来源。</p>
+<p>本题当前依据为项目编写的数学论证，尚无独立人工核验。</p><div class="review"><strong>请逐项核验</strong><ol><li>原定理、量词、定义和隐含条件是否准确？</li><li>是否确实只删去了指定条件？类型改写是否明确？</li><li>所有保留假设是否都满足？</li><li>指定结论是否真的失败，或删后成立的证明是否充分？</li><li>来源能否定位到具体教材位置？</li></ol><p>审阅结论：通过 / 需要修改 / 暂不能确认<br>审阅人：________________　日期：________________<br>修改意见：________________________________________________</p></div><p class="source">原始文件：C:\Users\hougu\Documents\Codex\2026-11-02\du\outputs\condition-archaeologist-release\evaluation\development\cases.jsonl</p><p class="back"><a href="#top">返回目录</a></p></article>
+<article id="CA06">
+<h2>CA06 · 复分析</h2>
+<span class="tag">验证集</span><span class="tag">待独立人工核验</span>
+<h3>一、原定理</h3><p>单连通域Ω内全纯f沿任意分段光滑闭曲线积分为0</p>
+<h3>二、原定理的全部假设</h3><p>H1：Ω为单连通域
+H2：f在Ω全纯
+H3：γ为Ω内分段光滑闭曲线</p>
+<h3>三、本题准备删除的条件</h3><p>H1
+H1：Ω为单连通域</p>
+<h3>四、原定理要保证的结论</h3><p>C1：闭曲线积分为0</p>
+<h3>五、参考判断（待人工核验）</h3><p>在保留其他假设的背景下，该条件不可删</p>
+<h3>六、参考反例或删后成立论证</h3><p>Ω=C\{0}, f=1/z, γ(t)=e^(it),0≤t≤2π</p>
+<h3>七、保留假设的逐项核对</h3><p>H2：倒数在穿孔平面全纯
+H3：单位圆在域内且光滑闭合</p>
+<h3>八、结论为什么失败，或为什么仍成立</h3><p>参数化积分∫i dt=2πi</p>
+<h3>九、补充解释</h3><p>保留域的连通开性，仅去单连通</p>
+<h3>十、来源与核验缺口</h3>
+<p class="source">Jiří Lebl, Guide to Cultivating Complex Analysis<br><a href="https://www.jirka.org/ca/">https://www.jirka.org/ca/</a><br>当前仅定位到作者资料入口，尚需核对具体版本、章节、定理或页码。本项目构造不冒称出自该来源。</p>
+<p>本题当前依据为项目编写的数学论证，尚无独立人工核验。</p><div class="review"><strong>请逐项核验</strong><ol><li>原定理、量词、定义和隐含条件是否准确？</li><li>是否确实只删去了指定条件？类型改写是否明确？</li><li>所有保留假设是否都满足？</li><li>指定结论是否真的失败，或删后成立的证明是否充分？</li><li>来源能否定位到具体教材位置？</li></ol><p>审阅结论：通过 / 需要修改 / 暂不能确认<br>审阅人：________________　日期：________________<br>修改意见：________________________________________________</p></div><p class="source">原始文件：C:\Users\hougu\Documents\Codex\2026-11-02\du\outputs\condition-archaeologist-release\evaluation\validation\cases.jsonl</p><p class="back"><a href="#top">返回目录</a></p></article>
+<article id="CA07">
+<h2>CA07 · 复分析</h2>
+<span class="tag">验证集</span><span class="tag">待独立人工核验</span>
+<h3>一、原定理</h3><p>全纯且连续的域上函数连续</p>
+<h3>二、原定理的全部假设</h3><p>H1：Ω为域
+H2：f在Ω全纯
+H3：f在Ω连续</p>
+<h3>三、本题准备删除的条件</h3><p>H3
+H3：f在Ω连续</p>
+<h3>四、原定理要保证的结论</h3><p>C1：f在Ω连续</p>
+<h3>五、参考判断（待人工核验）</h3><p>该条件可由其余假设推出</p>
+<h3>六、参考反例或删后成立论证</h3><p>本题不主张存在反例。参考论证：每点用复差商乘增量趋0</p>
+<h3>七、保留假设的逐项核对</h3><p>H1：保留
+H2：复可微推出连续</p>
+<h3>八、结论为什么失败，或为什么仍成立</h3><p>每点用复差商乘增量趋0</p>
+<h3>九、补充解释</h3><p>每点用复差商乘增量趋0</p>
+<h3>十、来源与核验缺口</h3>
+<p class="source">Jiří Lebl, Guide to Cultivating Complex Analysis<br><a href="https://www.jirka.org/ca/">https://www.jirka.org/ca/</a><br>当前仅定位到作者资料入口，尚需核对具体版本、章节、定理或页码。本项目构造不冒称出自该来源。</p>
+<p>本题当前依据为项目编写的数学论证，尚无独立人工核验。</p><div class="review"><strong>请逐项核验</strong><ol><li>原定理、量词、定义和隐含条件是否准确？</li><li>是否确实只删去了指定条件？类型改写是否明确？</li><li>所有保留假设是否都满足？</li><li>指定结论是否真的失败，或删后成立的证明是否充分？</li><li>来源能否定位到具体教材位置？</li></ol><p>审阅结论：通过 / 需要修改 / 暂不能确认<br>审阅人：________________　日期：________________<br>修改意见：________________________________________________</p></div><p class="source">原始文件：C:\Users\hougu\Documents\Codex\2026-11-02\du\outputs\condition-archaeologist-release\evaluation\validation\cases.jsonl</p><p class="back"><a href="#top">返回目录</a></p></article>
+<article id="CA08">
+<h2>CA08 · 复分析</h2>
+<span class="tag">盲测集</span><span class="tag">待独立人工核验</span>
+<h3>一、原定理</h3><p>连通域上全纯函数导数恒0则为常数</p>
+<h3>二、原定理的全部假设</h3><p>H1：Ω为连通开集
+H2：f在Ω全纯且f′=0</p>
+<h3>三、本题准备删除的条件</h3><p>H1
+H1：Ω为连通开集</p>
+<h3>四、原定理要保证的结论</h3><p>C1：f在Ω常数</p>
+<h3>五、参考判断（待人工核验）</h3><p>在保留其他假设的背景下，该条件不可删</p>
+<h3>六、参考反例或删后成立论证</h3><p>Ω=D(0,1)∪D(3,1)，分别取常数0和1</p>
+<h3>七、保留假设的逐项核对</h3><p>H2：各分支全纯且导数0</p>
+<h3>八、结论为什么失败，或为什么仍成立</h3><p>两个分支取不同值</p>
+<h3>九、补充解释</h3><p>与identity共享分支构造，必须同家族防泄漏</p>
+<h3>十、来源与核验缺口</h3>
+<p class="source">Jiří Lebl, Guide to Cultivating Complex Analysis<br><a href="https://www.jirka.org/ca/">https://www.jirka.org/ca/</a><br>当前仅定位到作者资料入口，尚需核对具体版本、章节、定理或页码。本项目构造不冒称出自该来源。</p>
+<p>本题当前依据为项目编写的数学论证，尚无独立人工核验。</p><div class="review"><strong>请逐项核验</strong><ol><li>原定理、量词、定义和隐含条件是否准确？</li><li>是否确实只删去了指定条件？类型改写是否明确？</li><li>所有保留假设是否都满足？</li><li>指定结论是否真的失败，或删后成立的证明是否充分？</li><li>来源能否定位到具体教材位置？</li></ol><p>审阅结论：通过 / 需要修改 / 暂不能确认<br>审阅人：________________　日期：________________<br>修改意见：________________________________________________</p></div><p class="source">原始文件：C:\Users\hougu\Documents\Codex\2026-11-02\du\outputs\condition-archaeologist-release\evaluation\heldout\cases.jsonl</p><p class="back"><a href="#top">返回目录</a></p></article>
+</main></body></html>

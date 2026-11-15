@@ -1,0 +1,434 @@
+{
+  "status": "provisional_internal",
+  "dataset_digest": "a342f6ea6d7fe6490bc9e078e2fc874d07930488cb2d461b08a66c1daae21336",
+  "prediction_digest": "9a1c777a5c05799e86b763af8c40d26fa05496515b0ff98ef9495525a3c11f50",
+  "splits": [
+    "development"
+  ],
+  "metrics": {
+    "tasks": 15,
+    "success_rate": 1.0,
+    "witness_precision": 1.0,
+    "witness_precision_n": 15,
+    "witness_precision_wilson95": [
+      0.7961166989641604,
+      1
+    ],
+    "discovery_rate": 1.0,
+    "discovery_n": 15,
+    "coverage": 1.0,
+    "selective_risk": 0.0,
+    "evidence_honesty": 1.0,
+    "hypothesis_precision": 1.0,
+    "hypothesis_recall": 1.0,
+    "verified_macro_f1": 1.0,
+    "per_class_f1": {
+      "indispensable": 1.0
+    },
+    "family_complete_success": 1.0,
+    "joint_success": null,
+    "subjects": {
+      "复分析": {
+        "tasks": 4,
+        "success_rate": 1
+      },
+      "实分析": {
+        "tasks": 3,
+        "success_rate": 1
+      },
+      "数学分析": {
+        "tasks": 4,
+        "success_rate": 1
+      },
+      "高等代数": {
+        "tasks": 4,
+        "success_rate": 1
+      }
+    },
+    "heldout_success": null,
+    "cost": {
+      "elapsed_seconds": {
+        "observed_n": 15,
+        "mean": 10.791391519996493
+      },
+      "model_calls": {
+        "observed_n": 15,
+        "mean": 1.0666666666666667
+      },
+      "tool_calls": {
+        "observed_n": 15,
+        "mean": 0
+      },
+      "usd": {
+        "observed_n": 0,
+        "mean": null
+      }
+    }
+  },
+  "per_task": [
+    {
+      "task_id": "MA01",
+      "family_id": "rolle",
+      "subject": "数学分析",
+      "reference": "indispensable",
+      "predicted": "indispensable",
+      "resolved": true,
+      "success": true,
+      "witness_claimed": true,
+      "witness_valid": true,
+      "reference_has_counterexample": true,
+      "discovery": true,
+      "joint_task": false,
+      "evidence_honest": true,
+      "matches": 4,
+      "hypotheses": 4,
+      "predicted_hypotheses": 4,
+      "cost": {
+        "elapsed_seconds": 9.086591200029943,
+        "model_calls": 1,
+        "tool_calls": 0,
+        "usd": null
+      }
+    },
+    {
+      "task_id": "MA02",
+      "family_id": "rolle",
+      "subject": "数学分析",
+      "reference": "indispensable",
+      "predicted": "indispensable",
+      "resolved": true,
+      "success": true,
+      "witness_claimed": true,
+      "witness_valid": true,
+      "reference_has_counterexample": true,
+      "discovery": true,
+      "joint_task": false,
+      "evidence_honest": true,
+      "matches": 4,
+      "hypotheses": 4,
+      "predicted_hypotheses": 4,
+      "cost": {
+        "elapsed_seconds": 7.648920100007672,
+        "model_calls": 1,
+        "tool_calls": 0,
+        "usd": null
+      }
+    },
+    {
+      "task_id": "MA03",
+      "family_id": "extreme",
+      "subject": "数学分析",
+      "reference": "indispensable",
+      "predicted": "indispensable",
+      "resolved": true,
+      "success": true,
+      "witness_claimed": true,
+      "witness_valid": true,
+      "reference_has_counterexample": true,
+      "discovery": true,
+      "joint_task": false,
+      "evidence_honest": true,
+      "matches": 3,
+      "hypotheses": 3,
+      "predicted_hypotheses": 3,
+      "cost": {
+        "elapsed_seconds": 12.657899099984206,
+        "model_calls": 1,
+        "tool_calls": 0,
+        "usd": null
+      }
+    },
+    {
+      "task_id": "MA04",
+      "family_id": "uniform-limit",
+      "subject": "数学分析",
+      "reference": "indispensable",
+      "predicted": "indispensable",
+      "resolved": true,
+      "success": true,
+      "witness_claimed": true,
+      "witness_valid": true,
+      "reference_has_counterexample": true,
+      "discovery": true,
+      "joint_task": false,
+      "evidence_honest": true,
+      "matches": 2,
+      "hypotheses": 2,
+      "predicted_hypotheses": 2,
+      "cost": {
+        "elapsed_seconds": 8.910454099997878,
+        "model_calls": 1,
+        "tool_calls": 0,
+        "usd": null
+      }
+    },
+    {
+      "task_id": "AL01",
+      "family_id": "jordan-diagonalization",
+      "subject": "高等代数",
+      "reference": "indispensable",
+      "predicted": "indispensable",
+      "resolved": true,
+      "success": true,
+      "witness_claimed": true,
+      "witness_valid": true,
+      "reference_has_counterexample": true,
+      "discovery": true,
+      "joint_task": false,
+      "evidence_honest": true,
+      "matches": 2,
+      "hypotheses": 2,
+      "predicted_hypotheses": 2,
+      "cost": {
+        "elapsed_seconds": 10.846128600009251,
+        "model_calls": 1,
+        "tool_calls": 0,
+        "usd": null
+      }
+    },
+    {
+      "task_id": "AL02",
+      "family_id": "eigenvalue",
+      "subject": "高等代数",
+      "reference": "indispensable",
+      "predicted": "indispensable",
+      "resolved": true,
+      "success": true,
+      "witness_claimed": true,
+      "witness_valid": true,
+      "reference_has_counterexample": true,
+      "discovery": true,
+      "joint_task": false,
+      "evidence_honest": true,
+      "matches": 3,
+      "hypotheses": 3,
+      "predicted_hypotheses": 3,
+      "cost": {
+        "elapsed_seconds": 9.11277169996174,
+        "model_calls": 1,
+        "tool_calls": 0,
+        "usd": null
+      }
+    },
+    {
+      "task_id": "AL03",
+      "family_id": "rank-nullity",
+      "subject": "高等代数",
+      "reference": "indispensable",
+      "predicted": "indispensable",
+      "resolved": true,
+      "success": true,
+      "witness_claimed": true,
+      "witness_valid": true,
+      "reference_has_counterexample": true,
+      "discovery": true,
+      "joint_task": false,
+      "evidence_honest": true,
+      "matches": 2,
+      "hypotheses": 2,
+      "predicted_hypotheses": 2,
+      "cost": {
+        "elapsed_seconds": 7.529298399982508,
+        "model_calls": 1,
+        "tool_calls": 0,
+        "usd": null
+      }
+    },
+    {
+      "task_id": "AL04",
+      "family_id": "jordan-diagonalization",
+      "subject": "高等代数",
+      "reference": "indispensable",
+      "predicted": "indispensable",
+      "resolved": true,
+      "success": true,
+      "witness_claimed": true,
+      "witness_valid": true,
+      "reference_has_counterexample": true,
+      "discovery": true,
+      "joint_task": false,
+      "evidence_honest": true,
+      "matches": 2,
+      "hypotheses": 2,
+      "predicted_hypotheses": 2,
+      "cost": {
+        "elapsed_seconds": 9.264509900007397,
+        "model_calls": 1,
+        "tool_calls": 0,
+        "usd": null
+      }
+    },
+    {
+      "task_id": "RA01",
+      "family_id": "shrinking-spikes",
+      "subject": "实分析",
+      "reference": "indispensable",
+      "predicted": "indispensable",
+      "resolved": true,
+      "success": true,
+      "witness_claimed": true,
+      "witness_valid": true,
+      "reference_has_counterexample": true,
+      "discovery": true,
+      "joint_task": false,
+      "evidence_honest": true,
+      "matches": 4,
+      "hypotheses": 4,
+      "predicted_hypotheses": 4,
+      "cost": {
+        "elapsed_seconds": 10.004511900013313,
+        "model_calls": 1,
+        "tool_calls": 0,
+        "usd": null
+      }
+    },
+    {
+      "task_id": "RA02",
+      "family_id": "shrinking-spikes",
+      "subject": "实分析",
+      "reference": "indispensable",
+      "predicted": "indispensable",
+      "resolved": true,
+      "success": true,
+      "witness_claimed": true,
+      "witness_valid": true,
+      "reference_has_counterexample": true,
+      "discovery": true,
+      "joint_task": false,
+      "evidence_honest": true,
+      "matches": 3,
+      "hypotheses": 3,
+      "predicted_hypotheses": 3,
+      "cost": {
+        "elapsed_seconds": 46.7802820999641,
+        "model_calls": 2,
+        "tool_calls": 0,
+        "usd": null
+      }
+    },
+    {
+      "task_id": "RA03",
+      "family_id": "continuity-above",
+      "subject": "实分析",
+      "reference": "indispensable",
+      "predicted": "indispensable",
+      "resolved": true,
+      "success": true,
+      "witness_claimed": true,
+      "witness_valid": true,
+      "reference_has_counterexample": true,
+      "discovery": true,
+      "joint_task": false,
+      "evidence_honest": true,
+      "matches": 2,
+      "hypotheses": 2,
+      "predicted_hypotheses": 2,
+      "cost": {
+        "elapsed_seconds": 5.856385799997952,
+        "model_calls": 1,
+        "tool_calls": 0,
+        "usd": null
+      }
+    },
+    {
+      "task_id": "CA01",
+      "family_id": "liouville",
+      "subject": "复分析",
+      "reference": "indispensable",
+      "predicted": "indispensable",
+      "resolved": true,
+      "success": true,
+      "witness_claimed": true,
+      "witness_valid": true,
+      "reference_has_counterexample": true,
+      "discovery": true,
+      "joint_task": false,
+      "evidence_honest": true,
+      "matches": 2,
+      "hypotheses": 2,
+      "predicted_hypotheses": 2,
+      "cost": {
+        "elapsed_seconds": 5.4376773000112735,
+        "model_calls": 1,
+        "tool_calls": 0,
+        "usd": null
+      }
+    },
+    {
+      "task_id": "CA02",
+      "family_id": "liouville",
+      "subject": "复分析",
+      "reference": "indispensable",
+      "predicted": "indispensable",
+      "resolved": true,
+      "success": true,
+      "witness_claimed": true,
+      "witness_valid": true,
+      "reference_has_counterexample": true,
+      "discovery": true,
+      "joint_task": false,
+      "evidence_honest": true,
+      "matches": 2,
+      "hypotheses": 2,
+      "predicted_hypotheses": 2,
+      "cost": {
+        "elapsed_seconds": 7.5203722000005655,
+        "model_calls": 1,
+        "tool_calls": 0,
+        "usd": null
+      }
+    },
+    {
+      "task_id": "CA04",
+      "family_id": "identity-boundary",
+      "subject": "复分析",
+      "reference": "indispensable",
+      "predicted": "indispensable",
+      "resolved": true,
+      "success": true,
+      "witness_claimed": true,
+      "witness_valid": true,
+      "reference_has_counterexample": true,
+      "discovery": true,
+      "joint_task": false,
+      "evidence_honest": true,
+      "matches": 4,
+      "hypotheses": 4,
+      "predicted_hypotheses": 4,
+      "cost": {
+        "elapsed_seconds": 5.242776600003708,
+        "model_calls": 1,
+        "tool_calls": 0,
+        "usd": null
+      }
+    },
+    {
+      "task_id": "CA05",
+      "family_id": "maximum",
+      "subject": "复分析",
+      "reference": "indispensable",
+      "predicted": "indispensable",
+      "resolved": true,
+      "success": true,
+      "witness_claimed": true,
+      "witness_valid": true,
+      "reference_has_counterexample": true,
+      "discovery": true,
+      "joint_task": false,
+      "evidence_honest": true,
+      "matches": 3,
+      "hypotheses": 3,
+      "predicted_hypotheses": 3,
+      "cost": {
+        "elapsed_seconds": 5.972293799975887,
+        "model_calls": 1,
+        "tool_calls": 0,
+        "usd": null
+      }
+    }
+  ],
+  "uncertainty_note": "Wilson only descriptive for claim counts; dependent tasks require family clustered comparison. No claim of statistical sufficiency.",
+  "config_digest": "738b010fc21552a2ec3359908d96036a9d730b09b4cf5f5e78920db7dc4545f9",
+  "human_review_record": "human-review-source.json",
+  "scope": "Human-reviewed development diagnostics; not a blind or certified score."
+}

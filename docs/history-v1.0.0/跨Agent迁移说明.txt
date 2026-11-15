@@ -1,0 +1,11 @@
+条件考古学 Skill v1.0.0｜四科辅助版
+
+1. 解压“跨Agent迁移包”，里面是condition-archaeologist完整运行目录和本说明。它不含评测参考答案、API密钥或本机账号。
+2. Codex：将condition-archaeologist整个文件夹放进另一台电脑用户目录的.codex/skills/下；SKILL.md应直接位于condition-archaeologist内。开一个新聊天，输入“使用 $condition-archaeologist。定理：……”即可。
+3. 其他Agent：没有通用的跨产品安装口令。让它读取SKILL.md并按相对路径加载references；若产品支持自定义Skill目录，按该产品设置安装。只上传一个SKILL.md会丢失支持文件。
+4. 可直接发送以下提示：
+请解压附件并读取condition-archaeologist/SKILL.md。若你支持本地Skill安装，请安装整个目录；若不支持，就把它作为本会话的工作流程，读取必要参考文件。不要声称获得了你没有的计算或文件访问能力。数学复核默认由AI完成，明确区分AI、计算、人工和形式化证据。然后分析这条定理：……
+5. 直接聊天运行不依赖Python。要用局部计算工具，准备Python3和SymPy；用完整包做工程评测则还需PyYAML。已实测Python3.12.8。不要使用运行包里的开发案例当成盲测题。
+6. 可选本地自检：python condition-archaeologist/scripts/self_check.py --out 环境报告.json。Agent应先确定解压后的绝对路径再调用。
+7. 迁移后新模型的成绩不能自动沿用本次gpt-6-sol的内部测试分数。先用四科小规模题目确认工具能力与输出，再按完整包方法复评。
+8. 本版不保证所有四科定理都有可构造反例，也不覆盖所有数学科目；它会报告未知，不能把搜索失败当成冗余。

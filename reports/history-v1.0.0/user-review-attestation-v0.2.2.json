@@ -1,0 +1,23 @@
+{
+  "status": "user_reports_pass",
+  "review_type": "human_review_reported_by_user",
+  "source_statements": [
+    "经人工检验29个案例全部通过",
+    "核验记录无改动",
+    "新增的三个例子通过"
+  ],
+  "item_level_mathematical_explanations_received": false,
+  "original_tasks": 29,
+  "additional_tasks": 3,
+  "additional_case_digests": {
+    "AL07": "61288cabad751cc5a96415434a454d2775a9f2310a5be51e8fb405c4e2669276",
+    "RA07": "e01b244dc7bb71d2e78550c3d97e42fe12896e5e4ba51a45aefd15327635e625",
+    "CA09": "b8009db7d0a208a55291317929d40b892ffab6080530e56fee20e9e0bf72bd40"
+  },
+  "additional_file_sha256": "0ed20469a58218c317191f62c58165877ab9baa9e559b99bcf4c4688ea50c08c",
+  "effect": "登记用户确认；保留原始案例和gold元数据，不伪造逐项签字或自动进入正式RSI。",
+  "workflow_authorization": [
+    "剩下的不进行人工核验仅进行ai核验，继续完成skill",
+    "或者说你模拟人工核验，不进行人工核验"
+  ]
+}

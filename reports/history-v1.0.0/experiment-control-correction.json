@@ -1,0 +1,9 @@
+{
+  "initial_exploratory_run": "validation-comparison-v0.2.1-2026-11-05",
+  "issue": "Baseline lacked the complete judgment vocabulary. Six outputs used dispensable, which is not a Skill label.",
+  "correction": "Provide identical label and output contract to both arms; freeze new run before calls.",
+  "balanced_run": "validation-balanced-v0.2.1-2026-11-05",
+  "no_mathematical_scores_assigned": true,
+  "no_best_answer_selection": true,
+  "gateway_recovery": "Only no-answer gateway/empty-body failures, one explicit retry; all attempts retained."
+}

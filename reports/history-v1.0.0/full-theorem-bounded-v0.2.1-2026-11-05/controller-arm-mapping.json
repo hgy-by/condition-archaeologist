@@ -1,0 +1,34 @@
+[
+  {
+    "review_id": "B-MA-A",
+    "task_id": "B-MA",
+    "arm": "full_skill",
+    "kind": "full_theorem",
+    "response_digest": "aad7261134a5e8502a48b0815af4ee78330156bd17bdb7490afe4e7eaa944953",
+    "has_response": false
+  },
+  {
+    "review_id": "B-AL-A",
+    "task_id": "B-AL",
+    "arm": "full_skill",
+    "kind": "full_theorem",
+    "response_digest": "9a9021c7786ddef33c266988c8dd2c92037b5cb846ba0200af0ad7752b5c5d4f",
+    "has_response": true
+  },
+  {
+    "review_id": "B-RA-A",
+    "task_id": "B-RA",
+    "arm": "full_skill",
+    "kind": "full_theorem",
+    "response_digest": "676b0d96d186c89bbea54377c3909867bec35ba4f2874986bae37d44f9d1199e",
+    "has_response": false
+  },
+  {
+    "review_id": "B-CA-A",
+    "task_id": "B-CA",
+    "arm": "full_skill",
+    "kind": "full_theorem",
+    "response_digest": "97a688171ea1a898f1561c2820b21216dec6cb58a6d6913f22887dd3c64dc962",
+    "has_response": true
+  }
+]

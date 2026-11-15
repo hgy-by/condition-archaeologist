@@ -1,0 +1,12 @@
+{
+  "status": "installed",
+  "version": "0.2.2",
+  "installation_path": "C:\\Users\\hougu\\.codex\\skills\\condition-archaeologist",
+  "backup_path": "C:\\Users\\hougu\\Documents\\Codex\\2026-11-02\\du\\outputs\\condition-archaeologist-release-v0.2.2\\reports\\installed-runtime-backup-v0.2.1",
+  "previous_runtime_hash": "9b210d02e4161ec8c39ea1882ee4ca7b53b9a3882b471568522f2747401123b6",
+  "source_runtime_hash": "d4b1e02b42b45cb47fb0e4a3a9d59ec74d5d0a80b5c3acb4263f4ba9bfd40e70",
+  "installed_runtime_hash": "d4b1e02b42b45cb47fb0e4a3a9d59ec74d5d0a80b5c3acb4263f4ba9bfd40e70",
+  "installed_self_check_exit_code": 0,
+  "runtime_files": 12,
+  "rollback": "退出正在使用Skill的调用，将backup_path内文件恢复到installation_path，再运行self_check.py。当前与旧版均为相同12个运行文件；不涉及删除其他Skill。"
+}

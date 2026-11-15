@@ -1,0 +1,446 @@
+[
+  {
+    "kind": "intervention",
+    "task": {
+      "task_id": "MA05",
+      "subject": "数学分析",
+      "statement": "f 在开区间 I 可微且连续，则 f 在 I 连续",
+      "hypotheses": [
+        {
+          "id": "H1",
+          "text": "I为开区间"
+        },
+        {
+          "id": "H2",
+          "text": "f在I可微"
+        },
+        {
+          "id": "H3",
+          "text": "f在I连续"
+        }
+      ],
+      "intervention": {
+        "removed": [
+          "H3"
+        ],
+        "replacement": null
+      },
+      "conclusions": [
+        {
+          "id": "C1",
+          "text": "f在I连续"
+        }
+      ],
+      "ambient": "按定理的明确对象约定"
+    },
+    "arms": [
+      "direct_model",
+      "full_skill"
+    ],
+    "reference_state": "user_reports_pass_no_changes"
+  },
+  {
+    "kind": "intervention",
+    "task": {
+      "task_id": "MA06",
+      "subject": "数学分析",
+      "statement": "非空集合A⊂R，若 A⊂[0,1] 且 A有限，则A有界",
+      "hypotheses": [
+        {
+          "id": "H1",
+          "text": "A非空"
+        },
+        {
+          "id": "H2",
+          "text": "A⊂[0,1]"
+        },
+        {
+          "id": "H3",
+          "text": "A有限"
+        }
+      ],
+      "intervention": {
+        "removed": [
+          "H2"
+        ],
+        "replacement": null
+      },
+      "conclusions": [
+        {
+          "id": "C1",
+          "text": "A有界"
+        }
+      ],
+      "ambient": "按定理的明确对象约定"
+    },
+    "arms": [
+      "direct_model",
+      "full_skill"
+    ],
+    "reference_state": "user_reports_pass_no_changes"
+  },
+  {
+    "kind": "intervention",
+    "task": {
+      "task_id": "MA07",
+      "subject": "数学分析",
+      "statement": "非空集合A⊂R，若 A⊂[0,1] 且 A有限，则A有界",
+      "hypotheses": [
+        {
+          "id": "H1",
+          "text": "A非空"
+        },
+        {
+          "id": "H2",
+          "text": "A⊂[0,1]"
+        },
+        {
+          "id": "H3",
+          "text": "A有限"
+        }
+      ],
+      "intervention": {
+        "removed": [
+          "H3"
+        ],
+        "replacement": null
+      },
+      "conclusions": [
+        {
+          "id": "C1",
+          "text": "A有界"
+        }
+      ],
+      "ambient": "按定理的明确对象约定"
+    },
+    "arms": [
+      "direct_model",
+      "full_skill"
+    ],
+    "reference_state": "user_reports_pass_no_changes"
+  },
+  {
+    "kind": "intervention",
+    "task": {
+      "task_id": "MA08",
+      "subject": "数学分析",
+      "statement": "非空集合A⊂R，若 A⊂[0,1] 且 A有限，则A有界",
+      "hypotheses": [
+        {
+          "id": "H1",
+          "text": "A非空"
+        },
+        {
+          "id": "H2",
+          "text": "A⊂[0,1]"
+        },
+        {
+          "id": "H3",
+          "text": "A有限"
+        }
+      ],
+      "intervention": {
+        "removed": [
+          "H2",
+          "H3"
+        ],
+        "replacement": null
+      },
+      "conclusions": [
+        {
+          "id": "C1",
+          "text": "A有界"
+        }
+      ],
+      "ambient": "按定理的明确对象约定"
+    },
+    "arms": [
+      "direct_model",
+      "full_skill"
+    ],
+    "reference_state": "user_reports_pass_no_changes"
+  },
+  {
+    "kind": "intervention",
+    "task": {
+      "task_id": "AL05",
+      "subject": "高等代数",
+      "statement": "可逆 n×n实矩阵且行列式非零，则对应算子为单射",
+      "hypotheses": [
+        {
+          "id": "H1",
+          "text": "A为实方阵"
+        },
+        {
+          "id": "H2",
+          "text": "A可逆"
+        },
+        {
+          "id": "H3",
+          "text": "det A≠0"
+        }
+      ],
+      "intervention": {
+        "removed": [
+          "H3"
+        ],
+        "replacement": null
+      },
+      "conclusions": [
+        {
+          "id": "C1",
+          "text": "对应算子单射"
+        }
+      ],
+      "ambient": "按定理的明确对象约定"
+    },
+    "arms": [
+      "direct_model",
+      "full_skill"
+    ],
+    "reference_state": "user_reports_pass_no_changes"
+  },
+  {
+    "kind": "intervention",
+    "task": {
+      "task_id": "RA05",
+      "subject": "实分析",
+      "statement": "有限测度空间上，可测且有界并可积的f具有有限绝对积分",
+      "hypotheses": [
+        {
+          "id": "H1",
+          "text": "μ(X)<∞"
+        },
+        {
+          "id": "H2",
+          "text": "f可测且|f|≤M<∞"
+        },
+        {
+          "id": "H3",
+          "text": "f可积"
+        }
+      ],
+      "intervention": {
+        "removed": [
+          "H3"
+        ],
+        "replacement": null
+      },
+      "conclusions": [
+        {
+          "id": "C1",
+          "text": "∫|f|<∞"
+        }
+      ],
+      "ambient": "固定测度空间，实值可测函数；可积指L¹，即∫|f|<∞。M为统一非负有限常数。"
+    },
+    "arms": [
+      "direct_model",
+      "full_skill"
+    ],
+    "reference_state": "user_reports_pass_no_changes"
+  },
+  {
+    "kind": "intervention",
+    "task": {
+      "task_id": "CA06",
+      "subject": "复分析",
+      "statement": "单连通域Ω内全纯f沿任意分段光滑闭曲线积分为0",
+      "hypotheses": [
+        {
+          "id": "H1",
+          "text": "Ω单连通"
+        },
+        {
+          "id": "H2",
+          "text": "f在Ω全纯"
+        },
+        {
+          "id": "H3",
+          "text": "γ为Ω内分段光滑闭曲线"
+        },
+        {
+          "id": "H4",
+          "text": "Ω为非空连通开集"
+        }
+      ],
+      "intervention": {
+        "removed": [
+          "H1"
+        ],
+        "replacement": null
+      },
+      "conclusions": [
+        {
+          "id": "C1",
+          "text": "闭曲线积分为0"
+        }
+      ],
+      "ambient": "Ω⊂C，f:Ω→C，闭曲线积分按复路径积分。"
+    },
+    "arms": [
+      "direct_model",
+      "full_skill"
+    ],
+    "reference_state": "user_reports_pass_no_changes"
+  },
+  {
+    "kind": "intervention",
+    "task": {
+      "task_id": "CA07",
+      "subject": "复分析",
+      "statement": "全纯且连续的域上函数连续",
+      "hypotheses": [
+        {
+          "id": "H1",
+          "text": "Ω为域"
+        },
+        {
+          "id": "H2",
+          "text": "f在Ω全纯"
+        },
+        {
+          "id": "H3",
+          "text": "f在Ω连续"
+        }
+      ],
+      "intervention": {
+        "removed": [
+          "H3"
+        ],
+        "replacement": null
+      },
+      "conclusions": [
+        {
+          "id": "C1",
+          "text": "f在Ω连续"
+        }
+      ],
+      "ambient": "按定理的明确对象约定"
+    },
+    "arms": [
+      "direct_model",
+      "full_skill"
+    ],
+    "reference_state": "user_reports_pass_no_changes"
+  },
+  {
+    "kind": "intervention",
+    "task": {
+      "task_id": "AL07",
+      "subject": "高等代数",
+      "statement": "设F为域，V为F向量空间，B:V×V→F为对称双线性形式。若char(F)≠2且对所有v有B(v,v)=0，则B恒为零。",
+      "ambient": "F可取任意特征的域，V为其向量空间；删去特征条件后仍保留相同定义。",
+      "hypotheses": [
+        {
+          "id": "H1",
+          "text": "char(F)≠2"
+        },
+        {
+          "id": "H2",
+          "text": "B为V上的对称双线性形式"
+        },
+        {
+          "id": "H3",
+          "text": "对所有v∈V，B(v,v)=0"
+        }
+      ],
+      "intervention": {
+        "removed": [
+          "H1"
+        ],
+        "replacement": null
+      },
+      "conclusions": [
+        {
+          "id": "C1",
+          "text": "对所有u,v∈V有B(u,v)=0"
+        }
+      ]
+    },
+    "arms": [
+      "direct_model",
+      "full_skill"
+    ],
+    "reference_state": "pending_human_review"
+  },
+  {
+    "kind": "intervention",
+    "task": {
+      "task_id": "RA07",
+      "subject": "实分析",
+      "statement": "设实值f∈L¹(X,μ)，若f≥0几乎处处且∫f dμ=0，则f=0几乎处处。",
+      "ambient": "固定测度空间，L¹意味着可测且绝对可积；无须μ(X)有限。",
+      "hypotheses": [
+        {
+          "id": "H1",
+          "text": "f∈L¹(X,μ)"
+        },
+        {
+          "id": "H2",
+          "text": "f≥0几乎处处"
+        },
+        {
+          "id": "H3",
+          "text": "∫f dμ=0"
+        }
+      ],
+      "intervention": {
+        "removed": [
+          "H2"
+        ],
+        "replacement": null
+      },
+      "conclusions": [
+        {
+          "id": "C1",
+          "text": "f=0几乎处处"
+        }
+      ]
+    },
+    "arms": [
+      "direct_model",
+      "full_skill"
+    ],
+    "reference_state": "pending_human_review"
+  },
+  {
+    "kind": "intervention",
+    "task": {
+      "task_id": "CA09",
+      "subject": "复分析",
+      "statement": "设复幂级数∑aₙzⁿ的收敛半径为R∈(0,∞)。若|z|<R，则该级数在z绝对收敛。",
+      "ambient": "n从0开始，aₙ∈C，z∈C；本任务把严格半径条件弱化为包含边界。",
+      "hypotheses": [
+        {
+          "id": "H1",
+          "text": "∑aₙzⁿ的收敛半径R满足0<R<∞"
+        },
+        {
+          "id": "H2",
+          "text": "|z|<R"
+        }
+      ],
+      "intervention": {
+        "removed": [
+          "H2"
+        ],
+        "replacement": {
+          "id": "H2w",
+          "text": "|z|≤R"
+        }
+      },
+      "conclusions": [
+        {
+          "id": "C1",
+          "text": "∑|aₙzⁿ|<∞"
+        }
+      ]
+    },
+    "arms": [
+      "direct_model",
+      "full_skill"
+    ],
+    "reference_state": "pending_human_review"
+  }
+]

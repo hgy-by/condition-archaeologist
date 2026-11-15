@@ -1,0 +1,90 @@
+{
+  "created_at": "2026-11-06",
+  "new_model_outputs": "none",
+  "items": [
+    {
+      "case_id": "WEB-MA-01",
+      "file": "web/examples.json; web/tests/test_report_utils.cjs",
+      "claim_or_step": "Fourier-free intermediate value theorem witness f(x)=-1 for x<1/2 and f(x)=1 otherwise retains endpoint signs and has no interior zero.",
+      "evidence": "Direct evaluation of endpoints and range in the authored report; local render reviewed. No external computation or formal proof needed for this finite construction.",
+      "missing_evidence": "No independent second reviewer; academic citation mapping for dataset tasks remains pending.",
+      "method": "Optional teacher check of the piecewise definition at x=1/2 and the endpoint values; verify the intended theorem requires continuity on the closed interval.",
+      "impact_before_review": "The example is clearly labeled as a prewritten illustrative proof. This does not affect the format/engineering test result or any live-model score.",
+      "reviewer_type": "ai",
+      "reviewed": true,
+      "independent": false,
+      "human_required_for_use": false
+    },
+    {
+      "case_id": "WEB-AL-EXAMPLES",
+      "file": "web/examples.json",
+      "claim_or_step": "The nonsymmetric positive quadratic-form matrix has characteristic polynomial (lambda-1)^2+1, and [-1] violates positive eigenvalue conclusion when positivity is removed.",
+      "evidence": "Entrywise multiplication and characteristic polynomial calculation in the authored report.",
+      "missing_evidence": "No independent second reviewer or separately saved calculation transcript.",
+      "method": "Teacher may check A^T != A, x^T A x=u^2+v^2, eigenvalues 1±i, and the one-dimensional negative example.",
+      "impact_before_review": "Prewritten example only; local report-format validation is not evidence that these claims were independently certified.",
+      "reviewer_type": "ai",
+      "reviewed": true,
+      "independent": false,
+      "human_required_for_use": false
+    },
+    {
+      "case_id": "WEB-RA-EXAMPLES",
+      "file": "web/examples.json",
+      "claim_or_step": "Three counterexamples separately target almost-everywhere convergence, integrability of the common bound, and the common domination inequality in the dominated convergence theorem.",
+      "evidence": "Direct pointwise/integral calculations and the finite-exception argument recorded for the spike sequence.",
+      "missing_evidence": "A.e. quantifier convention and the exact textbook version should be confirmed if adopted for a course handout.",
+      "method": "Compare with the course's stated DCT; in particular verify target conclusion is integral convergence, since the integrable-bound failure example still has an integrable limit.",
+      "impact_before_review": "The report intentionally specifies which conclusion fails and does not claim every conclusion fails. Use as an illustrative example pending course-version confirmation.",
+      "reviewer_type": "ai",
+      "reviewed": true,
+      "independent": false,
+      "human_required_for_use": false
+    },
+    {
+      "case_id": "WEB-CA-EXAMPLES",
+      "file": "web/examples.json",
+      "claim_or_step": "The bounded conjugate map is not holomorphic, while z is entire and unbounded; each example violates the designated Liouville hypothesis and nonconstancy conclusion.",
+      "evidence": "Modulus bound, two directional difference quotients at zero, derivative of z and sequence |f(n)|→∞ are explicitly stated.",
+      "missing_evidence": "No independent second reviewer or formalized complex-analysis proof.",
+      "method": "Optional teacher check of the directional limits and unboundedness; definitions are stated directly in the case.",
+      "impact_before_review": "AI-checked illustrative reasoning only; does not contribute to a new-model capability score.",
+      "reviewer_type": "ai",
+      "reviewed": true,
+      "independent": false,
+      "human_required_for_use": false
+    },
+    {
+      "case_id": "DATASET-SOURCE-MAPPING",
+      "file": "evaluation/manifest.json; evaluation/*/cases.jsonl",
+      "claim_or_step": "Exact publication passage and source-to-task mapping for benchmark tasks.",
+      "evidence": "Bibliographic URLs and source status exist in the evaluation manifest.",
+      "missing_evidence": "The manifest marks exact passage mapping as pending.",
+      "method": "Open the cited source and record theorem/edition/page or stable section for each family without changing the authored mathematical answer silently.",
+      "impact_before_review": "Do not describe all benchmark items as independently source-verified or use unsupported provenance in formal external claims.",
+      "reviewer_type": "pending",
+      "reviewed": false,
+      "human_required_for_use": false
+    },
+    {
+      "case_id": "TEACHER-SUBMISSION-SPECS",
+      "file": "poster/*; README.md; docs/提交前检查.md",
+      "claim_or_step": "Whether the teacher requires a particular poster size, institutional identity, bibliography, independent review or file format.",
+      "evidence": "A3 Chinese draft with editable SVG, PDF and PNG is created; no assignment specification was supplied.",
+      "missing_evidence": "Teacher's exact submission rubric and format.",
+      "method": "Compare the draft with the assignment brief; revise size, author line and references only when actual instructions are available.",
+      "impact_before_review": "Poster is a readable project introduction draft, not a confirmed final submission format.",
+      "reviewer_type": "pending",
+      "reviewed": false,
+      "human_required_for_use": true
+    }
+  ],
+  "prior_user_reported_review": {
+    "items": 29,
+    "result": "user said all passed, no changes",
+    "additional_items": 3,
+    "result_additional": "user said passed",
+    "item_level_artifacts": false,
+    "not_recreated_as_independent_human_signoff": true
+  }
+}

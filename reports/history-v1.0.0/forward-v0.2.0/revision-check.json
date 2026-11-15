@@ -1,0 +1,85 @@
+{
+  "date": "2026-11-03",
+  "review_kind": "AI_revision_check_not_human_or_formal",
+  "originals_preserved": true,
+  "original_file_sha256": {
+    "complex-analysis-structure.json": "7c2801aa5cf6f7d222d80c01a0f01d738296705fd3201b91db2d106414f4dd24",
+    "complex-analysis.json": "18bd6fa0f8d0a61399674eef0311ae126ac591cdd535322b6b83027102748858",
+    "complex-analysis.md": "d140561cdfa21b8fbd162e05567248f673d19aaac9bcc5cf5193a2694276010d",
+    "higher-algebra-structure.json": "7c2801aa5cf6f7d222d80c01a0f01d738296705fd3201b91db2d106414f4dd24",
+    "higher-algebra.json": "744f241844c0ba4121b52fd7a2e2d52e91923666919a9a512fa2206a5115ca2c",
+    "higher-algebra.md": "592d73bed1278885299155f8ea4c5aee5bc6d39dd6aff9f3fcabbd35698e46e4",
+    "math-analysis-structure.json": "7c2801aa5cf6f7d222d80c01a0f01d738296705fd3201b91db2d106414f4dd24",
+    "math-analysis.json": "c4da103e58957a6bebdfe589f2820c122aab141d2a346143c2ff8173bef3cfb1",
+    "math-analysis.md": "f7b2421a67539cebd337a8256fdec6ea667453d070fb23b140209494d053ef4d",
+    "real-analysis-structure.json": "7c2801aa5cf6f7d222d80c01a0f01d738296705fd3201b91db2d106414f4dd24",
+    "real-analysis.json": "6273687bf5c22b42da66e970efe69a29a9f8d63bf6f3ce777a835ad9ee762fcf",
+    "real-analysis.md": "75b7cf7d6b5b70afe8160d405b2743dadea7c37564ce584c22f8e60d776b607d",
+    "run-summary.json": "4abec00e3bc453d1b1cdb7afa226aaec7405ff3069c5938d6f5686ef623d2053"
+  },
+  "classification_rule": "保留假设按已声明定义直接蕴含被删条件时优先implied；只有无法保持合法类型而必须改写时type_constraint。",
+  "corrections": [
+    {
+      "task_id": "F-CA-open-set",
+      "before": "type_constraint",
+      "after": "implied",
+      "reason": "本题明定全纯按开集定义，保留H3直接蕴含Ω开。",
+      "mathematical_counterexample_added": false
+    }
+  ],
+  "per_subject_checks": {
+    "math-analysis": [
+      "(0,1)的开覆盖U_m=(1/m,1)无有限子覆盖。",
+      "R的开覆盖(−m,m)无有限子覆盖。",
+      "ℓ²单位球的标准正交序列两两距离√2，无收敛子列。",
+      "原定理已限定通常欧氏拓扑和有限n≥1；未将类型变更冒充普通删除。"
+    ],
+    "higher-algebra": [
+      "实非零幂零矩阵不可能对角化，更不可能实正交对角化。",
+      "复对称例[[i,1],[1,−i]]确实平方为0且非零；明确仅用于改写命题。",
+      "L²乘法算子M_x有界自伴且无非零特征向量；不否定一般谱测度定理。"
+    ],
+    "real-analysis": [
+      "−1_[n,∞)在R上单调增加到0，每项积分−∞有定义，与极限积分0不同。",
+      "正尖峰非负可测且逐点收敛，但不单调，积分不交换。",
+      "非可测示性函数只说明原积分的定义前提失效，未冒充数值反例。",
+      "共同L¹下界允许减去g应用非负单调收敛；f1∈L¹时可取g=f1。"
+    ],
+    "complex-analysis": [
+      "不同分支常数构造保持局部全纯和域内零点聚点。",
+      "Im z在单位盘的实轴零点聚于0，却不恒零且不全纯。",
+      "sin(π/z)在穿孔平面全纯，零点仅向域外0聚集，f(2)=1。",
+      "非空性由内聚点条件直接推出。",
+      "更正：开性在已声明全纯定义下由保留H3直接推出，应归implied。"
+    ]
+  },
+  "remaining_core_math_errors_found": [],
+  "validation_processes": [
+    {
+      "subject_file": "math-analysis",
+      "exit_code": 0,
+      "stdout": "{\"status\": \"pass\", \"errors\": [], \"scope\": \"Output structure and obligation completeness only, not mathematical truth.\"}\n",
+      "stderr": ""
+    },
+    {
+      "subject_file": "higher-algebra",
+      "exit_code": 0,
+      "stdout": "{\"status\": \"pass\", \"errors\": [], \"scope\": \"Output structure and obligation completeness only, not mathematical truth.\"}\n",
+      "stderr": ""
+    },
+    {
+      "subject_file": "real-analysis",
+      "exit_code": 0,
+      "stdout": "{\"status\": \"pass\", \"errors\": [], \"scope\": \"Output structure and obligation completeness only, not mathematical truth.\"}\n",
+      "stderr": ""
+    },
+    {
+      "subject_file": "complex-analysis",
+      "exit_code": 0,
+      "stdout": "{\"status\": \"pass\", \"errors\": [], \"scope\": \"Output structure and obligation completeness only, not mathematical truth.\"}\n",
+      "stderr": ""
+    }
+  ],
+  "human_reviewed": false,
+  "benchmark_score": null
+}

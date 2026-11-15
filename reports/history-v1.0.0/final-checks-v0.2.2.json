@@ -1,0 +1,93 @@
+{
+  "status": "pass",
+  "commands": [
+    {
+      "command": [
+        "C:\\Users\\hougu\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-X",
+        "utf8",
+        "condition-archaeologist/scripts/self_check.py",
+        "--out",
+        "reports/self-check-v0.2.2.json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"version\": \"0.2.2\",\n  \"skill_root\": \"C:\\\\Users\\\\hougu\\\\Documents\\\\Codex\\\\2026-11-02\\\\du\\\\outputs\\\\condition-archaeologist-release-v0.2.2\\\\condition-archaeologist\",\n  \"python\": \"C:\\\\Users\\\\hougu\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python312\\\\python.exe\",\n  \"python_version\": \"3.12.8\",\n  \"core_files\": \"pass\",\n  \"sympy_available\": true,\n  \"computation_checks\": [\n    {\n      \"version\": \"0.2.0\",\n      \"status\": \"partial_computation\",\n      \"claims_pass\": true,\n      \"checks\": {\n        \"diagonalizable\": true\n      },\n      \"actual\": {\n        \"square\": true,\n        \"symmetric\": false,\n        \"invertible\": false,\n        \"diagonalizable\": false,\n        \"has_eigenvalue_in_field\": true\n      },\n      \"details\": {\n        \"matrix\": \"Matrix([[0, 1], [0, 0]])\",\n        \"determinant\": \"0\",\n        \"field\": \"complex\"\n      },\n      \"elapsed_seconds\": 0.001278200012166053,\n      \"limitation\": \"Does not establish all retained hypotheses or whole counterexample validity.\"\n    },\n    {\n      \"version\": \"0.2.0\",\n      \"status\": \"partial_computation\",\n      \"claims_pass\": true,\n      \"checks\": {\n        \"has_eigenvalue_in_field\": true\n      },\n      \"actual\": {\n        \"square\": true,\n        \"symmetric\": false,\n        \"invertible\": true,\n        \"diagonalizable\": false,\n        \"has_eigenvalue_in_field\": false\n      },\n      \"details\": {\n        \"matrix\": \"Matrix([[0, -1], [1, 0]])\",\n        \"determinant\": \"1\",\n        \"field\": \"real\"\n      },\n      \"elapsed_seconds\": 0.20310550002614036,\n      \"limitation\": \"Does not establish all retained hypotheses or whole counterexample validity.\"\n    },\n    {\n      \"version\": \"0.2.0\",\n      \"status\": \"partial_computation\",\n      \"claims_pass\": true,\n      \"checks\": {\n        \"integral_power\": true,\n        \"integral_coefficient\": true\n      },\n      \"actual\": {\n        \"integral_power\": 0,\n        \"integral_coefficient\": \"1\"\n      },\n      \"details\": {\n        \"integral\": \"1*n**(0)\",\n        \"scope\": \"arithmetic identity only; measurable support and convergence require argument\"\n      },\n      \"elapsed_seconds\": 0.0002237000153400004,\n      \"limitation\": \"Does not establish all retained hypotheses or whole counterexample validity.\"\n    }\n  ],\n  \"issues\": [],\n  \"chat_workflow_ready\": true,\n  \"local_computation_ready\": true,\n  \"human_math_review\": \"not_performed_by_this_check\",\n  \"limitation\": \"Core reasoning runs in Codex chat. This is not a standalone theorem-solving program or a capability benchmark.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\hougu\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-X",
+        "utf8",
+        "C:\\Users\\hougu\\.codex\\skills\\.system\\skill-creator\\scripts\\quick_validate.py",
+        "C:\\Users\\hougu\\Documents\\Codex\\2026-11-02\\du\\outputs\\condition-archaeologist-release-v0.2.2\\condition-archaeologist"
+      ],
+      "exit_code": 0,
+      "stdout": "Skill is valid!\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\hougu\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-X",
+        "utf8",
+        "evaluation/lab.py",
+        "validate",
+        "--out",
+        "reports/data-consistency-v0.2.2.json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"status\": \"written\", \"output\": \"reports/data-consistency-v0.2.2.json\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\hougu\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-X",
+        "utf8",
+        "evaluation/ai_score.py",
+        "--cases",
+        "reports/ai-review-v0.2.2/cases.jsonl",
+        "--reviews",
+        "reports/ai-review-v0.2.2/direct_model-reviews.json",
+        "--run",
+        "reports/validation-balanced-v0.2.1-2026-11-05",
+        "--out",
+        "reports/ai-review-v0.2.2/direct_model-cli-score.json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"status\": \"ai_reviewed_internal\", \"output\": \"reports\\\\ai-review-v0.2.2\\\\direct_model-cli-score.json\", \"metrics\": {\"tasks\": 11, \"mathematical_validity\": {\"numerator\": 11, \"denominator\": 11, \"rate\": 1.0}, \"strict_intervention_success\": {\"numerator\": 10, \"denominator\": 11, \"rate\": 0.9090909090909091}, \"witness_precision\": {\"numerator\": 5, \"denominator\": 5, \"rate\": 1.0}, \"counterexample_discovery\": {\"numerator\": 5, \"denominator\": 5, \"rate\": 1.0}, \"joint_intervention_success\": {\"numerator\": 1, \"denominator\": 1, \"rate\": 1.0}, \"removable_class_success\": {\"numerator\": 2, \"denominator\": 2, \"rate\": 1.0}, \"implied_class_success\": {\"numerator\": 3, \"denominator\": 4, \"rate\": 0.75}, \"hypothesis_extraction_from_raw_text\": null, \"strict_blind_transfer\": null, \"full_theorem_success\": null, \"usd\": null}}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\hougu\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-X",
+        "utf8",
+        "evaluation/ai_score.py",
+        "--cases",
+        "reports/ai-review-v0.2.2/cases.jsonl",
+        "--reviews",
+        "reports/ai-review-v0.2.2/full_skill-reviews.json",
+        "--run",
+        "reports/validation-balanced-v0.2.1-2026-11-05",
+        "--out",
+        "reports/ai-review-v0.2.2/full_skill-cli-score.json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"status\": \"ai_reviewed_internal\", \"output\": \"reports\\\\ai-review-v0.2.2\\\\full_skill-cli-score.json\", \"metrics\": {\"tasks\": 11, \"mathematical_validity\": {\"numerator\": 11, \"denominator\": 11, \"rate\": 1.0}, \"strict_intervention_success\": {\"numerator\": 11, \"denominator\": 11, \"rate\": 1.0}, \"witness_precision\": {\"numerator\": 5, \"denominator\": 5, \"rate\": 1.0}, \"counterexample_discovery\": {\"numerator\": 5, \"denominator\": 5, \"rate\": 1.0}, \"joint_intervention_success\": {\"numerator\": 1, \"denominator\": 1, \"rate\": 1.0}, \"removable_class_success\": {\"numerator\": 2, \"denominator\": 2, \"rate\": 1.0}, \"implied_class_success\": {\"numerator\": 4, \"denominator\": 4, \"rate\": 1.0}, \"hypothesis_extraction_from_raw_text\": null, \"strict_blind_transfer\": null, \"full_theorem_success\": null, \"usd\": null}}\n",
+      "stderr": ""
+    }
+  ],
+  "canonical_29_unchanged": true,
+  "total_cases": 32,
+  "family_split_consistency": "pass",
+  "review_page_cards": 30,
+  "raw_experiment_copy_integrity": "pass",
+  "extended_review_source_integrity": "pass",
+  "software_tests_record": "software-tests-v0.2.2.json",
+  "software_test_count": 73,
+  "new_live_model_calls": 0,
+  "visual_browser_inspection": "not_performed",
+  "scope": "Software, data integrity, recorded AI score reproduction and local arithmetic; not general mathematical proof."
+}

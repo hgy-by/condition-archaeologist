@@ -1,0 +1,12 @@
+{
+  "http_status": null,
+  "elapsed_seconds": 39.06447240000125,
+  "raw": null,
+  "error": "Remote end closed connection without response",
+  "task_id": "RA02",
+  "arm": "direct_model",
+  "task_digest": "4d922487d9800ab62fb3a04b8cefcf2d0bb7e1c9e19a4cf3f915875a93b3924a",
+  "model_calls": 1,
+  "prediction": null,
+  "structure_errors": null
+}

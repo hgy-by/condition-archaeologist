@@ -1,0 +1,9 @@
+{
+  "status": "pass",
+  "version": "1.0.0",
+  "required_files": 13,
+  "reference_tasks": 15,
+  "issues": [],
+  "scope": "File structure, metadata and links only; does not verify mathematics."
+}
+

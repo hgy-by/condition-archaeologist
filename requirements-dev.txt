@@ -1,0 +1,4 @@
+# Web runtime: Python 3.11+ standard library, no pip requirements.
+# Skill computations and evaluation:
+sympy>=1.12,<2
+PyYAML>=6,<7

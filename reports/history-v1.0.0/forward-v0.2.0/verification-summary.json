@@ -1,0 +1,30 @@
+[
+  {
+    "subject_file": "math-analysis",
+    "interventions": 3,
+    "structural_validation": "pass",
+    "kind": "AI_forward_run_after_recorded_correction",
+    "human_certified": false
+  },
+  {
+    "subject_file": "higher-algebra",
+    "interventions": 3,
+    "structural_validation": "pass",
+    "kind": "AI_forward_run_after_recorded_correction",
+    "human_certified": false
+  },
+  {
+    "subject_file": "real-analysis",
+    "interventions": 4,
+    "structural_validation": "pass",
+    "kind": "AI_forward_run_after_recorded_correction",
+    "human_certified": false
+  },
+  {
+    "subject_file": "complex-analysis",
+    "interventions": 5,
+    "structural_validation": "pass",
+    "kind": "AI_forward_run_after_recorded_correction",
+    "human_certified": false
+  }
+]

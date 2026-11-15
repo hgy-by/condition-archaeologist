@@ -1,0 +1,42 @@
+[
+  {
+    "task_id": "MA05",
+    "prompt": "使用 $condition-archaeologist 完成以下任务，按Skill的机器输出规范输出一个JSON对象。\n{\"task_id\": \"MA05\", \"subject\": \"数学分析\", \"statement\": \"f 在开区间 I 可微且连续，则 f 在 I 连续\", \"hypotheses\": [{\"id\": \"H1\", \"text\": \"I为开区间\"}, {\"id\": \"H2\", \"text\": \"f在I可微\"}, {\"id\": \"H3\", \"text\": \"f在I连续\"}], \"intervention\": {\"removed\": [\"H3\"], \"replacement\": null}, \"conclusions\": [{\"id\": \"C1\", \"text\": \"f在I连续\"}], \"ambient\": \"按定理的明确对象约定\"}",
+    "task_digest": "0e2fde2b9a8fbe4f708e6c35e6a3e14c3298b78178816f8a496696546f0d579a"
+  },
+  {
+    "task_id": "MA06",
+    "prompt": "使用 $condition-archaeologist 完成以下任务，按Skill的机器输出规范输出一个JSON对象。\n{\"task_id\": \"MA06\", \"subject\": \"数学分析\", \"statement\": \"非空集合A⊂R，若 A⊂[0,1] 且 A有限，则A有界\", \"hypotheses\": [{\"id\": \"H1\", \"text\": \"A非空\"}, {\"id\": \"H2\", \"text\": \"A⊂[0,1]\"}, {\"id\": \"H3\", \"text\": \"A有限\"}], \"intervention\": {\"removed\": [\"H2\"], \"replacement\": null}, \"conclusions\": [{\"id\": \"C1\", \"text\": \"A有界\"}], \"ambient\": \"按定理的明确对象约定\"}",
+    "task_digest": "9879b427e7a1df4c159376aed3ae5255c332d09875b1fa947ace2cc59621c7d9"
+  },
+  {
+    "task_id": "MA07",
+    "prompt": "使用 $condition-archaeologist 完成以下任务，按Skill的机器输出规范输出一个JSON对象。\n{\"task_id\": \"MA07\", \"subject\": \"数学分析\", \"statement\": \"非空集合A⊂R，若 A⊂[0,1] 且 A有限，则A有界\", \"hypotheses\": [{\"id\": \"H1\", \"text\": \"A非空\"}, {\"id\": \"H2\", \"text\": \"A⊂[0,1]\"}, {\"id\": \"H3\", \"text\": \"A有限\"}], \"intervention\": {\"removed\": [\"H3\"], \"replacement\": null}, \"conclusions\": [{\"id\": \"C1\", \"text\": \"A有界\"}], \"ambient\": \"按定理的明确对象约定\"}",
+    "task_digest": "cf0317297715960e920043a524950b6ed4da10f5efa0fb7d1d01c616daba7d7d"
+  },
+  {
+    "task_id": "MA08",
+    "prompt": "使用 $condition-archaeologist 完成以下任务，按Skill的机器输出规范输出一个JSON对象。\n{\"task_id\": \"MA08\", \"subject\": \"数学分析\", \"statement\": \"非空集合A⊂R，若 A⊂[0,1] 且 A有限，则A有界\", \"hypotheses\": [{\"id\": \"H1\", \"text\": \"A非空\"}, {\"id\": \"H2\", \"text\": \"A⊂[0,1]\"}, {\"id\": \"H3\", \"text\": \"A有限\"}], \"intervention\": {\"removed\": [\"H2\", \"H3\"], \"replacement\": null}, \"conclusions\": [{\"id\": \"C1\", \"text\": \"A有界\"}], \"ambient\": \"按定理的明确对象约定\"}",
+    "task_digest": "ecc65a1818766006a9bff94f0f9b66ebaf2e6459ba74594d5d1c21e521194f57"
+  },
+  {
+    "task_id": "AL05",
+    "prompt": "使用 $condition-archaeologist 完成以下任务，按Skill的机器输出规范输出一个JSON对象。\n{\"task_id\": \"AL05\", \"subject\": \"高等代数\", \"statement\": \"可逆 n×n实矩阵且行列式非零，则对应算子为单射\", \"hypotheses\": [{\"id\": \"H1\", \"text\": \"A为实方阵\"}, {\"id\": \"H2\", \"text\": \"A可逆\"}, {\"id\": \"H3\", \"text\": \"det A≠0\"}], \"intervention\": {\"removed\": [\"H3\"], \"replacement\": null}, \"conclusions\": [{\"id\": \"C1\", \"text\": \"对应算子单射\"}], \"ambient\": \"按定理的明确对象约定\"}",
+    "task_digest": "cc3754f2b392aaf8ba5b722f5d3264b05f58bbcb0998cd98fba265e169fde7c3"
+  },
+  {
+    "task_id": "RA05",
+    "prompt": "使用 $condition-archaeologist 完成以下任务，按Skill的机器输出规范输出一个JSON对象。\n{\"task_id\": \"RA05\", \"subject\": \"实分析\", \"statement\": \"有限测度空间上，可测且有界并可积的f具有有限绝对积分\", \"hypotheses\": [{\"id\": \"H1\", \"text\": \"μ(X)<∞\"}, {\"id\": \"H2\", \"text\": \"f可测且|f|≤M<∞\"}, {\"id\": \"H3\", \"text\": \"f可积\"}], \"intervention\": {\"removed\": [\"H3\"], \"replacement\": null}, \"conclusions\": [{\"id\": \"C1\", \"text\": \"∫|f|<∞\"}], \"ambient\": \"固定测度空间，实值可测函数；可积指L¹，即∫|f|<∞。M为统一非负有限常数。\"}",
+    "task_digest": "5a7a43c03ff24f57b03be766de12e64c35b007a9cc2f271b53c04341d112585e"
+  },
+  {
+    "task_id": "CA06",
+    "prompt": "使用 $condition-archaeologist 完成以下任务，按Skill的机器输出规范输出一个JSON对象。\n{\"task_id\": \"CA06\", \"subject\": \"复分析\", \"statement\": \"单连通域Ω内全纯f沿任意分段光滑闭曲线积分为0\", \"hypotheses\": [{\"id\": \"H1\", \"text\": \"Ω单连通\"}, {\"id\": \"H2\", \"text\": \"f在Ω全纯\"}, {\"id\": \"H3\", \"text\": \"γ为Ω内分段光滑闭曲线\"}, {\"id\": \"H4\", \"text\": \"Ω为非空连通开集\"}], \"intervention\": {\"removed\": [\"H1\"], \"replacement\": null}, \"conclusions\": [{\"id\": \"C1\", \"text\": \"闭曲线积分为0\"}], \"ambient\": \"Ω⊂C，f:Ω→C，闭曲线积分按复路径积分。\"}",
+    "task_digest": "6a3bb4f4cf925630fe8c775e3ce9109361d95d511b78065783a2b7fa16a4148d"
+  },
+  {
+    "task_id": "CA07",
+    "prompt": "使用 $condition-archaeologist 完成以下任务，按Skill的机器输出规范输出一个JSON对象。\n{\"task_id\": \"CA07\", \"subject\": \"复分析\", \"statement\": \"全纯且连续的域上函数连续\", \"hypotheses\": [{\"id\": \"H1\", \"text\": \"Ω为域\"}, {\"id\": \"H2\", \"text\": \"f在Ω全纯\"}, {\"id\": \"H3\", \"text\": \"f在Ω连续\"}], \"intervention\": {\"removed\": [\"H3\"], \"replacement\": null}, \"conclusions\": [{\"id\": \"C1\", \"text\": \"f在Ω连续\"}], \"ambient\": \"按定理的明确对象约定\"}",
+    "task_digest": "ec193759326eee1e3c1dec9771ed9d5df46246d718bd1a9f9b179f26717d8e1d"
+  }
+]

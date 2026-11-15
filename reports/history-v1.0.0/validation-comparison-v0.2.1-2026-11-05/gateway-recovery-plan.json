@@ -1,0 +1,26 @@
+{
+  "reason": "Gateway 520-524 or HTTP 200 whitespace body, with no model answer",
+  "policy": "One explicit recovery per affected job, sequential, identical frozen payload; never retry any mathematical answer.",
+  "jobs": [
+    {
+      "task_id": "F-MA",
+      "arm": "full_skill",
+      "attempt": 2
+    },
+    {
+      "task_id": "F-AL",
+      "arm": "full_skill",
+      "attempt": 2
+    },
+    {
+      "task_id": "F-RA",
+      "arm": "full_skill",
+      "attempt": 2
+    },
+    {
+      "task_id": "F-CA",
+      "arm": "full_skill",
+      "attempt": 2
+    }
+  ]
+}

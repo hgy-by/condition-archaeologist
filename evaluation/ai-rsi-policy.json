@@ -1,0 +1,11 @@
+{
+  "min_success_gain": 0.05,
+  "max_precision_drop": 0.0,
+  "min_family_count": 8,
+  "require_positive_ci": true,
+  "min_bootstrap_samples": 2000,
+  "requires_human_acceptance": false,
+  "requires_AI_acceptance": true,
+  "mode": "ai_internal",
+  "independent_human_certification": false
+}

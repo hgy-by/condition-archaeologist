@@ -1,0 +1,272 @@
+[
+  {
+    "task_id": "MA05",
+    "arm": "direct_model",
+    "response_digest": "3b17fdda3dd737cde57c17ccaf6b5592f3beb0dae23dd1893ce3935dc0d43b73",
+    "kind": "controller_AI_review_checkpoints_not_human_adjudication",
+    "note": "注意直接组removable与Skill组implied的分类差异；直接组论证也证明可微推出连续，数学结论与分类精度要分开审核。",
+    "human_result": null,
+    "numeric_score": null
+  },
+  {
+    "task_id": "MA05",
+    "arm": "full_skill",
+    "response_digest": "5b2afe4769fc271d33c43dd86120c708f78d566d6a42a626d5264f1d5eb06537",
+    "kind": "controller_AI_review_checkpoints_not_human_adjudication",
+    "note": "注意直接组removable与Skill组implied的分类差异；直接组论证也证明可微推出连续，数学结论与分类精度要分开审核。",
+    "human_result": null,
+    "numeric_score": null
+  },
+  {
+    "task_id": "MA06",
+    "arm": "direct_model",
+    "response_digest": "a68c931f3ad88e2ecb855b1fb431419fd6221e87a297ca7b303f1d77f7e0c50a",
+    "kind": "controller_AI_review_checkpoints_not_human_adjudication",
+    "note": "两组有限非空实数集取绝对值最大值的证明须作用于任意保留对象，而非只举一个集合。",
+    "human_result": null,
+    "numeric_score": null
+  },
+  {
+    "task_id": "MA06",
+    "arm": "full_skill",
+    "response_digest": "f10acaecc9f1b6ed48b0d5ef7c240af5480fee40d263aae0f56013179b3c7d53",
+    "kind": "controller_AI_review_checkpoints_not_human_adjudication",
+    "note": "两组有限非空实数集取绝对值最大值的证明须作用于任意保留对象，而非只举一个集合。",
+    "human_result": null,
+    "numeric_score": null
+  },
+  {
+    "task_id": "MA07",
+    "arm": "direct_model",
+    "response_digest": "b12814e438d10dbfcf8a710bdd3639f4ba011feef899db86562383191fc5e0b3",
+    "kind": "controller_AI_review_checkpoints_not_human_adjudication",
+    "note": "检查由A⊂[0,1]得到有界，无须保留有限性；不要误认为保留条件推出有限。",
+    "human_result": null,
+    "numeric_score": null
+  },
+  {
+    "task_id": "MA07",
+    "arm": "full_skill",
+    "response_digest": "fe54a0c0df6a823419729e81caca22584b01e1a8f7dd325c17b49b29881a2d88",
+    "kind": "controller_AI_review_checkpoints_not_human_adjudication",
+    "note": "检查由A⊂[0,1]得到有界，无须保留有限性；不要误认为保留条件推出有限。",
+    "human_result": null,
+    "numeric_score": null
+  },
+  {
+    "task_id": "MA08",
+    "arm": "direct_model",
+    "response_digest": "f457ed2489a2b9808ab5a27d68a691cc5b6d62c1fa4da8017cd0a34a89470042",
+    "kind": "controller_AI_review_checkpoints_not_human_adjudication",
+    "note": "两组联合删除反例有效性与组合依赖说明完整性分开检查；dependencies字段为空，需判断是否满足该题报告要求。",
+    "human_result": null,
+    "numeric_score": null
+  },
+  {
+    "task_id": "MA08",
+    "arm": "full_skill",
+    "response_digest": "6d0447927db3714452441e5c9b8977459e6b747961f14114c89372386374b88c",
+    "kind": "controller_AI_review_checkpoints_not_human_adjudication",
+    "note": "两组联合删除反例有效性与组合依赖说明完整性分开检查；dependencies字段为空，需判断是否满足该题报告要求。",
+    "human_result": null,
+    "numeric_score": null
+  },
+  {
+    "task_id": "AL05",
+    "arm": "direct_model",
+    "response_digest": "c097dc18a55da4ff0440111ca6f1c2b16764388f3e3bbf2d4b12f569918df26c",
+    "kind": "controller_AI_review_checkpoints_not_human_adjudication",
+    "note": "检查可逆推出det非零及单射，分类implied优先。",
+    "human_result": null,
+    "numeric_score": null
+  },
+  {
+    "task_id": "AL05",
+    "arm": "full_skill",
+    "response_digest": "1839cec3779c991810d0666aa8cf25a87e3380feef41edee80c3d52434ed92e3",
+    "kind": "controller_AI_review_checkpoints_not_human_adjudication",
+    "note": "检查可逆推出det非零及单射，分类implied优先。",
+    "human_result": null,
+    "numeric_score": null
+  },
+  {
+    "task_id": "RA05",
+    "arm": "direct_model",
+    "response_digest": "89224712ac85dc0bf8766cd659d213a31d3a6f4c027e3a2f8d091efee8f1aa2b",
+    "kind": "controller_AI_review_checkpoints_not_human_adjudication",
+    "note": "检查Mμ(X)上界和L¹定义；可积性由保留条件推出，注意冗余证明。",
+    "human_result": null,
+    "numeric_score": null
+  },
+  {
+    "task_id": "RA05",
+    "arm": "full_skill",
+    "response_digest": "cd55ed2f73b24cf6c251c2b62932107f8250888dec5bc8ab74536ec280289c6b",
+    "kind": "controller_AI_review_checkpoints_not_human_adjudication",
+    "note": "检查Mμ(X)上界和L¹定义；可积性由保留条件推出，注意冗余证明。",
+    "human_result": null,
+    "numeric_score": null
+  },
+  {
+    "task_id": "CA06",
+    "arm": "direct_model",
+    "response_digest": "40e8f27afc08ff1836aebca7fdc26bcd4341271f0f8c1b68e7b8bfe63993f84b",
+    "kind": "controller_AI_review_checkpoints_not_human_adjudication",
+    "note": "检查1/z的域、路径闭合及积分2πi；是否显式说明域非单连通。",
+    "human_result": null,
+    "numeric_score": null
+  },
+  {
+    "task_id": "CA06",
+    "arm": "full_skill",
+    "response_digest": "b740f3f5789930b062cec03ac847c459d9fc3852aa7bc6ccd21b1913f2d6239e",
+    "kind": "controller_AI_review_checkpoints_not_human_adjudication",
+    "note": "检查1/z的域、路径闭合及积分2πi；是否显式说明域非单连通。",
+    "human_result": null,
+    "numeric_score": null
+  },
+  {
+    "task_id": "CA07",
+    "arm": "direct_model",
+    "response_digest": "94d926a147c827027cc3de75d41a3d6ed73d28c3158c37f78ddb525a9c6c3b20",
+    "kind": "controller_AI_review_checkpoints_not_human_adjudication",
+    "note": "检查复差商乘增量的连续性论证及定义性蕴含分类。",
+    "human_result": null,
+    "numeric_score": null
+  },
+  {
+    "task_id": "CA07",
+    "arm": "full_skill",
+    "response_digest": "d6edab2fcac2af965f91b779ed0216c9e512999e5f38387761e196db4bd578c2",
+    "kind": "controller_AI_review_checkpoints_not_human_adjudication",
+    "note": "检查复差商乘增量的连续性论证及定义性蕴含分类。",
+    "human_result": null,
+    "numeric_score": null
+  },
+  {
+    "task_id": "AL07",
+    "arm": "direct_model",
+    "response_digest": "7884380792d21d87dd1b057a51b5cecc1cbf284a44b5c3934c8c90545795fd95",
+    "kind": "controller_AI_review_checkpoints_not_human_adjudication",
+    "note": "新题尚未人工核验；检查F₂上双线性、对称、对角零与B(e1,e2)=1。",
+    "human_result": null,
+    "numeric_score": null
+  },
+  {
+    "task_id": "AL07",
+    "arm": "full_skill",
+    "response_digest": "7e4bd43e51d9c19d63944682669e0895e19669fe2e301685f21fc598e77650d0",
+    "kind": "controller_AI_review_checkpoints_not_human_adjudication",
+    "note": "新题尚未人工核验；检查F₂上双线性、对称、对角零与B(e1,e2)=1。",
+    "human_result": null,
+    "numeric_score": null
+  },
+  {
+    "task_id": "RA07",
+    "arm": "direct_model",
+    "response_digest": "97b87a7bd306197c05b9e8b6a53d174dab6af1485093e2c9717508b469b44170",
+    "kind": "controller_AI_review_checkpoints_not_human_adjudication",
+    "note": "新题尚未人工核验；两组用不同测度空间正负抵消，不能按参考文字匹配。",
+    "human_result": null,
+    "numeric_score": null
+  },
+  {
+    "task_id": "RA07",
+    "arm": "full_skill",
+    "response_digest": "272c4091460d0cc27bde448c071e096509736de49326710bb4f3a04c8d470994",
+    "kind": "controller_AI_review_checkpoints_not_human_adjudication",
+    "note": "新题尚未人工核验；两组用不同测度空间正负抵消，不能按参考文字匹配。",
+    "human_result": null,
+    "numeric_score": null
+  },
+  {
+    "task_id": "CA09",
+    "arm": "direct_model",
+    "response_digest": "b191e70de0e9ed0db7415a156d7febe1319f9f4c8c84cb4ba3b870bc309f9655",
+    "kind": "controller_AI_review_checkpoints_not_human_adjudication",
+    "note": "新题尚未人工核验；检查几何级数半径恰为1及边界∑1发散。",
+    "human_result": null,
+    "numeric_score": null
+  },
+  {
+    "task_id": "CA09",
+    "arm": "full_skill",
+    "response_digest": "771b797240795513112092c36114ee041aa29b7e6a5bded6a62d71e00404e9e4",
+    "kind": "controller_AI_review_checkpoints_not_human_adjudication",
+    "note": "新题尚未人工核验；检查几何级数半径恰为1及边界∑1发散。",
+    "human_result": null,
+    "numeric_score": null
+  },
+  {
+    "task_id": "U-MA",
+    "arm": "full_skill",
+    "response_digest": "d25bb499bedfe710f0d8548af745f63cf9a41e07c4ad837fffc192d019cd3191",
+    "kind": "controller_AI_review_checkpoints_not_human_adjudication",
+    "note": "检查是否澄清收敛方式、积分类型、测度有限性及适用的限定版本。",
+    "human_result": null,
+    "numeric_score": null
+  },
+  {
+    "task_id": "U-AL",
+    "arm": "full_skill",
+    "response_digest": "f0046addec1f9a362bae306016b16006824bd73cc088964015ee62eed59f411a",
+    "kind": "controller_AI_review_checkpoints_not_human_adjudication",
+    "note": "检查实对称、复对称、Hermitian以及正交/酉的区别，复对称幂零例需核验。",
+    "human_result": null,
+    "numeric_score": null
+  },
+  {
+    "task_id": "U-RA",
+    "arm": "full_skill",
+    "response_digest": "bda084397fef9d97a854bf7b0111f259c85d4d5bc2a755c073ce4c1065e443ca",
+    "kind": "controller_AI_review_checkpoints_not_human_adjudication",
+    "note": "检查非负、有符号、几乎处处与处处的区别；可测性与积分有定义不能混淆。",
+    "human_result": null,
+    "numeric_score": null
+  },
+  {
+    "task_id": "U-CA",
+    "arm": "full_skill",
+    "response_digest": "b0cc837df750dab3e8706e99ef46ae245b0be62adcc9169c2545556dae30b341",
+    "kind": "controller_AI_review_checkpoints_not_human_adjudication",
+    "note": "检查无穷零点不等于域内聚点、连通分支结论及全纯性。",
+    "human_result": null,
+    "numeric_score": null
+  },
+  {
+    "task_id": "B-MA",
+    "arm": "full_skill",
+    "response_digest": "aad7261134a5e8502a48b0815af4ee78330156bd17bdb7490afe4e7eaa944953",
+    "kind": "controller_AI_review_checkpoints_not_human_adjudication",
+    "note": "有限预算完整流程：独立检查假设与结论提取、每个干预、未完成项；不因结构通过而认定数学正确。",
+    "human_result": null,
+    "numeric_score": null
+  },
+  {
+    "task_id": "B-AL",
+    "arm": "full_skill",
+    "response_digest": "9a9021c7786ddef33c266988c8dd2c92037b5cb846ba0200af0ad7752b5c5d4f",
+    "kind": "controller_AI_review_checkpoints_not_human_adjudication",
+    "note": "有限预算完整流程：独立检查假设与结论提取、每个干预、未完成项；不因结构通过而认定数学正确。",
+    "human_result": null,
+    "numeric_score": null
+  },
+  {
+    "task_id": "B-RA",
+    "arm": "full_skill",
+    "response_digest": "676b0d96d186c89bbea54377c3909867bec35ba4f2874986bae37d44f9d1199e",
+    "kind": "controller_AI_review_checkpoints_not_human_adjudication",
+    "note": "有限预算完整流程：独立检查假设与结论提取、每个干预、未完成项；不因结构通过而认定数学正确。",
+    "human_result": null,
+    "numeric_score": null
+  },
+  {
+    "task_id": "B-CA",
+    "arm": "full_skill",
+    "response_digest": "97a688171ea1a898f1561c2820b21216dec6cb58a6d6913f22887dd3c64dc962",
+    "kind": "controller_AI_review_checkpoints_not_human_adjudication",
+    "note": "有限预算完整流程：独立检查假设与结论提取、每个干预、未完成项；不因结构通过而认定数学正确。",
+    "human_result": null,
+    "numeric_score": null
+  }
+]

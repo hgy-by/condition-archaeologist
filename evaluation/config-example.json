@@ -1,0 +1,9 @@
+{
+  "status": "example_not_run_configuration",
+  "model": null,
+  "model_version": null,
+  "permissions": null,
+  "per_task_budget": null,
+  "retrieval_corpus_hash": null,
+  "sampling_settings": null
+}

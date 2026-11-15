@@ -1,0 +1,39 @@
+{
+  "frozen_before_execution": true,
+  "date": "2026-11-05",
+  "review_mode": "AI only unless a truly blocking mathematical ambiguity remains",
+  "full_tasks": 4,
+  "challenge_tasks": 8,
+  "uncertainty_tasks": 1,
+  "full_arms": [
+    "direct_model",
+    "old_skill",
+    "full_skill",
+    "without_strategies",
+    "without_verification"
+  ],
+  "repeats": 1,
+  "planned_calls": 29,
+  "max_calls_including_transport_and_explicit_recovery": 58,
+  "resources": {
+    "max_output_tokens": 6000,
+    "timeout_seconds": 90,
+    "concurrency": 2,
+    "reasoning_effort": "high"
+  },
+  "no_reference_answers_or_seeds_sent": true,
+  "hypothesis_extraction": "Assessed on raw full-theorem statements, not supplied hypothesis lists.",
+  "ablation_interpretation": "Remove strategy text or dedicated verification text only; common obligation schema is retained.",
+  "scope": "Small internal release acceptance; controller knows references. Mechanism/family overlap with old data is disclosed.",
+  "release_requirements": [
+    "all 4 full_skill theorem responses mathematically valid within declared budget",
+    "all 8 full_skill challenge judgments mathematically supported",
+    "ambiguous name handled without false certainty",
+    "software and data integrity checks pass",
+    "no false human/formal/RSI claim",
+    "installed and portable files match accepted tree"
+  ],
+  "RSI_claim_rule": "Compare old_skill and full_skill on exactly the same frozen tasks. Report actual zero/uncertain gain; do not force improvement or relax the old evidence gate.",
+  "failure_policy": "Preserve wrong answers and formats. One transport/no-answer recovery, never retry an answer for a better grade. A fix requires a separately named run; no best-answer selection.",
+  "candidate_runtime_hash": "570004a032846c098f5b4f339a302b0c702d638cf09604f7ebb2365ae349c611"
+}

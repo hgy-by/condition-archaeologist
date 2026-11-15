@@ -1,0 +1,32 @@
+[
+  {
+    "task_id": "MA09",
+    "prompt": "使用 $condition-archaeologist 完成以下任务，按Skill的机器输出规范输出一个JSON对象。\n{\"task_id\": \"MA09\", \"subject\": \"数学分析\", \"statement\": \"连续 f:[0,1]→R 且 f(0)<0<f(1)，则存在内部零点\", \"hypotheses\": [{\"id\": \"H1\", \"text\": \"f在[0,1]连续\"}, {\"id\": \"H2\", \"text\": \"f(0)<0<f(1)\"}], \"intervention\": {\"removed\": [\"H1\"], \"replacement\": null}, \"conclusions\": [{\"id\": \"C1\", \"text\": \"存在内部零点\"}], \"ambient\": \"按定理的明确对象约定\"}",
+    "task_digest": "16df8b5ccad0ec5ebe31a375c5e2d44018b54d936cc6f1da97691f849382e858"
+  },
+  {
+    "task_id": "AL06",
+    "prompt": "使用 $condition-archaeologist 完成以下任务，按Skill的机器输出规范输出一个JSON对象。\n{\"task_id\": \"AL06\", \"subject\": \"高等代数\", \"statement\": \"同阶方阵A,B，若A可逆且AB=0，则B=0\", \"hypotheses\": [{\"id\": \"H1\", \"text\": \"A,B同阶方阵\"}, {\"id\": \"H2\", \"text\": \"A可逆\"}, {\"id\": \"H3\", \"text\": \"AB=0\"}], \"intervention\": {\"removed\": [\"H2\"], \"replacement\": null}, \"conclusions\": [{\"id\": \"C1\", \"text\": \"B=0\"}], \"ambient\": \"按定理的明确对象约定\"}",
+    "task_digest": "2096e407c898646d7370739066672b388aa1ff41a2cb9d98c88e0396061bb4b3"
+  },
+  {
+    "task_id": "RA04",
+    "prompt": "使用 $condition-archaeologist 完成以下任务，按Skill的机器输出规范输出一个JSON对象。\n{\"task_id\": \"RA04\", \"subject\": \"实分析\", \"statement\": \"设f_n,f∈L¹(X,μ)，若μ(X)<∞、f_n→f a.e.且存在有限常数M使所有n满足|f_n|≤M a.e.，则∫f_n→∫f。\", \"hypotheses\": [{\"id\": \"H1\", \"text\": \"μ(X)<∞\"}, {\"id\": \"H2\", \"text\": \"f_n可测且f_n→f a.e.\"}, {\"id\": \"H3\", \"text\": \"存在M<∞使所有n满足|f_n|≤M a.e.\"}, {\"id\": \"H4\", \"text\": \"f_n与f均属于L¹(X,μ)\"}], \"intervention\": {\"removed\": [\"H1\"], \"replacement\": null}, \"conclusions\": [{\"id\": \"C1\", \"text\": \"积分收敛到极限积分\"}], \"ambient\": \"测度空间(X,Σ,μ)，实值函数，Lebesgue积分。\"}",
+    "task_digest": "fcc1c96b354da156e28904066f065d4446499a3b14fb17858ab9962cf7dffe4e"
+  },
+  {
+    "task_id": "RA06",
+    "prompt": "使用 $condition-archaeologist 完成以下任务，按Skill的机器输出规范输出一个JSON对象。\n{\"task_id\": \"RA06\", \"subject\": \"实分析\", \"statement\": \"有限测度空间中可测f_n a.e.收敛到0，则依测度收敛到0\", \"hypotheses\": [{\"id\": \"H1\", \"text\": \"μ(X)<∞\"}, {\"id\": \"H2\", \"text\": \"f_n可测且a.e.→0\"}], \"intervention\": {\"removed\": [\"H1\"], \"replacement\": null}, \"conclusions\": [{\"id\": \"C1\", \"text\": \"依测度收敛到0\"}], \"ambient\": \"按定理的明确对象约定\"}",
+    "task_digest": "02fd205e7ea5fa33d7aafd8360c5aa978d2efd70c0edfeb08eb7bfa9137563ef"
+  },
+  {
+    "task_id": "CA03",
+    "prompt": "使用 $condition-archaeologist 完成以下任务，按Skill的机器输出规范输出一个JSON对象。\n{\"task_id\": \"CA03\", \"subject\": \"复分析\", \"statement\": \"连通开集Ω上全纯f的零点在Ω有聚点，则f恒零\", \"hypotheses\": [{\"id\": \"H1\", \"text\": \"Ω连通\"}, {\"id\": \"H2\", \"text\": \"f在Ω全纯\"}, {\"id\": \"H3\", \"text\": \"零点在Ω内有聚点\"}, {\"id\": \"H4\", \"text\": \"Ω为非空开集\"}], \"intervention\": {\"removed\": [\"H1\"], \"replacement\": null}, \"conclusions\": [{\"id\": \"C1\", \"text\": \"f在Ω恒零\"}], \"ambient\": \"Ω⊂C，f:Ω→C；全纯按开集上的逐点定义，不预设连通性。\"}",
+    "task_digest": "0d762c26f21fc307b5bc67dfecefc42b857e99f9268ca1e0930754f969b91800"
+  },
+  {
+    "task_id": "CA08",
+    "prompt": "使用 $condition-archaeologist 完成以下任务，按Skill的机器输出规范输出一个JSON对象。\n{\"task_id\": \"CA08\", \"subject\": \"复分析\", \"statement\": \"连通域上全纯函数导数恒0则为常数\", \"hypotheses\": [{\"id\": \"H1\", \"text\": \"Ω连通\"}, {\"id\": \"H2\", \"text\": \"f在Ω全纯且f′=0\"}, {\"id\": \"H3\", \"text\": \"Ω为非空开集\"}], \"intervention\": {\"removed\": [\"H1\"], \"replacement\": null}, \"conclusions\": [{\"id\": \"C1\", \"text\": \"f在Ω常数\"}], \"ambient\": \"Ω⊂C，f:Ω→C；全纯按开集上的逐点定义，不预设连通性。\"}",
+    "task_digest": "fe1b9ede13523d863c6851cf554454b19b60527a36c0ac523dd86254b346eaa8"
+  }
+]

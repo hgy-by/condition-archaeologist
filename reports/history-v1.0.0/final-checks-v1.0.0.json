@@ -1,0 +1,100 @@
+{
+  "status": "pass",
+  "commands": [
+    {
+      "arguments": [
+        "condition-archaeologist/scripts/self_check.py",
+        "--out",
+        "reports/self-check-v1.0.0.json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"version\": \"1.0.0\",\n  \"skill_root\": \"C:\\\\Users\\\\hougu\\\\Documents\\\\Codex\\\\2026-11-02\\\\du\\\\outputs\\\\condition-archaeologist-release-v1.0.0\\\\condition-archaeologist\",\n  \"python\": \"C:\\\\Users\\\\hougu\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python312\\\\python.exe\",\n  \"python_version\": \"3.12.8\",\n  \"core_files\": \"pass\",\n  \"sympy_available\": true,\n  \"computation_checks\": [\n    {\n      \"version\": \"0.2.0\",\n      \"status\": \"partial_computation\",\n      \"claims_pass\": true,\n      \"checks\": {\n        \"diagonalizable\": true\n      },\n      \"actual\": {\n        \"square\": true,\n        \"symmetric\": false,\n        \"invertible\": false,\n        \"diagonalizable\": false,\n        \"has_eigenvalue_in_field\": true\n      },\n      \"details\": {\n        \"matrix\": \"Matrix([[0, 1], [0, 0]])\",\n        \"determinant\": \"0\",\n        \"field\": \"complex\"\n      },\n      \"elapsed_seconds\": 0.0015971999964676797,\n      \"limitation\": \"Does not establish all retained hypotheses or whole counterexample validity.\"\n    },\n    {\n      \"version\": \"0.2.0\",\n      \"status\": \"partial_computation\",\n      \"claims_pass\": true,\n      \"checks\": {\n        \"has_eigenvalue_in_field\": true\n      },\n      \"actual\": {\n        \"square\": true,\n        \"symmetric\": false,\n        \"invertible\": true,\n        \"diagonalizable\": false,\n        \"has_eigenvalue_in_field\": false\n      },\n      \"details\": {\n        \"matrix\": \"Matrix([[0, -1], [1, 0]])\",\n        \"determinant\": \"1\",\n        \"field\": \"real\"\n      },\n      \"elapsed_seconds\": 0.16184500005329028,\n      \"limitation\": \"Does not establish all retained hypotheses or whole counterexample validity.\"\n    },\n    {\n      \"version\": \"0.2.0\",\n      \"status\": \"partial_computation\",\n      \"claims_pass\": true,\n      \"checks\": {\n        \"integral_power\": true,\n        \"integral_coefficient\": true\n      },\n      \"actual\": {\n        \"integral_power\": 0,\n        \"integral_coefficient\": \"1\"\n      },\n      \"details\": {\n        \"integral\": \"1*n**(0)\",\n        \"scope\": \"arithmetic identity only; measurable support and convergence require argument\"\n      },\n      \"elapsed_seconds\": 0.0002958999830298126,\n      \"limitation\": \"Does not establish all retained hypotheses or whole counterexample validity.\"\n    }\n  ],\n  \"issues\": [],\n  \"chat_workflow_ready\": true,\n  \"local_computation_ready\": true,\n  \"human_math_review\": \"not_performed_by_this_check\",\n  \"limitation\": \"Core reasoning runs in Codex chat. This is not a standalone theorem-solving program or a capability benchmark.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "arguments": [
+        "C:\\Users\\hougu\\.codex\\skills\\.system\\skill-creator\\scripts\\quick_validate.py",
+        "C:\\Users\\hougu\\Documents\\Codex\\2026-11-02\\du\\outputs\\condition-archaeologist-release-v1.0.0\\condition-archaeologist"
+      ],
+      "exit_code": 0,
+      "stdout": "Skill is valid!\n",
+      "stderr": ""
+    },
+    {
+      "arguments": [
+        "evaluation/lab.py",
+        "validate",
+        "--out",
+        "reports/data-consistency-v1.0.0.json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"status\": \"written\", \"output\": \"reports/data-consistency-v1.0.0.json\"}\n",
+      "stderr": ""
+    },
+    {
+      "arguments": [
+        "evaluation/final_exact_checks.py",
+        "--out",
+        "reports/final-exact-computations.json"
+      ],
+      "exit_code": 0,
+      "stdout": "Exact computation groups passed: 6\n",
+      "stderr": ""
+    },
+    {
+      "arguments": [
+        "evaluation/final_score.py",
+        "--run",
+        "C:\\Users\\hougu\\Documents\\Codex\\2026-11-02\\du\\outputs\\condition-archaeologist-release-v1.0.0\\reports\\final-experiment-2026-11-05",
+        "--reviews",
+        "C:\\Users\\hougu\\Documents\\Codex\\2026-11-02\\du\\outputs\\condition-archaeologist-release-v1.0.0\\reports\\final-experiment-2026-11-05\\AI-mathematical-reviews.json",
+        "--out",
+        "C:\\Users\\hougu\\Documents\\Codex\\2026-11-02\\du\\outputs\\condition-archaeologist-release-v1.0.0\\reports\\final-experiment-2026-11-05\\CLI-recomputed-score.json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"status\": \"ai_reviewed_internal\", \"metrics\": {\"direct_model\": {\"planned\": 4, \"answers\": 4, \"full_theorem_math_success\": {\"numerator\": 4, \"denominator\": 4, \"rate\": 1.0}, \"full_theorem_protocol_success\": {\"numerator\": 0, \"denominator\": 4, \"rate\": 0.0}, \"raw_text_hypothesis_recall\": {\"numerator\": 17, \"denominator\": 17, \"rate\": 1.0}, \"raw_text_hypothesis_precision\": {\"numerator\": 17, \"denominator\": 17, \"rate\": 1.0}, \"witness_precision\": {\"numerator\": 13, \"denominator\": 13, \"rate\": 1.0}, \"full_theorem_witness_precision\": {\"numerator\": 13, \"denominator\": 13, \"rate\": 1.0}, \"intervention_math_success\": {\"numerator\": 14, \"denominator\": 14, \"rate\": 1.0}, \"evidence_honesty\": {\"numerator\": 4, \"denominator\": 4, \"rate\": 1.0}, \"by_judgment\": {\"indispensable\": {\"numerator\": 9, \"denominator\": 9, \"rate\": 1.0}, \"implied\": {\"numerator\": 1, \"denominator\": 1, \"rate\": 1.0}, \"removable\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"joint\": {\"numerator\": 4, \"denominator\": 4, \"rate\": 1.0}, \"type_constraint\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"unresolved\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"statement_issue\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}}}, \"old_skill\": {\"planned\": 4, \"answers\": 4, \"full_theorem_math_success\": {\"numerator\": 4, \"denominator\": 4, \"rate\": 1.0}, \"full_theorem_protocol_success\": {\"numerator\": 4, \"denominator\": 4, \"rate\": 1.0}, \"raw_text_hypothesis_recall\": {\"numerator\": 17, \"denominator\": 17, \"rate\": 1.0}, \"raw_text_hypothesis_precision\": {\"numerator\": 17, \"denominator\": 17, \"rate\": 1.0}, \"witness_precision\": {\"numerator\": 13, \"denominator\": 13, \"rate\": 1.0}, \"full_theorem_witness_precision\": {\"numerator\": 13, \"denominator\": 13, \"rate\": 1.0}, \"intervention_math_success\": {\"numerator\": 16, \"denominator\": 16, \"rate\": 1.0}, \"evidence_honesty\": {\"numerator\": 4, \"denominator\": 4, \"rate\": 1.0}, \"by_judgment\": {\"indispensable\": {\"numerator\": 9, \"denominator\": 9, \"rate\": 1.0}, \"implied\": {\"numerator\": 3, \"denominator\": 3, \"rate\": 1.0}, \"removable\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"joint\": {\"numerator\": 4, \"denominator\": 4, \"rate\": 1.0}, \"type_constraint\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"unresolved\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"statement_issue\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}}}, \"full_skill\": {\"planned\": 13, \"answers\": 13, \"full_theorem_math_success\": {\"numerator\": 3, \"denominator\": 4, \"rate\": 0.75}, \"full_theorem_protocol_success\": {\"numerator\": 3, \"denominator\": 4, \"rate\": 0.75}, \"raw_text_hypothesis_recall\": {\"numerator\": 12, \"denominator\": 17, \"rate\": 0.7058823529411765}, \"raw_text_hypothesis_precision\": {\"numerator\": 12, \"denominator\": 12, \"rate\": 1.0}, \"witness_precision\": {\"numerator\": 13, \"denominator\": 13, \"rate\": 1.0}, \"full_theorem_witness_precision\": {\"numerator\": 8, \"denominator\": 8, \"rate\": 1.0}, \"intervention_math_success\": {\"numerator\": 18, \"denominator\": 18, \"rate\": 1.0}, \"evidence_honesty\": {\"numerator\": 12, \"denominator\": 12, \"rate\": 1.0}, \"by_judgment\": {\"indispensable\": {\"numerator\": 6, \"denominator\": 6, \"rate\": 1.0}, \"implied\": {\"numerator\": 2, \"denominator\": 2, \"rate\": 1.0}, \"removable\": {\"numerator\": 2, \"denominator\": 2, \"rate\": 1.0}, \"joint\": {\"numerator\": 3, \"denominator\": 3, \"rate\": 1.0}, \"type_constraint\": {\"numerator\": 1, \"denominator\": 1, \"rate\": 1.0}, \"unresolved\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"statement_issue\": {\"numerator\": 4, \"denominator\": 4, \"rate\": 1.0}}}, \"without_strategies\": {\"planned\": 4, \"answers\": 4, \"full_theorem_math_success\": {\"numerator\": 3, \"denominator\": 4, \"rate\": 0.75}, \"full_theorem_protocol_success\": {\"numerator\": 3, \"denominator\": 4, \"rate\": 0.75}, \"raw_text_hypothesis_recall\": {\"numerator\": 12, \"denominator\": 17, \"rate\": 0.7058823529411765}, \"raw_text_hypothesis_precision\": {\"numerator\": 12, \"denominator\": 12, \"rate\": 1.0}, \"witness_precision\": {\"numerator\": 9, \"denominator\": 9, \"rate\": 1.0}, \"full_theorem_witness_precision\": {\"numerator\": 9, \"denominator\": 9, \"rate\": 1.0}, \"intervention_math_success\": {\"numerator\": 11, \"denominator\": 11, \"rate\": 1.0}, \"evidence_honesty\": {\"numerator\": 3, \"denominator\": 3, \"rate\": 1.0}, \"by_judgment\": {\"indispensable\": {\"numerator\": 6, \"denominator\": 6, \"rate\": 1.0}, \"implied\": {\"numerator\": 2, \"denominator\": 2, \"rate\": 1.0}, \"removable\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"joint\": {\"numerator\": 3, \"denominator\": 3, \"rate\": 1.0}, \"type_constraint\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"unresolved\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"statement_issue\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}}}, \"without_verification\": {\"planned\": 4, \"answers\": 4, \"full_theorem_math_success\": {\"numerator\": 4, \"denominator\": 4, \"rate\": 1.0}, \"full_theorem_protocol_success\": {\"numerator\": 4, \"denominator\": 4, \"rate\": 1.0}, \"raw_text_hypothesis_recall\": {\"numerator\": 17, \"denominator\": 17, \"rate\": 1.0}, \"raw_text_hypothesis_precision\": {\"numerator\": 17, \"denominator\": 17, \"rate\": 1.0}, \"witness_precision\": {\"numerator\": 13, \"denominator\": 13, \"rate\": 1.0}, \"full_theorem_witness_precision\": {\"numerator\": 13, \"denominator\": 13, \"rate\": 1.0}, \"intervention_math_success\": {\"numerator\": 16, \"denominator\": 16, \"rate\": 1.0}, \"evidence_honesty\": {\"numerator\": 4, \"denominator\": 4, \"rate\": 1.0}, \"by_judgment\": {\"indispensable\": {\"numerator\": 9, \"denominator\": 9, \"rate\": 1.0}, \"implied\": {\"numerator\": 2, \"denominator\": 2, \"rate\": 1.0}, \"removable\": {\"numerator\": 1, \"denominator\": 1, \"rate\": 1.0}, \"joint\": {\"numerator\": 4, \"denominator\": 4, \"rate\": 1.0}, \"type_constraint\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"unresolved\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"statement_issue\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}}}}}\n",
+      "stderr": ""
+    },
+    {
+      "arguments": [
+        "evaluation/final_score.py",
+        "--run",
+        "C:\\Users\\hougu\\Documents\\Codex\\2026-11-02\\du\\outputs\\condition-archaeologist-release-v1.0.0\\reports\\final-confirmation-12000",
+        "--reviews",
+        "C:\\Users\\hougu\\Documents\\Codex\\2026-11-02\\du\\outputs\\condition-archaeologist-release-v1.0.0\\reports\\final-confirmation-12000\\AI-mathematical-reviews.json",
+        "--out",
+        "C:\\Users\\hougu\\Documents\\Codex\\2026-11-02\\du\\outputs\\condition-archaeologist-release-v1.0.0\\reports\\final-confirmation-12000\\CLI-recomputed-score.json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"status\": \"ai_reviewed_internal\", \"metrics\": {\"direct_model\": {\"planned\": 0, \"answers\": 0, \"full_theorem_math_success\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"full_theorem_protocol_success\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"raw_text_hypothesis_recall\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"raw_text_hypothesis_precision\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"witness_precision\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"full_theorem_witness_precision\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"intervention_math_success\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"evidence_honesty\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"by_judgment\": {\"indispensable\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"implied\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"removable\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"joint\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"type_constraint\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"unresolved\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"statement_issue\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}}}, \"old_skill\": {\"planned\": 0, \"answers\": 0, \"full_theorem_math_success\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"full_theorem_protocol_success\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"raw_text_hypothesis_recall\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"raw_text_hypothesis_precision\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"witness_precision\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"full_theorem_witness_precision\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"intervention_math_success\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"evidence_honesty\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"by_judgment\": {\"indispensable\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"implied\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"removable\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"joint\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"type_constraint\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"unresolved\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"statement_issue\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}}}, \"full_skill\": {\"planned\": 4, \"answers\": 4, \"full_theorem_math_success\": {\"numerator\": 4, \"denominator\": 4, \"rate\": 1.0}, \"full_theorem_protocol_success\": {\"numerator\": 4, \"denominator\": 4, \"rate\": 1.0}, \"raw_text_hypothesis_recall\": {\"numerator\": 17, \"denominator\": 17, \"rate\": 1.0}, \"raw_text_hypothesis_precision\": {\"numerator\": 17, \"denominator\": 17, \"rate\": 1.0}, \"witness_precision\": {\"numerator\": 13, \"denominator\": 13, \"rate\": 1.0}, \"full_theorem_witness_precision\": {\"numerator\": 13, \"denominator\": 13, \"rate\": 1.0}, \"intervention_math_success\": {\"numerator\": 15, \"denominator\": 15, \"rate\": 1.0}, \"evidence_honesty\": {\"numerator\": 4, \"denominator\": 4, \"rate\": 1.0}, \"by_judgment\": {\"indispensable\": {\"numerator\": 9, \"denominator\": 9, \"rate\": 1.0}, \"implied\": {\"numerator\": 2, \"denominator\": 2, \"rate\": 1.0}, \"removable\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"joint\": {\"numerator\": 4, \"denominator\": 4, \"rate\": 1.0}, \"type_constraint\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"unresolved\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"statement_issue\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}}}, \"without_strategies\": {\"planned\": 0, \"answers\": 0, \"full_theorem_math_success\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"full_theorem_protocol_success\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"raw_text_hypothesis_recall\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"raw_text_hypothesis_precision\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"witness_precision\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"full_theorem_witness_precision\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"intervention_math_success\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"evidence_honesty\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"by_judgment\": {\"indispensable\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"implied\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"removable\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"joint\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"type_constraint\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"unresolved\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"statement_issue\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}}}, \"without_verification\": {\"planned\": 0, \"answers\": 0, \"full_theorem_math_success\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"full_theorem_protocol_success\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"raw_text_hypothesis_recall\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"raw_text_hypothesis_precision\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"witness_precision\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"full_theorem_witness_precision\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"intervention_math_success\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"evidence_honesty\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"by_judgment\": {\"indispensable\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"implied\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"removable\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"joint\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"type_constraint\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"unresolved\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}, \"statement_issue\": {\"numerator\": 0, \"denominator\": 0, \"rate\": null}}}}}\n",
+      "stderr": ""
+    },
+    {
+      "arguments": [
+        "evaluation/ai_rsi.py",
+        "gate",
+        "--baseline",
+        "reports/paired-old.json",
+        "--candidate",
+        "reports/paired-current.json",
+        "--policy",
+        "evaluation/ai-rsi-policy.json",
+        "--out",
+        "reports/CLI-recomputed-AI-RSI-gate.json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"status\": \"written\", \"out\": \"reports\\\\CLI-recomputed-AI-RSI-gate.json\", \"decision\": \"reject_or_collect_more_evidence\"}\n",
+      "stderr": ""
+    }
+  ],
+  "software_test_count": 101,
+  "canonical_29_and_extra_3_byte_unchanged": true,
+  "family_split_consistency": true,
+  "old_source_review_artifact_hashes_valid": true,
+  "frozen_runtime_matches_actual_prompts": true,
+  "scores_and_AI_RSI_gate_reproduced": true,
+  "human_review_required": false,
+  "visual_browser_inspection": "not_performed; simple navigation page only",
+  "installation_and_package_checks": "separate_records_after_sync",
+  "mathematical_scope": "AI mathematics findings source-bound; six computation groups; not universal or formal proof."
+}

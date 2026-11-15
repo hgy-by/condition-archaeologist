@@ -1,0 +1,242 @@
+[
+  {
+    "review_id": "MA05-A",
+    "task_id": "MA05",
+    "arm": "full_skill",
+    "kind": "intervention",
+    "response_digest": "cdb535de9b12fc63a9d35a1bfc24c637ffdb7417ef0cbf93402d0e4e550d9fdc",
+    "has_response": true
+  },
+  {
+    "review_id": "MA05-B",
+    "task_id": "MA05",
+    "arm": "direct_model",
+    "kind": "intervention",
+    "response_digest": "bdb26279c56743db6bcc4f1f3fc0202e0042712406ab3a32b4c0fd06b4202747",
+    "has_response": true
+  },
+  {
+    "review_id": "MA06-A",
+    "task_id": "MA06",
+    "arm": "full_skill",
+    "kind": "intervention",
+    "response_digest": "bec641dade6b4256c4fe00c69f77e341e5320bfedca9a1100c1ea13f08ab9945",
+    "has_response": true
+  },
+  {
+    "review_id": "MA06-B",
+    "task_id": "MA06",
+    "arm": "direct_model",
+    "kind": "intervention",
+    "response_digest": "1bc98a8aeda467af88d41ffdadecfd916a05a3ccbe20aceeb6654c5693bc6898",
+    "has_response": true
+  },
+  {
+    "review_id": "MA07-A",
+    "task_id": "MA07",
+    "arm": "full_skill",
+    "kind": "intervention",
+    "response_digest": "d18ea51981c88d88a6017a229b35d8c4e5711233160ddd9b0c31293883b3e9f1",
+    "has_response": true
+  },
+  {
+    "review_id": "MA07-B",
+    "task_id": "MA07",
+    "arm": "direct_model",
+    "kind": "intervention",
+    "response_digest": "30c9b3819726e42b1f1bd5bef239d9206307707a32ffae486769c6ccab8aaee1",
+    "has_response": true
+  },
+  {
+    "review_id": "MA08-A",
+    "task_id": "MA08",
+    "arm": "direct_model",
+    "kind": "intervention",
+    "response_digest": "be0bdeba5e6a8ec3fffeef6937572d2101040a9dc2fb47242c84cb6c254bfe3e",
+    "has_response": true
+  },
+  {
+    "review_id": "MA08-B",
+    "task_id": "MA08",
+    "arm": "full_skill",
+    "kind": "intervention",
+    "response_digest": "b992028e115320f3c6c55bf3cd7107095fdd5af86c087121d212e8dc788e4bea",
+    "has_response": true
+  },
+  {
+    "review_id": "AL05-A",
+    "task_id": "AL05",
+    "arm": "full_skill",
+    "kind": "intervention",
+    "response_digest": "32ac4abb95ded100cae6301484412f3a75fecf0fa0e6c0c221239fb80d6bd971",
+    "has_response": true
+  },
+  {
+    "review_id": "AL05-B",
+    "task_id": "AL05",
+    "arm": "direct_model",
+    "kind": "intervention",
+    "response_digest": "257caa73e0b06c1f49379477b380aed21376bc9c934d3328daabcbdb49fee60b",
+    "has_response": true
+  },
+  {
+    "review_id": "RA05-A",
+    "task_id": "RA05",
+    "arm": "direct_model",
+    "kind": "intervention",
+    "response_digest": "f80c404621da4381a78b37e8cf2d6b406bc12dd4eb20fd4abd0741902a69206f",
+    "has_response": true
+  },
+  {
+    "review_id": "RA05-B",
+    "task_id": "RA05",
+    "arm": "full_skill",
+    "kind": "intervention",
+    "response_digest": "c0e84fc54b9ccf5024e44de0cde0f6b9061c14fecc57a1287a95fbea4b0928cd",
+    "has_response": true
+  },
+  {
+    "review_id": "CA06-A",
+    "task_id": "CA06",
+    "arm": "direct_model",
+    "kind": "intervention",
+    "response_digest": "a1287ab466db08e227cd144e82942b50810b90ef08a1cd0ce7f25b973663a223",
+    "has_response": true
+  },
+  {
+    "review_id": "CA06-B",
+    "task_id": "CA06",
+    "arm": "full_skill",
+    "kind": "intervention",
+    "response_digest": "40c7b9f5dd4eb85708cfa26cf6bf4f3f009efd5722dd0c6474e0e5d298b06a10",
+    "has_response": true
+  },
+  {
+    "review_id": "CA07-A",
+    "task_id": "CA07",
+    "arm": "full_skill",
+    "kind": "intervention",
+    "response_digest": "3b8fade22936316feff6e7ab177c0ac7fdf2183d5cd86afc8fd33913296b0b5f",
+    "has_response": true
+  },
+  {
+    "review_id": "CA07-B",
+    "task_id": "CA07",
+    "arm": "direct_model",
+    "kind": "intervention",
+    "response_digest": "18c9aaf40c1733177169908bde6b83f5f91af6ebf7d82ad728ca6f4b70d040c9",
+    "has_response": true
+  },
+  {
+    "review_id": "AL07-A",
+    "task_id": "AL07",
+    "arm": "direct_model",
+    "kind": "intervention",
+    "response_digest": "5e418c5f1ef76d6121255947ff400a216afcd903239c20cc8280293586f52a30",
+    "has_response": true
+  },
+  {
+    "review_id": "AL07-B",
+    "task_id": "AL07",
+    "arm": "full_skill",
+    "kind": "intervention",
+    "response_digest": "293a09efcb3e301a2f932828b0874d74132b0ae9be6c6398d0e8626f1aad4cfb",
+    "has_response": true
+  },
+  {
+    "review_id": "RA07-A",
+    "task_id": "RA07",
+    "arm": "direct_model",
+    "kind": "intervention",
+    "response_digest": "91085b3d8a328e5ece140fa2743881406be7715b71d9db24680c0072cecb2fa0",
+    "has_response": true
+  },
+  {
+    "review_id": "RA07-B",
+    "task_id": "RA07",
+    "arm": "full_skill",
+    "kind": "intervention",
+    "response_digest": "3480fae88b49a1e7fe90ccb791f0d09009f53746d25d8653f2fbafdc1baee356",
+    "has_response": true
+  },
+  {
+    "review_id": "CA09-A",
+    "task_id": "CA09",
+    "arm": "full_skill",
+    "kind": "intervention",
+    "response_digest": "d27bf6b03217ebc3494e8cedb60707422d026cf90a4d1f350e30e8a816da08ea",
+    "has_response": true
+  },
+  {
+    "review_id": "CA09-B",
+    "task_id": "CA09",
+    "arm": "direct_model",
+    "kind": "intervention",
+    "response_digest": "3fcc7f4febed1aa816b0315081a90ce39b94d64a1e5ff429ec831a80b237cbe9",
+    "has_response": true
+  },
+  {
+    "review_id": "U-MA-A",
+    "task_id": "U-MA",
+    "arm": "full_skill",
+    "kind": "uncertainty",
+    "response_digest": "d25bb499bedfe710f0d8548af745f63cf9a41e07c4ad837fffc192d019cd3191",
+    "has_response": true
+  },
+  {
+    "review_id": "U-AL-A",
+    "task_id": "U-AL",
+    "arm": "full_skill",
+    "kind": "uncertainty",
+    "response_digest": "f0046addec1f9a362bae306016b16006824bd73cc088964015ee62eed59f411a",
+    "has_response": true
+  },
+  {
+    "review_id": "U-RA-A",
+    "task_id": "U-RA",
+    "arm": "full_skill",
+    "kind": "uncertainty",
+    "response_digest": "bda084397fef9d97a854bf7b0111f259c85d4d5bc2a755c073ce4c1065e443ca",
+    "has_response": true
+  },
+  {
+    "review_id": "U-CA-A",
+    "task_id": "U-CA",
+    "arm": "full_skill",
+    "kind": "uncertainty",
+    "response_digest": "b0cc837df750dab3e8706e99ef46ae245b0be62adcc9169c2545556dae30b341",
+    "has_response": true
+  },
+  {
+    "review_id": "F-MA-A",
+    "task_id": "F-MA",
+    "arm": "full_skill",
+    "kind": "full_theorem",
+    "response_digest": "6371b2184fa7545b1ff168256496e269bca0689489d98a8a544b0379e4958037",
+    "has_response": false
+  },
+  {
+    "review_id": "F-AL-A",
+    "task_id": "F-AL",
+    "arm": "full_skill",
+    "kind": "full_theorem",
+    "response_digest": "9bb336135dbda2c38e346aea169e3f92f89ceed85918c24196570ece5409d0aa",
+    "has_response": false
+  },
+  {
+    "review_id": "F-RA-A",
+    "task_id": "F-RA",
+    "arm": "full_skill",
+    "kind": "full_theorem",
+    "response_digest": "979e1f417faf90b02692f406a7dc22afabe947093a92dd51b9600cd545ed8a08",
+    "has_response": false
+  },
+  {
+    "review_id": "F-CA-A",
+    "task_id": "F-CA",
+    "arm": "full_skill",
+    "kind": "full_theorem",
+    "response_digest": "720fda5e907e96ff5cdba94649280e32a9c5297a590eaf2914ca51f55f35f656",
+    "has_response": false
+  }
+]

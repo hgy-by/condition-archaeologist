@@ -1,0 +1,20 @@
+{
+  "http_status": 200,
+  "elapsed_seconds": 99.72515219997149,
+  "raw": "\n\n\n\n\n\n{\"error\":{\"message\":\"Service temporarily unavailable, please retry later (cch_session_id: codex_k11785_01a1ab2b-bec2-7694-9c5b-a2220f45f857)\",\"type\":\"service_unavailable_error\",\"code\":\"service_unavailable_error\"}}",
+  "error": null,
+  "task_id": "F-CA",
+  "arm": "full_skill",
+  "kind": "full_theorem",
+  "prediction": null,
+  "structure_errors": null,
+  "actual_model": null,
+  "usage": null,
+  "response_status": null,
+  "answer": "",
+  "incomplete_details": null,
+  "parse_error": "Expecting value: line 1 column 1 (char 0)",
+  "attempt": 2,
+  "task_digest": "fadd14b4aee44842b61d3f2761584d5d6db54207719bb2df5933a68134a84f02",
+  "explicit_gateway_recovery": true
+}

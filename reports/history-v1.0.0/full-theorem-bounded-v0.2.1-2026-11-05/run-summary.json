@@ -1,0 +1,22 @@
+{
+  "planned_answers": 4,
+  "attempted_calls": 4,
+  "answers_received": 2,
+  "parsed_outputs": 2,
+  "structure_passes": 1,
+  "kinds": {
+    "full_theorem": 4
+  },
+  "actual_models": [
+    "gpt-6-sol"
+  ],
+  "usage": {
+    "input_tokens": 9976,
+    "output_tokens": 4375,
+    "total_tokens": 14351
+  },
+  "usd": null,
+  "human_math_review": "pending",
+  "formal_capability_score": null,
+  "RSI_improvement_proven": false
+}

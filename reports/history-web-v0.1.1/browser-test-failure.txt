@@ -1,0 +1,6 @@
+browserType.connectOverCDP: connect ECONNREFUSED 127.0.0.1:9227
+Call log:
+[2m  - <ws preparing> retrieving websocket url from http://127.0.0.1:9227[22m
+
+    at C:\Users\hougu\Documents\Codex\2026-11-02\du\outputs\condition-archaeologist-web\tests\test_ui.cjs:14:60
+    at Object.<anonymous> (C:\Users\hougu\Documents\Codex\2026-11-02\du\outputs\condition-archaeologist-web\tests\test_ui.cjs:61:3)

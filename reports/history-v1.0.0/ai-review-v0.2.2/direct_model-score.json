@@ -1,0 +1,248 @@
+{
+  "status": "ai_reviewed_internal",
+  "reviewer_type": "ai",
+  "independent": false,
+  "reference_gold_promoted": false,
+  "dataset_digest": "658d7ddb032e95fdad78bb65d6f49afd2b03d1c61c82f1d83a7a7c5b6a46fc83",
+  "review_digest": "f006bf32c1782bc1ac4a1ffe6c4c9a2868146764cf714ed5112bf245817bddc4",
+  "splits": [
+    "additional_validation",
+    "validation"
+  ],
+  "metrics": {
+    "tasks": 11,
+    "mathematical_validity": {
+      "numerator": 11,
+      "denominator": 11,
+      "rate": 1.0
+    },
+    "strict_intervention_success": {
+      "numerator": 10,
+      "denominator": 11,
+      "rate": 0.9090909090909091
+    },
+    "witness_precision": {
+      "numerator": 5,
+      "denominator": 5,
+      "rate": 1.0
+    },
+    "counterexample_discovery": {
+      "numerator": 5,
+      "denominator": 5,
+      "rate": 1.0
+    },
+    "joint_intervention_success": {
+      "numerator": 1,
+      "denominator": 1,
+      "rate": 1.0
+    },
+    "removable_class_success": {
+      "numerator": 2,
+      "denominator": 2,
+      "rate": 1.0
+    },
+    "implied_class_success": {
+      "numerator": 3,
+      "denominator": 4,
+      "rate": 0.75
+    },
+    "hypothesis_extraction_from_raw_text": null,
+    "strict_blind_transfer": null,
+    "full_theorem_success": null,
+    "usd": null
+  },
+  "per_task": [
+    {
+      "task_id": "MA05",
+      "family_id": "differentiability-continuity",
+      "subject": "数学分析",
+      "predicted": "removable",
+      "reference": "implied",
+      "mathematical_validity": true,
+      "success": false,
+      "classification_valid": false,
+      "witness_claimed": false,
+      "witness_valid": false,
+      "reference_has_counterexample": false,
+      "dependency_report_complete": false,
+      "structure_pass": true,
+      "notes": [
+        "直接组removable的数学保留结论正确，但本协议优先implied，属于分类精度差异。"
+      ]
+    },
+    {
+      "task_id": "MA06",
+      "family_id": "joint-boundedness",
+      "subject": "数学分析",
+      "predicted": "removable",
+      "reference": "removable",
+      "mathematical_validity": true,
+      "success": true,
+      "classification_valid": true,
+      "witness_claimed": false,
+      "witness_valid": false,
+      "reference_has_counterexample": false,
+      "dependency_report_complete": false,
+      "structure_pass": true,
+      "notes": [
+        "有限并不推出A⊂[0,1]，例如{2}；因此应为removable而非implied。"
+      ]
+    },
+    {
+      "task_id": "MA07",
+      "family_id": "joint-boundedness",
+      "subject": "数学分析",
+      "predicted": "removable",
+      "reference": "removable",
+      "mathematical_validity": true,
+      "success": true,
+      "classification_valid": true,
+      "witness_claimed": false,
+      "witness_valid": false,
+      "reference_has_counterexample": false,
+      "dependency_report_complete": false,
+      "structure_pass": true,
+      "notes": []
+    },
+    {
+      "task_id": "MA08",
+      "family_id": "joint-boundedness",
+      "subject": "数学分析",
+      "predicted": "joint",
+      "reference": "joint",
+      "mathematical_validity": true,
+      "success": true,
+      "classification_valid": true,
+      "witness_claimed": true,
+      "witness_valid": true,
+      "reference_has_counterexample": true,
+      "dependency_report_complete": false,
+      "structure_pass": true,
+      "notes": [
+        "两份输出dependencies均为空。指定联合删除的反例成立，但未在该答案中证明两项单删仍成立，不能算完整依赖分析。"
+      ]
+    },
+    {
+      "task_id": "AL05",
+      "family_id": "redundant-invertibility",
+      "subject": "高等代数",
+      "predicted": "implied",
+      "reference": "implied",
+      "mathematical_validity": true,
+      "success": true,
+      "classification_valid": true,
+      "witness_claimed": false,
+      "witness_valid": false,
+      "reference_has_counterexample": false,
+      "dependency_report_complete": false,
+      "structure_pass": true,
+      "notes": []
+    },
+    {
+      "task_id": "RA05",
+      "family_id": "redundant-integrable",
+      "subject": "实分析",
+      "predicted": "implied",
+      "reference": "implied",
+      "mathematical_validity": true,
+      "success": true,
+      "classification_valid": true,
+      "witness_claimed": false,
+      "witness_valid": false,
+      "reference_has_counterexample": false,
+      "dependency_report_complete": false,
+      "structure_pass": true,
+      "notes": []
+    },
+    {
+      "task_id": "CA06",
+      "family_id": "cauchy",
+      "subject": "复分析",
+      "predicted": "indispensable",
+      "reference": "indispensable",
+      "mathematical_validity": true,
+      "success": true,
+      "classification_valid": true,
+      "witness_claimed": true,
+      "witness_valid": true,
+      "reference_has_counterexample": true,
+      "dependency_report_complete": false,
+      "structure_pass": true,
+      "notes": [
+        "直接组没有显式写非单连通论证。AI确认该性质，但不把本条补充冒充原回答已写内容。"
+      ]
+    },
+    {
+      "task_id": "CA07",
+      "family_id": "differentiability-continuity",
+      "subject": "复分析",
+      "predicted": "implied",
+      "reference": "implied",
+      "mathematical_validity": true,
+      "success": true,
+      "classification_valid": true,
+      "witness_claimed": false,
+      "witness_valid": false,
+      "reference_has_counterexample": false,
+      "dependency_report_complete": false,
+      "structure_pass": true,
+      "notes": []
+    },
+    {
+      "task_id": "AL07",
+      "family_id": "polarization-characteristic",
+      "subject": "高等代数",
+      "predicted": "indispensable",
+      "reference": "indispensable",
+      "mathematical_validity": true,
+      "success": true,
+      "classification_valid": true,
+      "witness_claimed": true,
+      "witness_valid": true,
+      "reference_has_counterexample": true,
+      "dependency_report_complete": false,
+      "structure_pass": true,
+      "notes": []
+    },
+    {
+      "task_id": "RA07",
+      "family_id": "zero-integral-sign-cancellation",
+      "subject": "实分析",
+      "predicted": "indispensable",
+      "reference": "indispensable",
+      "mathematical_validity": true,
+      "success": true,
+      "classification_valid": true,
+      "witness_claimed": true,
+      "witness_valid": true,
+      "reference_has_counterexample": true,
+      "dependency_report_complete": false,
+      "structure_pass": true,
+      "notes": [
+        "两个构造均合法；测度空间不必与参考答案[0,1]相同。"
+      ]
+    },
+    {
+      "task_id": "CA09",
+      "family_id": "power-series-boundary",
+      "subject": "复分析",
+      "predicted": "indispensable",
+      "reference": "indispensable",
+      "mathematical_validity": true,
+      "success": true,
+      "classification_valid": true,
+      "witness_claimed": true,
+      "witness_valid": true,
+      "reference_has_counterexample": true,
+      "dependency_report_complete": false,
+      "structure_pass": true,
+      "notes": []
+    }
+  ],
+  "limitations": [
+    "Controller AI sees references and group identity; not an independent human or blind judge.",
+    "Input hypotheses were supplied; alignment is not end-to-end extraction accuracy.",
+    "Single interventions do not validate a complete dependency map or complete-theorem workflow.",
+    "Per-task mathematical reasons are AI judgments, not formal proofs. No automatic RSI promotion."
+  ]
+}

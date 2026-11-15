@@ -1,0 +1,26 @@
+{
+  "baseline_version": "0.2.1",
+  "candidate_version": "0.2.2",
+  "source_case_ids": [
+    "B-CA",
+    "MA08",
+    "B-MA",
+    "B-RA"
+  ],
+  "failure_class": [
+    "duplicate intervention identity",
+    "incomplete dependency reporting",
+    "provider error treated as parse failure"
+  ],
+  "proposed_change": [
+    "explicit unique task_id instruction",
+    "qualified joint relation instruction",
+    "identify transient error envelopes"
+  ],
+  "expected_effect": "Reduce reporting and transport ambiguity, not claim better mathematical reasoning",
+  "regression_risk": "Prompt overhead; request retries remain bounded and explicit",
+  "validation": "73 software checks; generation on isolated new tasks not run",
+  "decision": "maintenance release under user-authorized AI review, not RSI capability promotion",
+  "reviewer_type": "ai",
+  "baseline_available": true
+}

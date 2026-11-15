@@ -1,0 +1,36 @@
+{
+  "status": "ai_reviewed_internal",
+  "dataset_digest": "1b5d08d77d865b1f644d019b701f7cca646fd6fb6ec08bf16d01617368cbb238",
+  "config_digest": "2e4c3e92c6bf72a048ae1acf0aa6925187b2c0b4ae5c1ab747a512feba567ae1",
+  "skill_tree_hash": "570004a032846c098f5b4f339a302b0c702d638cf09604f7ebb2365ae349c611",
+  "pool": "isolated_validation",
+  "reference_exposure": false,
+  "candidate_rule_sources_disjoint": false,
+  "per_task": [
+    {
+      "task_id": "FINAL-MA",
+      "family_id": "monotone-sequence-completeness",
+      "success": true
+    },
+    {
+      "task_id": "FINAL-AL",
+      "family_id": "quadratic-positive-spectrum",
+      "success": true
+    },
+    {
+      "task_id": "FINAL-RA",
+      "family_id": "zero-integral-sign-cancellation",
+      "success": true
+    },
+    {
+      "task_id": "FINAL-CA",
+      "family_id": "linear-growth-polynomial",
+      "success": false
+    }
+  ],
+  "metrics": {
+    "witness_precision": 1.0,
+    "evidence_honesty": 1.0
+  },
+  "limitations": "RA overlaps reviewed sign-cancellation family; these are controller-authored internal tasks, not independent blind validation."
+}

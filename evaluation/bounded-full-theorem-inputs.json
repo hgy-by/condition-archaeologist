@@ -1,0 +1,54 @@
+[
+  {
+    "kind": "full_theorem",
+    "task": {
+      "task_id": "B-MA",
+      "subject": "数学分析",
+      "statement": "连续f:[0,1]→R且f(0)<0<f(1)，则存在c∈(0,1)使f(c)=0。",
+      "request": "这是有限预算的完整流程试用：自行提取所有条件和结论，但只分析最多2个单项干预和最多1个相关组合；其余明确列入remaining_work，不声称穷尽。每项给简洁充分的数学论证。"
+    },
+    "arms": [
+      "full_skill"
+    ],
+    "reference_state": "end_to_end_human_review_required"
+  },
+  {
+    "kind": "full_theorem",
+    "task": {
+      "task_id": "B-AL",
+      "subject": "高等代数",
+      "statement": "设n≥1，A为n×n复矩阵，若A有n个互异特征值，则A可对角化。",
+      "request": "这是有限预算的完整流程试用：自行提取所有条件和结论，但只分析最多2个单项干预和最多1个相关组合；其余明确列入remaining_work，不声称穷尽。每项给简洁充分的数学论证。"
+    },
+    "arms": [
+      "full_skill"
+    ],
+    "reference_state": "end_to_end_human_review_required"
+  },
+  {
+    "kind": "full_theorem",
+    "task": {
+      "task_id": "B-RA",
+      "subject": "实分析",
+      "statement": "在固定测度空间上，实可测函数列f_n几乎处处收敛于实可测f；若存在非负g∈L¹且对每个n有|f_n|≤g几乎处处，则f_n,f∈L¹，∫|f_n−f|→0，且∫f_n→∫f。",
+      "request": "这是有限预算的完整流程试用：自行提取所有条件和结论，但只分析最多2个单项干预和最多1个相关组合；其余明确列入remaining_work，不声称穷尽。每项给简洁充分的数学论证。"
+    },
+    "arms": [
+      "full_skill"
+    ],
+    "reference_state": "end_to_end_human_review_required"
+  },
+  {
+    "kind": "full_theorem",
+    "task": {
+      "task_id": "B-CA",
+      "subject": "复分析",
+      "statement": "定义于整个复平面的全纯函数若有界，则为常数。",
+      "request": "这是有限预算的完整流程试用：自行提取所有条件和结论，但只分析最多2个单项干预和最多1个相关组合；其余明确列入remaining_work，不声称穷尽。每项给简洁充分的数学论证。"
+    },
+    "arms": [
+      "full_skill"
+    ],
+    "reference_state": "end_to_end_human_review_required"
+  }
+]

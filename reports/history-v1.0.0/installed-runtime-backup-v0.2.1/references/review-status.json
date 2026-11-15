@@ -1,0 +1,26 @@
+{
+  "release_version": "0.2.1",
+  "date": "2026-11-05",
+  "runtime_strategy_logic_changed": false,
+  "reference_review_reported_by_user": {
+    "tasks": 29,
+    "result": "all_passed_no_changes",
+    "source_statements": [
+      "经人工检验29个案例全部通过",
+      "核验记录无改动"
+    ],
+    "item_level_explanations_received": false
+  },
+  "development_model_outputs": {
+    "answers": 30,
+    "user_feedback": [
+      "CA01-B 未显式验证 f(z)=z 无界",
+      "其余均不需要修改"
+    ],
+    "core_valid_witnesses": "15/15 in both arms",
+    "scope": "development-only human-reported acceptance; not blind certification"
+  },
+  "formal_proof": false,
+  "RSI_improvement_proven": false,
+  "do_not_read_evaluation_answers_when_testing": true
+}

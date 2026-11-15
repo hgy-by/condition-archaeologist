@@ -1,0 +1,33 @@
+{
+  "status": "pass",
+  "groups": [
+    {
+      "id": "positive_nonsymmetric",
+      "scope": "k=1,2实二次型及特征多项式；未用数值近似。"
+    },
+    {
+      "id": "Jordan",
+      "scope": "实际Jordan矩阵的特征空间和幂零性。"
+    },
+    {
+      "id": "derivative_formula",
+      "scope": "仅非零点导数公式；0点导数与极限序列另见数学论证。"
+    },
+    {
+      "id": "nonaffine",
+      "scope": "1/(2-z)和z²的二阶导数。"
+    },
+    {
+      "id": "positive_divergent_integral",
+      "scope": "(0,1)上1/x的不正常积分为+∞；其可测非负性另作数学论证。"
+    },
+    {
+      "id": "complex_period",
+      "scope": "exp(2πi)=1；整性、非零性未由此计算证明。"
+    }
+  ],
+  "formal_verification": false,
+  "evidence_level": "local_exact_computation",
+  "universal_mathematical_verification": false,
+  "sympy_version": "1.14.0"
+}

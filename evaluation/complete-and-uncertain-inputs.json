@@ -1,0 +1,102 @@
+[
+  {
+    "kind": "uncertainty",
+    "task": {
+      "task_id": "U-MA",
+      "subject": "数学分析",
+      "request": "分析：函数列收敛时积分与极限可以交换。删去不必要条件。"
+    },
+    "arms": [
+      "full_skill"
+    ],
+    "reference_state": "behavioral_human_review_required"
+  },
+  {
+    "kind": "uncertainty",
+    "task": {
+      "task_id": "U-AL",
+      "subject": "高等代数",
+      "request": "对称矩阵都能正交对角化，分析底域条件。"
+    },
+    "arms": [
+      "full_skill"
+    ],
+    "reference_state": "behavioral_human_review_required"
+  },
+  {
+    "kind": "uncertainty",
+    "task": {
+      "task_id": "U-RA",
+      "subject": "实分析",
+      "request": "积分为零就几乎处处为零，请拆条件。"
+    },
+    "arms": [
+      "full_skill"
+    ],
+    "reference_state": "behavioral_human_review_required"
+  },
+  {
+    "kind": "uncertainty",
+    "task": {
+      "task_id": "U-CA",
+      "subject": "复分析",
+      "request": "有无穷多个零点的解析函数恒零，分析所有条件。"
+    },
+    "arms": [
+      "full_skill"
+    ],
+    "reference_state": "behavioral_human_review_required"
+  },
+  {
+    "kind": "full_theorem",
+    "task": {
+      "task_id": "F-MA",
+      "subject": "数学分析",
+      "statement": "连续f:[0,1]→R且f(0)<0<f(1)，则存在c∈(0,1)使f(c)=0。",
+      "request": "提取显式及隐含条件，拆分结论，按默认预算逐项删除或弱化并核验，说明相关组合、类型约束、依赖及未完成项。"
+    },
+    "arms": [
+      "full_skill"
+    ],
+    "reference_state": "end_to_end_human_review_required"
+  },
+  {
+    "kind": "full_theorem",
+    "task": {
+      "task_id": "F-AL",
+      "subject": "高等代数",
+      "statement": "设n≥1，A为n×n复矩阵，若A有n个互异特征值，则A可对角化。",
+      "request": "提取显式及隐含条件，拆分结论，按默认预算逐项删除或弱化并核验，说明相关组合、类型约束、依赖及未完成项。"
+    },
+    "arms": [
+      "full_skill"
+    ],
+    "reference_state": "end_to_end_human_review_required"
+  },
+  {
+    "kind": "full_theorem",
+    "task": {
+      "task_id": "F-RA",
+      "subject": "实分析",
+      "statement": "在固定测度空间上，实可测函数列f_n几乎处处收敛于实可测f；若存在非负g∈L¹且对每个n有|f_n|≤g几乎处处，则f_n,f∈L¹，∫|f_n−f|→0，且∫f_n→∫f。",
+      "request": "提取显式及隐含条件，拆分结论，按默认预算逐项删除或弱化并核验，说明相关组合、类型约束、依赖及未完成项。"
+    },
+    "arms": [
+      "full_skill"
+    ],
+    "reference_state": "end_to_end_human_review_required"
+  },
+  {
+    "kind": "full_theorem",
+    "task": {
+      "task_id": "F-CA",
+      "subject": "复分析",
+      "statement": "定义于整个复平面的全纯函数若有界，则为常数。",
+      "request": "提取显式及隐含条件，拆分结论，按默认预算逐项删除或弱化并核验，说明相关组合、类型约束、依赖及未完成项。"
+    },
+    "arms": [
+      "full_skill"
+    ],
+    "reference_state": "end_to_end_human_review_required"
+  }
+]

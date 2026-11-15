@@ -1,0 +1,143 @@
+{
+  "created_at": "2026-11-15T15:08:19.555364+00:00",
+  "engineering_passed": true,
+  "checks": [
+    {
+      "name": "web-tests",
+      "exit_code": 0,
+      "passed": true,
+      "command": [
+        "C:\\Users\\hougu\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "web/tests",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "log": "web-tests.log"
+    },
+    {
+      "name": "evaluation-tests",
+      "exit_code": 0,
+      "passed": true,
+      "command": [
+        "C:\\Users\\hougu\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "evaluation/tests",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "log": "evaluation-tests.log"
+    },
+    {
+      "name": "skill-structure",
+      "exit_code": 0,
+      "passed": true,
+      "command": [
+        "C:\\Users\\hougu\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-X",
+        "utf8",
+        "scripts/check_skill.py"
+      ],
+      "log": "skill-structure.log"
+    },
+    {
+      "name": "exact-computations",
+      "exit_code": 0,
+      "passed": true,
+      "command": [
+        "C:\\Users\\hougu\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-X",
+        "utf8",
+        "evaluation/final_exact_checks.py",
+        "--out",
+        "C:\\Users\\hougu\\Documents\\Codex\\2026-11-02\\du\\outputs\\condition-archaeologist-project\\reports\\current\\exact-computations.json"
+      ],
+      "log": "exact-computations.log"
+    },
+    {
+      "name": "skill-environment",
+      "exit_code": 0,
+      "passed": true,
+      "command": [
+        "C:\\Users\\hougu\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-X",
+        "utf8",
+        "skill/scripts/self_check.py",
+        "--out",
+        "C:\\Users\\hougu\\Documents\\Codex\\2026-11-02\\du\\outputs\\condition-archaeologist-project\\reports\\current\\skill-environment.json"
+      ],
+      "log": "skill-environment.log"
+    },
+    {
+      "name": "javascript-syntax-app",
+      "exit_code": 0,
+      "passed": true,
+      "command": [
+        "C:\\Program Files\\nodejs\\node.EXE",
+        "--check",
+        "web/static/app.js"
+      ],
+      "log": "javascript-syntax-app.log"
+    },
+    {
+      "name": "javascript-syntax-utils",
+      "exit_code": 0,
+      "passed": true,
+      "command": [
+        "C:\\Program Files\\nodejs\\node.EXE",
+        "--check",
+        "web/static/report-utils.js"
+      ],
+      "log": "javascript-syntax-utils.log"
+    },
+    {
+      "name": "report-utils-tests",
+      "exit_code": 0,
+      "passed": true,
+      "command": [
+        "C:\\Program Files\\nodejs\\node.EXE",
+        "web/tests/test_report_utils.cjs"
+      ],
+      "log": "report-utils-tests.log"
+    },
+    {
+      "name": "canonical-and-web-skill-match",
+      "passed": true,
+      "runtime_files": 13,
+      "sha256": {
+        "SKILL.md": "8abd70f225584cba20937533e39823662131b96287e14761a1ed4c2cd7a4b09b",
+        "agents/openai.yaml": "552f3b98aac4595559e7bb64dd55737524d429f461dbe7586194f606fb15e776",
+        "references/judgment-protocol.md": "2f92304f927d4db79f1e203da764d01338ec1203dc7b1b4b244b8246f49f792c",
+        "references/output-schema.md": "55a1e1fa195d32b76abb333d6446b740c2fa3cb9b734d29e672c2b4eb0d18998",
+        "references/review-status.json": "79ee27331cb2a1e55ba0ba64c3c8a0892e5ddc49dd27de3fa8538e73ce53e42e",
+        "references/riemann-composition.md": "b2f98d975a98344bd4404ce99afaf9f1d13f64fb80ef1e785a93950041654556",
+        "references/rsi.md": "24217d5f8345c6706da50b1063a0d21ba770a26d5653fbf756e4aba64c1e83db",
+        "references/seeds.json": "597e7bf2cc364025ffd295835e665e5ea54136b7c4fa5c7757e7cac77988904c",
+        "references/strategies.md": "da2a339f67d38e473f2e733f9bcc7491c5aae2e7a154d8add3ee0c3c8ae27030",
+        "references/verification.md": "b9e7a7a7c3e8bdd1bcc0096049438f46a8289985d2256ceafa1734337afe533b",
+        "scripts/check_witness.py": "fe118df48f61477d3aa7c97b4f38683e62f33a251ff4657dbae754892e86df12",
+        "scripts/self_check.py": "5c504fff17a66b96f3799b1e811126b2a8eff11881e53434d8e03ab9367d08e4",
+        "scripts/validate_output.py": "99998766f7dfb74d41b4eb90e1e755d5fbc76b5d67bf7b67958c0ee20410b8a9"
+      }
+    }
+  ],
+  "node_available": true,
+  "live_model_calls": 0,
+  "live_model_score": null,
+  "browser_interaction_verified": false,
+  "mathematics_formally_verified": false,
+  "RSI_improvement_proven": false,
+  "scope": "Tests include explicitly isolated synthetic transport fixtures. Exact computations verify only six stated algebraic/calculus scopes."
+}

@@ -1,0 +1,13 @@
+{
+  "paired_success_gain": 0,
+  "family_count": 11,
+  "bootstrap_samples": 2000,
+  "family_cluster_bootstrap95": [
+    0,
+    0
+  ],
+  "seed": 20261102,
+  "scope": "Development baseline versus text-loaded workflow; not RSI old/new-version comparison.",
+  "no_demonstrated_core_math_gain": true,
+  "RSI_improvement_proven": false
+}

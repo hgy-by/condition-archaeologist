@@ -1,0 +1,14 @@
+{
+  "stage": "AI-reviewed maintenance release; no demonstrated RSI gain",
+  "human_review_blocking_current_use": false,
+  "old_vs_candidate_experiment": "not_run",
+  "improvement_proven": false,
+  "current_change_sources": [
+    "B-CA duplicate intervention IDs",
+    "MA08 missing qualified dependency report",
+    "B-MA/B-RA transient provider envelopes"
+  ],
+  "fresh_evaluation_required": true,
+  "reason": "Reported comparison is direct model vs v0.2.1, not old vs candidate Skill; CI includes zero.",
+  "rollback": "Preserved v0.2.1 release and pre-install runtime backup; no mathematical strategy auto-promotion."
+}

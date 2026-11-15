@@ -1,0 +1,5 @@
+{
+  "status": "blocked_as_required",
+  "reason": "正式评分拒绝：参考答案尚未逐题独立审阅。可用 --provisional 生成明确标注的内部诊断。",
+  "capability_score": null
+}

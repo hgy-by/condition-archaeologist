@@ -1,0 +1,288 @@
+{
+  "reviewer": "independent AI reviewer /root/review_algebra_complex_cases",
+  "date": "2026-11-03",
+  "case_count": 14,
+  "original_summary": {
+    "pass": 10,
+    "revise": 4,
+    "uncertain": 0
+  },
+  "post_revision_summary": {
+    "pass_ai_review": 14
+  },
+  "limits": [
+    "AI复核不是独立人工审阅，所有人工核验状态应保留。",
+    "作者教材用于核对定理，不冒称本项目反例逐字来自教材。",
+    "本次查看了全部对应评测答案，因此这批题对本审阅者不再属于未见盲测。",
+    "局部符号计算不能替代全称条件与对象类型的数学论证。"
+  ],
+  "source_retrieval": "已实际搜索并打开作者网站PDF，定位相应定理和章节；AL05/AL06等初等推导同时显式数学核对。",
+  "cases": [
+    {
+      "task_id": "AL01",
+      "subject": "高等代数",
+      "original_decision": "pass",
+      "mathematical_counterexample_valid": true,
+      "reason": "实谱定理的有限实方阵版本正确。A²=0且A≠0；唯一特征值0，ker A维数1<2，故不可对角化，更不可正交对角化。A^T≠A，准确破坏目标假设。",
+      "suggestion": "保留原构造；来源定位到实谱定理，明确计算只核对矩阵义务。",
+      "source": {
+        "url": "https://linear.axler.net/LADRslides.pdf",
+        "locator": "PDF页260，Real Spectral Theorem",
+        "accessed": "2026-11-03",
+        "page_convention": "PDF页均为1-based PDF页，不是印刷页"
+      },
+      "revised_obligations_match": true,
+      "post_revision_decision": "pass_ai_review",
+      "post_revision_note": "修订后的假设与保留义务集合一致；复核当前内容未发现数学反例错误。",
+      "current_case_sha256": "bd83a3ce2672732ab22792b0c0790c48dcf1bf43bee2ba7ba7db0b3009a8e728",
+      "review_scope": "AI独立数学复核与作者来源定位；不是人工核验，不自动提升gold_eligible"
+    },
+    {
+      "task_id": "AL02",
+      "subject": "高等代数",
+      "original_decision": "revise",
+      "mathematical_counterexample_valid": true,
+      "reason": "旋转矩阵的反例正确，特征多项式λ²+1在R无零点。但原H1同时包含底域、维数和对象类型，删除整个H1与只改变底域的分析目标不一致。不可实对角化本身不足以推出无实特征值。",
+      "suggestion": "背景设F∈{R,C}；分列F=C、V正有限维、T为F线性自映射，仅删F=C；以特征多项式无实根作为核心证据。",
+      "source": {
+        "url": "https://linear.axler.net/LADRslides.pdf",
+        "locator": "PDF页177–178，复非零有限维算子特征值存在及实平面旋转反例",
+        "accessed": "2026-11-03",
+        "page_convention": "PDF页均为1-based PDF页，不是印刷页"
+      },
+      "revised_obligations_match": true,
+      "post_revision_decision": "pass_ai_review",
+      "post_revision_note": "修订后的假设与保留义务集合一致；复核当前内容未发现数学反例错误。背景F∈{R,C}已明确；仅删除F=C，正有限维和F线性自映射均保留；当前论证已明确λ²+1在R无零点。",
+      "current_case_sha256": "4257ba712bdc2d077b394d14cd80d594062bd6520de85c50db294ac1671da377",
+      "review_scope": "AI独立数学复核与作者来源定位；不是人工核验，不自动提升gold_eligible"
+    },
+    {
+      "task_id": "AL03",
+      "subject": "高等代数",
+      "original_decision": "pass",
+      "mathematical_counterexample_valid": true,
+      "reason": "有限维自映射的单满射等价正确。有限支撑序列空间右移是线性自映射，Tx=0推出各坐标为0，因此单射；e1不在像中，故非满射。空间基e_n无限，目标有限维失效。",
+      "suggestion": "显式写出V=⊕_(n≥1) R，任意向量仅有限个非零坐标。",
+      "source": {
+        "url": "https://linear.axler.net/LADRslides.pdf",
+        "locator": "PDF页113，有限维自映射的可逆/单射/满射等价",
+        "accessed": "2026-11-03",
+        "page_convention": "PDF页均为1-based PDF页，不是印刷页"
+      },
+      "revised_obligations_match": true,
+      "post_revision_decision": "pass_ai_review",
+      "post_revision_note": "修订后的假设与保留义务集合一致；复核当前内容未发现数学反例错误。",
+      "current_case_sha256": "b297bffad211dd0f5dd10bad0876cffd33d9251ceceef60d1d77cf2971fca1b3",
+      "review_scope": "AI独立数学复核与作者来源定位；不是人工核验，不自动提升gold_eligible"
+    },
+    {
+      "task_id": "AL04",
+      "subject": "高等代数",
+      "original_decision": "pass",
+      "mathematical_counterexample_valid": true,
+      "reason": "互异特征值确保特征向量线性无关并构成基。J=[[1,1],[0,1]]只有特征值1，ker(J−I)维数1，故不可对角化；n=2且实矩阵也可作为复矩阵。",
+      "suggestion": "保留构造，提醒重根只表示对角化不再被保证，并非所有重根矩阵都不可对角化。",
+      "source": {
+        "url": "https://linear.axler.net/LADRslides.pdf",
+        "locator": "PDF页193，dim V个互异特征值推出可对角化",
+        "accessed": "2026-11-03",
+        "page_convention": "PDF页均为1-based PDF页，不是印刷页"
+      },
+      "revised_obligations_match": true,
+      "post_revision_decision": "pass_ai_review",
+      "post_revision_note": "修订后的假设与保留义务集合一致；复核当前内容未发现数学反例错误。",
+      "current_case_sha256": "890f7b89cfdffd7269eb9812f65a4f09ab5b0c1dbd5f58274dc50c7a9e00020a",
+      "review_scope": "AI独立数学复核与作者来源定位；不是人工核验，不自动提升gold_eligible"
+    },
+    {
+      "task_id": "AL05",
+      "subject": "高等代数",
+      "original_decision": "pass",
+      "mathematical_counterexample_valid": true,
+      "reason": "原命题正确且det A≠0冗余。det(A)det(A⁻¹)=1，故可逆性推出非零行列式；Ax=0左乘A⁻¹得x=0。判断implied正确。",
+      "suggestion": "属于人为加入重复保证的冗余测试，不能当作独立高难度泛化题。",
+      "source": {
+        "url": "https://linear.axler.net/LADRslides.pdf",
+        "locator": "PDF页107，可逆等价于单射且满射；行列式推导为本项目显式初等证明",
+        "accessed": "2026-11-03",
+        "page_convention": "PDF页均为1-based PDF页，不是印刷页"
+      },
+      "revised_obligations_match": true,
+      "post_revision_decision": "pass_ai_review",
+      "post_revision_note": "修订后的假设与保留义务集合一致；复核当前内容未发现数学反例错误。",
+      "current_case_sha256": "ff144b635d65256010d4cb69120954b8aff6534be2a9587c6eef8427b7786155",
+      "review_scope": "AI独立数学复核与作者来源定位；不是人工核验，不自动提升gold_eligible"
+    },
+    {
+      "task_id": "AL06",
+      "subject": "高等代数",
+      "original_decision": "pass",
+      "mathematical_counterexample_valid": true,
+      "reason": "由可逆性可左乘得B=0。删可逆取A=0,B=I2，AB=0、同阶均保留而B非零。反例简单有效。",
+      "suggestion": "补充明确有限方阵的共同底域；当前实2×2构造在常用底域下无问题。",
+      "source": {
+        "url": "https://linear.axler.net/LADRslides.pdf",
+        "locator": "PDF页107，可逆线性映射的基本性质；本例为直接矩阵计算",
+        "accessed": "2026-11-03",
+        "page_convention": "PDF页均为1-based PDF页，不是印刷页"
+      },
+      "revised_obligations_match": true,
+      "post_revision_decision": "pass_ai_review",
+      "post_revision_note": "修订后的假设与保留义务集合一致；复核当前内容未发现数学反例错误。",
+      "current_case_sha256": "aeaf529d27806833beed13c39805a3e851d5aa73ed5c5cf44e9a8fd0c921295c",
+      "review_scope": "AI独立数学复核与作者来源定位；不是人工核验，不自动提升gold_eligible"
+    },
+    {
+      "task_id": "CA01",
+      "subject": "复分析",
+      "original_decision": "pass",
+      "mathematical_counterexample_valid": true,
+      "reason": "Liouville定理版本正确。f(z)=z为整函数，随实轴趋无穷而无界，且f(0)≠f(1)；准确破坏全局有界性并否定常数结论。",
+      "suggestion": "保留，强调全局有界不同于局部有界。",
+      "source": {
+        "url": "https://www.jirka.org/ca/ca.pdf",
+        "locator": "v1.9，定理3.3.10，PDF页80",
+        "accessed": "2026-11-03",
+        "page_convention": "PDF页均为1-based PDF页，不是印刷页"
+      },
+      "revised_obligations_match": true,
+      "post_revision_decision": "pass_ai_review",
+      "post_revision_note": "修订后的假设与保留义务集合一致；复核当前内容未发现数学反例错误。",
+      "current_case_sha256": "55817ed96a03f84d1932d1047264c2b00e3c672b2307c0aecb5914b0fd1cc6f9",
+      "review_scope": "AI独立数学复核与作者来源定位；不是人工核验，不自动提升gold_eligible"
+    },
+    {
+      "task_id": "CA02",
+      "subject": "复分析",
+      "original_decision": "pass",
+      "mathematical_counterexample_valid": true,
+      "reason": "f(z)=conj(z)/(1+|z|²)定义于整个C且有界：2r≤1+r²，故模≤1/2；f(0)=0≠f(1)=1/2。0处沿实、虚方向差商极限为1、−1，故非整。",
+      "suggestion": "将不等式及差商两个极限展开，避免只给口头置信判断。",
+      "source": {
+        "url": "https://www.jirka.org/ca/ca.pdf",
+        "locator": "v1.9，定理3.3.10，PDF页80；反例为本项目构造与直接验证",
+        "accessed": "2026-11-03",
+        "page_convention": "PDF页均为1-based PDF页，不是印刷页"
+      },
+      "revised_obligations_match": true,
+      "post_revision_decision": "pass_ai_review",
+      "post_revision_note": "修订后的假设与保留义务集合一致；复核当前内容未发现数学反例错误。",
+      "current_case_sha256": "7880077fef9506573c853709716c95817b32c72687b9eb8d2bfd4f17b95d001a",
+      "review_scope": "AI独立数学复核与作者来源定位；不是人工核验，不自动提升gold_eligible"
+    },
+    {
+      "task_id": "CA03",
+      "subject": "复分析",
+      "original_decision": "revise",
+      "mathematical_counterexample_valid": true,
+      "reason": "分支常数反例数学正确。两盘不交且非空开，每个分支上常数故全纯；左盘零点在0有聚点，右盘值1否定全域恒零。原H1将开性与连通性捆绑，参考却声称只删连通性，应原子化干预。",
+      "suggestion": "单列Ω非空开集与Ω连通，仅删除后者，保留开性记录。",
+      "source": {
+        "url": "https://www.jirka.org/ca/ca.pdf",
+        "locator": "v1.9，定理2.4.7 Identity，PDF页49",
+        "accessed": "2026-11-03",
+        "page_convention": "PDF页均为1-based PDF页，不是印刷页"
+      },
+      "revised_obligations_match": true,
+      "post_revision_decision": "pass_ai_review",
+      "post_revision_note": "修订后的假设与保留义务集合一致；复核当前内容未发现数学反例错误。已把开性保留为独立条件，仅删除连通性。",
+      "current_case_sha256": "cfe7d043eecae25592777c3cf053dab31c2dbcd482f57ea8253aed949e1c7b20",
+      "review_scope": "AI独立数学复核与作者来源定位；不是人工核验，不自动提升gold_eligible"
+    },
+    {
+      "task_id": "CA04",
+      "subject": "复分析",
+      "original_decision": "pass",
+      "mathematical_counterexample_valid": true,
+      "reason": "Ω=C\\{0}连通开，sin(π/z)全纯且f(2)=1。零点z=1/k，k∈Z\\{0}，只有域外0可作有限聚点，因此不满足域内聚点假设。",
+      "suggestion": "可补零点全集及域内无聚点的说明；原H1开性/连通性拆分有助统一编号但不影响本例正确性。",
+      "source": {
+        "url": "https://www.jirka.org/ca/ca.pdf",
+        "locator": "v1.9，定理2.4.7 Identity，PDF页49",
+        "accessed": "2026-11-03",
+        "page_convention": "PDF页均为1-based PDF页，不是印刷页"
+      },
+      "revised_obligations_match": true,
+      "post_revision_decision": "pass_ai_review",
+      "post_revision_note": "修订后的假设与保留义务集合一致；复核当前内容未发现数学反例错误。开性与连通性拆分后，删除目标仍为域内聚点，保留检查齐全。",
+      "current_case_sha256": "890b30c5e45b3ea08e8e1756e0bc5680a08af0ccd8d916b3a154f958954b7e43",
+      "review_scope": "AI独立数学复核与作者来源定位；不是人工核验，不自动提升gold_eligible"
+    },
+    {
+      "task_id": "CA05",
+      "subject": "复分析",
+      "original_decision": "pass",
+      "mathematical_counterexample_valid": true,
+      "reason": "最大模原理版本正确。单位盘上f=1−|z|²为实值且严格正，|f|在0取1，在其他点小于1；f(1/2)=3/4否定常数结论。f在例如z=1/2不满足Cauchy–Riemann方程，确非全纯。",
+      "suggestion": "补非全纯的直接验证；不能以函数实光滑代替复全纯。",
+      "source": {
+        "url": "https://www.jirka.org/ca/ca.pdf",
+        "locator": "v1.9，定理3.3.6 Maximum modulus principle，PDF页77",
+        "accessed": "2026-11-03",
+        "page_convention": "PDF页均为1-based PDF页，不是印刷页"
+      },
+      "revised_obligations_match": true,
+      "post_revision_decision": "pass_ai_review",
+      "post_revision_note": "修订后的假设与保留义务集合一致；复核当前内容未发现数学反例错误。",
+      "current_case_sha256": "f53f622b7277d4fcfec7409395d1bd0f8ce129c5552b05e76ed7eead44e5c66f",
+      "review_scope": "AI独立数学复核与作者来源定位；不是人工核验，不自动提升gold_eligible"
+    },
+    {
+      "task_id": "CA06",
+      "subject": "复分析",
+      "original_decision": "revise",
+      "mathematical_counterexample_valid": true,
+      "reason": "原定理和穿孔平面反例正确：单位圆上参数化积分2πi≠0。原H1把域结构与单连通性合并，参考实际仅删单连通性，宜拆开保留域结构。",
+      "suggestion": "令H1为Ω单连通，另列Ω非空连通开集。解释单位圆绕数1说明穿孔平面非单连通。",
+      "source": {
+        "url": "https://www.jirka.org/ca/ca.pdf",
+        "locator": "v1.9，定理4.3.3（单连通域上全纯函数有原函数），PDF页100；闭路积分为原函数推论",
+        "accessed": "2026-11-03",
+        "page_convention": "PDF页均为1-based PDF页，不是印刷页"
+      },
+      "revised_obligations_match": true,
+      "post_revision_decision": "pass_ai_review",
+      "post_revision_note": "修订后的假设与保留义务集合一致；复核当前内容未发现数学反例错误。非空连通开集已单列，干预仅去单连通，积分计算正确。",
+      "current_case_sha256": "96f5933255f146e517c851a93402445fa7cd7de6acfbc1ac0f2395acb675ccae",
+      "review_scope": "AI独立数学复核与作者来源定位；不是人工核验，不自动提升gold_eligible"
+    },
+    {
+      "task_id": "CA07",
+      "subject": "复分析",
+      "original_decision": "pass",
+      "mathematical_counterexample_valid": true,
+      "reason": "全纯意味着每点复可微，而复可微推出连续；差商极限有限，乘趋0增量得函数增量趋0。连续性冗余，implied正确。",
+      "suggestion": "原命题人为把结论写入假设，是可接受的基础冗余探针；不宜据此推断复杂冗余识别水平。",
+      "source": {
+        "url": "https://www.jirka.org/ca/ca.pdf",
+        "locator": "v1.9，§2.1 Holomorphic functions and Cauchy–Riemann，PDF页26起；连续性由差商直接证明",
+        "accessed": "2026-11-03",
+        "page_convention": "PDF页均为1-based PDF页，不是印刷页"
+      },
+      "revised_obligations_match": true,
+      "post_revision_decision": "pass_ai_review",
+      "post_revision_note": "修订后的假设与保留义务集合一致；复核当前内容未发现数学反例错误。",
+      "current_case_sha256": "1b1e69dc938e3e63891583a4690ecce1613b83e9aaa7be8b2efeeda0e69f3b7a",
+      "review_scope": "AI独立数学复核与作者来源定位；不是人工核验，不自动提升gold_eligible"
+    },
+    {
+      "task_id": "CA08",
+      "subject": "复分析",
+      "original_decision": "revise",
+      "mathematical_counterexample_valid": true,
+      "reason": "导数恒0推出在每个连通分支常数，不能保证跨分支同一常数。双盘分别取0和1反例正确。原H1捆绑开集与连通，宜拆开以准确表述目标。",
+      "suggestion": "单列非空开集结构，仅删连通性；与CA03保持同一分组。",
+      "source": {
+        "url": "https://www.jirka.org/ca/ca.pdf",
+        "locator": "v1.9，命题2.2.1，PDF页29",
+        "accessed": "2026-11-03",
+        "page_convention": "PDF页均为1-based PDF页，不是印刷页"
+      },
+      "revised_obligations_match": true,
+      "post_revision_decision": "pass_ai_review",
+      "post_revision_note": "修订后的假设与保留义务集合一致；复核当前内容未发现数学反例错误。已把开性保留为独立条件，仅删除连通性。",
+      "current_case_sha256": "733fe09303b9a4318cc470c36f9bd829e5618c1a42b1ab2af8a6d8a2b50507b4",
+      "review_scope": "AI独立数学复核与作者来源定位；不是人工核验，不自动提升gold_eligible"
+    }
+  ]
+}

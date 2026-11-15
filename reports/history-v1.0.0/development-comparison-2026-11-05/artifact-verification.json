@@ -1,0 +1,15 @@
+{
+  "input_isolation_and_frozen_context": "pass",
+  "answer_and_review_digest_binding": "pass",
+  "human_review_cards": 30,
+  "exact_computations_passed": 10,
+  "AI_pre_review_answer_count": 30,
+  "human_adjudications_completed": 0,
+  "formal_capability_score": null,
+  "limits": [
+    "Development tasks only; all 15 interventions remove/replace indispensable conditions.",
+    "No assessment of redundancy, joint removal, uncertainty, full theorem extraction, tools or blind generalization in this run.",
+    "Requests carry no local conversation; configured provider may apply its own hidden instructions or routing.",
+    "Actual service cost and any unreported usage for disconnected requests are unknown."
+  ]
+}

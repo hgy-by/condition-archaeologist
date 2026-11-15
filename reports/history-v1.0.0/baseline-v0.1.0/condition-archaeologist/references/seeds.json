@@ -1,0 +1,1005 @@
+[
+  {
+    "task_id": "MA01",
+    "subject": "数学分析",
+    "cross_tags": [
+      "实分析"
+    ],
+    "family_id": "rolle",
+    "split": "development",
+    "statement": "有限闭区间[a,b]上连续、内部可微且f(a)=f(b)，a<b，则存在c∈(a,b)使f'(c)=0。",
+    "hypotheses": [
+      {
+        "id": "H1",
+        "text": "f 在 [a,b] 连续"
+      },
+      {
+        "id": "H2",
+        "text": "f 在 (a,b) 可微"
+      },
+      {
+        "id": "H3",
+        "text": "a<b 为有限实数"
+      },
+      {
+        "id": "H4",
+        "text": "f(a)=f(b)"
+      }
+    ],
+    "intervention": {
+      "removed": [
+        "H2"
+      ],
+      "replacement": null
+    },
+    "conclusions": [
+      {
+        "id": "C1",
+        "text": "存在内部导数为0的点"
+      }
+    ],
+    "reference": {
+      "judgment": "indispensable",
+      "witness": "[a,b]=[-1,1], f(x)=|x|",
+      "retained_checks": {
+        "H1": "绝对值连续",
+        "H3": "−1<1",
+        "H4": "两端值均为1"
+      },
+      "failure": "除0外导数±1，0处不可微",
+      "argument": "可微性不能删",
+      "strategy_ids": [
+        "S03"
+      ],
+      "computation": null
+    },
+    "sources": [
+      {
+        "url": "https://www.jirka.org/ra/html/lim_chapter.html",
+        "title": "Jiří Lebl, Basic Analysis, Continuous Functions",
+        "status": "author_page_opened; exact passage mapping pending"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "record": null
+    },
+    "evidence_status": [
+      "authored_mathematical_argument"
+    ],
+    "gold_eligible": false
+  },
+  {
+    "task_id": "MA02",
+    "subject": "数学分析",
+    "cross_tags": [
+      "实分析"
+    ],
+    "family_id": "rolle",
+    "split": "development",
+    "statement": "有限闭区间[a,b]上连续、内部可微且f(a)=f(b)，a<b，则存在c∈(a,b)使f'(c)=0。",
+    "hypotheses": [
+      {
+        "id": "H1",
+        "text": "f 在 [a,b] 连续"
+      },
+      {
+        "id": "H2",
+        "text": "f 在 (a,b) 可微"
+      },
+      {
+        "id": "H3",
+        "text": "a<b 为有限实数"
+      },
+      {
+        "id": "H4",
+        "text": "f(a)=f(b)"
+      }
+    ],
+    "intervention": {
+      "removed": [
+        "H1"
+      ],
+      "replacement": null
+    },
+    "conclusions": [
+      {
+        "id": "C1",
+        "text": "存在内部导数为0的点"
+      }
+    ],
+    "reference": {
+      "judgment": "indispensable",
+      "witness": "[0,1]; f(x)=x (x<1), f(1)=0",
+      "retained_checks": {
+        "H2": "内部导数恒1",
+        "H3": "0<1",
+        "H4": "f(0)=f(1)=0"
+      },
+      "failure": "内部导数恒1",
+      "argument": "只在右端点不连续",
+      "strategy_ids": [
+        "S03"
+      ],
+      "computation": null
+    },
+    "sources": [
+      {
+        "url": "https://www.jirka.org/ra/html/lim_chapter.html",
+        "title": "Jiří Lebl, Basic Analysis, Continuous Functions",
+        "status": "author_page_opened; exact passage mapping pending"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "record": null
+    },
+    "evidence_status": [
+      "authored_mathematical_argument"
+    ],
+    "gold_eligible": false
+  },
+  {
+    "task_id": "MA03",
+    "subject": "数学分析",
+    "cross_tags": [
+      "实分析"
+    ],
+    "family_id": "extreme",
+    "split": "development",
+    "statement": "非空紧集 K⊂R 上连续实函数取到最大最小值",
+    "hypotheses": [
+      {
+        "id": "H1",
+        "text": "K非空紧"
+      },
+      {
+        "id": "H2",
+        "text": "f:K→R连续"
+      }
+    ],
+    "intervention": {
+      "removed": [
+        "H1"
+      ],
+      "replacement": null
+    },
+    "conclusions": [
+      {
+        "id": "C1",
+        "text": "取到最大最小值"
+      }
+    ],
+    "reference": {
+      "judgment": "indispensable",
+      "witness": "K=(0,1), f(x)=x",
+      "retained_checks": {
+        "H2": "恒等函数连续"
+      },
+      "failure": "上确界1、下确界0均不属于像",
+      "argument": "非空仍保留，只破坏紧致性足够",
+      "strategy_ids": [
+        "S02"
+      ],
+      "computation": null
+    },
+    "sources": [
+      {
+        "url": "https://www.jirka.org/ra/html/lim_chapter.html",
+        "title": "Jiří Lebl, Basic Analysis, Continuous Functions",
+        "status": "author_page_opened; exact passage mapping pending"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "record": null
+    },
+    "evidence_status": [
+      "authored_mathematical_argument"
+    ],
+    "gold_eligible": false
+  },
+  {
+    "task_id": "MA04",
+    "subject": "数学分析",
+    "cross_tags": [
+      "实分析"
+    ],
+    "family_id": "uniform-limit",
+    "split": "development",
+    "statement": "同一域上一致收敛的连续实函数列，其极限连续",
+    "hypotheses": [
+      {
+        "id": "H1",
+        "text": "各 f_n 在[0,1]连续"
+      },
+      {
+        "id": "H2",
+        "text": "f_n一致收敛于f"
+      }
+    ],
+    "intervention": {
+      "removed": [
+        "H2"
+      ],
+      "replacement": null
+    },
+    "conclusions": [
+      {
+        "id": "C1",
+        "text": "极限f连续"
+      }
+    ],
+    "reference": {
+      "judgment": "indispensable",
+      "witness": "f_n(x)=x^n，改为仅逐点收敛",
+      "retained_checks": {
+        "H1": "多项式连续"
+      },
+      "failure": "f在[0,1)为0，在1为1",
+      "argument": "弱化为逐点会失败；干预为删除一致收敛并给明确逐点极限",
+      "strategy_ids": [
+        "S04"
+      ],
+      "computation": null
+    },
+    "sources": [
+      {
+        "url": "https://www.jirka.org/ra/html/lim_chapter.html",
+        "title": "Jiří Lebl, Basic Analysis, Continuous Functions",
+        "status": "author_page_opened; exact passage mapping pending"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "record": null
+    },
+    "evidence_status": [
+      "authored_mathematical_argument"
+    ],
+    "gold_eligible": false
+  },
+  {
+    "task_id": "AL01",
+    "subject": "高等代数",
+    "cross_tags": [],
+    "family_id": "jordan-diagonalization",
+    "split": "development",
+    "statement": "实对称方阵可实正交对角化",
+    "hypotheses": [
+      {
+        "id": "H1",
+        "text": "A为实方阵"
+      },
+      {
+        "id": "H2",
+        "text": "A^T=A"
+      }
+    ],
+    "intervention": {
+      "removed": [
+        "H2"
+      ],
+      "replacement": null
+    },
+    "conclusions": [
+      {
+        "id": "C1",
+        "text": "A可实正交对角化"
+      }
+    ],
+    "reference": {
+      "judgment": "indispensable",
+      "witness": "A=[[0,1],[0,0]]",
+      "retained_checks": {
+        "H1": "实2×2矩阵"
+      },
+      "failure": "A非零幂零，甚至不可对角化",
+      "argument": "唯一特征值0，特征空间维数1",
+      "strategy_ids": [
+        "S06"
+      ],
+      "computation": {
+        "kind": "matrix",
+        "A": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "field": "real",
+        "claims": {
+          "square": true,
+          "symmetric": false,
+          "diagonalizable": false
+        }
+      }
+    },
+    "sources": [
+      {
+        "url": "https://linear.axler.net/",
+        "title": "Sheldon Axler, Linear Algebra Done Right",
+        "status": "author_page_opened; exact theorem mapping pending"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "record": null
+    },
+    "evidence_status": [
+      "authored_mathematical_argument"
+    ],
+    "gold_eligible": false
+  },
+  {
+    "task_id": "AL02",
+    "subject": "高等代数",
+    "cross_tags": [],
+    "family_id": "eigenvalue",
+    "split": "development",
+    "statement": "正维有限维复向量空间的线性算子有特征值",
+    "hypotheses": [
+      {
+        "id": "H1",
+        "text": "V为正维有限维复向量空间"
+      },
+      {
+        "id": "H2",
+        "text": "T:V→V线性"
+      }
+    ],
+    "intervention": {
+      "removed": [
+        "H1"
+      ],
+      "replacement": null
+    },
+    "conclusions": [
+      {
+        "id": "C1",
+        "text": "在声明底域中有特征值"
+      }
+    ],
+    "reference": {
+      "judgment": "indispensable",
+      "witness": "将底域改为R，V=R²，T矩阵[[0,-1],[1,0]]",
+      "retained_checks": {
+        "H2": "实线性自映射"
+      },
+      "failure": "实特征多项式λ²+1无实根",
+      "argument": "此任务放宽复底域，保持正有限维",
+      "strategy_ids": [
+        "S07"
+      ],
+      "computation": {
+        "kind": "matrix",
+        "A": [
+          [
+            0,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "field": "real",
+        "claims": {
+          "square": true,
+          "diagonalizable": false
+        }
+      }
+    },
+    "sources": [
+      {
+        "url": "https://linear.axler.net/",
+        "title": "Sheldon Axler, Linear Algebra Done Right",
+        "status": "author_page_opened; exact theorem mapping pending"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "record": null
+    },
+    "evidence_status": [
+      "authored_mathematical_argument"
+    ],
+    "gold_eligible": false
+  },
+  {
+    "task_id": "AL03",
+    "subject": "高等代数",
+    "cross_tags": [],
+    "family_id": "rank-nullity",
+    "split": "development",
+    "statement": "有限维 V 上线性自映射单射当且仅当满射",
+    "hypotheses": [
+      {
+        "id": "H1",
+        "text": "V有限维"
+      },
+      {
+        "id": "H2",
+        "text": "T:V→V线性"
+      }
+    ],
+    "intervention": {
+      "removed": [
+        "H1"
+      ],
+      "replacement": null
+    },
+    "conclusions": [
+      {
+        "id": "C1",
+        "text": "单射当且仅当满射"
+      }
+    ],
+    "reference": {
+      "judgment": "indispensable",
+      "witness": "V为实有限支撑序列，T(x1,x2,...)=(0,x1,x2,...)",
+      "retained_checks": {
+        "H2": "右移保持有限支撑且线性、自映射"
+      },
+      "failure": "单射但首坐标为1的向量不在像内",
+      "argument": "无限基e_n右移到e_(n+1)",
+      "strategy_ids": [
+        "S05"
+      ],
+      "computation": null
+    },
+    "sources": [
+      {
+        "url": "https://linear.axler.net/",
+        "title": "Sheldon Axler, Linear Algebra Done Right",
+        "status": "author_page_opened; exact theorem mapping pending"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "record": null
+    },
+    "evidence_status": [
+      "authored_mathematical_argument"
+    ],
+    "gold_eligible": false
+  },
+  {
+    "task_id": "AL04",
+    "subject": "高等代数",
+    "cross_tags": [],
+    "family_id": "jordan-diagonalization",
+    "split": "development",
+    "statement": "n×n复矩阵有n个互异特征值则可对角化",
+    "hypotheses": [
+      {
+        "id": "H1",
+        "text": "A为n×n复矩阵 n≥1"
+      },
+      {
+        "id": "H2",
+        "text": "A有n个互异特征值"
+      }
+    ],
+    "intervention": {
+      "removed": [
+        "H2"
+      ],
+      "replacement": null
+    },
+    "conclusions": [
+      {
+        "id": "C1",
+        "text": "A可对角化"
+      }
+    ],
+    "reference": {
+      "judgment": "indispensable",
+      "witness": "n=2,A=[[1,1],[0,1]]",
+      "retained_checks": {
+        "H1": "复2×2矩阵"
+      },
+      "failure": "特征值1重数2，特征空间维数1",
+      "argument": "重根Jordan块",
+      "strategy_ids": [
+        "S08"
+      ],
+      "computation": {
+        "kind": "matrix",
+        "A": [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "field": "complex",
+        "claims": {
+          "diagonalizable": false
+        }
+      }
+    },
+    "sources": [
+      {
+        "url": "https://linear.axler.net/",
+        "title": "Sheldon Axler, Linear Algebra Done Right",
+        "status": "author_page_opened; exact theorem mapping pending"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "record": null
+    },
+    "evidence_status": [
+      "authored_mathematical_argument"
+    ],
+    "gold_eligible": false
+  },
+  {
+    "task_id": "RA01",
+    "subject": "实分析",
+    "cross_tags": [
+      "数学分析"
+    ],
+    "family_id": "shrinking-spikes",
+    "split": "development",
+    "statement": "可测 f_n→f a.e. 且存在可积 g≥|f_n|，则积分收敛",
+    "hypotheses": [
+      {
+        "id": "H1",
+        "text": "f_n可测且逐项可积"
+      },
+      {
+        "id": "H2",
+        "text": "f_n→f a.e."
+      },
+      {
+        "id": "H3",
+        "text": "存在可积g使|f_n|≤g"
+      }
+    ],
+    "intervention": {
+      "removed": [
+        "H3"
+      ],
+      "replacement": null
+    },
+    "conclusions": [
+      {
+        "id": "C1",
+        "text": "∫f_n→∫f"
+      }
+    ],
+    "reference": {
+      "judgment": "indispensable",
+      "witness": "在(0,1)，f_n=n·1_(0,1/n)",
+      "retained_checks": {
+        "H1": "区间示性函数可测且积分有限",
+        "H2": "每个x>0最终不在支撑上"
+      },
+      "failure": "每项积分1而极限f=0积分0",
+      "argument": "若存在共同可积支配则DCT矛盾；直接支配下界可给调和发散论证",
+      "strategy_ids": [
+        "S09"
+      ],
+      "computation": {
+        "kind": "spike_integral",
+        "height": 1,
+        "p": 1,
+        "q": 1,
+        "claims": {
+          "integral_power": 0,
+          "integral_coefficient": 1
+        }
+      }
+    },
+    "sources": [
+      {
+        "url": "https://terrytao.wordpress.com/books/an-introduction-to-measure-theory/",
+        "title": "Terence Tao, An Introduction to Measure Theory",
+        "status": "author_page_opened; exact passage and errata mapping pending"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "record": null
+    },
+    "evidence_status": [
+      "authored_mathematical_argument"
+    ],
+    "gold_eligible": false
+  },
+  {
+    "task_id": "RA02",
+    "subject": "实分析",
+    "cross_tags": [
+      "数学分析"
+    ],
+    "family_id": "shrinking-spikes",
+    "split": "development",
+    "statement": "非负可测函数列满足∫liminf f_n≤liminf∫f_n",
+    "hypotheses": [
+      {
+        "id": "H1",
+        "text": "f_n可测"
+      },
+      {
+        "id": "H2",
+        "text": "f_n≥0"
+      }
+    ],
+    "intervention": {
+      "removed": [
+        "H2"
+      ],
+      "replacement": null
+    },
+    "conclusions": [
+      {
+        "id": "C1",
+        "text": "Fatou不等式"
+      }
+    ],
+    "reference": {
+      "judgment": "indispensable",
+      "witness": "(0,1)上 f_n=−n·1_(0,1/n)",
+      "retained_checks": {
+        "H1": "可测简单函数"
+      },
+      "failure": "左边0，右边−1",
+      "argument": "各函数可积，不等式方向失败",
+      "strategy_ids": [
+        "S11"
+      ],
+      "computation": {
+        "kind": "spike_integral",
+        "height": -1,
+        "p": 1,
+        "q": 1,
+        "claims": {
+          "integral_power": 0,
+          "integral_coefficient": -1
+        }
+      }
+    },
+    "sources": [
+      {
+        "url": "https://terrytao.wordpress.com/books/an-introduction-to-measure-theory/",
+        "title": "Terence Tao, An Introduction to Measure Theory",
+        "status": "author_page_opened; exact passage and errata mapping pending"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "record": null
+    },
+    "evidence_status": [
+      "authored_mathematical_argument"
+    ],
+    "gold_eligible": false
+  },
+  {
+    "task_id": "RA03",
+    "subject": "实分析",
+    "cross_tags": [
+      "数学分析"
+    ],
+    "family_id": "continuity-above",
+    "split": "development",
+    "statement": "测度可测集E_n递减且μ(E1)<∞，则μ(∩E_n)=lim μ(E_n)",
+    "hypotheses": [
+      {
+        "id": "H1",
+        "text": "E_n可测且递减"
+      },
+      {
+        "id": "H2",
+        "text": "μ(E1)<∞"
+      }
+    ],
+    "intervention": {
+      "removed": [
+        "H2"
+      ],
+      "replacement": null
+    },
+    "conclusions": [
+      {
+        "id": "C1",
+        "text": "测度从上连续"
+      }
+    ],
+    "reference": {
+      "judgment": "indispensable",
+      "witness": "R上Lebesgue测度，E_n=[n,∞)",
+      "retained_checks": {
+        "H1": "闭集可测且递减"
+      },
+      "failure": "交集空测度0，每项测度∞",
+      "argument": "缺少首项有限测度",
+      "strategy_ids": [
+        "S10"
+      ],
+      "computation": null
+    },
+    "sources": [
+      {
+        "url": "https://terrytao.wordpress.com/books/an-introduction-to-measure-theory/",
+        "title": "Terence Tao, An Introduction to Measure Theory",
+        "status": "author_page_opened; exact passage and errata mapping pending"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "record": null
+    },
+    "evidence_status": [
+      "authored_mathematical_argument"
+    ],
+    "gold_eligible": false
+  },
+  {
+    "task_id": "CA01",
+    "subject": "复分析",
+    "cross_tags": [],
+    "family_id": "liouville",
+    "split": "development",
+    "statement": "有界整函数为常数",
+    "hypotheses": [
+      {
+        "id": "H1",
+        "text": "f在C上全纯"
+      },
+      {
+        "id": "H2",
+        "text": "f在C上有界"
+      }
+    ],
+    "intervention": {
+      "removed": [
+        "H2"
+      ],
+      "replacement": null
+    },
+    "conclusions": [
+      {
+        "id": "C1",
+        "text": "f为常数"
+      }
+    ],
+    "reference": {
+      "judgment": "indispensable",
+      "witness": "f(z)=z",
+      "retained_checks": {
+        "H1": "多项式整函数"
+      },
+      "failure": "f(0)=0，f(1)=1",
+      "argument": "整性保留而增长无界",
+      "strategy_ids": [
+        "S13"
+      ],
+      "computation": null
+    },
+    "sources": [
+      {
+        "url": "https://www.jirka.org/ca/",
+        "title": "Jiří Lebl, Guide to Cultivating Complex Analysis",
+        "status": "author_page_opened; exact passage mapping pending"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "record": null
+    },
+    "evidence_status": [
+      "authored_mathematical_argument"
+    ],
+    "gold_eligible": false
+  },
+  {
+    "task_id": "CA02",
+    "subject": "复分析",
+    "cross_tags": [],
+    "family_id": "liouville",
+    "split": "development",
+    "statement": "有界整函数为常数",
+    "hypotheses": [
+      {
+        "id": "H1",
+        "text": "f在C上全纯"
+      },
+      {
+        "id": "H2",
+        "text": "f在C上有界"
+      }
+    ],
+    "intervention": {
+      "removed": [
+        "H1"
+      ],
+      "replacement": null
+    },
+    "conclusions": [
+      {
+        "id": "C1",
+        "text": "f为常数"
+      }
+    ],
+    "reference": {
+      "judgment": "indispensable",
+      "witness": "f(z)=conj(z)/(1+|z|²)",
+      "retained_checks": {
+        "H2": "r/(1+r²)≤1/2"
+      },
+      "failure": "f(0)=0,f(1)=1/2；在0沿实/虚方向差商分别1,-1",
+      "argument": "全局有界但不整",
+      "strategy_ids": [
+        "S14"
+      ],
+      "computation": null
+    },
+    "sources": [
+      {
+        "url": "https://www.jirka.org/ca/",
+        "title": "Jiří Lebl, Guide to Cultivating Complex Analysis",
+        "status": "author_page_opened; exact passage mapping pending"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "record": null
+    },
+    "evidence_status": [
+      "authored_mathematical_argument"
+    ],
+    "gold_eligible": false
+  },
+  {
+    "task_id": "CA04",
+    "subject": "复分析",
+    "cross_tags": [],
+    "family_id": "identity-boundary",
+    "split": "development",
+    "statement": "连通开集Ω上全纯f的零点在Ω有聚点，则f恒零",
+    "hypotheses": [
+      {
+        "id": "H1",
+        "text": "Ω为连通开集"
+      },
+      {
+        "id": "H2",
+        "text": "f在Ω全纯"
+      },
+      {
+        "id": "H3",
+        "text": "零点在Ω内有聚点"
+      }
+    ],
+    "intervention": {
+      "removed": [
+        "H3"
+      ],
+      "replacement": null
+    },
+    "conclusions": [
+      {
+        "id": "C1",
+        "text": "f恒零"
+      }
+    ],
+    "reference": {
+      "judgment": "indispensable",
+      "witness": "Ω=C\\{0}, f(z)=sin(π/z)",
+      "retained_checks": {
+        "H1": "穿孔平面连通开",
+        "H2": "复合全纯"
+      },
+      "failure": "f(2)=1；零点1/n聚于域外0",
+      "argument": "边界聚点不满足原H3",
+      "strategy_ids": [
+        "S15"
+      ],
+      "computation": null
+    },
+    "sources": [
+      {
+        "url": "https://www.jirka.org/ca/",
+        "title": "Jiří Lebl, Guide to Cultivating Complex Analysis",
+        "status": "author_page_opened; exact passage mapping pending"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "record": null
+    },
+    "evidence_status": [
+      "authored_mathematical_argument"
+    ],
+    "gold_eligible": false
+  },
+  {
+    "task_id": "CA05",
+    "subject": "复分析",
+    "cross_tags": [],
+    "family_id": "maximum",
+    "split": "development",
+    "statement": "连通域上全纯函数若模在内点取得局部最大则为常数",
+    "hypotheses": [
+      {
+        "id": "H1",
+        "text": "Ω连通开"
+      },
+      {
+        "id": "H2",
+        "text": "f在Ω全纯"
+      },
+      {
+        "id": "H3",
+        "text": "|f|在内点有局部最大"
+      }
+    ],
+    "intervention": {
+      "removed": [
+        "H2"
+      ],
+      "replacement": null
+    },
+    "conclusions": [
+      {
+        "id": "C1",
+        "text": "f为常数"
+      }
+    ],
+    "reference": {
+      "judgment": "indispensable",
+      "witness": "Ω=D(0,1), f(z)=1−|z|²",
+      "retained_checks": {
+        "H1": "单位盘为域",
+        "H3": "模在0取得严格最大1"
+      },
+      "failure": "f(0)=1,f(1/2)=3/4",
+      "argument": "实光滑不代替全纯",
+      "strategy_ids": [
+        "S14"
+      ],
+      "computation": null
+    },
+    "sources": [
+      {
+        "url": "https://www.jirka.org/ca/",
+        "title": "Jiří Lebl, Guide to Cultivating Complex Analysis",
+        "status": "author_page_opened; exact passage mapping pending"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "record": null
+    },
+    "evidence_status": [
+      "authored_mathematical_argument"
+    ],
+    "gold_eligible": false
+  }
+]

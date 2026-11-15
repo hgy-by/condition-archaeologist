@@ -1,0 +1,35 @@
+{
+  "default_budget_run": "4 tasks attempted twice, no actual mathematical answers received; upstream gateway/empty/error-body failures.",
+  "bounded_budget_run": {
+    "planned_answers": 4,
+    "attempted_calls": 4,
+    "answers_received": 2,
+    "parsed_outputs": 2,
+    "structure_passes": 1,
+    "kinds": {
+      "full_theorem": 4
+    },
+    "actual_models": [
+      "gpt-6-sol"
+    ],
+    "usage": {
+      "input_tokens": 9976,
+      "output_tokens": 4375,
+      "total_tokens": 14351
+    },
+    "usd": null,
+    "human_math_review": "pending",
+    "formal_capability_score": null,
+    "RSI_improvement_proven": false
+  },
+  "observed_output_defect": {
+    "task_id": "B-CA",
+    "issue": "Two interventions share task_id B-CA despite different id fields; original output retained, structure failed.",
+    "meaning": "Output identity defect, not automatic evidence that its two mathematical counterexamples are invalid."
+  },
+  "missing_bounded_answers": [
+    "B-MA",
+    "B-RA"
+  ],
+  "formal_claim": "Full-theorem capability is not validated. No silent output repair or pass claim."
+}

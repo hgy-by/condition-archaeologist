@@ -1,0 +1,105 @@
+{
+  "status": "AI reviewed as search heuristics, not certified universal rules",
+  "reviewer_type": "ai",
+  "independent_human": false,
+  "runtime_strategy_file_unchanged": true,
+  "strategies": [
+    {
+      "id": "S01",
+      "supporting_argument": "(0,1)上T(x)=x/2自映射且1/2压缩；任何固定点只能0却不在域内。",
+      "boundary": "不完备不必使每个压缩都无固定点；不能把完备性与紧致性混用。",
+      "human_action_required_now": false
+    },
+    {
+      "id": "S02",
+      "supporting_argument": "(0,1)上f(x)=x不取端点极值；无界闭集R上f=x无全局极值。",
+      "boundary": "具体删闭/删有界时分别核验其余紧性组成条件；完备不等于紧。",
+      "human_action_required_now": false
+    },
+    {
+      "id": "S03",
+      "supporting_argument": "尖点|x|连续但在0不可微；端点跳变可保留内点可微性。",
+      "boundary": "必须保留原题的端点值/内点可微性，不能同时破坏多个保留条件。",
+      "human_action_required_now": false
+    },
+    {
+      "id": "S04",
+      "supporting_argument": "[0,1]上x^n点态极限在1不连续；n·1_(0,1/n)趋零但积分恒1。",
+      "boundary": "这些例子不能自动反驳每个极限交换定理；须检查实际积分与域。",
+      "human_action_required_now": false
+    },
+    {
+      "id": "S05",
+      "supporting_argument": "有限支撑序列右移线性单射，第一坐标恒0所以不满；左移满射但核非零。",
+      "boundary": "明确空间是有限支撑而非改变序列类别，检查自映射。",
+      "human_action_required_now": false
+    },
+    {
+      "id": "S06",
+      "supporting_argument": "非零二阶幂零Jordan块不对称且不可对角化。",
+      "boundary": "重特征值并不自动不可对角化；实正交与复酉类别不同。",
+      "human_action_required_now": false
+    },
+    {
+      "id": "S07",
+      "supporting_argument": "实旋转[[0,−1],[1,0]]特征多项式t²+1无实根；特征2可出现对角零非零对称双线性形式。",
+      "boundary": "正维不可省略；变底域须重写特征值/正性语义。",
+      "human_action_required_now": false
+    },
+    {
+      "id": "S08",
+      "supporting_argument": "非交换矩阵AB与BA可用矩阵单位直接比较；重根Jordan块可破坏特征向量基。",
+      "boundary": "不声称可交换性或互异性是每个结论的必要条件；保留各矩阵原性质。",
+      "human_action_required_now": false
+    },
+    {
+      "id": "S09",
+      "supporting_argument": "n·1_(0,1/n)点态趋零、积分1；若有公共L1支配则DCT矛盾。",
+      "boundary": "工具只算积分；a.e.收敛与不存在支配需数学论证。",
+      "human_action_required_now": false
+    },
+    {
+      "id": "S10",
+      "supporting_argument": "1_[n,n+1]逐点趋零、积分1；1_[n,∞)逐点趋零但不依测度趋零。",
+      "boundary": "第二个例子不是逐项L1；不能用于仍保留逐项可积性的任务。",
+      "human_action_required_now": false
+    },
+    {
+      "id": "S11",
+      "supporting_argument": "−n·1_(0,1/n)点态趋零、积分−1，反驳无非负条件的Fatou。",
+      "boundary": "检查带符号积分定义；若仍有可积下界，Fatou版本可能保留。",
+      "human_action_required_now": false
+    },
+    {
+      "id": "S12",
+      "supporting_argument": "两个不交圆盘分别定义常0、常1，函数局部全纯却非全域常数。",
+      "boundary": "没有域内拼接边界，不能在连通域中直接照搬。",
+      "human_action_required_now": false
+    },
+    {
+      "id": "S13",
+      "supporting_argument": "全平面z整且非恒定但无界；圆盘z有界全纯却非全平面整函数。",
+      "boundary": "1/z在靠近0的穿孔平面无界，不能当删整性但保留有界的反例；需换域。",
+      "human_action_required_now": false
+    },
+    {
+      "id": "S14",
+      "supporting_argument": "共轭函数沿实/虚增量差商不同，不全纯；单位圆盘上1−|z|²非全纯，模在0取严格全局最大1。",
+      "boundary": "候选取哪个函数须对照目标结论；差商有限数值采样不是全局证明。",
+      "human_action_required_now": false
+    },
+    {
+      "id": "S15",
+      "supporting_argument": "sin(π/z)在穿孔域全纯、零点1/n聚到域外0；1/z单位圆积分2πi。",
+      "boundary": "区分域内聚点与边界；路径须避极点并参数化核对。",
+      "human_action_required_now": false
+    },
+    {
+      "id": "S16",
+      "supporting_argument": "可微推出连续、有限测度上|f|≤M推出L1；独立充分条件可单删而联合失效。",
+      "boundary": "冗余须证明，联合结果带背景；未找到反例不能推出冗余。",
+      "human_action_required_now": false
+    }
+  ],
+  "note": "Runtime原“待独立审阅”描述独立审阅状态；本报告补充当前AI复核，不把它改为人工通过。每次实际题目仍须逐义务核验。"
+}

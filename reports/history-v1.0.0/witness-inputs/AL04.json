@@ -1,0 +1,17 @@
+{
+  "kind": "matrix",
+  "A": [
+    [
+      1,
+      1
+    ],
+    [
+      0,
+      1
+    ]
+  ],
+  "field": "complex",
+  "claims": {
+    "diagonalizable": false
+  }
+}

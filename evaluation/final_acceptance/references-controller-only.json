@@ -1,0 +1,94 @@
+{
+  "FINAL-MA": {
+    "family_id": "monotone-sequence-completeness",
+    "assumptions": [
+      "单调不减",
+      "有上界"
+    ],
+    "checks": {
+      "单调不减": "删除后a_n=(-1)^n有界但不收敛。",
+      "有上界": "删除后a_n=n单调不减但不收敛于有限数。"
+    },
+    "proof": "由确界性取L=sup{a_n}，任意ε>0存在N使a_N>L−ε，n≥N时L−ε<a_n≤L。",
+    "source_status": "self-contained proof; external locator maintained separately"
+  },
+  "FINAL-AL": {
+    "family_id": "quadratic-positive-spectrum",
+    "assumptions": [
+      "实对称",
+      "二次型严格为正"
+    ],
+    "checks": {
+      "实对称": "A=[[1,−1],[1,1]]，x^TAx=||x||²>0但特征值1±i。",
+      "二次型严格为正": "A=[0]实对称但特征值0非正。"
+    },
+    "proof": "实谱定理给实特征向量v；λ||v||²=v^TAv>0。",
+    "source_status": "self-contained construction; real spectral theorem background"
+  },
+  "FINAL-RA": {
+    "family_id": "zero-integral-sign-cancellation",
+    "assumptions": [
+      "L1",
+      "ae非负",
+      "积分零"
+    ],
+    "checks": {
+      "L1": "保留可测及ae非负、积分零，负部只在零测集，∫|f|=∫f=0，故implied。",
+      "ae非负": "两点计数测度f=±1，绝对积分2且积分0，但非ae零。",
+      "积分零": "[0,1]上f=1，L1且非负，但非ae零。"
+    },
+    "proof": "用{f≥1/n}的积分下界得到每个阈值集测度零，再并入负值零测集。",
+    "source_status": "same family as reviewed RA07; end-to-end regression, not new-family blind transfer"
+  },
+  "FINAL-CA": {
+    "family_id": "linear-growth-polynomial",
+    "assumptions": [
+      "全平面定义域",
+      "全纯",
+      "线性增长界"
+    ],
+    "checks": {
+      "全平面定义域": "单位圆盘f=1/(2−z)，有界、全纯而二阶导非零，非仿射多项式。",
+      "全纯": "全平面f=conjugate(z)，增长界成立，但由z=0,1,i不能是az+b。",
+      "线性增长界": "全平面exp(z)全纯但二阶导不恒零，非仿射。"
+    },
+    "proof": "Cauchy估计在任意a，|f″(a)|≤2C(1+|a|+R)/R²→0，故f″=0。",
+    "source_status": "self-contained construction and Cauchy estimate proof"
+  },
+  "EDGE-MA-ISSUE": {
+    "judgment": "statement_issue",
+    "proof": "f(x)=x²sin(1/x), f(0)=0，在0导数0，非零点导数2xsin(1/x)−cos(1/x)，在0不连续。"
+  },
+  "EDGE-AL-ISSUE": {
+    "judgment": "statement_issue",
+    "proof": "非零二阶零特征值Jordan块不可对角化。"
+  },
+  "EDGE-RA-ISSUE": {
+    "judgment": "statement_issue",
+    "proof": "f_n=n·1_(0,1/n)逐点趋零而积分1。"
+  },
+  "EDGE-CA-ISSUE": {
+    "judgment": "statement_issue",
+    "proof": "exp(z)导数不为零但exp(0)=exp(2πi)。"
+  },
+  "EDGE-TYPE": {
+    "judgment": "type_constraint",
+    "proof": "无处处可微性时f′不必为R上函数，需先重写对象或结论，不能用未定义导数作反例。"
+  },
+  "EDGE-AL-IMPLIED": {
+    "judgment": "implied",
+    "proof": "实对角矩阵自动实对称。"
+  },
+  "EDGE-AL-REMOVABLE": {
+    "judgment": "removable",
+    "proof": "实对称矩阵可正交对角化；不必已经为对角矩阵。"
+  },
+  "EDGE-AL-JOINT": {
+    "judgment": "joint",
+    "proof": "删除对称与已对角两项，取非零二阶Jordan块。两项单删仍成立，合删失败。"
+  },
+  "EDGE-AMBIGUOUS": {
+    "behavior": "clarify",
+    "proof": "至少区分单调、控制、有界收敛等版本，不把名称强制固定为唯一命题。"
+  }
+}

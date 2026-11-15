@@ -1,0 +1,314 @@
+{
+  "http_status": 200,
+  "elapsed_seconds": 73.11189449997619,
+  "raw": "\n\n\n\n{\"id\":\"resp_083335d232992b4e016aec62af848087d1a09de31d04f9736d\",\"object\":\"response\",\"created_at\":1793876655,\"status\":\"completed\",\"access_programs\":null,\"background\":false,\"billing\":{\"payer\":\"developer\"},\"completed_at\":1793876679,\"error\":null,\"frequency_penalty\":0,\"image\":{\"context_compression\":\"disabled\"},\"incomplete_details\":null,\"instructions\":\"完成数学任务，中文，仅输出JSON。不得调用工具、读取文件或声称人工/形式化核验。共同分类：indispensable=单删反例，removable=删后仍成立，implied=其余条件推出被删条件，joint=指定联合干预反例，type_constraint=必须先重写类型或定义，unresolved=证据不足，statement_issue=原命题有误。原命题错误应保留原假设、removed=[]并反驳原结论。removable/implied的witness与target_failure用null。所有保留/替代条件分别核验。每段论证尽量≤120汉字；未知成本null。单项格式如下，示例不是答案：\\n\\n```\\n{\\n  \\\"task_id\\\": \\\"输入中的任务编号\\\",\\n  \\\"hypotheses\\\": [{\\\"id\\\":\\\"H1\\\",\\\"text\\\":\\\"具体假设\\\"}],\\n  \\\"intervention\\\": {\\\"removed\\\":[\\\"H1\\\"],\\\"replacement\\\":null},\\n  \\\"judgment\\\":\\\"indispensable\\\",\\n  \\\"witness\\\":\\\"明确的数学对象，或 null\\\",\\n  \\\"retained_checks\\\":[{\\\"id\\\":\\\"H2\\\",\\\"argument\\\":\\\"逐项论证\\\"}],\\n  \\\"replacement_checks\\\":[],\\n  \\\"target_failure\\\":{\\\"id\\\":\\\"C1\\\",\\\"argument\\\":\\\"精确否定结论\\\"},\\n  \\\"argument\\\":\\\"整体理由或删后成立的证明\\\",\\n  \\\"evidence\\\":[{\\\"kind\\\":\\\"mathematical_argument\\\",\\\"artifact\\\":null,\\\"scope\\\":\\\"覆盖的具体义务\\\"}],\\n  \\\"dependencies\\\":[],\\n  \\\"uncertainties\\\":[],\\n  \\\"next_steps\\\":[],\\n  \\\"cost\\\":{\\\"elapsed_seconds\\\":null,\\\"model_calls\\\":null,\\\"tool_calls\\\":null,\\\"usd\\\":null}\\n}\\n```\\n\\n整条定理：输出task_id、theorem（背景/假设/结论）、interventions（上述单项格式数组）、dependency_map、remaining_work。\",\"max_output_tokens\":6000,\"max_tool_calls\":null,\"model\":\"gpt-6-sol\",\"moderation\":null,\"output\":[{\"id\":\"rs_083335d232992b4e016aec62b019d887d19059919c1e405a95\",\"type\":\"reasoning\",\"content\":[],\"encrypted_content\":\"gAAAAABq7GLHXzCJQFw2J8lMucSS07Fytyru1xXepOM3DuMf0V9Jehc3kjUudJyxRNiGMaLmhUnkZcm01qoxST7gBi9asxX_7jnVHIu1UizCIJNUO1-BH96B75xks4i7gip4NQLUJ3ZOKbRArzdYmUXJsFDKADKdj9mmnED-DCZed98HMIIcmZrFkvYjI2UhWJL38-PT6YHdl8alwyZnT-j8jDl5XZLzthvYumxEgNdyGKiIdFxAL66Gll1fScXpCG_YoKqd9pFWXsXkDMHS0-N3T4-09k_uf2YN0PCi-JMqjxT4iUtCm_0W4YdcuV0dZpssZw5TTop2rIQfAseA-D18nCHvr0nlUvfWspWtAJ18dAaVRCoIgR26x554rAFSTsTind_MhJiFtPX1uCb41fhbm9u_n2fjw9CJYO5XKJ-_sUb1R0rv0q5ExPLxsBi0j3DXGNBnj8Fy6PO5uJBTdnKwj6kYMZ_p9yVKF8Nr0pSgBd9MsODjxY-4zBQftmK9Z8hDL0NVbpqV8BsQIWRK0IXhPYiTCWnjReHFmRvEWhAwaG6axOu5n-F2DnzoQ3PvnCC346vXlvi_q2siRUTJjzRmbNrYBFNzrQf5BIS1o0k96I8HpmbB1J73IfihKg-WU8EB4AxMdNhBZkE0UlRnewrJeANOtt96ii2kT11pknayKFuxrK31UKbby48vh6fAfRIZO0Xt8srqTEYBzYJSlM6YrgZFrqhN3Z9fN1nSmRpoujl15Agh5L3ywl8_16ZWQtyfr86LPzsb5CSSWe8f5Kfxtym7QbHNylPZSGDqsyxA_71QxRsvztrcqL-le4UiFOyTzhvEqef2kNF3itoRA8S2C7_UoWomYNLfGebVGu0RhWQAspJyPwMgdnp-qG_q-eSNj11vEDTQTiCQOv1-ufoxNwzs2XhOBuEbqHWjZwPHkzzCfz--VbXapa3ZhzY1CpNdUHq0fEQV8XaMyUMC6cp9gD6ZREtP09K5qflDjSgDezySVPLMAoD6I1TCobtyZMJWhxMgHblFhDLKSQ-SP6a2buTYk6vYEKMIAP4k7F863d4Sed6PQQeJkeTk5EIAWv-qB9_ihakaMyK2EoFoxipSw0NAf66OTwRwlC0lJ0W6Y0LfKUDQnSy88HyqjANUyGlO74K4azV8_pmWutsAr6epHLE2E0DK9x0qRE_wVsq5clBg5LsVvm14A4Nyju7nQIW10lWvkO_j6xIxzfqPDpbd4aAoT980AHAyT_pkOsij1NXecIUe02XQ6au-hE-oMESMZfCj7-SeR19AaAPE7XsuDA9sg7hbaL7DMc_u9D6rKEQzZXit5tzFukaF0-47hVJPwx3aE63ewxN-6XVTtRvlhJ4M_M2FAriFRJyUYGbEVTQ9TpgLsRx3I9-TSngfv48bdqLZQePkaLyXowIRQuMrqRAClUda8uLmn_KBjExNV0PtULw7UF7GbKR265Jnp2Ageh9MJ6S_9YdO5D_6xtD-gJYYp71rh7CVJcwfvZ6SA1ML1pdi0A5SjgSkPv7umXN58YqtEs7ogDyy-1d2J6WA0deMzlxFehl6VKJ_pSBTDQSaTcu7hbruzIkJqG5rYURfl0_KbXOgrBXMi8ER5Md7nr6fR_SPk_bdAjtL0NX13CPqPEm6p2xXQl44zFsgXKXXTX52s04SHUspbBp9Q_qKRdl0dWpqpEd-qEjAStAkUIqmV6TEgZy2CcZpYzg1kD49Nkh7m0u3tiAwhobbhCKgPLV1-wtxc5_n29p243GUAH_ovoZwjn6jj16meVFiOYjfbk7DGXsHJGH3eKnDkgPUm-sr2bKH8_pkqZKHC68c0x0N7eGyFLWxxXoJiT00J_vemDjVOLGILK69YwqyrOE3Gx3iaFSEKPL_TKedftodfbyxbJAv6Y3MLUlrB_674NhThL1N1PgmzeWWXFrGsVn8AuxXO0i-ZMBc8TCUMOOuwcPZfhcddJtrrhyIq54oe4lyqv8a_oHmrpcp9vJqVl0cTeuaYrx_eXb3lGuVrl_xwIZqltHrZLskA3Q8Sm44jPFeoTM19gssC8iCLzfekFWoG9vvYhWK4vndytHLBwxSyHAGSC8Y9-L2VeLRfCWa6kkldJsUGLa6MQsmvs6rqe_7BzdgCmXhAqIYuR9CkOq5t8LKejc03CHeQIvmzOX5kREPJC7bCv_XUJrnYN1LrJOOTI1yzu6FXwA9S1bjQoEdHGjsS363Dd1ibCPDsraPxvvsu5JL-HtKUrs9xh_6SAhGZcwhog3y-LTMEvAAF4O265ZJnZKfg8SBbqrDgffEYYPCUKaOgR-Uh-r272X-WZBtRNDj956CuitBa4KtrRA3scpE-qhvh0Mh5akQAozPTIe5INFkUsL7FKFwTmkS4-g9lwCfojKFGyvu7885i1fgPdIkzG-whppeJit5IAS8DNdNIoaBnp0FzBgxdg7gyIFNX-59KZerlV9Kcy7t0QzJZSED-5vl42TQilwkhroasl92lJpabCR-gsGd8xFxg662cppDX72k_BlpwJJhJxD0Jw5byXpiKWm_CRip1g5gdI0kGORhU8rFQ_PS0c4qFiitetyLyQISU8eEh6oAKpQo_5KVQnl32orBRC12ClpKL8cQvHpIc7ZiBrV5FPw_iSvt4HAg0GRSQvkKgwMlkV5faCNxt06r4LnFyJYdVrbviXBOLlqkRo1FRd3SzJsKtQgOrRniyHxTQyvep7pvjLR2BRjhdgMjWA-sjonGWs-iHtZOz0VtZpMwTN0sHg7GzyIx7b7YXj4caYUd4E4ycqy8MdeDAox378tJRKNDuFxrWeCVqXo3zmvQDl-Ot3JjIK8mp5WWStIoCWAp838JnYgt8jwuIJMUDreNTJ7_r2iMfRmcvad832NQ_9B4Sad0KWK2WW0ZyugqNKJgX0O3O37IZ9-CrJBYHlgiVHtkvKhN3go1Vy8OjEq4FlchqHgtqubPopfR-9pnQmf12GhpB8yqrqX498FRq08Q7wVwX05T6ABj6Td64T8346XorlMczxZSNjGf3trb4hDyKwycLbAyy7voVRQvXARwNdDnkdOACtoZ1LhxY-k8pzr41T3guF06zuJe_LovENkD5rjuTUVurhtPVINPDzYr7ZGmsZIv_ki7r1OoYeDuZx96xZzWhLzM-ZXUqca_O_qTPmcolNdS5KPj3riE0OX-j-cD5qLRa6xpPID9CwM1IX_6cVJfM0jKgJVhnp2SDaSagMYUBTlPxeZ9aPLqrI4XX-8x2HW1O6pJ_Qstn6Uyv8-9bnEZRDf-CxHbNbJSOje-kDqSrbTzUUwGqJ3Wu4Md5jh24anLCUg-Gg1Rv3YrZq8OOv-HI82b6pQNPajsokk_ttnOtB6lp8k3zIYwbeLWP909P0f-NsjqxWE-EzJQHUC8mRNVzVVIs_LpcG4xpBT3bTNwDDxzlQET2Dl_9WDmHZ1QRaIJnZRuxGl9oQE_Az7DKZj6HrYdSKwN20BuMzDX3VmhNqOW5zBzngaPIXDZZlUgPB3Ei92AYo1aCbZxgoJ9rbF7NEmv7izhuoxW_ysNwIC_oza8WnmQTdVSTzZQzNd13jnBJ_WUIDk2iawr2aR90qZ3Q9pVQuj9vEuTaYiWs4cAm1re6glsECci7LG0QkrYZ0B86AF70D3dYabD45ZXjJhvixBDY1ntNMPXAWSmzmTiEZmzyK50WenUyUxKPuP9q2_dDsHx7tpdmlrvQCzxSSLA4RbYzmro0cQ1XF5YpTXxBGgXM0f9sznEbTbtlPl9EFWM0aLBXkdme8WestSqH0qY-UWoVjvBQHbcnsMSg-7B-856Q0sFFwmQbkBk-1dwBBDF3kwXE4XfU7gPUl9TvK1urbYEvI9-cqm9TEO89fba67CFveTtNh6aQGn-FMBbC-uPvB0A530gP97xJglnLN-N8CvQPLzO9se-2xYCc3So_8qA6uO0AH6QFyW9JM1N_jzNw1ksWH0_u0UIkQUNDrB_zAgVknBhH1RHuRXiiGKW_teQuNR1h7xCen4koh5zZdznYHUuL28UqW3BMgO9O7hErc3Tp_PHlfgN3FE9bXcKRyAMZ6tffqasuDjZUpnpmx8NGBnZwGX9kij5EOKNiIP5cdQOuLoUn_QG-Hkkjfo08QQ-WnZW4ea7lcroOIdbYEycYj1X07zsamTY2UJKjttQI_o8U-NmMjqWvVfbaEXcnnkiuidvumfPDp2-z2Z00dHrs2CcA6klFocYNCAsbUSfGYGM9IHKWzc-b5D6yBF7-kPoV8oGEeVhDZXjn-30EtyFKaKGfLHhlzHy2iiJt2855BojK6c3z5TLfu7ktiMq4mObRPOQ93Q_J8yri1_jB6XEkJ8xz5sj6EwJmV8-tOirOt7LdFINVQwB9d7JkaMqdxUASe6BIrABCuxBoSEaew_FgflLoGR87XBAdWx9LKYo2rKS586DNUfXmLv_zmLmYFchrV9VoMqeicTNbE4zowhUlIg199wV7YfgzUFjv2KG1sAopXtrMdhEys-LzOL8Gw3m05jK1zSANlXBAs-3HOmpYQflFP8xnabisjsAOB3roCJv-yAaihbgSeKCJrFVECEpN7USS3OQ5KqP67s83EMXswFtn3qIgfi_cx8uhDunhDagxYz74Th5izOs1W66A5IB4tpD8culmxY6BPjZoqRtiFKzHSViIoD5oDczBmwNnSrcr7Rgm5g8-aC7DuDtzYZ_JpMZxNiMg0DgS2pdhYzJkH7T2qiZmC4he2Gmpzi6sdHWwFskrnStfPXtvtLXZ84tCC-QmXSi-2jFsmWOUdwFfV-XhsigceDKceu6S0uXdaRxY0k08P3VaILqe9uhahK7Rea2vBnqlSFiLlDSzwsN_T3AUBV2cdZ9kLcgX4uIhyPNyIw1eOP0bjOjzHLxlMlRbdpIuvV-nOYWFDm7AKp-4041Woca9NJuHba5Nhf8zQvSEo2Rz5bohfxoa9MKDV8o_fxwfY7wSzIoTu1lUo9pYEniuGjE7v-TjNRmCpJRdIQ0u2H3d01hErIYuEdKWXJGu7Wvx0SVlzl80uQ8XTtxecHQhJj8pr430pwDqKdsOLH5arRLkhkGZp7rEswNXKC7HVqqK0_9Pvf6DCgPQmOikx--QCtSf5pZpJkwr0OhdOykXIMDaApodzdcOQGyCIs5tBYWTNgGY7WH3s4Pt2FzMukxFcgCgQgUyxGY0syeX7Y8YjhAocM2i3dhaP1TBXWmKZelj-s4N4njEroEb9jfh52yTrXr8OGflA1STOHF1_SBytY8jsQKzPNX_y-k9Pa4KbrgoBbYl0OPfoSe0zeYq2X_LLDt5MMX6z-0eo7n8Grgp600c9ULKLqRggX9EyPWo4vg8LsRp_-Q4Rf0ja3p8SaP2_U611RuysSuIbrEDhh40WFr9QW3giStunDmbPgIt5G8S-Ex5hVIV-6cM2pfv9yt63zOw1BAwaHKJrZ8gQq54i-vCam1ajPOzZtMQyunAOvWx8kzLGg0HFAhzOR62ubrIIVqvpRQRlZhS0EwCzi31fCqvhBE5MEYTVFaNvl0U3MrWW7dVOK3b0n9_EGz9sxCgHXglftO0XYxxq0I-qVegPxUYoYVY103wjW3SXdWvrna_2Lm-B01yaWizxE_HNB9aFM8F_uoemK45L82LFg5y_nOAq-8PpgWa0p1PLLCPOcmd9frmbClNGWrb-yB_E809ANc1e6mrrSlRbFl7iZkxJw4e4jHVRHDlCrsyO7zaCc1Gf2OscMfy2YCsF6gzLZSKN3YW43aOK8VnBSNl-SF0XFNlii5eYh5b1PzF9X7OfDFOj9q72jdCRrX7uTQLMo-vLFw_Ldy8P1zU6mtsRmPZd-4FMniHmy2nb5CqkrekGjAY9K2b2LN0s7q_2WBisoStQ2_2M5ppgOlU6Q0WrZwFSvdCjhWPmAA97yKn4MDZNksrJ8VCSOXuP4AuIGI2zaikZ-sIfSwDvavSNjtx-ZYi6yWXfKLr_yiPlAhRyfLQalomETCWJSFcgvwtPdASDJm4gnsR5YieW6xCawwsr9x-GPJJeHqPcxK3DwNxmoYw-eamGWunGOjirZxAyyJazDQr7M7i8AGt7IMy_fa-1gJx2gds5RvHN_dnEwXcJW4OoYdQPvTlSPzcWU3k19wvYtlqBhJw2KP3ymgLyaqaqlbmGLI3UrT5lbLW-dw9q8AIe2g31mZSLbGXGvbEd3YFWeaJPeipRV2MG62fC-l_Hnl4Ekxw1wxJZnlW4yqUivgb2N2FSczvgd4PTiig_Zjp1L1Z61erKMQ2DV_BLJ2xIWDl6FXUO-ISLVrZmuiyyZ3itd3dmTrkm5IemUUo9Yt_o4JhVGbrV-Y1X9WY1gGAHmOWiMmS2tVOdqYoUwB9-U7BW3r2K1wH9xknFJxu8xPzUiugGzQMftqSa8SJdQnn3olmVCjDCb-MaUDPGKWccEHU0xSptqOm1q0qWsqmMQtI-rA48Mcb525gSkcowfYRDEXAwf_6BexSJV1PVx0_fz-lR2HjnD3WADpXRNINUFMEeHVHTOzwh5MOjVq_N3eMtBPZxUPvKYs7yZd9x44w8R_4CmtHSmEsUdRQVebEblhkFQWo3buifQLKA5-Jj__N2TBhwaFyJ_g9Mpn3P2JZKT6iz_KT3EUZBWLwH3SJTgK8ekA2BwWAJBSCy7FMI4kMdSNRQt9JLo0AJ7PO2Rv0OUfBkr7t20cn4xwSnO-xFV0Tw0BaITFGphcTCW4wHj8AMQOH-_9MEMtZhms6QyuAKbsQuju3K8e7QAOeaO2RzY64jlsOg5-CDBWLC-vtLESJ4S9-qRggvizm-QgR4AMmzlJnQ6-0psRje9iP4aXuFsuA4KApDUtQVh608UNZf1TmIXIxoHRPLsmxC3F0dV7qeKgwB-9NMSR5ZaDaFJQ6PYGWyM2-xbpUC5k93vaZrl1ZZiXeRpRu8AMEvObMTa29o1iTfOZ_ps04MwWZtzDWRFJ89G4X6ODpUGKBnTzTeT2dbcZ7lkbwqd-a32oiaGrmsOYVJ2T3jk2mFHv-yS73el1L2Sg5gcRT5Yqhv5F0iCEef4eyS4hnS5o2y70BgJmYLCTEhZGOmv0FB4=\",\"summary\":[]},{\"id\":\"rs_083335d232992b4e016aec62b4c5a887d1bc42a8e07d709542\",\"type\":\"reasoning\",\"content\":[],\"encrypted_content\":\"gAAAAABq7GLH59t_fL0US0kwwVksHLX5SKJVuK9OBlqhfHlYa9TPtJ4xlym7JBufE9lfvSGJJBsCotbNLS44gbyrUuq5VnRrSRxKtIKfnqaxZtqCxsQhVcY0XkLvGNwzZXLxwGRUP4asCyfa73sNInLCgr0EnQQvYNYtTDfi4FmImZsozyJ0miRHhP7W5DfkP-6zZuOKryrvWiqkGGlf1OmL43MjBrkA1prd1b8HycAbLS0vMrq9TREPrCYkxth4mUFvKYqdz1N-CUvZCn5Hw8F8o3Nqtse__C_HEkefM_pKV3K768BThN5UmNTF1Zse11NxEc6-CoD6biohXfz3RFhJwG1oHC0oeo0YbKZxp5_nIpJGuADRPOB5EoFC9o9a2D7dKwThvM34yEABRjT17X78czhmE-nltdy2iM3q5suVGsTspK07XnA7pevWXBk3lFp-LW42c5P2SqUhvgTXT9rQM2t6uJOCcDTxDHlxZRZN2Y_GTfT-o1uSJO238XMp3dkDNyNn8f8v7_KtFOAgZ69CRnKret58ArmeUSP0Lkh5iUkpU5s8Xgi8HqbqQUeyM0wZojFU_Y1Oqjkwl17gpJ-2gdvsrU2ntvkTUxpHWu3rDS4CKYN8uycdL86W9ITdPMjz-Oq9OkwgFREcgSK5J0gaNNkrp4f-IpPn-6pgCssBIfpP9Bgfxga8GYQnxyK_OKxQcAXtHipQI0P4mk4WLTs5D1ZvFFHa33I9tFYN9hJwPGJCTCmrSaGs1hBUD9GaNCgu44ac871u5GQujvrZBQdftrZTJxntXb25rSaWop8_FAcHJiHkx1jQ1w4REcRcBQcgoIej8NLIHK5fJpoTdXKYlHZpQJK7x-FPeNEHW29gZRr34LPouYlbVAmBJRjIkf_aROaty9uHNKPch8teR2XQzPldZ8vUEHmhc2bqKy5uDP3U_PZ9RWQzfT_rRa5iPW8hX2jGgK3DnHqfsnwUk7NFuNO1FhzLeWrhRu7bADUZmTDj9lZjwKPEHyAAl2vo9QTLIS0iagtGPp90PsbX6OZiBoGj-RFpVkRXsQ4gXpZ-svzB7zBTWCdbU15fur429jGmeoK1ojjs6obv0A8-7d_L5GHeamar79VSq8CU8BMz0nTUTh9p1iPPU1dgt4u2CDKCdIa4uazZauZQ3UX1no9Gr8Jqkghu2jNN5phK--OairvQoHMd6kwRqdB1IgFoHyQs6KANYOY9HmRLXr4dDPDvkB7AYxHFo4jeCtnLOCfRRMusbyRpZ7cj7WtOH3IHaxzRHKVAoKLp2VFSDO256Q216pkNXq5Y7BysXD1F8FnEbnGsdKXdC9X85algkPyONCpn8l91l1idXveCukTj5v6izdQfH-jH4-rwu3V8I9HR-Np9nnjuCmRZktAMWdVvUlMXmTEQnHQT0IlMHSaHSTu2ey17brQZFSZGcaMSF_KRrMWIEqeT4jDZKmgBBTEiNsbYRdU2aCD-arB7T7xdP4tFr7jkol9yHSBkKAU4ciXnbT5oyX-TqmtZe54r9G1wYtVoZWW1S7MafHQV5rAc3yQ3vdq4n7vbl_0mVzEvnFQxg8aQwQ7Qj8eESxerrRlKcHahOk41s-YgcYnO_S3TSagX69VBMCcge2Ay-bwTocNW95NhK3JD4lU1FLJR5LkumwEkjNecKFG7Yz1lwKpeRcnaQVCiRMHqQ0ns0S93GsjzP_HMqVlPw1lwF05hM2eDm7ZIzOid1bjCcsBAR1hkzPzDetWPstne7wUAnjAM_2wi8987niRz_nn9aXjt4miZ4GSW0TXisqiGL6-M8K6otCSuskdj6-IaTz_6xifBBF1i_NepPHoptmTxrWVsZttHM6vMogxNVKmZAk93z_YG-TY2lSFqPp9ChtApAU8UG4wI63nE6_bn8ur9pefyrgpdC9QnAZcw_68Mmk4CLSwPb_ZmBzlMJxJ6FSB_KJowCpqiSBgTK58GsNckZN7uZBEev0NlHJDy8ncK5kvqxjfTI6KqZPqp9gZrwukv9H9mf4-0mSqOPhiAZLf03TbXjQbkquQO8p--H_HKq88WHvF_GMW1O4uBt-Uw9JPozEuE2juzULZcyb6RCqiLp1g7xj_Lxxumyou1zF9De5_G9xbNx1CrsBkj16e7oy7gDdjYb75tPWV9QwXX4Ct4jy85eSKl_MOpsVpHkTncPp1HKshmjgLeaXgeksVvx804sH28GtywsiUfPFlBjPLE-SOTsOD8_bM5oai9FuIIMAXlzgo598ib4jfgcFk8QeJ55XA3dPmbkyN7frUFJMB6muKFEc2XECgl7jSq6BWVZJnJUxnAFRpzQTpac2xhBpyR-Fy_Z3OYcpRwx32XXLy-XVBU5baGDeGezkSWQRAz83bW9BtCLI_zlr20ncLrhxtoc2-MXx9UARCAKVJ0VkUyjJqGojhCly5h9X4lHhHWj3Y8w_UbV1fJBTFDMetX7QV05VQ5Kv7ImNnXHjk25kTqZidslb-bwIvWEM47Y1C71OjaYYkRtNZTzdyyRSTVl-KivJ7Np6kCdEA7Yoiu1wxpC0ethb_9wNT9wkIHznAK3n_k3Ve0m3fMflMPk4AQ9K7h1UEaLfMfo3fC9JXIiMSeRWogR3b7D9GLg22Gz0TldFYMHLDiLRX4i4jaX6p1OsXCtl2mO2WEEVRWgUjh26Ksnk14rKGUvO21an61dHjIrxFD9-QrYudY-ULnjlQ8VHzENDBOx0kzAt-6M6j1-LCuhlfLhAsihmOqYr32YHtT63LuQMzIbwNWjxMltSTaDfMvKvu-3xL8SmbM0oD7fBLd2Pjll47HE75R1s6hrc7A-0q0hsIQy2m3uZyBc7uevBaTuNI2wEe-GShbtJSVfZjQFZwkP0U_EsvudKskrIYMMe7fxUz2Xt3Cedmn4uFnMAIL-VLR3kO7otJg7m2kU7IXKIDPseu4dgtr-Qu0UIc1jg1ODht40lGlWW2Z0zfanChCFuRApEqX50wm9BrLWvAWnhL5Y7-9QLW17hUtXNmFN-S9VfK_FVqpHO2JpfuimHlrYi-hC3wx22wVPvUXp5xN2IbwNHsQmHVRk5wOIzAT6VzwsSG6wgKo61KfimkTAsuJly3R2LKDwYyNipcgI7UWwNKHdMOeQ8ELzMwqIWA9uheoICwmKuzdpEOhYUkkHRmGnnzNAmxlI9S50u9V4r-xhIec-g2d1oW-upBXcprSR87N_FVl2wF_zd34jpOAvxN-_M4JltOcMpb_5vxNKrgkQ2lB-Q_Q03N6mPQxugVk_Vku-vGiNEYN91l6PuBZXmh-Cw0tMgos-LgOBv6MeXp2ZmsI6ERcQXqNVLj3bYCqgIJv8A8v4IxvwBXOVtgrND3z1sbECWdMTuQQuiFGnwMxvSGJD1hC5QL5F8aA3UWYvHPTWmPsPHnp-tY417AUwelq78w89KAn2FnxR815XMePW5c5QToiHEUvRHDDzmodXpGtBkRHCbNOy3owIEt2sJdNmUFfAKGE_vJFDdVVyiWvKwveebIuzOeutL8I5S-zfnKAOYsAgtj6uygEflVn95yIV1NtisGGfFJI86hjZoZ0cHjsDgqDGxY30tmdouOLf3uDHqrGyBFToIJC-nXyNQ-5xwduH9fk88YHYDsgThDJJZmlbu_zhb7xWDDv21ZSVikf-E7x1vGNcAb1P147zVrsC5RXJWGONkHhoSijNqAlRV1dc4H-F69RyXvM_lHI4U6Yb20dN1Pamb0Jny-Jysuyh3kBDL4TrBdTLAnWIcIP1s1V0pU4caMjExLjQ73Xxarrd0UcxyJzbNWaB8bd-AXvy_QxZcFsUNkp6F4Go2M2CgtoOjKs64VINUnP7H64Q7hToTR02nbbcCqNM0PfEqVHCctRFClQ_63QHrbkPghnbRnpA1Vnq6Bh439FDZMqP7i2NCyIbAInyZobYU-38W22_i52HZDUq7cCSmZ9uDvKtnpKjcmd4lPAGS6ABlRyWqcgg--jmMKETKvDQaKOhnHq9S-PN99Uz5vSw-aIJKKJ8oHtv9HZ5GzOopB4FR8xhDomXhjDZVtoGVFrltiwxY6na-wAwZ_7RZ3y8lD43WtRuX1ObEVrTBQSjZUl5PfuSUOfQ3NwFMD8o5cCeFngAu2TD38UXH2Vbx4mcxbXUg8bzNO1DUgOe8lrQ6sGsp4lsmXz1jjBvcChtyq5uqEzEJ_VuddgUuWg3nX5juNAo1S2gsua1Zsu_nrJ5QYVO7HeMeAToWXD4VY4NW-9F37j4vZpWdUWUamvdp6JD3D7q-w0AedAjblCyZiezQFtXidapoGIcXduFXLxqIAhkUM2GYOW4G4_IioaQxt31S9eKwjNfbbWl2M5pAUxrV2qsbZ_Tw2dL-ve16hbRF_O6LBGdvFcOBaofKuGpDjxmWMI94ATP4gNX6oFhi6nrakkqLp7fesXxr4OyRP05NEfT8TPEwYRC0EvIgjoBAfe3tI7sdLhyutxjWT2A6JyF3BLYAyeGiBWn0qTrKnz7KZoqDjf7tRKYFVHGORgb0XkM2RHkSsEd7uGdRaiJ8D7Q5-gA6GIA_NO8jkTCQG8f6CXVs_33W_TvmVxbeGzDPeSmutK6OXNh8y85hBf1PCRKNCWuCUPfSHxwiWixnVK1wgx2Dby0cw4OThOAib1qDbtCOx7pc7L0xb93d6RNsTgbrVt5HfVvc_wKqWzM1JNKjUS7r1AxAVKxcFyscHQdKGMvuUp8313QXaJ_9wq68aYhd67S6Tat26-h1GAZ7hjQngJRynujg5X2TxYSf7IR-pL0h4a1LpGV5i8CLDP-5tYl-xs710dtQHuglBss089hBE9x2wx7xC-FkH_CoawvkjSH7ntSAGEi1dXFIw_BGNqUqENsXoguuzb3TtuKY3N9ZqvRZSqKu-iA241_upVzaTsV_2BAwv4Nnh7zvnl4hvFXYtVHQAy5aQStsVNHLhR8lt9_yD4DbMYTlDpAtr0-Smis0bP3RDAb8-ikVbhGBMeMLhZYaZo8rrAL1FsC6VXTUb6_oBB4PWqWwr5qUHXebeCpnEL-tX4EuLvZ3mBaF7g01YaA9Lq1iI8rkS23rd4MqD8DURTBJFy54hW3YzKk_VYbt59YWMWQWep6zIPpzgJe-EZtD81vtaq5ThyyhwmVu78ofEXNG9ZyZPb9rZHh1ofh1usi0ebg1L36swmUR4ch8R4ZHuZUAx7-ovn71-913rvshfy_8R8ED7aJYsTpXyIoQ-fak7kqh9gepiGuk9wWqP_J_oJqWLFvbTqG4gdENSBjSSkY7-Gycxliy8OV6zLAyluWiH1Enm1IT9S1l4uRYh61hDcuyJ6AqFylbI_z4WMtCoN24xfqi97f7WvjcL8LNAGLpnX7-h3P90GJovdPorLp1qDRR72apSR7Dw9_GI_ZNlAN8JxiTPNSrMPmzRasjeSpeN-sf44CAsgLduuYU4zw9FzP34QdvfQNF7lSSIljqGr-j__DiMUTsu_c4lA6089QgEFQt3TVXq4b5fZfqYTHjmFxQFjl-FnO-FN4XS8XhxeD0ZD6BbcmWDuJdOzMxG6gtWiOPZJP7N9nvuTlphPU0qTu0k0_XMHeXehz1uIfgdTyM91ot44Z2wHI31SQFFrIZ96pCOZtExl1QnnegIELXl2wncl4iAwjhBWjgvT3FAduUzxicUgHFYKhxq50fxc9o4Ye_4L-UUcvHcL_mKPti8Dhu2-wAoXIsPycp_5TGU2tGPRtXkSJr91JxHxvgO6YRvTG6UxpjYZKSmasfTyk2u-rtAlrRQIq2k2X5zN7Toypzeo60wOgINhpuealeoDQSn8lxWljekMT7kxKHHDGUj8iOSMv3zEx1SMvIedf5tEBPMgdc3nGVcKCkPGLK_lz2iTLFB41IVEnOiS24yFdynX5uyaLC_GkoiFGPW0qNX7i3LGgC8QWPYggaHFizVidAhb-nAl3mH01zm00fup6h_HN1jFNfEa_FWlm0LpF20DcTnY-fzmQ2ZqWj6fIbH1a5fpLvoIMea89Kzmv4zdW08ZdHqZ8PwBo842GfGoYY5DbBwYX1x9XmUDTLM4JMbnzEcDw_ExRkCHtYjy3aDng0y2Cf59H9lBR13UB9LLBLvg32PuPtu537j4AfHNK5JG8V0HUB4SBGFAiGXpW_lfJ5PvQ7y6lrfBINTggv3HcVPxlLcsXhWcRXyMZxvSygUK5N5LskvfI-SZW7ItvzV10TPvMDgn2neag3lZqn8isxY5yg3pccWH6GTDvVkFvIeDD81pc_NFD7XkgeauT02F6xX5rL2tSA6l-nU1qqz0dj4qB92j37YLD1OyHL-NQkyjNxZ_Chp6WUhmJeSbvUDesi1IbzPZwehvsTJpBAbXXSc_X10s1wYQ8LYnx7EG-GWRLAFd9RCxQNIVzLeDOTN_Zdyl8YwpUZeE450Xzecps--0UUcgX13GbsOCi39Fg8135g7DqLvar5kv-80TaWa0WRFsLACDh6ZYsg-Uz4mo9xFdYL0HeUcGM7TCtsnsNnEoM16cYZcZs_U3lyjgyooCw3g6wlEUVTWkLPElfvP-5Myje25IgfmJ9tr4gILfJabDxdKK5sybTIqZJi3gg9wZ_m05eAydzgFgrItHZrnx9HST2A==\",\"summary\":[]},{\"id\":\"rs_083335d232992b4e016aec62b92d7887d1af2f6f9a321788ee\",\"type\":\"reasoning\",\"content\":[],\"encrypted_content\":\"gAAAAABq7GLHLiaVP6ZyUw9ePh394jhYU6iqp8PqRgd_A9KC08oLMFSshfFR3fu8e1qSJMKgDTbBBlANT2clW2kibWs1_7RQRNrtyeqOzaTgJdp9usNoM5brR4JeS5Xy2UnGAuVqRTuOaZ1r3GyQWCrd2eU0Ce2X1bnrXhtwiNAke59ktXiVqAHZRIfaRxK_ZG1mO-hHnGBqPsejnp-dedPnEWrmPsChTyLnLGVeMK_kRsL0KE3SS3o6Bc-JrOmBshc04tGA0m-xv3m97Rl3fmttbcsDGoaPxouHAtusE6DAi5Alnt7Lx1YTqa7ZC7ZSHAPjwNBUNu7da1yaituODaP-KpxvIxvbNivlfV9ElrmXm207hiDzzB7_-wNs2Bn0wN-cpjnNyCusrlAIp0XIHG-Yyc8tJMUSm59zFpizO4slb0OExwczYt1QYl8ug74z6WCE5d8-UbgO1I6hcgGhDrj-6icwQ4dGl8R5xztY9PCkQwmNA1z1K92pM72-yhJLRaWRpyUtxOkrP_io0wj0farYcJRC9bDvtk4rS_dMRTkS4F_AglISW5yvumSSI3d-EuiAqMw0CuLBkesqKV1JO5o9ect8Pi59aKJ7kUTHqNfZN8ZTviAEoPq_v47cp0fV0UdBeLdnBox3jX4h2yT473ETkKHv8HPaBr-bBep-sna-irn0pbBHwZFuHp6hPiE9YJtpAWft-bShScx8etVs-VMaq4hllkifeQm3cYzmbMYCwCanfobJrHrtPvRF3J9RANXI7NanBF7hH67bjxKFkc7w3Q1RfXiJw8qraHjvv-_DUNWLsKdA2gTnbBVJugLQsxcX36rNlvVqnZLgzk4nz-1vFOEVeF_kenfZrKFWp550CJBobUsaugIbqOTDGm3ij2QPtauaYPmPE5_PjE5-Pi7rlweXx9ELljqZYdUYXYYlVc-Y1QG4156UjirmKycDx9YCGIvcr_xYm8psIuy-WS6mEXq56-InGGnZPseRno1D5y31wWXemmHlF2S_S6vadYRBmgy3sgPikesuN4mSRAevzeRk9CosvYVUgoL1WEAXXFPxynZ_Bx8zK96FxPviZ_BvKSYECspHdHzFIRRsmts9LTWS17OkAWB24qfY-kwel86Gpl6IZtpUV90rA6m5U-0iHgdHOd6kKyjiHLYcVyj4SdhVi6Zx-GenSDHluZvRDHngM0jgvQOhFUOa1r6bdJCXttq-BU_mOG0etUJsfOzAmo_bAaveN7ChzJxYE8k7vxLuz-GoVJGoHRsdTtvZxIwZbe7YDh6mm_Y_l_hEm_3StRCVqQ2IG7XAQ-nRj9cXIv0yHd0fBAhiM9tneCINxa4zFUEzHfdqByLtZHmFDgQrfxPHOeBeiyU4BPCMk3IORt6AQi-k6DsszzKd6TAUy3Rmu6-uwpMwFk9kuVNP-KLtiTcJ09t1JbbVWqCBz6huXAnqXdcFPeU71XlvdgGqz9IomesHjknxkpQE_Mo_QHMAvllWh9x0iPDpGMdEg42OujXQsCikBGXePZ2GynuusSXzTvW4y0u1T1IgVUSVXokQ7NSaU47c7IvheTnAfOUjNW3lOteBidczi4lMlE7VuyOxUQh_yMUyb3p2lwD7fh2lci5SZTvLsAYfaF5eUVlGMRtG_C9V_ovcca6CV5UYczk0HKcMjMuS2WwTv9PpVoYLEfgkSMB4i-SQ41Wc4ptVkn6nA1PZ4Mpsg_Or06v-rz3agJOkH26bJNTfqYbGRzLfttKx7FkdE8fOD8GDrlbcVIehjIRlwEwfOy8OHD882Q_oKKD26iAzxx_V8x2zw2-07mDPeI_EJBrpPRPfX3ZYXj1J19ACc0Wc7XZY5VnTPqR3vH1Ko51UAFufGq-TFoAZK03Fd3sc8Wq8bAVQ_hmeFfm2cyVjdaL_yJQShj8QR9M9t_envVwOKkAa1uSr1gXVj2vZrfBDAbCkF4MAPy_oEq8tC-xHSncIKzBotXelW0zsZnUgNs5Cj8M9vJZWPowznJEMHeMzWvXctfz9BUHUvLtInAWh9ODBp6l67QSPYoBZPWCX8y4bTnwtVteLeeWF2HjlD2aZgRR7wivJ9jrH55PlCJz5jt5AXW_Nuc4YKNs5bDemHIfFDVjR96sQS4Od5eXgjc92YirdDr7LSr3fZcvG-1vNe9V9Lir4w64rQhJkQk7d5V3RboydLPpVtyxBy2qFnY2Ama77cSJOJXMybqTt6PSrnO9NG-p00YdWnDavatGLr9y3tVcqD3izHpbUCYWV_tt3UBUAOUUZ9L8LocHZKUFpFIPn40su_Qed_E9zrpPgu3EC4d0GRctpPVAlXQvPGA3cB8NlkQpX2fC48ZL2S7JALNGqLxsIBt21EwHXaK9-BH-OX1aQndUhlUmr_l455Bne8UKug5lNp2-Y5vVoyt2YosEvt4Prig_zPicoTMmXfrc4x8tCcFt0gBWu7ZQxZTcTZ_yQoAps8NZuOv8aq2Um_7PjGZQ2JhsTF_utO2n-DQ37x9OIVo8wGtqcAgcaUZ0vCrYdwTON-XSBusq0HSnJiVZg0S6j5LWJoF--mj0BhmKHODmJxhDvzX0EN-MLR1L7EELeIaM8b0SnaJMyQaj0b5QIzP1PluFZEC7YSPmovn9IHBzwTzfldTDSsjcFfZFf9pQ0akJLCUAuqDVAb8ZqFKPxTmFrQYQcSplvPX-JqxJaE_sdeGrKZ0BUd41GSZc23x8WuEu-vYARJRpAPPozeAjMf8WulXet_YEBtfqmmngkCrolVccoxoKYWtGwi1CqrLsFxwaVHgPvjQNxDz-MgYIkD54kI19Ni3u2KYiD35C58oTrpzD3tDSX2QhnayJnd3pFWUWvva9SyxlsXPT14pQPWBVb43ZK4uLqHFSdTmRKh4X2-n1ilj6c_JY4GS0OtivumsBVrbNTtLQt2GAJ8o6XL3fIlQ4hJ01vKnKDlg45N74n3GBqw_U0d79N8ZZFJ6jVgQCv9lY6t2J5InYmgItya6n-cmP8tum0id9qgz80axs5dYbGk4dMWfhbBieFbQ2uaHtE4_HjapQQBBJA4-PL1gGqdAsI0qCeYK-PcV7QwTSz-r2wV8M5JWhvXhoOooDGfgvdyU-dCTCIIgsbUnJcmNjKaZ4HDDCFRydPto-y-8E4TALO6cAV7wZsX4oRBeBXp826BKMudIT0UzXA0NK9pcduVMjM2WxkRaQrofDxFzPZVT7fXX89hRGhWxaP5oZbF5PBubO0ANga9NGWVP-yKZduQj-64JwvjwGz1Fk6YlejK3K1Db-ufRrVrAfy5e5LQxeudimnhlyMCxNXyDGi6n40FMvfsFTeCnJew1_wPuSVCvkvuUWn-8xbBCARSqfvL9VJfg1Af-vgix4-bFwadbdW9lQ9rqL-zM90aPnjLcxWRlzzHsocy4iRk2ElCsSMOgrRvHIYFORK2OGWMuIc4H4keN7GL200mE0Rih0VxqMaTjLIceGRI6L3do7qFOHWsFGs9IE_Bcdju3dopSIOTderTutl_eV7BLqjiZHPntmi4q7fVy26zE2K3--RM9H5qU5H2amjxmb-PlzscDp66o7E_bkA3TEOnG70aFeBjE-kjpJ4vmvKXjnMTxSaIozPSVZrclEVYWucGxnqfbGIbh95iwk2IIM9WtF-tWS1CXueLR4HgAdOe5aXfcKvAmik3Bw5y1KnjRiwksyKP8xJ-55W4IWYQoWbVLjr8GTlxYudC3UOI0poQqx6FXB1vETspDQ0SHjtBxiqv5asaeE0kmwkE5HwQuRPFxw_f5eIerWxLE0RV-1vN4uNNlrMG0T-ijkYxlDNXslFduHN_yE_1ErPcd6j08ZD2dElOH2EAaw1mW70orWBpZ-4PwxbvzttyLP_M1TMDpGkIHf8wIG0uvUpIO513npOyDgsMnGI0YnmYqhwK_zwmVeHNBkgDyWCBwqrU_rzpFmKMNf8V1nmuziNzkeVo4yLGorGDqRKwyz4rKTnGCKUq2DUMDeionI4sA2qPvMG4va5_DofqYMgR8NKpREQRwIFdu6H7C-WTVuuC-aXbMitmnSx161DgUqOKjUg4oHNfcbduiWkM_gVt5S2787im_uyia8esPMhLC-_VMUjmixw4YmbJLVV6aKdhgoloCSLPhQb_ikMP14fpIX29RcUQnqirdNkajUR2VHiljWeR66pYkBV4UjMQt5LIy12HNFX89PQQFdWIrZ3VPTgPgvYFXHCMz_bQfwk7fgrMlmU8hvUCjAhGlbcouAMEbG056UnX5Th9Hi1RjproP-M9ftHy2XRAyMNNc8oTP337ysQ8HdLOfR3-dcE2pSE_Q0vKhQ4I_YtTHlIMNT6SGTzl6Lpx3Oshwryl6jDstshv0BcCNkKIgpZAhJ5b2uV3-kewN7KQDLGeK2l-DCaxRM0-UmaS5HuKoPc4qUd1K0cutB5wHXor2tynYzpfNWIvLYjYe7llYQOpEoWEp8W4rhQlEUbjqqglKPbCMIXVQO7ri40jzUlstYpdtP-Hus0lAHOVO3rZuiJlzUJl9IczzwtI_vw-WkPeEwJ1woZPUv1Ur2UCM_Et3s748U6oi8bZlTgyMjKnzyoI2fXXzcPSaLWsoFyKZkKxxx9I0HJ6AIABfGXcpVRjXwTneVwdgkegz0rWHpaPzAFhc_kj7xR-7DVrXXxWlgpQyotx7_G-wRXN_PGuC8AyWpFGjxqMaHfduigQIT8eZ-KnUCvW_o7BND03U6KTQGlnFTfSb6RybszkE2bCRP-kSafyPZMuQ2z6C8o54HmiWXG8_NBa9Xdo62xNP-bn85tFekbprfLBZEd1tmzbcm2AGHz1Cafn8-QbsZiLf5TMST9Wc4kg6RdnINOxlxIivO52h0C2zDQToNsEGKP6tdHFwdagC8By2Ho0Zo3MrWPxZzJ87cZ0x5ZB_tS4leyZL5WJKwRglWCAC3AU3LupbPJGgko8e6aOQ6XUAsZpkkVwuE90dan1PGNSzqX_IDFG0p29-MlPZpCXVfPxUgvhhRr-VmfDhQeuQmk9bIkOxit5XhIRZOveoY9o7VCCwI9FB79PqiM492XHVNNM9wEsX1RgmKjce1ReXSnQJW2nIcvuR9DdLZtAoQ7614FYNEfHnl2VjXoXnzLwFqYoYC2tW150kCbU9LvgsPpNQ8Wcn6-XJZ3vch9a8wsANQ4J6MuFuMzdqQHpHPxqGcXZzHlrEtZ_aAIlwUv34rbJK_faEgh1zcV2I32YOZdY0FEMa5ojnXXdEuMhHu8KoMYngcNNuZW2XeVKzT-ac2AoNTeJlMkkKZ_DdSrIiU=\",\"summary\":[]},{\"id\":\"msg_083335d232992b4e016aec62bc4f2887d18e215b2e68506bad\",\"type\":\"message\",\"status\":\"completed\",\"content\":[{\"type\":\"output_text\",\"annotations\":[],\"logprobs\":[],\"text\":\"{\\n  \\\"task_id\\\": \\\"FINAL-CA\\\",\\n  \\\"theorem\\\": {\\n    \\\"background\\\": [\\n      {\\\"id\\\": \\\"B1\\\", \\\"text\\\": \\\"Ω为非空复开集。\\\"},\\n      {\\\"id\\\": \\\"B2\\\", \\\"text\\\": \\\"f:Ω→C。\\\"}\\n    ],\\n    \\\"hypotheses\\\": [\\n      {\\\"id\\\": \\\"H1\\\", \\\"text\\\": \\\"Ω=C。\\\"},\\n      {\\\"id\\\": \\\"H2\\\", \\\"text\\\": \\\"f在Ω全纯。\\\"},\\n      {\\\"id\\\": \\\"H3\\\", \\\"text\\\": \\\"存在有限常数C>0，使每个z∈Ω均满足|f(z)|≤C(1+|z|)。\\\"}\\n    ],\\n    \\\"conclusion\\\": [\\n      {\\\"id\\\": \\\"C1\\\", \\\"text\\\": \\\"存在a,b∈C，使每个z∈Ω均满足f(z)=az+b。\\\"}\\n    ],\\n    \\\"argument\\\": \\\"由柯西估计，在以0为心、半径R的圆上，n≥2时有|f⁽ⁿ⁾(0)|≤n!C(1+R)/Rⁿ。令R趋于无穷，各高阶导数为零；全纯函数的泰勒展开给出f(z)=f(0)+f′(0)z。\\\"\\n  },\\n  \\\"interventions\\\": [\\n    {\\n      \\\"task_id\\\": \\\"FINAL-CA\\\",\\n      \\\"hypotheses\\\": [\\n        {\\\"id\\\": \\\"H1\\\", \\\"text\\\": \\\"Ω=C。\\\"},\\n        {\\\"id\\\": \\\"H2\\\", \\\"text\\\": \\\"f在Ω全纯。\\\"},\\n        {\\\"id\\\": \\\"H3\\\", \\\"text\\\": \\\"存在有限常数C>0，使每个z∈Ω均满足|f(z)|≤C(1+|z|)。\\\"}\\n      ],\\n      \\\"intervention\\\": {\\\"removed\\\": [\\\"H1\\\"], \\\"replacement\\\": null},\\n      \\\"judgment\\\": \\\"indispensable\\\",\\n      \\\"witness\\\": \\\"Ω={z∈C:|z|<1}，f(z)=1/(2-z)。\\\",\\n      \\\"retained_checks\\\": [\\n        {\\\"id\\\": \\\"H2\\\", \\\"argument\\\": \\\"2不在Ω中，故f在Ω全纯。\\\"},\\n        {\\\"id\\\": \\\"H3\\\", \\\"argument\\\": \\\"在Ω中|2-z|>1，故|f(z)|<1≤1+|z|；可取C=1。\\\"}\\n      ],\\n      \\\"replacement_checks\\\": [],\\n      \\\"target_failure\\\": {\\\"id\\\": \\\"C1\\\", \\\"argument\\\": \\\"f″(0)=1/4≠0，故f不可能在Ω上等于一次或常数多项式。\\\"},\\n      \\\"argument\\\": \\\"单位圆盘是非空复开集；删去H1后，其余条件成立而结论不成立。\\\",\\n      \\\"evidence\\\": [\\n        {\\\"kind\\\": \\\"mathematical_argument\\\", \\\"artifact\\\": null, \\\"scope\\\": \\\"H1单独删除的反例、保留条件及结论失败\\\"}\\n      ],\\n      \\\"dependencies\\\": [],\\n      \\\"uncertainties\\\": [],\\n      \\\"next_steps\\\": [],\\n      \\\"cost\\\": {\\\"elapsed_seconds\\\": null, \\\"model_calls\\\": null, \\\"tool_calls\\\": null, \\\"usd\\\": null}\\n    },\\n    {\\n      \\\"task_id\\\": \\\"FINAL-CA\\\",\\n      \\\"hypotheses\\\": [\\n        {\\\"id\\\": \\\"H1\\\", \\\"text\\\": \\\"Ω=C。\\\"},\\n        {\\\"id\\\": \\\"H2\\\", \\\"text\\\": \\\"f在Ω全纯。\\\"},\\n        {\\\"id\\\": \\\"H3\\\", \\\"text\\\": \\\"存在有限常数C>0，使每个z∈Ω均满足|f(z)|≤C(1+|z|)。\\\"}\\n      ],\\n      \\\"intervention\\\": {\\\"removed\\\": [\\\"H2\\\"], \\\"replacement\\\": null},\\n      \\\"judgment\\\": \\\"indispensable\\\",\\n      \\\"witness\\\": \\\"Ω=C，f(z)=复共轭z。\\\",\\n      \\\"retained_checks\\\": [\\n        {\\\"id\\\": \\\"H1\\\", \\\"argument\\\": \\\"所取定义域正是C。\\\"},\\n        {\\\"id\\\": \\\"H3\\\", \\\"argument\\\": \\\"|f(z)|=|z|≤1+|z|；可取C=1。\\\"}\\n      ],\\n      \\\"replacement_checks\\\": [],\\n      \\\"target_failure\\\": {\\n        \\\"id\\\": \\\"C1\\\",\\n        \\\"argument\\\": \\\"若f(z)=az+b，则代入0、1得b=0、a=1；代入i却要求i=−i，矛盾。\\\"\\n      },\\n      \\\"argument\\\": \\\"删去全纯条件后，复共轭函数满足其余条件，但不是所要求的多项式。\\\",\\n      \\\"evidence\\\": [\\n        {\\\"kind\\\": \\\"mathematical_argument\\\", \\\"artifact\\\": null, \\\"scope\\\": \\\"H2单独删除的反例、保留条件及结论失败\\\"}\\n      ],\\n      \\\"dependencies\\\": [],\\n      \\\"uncertainties\\\": [],\\n      \\\"next_steps\\\": [],\\n      \\\"cost\\\": {\\\"elapsed_seconds\\\": null, \\\"model_calls\\\": null, \\\"tool_calls\\\": null, \\\"usd\\\": null}\\n    },\\n    {\\n      \\\"task_id\\\": \\\"FINAL-CA\\\",\\n      \\\"hypotheses\\\": [\\n        {\\\"id\\\": \\\"H1\\\", \\\"text\\\": \\\"Ω=C。\\\"},\\n        {\\\"id\\\": \\\"H2\\\", \\\"text\\\": \\\"f在Ω全纯。\\\"},\\n        {\\\"id\\\": \\\"H3\\\", \\\"text\\\": \\\"存在有限常数C>0，使每个z∈Ω均满足|f(z)|≤C(1+|z|)。\\\"}\\n      ],\\n      \\\"intervention\\\": {\\\"removed\\\": [\\\"H3\\\"], \\\"replacement\\\": null},\\n      \\\"judgment\\\": \\\"indispensable\\\",\\n      \\\"witness\\\": \\\"Ω=C，f(z)=z²。\\\",\\n      \\\"retained_checks\\\": [\\n        {\\\"id\\\": \\\"H1\\\", \\\"argument\\\": \\\"所取定义域正是C。\\\"},\\n        {\\\"id\\\": \\\"H2\\\", \\\"argument\\\": \\\"z²是多项式，在C上全纯。\\\"}\\n      ],\\n      \\\"replacement_checks\\\": [],\\n      \\\"target_failure\\\": {\\\"id\\\": \\\"C1\\\", \\\"argument\\\": \\\"f″(z)=2，而次数至多1的多项式二阶导数恒为0。\\\"},\\n      \\\"argument\\\": \\\"删去增长限制后，整函数z²满足其余条件，却不满足结论。\\\",\\n      \\\"evidence\\\": [\\n        {\\\"kind\\\": \\\"mathematical_argument\\\", \\\"artifact\\\": null, \\\"scope\\\": \\\"H3单独删除的反例、保留条件及结论失败\\\"}\\n      ],\\n      \\\"dependencies\\\": [],\\n      \\\"uncertainties\\\": [],\\n      \\\"next_steps\\\": [],\\n      \\\"cost\\\": {\\\"elapsed_seconds\\\": null, \\\"model_calls\\\": null, \\\"tool_calls\\\": null, \\\"usd\\\": null}\\n    },\\n    {\\n      \\\"task_id\\\": \\\"FINAL-CA\\\",\\n      \\\"hypotheses\\\": [\\n        {\\\"id\\\": \\\"H1\\\", \\\"text\\\": \\\"Ω=C。\\\"},\\n        {\\\"id\\\": \\\"H2\\\", \\\"text\\\": \\\"f在Ω全纯。\\\"},\\n        {\\\"id\\\": \\\"H3\\\", \\\"text\\\": \\\"存在有限常数C>0，使每个z∈Ω均满足|f(z)|≤C(1+|z|)。\\\"}\\n      ],\\n      \\\"intervention\\\": {\\\"removed\\\": [\\\"H1\\\", \\\"H3\\\"], \\\"replacement\\\": null},\\n      \\\"judgment\\\": \\\"joint\\\",\\n      \\\"witness\\\": \\\"Ω={z∈C:|z|<1}，f(z)=1/(1-z)。\\\",\\n      \\\"retained_checks\\\": [\\n        {\\\"id\\\": \\\"H2\\\", \\\"argument\\\": \\\"1不在Ω中，故f在Ω全纯。\\\"}\\n      ],\\n      \\\"replacement_checks\\\": [],\\n      \\\"target_failure\\\": {\\\"id\\\": \\\"C1\\\", \\\"argument\\\": \\\"f″(0)=2≠0，故f不在Ω上等于次数至多1的多项式。\\\"},\\n      \\\"argument\\\": \\\"Ω是非空复开集；沿实数r趋于1时f(r)无界，故此例也不满足被删去的H3。\\\",\\n      \\\"evidence\\\": [\\n        {\\\"kind\\\": \\\"mathematical_argument\\\", \\\"artifact\\\": null, \\\"scope\\\": \\\"H1与H3联合删除的反例、保留条件及结论失败\\\"}\\n      ],\\n      \\\"dependencies\\\": [],\\n      \\\"uncertainties\\\": [],\\n      \\\"next_steps\\\": [],\\n      \\\"cost\\\": {\\\"elapsed_seconds\\\": null, \\\"model_calls\\\": null, \\\"tool_calls\\\": null, \\\"usd\\\": null}\\n    }\\n  ],\\n  \\\"dependency_map\\\": {\\n    \\\"C1\\\": [\\\"H1\\\", \\\"H2\\\", \\\"H3\\\"],\\n    \\\"单独删除\\\": {\\n      \\\"H1\\\": \\\"有反例\\\",\\n      \\\"H2\\\": \\\"有反例\\\",\\n      \\\"H3\\\": \\\"有反例\\\"\\n    },\\n    \\\"已分析的联合删除\\\": {\\n      \\\"H1、H3\\\": \\\"有反例；不主张这是只能联合删除才出现的失败\\\"\\n    }\\n  },\\n  \\\"remaining_work\\\": {\\n    \\\"已完成\\\": \\\"证明原命题，分析全部三项实质假设的单独删除，并分析一组联合删除。\\\",\\n    \\\"未探索\\\": \\\"其他联合删除及假设的任意弱化；背景B1、B2仅作为对象与函数的类型约束，未作删除干预。\\\"\\n  }\\n}\"}],\"phase\":\"final_answer\",\"role\":\"assistant\"}],\"parallel_tool_calls\":true,\"presence_penalty\":0,\"previous_response_id\":null,\"prompt_cache_key\":\"01a1ab60-c597-770b-8287-6d0f40900df6\",\"prompt_cache_retention\":\"24h\",\"reasoning\":{\"context\":\"all_turns\",\"effort\":\"high\",\"mode\":\"standard\",\"summary\":null},\"safety_identifier\":null,\"service_tier\":\"default\",\"store\":false,\"temperature\":1,\"text\":{\"format\":{\"type\":\"text\"},\"verbosity\":\"medium\"},\"tool_choice\":\"auto\",\"tool_usage\":{\"image_gen\":{\"input_tokens\":0,\"input_tokens_details\":{\"image_tokens\":0,\"text_tokens\":0},\"output_tokens\":0,\"output_tokens_details\":{\"image_tokens\":0,\"text_tokens\":0},\"total_tokens\":0},\"web_search\":{\"num_requests\":0}},\"tools\":[],\"top_logprobs\":0,\"top_p\":0.98,\"truncation\":\"disabled\",\"usage\":{\"input_tokens\":1718,\"input_tokens_details\":{\"cache_write_tokens\":1715,\"cached_tokens\":0},\"output_tokens\":4078,\"output_tokens_details\":{\"reasoning_tokens\":1671},\"total_tokens\":5796},\"user\":null,\"metadata\":{}}",
+  "error": null,
+  "task_id": "FINAL-CA",
+  "arm": "direct_model",
+  "kind": "full_theorem",
+  "prediction": {
+    "task_id": "FINAL-CA",
+    "theorem": {
+      "background": [
+        {
+          "id": "B1",
+          "text": "Ω为非空复开集。"
+        },
+        {
+          "id": "B2",
+          "text": "f:Ω→C。"
+        }
+      ],
+      "hypotheses": [
+        {
+          "id": "H1",
+          "text": "Ω=C。"
+        },
+        {
+          "id": "H2",
+          "text": "f在Ω全纯。"
+        },
+        {
+          "id": "H3",
+          "text": "存在有限常数C>0，使每个z∈Ω均满足|f(z)|≤C(1+|z|)。"
+        }
+      ],
+      "conclusion": [
+        {
+          "id": "C1",
+          "text": "存在a,b∈C，使每个z∈Ω均满足f(z)=az+b。"
+        }
+      ],
+      "argument": "由柯西估计，在以0为心、半径R的圆上，n≥2时有|f⁽ⁿ⁾(0)|≤n!C(1+R)/Rⁿ。令R趋于无穷，各高阶导数为零；全纯函数的泰勒展开给出f(z)=f(0)+f′(0)z。"
+    },
+    "interventions": [
+      {
+        "task_id": "FINAL-CA",
+        "hypotheses": [
+          {
+            "id": "H1",
+            "text": "Ω=C。"
+          },
+          {
+            "id": "H2",
+            "text": "f在Ω全纯。"
+          },
+          {
+            "id": "H3",
+            "text": "存在有限常数C>0，使每个z∈Ω均满足|f(z)|≤C(1+|z|)。"
+          }
+        ],
+        "intervention": {
+          "removed": [
+            "H1"
+          ],
+          "replacement": null
+        },
+        "judgment": "indispensable",
+        "witness": "Ω={z∈C:|z|<1}，f(z)=1/(2-z)。",
+        "retained_checks": [
+          {
+            "id": "H2",
+            "argument": "2不在Ω中，故f在Ω全纯。"
+          },
+          {
+            "id": "H3",
+            "argument": "在Ω中|2-z|>1，故|f(z)|<1≤1+|z|；可取C=1。"
+          }
+        ],
+        "replacement_checks": [],
+        "target_failure": {
+          "id": "C1",
+          "argument": "f″(0)=1/4≠0，故f不可能在Ω上等于一次或常数多项式。"
+        },
+        "argument": "单位圆盘是非空复开集；删去H1后，其余条件成立而结论不成立。",
+        "evidence": [
+          {
+            "kind": "mathematical_argument",
+            "artifact": null,
+            "scope": "H1单独删除的反例、保留条件及结论失败"
+          }
+        ],
+        "dependencies": [],
+        "uncertainties": [],
+        "next_steps": [],
+        "cost": {
+          "elapsed_seconds": null,
+          "model_calls": null,
+          "tool_calls": null,
+          "usd": null
+        }
+      },
+      {
+        "task_id": "FINAL-CA",
+        "hypotheses": [
+          {
+            "id": "H1",
+            "text": "Ω=C。"
+          },
+          {
+            "id": "H2",
+            "text": "f在Ω全纯。"
+          },
+          {
+            "id": "H3",
+            "text": "存在有限常数C>0，使每个z∈Ω均满足|f(z)|≤C(1+|z|)。"
+          }
+        ],
+        "intervention": {
+          "removed": [
+            "H2"
+          ],
+          "replacement": null
+        },
+        "judgment": "indispensable",
+        "witness": "Ω=C，f(z)=复共轭z。",
+        "retained_checks": [
+          {
+            "id": "H1",
+            "argument": "所取定义域正是C。"
+          },
+          {
+            "id": "H3",
+            "argument": "|f(z)|=|z|≤1+|z|；可取C=1。"
+          }
+        ],
+        "replacement_checks": [],
+        "target_failure": {
+          "id": "C1",
+          "argument": "若f(z)=az+b，则代入0、1得b=0、a=1；代入i却要求i=−i，矛盾。"
+        },
+        "argument": "删去全纯条件后，复共轭函数满足其余条件，但不是所要求的多项式。",
+        "evidence": [
+          {
+            "kind": "mathematical_argument",
+            "artifact": null,
+            "scope": "H2单独删除的反例、保留条件及结论失败"
+          }
+        ],
+        "dependencies": [],
+        "uncertainties": [],
+        "next_steps": [],
+        "cost": {
+          "elapsed_seconds": null,
+          "model_calls": null,
+          "tool_calls": null,
+          "usd": null
+        }
+      },
+      {
+        "task_id": "FINAL-CA",
+        "hypotheses": [
+          {
+            "id": "H1",
+            "text": "Ω=C。"
+          },
+          {
+            "id": "H2",
+            "text": "f在Ω全纯。"
+          },
+          {
+            "id": "H3",
+            "text": "存在有限常数C>0，使每个z∈Ω均满足|f(z)|≤C(1+|z|)。"
+          }
+        ],
+        "intervention": {
+          "removed": [
+            "H3"
+          ],
+          "replacement": null
+        },
+        "judgment": "indispensable",
+        "witness": "Ω=C，f(z)=z²。",
+        "retained_checks": [
+          {
+            "id": "H1",
+            "argument": "所取定义域正是C。"
+          },
+          {
+            "id": "H2",
+            "argument": "z²是多项式，在C上全纯。"
+          }
+        ],
+        "replacement_checks": [],
+        "target_failure": {
+          "id": "C1",
+          "argument": "f″(z)=2，而次数至多1的多项式二阶导数恒为0。"
+        },
+        "argument": "删去增长限制后，整函数z²满足其余条件，却不满足结论。",
+        "evidence": [
+          {
+            "kind": "mathematical_argument",
+            "artifact": null,
+            "scope": "H3单独删除的反例、保留条件及结论失败"
+          }
+        ],
+        "dependencies": [],
+        "uncertainties": [],
+        "next_steps": [],
+        "cost": {
+          "elapsed_seconds": null,
+          "model_calls": null,
+          "tool_calls": null,
+          "usd": null
+        }
+      },
+      {
+        "task_id": "FINAL-CA",
+        "hypotheses": [
+          {
+            "id": "H1",
+            "text": "Ω=C。"
+          },
+          {
+            "id": "H2",
+            "text": "f在Ω全纯。"
+          },
+          {
+            "id": "H3",
+            "text": "存在有限常数C>0，使每个z∈Ω均满足|f(z)|≤C(1+|z|)。"
+          }
+        ],
+        "intervention": {
+          "removed": [
+            "H1",
+            "H3"
+          ],
+          "replacement": null
+        },
+        "judgment": "joint",
+        "witness": "Ω={z∈C:|z|<1}，f(z)=1/(1-z)。",
+        "retained_checks": [
+          {
+            "id": "H2",
+            "argument": "1不在Ω中，故f在Ω全纯。"
+          }
+        ],
+        "replacement_checks": [],
+        "target_failure": {
+          "id": "C1",
+          "argument": "f″(0)=2≠0，故f不在Ω上等于次数至多1的多项式。"
+        },
+        "argument": "Ω是非空复开集；沿实数r趋于1时f(r)无界，故此例也不满足被删去的H3。",
+        "evidence": [
+          {
+            "kind": "mathematical_argument",
+            "artifact": null,
+            "scope": "H1与H3联合删除的反例、保留条件及结论失败"
+          }
+        ],
+        "dependencies": [],
+        "uncertainties": [],
+        "next_steps": [],
+        "cost": {
+          "elapsed_seconds": null,
+          "model_calls": null,
+          "tool_calls": null,
+          "usd": null
+        }
+      }
+    ],
+    "dependency_map": {
+      "C1": [
+        "H1",
+        "H2",
+        "H3"
+      ],
+      "单独删除": {
+        "H1": "有反例",
+        "H2": "有反例",
+        "H3": "有反例"
+      },
+      "已分析的联合删除": {
+        "H1、H3": "有反例；不主张这是只能联合删除才出现的失败"
+      }
+    },
+    "remaining_work": {
+      "已完成": "证明原命题，分析全部三项实质假设的单独删除，并分析一组联合删除。",
+      "未探索": "其他联合删除及假设的任意弱化；背景B1、B2仅作为对象与函数的类型约束，未作删除干预。"
+    }
+  },
+  "structure_errors": [
+    "duplicate task_id FINAL-CA",
+    "duplicate task_id FINAL-CA",
+    "duplicate task_id FINAL-CA"
+  ],
+  "actual_model": "gpt-6-sol",
+  "usage": {
+    "input_tokens": 1718,
+    "input_tokens_details": {
+      "cache_write_tokens": 1715,
+      "cached_tokens": 0
+    },
+    "output_tokens": 4078,
+    "output_tokens_details": {
+      "reasoning_tokens": 1671
+    },
+    "total_tokens": 5796
+  },
+  "response_status": "completed",
+  "answer": "{\n  \"task_id\": \"FINAL-CA\",\n  \"theorem\": {\n    \"background\": [\n      {\"id\": \"B1\", \"text\": \"Ω为非空复开集。\"},\n      {\"id\": \"B2\", \"text\": \"f:Ω→C。\"}\n    ],\n    \"hypotheses\": [\n      {\"id\": \"H1\", \"text\": \"Ω=C。\"},\n      {\"id\": \"H2\", \"text\": \"f在Ω全纯。\"},\n      {\"id\": \"H3\", \"text\": \"存在有限常数C>0，使每个z∈Ω均满足|f(z)|≤C(1+|z|)。\"}\n    ],\n    \"conclusion\": [\n      {\"id\": \"C1\", \"text\": \"存在a,b∈C，使每个z∈Ω均满足f(z)=az+b。\"}\n    ],\n    \"argument\": \"由柯西估计，在以0为心、半径R的圆上，n≥2时有|f⁽ⁿ⁾(0)|≤n!C(1+R)/Rⁿ。令R趋于无穷，各高阶导数为零；全纯函数的泰勒展开给出f(z)=f(0)+f′(0)z。\"\n  },\n  \"interventions\": [\n    {\n      \"task_id\": \"FINAL-CA\",\n      \"hypotheses\": [\n        {\"id\": \"H1\", \"text\": \"Ω=C。\"},\n        {\"id\": \"H2\", \"text\": \"f在Ω全纯。\"},\n        {\"id\": \"H3\", \"text\": \"存在有限常数C>0，使每个z∈Ω均满足|f(z)|≤C(1+|z|)。\"}\n      ],\n      \"intervention\": {\"removed\": [\"H1\"], \"replacement\": null},\n      \"judgment\": \"indispensable\",\n      \"witness\": \"Ω={z∈C:|z|<1}，f(z)=1/(2-z)。\",\n      \"retained_checks\": [\n        {\"id\": \"H2\", \"argument\": \"2不在Ω中，故f在Ω全纯。\"},\n        {\"id\": \"H3\", \"argument\": \"在Ω中|2-z|>1，故|f(z)|<1≤1+|z|；可取C=1。\"}\n      ],\n      \"replacement_checks\": [],\n      \"target_failure\": {\"id\": \"C1\", \"argument\": \"f″(0)=1/4≠0，故f不可能在Ω上等于一次或常数多项式。\"},\n      \"argument\": \"单位圆盘是非空复开集；删去H1后，其余条件成立而结论不成立。\",\n      \"evidence\": [\n        {\"kind\": \"mathematical_argument\", \"artifact\": null, \"scope\": \"H1单独删除的反例、保留条件及结论失败\"}\n      ],\n      \"dependencies\": [],\n      \"uncertainties\": [],\n      \"next_steps\": [],\n      \"cost\": {\"elapsed_seconds\": null, \"model_calls\": null, \"tool_calls\": null, \"usd\": null}\n    },\n    {\n      \"task_id\": \"FINAL-CA\",\n      \"hypotheses\": [\n        {\"id\": \"H1\", \"text\": \"Ω=C。\"},\n        {\"id\": \"H2\", \"text\": \"f在Ω全纯。\"},\n        {\"id\": \"H3\", \"text\": \"存在有限常数C>0，使每个z∈Ω均满足|f(z)|≤C(1+|z|)。\"}\n      ],\n      \"intervention\": {\"removed\": [\"H2\"], \"replacement\": null},\n      \"judgment\": \"indispensable\",\n      \"witness\": \"Ω=C，f(z)=复共轭z。\",\n      \"retained_checks\": [\n        {\"id\": \"H1\", \"argument\": \"所取定义域正是C。\"},\n        {\"id\": \"H3\", \"argument\": \"|f(z)|=|z|≤1+|z|；可取C=1。\"}\n      ],\n      \"replacement_checks\": [],\n      \"target_failure\": {\n        \"id\": \"C1\",\n        \"argument\": \"若f(z)=az+b，则代入0、1得b=0、a=1；代入i却要求i=−i，矛盾。\"\n      },\n      \"argument\": \"删去全纯条件后，复共轭函数满足其余条件，但不是所要求的多项式。\",\n      \"evidence\": [\n        {\"kind\": \"mathematical_argument\", \"artifact\": null, \"scope\": \"H2单独删除的反例、保留条件及结论失败\"}\n      ],\n      \"dependencies\": [],\n      \"uncertainties\": [],\n      \"next_steps\": [],\n      \"cost\": {\"elapsed_seconds\": null, \"model_calls\": null, \"tool_calls\": null, \"usd\": null}\n    },\n    {\n      \"task_id\": \"FINAL-CA\",\n      \"hypotheses\": [\n        {\"id\": \"H1\", \"text\": \"Ω=C。\"},\n        {\"id\": \"H2\", \"text\": \"f在Ω全纯。\"},\n        {\"id\": \"H3\", \"text\": \"存在有限常数C>0，使每个z∈Ω均满足|f(z)|≤C(1+|z|)。\"}\n      ],\n      \"intervention\": {\"removed\": [\"H3\"], \"replacement\": null},\n      \"judgment\": \"indispensable\",\n      \"witness\": \"Ω=C，f(z)=z²。\",\n      \"retained_checks\": [\n        {\"id\": \"H1\", \"argument\": \"所取定义域正是C。\"},\n        {\"id\": \"H2\", \"argument\": \"z²是多项式，在C上全纯。\"}\n      ],\n      \"replacement_checks\": [],\n      \"target_failure\": {\"id\": \"C1\", \"argument\": \"f″(z)=2，而次数至多1的多项式二阶导数恒为0。\"},\n      \"argument\": \"删去增长限制后，整函数z²满足其余条件，却不满足结论。\",\n      \"evidence\": [\n        {\"kind\": \"mathematical_argument\", \"artifact\": null, \"scope\": \"H3单独删除的反例、保留条件及结论失败\"}\n      ],\n      \"dependencies\": [],\n      \"uncertainties\": [],\n      \"next_steps\": [],\n      \"cost\": {\"elapsed_seconds\": null, \"model_calls\": null, \"tool_calls\": null, \"usd\": null}\n    },\n    {\n      \"task_id\": \"FINAL-CA\",\n      \"hypotheses\": [\n        {\"id\": \"H1\", \"text\": \"Ω=C。\"},\n        {\"id\": \"H2\", \"text\": \"f在Ω全纯。\"},\n        {\"id\": \"H3\", \"text\": \"存在有限常数C>0，使每个z∈Ω均满足|f(z)|≤C(1+|z|)。\"}\n      ],\n      \"intervention\": {\"removed\": [\"H1\", \"H3\"], \"replacement\": null},\n      \"judgment\": \"joint\",\n      \"witness\": \"Ω={z∈C:|z|<1}，f(z)=1/(1-z)。\",\n      \"retained_checks\": [\n        {\"id\": \"H2\", \"argument\": \"1不在Ω中，故f在Ω全纯。\"}\n      ],\n      \"replacement_checks\": [],\n      \"target_failure\": {\"id\": \"C1\", \"argument\": \"f″(0)=2≠0，故f不在Ω上等于次数至多1的多项式。\"},\n      \"argument\": \"Ω是非空复开集；沿实数r趋于1时f(r)无界，故此例也不满足被删去的H3。\",\n      \"evidence\": [\n        {\"kind\": \"mathematical_argument\", \"artifact\": null, \"scope\": \"H1与H3联合删除的反例、保留条件及结论失败\"}\n      ],\n      \"dependencies\": [],\n      \"uncertainties\": [],\n      \"next_steps\": [],\n      \"cost\": {\"elapsed_seconds\": null, \"model_calls\": null, \"tool_calls\": null, \"usd\": null}\n    }\n  ],\n  \"dependency_map\": {\n    \"C1\": [\"H1\", \"H2\", \"H3\"],\n    \"单独删除\": {\n      \"H1\": \"有反例\",\n      \"H2\": \"有反例\",\n      \"H3\": \"有反例\"\n    },\n    \"已分析的联合删除\": {\n      \"H1、H3\": \"有反例；不主张这是只能联合删除才出现的失败\"\n    }\n  },\n  \"remaining_work\": {\n    \"已完成\": \"证明原命题，分析全部三项实质假设的单独删除，并分析一组联合删除。\",\n    \"未探索\": \"其他联合删除及假设的任意弱化；背景B1、B2仅作为对象与函数的类型约束，未作删除干预。\"\n  }\n}",
+  "incomplete_details": null,
+  "attempt": 1,
+  "task_digest": "df20c8cbd230ea0fbf82789e2f5298d5d085407bd807c3aab99e3aaf9d9052b4"
+}

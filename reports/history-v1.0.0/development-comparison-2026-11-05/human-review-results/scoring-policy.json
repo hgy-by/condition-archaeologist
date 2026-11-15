@@ -1,0 +1,8 @@
+{
+  "core_metrics": "Existing evaluation/lab.py unchanged",
+  "score_mode": "provisional_internal",
+  "reason": "Human model-output review received in conversation; release reference-gold fields remain pending detailed review linkage.",
+  "reporting_gap_policy": "Track separately. No ad hoc deductions or reclassification of a valid witness as mathematically invalid.",
+  "numeric_100_point_scores": "not assigned; per-dimension human ratings and anchored deductions are unavailable",
+  "hypothesis_extraction": "not independently measured; inventory is included in task inputs"
+}

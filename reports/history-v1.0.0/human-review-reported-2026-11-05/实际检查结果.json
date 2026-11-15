@@ -1,0 +1,22 @@
+{
+  "data_consistency": {
+    "status": "pass",
+    "tasks": 29,
+    "families": 20,
+    "splits": {
+      "development": 15,
+      "validation": 8,
+      "heldout": 6
+    },
+    "pending_review": 29,
+    "errors": [],
+    "scope": "data consistency only, not mathematical truth"
+  },
+  "matches_saved_v020_review_index": true,
+  "formal_score_entry": {
+    "status": "reference_review_record_required",
+    "reason": "正式评分拒绝：参考答案尚未逐题独立审阅。可用 --provisional 生成明确标注的内部诊断。"
+  },
+  "model_tests_run_this_turn": false,
+  "mathematical_re_review_run_this_turn": false
+}

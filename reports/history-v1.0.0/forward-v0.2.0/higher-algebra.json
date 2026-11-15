@@ -1,0 +1,214 @@
+{
+  "theorem": {
+    "statement": "实对称矩阵A存在实正交矩阵Q及实对角矩阵D，使A=QDQ^T。",
+    "ambient": "矩阵阶数为正整数，正交指Q^TQ=I；实域上使用标准欧氏内积。实正交对角化的结论包含所有矩阵均为实矩阵。",
+    "hypotheses": [
+      {
+        "id": "H1",
+        "text": "A为n×n实矩阵，n≥1"
+      },
+      {
+        "id": "H2",
+        "text": "A^T=A"
+      }
+    ],
+    "conclusions": [
+      {
+        "id": "C1",
+        "text": "存在实正交对角化A=QDQ^T"
+      }
+    ]
+  },
+  "interventions": [
+    {
+      "task_id": "F-AL-symmetry",
+      "hypotheses": [
+        {
+          "id": "H1",
+          "text": "A为n×n实矩阵，n≥1"
+        },
+        {
+          "id": "H2",
+          "text": "A^T=A"
+        }
+      ],
+      "intervention": {
+        "removed": [
+          "H2"
+        ],
+        "replacement": null
+      },
+      "judgment": "indispensable",
+      "witness": "n=2，A=[[0,1],[0,0]]",
+      "retained_checks": [
+        {
+          "id": "H1",
+          "argument": "A是实2×2矩阵。"
+        }
+      ],
+      "replacement_checks": [],
+      "target_failure": {
+        "id": "C1",
+        "argument": "A不可能实正交对角化。"
+      },
+      "argument": "A非对称，A²=0但A≠0。若可对角化，其所有对角特征值均满足λ²=0，从而D=0并推出A=0，矛盾。因此甚至没有普通对角化，更无正交对角化。",
+      "evidence": [
+        {
+          "kind": "mathematical_argument",
+          "artifact": null,
+          "scope": "所写明确命题版本下的数学论证；未经独立人工核验或形式化核验。"
+        }
+      ],
+      "dependencies": [],
+      "uncertainties": [],
+      "next_steps": [
+        "独立数学审阅本次构造及对象约定。"
+      ],
+      "cost": {
+        "elapsed_seconds": null,
+        "model_calls": null,
+        "tool_calls": null,
+        "usd": null
+      }
+    },
+    {
+      "task_id": "F-AL-real-field",
+      "hypotheses": [
+        {
+          "id": "H1",
+          "text": "A为n×n实矩阵，n≥1"
+        },
+        {
+          "id": "H2",
+          "text": "A^T=A"
+        }
+      ],
+      "intervention": {
+        "removed": [
+          "H1"
+        ],
+        "replacement": null
+      },
+      "judgment": "type_constraint",
+      "witness": "改写到复对称矩阵，A=[[i,1],[1,−i]]。",
+      "retained_checks": [
+        {
+          "id": "H2",
+          "argument": "该复矩阵满足A^T=A。"
+        }
+      ],
+      "replacement_checks": [],
+      "target_failure": null,
+      "argument": "直接删除“实矩阵”会使“实正交对角化”的原结论仍强制A为实，且n×n背景丢失，需先重写。取复背景n×n并将结论扩为复正交相似对角化时，给出的A非零而A²=0，故不可对角化，当然不能复正交对角化。若将对称改为Hermitian并将正交改为酉，则得到另一条有效谱定理，不应混称本命题删实域后的原结论。",
+      "evidence": [
+        {
+          "kind": "mathematical_argument",
+          "artifact": null,
+          "scope": "所写明确命题版本下的数学论证；未经独立人工核验或形式化核验。"
+        }
+      ],
+      "dependencies": [],
+      "uncertainties": [
+        "原命题底域与对象类型一起给出，不能把本次明确改写冒充未改类型的单删反例。"
+      ],
+      "next_steps": [
+        "独立数学审阅本次构造及对象约定。"
+      ],
+      "cost": {
+        "elapsed_seconds": null,
+        "model_calls": null,
+        "tool_calls": null,
+        "usd": null
+      }
+    },
+    {
+      "task_id": "F-AL-finite-matrix",
+      "hypotheses": [
+        {
+          "id": "H1",
+          "text": "A为n×n实矩阵，n≥1"
+        },
+        {
+          "id": "H2",
+          "text": "A^T=A"
+        }
+      ],
+      "intervention": {
+        "removed": [],
+        "replacement": null
+      },
+      "judgment": "type_constraint",
+      "witness": "改写到H=L²([0,1])，Tg(x)=xg(x)。",
+      "retained_checks": [
+        {
+          "id": "H1",
+          "argument": "原H1为有限实矩阵类型，改写时替换为实Hilbert空间上的有界线性算子。"
+        },
+        {
+          "id": "H2",
+          "argument": "在改写后版本，积分内积满足〈Tg,h〉=〈g,Th〉，故T自伴。"
+        }
+      ],
+      "replacement_checks": [],
+      "target_failure": null,
+      "argument": "矩阵类型内含有限阶数，不能删除而仍沿用有限矩阵结论。若改写为“任意有界自伴算子都有特征向量正交基”，此命题失败：||Tg||≤||g||，且T自伴。若Tg=λg，则(x−λ)g(x)=0 a.e.，所以g至多支撑在单点{λ}，在Lebesgue测度下g=0 a.e.。因此无非零特征向量，更不可能存在特征向量基。一般算子谱定理有其他表达方式，这个例子不否定一般谱定理。",
+      "evidence": [
+        {
+          "kind": "mathematical_argument",
+          "artifact": null,
+          "scope": "所写明确命题版本下的数学论证；未经独立人工核验或形式化核验。"
+        }
+      ],
+      "dependencies": [],
+      "uncertainties": [
+        "这里分析的是特征向量基式对角化的改写，不是无限维投影值测度谱定理。"
+      ],
+      "next_steps": [
+        "独立数学审阅本次构造及对象约定。"
+      ],
+      "cost": {
+        "elapsed_seconds": null,
+        "model_calls": null,
+        "tool_calls": null,
+        "usd": null
+      }
+    }
+  ],
+  "dependency_map": [
+    {
+      "background": "正阶有限实矩阵",
+      "conditions": [
+        "H2"
+      ],
+      "conclusion": "C1",
+      "evidence": "非对称幂零矩阵给出删除H2后的反例。",
+      "unexplored": "矩形矩阵、不同双线性形式、无限维版本需改写。"
+    }
+  ],
+  "remaining_work": [
+    "结论“实特征值”“正交特征基”“正交相似对角化”可以进一步拆分单独评分。"
+  ],
+  "run_metadata": {
+    "run_kind": "AI_forward_execution_revised_after_explicit_classification_review",
+    "date": "2026-11-03",
+    "skill_used": "condition-archaeologist",
+    "sources_accessed": [
+      "SKILL.md",
+      "references/judgment-protocol.md",
+      "references/output-schema.md",
+      "references/strategies.md",
+      "references/verification.md"
+    ],
+    "forbidden_sources_not_read": [
+      "references/seeds.json",
+      "evaluation",
+      "prior reports",
+      "other agent conclusions"
+    ],
+    "human_reviewed": false,
+    "benchmark_score": null,
+    "original_run_preserved_at": "original-run/higher-algebra.json",
+    "revision_status": "rechecked_no_mathematical_content_change",
+    "revision_note": "修订输出不等同原始运行结果；原始JSON、中文报告和结构日志已保留。"
+  }
+}

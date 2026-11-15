@@ -1,0 +1,77 @@
+[
+  {
+    "task_id": "MA01",
+    "prompt": "完成以下数学任务，输出一个JSON对象。\n{\"task_id\": \"MA01\", \"subject\": \"数学分析\", \"statement\": \"设a<b为有限实数，f:[a,b]→R在[a,b]连续、在(a,b)可微，且f(a)=f(b)，则存在c∈(a,b)使f′(c)=0。\", \"hypotheses\": [{\"id\": \"H1\", \"text\": \"f 在 [a,b] 连续\"}, {\"id\": \"H2\", \"text\": \"f 在 (a,b) 可微\"}, {\"id\": \"H3\", \"text\": \"a<b 为有限实数\"}, {\"id\": \"H4\", \"text\": \"f(a)=f(b)\"}], \"intervention\": {\"removed\": [\"H2\"], \"replacement\": null}, \"conclusions\": [{\"id\": \"C1\", \"text\": \"存在内部导数为0的点\"}], \"ambient\": \"f:[a,b]→R；a,b为实数，导数为实导数。\"}",
+    "task_digest": "76eaaf341d886b25ef9bdfd9942b607efc5efedce873b11d470382ea7a3f8cf3"
+  },
+  {
+    "task_id": "MA02",
+    "prompt": "完成以下数学任务，输出一个JSON对象。\n{\"task_id\": \"MA02\", \"subject\": \"数学分析\", \"statement\": \"设a<b为有限实数，f:[a,b]→R在[a,b]连续、在(a,b)可微，且f(a)=f(b)，则存在c∈(a,b)使f′(c)=0。\", \"hypotheses\": [{\"id\": \"H1\", \"text\": \"f 在 [a,b] 连续\"}, {\"id\": \"H2\", \"text\": \"f 在 (a,b) 可微\"}, {\"id\": \"H3\", \"text\": \"a<b 为有限实数\"}, {\"id\": \"H4\", \"text\": \"f(a)=f(b)\"}], \"intervention\": {\"removed\": [\"H1\"], \"replacement\": null}, \"conclusions\": [{\"id\": \"C1\", \"text\": \"存在内部导数为0的点\"}], \"ambient\": \"f:[a,b]→R；a,b为实数，导数为实导数。\"}",
+    "task_digest": "64f26c37eb3aa3ed5b93dd21a103cfff5891f6091f26bd45c4ef55b5cb32c026"
+  },
+  {
+    "task_id": "MA03",
+    "prompt": "完成以下数学任务，输出一个JSON对象。\n{\"task_id\": \"MA03\", \"subject\": \"数学分析\", \"statement\": \"非空紧集 K⊂R 上连续实函数取到最大最小值\", \"hypotheses\": [{\"id\": \"H1\", \"text\": \"K为紧集\"}, {\"id\": \"H2\", \"text\": \"f:K→R连续\"}, {\"id\": \"H3\", \"text\": \"K非空\"}], \"intervention\": {\"removed\": [\"H1\"], \"replacement\": null}, \"conclusions\": [{\"id\": \"C1\", \"text\": \"取到最大最小值\"}], \"ambient\": \"K⊂R，f为定义在K上的实值函数。\"}",
+    "task_digest": "3c822267c7a839d34f16a94458aade9c1e96db2e4e44193f8eef2e46f668cb48"
+  },
+  {
+    "task_id": "MA04",
+    "prompt": "完成以下数学任务，输出一个JSON对象。\n{\"task_id\": \"MA04\", \"subject\": \"数学分析\", \"statement\": \"连续实函数列f_n:[0,1]→R一致收敛于f，则f在[0,1]连续。\", \"hypotheses\": [{\"id\": \"H1\", \"text\": \"各 f_n 在[0,1]连续\"}, {\"id\": \"H2\", \"text\": \"f_n一致收敛于f\"}], \"intervention\": {\"removed\": [\"H2\"], \"replacement\": {\"id\": \"H2w\", \"text\": \"f_n逐点收敛于f\"}}, \"conclusions\": [{\"id\": \"C1\", \"text\": \"极限f连续\"}], \"ambient\": \"n=1,2,...；f_n,f均为[0,1]上的实值函数。\"}",
+    "task_digest": "e45c5b57fafe4c9159a9d8888f19a76035b63c365ab55df5308b336347794d05"
+  },
+  {
+    "task_id": "AL01",
+    "prompt": "完成以下数学任务，输出一个JSON对象。\n{\"task_id\": \"AL01\", \"subject\": \"高等代数\", \"statement\": \"实对称方阵可实正交对角化\", \"hypotheses\": [{\"id\": \"H1\", \"text\": \"A为实方阵\"}, {\"id\": \"H2\", \"text\": \"A^T=A\"}], \"intervention\": {\"removed\": [\"H2\"], \"replacement\": null}, \"conclusions\": [{\"id\": \"C1\", \"text\": \"A可实正交对角化\"}], \"ambient\": \"按定理的明确对象约定\"}",
+    "task_digest": "134e95d49f90db59b1aef3f4a96428f92c8ec1c53a3a5432e39cc8060043b6d6"
+  },
+  {
+    "task_id": "AL02",
+    "prompt": "完成以下数学任务，输出一个JSON对象。\n{\"task_id\": \"AL02\", \"subject\": \"高等代数\", \"statement\": \"令F∈{R,C}，V为正维有限维F向量空间，T:V→V为F线性映射。若F=C，则T在F中有特征值。\", \"hypotheses\": [{\"id\": \"H1\", \"text\": \"F=C\"}, {\"id\": \"H2\", \"text\": \"V为正维有限维F向量空间\"}, {\"id\": \"H3\", \"text\": \"T:V→V为F线性自映射\"}], \"intervention\": {\"removed\": [\"H1\"], \"replacement\": null}, \"conclusions\": [{\"id\": \"C1\", \"text\": \"在声明底域中有特征值\"}], \"ambient\": \"F∈{R,C}；特征值和线性性均相对于所声明的F。\"}",
+    "task_digest": "8e44dc9bd6e4ef6786b0d4df01f58cc631b5b860e9febc6ede5aff8422682c04"
+  },
+  {
+    "task_id": "AL03",
+    "prompt": "完成以下数学任务，输出一个JSON对象。\n{\"task_id\": \"AL03\", \"subject\": \"高等代数\", \"statement\": \"有限维 V 上线性自映射单射当且仅当满射\", \"hypotheses\": [{\"id\": \"H1\", \"text\": \"V有限维\"}, {\"id\": \"H2\", \"text\": \"T:V→V线性\"}], \"intervention\": {\"removed\": [\"H1\"], \"replacement\": null}, \"conclusions\": [{\"id\": \"C1\", \"text\": \"单射当且仅当满射\"}], \"ambient\": \"按定理的明确对象约定\"}",
+    "task_digest": "abaf51b16a0f26c2c356e0f382615f10b0aa54eb04e4c6799e56431f80fff261"
+  },
+  {
+    "task_id": "AL04",
+    "prompt": "完成以下数学任务，输出一个JSON对象。\n{\"task_id\": \"AL04\", \"subject\": \"高等代数\", \"statement\": \"n×n复矩阵有n个互异特征值则可对角化\", \"hypotheses\": [{\"id\": \"H1\", \"text\": \"A为n×n复矩阵 n≥1\"}, {\"id\": \"H2\", \"text\": \"A有n个互异特征值\"}], \"intervention\": {\"removed\": [\"H2\"], \"replacement\": null}, \"conclusions\": [{\"id\": \"C1\", \"text\": \"A可对角化\"}], \"ambient\": \"按定理的明确对象约定\"}",
+    "task_digest": "ca77e09ab27751bb4d077ec90680badfc908537f46d93a0b06c74c158f4cc588"
+  },
+  {
+    "task_id": "RA01",
+    "prompt": "完成以下数学任务，输出一个JSON对象。\n{\"task_id\": \"RA01\", \"subject\": \"实分析\", \"statement\": \"在固定测度空间上，设实可测f_n逐项可积，f∈L¹，且f_n→f a.e.。若存在可积g≥|f_n| a.e.对所有n成立，则∫f_n→∫f。\", \"hypotheses\": [{\"id\": \"H1\", \"text\": \"f_n可测且逐项可积\"}, {\"id\": \"H2\", \"text\": \"f_n→f a.e.\"}, {\"id\": \"H3\", \"text\": \"存在可积g使|f_n|≤g\"}, {\"id\": \"H4\", \"text\": \"f∈L¹(X,μ)\"}], \"intervention\": {\"removed\": [\"H3\"], \"replacement\": null}, \"conclusions\": [{\"id\": \"C1\", \"text\": \"∫f_n→∫f\"}], \"ambient\": \"固定测度空间；f_n及f为实可测函数，积分为Lebesgue积分；反例取(0,1)上的Lebesgue测度。\"}",
+    "task_digest": "36ce8a3df6616f7001e44b4161ae01adf3713b244a1f29585ddfd22205a42d17"
+  },
+  {
+    "task_id": "RA02",
+    "prompt": "完成以下数学任务，输出一个JSON对象。\n{\"task_id\": \"RA02\", \"subject\": \"实分析\", \"statement\": \"非负可测函数列满足∫liminf f_n≤liminf∫f_n\", \"hypotheses\": [{\"id\": \"H1\", \"text\": \"f_n可测\"}, {\"id\": \"H2\", \"text\": \"f_n≥0\"}, {\"id\": \"H3\", \"text\": \"每个∫f_n及∫liminf f_n均有定义，允许扩展实数\"}], \"intervention\": {\"removed\": [\"H2\"], \"replacement\": null}, \"conclusions\": [{\"id\": \"C1\", \"text\": \"Fatou不等式\"}], \"ambient\": \"固定测度空间，函数实值；使用Lebesgue积分，排除∞−∞。\"}",
+    "task_digest": "4d922487d9800ab62fb3a04b8cefcf2d0bb7e1c9e19a4cf3f915875a93b3924a"
+  },
+  {
+    "task_id": "RA03",
+    "prompt": "完成以下数学任务，输出一个JSON对象。\n{\"task_id\": \"RA03\", \"subject\": \"实分析\", \"statement\": \"测度可测集E_n递减且μ(E1)<∞，则μ(∩E_n)=lim μ(E_n)\", \"hypotheses\": [{\"id\": \"H1\", \"text\": \"E_n可测且递减\"}, {\"id\": \"H2\", \"text\": \"μ(E1)<∞\"}], \"intervention\": {\"removed\": [\"H2\"], \"replacement\": null}, \"conclusions\": [{\"id\": \"C1\", \"text\": \"测度从上连续\"}], \"ambient\": \"按定理的明确对象约定\"}",
+    "task_digest": "18c0c0b56bdf3ef8eca43b56dac9a14996207f0c23bb2505b45d1d3b6a75a85f"
+  },
+  {
+    "task_id": "CA01",
+    "prompt": "完成以下数学任务，输出一个JSON对象。\n{\"task_id\": \"CA01\", \"subject\": \"复分析\", \"statement\": \"有界整函数为常数\", \"hypotheses\": [{\"id\": \"H1\", \"text\": \"f在C上全纯\"}, {\"id\": \"H2\", \"text\": \"f在C上有界\"}], \"intervention\": {\"removed\": [\"H2\"], \"replacement\": null}, \"conclusions\": [{\"id\": \"C1\", \"text\": \"f为常数\"}], \"ambient\": \"按定理的明确对象约定\"}",
+    "task_digest": "9210aef96a89ed39c74d6f3983128af1d08923b7cbb591c26ff6b0d02726351b"
+  },
+  {
+    "task_id": "CA02",
+    "prompt": "完成以下数学任务，输出一个JSON对象。\n{\"task_id\": \"CA02\", \"subject\": \"复分析\", \"statement\": \"有界整函数为常数\", \"hypotheses\": [{\"id\": \"H1\", \"text\": \"f在C上全纯\"}, {\"id\": \"H2\", \"text\": \"f在C上有界\"}], \"intervention\": {\"removed\": [\"H1\"], \"replacement\": null}, \"conclusions\": [{\"id\": \"C1\", \"text\": \"f为常数\"}], \"ambient\": \"按定理的明确对象约定\"}",
+    "task_digest": "5b429b44b0a42944d6c822855367b149ea2ef589131414f56005d00e38f685bd"
+  },
+  {
+    "task_id": "CA04",
+    "prompt": "完成以下数学任务，输出一个JSON对象。\n{\"task_id\": \"CA04\", \"subject\": \"复分析\", \"statement\": \"连通开集Ω上全纯f的零点在Ω有聚点，则f恒零\", \"hypotheses\": [{\"id\": \"H1\", \"text\": \"Ω连通\"}, {\"id\": \"H2\", \"text\": \"f在Ω全纯\"}, {\"id\": \"H3\", \"text\": \"零点在Ω内有聚点\"}, {\"id\": \"H4\", \"text\": \"Ω为非空开集\"}], \"intervention\": {\"removed\": [\"H3\"], \"replacement\": null}, \"conclusions\": [{\"id\": \"C1\", \"text\": \"f恒零\"}], \"ambient\": \"Ω⊂C，f:Ω→C；全纯按开集上的逐点定义，不预设连通性。\"}",
+    "task_digest": "2241286ff29c4c44eb10bde7dae6c21b33b775de329ed726b2d9f74bb4d3d728"
+  },
+  {
+    "task_id": "CA05",
+    "prompt": "完成以下数学任务，输出一个JSON对象。\n{\"task_id\": \"CA05\", \"subject\": \"复分析\", \"statement\": \"连通域上全纯函数若模在内点取得局部最大则为常数\", \"hypotheses\": [{\"id\": \"H1\", \"text\": \"Ω连通开\"}, {\"id\": \"H2\", \"text\": \"f在Ω全纯\"}, {\"id\": \"H3\", \"text\": \"|f|在内点有局部最大\"}], \"intervention\": {\"removed\": [\"H2\"], \"replacement\": null}, \"conclusions\": [{\"id\": \"C1\", \"text\": \"f为常数\"}], \"ambient\": \"按定理的明确对象约定\"}",
+    "task_digest": "aba1ec8d3decec013618f607be429bd75ab0a68f7c6946ef745068404a7bfc85"
+  }
+]

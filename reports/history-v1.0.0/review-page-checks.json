@@ -1,0 +1,13 @@
+{
+  "javascript": [
+    {
+      "page": "模型回答人工审核.html",
+      "script": 0,
+      "exit_code": 0,
+      "stderr": ""
+    }
+  ],
+  "review_cards": 30,
+  "source_digest_checks": "pass",
+  "visual_browser_inspection": "not_performed"
+}

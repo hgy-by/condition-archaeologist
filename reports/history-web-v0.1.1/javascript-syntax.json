@@ -1,0 +1,17 @@
+{
+  "checked_at_utc": "2026-11-05T13:58:45.929713+00:00",
+  "checks": [
+    {
+      "file": "static/app.js",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "tests/test_ui.cjs",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ]
+}

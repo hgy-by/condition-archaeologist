@@ -1,0 +1,10 @@
+{
+  "command": "python -X utf8 -m unittest discover -s evaluation/tests -v",
+  "cwd": "C:\\Users\\hougu\\Documents\\Codex\\2026-11-02\\du\\outputs\\condition-archaeologist-release-v0.2.2",
+  "exit_code": 0,
+  "test_count": 73,
+  "unittest_reported_seconds": 2.403,
+  "source": "Actual command execution in this chat, exit code 0; unittest reported Ran 73 tests / OK.",
+  "synthetic_fixtures_included": true,
+  "mathematical_capability_score": false
+}

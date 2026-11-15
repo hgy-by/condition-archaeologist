@@ -1,0 +1,453 @@
+{
+  "theorem": {
+    "statement": "若Ω⊂C是非空连通开集，f在Ω全纯，且存在互异零点z_n→a∈Ω，则f在Ω恒零。",
+    "ambient": "全纯按开集上的复可微定义；零点聚点是互异零点的聚点，且必须属于Ω。非空性单列以检查冗余。",
+    "hypotheses": [
+      {
+        "id": "H1",
+        "text": "Ω为开集"
+      },
+      {
+        "id": "H2",
+        "text": "Ω连通"
+      },
+      {
+        "id": "H3",
+        "text": "f:Ω→C全纯"
+      },
+      {
+        "id": "H4",
+        "text": "存在互异零点z_n∈Ω趋于a∈Ω"
+      },
+      {
+        "id": "H5",
+        "text": "Ω非空"
+      }
+    ],
+    "conclusions": [
+      {
+        "id": "C1",
+        "text": "对每个z∈Ω，f(z)=0"
+      }
+    ]
+  },
+  "interventions": [
+    {
+      "task_id": "F-CA-connected",
+      "hypotheses": [
+        {
+          "id": "H1",
+          "text": "Ω为开集"
+        },
+        {
+          "id": "H2",
+          "text": "Ω连通"
+        },
+        {
+          "id": "H3",
+          "text": "f:Ω→C全纯"
+        },
+        {
+          "id": "H4",
+          "text": "存在互异零点z_n∈Ω趋于a∈Ω"
+        },
+        {
+          "id": "H5",
+          "text": "Ω非空"
+        }
+      ],
+      "intervention": {
+        "removed": [
+          "H2"
+        ],
+        "replacement": null
+      },
+      "judgment": "indispensable",
+      "witness": "Ω=D(0,1)∪D(3,1)，左盘f=0，右盘f=1。",
+      "retained_checks": [
+        {
+          "id": "H1",
+          "argument": "两个开圆盘的并为开集。"
+        },
+        {
+          "id": "H3",
+          "argument": "全纯是局部性质，每一点的邻域内f均为常数。"
+        },
+        {
+          "id": "H4",
+          "argument": "z_n=1/(n+2)∈左盘，互异且趋于a=0∈Ω，全为零点。"
+        },
+        {
+          "id": "H5",
+          "argument": "0∈Ω。"
+        }
+      ],
+      "replacement_checks": [],
+      "target_failure": {
+        "id": "C1",
+        "argument": "f并非在Ω恒零。"
+      },
+      "argument": "两个圆盘不交，所以Ω不连通。f在右盘恒1而在左盘恒0。",
+      "evidence": [
+        {
+          "kind": "mathematical_argument",
+          "artifact": null,
+          "scope": "所写明确命题版本下的数学论证；未经独立人工核验或形式化核验。"
+        }
+      ],
+      "dependencies": [],
+      "uncertainties": [],
+      "next_steps": [
+        "独立数学审阅本次构造及对象约定。"
+      ],
+      "cost": {
+        "elapsed_seconds": null,
+        "model_calls": null,
+        "tool_calls": null,
+        "usd": null
+      }
+    },
+    {
+      "task_id": "F-CA-holomorphic",
+      "hypotheses": [
+        {
+          "id": "H1",
+          "text": "Ω为开集"
+        },
+        {
+          "id": "H2",
+          "text": "Ω连通"
+        },
+        {
+          "id": "H3",
+          "text": "f:Ω→C全纯"
+        },
+        {
+          "id": "H4",
+          "text": "存在互异零点z_n∈Ω趋于a∈Ω"
+        },
+        {
+          "id": "H5",
+          "text": "Ω非空"
+        }
+      ],
+      "intervention": {
+        "removed": [
+          "H3"
+        ],
+        "replacement": null
+      },
+      "judgment": "indispensable",
+      "witness": "Ω=D(0,1)，f(z)=Im z（视作复值函数）。",
+      "retained_checks": [
+        {
+          "id": "H1",
+          "argument": "单位盘开。"
+        },
+        {
+          "id": "H2",
+          "argument": "单位盘连通。"
+        },
+        {
+          "id": "H4",
+          "argument": "z_n=1/(n+2)为互异零点，趋于域内0。"
+        },
+        {
+          "id": "H5",
+          "argument": "0∈单位盘。"
+        }
+      ],
+      "replacement_checks": [],
+      "target_failure": {
+        "id": "C1",
+        "argument": "零点有域内聚点，但f不恒零。"
+      },
+      "argument": "f在0沿实轴差商为0，沿纯虚轴差商为1/i=−i，故不可复微。f(i/2)=1/2≠0。",
+      "evidence": [
+        {
+          "kind": "mathematical_argument",
+          "artifact": null,
+          "scope": "所写明确命题版本下的数学论证；未经独立人工核验或形式化核验。"
+        }
+      ],
+      "dependencies": [],
+      "uncertainties": [],
+      "next_steps": [
+        "独立数学审阅本次构造及对象约定。"
+      ],
+      "cost": {
+        "elapsed_seconds": null,
+        "model_calls": null,
+        "tool_calls": null,
+        "usd": null
+      }
+    },
+    {
+      "task_id": "F-CA-internal-accumulation",
+      "hypotheses": [
+        {
+          "id": "H1",
+          "text": "Ω为开集"
+        },
+        {
+          "id": "H2",
+          "text": "Ω连通"
+        },
+        {
+          "id": "H3",
+          "text": "f:Ω→C全纯"
+        },
+        {
+          "id": "H4",
+          "text": "存在互异零点z_n∈Ω趋于a∈Ω"
+        },
+        {
+          "id": "H5",
+          "text": "Ω非空"
+        }
+      ],
+      "intervention": {
+        "removed": [
+          "H4"
+        ],
+        "replacement": {
+          "id": "H4w",
+          "text": "存在互异零点z_n∈Ω趋于某个a∈闭包Ω，不要求a∈Ω。"
+        }
+      },
+      "judgment": "indispensable",
+      "witness": "Ω=C\\{0}，f(z)=sin(π/z)。",
+      "retained_checks": [
+        {
+          "id": "H1",
+          "argument": "穿孔平面开。"
+        },
+        {
+          "id": "H2",
+          "argument": "穿孔平面路径连通。"
+        },
+        {
+          "id": "H3",
+          "argument": "1/z在Ω全纯，sin为整函数，复合后全纯。"
+        },
+        {
+          "id": "H5",
+          "argument": "1∈Ω。"
+        }
+      ],
+      "replacement_checks": [
+        {
+          "id": "H4w",
+          "argument": "1/n→0，且0∈闭包Ω。"
+        }
+      ],
+      "target_failure": {
+        "id": "C1",
+        "argument": "仅有无限零点和边界聚点仍不足。"
+      },
+      "argument": "z_n=1/n是互异零点，趋于域外边界点0。f(2)=sin(π/2)=1，所以不恒零。这个非零全纯函数的零点在域内无聚点：可直接求得零点为1/k，k为非零整数，只向0聚集。",
+      "evidence": [
+        {
+          "kind": "mathematical_argument",
+          "artifact": null,
+          "scope": "所写明确命题版本下的数学论证；未经独立人工核验或形式化核验。"
+        }
+      ],
+      "dependencies": [],
+      "uncertainties": [],
+      "next_steps": [
+        "独立数学审阅本次构造及对象约定。"
+      ],
+      "cost": {
+        "elapsed_seconds": null,
+        "model_calls": null,
+        "tool_calls": null,
+        "usd": null
+      }
+    },
+    {
+      "task_id": "F-CA-nonempty",
+      "hypotheses": [
+        {
+          "id": "H1",
+          "text": "Ω为开集"
+        },
+        {
+          "id": "H2",
+          "text": "Ω连通"
+        },
+        {
+          "id": "H3",
+          "text": "f:Ω→C全纯"
+        },
+        {
+          "id": "H4",
+          "text": "存在互异零点z_n∈Ω趋于a∈Ω"
+        },
+        {
+          "id": "H5",
+          "text": "Ω非空"
+        }
+      ],
+      "intervention": {
+        "removed": [
+          "H5"
+        ],
+        "replacement": null
+      },
+      "judgment": "implied",
+      "witness": null,
+      "retained_checks": [
+        {
+          "id": "H1",
+          "argument": "开性保留。"
+        },
+        {
+          "id": "H2",
+          "argument": "连通性保留。"
+        },
+        {
+          "id": "H3",
+          "argument": "全纯性保留。"
+        },
+        {
+          "id": "H4",
+          "argument": "a∈Ω（或者任一z_n∈Ω）已经推出Ω非空。"
+        }
+      ],
+      "replacement_checks": [],
+      "target_failure": null,
+      "argument": "H4直接蕴含H5，所以非空性在此表述下冗余；无需搜索空域反例。",
+      "evidence": [
+        {
+          "kind": "mathematical_argument",
+          "artifact": null,
+          "scope": "所写明确命题版本下的数学论证；未经独立人工核验或形式化核验。"
+        }
+      ],
+      "dependencies": [],
+      "uncertainties": [],
+      "next_steps": [
+        "独立数学审阅本次构造及对象约定。"
+      ],
+      "cost": {
+        "elapsed_seconds": null,
+        "model_calls": null,
+        "tool_calls": null,
+        "usd": null
+      }
+    },
+    {
+      "task_id": "F-CA-open-set",
+      "hypotheses": [
+        {
+          "id": "H1",
+          "text": "Ω为开集"
+        },
+        {
+          "id": "H2",
+          "text": "Ω连通"
+        },
+        {
+          "id": "H3",
+          "text": "f:Ω→C全纯"
+        },
+        {
+          "id": "H4",
+          "text": "存在互异零点z_n∈Ω趋于a∈Ω"
+        },
+        {
+          "id": "H5",
+          "text": "Ω非空"
+        }
+      ],
+      "intervention": {
+        "removed": [
+          "H1"
+        ],
+        "replacement": null
+      },
+      "judgment": "implied",
+      "witness": null,
+      "retained_checks": [
+        {
+          "id": "H2",
+          "argument": "连通性假设原样保留。"
+        },
+        {
+          "id": "H3",
+          "argument": "在本题采用的定义中，“f在Ω全纯”要求Ω为开集，所以若原定义不变，H3已含开性。"
+        },
+        {
+          "id": "H4",
+          "argument": "域内互异零点聚点假设原样保留。"
+        },
+        {
+          "id": "H5",
+          "argument": "非空性假设原样保留。"
+        }
+      ],
+      "replacement_checks": [],
+      "target_failure": null,
+      "argument": "本题已经声明“f在Ω全纯”按开集上的通常定义理解。因此保留H3就保留了其定义前提Ω开，即H3⇒H1。单独删除显式H1后，满足所有保留假设的对象仍有开定义域，原结论保持；这里应判implied（定义性冗余），不需要也不存在满足H3同时不满足H1的合法对象。只有另行修改H3的含义，例如改为某邻域全纯函数在任意子集上的限制，才进入需重写命题的类型变更问题。",
+      "evidence": [
+        {
+          "kind": "mathematical_argument",
+          "artifact": null,
+          "scope": "所写明确命题版本下的数学论证；未经独立人工核验或形式化核验。"
+        }
+      ],
+      "dependencies": [],
+      "uncertainties": [],
+      "next_steps": [
+        "独立数学审阅本次构造及对象约定。"
+      ],
+      "cost": {
+        "elapsed_seconds": null,
+        "model_calls": null,
+        "tool_calls": null,
+        "usd": null
+      }
+    }
+  ],
+  "dependency_map": [
+    {
+      "background": "开集上通常全纯定义",
+      "conditions": [
+        "H2",
+        "H3",
+        "H4"
+      ],
+      "conclusion": "C1",
+      "evidence": "连通、全纯、域内聚点各有明确失败构造；H4⇒H5，按既定全纯定义H3⇒H1。",
+      "unexplored": "未遍历多复变或解析流形版本。"
+    }
+  ],
+  "remaining_work": [
+    "H1在本题声明的全纯定义下由H3直接蕴含，应归implied；改变全纯定义需另建任务。",
+    "需要人工确认教材采用的全纯定义及域的约定。"
+  ],
+  "run_metadata": {
+    "run_kind": "AI_forward_execution_revised_after_explicit_classification_review",
+    "date": "2026-11-03",
+    "skill_used": "condition-archaeologist",
+    "sources_accessed": [
+      "SKILL.md",
+      "references/judgment-protocol.md",
+      "references/output-schema.md",
+      "references/strategies.md",
+      "references/verification.md"
+    ],
+    "forbidden_sources_not_read": [
+      "references/seeds.json",
+      "evaluation",
+      "prior reports",
+      "other agent conclusions"
+    ],
+    "human_reviewed": false,
+    "benchmark_score": null,
+    "original_run_preserved_at": "original-run/complex-analysis.json",
+    "revision_status": "one_classification_corrected",
+    "revision_note": "修订输出不等同原始运行结果；原始JSON、中文报告和结构日志已保留。"
+  }
+}

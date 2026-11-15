@@ -1,0 +1,13 @@
+{
+  "http_status": 522,
+  "elapsed_seconds": 21.382858199998736,
+  "raw": null,
+  "error": "HTTP 522",
+  "task_id": "CA06",
+  "arm": "full_skill",
+  "kind": "intervention",
+  "prediction": null,
+  "structure_errors": null,
+  "attempt": 1,
+  "task_digest": "6a3bb4f4cf925630fe8c775e3ce9109361d95d511b78065783a2b7fa16a4148d"
+}

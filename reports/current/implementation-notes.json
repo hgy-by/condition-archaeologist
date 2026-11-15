@@ -1,0 +1,25 @@
+{
+  "stage": "maintenance_implementation",
+  "resolved_failures": [
+    {
+      "check": "evaluation imports after relocation",
+      "observed": "First run: 4 import errors, 37 tests executed successfully.",
+      "fix": "Updated runtime import root in compare_models.py and moved history references in test paths.",
+      "followup": "106 evaluation tests pass in saved current log."
+    },
+    {
+      "check": "Node test launcher",
+      "observed": "node --test attempted to spawn a child process and failed with EPERM.",
+      "fix": "Run node web/tests/test_report_utils.cjs directly; test bodies run in current process.",
+      "followup": "7 tests passed; this is not browser testing."
+    },
+    {
+      "check": "Skill scaffold validator",
+      "observed": "Default Windows GBK read raised UnicodeDecodeError.",
+      "fix": "Ran the validator with python -X utf8.",
+      "followup": "Skill is valid; structural check only."
+    }
+  ],
+  "live_model_calls": 0,
+  "browser_interaction": "not_run"
+}

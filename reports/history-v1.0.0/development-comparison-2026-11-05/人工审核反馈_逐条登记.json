@@ -1,0 +1,24 @@
+{
+  "records": [
+    {
+      "review_id": "CA01-B",
+      "task_id": "CA01",
+      "prediction_digest": "bfcd54a4d34b44a6b27bd824adcd11b70053b0afa6e6bbff1775e779e0369e42",
+      "user_comment_verbatim": "未显式验证 f(z)=z 无界",
+      "reported_by": "current_user",
+      "recorded_at": "2026-11-05",
+      "observation_checked_against_original": true,
+      "issue_type": "missing_explicit_deleted_condition_check",
+      "AI_assessment": {
+        "mathematical_witness": "valid",
+        "explanation": "已证明全纯且非常数；未单列无界性论证是核验表达遗漏，不是反例不满足条件。",
+        "suggested_completion": "对任意M≥0，取实数z=M+1，则|f(z)|=M+1>M，故f在C上无界。",
+        "grading_note": "按事先统一的验证完整性标准处理；不能将这一遗漏直接等同于反例无效。若明确要求逐项验证，可扣验证表达分，核心数学有效性另记。"
+      },
+      "human_overall_judgment": null,
+      "numeric_score": null,
+      "original_answer_modified": false
+    }
+  ],
+  "scope": "用户逐条意见与AI回应分开记录；不自动生成最终人工判断或分数。"
+}

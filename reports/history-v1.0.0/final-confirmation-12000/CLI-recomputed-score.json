@@ -1,0 +1,673 @@
+{
+  "status": "ai_reviewed_internal",
+  "review_mode": "controller_AI_source_bound_review",
+  "reviewer_blinded_to_arms": false,
+  "independent_human": false,
+  "run_config_digest": "4bc002dd48024be2519d5edd58fe9bf3c73b6279e750854ef5e6f6ca0f9360ab",
+  "reviews_digest": "996a4696e6d8377418b5e88b482968319f092015682d152d298f878304532ee0",
+  "metrics": {
+    "direct_model": {
+      "planned": 0,
+      "answers": 0,
+      "full_theorem_math_success": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "full_theorem_protocol_success": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "raw_text_hypothesis_recall": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "raw_text_hypothesis_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "witness_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "full_theorem_witness_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "intervention_math_success": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "evidence_honesty": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "by_judgment": {
+        "indispensable": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "implied": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "removable": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "joint": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "type_constraint": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "unresolved": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "statement_issue": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      }
+    },
+    "old_skill": {
+      "planned": 0,
+      "answers": 0,
+      "full_theorem_math_success": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "full_theorem_protocol_success": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "raw_text_hypothesis_recall": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "raw_text_hypothesis_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "witness_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "full_theorem_witness_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "intervention_math_success": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "evidence_honesty": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "by_judgment": {
+        "indispensable": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "implied": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "removable": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "joint": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "type_constraint": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "unresolved": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "statement_issue": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      }
+    },
+    "full_skill": {
+      "planned": 4,
+      "answers": 4,
+      "full_theorem_math_success": {
+        "numerator": 4,
+        "denominator": 4,
+        "rate": 1.0
+      },
+      "full_theorem_protocol_success": {
+        "numerator": 4,
+        "denominator": 4,
+        "rate": 1.0
+      },
+      "raw_text_hypothesis_recall": {
+        "numerator": 17,
+        "denominator": 17,
+        "rate": 1.0
+      },
+      "raw_text_hypothesis_precision": {
+        "numerator": 17,
+        "denominator": 17,
+        "rate": 1.0
+      },
+      "witness_precision": {
+        "numerator": 13,
+        "denominator": 13,
+        "rate": 1.0
+      },
+      "full_theorem_witness_precision": {
+        "numerator": 13,
+        "denominator": 13,
+        "rate": 1.0
+      },
+      "intervention_math_success": {
+        "numerator": 15,
+        "denominator": 15,
+        "rate": 1.0
+      },
+      "evidence_honesty": {
+        "numerator": 4,
+        "denominator": 4,
+        "rate": 1.0
+      },
+      "by_judgment": {
+        "indispensable": {
+          "numerator": 9,
+          "denominator": 9,
+          "rate": 1.0
+        },
+        "implied": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "removable": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "joint": {
+          "numerator": 4,
+          "denominator": 4,
+          "rate": 1.0
+        },
+        "type_constraint": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "unresolved": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "statement_issue": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      }
+    },
+    "without_strategies": {
+      "planned": 0,
+      "answers": 0,
+      "full_theorem_math_success": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "full_theorem_protocol_success": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "raw_text_hypothesis_recall": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "raw_text_hypothesis_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "witness_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "full_theorem_witness_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "intervention_math_success": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "evidence_honesty": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "by_judgment": {
+        "indispensable": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "implied": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "removable": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "joint": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "type_constraint": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "unresolved": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "statement_issue": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      }
+    },
+    "without_verification": {
+      "planned": 0,
+      "answers": 0,
+      "full_theorem_math_success": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "full_theorem_protocol_success": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "raw_text_hypothesis_recall": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "raw_text_hypothesis_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "witness_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "full_theorem_witness_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "intervention_math_success": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "evidence_honesty": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "by_judgment": {
+        "indispensable": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "implied": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "removable": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "joint": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "type_constraint": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "unresolved": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "statement_issue": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      }
+    }
+  },
+  "per_task": [
+    {
+      "task_id": "FINAL-MA",
+      "arm": "full_skill",
+      "kind": "full_theorem",
+      "family_id": "monotone-sequence-completeness",
+      "answer": true,
+      "math_success": true,
+      "protocol_success": true,
+      "interventions": [
+        {
+          "index": 0,
+          "task_id": "FINAL-MA-H1",
+          "label": "indispensable",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        },
+        {
+          "index": 1,
+          "task_id": "FINAL-MA-H2",
+          "label": "indispensable",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        },
+        {
+          "index": 2,
+          "task_id": "FINAL-MA-H1-H2",
+          "label": "joint",
+          "removed_count": 2,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        }
+      ],
+      "hypothesis_matches": 3,
+      "hypothesis_expected": 3,
+      "hypothesis_reported": 3,
+      "uncertainty_honest": true,
+      "runtime_failure": false,
+      "component_findings": {
+        "objects": true,
+        "mathematical_correctness": true,
+        "uncertainty_honesty": true,
+        "hypothesis_extraction": true,
+        "conclusion_extraction": true,
+        "single_condition_coverage": true,
+        "dependency_reporting": true,
+        "remaining_work": true
+      },
+      "limitations": [
+        "抽取计数按原文语义单元：包括固定背景，不因不同原子化/编号方式惩罚；不是形式化解析器的输出。",
+        "只检验全部单项干预及至多一个组合，不检验任意弱化或全组合。"
+      ]
+    },
+    {
+      "task_id": "FINAL-AL",
+      "arm": "full_skill",
+      "kind": "full_theorem",
+      "family_id": "quadratic-positive-spectrum",
+      "answer": true,
+      "math_success": true,
+      "protocol_success": true,
+      "interventions": [
+        {
+          "index": 0,
+          "task_id": "FINAL-AL-H1",
+          "label": "indispensable",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        },
+        {
+          "index": 1,
+          "task_id": "FINAL-AL-H2",
+          "label": "indispensable",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        },
+        {
+          "index": 2,
+          "task_id": "FINAL-AL-H1-H2",
+          "label": "joint",
+          "removed_count": 2,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        }
+      ],
+      "hypothesis_matches": 4,
+      "hypothesis_expected": 4,
+      "hypothesis_reported": 4,
+      "uncertainty_honest": true,
+      "runtime_failure": false,
+      "component_findings": {
+        "objects": true,
+        "mathematical_correctness": true,
+        "uncertainty_honesty": true,
+        "hypothesis_extraction": true,
+        "conclusion_extraction": true,
+        "single_condition_coverage": true,
+        "dependency_reporting": true,
+        "remaining_work": true
+      },
+      "limitations": [
+        "抽取计数按原文语义单元：包括固定背景，不因不同原子化/编号方式惩罚；不是形式化解析器的输出。",
+        "只检验全部单项干预及至多一个组合，不检验任意弱化或全组合。"
+      ]
+    },
+    {
+      "task_id": "FINAL-RA",
+      "arm": "full_skill",
+      "kind": "full_theorem",
+      "family_id": "zero-integral-sign-cancellation",
+      "answer": true,
+      "math_success": true,
+      "protocol_success": true,
+      "interventions": [
+        {
+          "index": 0,
+          "task_id": "FINAL-RA-H1",
+          "label": "implied",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": false,
+          "witness_valid": false
+        },
+        {
+          "index": 1,
+          "task_id": "FINAL-RA-H2",
+          "label": "indispensable",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        },
+        {
+          "index": 2,
+          "task_id": "FINAL-RA-H3",
+          "label": "indispensable",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        },
+        {
+          "index": 3,
+          "task_id": "FINAL-RA-H1-H3",
+          "label": "joint",
+          "removed_count": 2,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        }
+      ],
+      "hypothesis_matches": 5,
+      "hypothesis_expected": 5,
+      "hypothesis_reported": 5,
+      "uncertainty_honest": true,
+      "runtime_failure": false,
+      "component_findings": {
+        "objects": true,
+        "mathematical_correctness": true,
+        "uncertainty_honesty": true,
+        "hypothesis_extraction": true,
+        "conclusion_extraction": true,
+        "single_condition_coverage": true,
+        "dependency_reporting": true,
+        "remaining_work": true
+      },
+      "limitations": [
+        "抽取计数按原文语义单元：包括固定背景，不因不同原子化/编号方式惩罚；不是形式化解析器的输出。",
+        "只检验全部单项干预及至多一个组合，不检验任意弱化或全组合。"
+      ]
+    },
+    {
+      "task_id": "FINAL-CA",
+      "arm": "full_skill",
+      "kind": "full_theorem",
+      "family_id": "linear-growth-polynomial",
+      "answer": true,
+      "math_success": true,
+      "protocol_success": true,
+      "interventions": [
+        {
+          "index": 0,
+          "task_id": "FINAL-CA-H1",
+          "label": "implied",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": false,
+          "witness_valid": false
+        },
+        {
+          "index": 1,
+          "task_id": "FINAL-CA-H2",
+          "label": "indispensable",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        },
+        {
+          "index": 2,
+          "task_id": "FINAL-CA-H3",
+          "label": "indispensable",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        },
+        {
+          "index": 3,
+          "task_id": "FINAL-CA-H4",
+          "label": "indispensable",
+          "removed_count": 1,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        },
+        {
+          "index": 4,
+          "task_id": "FINAL-CA-H2-H4",
+          "label": "joint",
+          "removed_count": 2,
+          "success": true,
+          "witness_claimed": true,
+          "witness_valid": true
+        }
+      ],
+      "hypothesis_matches": 5,
+      "hypothesis_expected": 5,
+      "hypothesis_reported": 5,
+      "uncertainty_honest": true,
+      "runtime_failure": false,
+      "component_findings": {
+        "objects": true,
+        "mathematical_correctness": true,
+        "uncertainty_honesty": true,
+        "hypothesis_extraction": true,
+        "conclusion_extraction": true,
+        "single_condition_coverage": true,
+        "dependency_reporting": true,
+        "remaining_work": true
+      },
+      "limitations": [
+        "抽取计数按原文语义单元：包括固定背景，不因不同原子化/编号方式惩罚；不是形式化解析器的输出。",
+        "只检验全部单项干预及至多一个组合，不检验任意弱化或全组合。"
+      ]
+    }
+  ],
+  "scope": "Small internal release-acceptance tasks; not strict independent blind testing, a universal theorem solver, or automatic mathematical proof."
+}

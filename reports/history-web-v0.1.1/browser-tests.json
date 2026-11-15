@@ -1,0 +1,15 @@
+{
+  "status": "not_completed_environment_blocked",
+  "attempts": [
+    "Playwright browser launch returned spawn EPERM",
+    "External hidden Edge launch closed before CDP connection; ECONNREFUSED",
+    "Final browser command rejected by automatic approval policy"
+  ],
+  "automatic_approval_rejected_action": "Launch isolated headless browser for UI checks",
+  "reason": "Approval required by policy; sandbox_approval category disabled.",
+  "screenshots_created": false,
+  "browser_interactions_verified": false,
+  "test_script": "tests/test_ui.cjs",
+  "live_model_calls": 0,
+  "scope": "Do not report UI tests, screenshots or live model ability as passed."
+}

@@ -1,0 +1,19 @@
+{
+  "checked_at_utc": "2026-11-05T14:00:11.583480+00:00",
+  "version": "0.1.1",
+  "adapter": "implemented",
+  "base_url": "https://chat.ecnu.edu.cn/open/api/v1",
+  "api_mode": "chat_completions",
+  "default_model": "ecnu-max",
+  "token_storage": "process_memory_only",
+  "fixture_tests": 19,
+  "fixture_tests_passed": true,
+  "real_token_models_preflight": "not_run_token_required",
+  "live_model_calls": 0,
+  "real_mathematical_output_review": "not_run",
+  "official_references": [
+    "https://developer.ecnu.edu.cn/vitepress/llm/authorization.html",
+    "https://developer.ecnu.edu.cn/vitepress/llm/api/models.html",
+    "https://developer.ecnu.edu.cn/vitepress/llm/api/structuredoutput.html"
+  ]
+}

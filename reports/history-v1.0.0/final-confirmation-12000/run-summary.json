@@ -1,0 +1,44 @@
+{
+  "planned": 4,
+  "attempts": 4,
+  "answers": 4,
+  "parsed": 4,
+  "structure_passes": 4,
+  "per_arm": {
+    "direct_model": {
+      "planned": 0,
+      "answers": 0,
+      "structure_passes": 0
+    },
+    "old_skill": {
+      "planned": 0,
+      "answers": 0,
+      "structure_passes": 0
+    },
+    "full_skill": {
+      "planned": 4,
+      "answers": 4,
+      "structure_passes": 4
+    },
+    "without_strategies": {
+      "planned": 0,
+      "answers": 0,
+      "structure_passes": 0
+    },
+    "without_verification": {
+      "planned": 0,
+      "answers": 0,
+      "structure_passes": 0
+    }
+  },
+  "usage_reported": {
+    "input_tokens": 24959,
+    "output_tokens": 16804,
+    "total_tokens": 41763
+  },
+  "usd": null,
+  "math_review": "AI review required, not inferred from structure",
+  "actual_models": [
+    "gpt-6-sol"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "http_status": 200,
+  "elapsed_seconds": 135.45302079996327,
+  "raw": "\n\n\n",
+  "error": null,
+  "task_id": "F-AL",
+  "arm": "full_skill",
+  "kind": "full_theorem",
+  "prediction": null,
+  "structure_errors": null,
+  "parse_error": "Neither a JSON response nor a completed SSE response",
+  "attempt": 1,
+  "task_digest": "3833c2940e0f669a40308537ba97577b56f36f5cf71622f83fa05c8000a82b05"
+}

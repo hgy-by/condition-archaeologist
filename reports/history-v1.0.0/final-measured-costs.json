@@ -1,0 +1,86 @@
+{
+  "runs": {
+    "primary_6000": {
+      "requests": 30,
+      "request_seconds_sum": 2071.2156263002544,
+      "requests_with_usage": 29,
+      "reported_tokens": 248674,
+      "usd": null,
+      "by_arm": {
+        "direct_model": {
+          "requests": 4,
+          "requests_with_usage": 4,
+          "request_seconds_mean": 75.62361697500455,
+          "reported_tokens": 22714
+        },
+        "old_skill": {
+          "requests": 4,
+          "requests_with_usage": 4,
+          "request_seconds_mean": 141.7725324500061,
+          "reported_tokens": 48165
+        },
+        "full_skill": {
+          "requests": 13,
+          "requests_with_usage": 13,
+          "request_seconds_mean": 30.284388084618303,
+          "reported_tokens": 96868
+        },
+        "without_strategies": {
+          "requests": 4,
+          "requests_with_usage": 4,
+          "request_seconds_mean": 48.256188525032485,
+          "reported_tokens": 37408
+        },
+        "without_verification": {
+          "requests": 5,
+          "requests_with_usage": 4,
+          "request_seconds_mean": 122.98184588000876,
+          "reported_tokens": 43519
+        }
+      }
+    },
+    "confirmation_12000": {
+      "requests": 4,
+      "request_seconds_sum": 276.87374559999444,
+      "requests_with_usage": 4,
+      "reported_tokens": 41763,
+      "usd": null,
+      "by_arm": {
+        "direct_model": {
+          "requests": 0,
+          "requests_with_usage": 0,
+          "request_seconds_mean": null,
+          "reported_tokens": 0
+        },
+        "old_skill": {
+          "requests": 0,
+          "requests_with_usage": 0,
+          "request_seconds_mean": null,
+          "reported_tokens": 0
+        },
+        "full_skill": {
+          "requests": 4,
+          "requests_with_usage": 4,
+          "request_seconds_mean": 69.21843639999861,
+          "reported_tokens": 41763
+        },
+        "without_strategies": {
+          "requests": 0,
+          "requests_with_usage": 0,
+          "request_seconds_mean": null,
+          "reported_tokens": 0
+        },
+        "without_verification": {
+          "requests": 0,
+          "requests_with_usage": 0,
+          "request_seconds_mean": null,
+          "reported_tokens": 0
+        }
+      }
+    }
+  },
+  "requests": 34,
+  "reported_tokens": 290437,
+  "usd": null,
+  "limits": "Elapsed sums are request time, not wall time with concurrency; missing failed-request usage and actual billing unknown."
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "task_id": "AL01",
+    "status": "partial_computation",
+    "claims_pass": true,
+    "scope": "有限局部计算；非完整数学核验"
+  },
+  {
+    "task_id": "AL02",
+    "status": "partial_computation",
+    "claims_pass": true,
+    "scope": "有限局部计算；非完整数学核验"
+  },
+  {
+    "task_id": "AL04",
+    "status": "partial_computation",
+    "claims_pass": true,
+    "scope": "有限局部计算；非完整数学核验"
+  },
+  {
+    "task_id": "RA01",
+    "status": "partial_computation",
+    "claims_pass": true,
+    "scope": "有限局部计算；非完整数学核验"
+  },
+  {
+    "task_id": "RA02",
+    "status": "partial_computation",
+    "claims_pass": true,
+    "scope": "有限局部计算；非完整数学核验"
+  }
+]

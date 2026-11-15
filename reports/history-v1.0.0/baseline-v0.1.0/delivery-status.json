@@ -1,0 +1,24 @@
+{
+  "version": "0.1.0",
+  "date": "2026-11-02",
+  "files_generated": true,
+  "skill_structure_validated": true,
+  "software_tests_passed": true,
+  "software_test_count": 22,
+  "tasks": 29,
+  "families": 20,
+  "split_families": {
+    "development": 11,
+    "validation": 5,
+    "heldout": 4
+  },
+  "local_computations": 5,
+  "independent_ai_smoke": "reports/behavior-smoke.md",
+  "human_math_review": "pending_all_29_cases",
+  "source_exact_passages": "pending_all_29_cases",
+  "model_baselines": "not_run: codex CLI missing @openai/codex-win32-x64",
+  "rsi_experiments": "not_run; pending reviewed data, expanded validation, model runner",
+  "mathematics_certified": false,
+  "capability_passed_benchmark": false,
+  "rsi_improvement_proven": false
+}

@@ -1,0 +1,14 @@
+{
+  "http_status": 200,
+  "elapsed_seconds": 115.47752350004157,
+  "raw": "\n",
+  "error": null,
+  "task_id": "RA05",
+  "arm": "direct_model",
+  "kind": "intervention",
+  "prediction": null,
+  "structure_errors": null,
+  "parse_error": "Neither a JSON response nor a completed SSE response",
+  "attempt": 1,
+  "task_digest": "5a7a43c03ff24f57b03be766de12e64c35b007a9cc2f271b53c04341d112585e"
+}

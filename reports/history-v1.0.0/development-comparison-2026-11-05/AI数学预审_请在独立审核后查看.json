@@ -1,0 +1,306 @@
+{
+  "scope": "Controller AI read all 30 actual answers; not independent human review, formal proof, or capability score. Do not use as completed human adjudications.",
+  "reviewed_answer_count": 30,
+  "reviews": [
+    {
+      "task_id": "MA01",
+      "arm": "full_skill",
+      "prediction_digest": "fe1d6c8e0e2962e11980ca7959b9faede2b802e3660883f9790c0ce50cb0a536",
+      "reviewer": "controller_AI",
+      "independent_human": false,
+      "status": "no_decisive_mathematical_error_found_by_AI",
+      "note": "两组绝对值折角例：闭区间连续、端点值相等，折角处不可微，其余内部导数为±1，未发现决定性数学错误。",
+      "formal_adjudication": false
+    },
+    {
+      "task_id": "MA01",
+      "arm": "direct_model",
+      "prediction_digest": "a233d726eedecf6adb4544dd6a69b6a5cd5e32b5faa5f8b1da48ba652aa01781",
+      "reviewer": "controller_AI",
+      "independent_human": false,
+      "status": "no_decisive_mathematical_error_found_by_AI",
+      "note": "两组绝对值折角例：闭区间连续、端点值相等，折角处不可微，其余内部导数为±1，未发现决定性数学错误。",
+      "formal_adjudication": false
+    },
+    {
+      "task_id": "MA02",
+      "arm": "full_skill",
+      "prediction_digest": "fa5a6978339fb2f470daab2507fe6ed435d32b1639391dd138d07566a97bf723",
+      "reviewer": "controller_AI",
+      "independent_human": false,
+      "status": "no_decisive_mathematical_error_found_by_AI",
+      "note": "两组在一个端点重新赋值，内部仍为恒等函数；端点相等且内部导数为1，未发现决定性数学错误。",
+      "formal_adjudication": false
+    },
+    {
+      "task_id": "MA02",
+      "arm": "direct_model",
+      "prediction_digest": "9399cd7bfb7c0c39e528f3d091a4d969294b653a88989ee23914de9f74f13056",
+      "reviewer": "controller_AI",
+      "independent_human": false,
+      "status": "no_decisive_mathematical_error_found_by_AI",
+      "note": "两组在一个端点重新赋值，内部仍为恒等函数；端点相等且内部导数为1，未发现决定性数学错误。",
+      "formal_adjudication": false
+    },
+    {
+      "task_id": "MA03",
+      "arm": "full_skill",
+      "prediction_digest": "af4d06b73e42bcbb695ff6414df9738ed042ff5fe7097b8b9666741d78cb6977",
+      "reviewer": "controller_AI",
+      "independent_human": false,
+      "status": "no_decisive_mathematical_error_found_by_AI",
+      "note": "两组均取(0,1)上的恒等函数，任一点两侧仍有更小和更大函数值，未发现决定性数学错误。",
+      "formal_adjudication": false
+    },
+    {
+      "task_id": "MA03",
+      "arm": "direct_model",
+      "prediction_digest": "786f89b16b2f427f38c73ffe7d04a9f3ac6996a9f35479e4f261d1cedaeeca72",
+      "reviewer": "controller_AI",
+      "independent_human": false,
+      "status": "no_decisive_mathematical_error_found_by_AI",
+      "note": "两组均取(0,1)上的恒等函数，任一点两侧仍有更小和更大函数值，未发现决定性数学错误。",
+      "formal_adjudication": false
+    },
+    {
+      "task_id": "MA04",
+      "arm": "direct_model",
+      "prediction_digest": "640ba2a75cda3d7bc87dd7045a1525768c4f23e1bd98394bf9ace6f8083da4e6",
+      "reviewer": "controller_AI",
+      "independent_human": false,
+      "status": "no_decisive_mathematical_error_found_by_AI",
+      "note": "两组x^n逐点极限在1不连续；Skill组另外明确给出一致误差上确界为1。未发现决定性数学错误。",
+      "formal_adjudication": false
+    },
+    {
+      "task_id": "MA04",
+      "arm": "full_skill",
+      "prediction_digest": "f5655bb89e5ed22db0f7c225732cf6bb9bd22628b0c051bf2e0becebd72c7ebe",
+      "reviewer": "controller_AI",
+      "independent_human": false,
+      "status": "no_decisive_mathematical_error_found_by_AI",
+      "note": "两组x^n逐点极限在1不连续；Skill组另外明确给出一致误差上确界为1。未发现决定性数学错误。",
+      "formal_adjudication": false
+    },
+    {
+      "task_id": "AL01",
+      "arm": "full_skill",
+      "prediction_digest": "322fbf670aa84066c2910aaaf39d51adebde2b0cc5cabc8869861455493cd5fb",
+      "reviewer": "controller_AI",
+      "independent_human": false,
+      "status": "no_decisive_mathematical_error_found_by_AI",
+      "note": "两组实非对称矩阵，利用实正交对角化必蕴含对称，反证成立；另有有限计算辅助。",
+      "formal_adjudication": false
+    },
+    {
+      "task_id": "AL01",
+      "arm": "direct_model",
+      "prediction_digest": "c1625e1eeb649ebadae7953ae87a481bdcc9cf9fb8f9dc24ddc7fa49908f30f0",
+      "reviewer": "controller_AI",
+      "independent_human": false,
+      "status": "no_decisive_mathematical_error_found_by_AI",
+      "note": "两组实非对称矩阵，利用实正交对角化必蕴含对称，反证成立；另有有限计算辅助。",
+      "formal_adjudication": false
+    },
+    {
+      "task_id": "AL02",
+      "arm": "direct_model",
+      "prediction_digest": "d1aa0ba638fa22117167d6a3ff93033603af423cb26de24f4ff79ab45d85db2b",
+      "reviewer": "controller_AI",
+      "independent_human": false,
+      "status": "no_decisive_mathematical_error_found_by_AI",
+      "note": "两组实平面90度旋转，在保留正维有限维和实线性的同时无实特征值；另有有限计算辅助。",
+      "formal_adjudication": false
+    },
+    {
+      "task_id": "AL02",
+      "arm": "full_skill",
+      "prediction_digest": "f2d80268171ccef585649f3c282a22fc57030411da087cc4c694afb0a214e5a3",
+      "reviewer": "controller_AI",
+      "independent_human": false,
+      "status": "no_decisive_mathematical_error_found_by_AI",
+      "note": "两组实平面90度旋转，在保留正维有限维和实线性的同时无实特征值；另有有限计算辅助。",
+      "formal_adjudication": false
+    },
+    {
+      "task_id": "AL03",
+      "arm": "direct_model",
+      "prediction_digest": "b2c1bfb9aafeca0440b833e2e8852ea0f695a9f95051b5b20104fbbf662a589a",
+      "reviewer": "controller_AI",
+      "independent_human": false,
+      "status": "no_decisive_mathematical_error_found_by_AI",
+      "note": "直接组用F[x]乘x，Skill组用实有限支撑数列右移，均单射不满射。反例不同而同样有效，不能按参考文字匹配。",
+      "formal_adjudication": false
+    },
+    {
+      "task_id": "AL03",
+      "arm": "full_skill",
+      "prediction_digest": "75b55a163b245bb8a2ae4cac877d6809f3db3e4e21e001b26e2bcc9c8e92ce7e",
+      "reviewer": "controller_AI",
+      "independent_human": false,
+      "status": "no_decisive_mathematical_error_found_by_AI",
+      "note": "直接组用F[x]乘x，Skill组用实有限支撑数列右移，均单射不满射。反例不同而同样有效，不能按参考文字匹配。",
+      "formal_adjudication": false
+    },
+    {
+      "task_id": "AL04",
+      "arm": "full_skill",
+      "prediction_digest": "f03d46edf209190a2cc0409cc0059249ba07fe26ba9a9d8e5e96d7eb5aa055fa",
+      "reviewer": "controller_AI",
+      "independent_human": false,
+      "status": "no_decisive_mathematical_error_found_by_AI",
+      "note": "两组非零二阶幂零矩阵均不可对角化；删除条件确不成立，另有有限计算辅助。",
+      "formal_adjudication": false
+    },
+    {
+      "task_id": "AL04",
+      "arm": "direct_model",
+      "prediction_digest": "d68ce061d2282347c7428345d325938743801a6f54af57bb80114b9fdef23190",
+      "reviewer": "controller_AI",
+      "independent_human": false,
+      "status": "no_decisive_mathematical_error_found_by_AI",
+      "note": "两组非零二阶幂零矩阵均不可对角化；删除条件确不成立，另有有限计算辅助。",
+      "formal_adjudication": false
+    },
+    {
+      "task_id": "RA01",
+      "arm": "direct_model",
+      "prediction_digest": "0bc31eac775debb2bd37bac6ecd507220562ded2d1e51bccbef46c123fb341bd",
+      "reviewer": "controller_AI",
+      "independent_human": false,
+      "status": "no_decisive_mathematical_error_found_by_AI",
+      "note": "两组正尖峰逐点趋零但积分恒1；对共同可积支配函数的不可能性给出互不相交区间上的调和级数下界。注意“对所有n几乎处处”可用可数并零集统一。",
+      "formal_adjudication": false
+    },
+    {
+      "task_id": "RA01",
+      "arm": "full_skill",
+      "prediction_digest": "4f96e2f9846effa330a790d2f64ec29ece99b5fee8f915bc30d21398c6797388",
+      "reviewer": "controller_AI",
+      "independent_human": false,
+      "status": "no_decisive_mathematical_error_found_by_AI",
+      "note": "两组正尖峰逐点趋零但积分恒1；对共同可积支配函数的不可能性给出互不相交区间上的调和级数下界。注意“对所有n几乎处处”可用可数并零集统一。",
+      "formal_adjudication": false
+    },
+    {
+      "task_id": "RA02",
+      "arm": "direct_model",
+      "prediction_digest": "5044e2519251c305d9d3f6c3651a42d8c3be14b0cf52b73c6beb62dfcf3b42c5",
+      "reviewer": "controller_AI",
+      "independent_human": false,
+      "status": "no_decisive_mathematical_error_found_by_AI",
+      "note": "两组负尖峰的积分均为−1，逐点liminf为0，违反Fatou方向；有符号积分均有限。直接组选[0,1]仍是原任务允许的测度空间。",
+      "formal_adjudication": false
+    },
+    {
+      "task_id": "RA02",
+      "arm": "full_skill",
+      "prediction_digest": "d87c6cfd3a864a8f5f0a6139d88aabcfa3a83cc9cb3c4b38e9d52aab9a83fc65",
+      "reviewer": "controller_AI",
+      "independent_human": false,
+      "status": "no_decisive_mathematical_error_found_by_AI",
+      "note": "两组负尖峰的积分均为−1，逐点liminf为0，违反Fatou方向；有符号积分均有限。直接组选[0,1]仍是原任务允许的测度空间。",
+      "formal_adjudication": false
+    },
+    {
+      "task_id": "RA03",
+      "arm": "full_skill",
+      "prediction_digest": "e12061d097190df4596c992b5bdbb28c996f00b7329698719b386c196e7ee7ac",
+      "reviewer": "controller_AI",
+      "independent_human": false,
+      "status": "no_decisive_mathematical_error_found_by_AI",
+      "note": "两组实数Lebesgue测度下[n,∞)递减、交为空，逐项测度均无穷，未发现决定性数学错误。",
+      "formal_adjudication": false
+    },
+    {
+      "task_id": "RA03",
+      "arm": "direct_model",
+      "prediction_digest": "a036357af7bff00bb442035e272f4104ad190f7f9567e30bb20c5e2ddfe94842",
+      "reviewer": "controller_AI",
+      "independent_human": false,
+      "status": "no_decisive_mathematical_error_found_by_AI",
+      "note": "两组实数Lebesgue测度下[n,∞)递减、交为空，逐项测度均无穷，未发现决定性数学错误。",
+      "formal_adjudication": false
+    },
+    {
+      "task_id": "CA01",
+      "arm": "full_skill",
+      "prediction_digest": "d29e042fca2398406d2936f336e359879345a7a298a313b625dc9f2d4eda853c",
+      "reviewer": "controller_AI",
+      "independent_human": false,
+      "status": "no_decisive_mathematical_error_found_by_AI",
+      "note": "两组整函数z有界性失败且不恒定。直接组未单列无界性证明，建议审核其义务表达完整性。",
+      "formal_adjudication": false
+    },
+    {
+      "task_id": "CA01",
+      "arm": "direct_model",
+      "prediction_digest": "dbeffb54603ac896efe6b74c23dcf707f2dd3cff1c30d8e3edf1334e6fc17f66",
+      "reviewer": "controller_AI",
+      "independent_human": false,
+      "status": "no_decisive_mathematical_error_found_by_AI",
+      "note": "两组整函数z有界性失败且不恒定。直接组未单列无界性证明，建议审核其义务表达完整性。",
+      "formal_adjudication": false
+    },
+    {
+      "task_id": "CA02",
+      "arm": "full_skill",
+      "prediction_digest": "2c73d6d3c36763a77c64b310d41a14a0171806d6550fafbd624e5fb3d057731e",
+      "reviewer": "controller_AI",
+      "independent_human": false,
+      "status": "no_decisive_mathematical_error_found_by_AI",
+      "note": "直接组|z|/(1+|z|)有界不恒定；Skill组共轭z/(1+|z|²)有界不恒定且显式证明0处不复可微。直接组未显式证明删除的全纯性失败，建议审核表达完整性。",
+      "formal_adjudication": false
+    },
+    {
+      "task_id": "CA02",
+      "arm": "direct_model",
+      "prediction_digest": "c57683dc4ef2df2e10cc1e35fbc856d62d794d9cbb1dd14786e9fd6804ce6ff5",
+      "reviewer": "controller_AI",
+      "independent_human": false,
+      "status": "no_decisive_mathematical_error_found_by_AI",
+      "note": "直接组|z|/(1+|z|)有界不恒定；Skill组共轭z/(1+|z|²)有界不恒定且显式证明0处不复可微。直接组未显式证明删除的全纯性失败，建议审核表达完整性。",
+      "formal_adjudication": false
+    },
+    {
+      "task_id": "CA04",
+      "arm": "direct_model",
+      "prediction_digest": "5ac7f63002afdf3d6f3f57ab8b519203bd3d2a7d70677bccb15e2254c4d3b580",
+      "reviewer": "controller_AI",
+      "independent_human": false,
+      "status": "no_decisive_mathematical_error_found_by_AI",
+      "note": "直接组常数1、Skill组恒等函数z均为连通开集上的全纯非恒零函数，零点不在域内聚积。两例均可推翻删除整个H3后的命题，无需与教材sin(π/z)一致。",
+      "formal_adjudication": false
+    },
+    {
+      "task_id": "CA04",
+      "arm": "full_skill",
+      "prediction_digest": "3d2d01b699b1f3b781c80e3c67e8f36b7745d3c40aa0da071ab62a710af3c13f",
+      "reviewer": "controller_AI",
+      "independent_human": false,
+      "status": "no_decisive_mathematical_error_found_by_AI",
+      "note": "直接组常数1、Skill组恒等函数z均为连通开集上的全纯非恒零函数，零点不在域内聚积。两例均可推翻删除整个H3后的命题，无需与教材sin(π/z)一致。",
+      "formal_adjudication": false
+    },
+    {
+      "task_id": "CA05",
+      "arm": "direct_model",
+      "prediction_digest": "46de5cbd6b7063deacd64a6a4887c49ce61f72a01c4b9a97f5416238523d907c",
+      "reviewer": "controller_AI",
+      "independent_human": false,
+      "status": "no_decisive_mathematical_error_found_by_AI",
+      "note": "两组1−|z|²在单位圆盘上有内部模最大却不恒定；Skill组用1/2处方向差商明确验证不全纯，未发现决定性数学错误。",
+      "formal_adjudication": false
+    },
+    {
+      "task_id": "CA05",
+      "arm": "full_skill",
+      "prediction_digest": "45c561ab708a19036673133825cc1be8b2ffebaf9c6694c55de568f7d0b3d809",
+      "reviewer": "controller_AI",
+      "independent_human": false,
+      "status": "no_decisive_mathematical_error_found_by_AI",
+      "note": "两组1−|z|²在单位圆盘上有内部模最大却不恒定；Skill组用1/2处方向差商明确验证不全纯，未发现决定性数学错误。",
+      "formal_adjudication": false
+    }
+  ]
+}

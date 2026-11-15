@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>条件考古学 · 探索定理的边界</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/style.css">
+  <script src="/report-utils.js" defer></script><script src="/app.js" defer></script>
+</head>
+<body>
+<aside class="sidebar">
+  <a class="brand" href="/" aria-label="条件考古学首页"><span class="brand-mark">∴</span><span>条件考古学<small>CONDITION LAB</small></span></a>
+  <div class="side-caption">工作空间</div>
+  <button class="nav-item active" id="nav-analysis"><span>⌘</span> 定理实验室 <span class="nav-dot"></span></button>
+  <button class="nav-item" id="nav-examples"><span>▦</span> 四科示例</button>
+  <button class="nav-item" data-dialog="reading-dialog"><span>◫</span> 如何读懂报告</button>
+  <div class="side-note"><span class="tiny-label">我们的出发点</span><p>不只问定理为什么成立，<br>也问它在哪里会失效。</p><div class="note-rule"></div><p class="muted">逐条删减假设，<br>让每一个条件的作用可见。</p></div>
+  <div class="side-bottom"><span class="version-tag">Skill 1.0.0</span><span>四科辅助使用版</span><button data-dialog="evidence-dialog" class="text-button">证据与使用边界 ↗</button></div>
+</aside>
+<div class="workspace">
+<header class="topbar"><span>工作空间 <span class="slash">/</span> <strong>定理实验室</strong></span><button id="service-button" class="service-pill"><span class="status-dot"></span><span id="service-status">正在连接本地服务</span></button></header>
+<main>
+  <section class="hero"><div><p class="eyebrow">EXPLORE THE ASSUMPTIONS</p><h1>从假设出发，<br class="mobile-break">找到定理的边界<span>。</span></h1><p class="hero-description">给出一条定理。逐项删掉条件，看看哪里崩塌，以及为什么。</p></div><span class="hero-symbol" aria-hidden="true">∀ <i>→</i> ∃</span></section>
+  <section class="input-card" aria-labelledby="input-title">
+    <div class="card-heading"><h2 id="input-title"><span class="step-num">01</span> 输入你的定理</h2><button class="text-button" data-dialog="reading-dialog">第一次使用？ ↗</button></div>
+    <div class="subject-row" role="group" aria-label="选择科目"><button class="subject selected" data-subject="数学分析" aria-pressed="true">数学分析</button><button class="subject" data-subject="高等代数" aria-pressed="false">高等代数</button><button class="subject" data-subject="实分析" aria-pressed="false">实分析</button><button class="subject" data-subject="复分析" aria-pressed="false">复分析</button></div>
+    <label class="sr-only" for="theorem-input">完整定理，包括对象、假设和结论</label>
+    <textarea id="theorem-input" maxlength="6000" rows="3" placeholder="粘贴完整定理，包含对象范围、全部条件与结论……">若 f:[0,1]→ℝ 连续，且 f(0)&lt;0&lt;f(1)，则存在 c∈(0,1) 使 f(c)=0。</textarea>
+    <div class="input-footer"><div class="input-help"><span class="hint-icon">i</span><span>请写出完整命题，而不只是定理名称。</span><span id="char-count">0 / 6000</span></div><div class="input-actions"><button id="example-button" class="secondary-button">查看本科示例</button><button id="analyze-button" class="primary-button" disabled>开始真实分析 <span>↗</span></button></div></div>
+    <div class="depth-control"><label for="analysis-depth">分析范围</label><select id="analysis-depth"><option value="standard">标准：最多8个单项、1个组合</option><option value="extended">扩展：最多8个单项、3个组合</option></select><span class="muted">每项最多尝试3类策略；扩展可能增加耗时和用量。</span></div>
+    <div id="live-help" class="live-help">接通模型服务后可分析任意输入；下方示例可直接体验。</div>
+  </section>
+  <div id="error-message" role="alert" class="error-message" hidden></div>
+  <div id="loading" class="loading" role="status" hidden><span class="spinner"></span><div><strong>正在分析定理中的条件</strong><p>模型正在提取假设、搜索反例并检查保留条件。通常需要一段时间，请保持页面打开。</p></div></div>
+  <section id="report-section" aria-labelledby="report-title" hidden>
+    <div class="report-heading"><div><p class="eyebrow">MAKE EVERY ASSUMPTION VISIBLE</p><h2 id="report-title">条件分析报告 <span id="report-count"></span></h2></div><div class="report-actions"><button class="secondary-button small" id="feedback-button">记录问题</button><button class="secondary-button small" id="export-button">↓ Markdown</button><button class="secondary-button small" id="export-json-button">↓ JSON</button></div></div>
+    <div class="example-banner" id="example-banner"><span class="example-badge">示例</span><span>这是预置数学解析，用于体验页面；没有调用模型，也没有产生模型费用。</span></div>
+    <div class="summary-card"><div class="summary-icon">∴</div><div><p class="tiny-label">条件在这里做了什么</p><p id="report-summary"></p></div></div>
+    <div id="coverage-card" class="coverage-card"></div><p id="report-provenance" class="report-provenance"></p>
+    <div class="report-tabs" role="tablist" aria-label="报告视图"><button role="tab" aria-selected="true" aria-controls="analysis-panel" id="tab-analysis" class="tab active">逐项删减</button><button role="tab" aria-selected="false" aria-controls="overview-panel" id="tab-overview" class="tab">定理与假设</button><button role="tab" aria-selected="false" aria-controls="dependency-panel" id="tab-dependency" class="tab">条件关系</button></div>
+    <div id="analysis-panel" role="tabpanel" aria-labelledby="tab-analysis"><div class="analysis-grid"><div class="condition-column"><div class="column-heading"><span>选择一个条件</span><span id="condition-count"></span></div><div id="condition-list"></div><div class="reading-tip"><span>↳</span><p>每次只改变指定条件，<br>其余条件都需要重新核验。</p></div></div><article id="intervention-detail" class="detail-card" aria-live="polite"></article></div></div>
+    <div id="overview-panel" role="tabpanel" aria-labelledby="tab-overview" class="overview-card" hidden></div>
+    <div id="dependency-panel" role="tabpanel" aria-labelledby="tab-dependency" class="overview-card" hidden></div>
+    <div id="remaining-card" class="remaining-card" hidden></div>
+    <div class="report-footnote"><span class="status-dot"></span><span id="report-evidence"></span><button class="text-button" data-dialog="evidence-dialog">这意味着什么？</button></div>
+  </section>
+  <section id="clarification-section" class="overview-card clarification" aria-live="polite" hidden></section>
+  <footer class="page-footer"><span>条件考古学 · CONDITION LAB</span><span>探索条件的作用，让理解多走一步。</span></footer>
+</main>
+</div>
+<dialog id="reading-dialog"><div class="dialog-heading"><h2>怎样读这份报告</h2><button class="close-dialog" aria-label="关闭">×</button></div><p>先看“定理与假设”，确认模型理解的对象、定义和量词与你的教材一致。</p><ol><li><strong>选择一个条件：</strong>查看删掉或弱化它以后，命题发生了什么变化。</li><li><strong>检查具体对象：</strong>反例必须仍满足全部保留条件，同时推翻指定结论。</li><li><strong>分清不同判断：</strong>不可删、删后仍成立、被其余条件推出、需要重写定义和未判定具有不同含义。</li><li><strong>查看分析范围：</strong>没有找到反例不表示冗余；未探索的组合会单独列出。</li></ol><p class="dialog-note">示例按钮只加载当前科目的预置题，不会把你自行输入的定理当成已经分析。</p></dialog>
+<dialog id="evidence-dialog"><div class="dialog-heading"><h2>证据与使用边界</h2><button class="close-dialog" aria-label="关闭">×</button></div><p>Skill 是分析流程和策略库，需要由模型执行。网页本身不是数学证明器。</p><ul><li><strong>预置示例：</strong>事先写好的数学解析，用于说明操作。</li><li><strong>真实分析：</strong>配置服务端模型后，对你的定理生成数学论证；它可能出错。</li><li><strong>局部计算、独立 AI 复核、人工审阅、形式化验证：</strong>当前网页没有运行这些步骤，不会把它们显示成已通过。</li></ul><p>本页不自动改写 Skill。下载的问题记录可用于后续复核，不能直接触发策略更新或变成金标准。</p><p>支持数学分析、高等代数、实分析和复分析。对困难题允许给出“尚未判定”。</p></dialog>
+<dialog id="service-dialog"><div class="dialog-heading"><h2>模型服务与试用访问</h2><button class="close-dialog" aria-label="关闭">×</button></div><p id="service-explanation"></p><p>模型名称与 API 密钥由管理员在服务器配置。不要在网页中填写模型 API 密钥。</p><div id="access-code-area" hidden><label for="access-code">管理员提供的试用访问码</label><input id="access-code" type="password" autocomplete="off"><p class="muted">访问码只保留在本次页面内存中，刷新后需要重新输入。</p><button class="primary-button" id="save-access-code">使用此访问码</button></div><p class="dialog-note">本地默认地址：http://127.0.0.1:8765。共享给同学需要由管理员配置试用访问码与访问地址。</p></dialog>
+<dialog id="feedback-dialog"><div class="dialog-heading"><h2>记录这份分析的问题</h2><button class="close-dialog" aria-label="关闭">×</button></div><p>写清楚哪一步有疑问。下载的记录包含当前报告、输入定理与版本信息，方便后续 AI 复核。</p><label for="feedback-input">你的问题或修正建议</label><textarea id="feedback-input" rows="4" maxlength="3000" placeholder="例如：删除 H1 后，反例是否仍满足 H3？"></textarea><button class="primary-button" id="download-feedback">下载问题记录</button><p class="dialog-note">此操作只下载到你的电脑，不会自动发送或更新 Skill。</p></dialog>
+</body></html>

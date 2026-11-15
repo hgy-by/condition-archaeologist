@@ -1,0 +1,25 @@
+{
+  "reason": "Remote connection closed without response; no content-based retries",
+  "max_retries_per_request": 1,
+  "requests": [
+    {
+      "task_id": "RA01",
+      "arm": "full_skill",
+      "previous_attempt": {
+        "record": "transport-failures/full_skill/RA01.json",
+        "elapsed_seconds": 40.12336259998847,
+        "error": "Remote end closed connection without response"
+      }
+    },
+    {
+      "task_id": "RA02",
+      "arm": "direct_model",
+      "previous_attempt": {
+        "record": "transport-failures/direct_model/RA02.json",
+        "elapsed_seconds": 39.06447240000125,
+        "error": "Remote end closed connection without response"
+      }
+    }
+  ],
+  "cost_note": "Failed requests may have incurred unknown upstream work; no price inferred."
+}

@@ -1,0 +1,840 @@
+{
+  "ma": {
+    "status": "report",
+    "task_id": "example-ma",
+    "summary": "连续性使函数不能跳过零；端点严格异号使零点落在区间内部。三个条件在保留其余条件时都不可直接删除。",
+    "theorem": {
+      "statement": "若 f:[0,1]→ℝ 连续，且 f(0)<0<f(1)，则存在 c∈(0,1) 使 f(c)=0。",
+      "subjects": [
+        "数学分析"
+      ],
+      "objects": [
+        "实值函数 f，定义域为闭区间 [0,1]。"
+      ],
+      "definitions": [],
+      "quantifiers": [
+        "结论是在全部原假设成立时，对任意符合对象范围的输入成立。"
+      ],
+      "hypotheses": [
+        {
+          "id": "H1",
+          "text": "f 在 [0,1] 上连续"
+        },
+        {
+          "id": "H2",
+          "text": "f(0)<0"
+        },
+        {
+          "id": "H3",
+          "text": "f(1)>0"
+        }
+      ],
+      "conclusions": [
+        {
+          "id": "C1",
+          "text": "存在内部点 c∈(0,1)，使 f(c)=0。"
+        }
+      ]
+    },
+    "interventions": [
+      {
+        "task_id": "example-ma-H1",
+        "hypotheses": [
+          {
+            "id": "H1",
+            "text": "f 在 [0,1] 上连续"
+          },
+          {
+            "id": "H2",
+            "text": "f(0)<0"
+          },
+          {
+            "id": "H3",
+            "text": "f(1)>0"
+          }
+        ],
+        "intervention": {
+          "removed": [
+            "H1"
+          ],
+          "replacement": null
+        },
+        "judgment": "indispensable",
+        "witness": "f(x)=−1（0≤x<1/2）；f(x)=1（1/2≤x≤1）。",
+        "retained_checks": [
+          {
+            "id": "H2",
+            "argument": "f(0)=−1<0，左端点条件保留。"
+          },
+          {
+            "id": "H3",
+            "argument": "f(1)=1>0，右端点条件保留。"
+          }
+        ],
+        "replacement_checks": [],
+        "target_failure": {
+          "id": "C1",
+          "argument": "f 只取 −1 和 1，因此整个区间都没有零点，更没有内部零点。"
+        },
+        "argument": "f 在 1/2 处发生跳跃，违反被删的连续性。符号由负变正并不自动保证经过零。",
+        "evidence": [
+          {
+            "kind": "mathematical_argument",
+            "artifact": null,
+            "scope": "本示例所列对象、保留条件、删除条件违反与目标否定。"
+          }
+        ],
+        "dependencies": [],
+        "uncertainties": [],
+        "next_steps": [],
+        "cost": {
+          "elapsed_seconds": null,
+          "model_calls": null,
+          "tool_calls": null,
+          "usd": null
+        }
+      },
+      {
+        "task_id": "example-ma-H2",
+        "hypotheses": [
+          {
+            "id": "H1",
+            "text": "f 在 [0,1] 上连续"
+          },
+          {
+            "id": "H2",
+            "text": "f(0)<0"
+          },
+          {
+            "id": "H3",
+            "text": "f(1)>0"
+          }
+        ],
+        "intervention": {
+          "removed": [
+            "H2"
+          ],
+          "replacement": null
+        },
+        "judgment": "indispensable",
+        "witness": "f(x)=x+1，x∈[0,1]。",
+        "retained_checks": [
+          {
+            "id": "H1",
+            "argument": "线性函数在整个 [0,1] 上连续。"
+          },
+          {
+            "id": "H3",
+            "argument": "f(1)=2>0。"
+          }
+        ],
+        "replacement_checks": [],
+        "target_failure": {
+          "id": "C1",
+          "argument": "对全部 x∈[0,1]，f(x)≥1，所以不存在零点。"
+        },
+        "argument": "f(0)=1，不满足 f(0)<0；保留连续性和右端点为正，仍无法保证零点存在。",
+        "evidence": [
+          {
+            "kind": "mathematical_argument",
+            "artifact": null,
+            "scope": "本示例所列对象、保留条件、删除条件违反与目标否定。"
+          }
+        ],
+        "dependencies": [],
+        "uncertainties": [],
+        "next_steps": [],
+        "cost": {
+          "elapsed_seconds": null,
+          "model_calls": null,
+          "tool_calls": null,
+          "usd": null
+        }
+      },
+      {
+        "task_id": "example-ma-H3",
+        "hypotheses": [
+          {
+            "id": "H1",
+            "text": "f 在 [0,1] 上连续"
+          },
+          {
+            "id": "H2",
+            "text": "f(0)<0"
+          },
+          {
+            "id": "H3",
+            "text": "f(1)>0"
+          }
+        ],
+        "intervention": {
+          "removed": [
+            "H3"
+          ],
+          "replacement": null
+        },
+        "judgment": "indispensable",
+        "witness": "f(x)=x−2，x∈[0,1]。",
+        "retained_checks": [
+          {
+            "id": "H1",
+            "argument": "线性函数在整个 [0,1] 上连续。"
+          },
+          {
+            "id": "H2",
+            "argument": "f(0)=−2<0。"
+          }
+        ],
+        "replacement_checks": [],
+        "target_failure": {
+          "id": "C1",
+          "argument": "对全部 x∈[0,1]，f(x)≤−1，所以不存在零点。"
+        },
+        "argument": "f(1)=−1，不满足 f(1)>0；与左端点条件对称，不能只保留一端的符号。",
+        "evidence": [
+          {
+            "kind": "mathematical_argument",
+            "artifact": null,
+            "scope": "本示例所列对象、保留条件、删除条件违反与目标否定。"
+          }
+        ],
+        "dependencies": [],
+        "uncertainties": [],
+        "next_steps": [],
+        "cost": {
+          "elapsed_seconds": null,
+          "model_calls": null,
+          "tool_calls": null,
+          "usd": null
+        }
+      }
+    ],
+    "dependency_map": [
+      {
+        "from_ids": [
+          "H1"
+        ],
+        "to_id": "C1",
+        "kind": "在当前其余条件背景下不可删",
+        "context": "保留 H2、H3",
+        "argument": "f 在 1/2 处发生跳跃，违反被删的连续性。符号由负变正并不自动保证经过零。",
+        "intervention_ids": [
+          "example-ma-H1"
+        ]
+      },
+      {
+        "from_ids": [
+          "H2"
+        ],
+        "to_id": "C1",
+        "kind": "在当前其余条件背景下不可删",
+        "context": "保留 H1、H3",
+        "argument": "f(0)=1，不满足 f(0)<0；保留连续性和右端点为正，仍无法保证零点存在。",
+        "intervention_ids": [
+          "example-ma-H2"
+        ]
+      },
+      {
+        "from_ids": [
+          "H3"
+        ],
+        "to_id": "C1",
+        "kind": "在当前其余条件背景下不可删",
+        "context": "保留 H1、H2",
+        "argument": "f(1)=−1，不满足 f(1)>0；与左端点条件对称，不能只保留一端的符号。",
+        "intervention_ids": [
+          "example-ma-H3"
+        ]
+      }
+    ],
+    "remaining_work": [
+      "尚未穷尽所有弱化形式和条件组合。"
+    ],
+    "questions": []
+  },
+  "al": {
+    "status": "report",
+    "task_id": "example-al",
+    "summary": "正实二次型只能控制对称部分。对称性排除非实谱，二次型严格正性再排除零与负特征值。",
+    "theorem": {
+      "statement": "设 n≥1，A∈ℝⁿˣⁿ，A 为对称矩阵，且对所有非零 x∈ℝⁿ 有 xᵀAx>0，则 A 的所有复特征值均为正实数。",
+      "subjects": [
+        "高等代数"
+      ],
+      "objects": [
+        "n 为正整数；A 为实 n×n 矩阵，特征值在 ℂ 中讨论。"
+      ],
+      "definitions": [],
+      "quantifiers": [
+        "结论是在全部原假设成立时，对任意符合对象范围的输入成立。"
+      ],
+      "hypotheses": [
+        {
+          "id": "H1",
+          "text": "Aᵀ=A"
+        },
+        {
+          "id": "H2",
+          "text": "对所有非零实向量 x，xᵀAx>0"
+        }
+      ],
+      "conclusions": [
+        {
+          "id": "C1",
+          "text": "A 的所有特征值都是正实数。"
+        }
+      ]
+    },
+    "interventions": [
+      {
+        "task_id": "example-al-H1",
+        "hypotheses": [
+          {
+            "id": "H1",
+            "text": "Aᵀ=A"
+          },
+          {
+            "id": "H2",
+            "text": "对所有非零实向量 x，xᵀAx>0"
+          }
+        ],
+        "intervention": {
+          "removed": [
+            "H1"
+          ],
+          "replacement": null
+        },
+        "judgment": "indispensable",
+        "witness": "A=[[1,−1],[1,1]]。",
+        "retained_checks": [
+          {
+            "id": "H2",
+            "argument": "令 x=(u,v)ᵀ，则 xᵀAx=u²+v²，对非零 x 严格为正。"
+          }
+        ],
+        "replacement_checks": [],
+        "target_failure": {
+          "id": "C1",
+          "argument": "特征多项式为 (λ−1)²+1，特征值 1±i 不是实数。"
+        },
+        "argument": "Aᵀ≠A，确实违反对称性。正二次型不能限制反对称部分导致的非实谱。",
+        "evidence": [
+          {
+            "kind": "mathematical_argument",
+            "artifact": null,
+            "scope": "本示例所列对象、保留条件、删除条件违反与目标否定。"
+          }
+        ],
+        "dependencies": [],
+        "uncertainties": [],
+        "next_steps": [],
+        "cost": {
+          "elapsed_seconds": null,
+          "model_calls": null,
+          "tool_calls": null,
+          "usd": null
+        }
+      },
+      {
+        "task_id": "example-al-H2",
+        "hypotheses": [
+          {
+            "id": "H1",
+            "text": "Aᵀ=A"
+          },
+          {
+            "id": "H2",
+            "text": "对所有非零实向量 x，xᵀAx>0"
+          }
+        ],
+        "intervention": {
+          "removed": [
+            "H2"
+          ],
+          "replacement": null
+        },
+        "judgment": "indispensable",
+        "witness": "n=1，A=[−1]。",
+        "retained_checks": [
+          {
+            "id": "H1",
+            "argument": "1×1 实矩阵满足 Aᵀ=A。"
+          }
+        ],
+        "replacement_checks": [],
+        "target_failure": {
+          "id": "C1",
+          "argument": "唯一特征值是 −1，不是正实数。"
+        },
+        "argument": "取 x=1，有 xᵀAx=−1<0，违反严格正性；仅有对称性不够。",
+        "evidence": [
+          {
+            "kind": "mathematical_argument",
+            "artifact": null,
+            "scope": "本示例所列对象、保留条件、删除条件违反与目标否定。"
+          }
+        ],
+        "dependencies": [],
+        "uncertainties": [],
+        "next_steps": [],
+        "cost": {
+          "elapsed_seconds": null,
+          "model_calls": null,
+          "tool_calls": null,
+          "usd": null
+        }
+      }
+    ],
+    "dependency_map": [
+      {
+        "from_ids": [
+          "H1"
+        ],
+        "to_id": "C1",
+        "kind": "在当前其余条件背景下不可删",
+        "context": "保留 H2",
+        "argument": "Aᵀ≠A，确实违反对称性。正二次型不能限制反对称部分导致的非实谱。",
+        "intervention_ids": [
+          "example-al-H1"
+        ]
+      },
+      {
+        "from_ids": [
+          "H2"
+        ],
+        "to_id": "C1",
+        "kind": "在当前其余条件背景下不可删",
+        "context": "保留 H1",
+        "argument": "取 x=1，有 xᵀAx=−1<0，违反严格正性；仅有对称性不够。",
+        "intervention_ids": [
+          "example-al-H2"
+        ]
+      }
+    ],
+    "remaining_work": [
+      "尚未穷尽所有弱化形式和条件组合。"
+    ],
+    "questions": []
+  },
+  "ra": {
+    "status": "report",
+    "task_id": "example-ra",
+    "summary": "逐点收敛、可积的共同控制函数和统一控制缺一不可。下面分别破坏积分收敛；不声称同时推翻极限函数可积。",
+    "theorem": {
+      "statement": "设 (X,Σ,μ) 为测度空间，fₙ、f 为可测实函数，fₙ→f 几乎处处，g 为非负可测函数且 ∫g dμ<∞，并且对所有 n 几乎处处有 |fₙ|≤g，则 f∈L¹ 且 ∫fₙ dμ→∫f dμ。",
+      "subjects": [
+        "实分析"
+      ],
+      "objects": [
+        "任意测度空间；fₙ、f、g 可测且为实函数，g≥0。"
+      ],
+      "definitions": [],
+      "quantifiers": [
+        "结论是在全部原假设成立时，对任意符合对象范围的输入成立。"
+      ],
+      "hypotheses": [
+        {
+          "id": "H1",
+          "text": "fₙ→f 几乎处处"
+        },
+        {
+          "id": "H2",
+          "text": "共同控制函数 g 的积分有限"
+        },
+        {
+          "id": "H3",
+          "text": "对所有 n，|fₙ|≤g 几乎处处"
+        }
+      ],
+      "conclusions": [
+        {
+          "id": "C1",
+          "text": "极限函数 f 可积。"
+        },
+        {
+          "id": "C2",
+          "text": "∫fₙ dμ→∫f dμ。"
+        }
+      ]
+    },
+    "interventions": [
+      {
+        "task_id": "example-ra-H1",
+        "hypotheses": [
+          {
+            "id": "H1",
+            "text": "fₙ→f 几乎处处"
+          },
+          {
+            "id": "H2",
+            "text": "共同控制函数 g 的积分有限"
+          },
+          {
+            "id": "H3",
+            "text": "对所有 n，|fₙ|≤g 几乎处处"
+          }
+        ],
+        "intervention": {
+          "removed": [
+            "H1"
+          ],
+          "replacement": null
+        },
+        "judgment": "indispensable",
+        "witness": "X=[0,1]，Lebesgue 测度；fₙ(x)=(−1)ⁿ，指定 f(x)=0，g(x)=1。",
+        "retained_checks": [
+          {
+            "id": "H2",
+            "argument": "∫₀¹g dx=1<∞。"
+          },
+          {
+            "id": "H3",
+            "argument": "对每个 n、每个 x，|fₙ(x)|=1≤g(x)。"
+          }
+        ],
+        "replacement_checks": [],
+        "target_failure": {
+          "id": "C2",
+          "argument": "∫₀¹fₙ dx=(−1)ⁿ，不收敛到 ∫₀¹f dx=0。"
+        },
+        "argument": "fₙ 在每个点都振荡，不收敛到 f；指定极限和函数列之间的联系不能直接删去。",
+        "evidence": [
+          {
+            "kind": "mathematical_argument",
+            "artifact": null,
+            "scope": "本示例所列对象、保留条件、删除条件违反与目标否定。"
+          }
+        ],
+        "dependencies": [],
+        "uncertainties": [],
+        "next_steps": [],
+        "cost": {
+          "elapsed_seconds": null,
+          "model_calls": null,
+          "tool_calls": null,
+          "usd": null
+        }
+      },
+      {
+        "task_id": "example-ra-H2",
+        "hypotheses": [
+          {
+            "id": "H1",
+            "text": "fₙ→f 几乎处处"
+          },
+          {
+            "id": "H2",
+            "text": "共同控制函数 g 的积分有限"
+          },
+          {
+            "id": "H3",
+            "text": "对所有 n，|fₙ|≤g 几乎处处"
+          }
+        ],
+        "intervention": {
+          "removed": [
+            "H2"
+          ],
+          "replacement": null
+        },
+        "judgment": "indispensable",
+        "witness": "X=ℕ⁺，计数测度；fₙ(k)=1（k=n），其他点为0；f=0，g=1。",
+        "retained_checks": [
+          {
+            "id": "H1",
+            "argument": "每个固定 k 只有第 k 项取1，此后恒为0，故逐点收敛到0。"
+          },
+          {
+            "id": "H3",
+            "argument": "全部 n、k 都有 |fₙ(k)|≤1=g(k)。"
+          }
+        ],
+        "replacement_checks": [],
+        "target_failure": {
+          "id": "C2",
+          "argument": "每个 ∫fₙ dμ=1，但 ∫f dμ=0，所以积分不收敛到极限函数的积分。"
+        },
+        "argument": "∫g dμ=Σₖ1=∞，违反可积性。质量不断移向不同点，共同有界仍不足以控制总质量。",
+        "evidence": [
+          {
+            "kind": "mathematical_argument",
+            "artifact": null,
+            "scope": "本示例所列对象、保留条件、删除条件违反与目标否定。"
+          }
+        ],
+        "dependencies": [],
+        "uncertainties": [],
+        "next_steps": [],
+        "cost": {
+          "elapsed_seconds": null,
+          "model_calls": null,
+          "tool_calls": null,
+          "usd": null
+        }
+      },
+      {
+        "task_id": "example-ra-H3",
+        "hypotheses": [
+          {
+            "id": "H1",
+            "text": "fₙ→f 几乎处处"
+          },
+          {
+            "id": "H2",
+            "text": "共同控制函数 g 的积分有限"
+          },
+          {
+            "id": "H3",
+            "text": "对所有 n，|fₙ|≤g 几乎处处"
+          }
+        ],
+        "intervention": {
+          "removed": [
+            "H3"
+          ],
+          "replacement": null
+        },
+        "judgment": "indispensable",
+        "witness": "X=(0,1)，Lebesgue 测度；fₙ(x)=n·1₍₀,₁/ₙ₎(x)，f=0，g=1。",
+        "retained_checks": [
+          {
+            "id": "H1",
+            "argument": "对任意 x>0，当 n>1/x 时 fₙ(x)=0，故逐点收敛到0。"
+          },
+          {
+            "id": "H2",
+            "argument": "∫₀¹g dx=1<∞。"
+          }
+        ],
+        "replacement_checks": [],
+        "target_failure": {
+          "id": "C2",
+          "argument": "每个 ∫₀¹fₙ dx=1，但 ∫₀¹f dx=0。"
+        },
+        "argument": "当 n≥2 时，在正测度区间 (0,1/n) 上 fₙ=n>g=1；违反共同控制。尖峰变窄但变高，积分仍为1。",
+        "evidence": [
+          {
+            "kind": "mathematical_argument",
+            "artifact": null,
+            "scope": "本示例所列对象、保留条件、删除条件违反与目标否定。"
+          }
+        ],
+        "dependencies": [],
+        "uncertainties": [],
+        "next_steps": [],
+        "cost": {
+          "elapsed_seconds": null,
+          "model_calls": null,
+          "tool_calls": null,
+          "usd": null
+        }
+      }
+    ],
+    "dependency_map": [
+      {
+        "from_ids": [
+          "H1"
+        ],
+        "to_id": "C2",
+        "kind": "在当前其余条件背景下不可删",
+        "context": "保留 H2、H3",
+        "argument": "fₙ 在每个点都振荡，不收敛到 f；指定极限和函数列之间的联系不能直接删去。",
+        "intervention_ids": [
+          "example-ra-H1"
+        ]
+      },
+      {
+        "from_ids": [
+          "H2"
+        ],
+        "to_id": "C2",
+        "kind": "在当前其余条件背景下不可删",
+        "context": "保留 H1、H3",
+        "argument": "∫g dμ=Σₖ1=∞，违反可积性。质量不断移向不同点，共同有界仍不足以控制总质量。",
+        "intervention_ids": [
+          "example-ra-H2"
+        ]
+      },
+      {
+        "from_ids": [
+          "H3"
+        ],
+        "to_id": "C2",
+        "kind": "在当前其余条件背景下不可删",
+        "context": "保留 H1、H2",
+        "argument": "当 n≥2 时，在正测度区间 (0,1/n) 上 fₙ=n>g=1；违反共同控制。尖峰变窄但变高，积分仍为1。",
+        "intervention_ids": [
+          "example-ra-H3"
+        ]
+      }
+    ],
+    "remaining_work": [
+      "尚未穷尽所有弱化形式和条件组合。"
+    ],
+    "questions": []
+  },
+  "ca": {
+    "status": "report",
+    "task_id": "example-ca",
+    "summary": "Liouville 定理同时依赖全纯性和全局有界性。任一单独保留，都允许非常函数。",
+    "theorem": {
+      "statement": "若 f:ℂ→ℂ 为整函数且在整个复平面上有界，则 f 为常函数。",
+      "subjects": [
+        "复分析"
+      ],
+      "objects": [
+        "函数在整个复平面上定义；有界指存在统一常数 M，使全部 z∈ℂ 满足 |f(z)|≤M。"
+      ],
+      "definitions": [],
+      "quantifiers": [
+        "结论是在全部原假设成立时，对任意符合对象范围的输入成立。"
+      ],
+      "hypotheses": [
+        {
+          "id": "H1",
+          "text": "f 在整个复平面上全纯"
+        },
+        {
+          "id": "H2",
+          "text": "存在有限 M≥0，对所有 z∈ℂ 有 |f(z)|≤M"
+        }
+      ],
+      "conclusions": [
+        {
+          "id": "C1",
+          "text": "存在 a∈ℂ，使对所有 z∈ℂ，f(z)=a。"
+        }
+      ]
+    },
+    "interventions": [
+      {
+        "task_id": "example-ca-H1",
+        "hypotheses": [
+          {
+            "id": "H1",
+            "text": "f 在整个复平面上全纯"
+          },
+          {
+            "id": "H2",
+            "text": "存在有限 M≥0，对所有 z∈ℂ 有 |f(z)|≤M"
+          }
+        ],
+        "intervention": {
+          "removed": [
+            "H1"
+          ],
+          "replacement": null
+        },
+        "judgment": "indispensable",
+        "witness": "f(z)=z̄/(1+|z|)，z∈ℂ。",
+        "retained_checks": [
+          {
+            "id": "H2",
+            "argument": "|f(z)|=|z|/(1+|z|)<1，故 M=1 是全局统一上界。"
+          }
+        ],
+        "replacement_checks": [],
+        "target_failure": {
+          "id": "C1",
+          "argument": "f(0)=0，而 f(1)=1/2，故 f 非常数。"
+        },
+        "argument": "在0点，实轴方向差商趋于1，虚轴方向差商趋于−1，复导数不存在，确实不满足全纯性。",
+        "evidence": [
+          {
+            "kind": "mathematical_argument",
+            "artifact": null,
+            "scope": "本示例所列对象、保留条件、删除条件违反与目标否定。"
+          }
+        ],
+        "dependencies": [],
+        "uncertainties": [],
+        "next_steps": [],
+        "cost": {
+          "elapsed_seconds": null,
+          "model_calls": null,
+          "tool_calls": null,
+          "usd": null
+        }
+      },
+      {
+        "task_id": "example-ca-H2",
+        "hypotheses": [
+          {
+            "id": "H1",
+            "text": "f 在整个复平面上全纯"
+          },
+          {
+            "id": "H2",
+            "text": "存在有限 M≥0，对所有 z∈ℂ 有 |f(z)|≤M"
+          }
+        ],
+        "intervention": {
+          "removed": [
+            "H2"
+          ],
+          "replacement": null
+        },
+        "judgment": "indispensable",
+        "witness": "f(z)=z，z∈ℂ。",
+        "retained_checks": [
+          {
+            "id": "H1",
+            "argument": "f′(z)=1 在整个复平面存在，故 f 为整函数。"
+          }
+        ],
+        "replacement_checks": [],
+        "target_failure": {
+          "id": "C1",
+          "argument": "f(0)=0 与 f(1)=1，故不是常函数。"
+        },
+        "argument": "取 z=n∈ℕ，则 |f(n)|=n→∞，显式证明违反全局有界性。",
+        "evidence": [
+          {
+            "kind": "mathematical_argument",
+            "artifact": null,
+            "scope": "本示例所列对象、保留条件、删除条件违反与目标否定。"
+          }
+        ],
+        "dependencies": [],
+        "uncertainties": [],
+        "next_steps": [],
+        "cost": {
+          "elapsed_seconds": null,
+          "model_calls": null,
+          "tool_calls": null,
+          "usd": null
+        }
+      }
+    ],
+    "dependency_map": [
+      {
+        "from_ids": [
+          "H1"
+        ],
+        "to_id": "C1",
+        "kind": "在当前其余条件背景下不可删",
+        "context": "保留 H2",
+        "argument": "在0点，实轴方向差商趋于1，虚轴方向差商趋于−1，复导数不存在，确实不满足全纯性。",
+        "intervention_ids": [
+          "example-ca-H1"
+        ]
+      },
+      {
+        "from_ids": [
+          "H2"
+        ],
+        "to_id": "C1",
+        "kind": "在当前其余条件背景下不可删",
+        "context": "保留 H1",
+        "argument": "取 z=n∈ℕ，则 |f(n)|=n→∞，显式证明违反全局有界性。",
+        "intervention_ids": [
+          "example-ca-H2"
+        ]
+      }
+    ],
+    "remaining_work": [
+      "尚未穷尽所有弱化形式和条件组合。"
+    ],
+    "questions": []
+  }
+}

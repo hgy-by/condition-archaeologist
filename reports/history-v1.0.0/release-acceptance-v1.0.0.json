@@ -1,0 +1,16 @@
+{
+  "version": "1.0.0",
+  "release_level": "four_subject_auxiliary_final",
+  "reviewer_type": "ai",
+  "reviewer": "Codex主Agent",
+  "date": "2026-11-05",
+  "human_review_required": false,
+  "model_acceptance_passed": true,
+  "software_tests_passed": true,
+  "software_tests": 101,
+  "installation_verified": true,
+  "runtime_hash": "570004a032846c098f5b4f339a302b0c702d638cf09604f7ebb2365ae349c611",
+  "RSI_improvement_proven": false,
+  "formal_or_independent_human_certification": false,
+  "package_integrity_record": "外层outputs/条件考古学_v1.0.0压缩包校验.json，在归档后生成，避免自引用摘要。"
+}

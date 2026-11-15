@@ -1,0 +1,31 @@
+{
+  "status": "pass",
+  "checks": [
+    {
+      "id": "GF2",
+      "scope": "穷举F2²上双线性、对称、对角零及非零取值；适用于AL07两组。"
+    },
+    {
+      "id": "complex_nilpotent",
+      "scope": "U-AL复对称矩阵非零且平方零。非对角化推论需数学论证。"
+    },
+    {
+      "id": "rational_characteristic_polynomial",
+      "scope": "U-AL有理矩阵特征多项式精确计算；Q无根用判别式5非有理平方的论证。"
+    },
+    {
+      "id": "Jordan_kernel",
+      "scope": "B-AL矩阵平方零且核维1。"
+    },
+    {
+      "id": "constant_series_partial_sum",
+      "scope": "CA09有限部分和为N+1；不替代收敛半径论证。"
+    },
+    {
+      "id": "signed_integral_arithmetic",
+      "scope": "RA07的有理数相消与绝对值和；可测性和测度性质另由数学论证。"
+    }
+  ],
+  "formal_verification": false,
+  "all_mathematics_automatically_proven": false
+}

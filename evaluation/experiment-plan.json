@@ -1,0 +1,31 @@
+{
+  "version": "0.1",
+  "arms": [
+    "direct_model",
+    "fixed_prompt",
+    "retrieval_only",
+    "full_skill",
+    "without_strategies",
+    "without_verification",
+    "cases_only_update",
+    "strategy_update"
+  ],
+  "paired": true,
+  "repeats": 3,
+  "fixed": [
+    "model",
+    "tool_permissions",
+    "retrieval_corpus_hash",
+    "budget",
+    "tasks",
+    "temperature_if_supported"
+  ],
+  "collection": [
+    "prediction.jsonl",
+    "trace.jsonl",
+    "config.json",
+    "cost.json"
+  ],
+  "heldout_policy": "外部控制者逐题注入输入；被测进程不可访问评测目录；基线与消融通过独立复制并记录哈希",
+  "claim_status": "not_run"
+}

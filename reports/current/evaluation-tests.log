@@ -1,0 +1,122 @@
+{"prepared": 2, "out": "C:\\Users\\hougu\\Documents\\Codex\\2026-11-02\\du\\outputs\\condition-archaeologist-project\\.runtime\\tests\\test-evaluation-v021\\1ae04fa8f995421fad572070bcb7ec1b\\run"}
+{"planned_answers": 1, "attempted_calls": 1, "answers_received": 1, "parsed_outputs": 1, "structure_passes": 1, "kinds": {"uncertainty": 1}, "actual_models": ["synthetic"], "usage": {"input_tokens": 0, "output_tokens": 0, "total_tokens": 0}, "usd": null, "human_math_review": "pending", "formal_capability_score": null, "RSI_improvement_proven": false}
+{"planned_answers": 1, "attempted_calls": 1, "answers_received": 1, "parsed_outputs": 1, "structure_passes": 1, "kinds": {"uncertainty": 1}, "actual_models": ["synthetic"], "usage": {"input_tokens": 0, "output_tokens": 0, "total_tokens": 0}, "usd": null, "human_math_review": "pending", "formal_capability_score": null, "RSI_improvement_proven": false}
+{"imported": 1, "decisions": {"待审核": 1, "通过": 0, "部分正确": 0, "错误": 0, "待确认": 0}, "path": "C:\\Users\\hougu\\Documents\\Codex\\2026-11-02\\du\\outputs\\condition-archaeologist-project\\.runtime\\tests\\test-evaluation-v021\\815a9e19360b4d249207bf50795fac66\\imported-reviews\\3ae64d3c32cade26a1fa12cf.json"}
+{"planned_answers": 1, "attempted_calls": 1, "answers_received": 1, "parsed_outputs": 1, "structure_passes": 1, "kinds": {"uncertainty": 1}, "actual_models": ["synthetic"], "usage": {"input_tokens": 0, "output_tokens": 0, "total_tokens": 0}, "usd": null, "human_math_review": "pending", "formal_capability_score": null, "RSI_improvement_proven": false}
+{"imported": 1, "decisions": {"待审核": 1, "通过": 0, "部分正确": 0, "错误": 0, "待确认": 0}, "path": "C:\\Users\\hougu\\Documents\\Codex\\2026-11-02\\du\\outputs\\condition-archaeologist-project\\.runtime\\tests\\test-evaluation-v021\\ee894e8fea904cf79cda0ceb40bac849\\imported-reviews\\3ae64d3c32cade26a1fa12cf.json"}
+{"planned_answers": 1, "attempted_calls": 1, "answers_received": 1, "parsed_outputs": 1, "structure_passes": 1, "kinds": {"uncertainty": 1}, "actual_models": ["synthetic"], "usage": {"input_tokens": 0, "output_tokens": 0, "total_tokens": 0}, "usd": null, "human_math_review": "pending", "formal_capability_score": null, "RSI_improvement_proven": false}
+本次最多累计发起 1 次ChatECNU请求，已经记录 0 次。价格未知。
+本次最多累计发起 1 次ChatECNU请求，已经记录 0 次。价格未知。
+WEB-MA-01 full_skill transport_error
+
+test_ai_score_never_enters_formal_rsi_gate (test_ai_review_v022.AIReviewBoundary.test_ai_score_never_enters_formal_rsi_gate) ... ok
+test_alternative_valid_witnesses_not_string_matched (test_ai_review_v022.AIReviewBoundary.test_alternative_valid_witnesses_not_string_matched) ... ok
+test_authored_ai_reviews_remain_internal (test_ai_review_v022.AIReviewBoundary.test_authored_ai_reviews_remain_internal) ... ok
+test_changed_prediction_digest_rejected (test_ai_review_v022.AIReviewBoundary.test_changed_prediction_digest_rejected) ... ok
+test_edited_reference_invalidates_review (test_ai_review_v022.AIReviewBoundary.test_edited_reference_invalidates_review) ... ok
+test_edited_source_invalidates_review (test_ai_review_v022.AIReviewBoundary.test_edited_source_invalidates_review) ... ok
+test_human_impersonation_rejected (test_ai_review_v022.AIReviewBoundary.test_human_impersonation_rejected) ... ok
+test_independence_impersonation_rejected (test_ai_review_v022.AIReviewBoundary.test_independence_impersonation_rejected) ... ok
+test_invalid_retained_condition_fails_score (test_ai_review_v022.AIReviewBoundary.test_invalid_retained_condition_fails_score) ... ok
+test_missing_replacement_obligation_rejected (test_ai_review_v022.AIReviewBoundary.test_missing_replacement_obligation_rejected) ... ok
+test_missing_retained_obligation_rejected (test_ai_review_v022.AIReviewBoundary.test_missing_retained_obligation_rejected) ... ok
+test_missing_task_cannot_disappear_from_denominator (test_ai_review_v022.AIReviewBoundary.test_missing_task_cannot_disappear_from_denominator) ... ok
+test_path_escape_rejected (test_ai_review_v022.AIReviewBoundary.test_path_escape_rejected) ... ok
+test_unexplained_boolean_is_not_math_review (test_ai_review_v022.AIReviewBoundary.test_unexplained_boolean_is_not_math_review) ... ok
+test_actual_answer_never_retried_for_error_tag (test_ai_review_v022.ResponseFailures.test_actual_answer_never_retried_for_error_tag) ... ok
+test_ai_evidence_requires_traceable_artifact (test_ai_review_v022.ResponseFailures.test_ai_evidence_requires_traceable_artifact) ... ok
+test_arbitrary_error_not_recoverable (test_ai_review_v022.ResponseFailures.test_arbitrary_error_not_recoverable) ... ok
+test_auth_envelope_not_recoverable (test_ai_review_v022.ResponseFailures.test_auth_envelope_not_recoverable) ... ok
+test_non_object_provider_json_cleanly_rejected (test_ai_review_v022.ResponseFailures.test_non_object_provider_json_cleanly_rejected) ... ok
+test_transient_error_envelope_is_not_math_answer (test_ai_review_v022.ResponseFailures.test_transient_error_envelope_is_not_math_answer) ... ok
+test_bad_math_or_invalid_json_answer_never_recovered (test_evaluation_v021.EvaluationReliability.test_bad_math_or_invalid_json_answer_never_recovered) ... ok
+test_both_arms_receive_same_label_contract (test_evaluation_v021.EvaluationReliability.test_both_arms_receive_same_label_contract) ... ok
+test_changed_frozen_jobs_block_execution (test_evaluation_v021.EvaluationReliability.test_changed_frozen_jobs_block_execution) ... ok
+test_changed_response_invalidates_review (test_evaluation_v021.EvaluationReliability.test_changed_response_invalidates_review) ... ok
+test_duplicate_jobs_fail_before_creating_run (test_evaluation_v021.EvaluationReliability.test_duplicate_jobs_fail_before_creating_run) ... ok
+test_duplicate_review_import_preserves_evidence (test_evaluation_v021.EvaluationReliability.test_duplicate_review_import_preserves_evidence) ... ok
+test_empty_200_recoverable (test_evaluation_v021.EvaluationReliability.test_empty_200_recoverable) ... ok
+test_existing_output_not_called_again (test_evaluation_v021.EvaluationReliability.test_existing_output_not_called_again) ... ok
+test_gateway_failure_recoverable (test_evaluation_v021.EvaluationReliability.test_gateway_failure_recoverable) ... ok
+test_mismatched_output_task_rejected (test_evaluation_v021.EvaluationReliability.test_mismatched_output_task_rejected) ... ok
+test_path_traversal_rejected (test_evaluation_v021.EvaluationReliability.test_path_traversal_rejected) ... ok
+test_pending_review_not_promoted (test_evaluation_v021.EvaluationReliability.test_pending_review_not_promoted) ... ok
+test_reference_field_rejected (test_evaluation_v021.EvaluationReliability.test_reference_field_rejected) ... ok
+test_sse_complete_response (test_evaluation_v021.EvaluationReliability.test_sse_complete_response) ... ok
+test_truncation_not_structural_success (test_evaluation_v021.EvaluationReliability.test_truncation_not_structural_success) ... ok
+test_unknown_review_id_rejected (test_evaluation_v021.EvaluationReliability.test_unknown_review_id_rejected) ... ok
+test_ablation_omits_strategy_document (test_final_release.FinalReleaseBoundaries.test_ablation_omits_strategy_document) ... ok
+test_ablation_omits_verification_document (test_final_release.FinalReleaseBoundaries.test_ablation_omits_verification_document) ... ok
+test_accept_cannot_bypass_failed_gate (test_final_release.FinalReleaseBoundaries.test_accept_cannot_bypass_failed_gate) ... ok
+test_ai_gate_can_qualify_AI_evidence_without_human_impersonation (test_final_release.FinalReleaseBoundaries.test_ai_gate_can_qualify_AI_evidence_without_human_impersonation) ... ok
+test_development_tasks_never_qualify_as_isolated_validation (test_final_release.FinalReleaseBoundaries.test_development_tasks_never_qualify_as_isolated_validation) ... ok
+test_direct_baseline_has_no_Skill_payload (test_final_release.FinalReleaseBoundaries.test_direct_baseline_has_no_Skill_payload) ... ok
+test_false_AI_independent_human_claim_rejected (test_final_release.FinalReleaseBoundaries.test_false_AI_independent_human_claim_rejected) ... ok
+test_no_evaluation_answers_in_frozen_runtime (test_final_release.FinalReleaseBoundaries.test_no_evaluation_answers_in_frozen_runtime) ... ok
+test_precision_regression_rejected (test_final_release.FinalReleaseBoundaries.test_precision_regression_rejected) ... ok
+test_reference_exposure_rejected (test_final_release.FinalReleaseBoundaries.test_reference_exposure_rejected) ... ok
+test_same_version_rejected (test_final_release.FinalReleaseBoundaries.test_same_version_rejected) ... ok
+test_source_overlap_rejected (test_final_release.FinalReleaseBoundaries.test_source_overlap_rejected) ... ok
+test_stage_and_changed_candidate_and_rollback (test_final_release.FinalReleaseBoundaries.test_stage_and_changed_candidate_and_rollback) ... ok
+test_stage_does_not_accept_validation_source (test_final_release.FinalReleaseBoundaries.test_stage_does_not_accept_validation_source) ... ok
+test_tie_does_not_become_improvement (test_final_release.FinalReleaseBoundaries.test_tie_does_not_become_improvement) ... ok
+test_unequal_resources_rejected (test_final_release.FinalReleaseBoundaries.test_unequal_resources_rejected) ... ok
+test_actual_four_subject_reviews_can_be_reaggregated (test_final_score.ReviewIntegrity.test_actual_four_subject_reviews_can_be_reaggregated) ... ok
+test_ai_cannot_be_renamed_independent_human (test_final_score.ReviewIntegrity.test_ai_cannot_be_renamed_independent_human) ... ok
+test_changed_input_rejected (test_final_score.ReviewIntegrity.test_changed_input_rejected) ... ok
+test_changed_raw_response_rejected (test_final_score.ReviewIntegrity.test_changed_raw_response_rejected) ... ok
+test_false_math_finding_lowers_score (test_final_score.ReviewIntegrity.test_false_math_finding_lowers_score) ... ok
+test_missing_redundancy_proof_review_rejected (test_final_score.ReviewIntegrity.test_missing_redundancy_proof_review_rejected) ... ok
+test_missing_retained_hypothesis_review_rejected (test_final_score.ReviewIntegrity.test_missing_retained_hypothesis_review_rejected) ... ok
+test_missing_task_review_rejected (test_final_score.ReviewIntegrity.test_missing_task_review_rejected) ... ok
+test_no_answer_cannot_be_misreported_as_success (test_final_score.ReviewIntegrity.test_no_answer_cannot_be_misreported_as_success) ... ok
+test_reviewing_does_not_mutate_actual_sources (test_final_score.ReviewIntegrity.test_reviewing_does_not_mutate_actual_sources) ... ok
+test_text_true_is_not_boolean_review (test_final_score.ReviewIntegrity.test_text_true_is_not_boolean_review) ... ok
+test_truncated_answer_is_failure_and_honesty_unassessed (test_final_score.ReviewIntegrity.test_truncated_answer_is_failure_and_honesty_unassessed) ... ok
+test_abstention_not_perfect_precision (test_lab.MeaningfulChecks.test_abstention_not_perfect_precision) ... ok
+test_alternative_witness_scored_by_obligations (test_lab.MeaningfulChecks.test_alternative_witness_scored_by_obligations) ... ok
+test_broken_retained_hypothesis_fails (test_lab.MeaningfulChecks.test_broken_retained_hypothesis_fails) ... ok
+test_conflicting_boolean_claim_rejected (test_lab.MeaningfulChecks.test_conflicting_boolean_claim_rejected) ... ok
+test_data_obligations_and_family_isolation (test_lab.MeaningfulChecks.test_data_obligations_and_family_isolation) ... ok
+test_empty_claims_never_prove (test_lab.MeaningfulChecks.test_empty_claims_never_prove) ... ok
+test_export_omits_references_and_sources (test_lab.MeaningfulChecks.test_export_omits_references_and_sources) ... ok
+test_float_rejected (test_lab.MeaningfulChecks.test_float_rejected) ... ok
+test_gate_refuses_unreviewed_small_sample (test_lab.MeaningfulChecks.test_gate_refuses_unreviewed_small_sample) ... ok
+test_incorrect_matrix_claim_rejected (test_lab.MeaningfulChecks.test_incorrect_matrix_claim_rejected) ... ok
+test_modified_prediction_invalidates_review (test_lab.MeaningfulChecks.test_modified_prediction_invalidates_review) ... ok
+test_nilpotent_rejects_diagonalization (test_lab.MeaningfulChecks.test_nilpotent_rejects_diagonalization) ... ok
+test_pending_gold_blocks (test_lab.MeaningfulChecks.test_pending_gold_blocks) ... ok
+test_polynomial_stationary (test_lab.MeaningfulChecks.test_polynomial_stationary) ... ok
+test_rational_denominator (test_lab.MeaningfulChecks.test_rational_denominator) ... ok
+test_real_complex_distinction (test_lab.MeaningfulChecks.test_real_complex_distinction) ... ok
+test_rsi_missing_source_blocked (test_lab.MeaningfulChecks.test_rsi_missing_source_blocked) ... ok
+test_rsi_unreviewed_source_blocked (test_lab.MeaningfulChecks.test_rsi_unreviewed_source_blocked) ... ok
+test_spike_exact_integral (test_lab.MeaningfulChecks.test_spike_exact_integral) ... ok
+test_unknown_claim_is_unknown (test_lab.MeaningfulChecks.test_unknown_claim_is_unknown) ... ok
+test_unsupported_is_unknown (test_lab.MeaningfulChecks.test_unsupported_is_unknown) ... ok
+test_untrusted_expression_rejected (test_lab.MeaningfulChecks.test_untrusted_expression_rejected) ... ok
+test_adapter_flow_preserves_unknown_model_cost_and_old_runs (test_runtime_v020.RuntimeRegression.test_adapter_flow_preserves_unknown_model_cost_and_old_runs) ... ok
+test_ai_review_alone_cannot_qualify_as_human_gold (test_runtime_v020.RuntimeRegression.test_ai_review_alone_cannot_qualify_as_human_gold) ... ok
+test_batch_duplicate_ids_rejected (test_runtime_v020.RuntimeRegression.test_batch_duplicate_ids_rejected) ... ok
+test_claimed_review_needs_artifact (test_runtime_v020.RuntimeRegression.test_claimed_review_needs_artifact) ... ok
+test_export_includes_object_conventions (test_runtime_v020.RuntimeRegression.test_export_includes_object_conventions) ... ok
+test_false_dominates_unknown (test_runtime_v020.RuntimeRegression.test_false_dominates_unknown) ... ok
+test_ma04_replacement_preserved (test_runtime_v020.RuntimeRegression.test_ma04_replacement_preserved) ... ok
+test_original_hole_not_filled (test_runtime_v020.RuntimeRegression.test_original_hole_not_filled) ... ok
+test_output_structure_accepts_complete_obligations (test_runtime_v020.RuntimeRegression.test_output_structure_accepts_complete_obligations) ... ok
+test_output_structure_rejects_missing_retained (test_runtime_v020.RuntimeRegression.test_output_structure_rejects_missing_retained) ... ok
+test_output_structure_requires_replacement (test_runtime_v020.RuntimeRegression.test_output_structure_requires_replacement) ... ok
+test_real_eigenvalue_distinct_from_diagonalization (test_runtime_v020.RuntimeRegression.test_real_eigenvalue_distinct_from_diagonalization) ... ok
+test_rotation_has_no_real_eigenvalue (test_runtime_v020.RuntimeRegression.test_rotation_has_no_real_eigenvalue) ... ok
+test_unknown_claim_cli_is_not_success (test_runtime_v020.RuntimeRegression.test_unknown_claim_cli_is_not_success) ... ok
+test_unresolved_needs_explanation (test_runtime_v020.RuntimeRegression.test_unresolved_needs_explanation) ... ok
+test_cancellation_makes_no_attempt (test_web_experiment.WebExperiment.test_cancellation_makes_no_attempt) ... ok
+test_failure_counts_once_and_is_not_retried (test_web_experiment.WebExperiment.test_failure_counts_once_and_is_not_retried) ... ok
+test_pair_has_same_inputs_budgets_schema_but_no_skill_in_direct_arm (test_web_experiment.WebExperiment.test_pair_has_same_inputs_budgets_schema_but_no_skill_in_direct_arm) ... ok
+test_plan_change_rejected_before_token_or_transport (test_web_experiment.WebExperiment.test_plan_change_rejected_before_token_or_transport) ... ok
+test_prepare_never_calls_provider_and_freezes_eight_jobs (test_web_experiment.WebExperiment.test_prepare_never_calls_provider_and_freezes_eight_jobs) ... ok
+
+----------------------------------------------------------------------
+Ran 106 tests in 3.065s
+
+OK

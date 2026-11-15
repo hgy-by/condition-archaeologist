@@ -1,0 +1,420 @@
+[
+  {
+    "task_id": "AL01",
+    "arm": "direct_model",
+    "prediction_digest": "c1625e1eeb649ebadae7953ae87a481bdcc9cf9fb8f9dc24ddc7fa49908f30f0",
+    "input": {
+      "kind": "matrix",
+      "A": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "field": "complex",
+      "claims": {
+        "square": true,
+        "diagonalizable": false
+      }
+    },
+    "result": {
+      "version": "0.2.0",
+      "status": "partial_computation",
+      "claims_pass": true,
+      "checks": {
+        "square": true,
+        "diagonalizable": true
+      },
+      "actual": {
+        "square": true,
+        "symmetric": false,
+        "invertible": false,
+        "diagonalizable": false,
+        "has_eigenvalue_in_field": true
+      },
+      "details": {
+        "matrix": "Matrix([[0, 1], [0, 0]])",
+        "determinant": "0",
+        "field": "complex"
+      },
+      "elapsed_seconds": 0.002057100005913526,
+      "limitation": "Does not establish all retained hypotheses or whole counterexample validity."
+    },
+    "scope": "Controller-transcribed finite computation only; does not prove retained hypotheses or complete argument."
+  },
+  {
+    "task_id": "AL01",
+    "arm": "full_skill",
+    "prediction_digest": "322fbf670aa84066c2910aaaf39d51adebde2b0cc5cabc8869861455493cd5fb",
+    "input": {
+      "kind": "matrix",
+      "A": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "field": "complex",
+      "claims": {
+        "square": true,
+        "diagonalizable": false
+      }
+    },
+    "result": {
+      "version": "0.2.0",
+      "status": "partial_computation",
+      "claims_pass": true,
+      "checks": {
+        "square": true,
+        "diagonalizable": true
+      },
+      "actual": {
+        "square": true,
+        "symmetric": false,
+        "invertible": false,
+        "diagonalizable": false,
+        "has_eigenvalue_in_field": true
+      },
+      "details": {
+        "matrix": "Matrix([[0, 1], [0, 0]])",
+        "determinant": "0",
+        "field": "complex"
+      },
+      "elapsed_seconds": 0.0012997000012546778,
+      "limitation": "Does not establish all retained hypotheses or whole counterexample validity."
+    },
+    "scope": "Controller-transcribed finite computation only; does not prove retained hypotheses or complete argument."
+  },
+  {
+    "task_id": "AL02",
+    "arm": "direct_model",
+    "prediction_digest": "d1aa0ba638fa22117167d6a3ff93033603af423cb26de24f4ff79ab45d85db2b",
+    "input": {
+      "kind": "matrix",
+      "A": [
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "field": "real",
+      "claims": {
+        "has_eigenvalue_in_field": false
+      }
+    },
+    "result": {
+      "version": "0.2.0",
+      "status": "partial_computation",
+      "claims_pass": true,
+      "checks": {
+        "has_eigenvalue_in_field": true
+      },
+      "actual": {
+        "square": true,
+        "symmetric": false,
+        "invertible": true,
+        "diagonalizable": false,
+        "has_eigenvalue_in_field": false
+      },
+      "details": {
+        "matrix": "Matrix([[0, -1], [1, 0]])",
+        "determinant": "1",
+        "field": "real"
+      },
+      "elapsed_seconds": 0.2677343999966979,
+      "limitation": "Does not establish all retained hypotheses or whole counterexample validity."
+    },
+    "scope": "Controller-transcribed finite computation only; does not prove retained hypotheses or complete argument."
+  },
+  {
+    "task_id": "AL02",
+    "arm": "full_skill",
+    "prediction_digest": "f2d80268171ccef585649f3c282a22fc57030411da087cc4c694afb0a214e5a3",
+    "input": {
+      "kind": "matrix",
+      "A": [
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "field": "real",
+      "claims": {
+        "has_eigenvalue_in_field": false
+      }
+    },
+    "result": {
+      "version": "0.2.0",
+      "status": "partial_computation",
+      "claims_pass": true,
+      "checks": {
+        "has_eigenvalue_in_field": true
+      },
+      "actual": {
+        "square": true,
+        "symmetric": false,
+        "invertible": true,
+        "diagonalizable": false,
+        "has_eigenvalue_in_field": false
+      },
+      "details": {
+        "matrix": "Matrix([[0, -1], [1, 0]])",
+        "determinant": "1",
+        "field": "real"
+      },
+      "elapsed_seconds": 0.004826699965633452,
+      "limitation": "Does not establish all retained hypotheses or whole counterexample validity."
+    },
+    "scope": "Controller-transcribed finite computation only; does not prove retained hypotheses or complete argument."
+  },
+  {
+    "task_id": "AL04",
+    "arm": "direct_model",
+    "prediction_digest": "d68ce061d2282347c7428345d325938743801a6f54af57bb80114b9fdef23190",
+    "input": {
+      "kind": "matrix",
+      "A": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "field": "complex",
+      "claims": {
+        "square": true,
+        "diagonalizable": false
+      }
+    },
+    "result": {
+      "version": "0.2.0",
+      "status": "partial_computation",
+      "claims_pass": true,
+      "checks": {
+        "square": true,
+        "diagonalizable": true
+      },
+      "actual": {
+        "square": true,
+        "symmetric": false,
+        "invertible": false,
+        "diagonalizable": false,
+        "has_eigenvalue_in_field": true
+      },
+      "details": {
+        "matrix": "Matrix([[0, 1], [0, 0]])",
+        "determinant": "0",
+        "field": "complex"
+      },
+      "elapsed_seconds": 0.0009269000147469342,
+      "limitation": "Does not establish all retained hypotheses or whole counterexample validity."
+    },
+    "scope": "Controller-transcribed finite computation only; does not prove retained hypotheses or complete argument."
+  },
+  {
+    "task_id": "AL04",
+    "arm": "full_skill",
+    "prediction_digest": "f03d46edf209190a2cc0409cc0059249ba07fe26ba9a9d8e5e96d7eb5aa055fa",
+    "input": {
+      "kind": "matrix",
+      "A": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "field": "complex",
+      "claims": {
+        "square": true,
+        "diagonalizable": false
+      }
+    },
+    "result": {
+      "version": "0.2.0",
+      "status": "partial_computation",
+      "claims_pass": true,
+      "checks": {
+        "square": true,
+        "diagonalizable": true
+      },
+      "actual": {
+        "square": true,
+        "symmetric": false,
+        "invertible": false,
+        "diagonalizable": false,
+        "has_eigenvalue_in_field": true
+      },
+      "details": {
+        "matrix": "Matrix([[0, 1], [0, 0]])",
+        "determinant": "0",
+        "field": "complex"
+      },
+      "elapsed_seconds": 0.0008182000019587576,
+      "limitation": "Does not establish all retained hypotheses or whole counterexample validity."
+    },
+    "scope": "Controller-transcribed finite computation only; does not prove retained hypotheses or complete argument."
+  },
+  {
+    "task_id": "RA01",
+    "arm": "direct_model",
+    "prediction_digest": "0bc31eac775debb2bd37bac6ecd507220562ded2d1e51bccbef46c123fb341bd",
+    "input": {
+      "kind": "spike_integral",
+      "height": 1,
+      "p": 1,
+      "q": 1,
+      "claims": {
+        "integral_power": 0,
+        "integral_coefficient": 1
+      }
+    },
+    "result": {
+      "version": "0.2.0",
+      "status": "partial_computation",
+      "claims_pass": true,
+      "checks": {
+        "integral_power": true,
+        "integral_coefficient": true
+      },
+      "actual": {
+        "integral_power": 0,
+        "integral_coefficient": "1"
+      },
+      "details": {
+        "integral": "1*n**(0)",
+        "scope": "arithmetic identity only; measurable support and convergence require argument"
+      },
+      "elapsed_seconds": 0.0003136000013910234,
+      "limitation": "Does not establish all retained hypotheses or whole counterexample validity."
+    },
+    "scope": "Controller-transcribed finite computation only; does not prove retained hypotheses or complete argument."
+  },
+  {
+    "task_id": "RA01",
+    "arm": "full_skill",
+    "prediction_digest": "4f96e2f9846effa330a790d2f64ec29ece99b5fee8f915bc30d21398c6797388",
+    "input": {
+      "kind": "spike_integral",
+      "height": 1,
+      "p": 1,
+      "q": 1,
+      "claims": {
+        "integral_power": 0,
+        "integral_coefficient": 1
+      }
+    },
+    "result": {
+      "version": "0.2.0",
+      "status": "partial_computation",
+      "claims_pass": true,
+      "checks": {
+        "integral_power": true,
+        "integral_coefficient": true
+      },
+      "actual": {
+        "integral_power": 0,
+        "integral_coefficient": "1"
+      },
+      "details": {
+        "integral": "1*n**(0)",
+        "scope": "arithmetic identity only; measurable support and convergence require argument"
+      },
+      "elapsed_seconds": 4.989997250959277e-05,
+      "limitation": "Does not establish all retained hypotheses or whole counterexample validity."
+    },
+    "scope": "Controller-transcribed finite computation only; does not prove retained hypotheses or complete argument."
+  },
+  {
+    "task_id": "RA02",
+    "arm": "direct_model",
+    "prediction_digest": "5044e2519251c305d9d3f6c3651a42d8c3be14b0cf52b73c6beb62dfcf3b42c5",
+    "input": {
+      "kind": "spike_integral",
+      "height": -1,
+      "p": 1,
+      "q": 1,
+      "claims": {
+        "integral_power": 0,
+        "integral_coefficient": -1
+      }
+    },
+    "result": {
+      "version": "0.2.0",
+      "status": "partial_computation",
+      "claims_pass": true,
+      "checks": {
+        "integral_power": true,
+        "integral_coefficient": true
+      },
+      "actual": {
+        "integral_power": 0,
+        "integral_coefficient": "-1"
+      },
+      "details": {
+        "integral": "-1*n**(0)",
+        "scope": "arithmetic identity only; measurable support and convergence require argument"
+      },
+      "elapsed_seconds": 6.379996193572879e-05,
+      "limitation": "Does not establish all retained hypotheses or whole counterexample validity."
+    },
+    "scope": "Controller-transcribed finite computation only; does not prove retained hypotheses or complete argument."
+  },
+  {
+    "task_id": "RA02",
+    "arm": "full_skill",
+    "prediction_digest": "d87c6cfd3a864a8f5f0a6139d88aabcfa3a83cc9cb3c4b38e9d52aab9a83fc65",
+    "input": {
+      "kind": "spike_integral",
+      "height": -1,
+      "p": 1,
+      "q": 1,
+      "claims": {
+        "integral_power": 0,
+        "integral_coefficient": -1
+      }
+    },
+    "result": {
+      "version": "0.2.0",
+      "status": "partial_computation",
+      "claims_pass": true,
+      "checks": {
+        "integral_power": true,
+        "integral_coefficient": true
+      },
+      "actual": {
+        "integral_power": 0,
+        "integral_coefficient": "-1"
+      },
+      "details": {
+        "integral": "-1*n**(0)",
+        "scope": "arithmetic identity only; measurable support and convergence require argument"
+      },
+      "elapsed_seconds": 5.9699988923966885e-05,
+      "limitation": "Does not establish all retained hypotheses or whole counterexample validity."
+    },
+    "scope": "Controller-transcribed finite computation only; does not prove retained hypotheses or complete argument."
+  }
+]

@@ -1,0 +1,790 @@
+[
+  {
+    "task_id": "MA01",
+    "file": "evaluation/development/cases.jsonl",
+    "family_id": "rolle",
+    "reviewer": null,
+    "status": "pending",
+    "required_checks": [
+      "核对教材准确版本与页码及勘误",
+      "检查定理、量词、隐含条件及干预合法性",
+      "逐条检查保留假设",
+      "验证结论失败或冗余推导",
+      "复核同源构造分组及更广义机制泄漏"
+    ],
+    "present_evidence": [
+      "原创数学论证",
+      "作者资料入口已访问",
+      "2026-11-03逐项AI复核并修订；不是人工核验"
+    ],
+    "missing_evidence": [
+      "独立人工数学审阅",
+      "人工复核当前来源定位与教材约定"
+    ],
+    "suggested_method": "数学教师逐项审阅并签署；新反例按义务审，不匹配字面答案",
+    "impact": "不能用作可靠金标准或正式RSI来源",
+    "ai_review_report": "reports/review-2026-11-03-analysis.json",
+    "current_dataset_version": "0.2.0"
+  },
+  {
+    "task_id": "MA02",
+    "file": "evaluation/development/cases.jsonl",
+    "family_id": "rolle",
+    "reviewer": null,
+    "status": "pending",
+    "required_checks": [
+      "核对教材准确版本与页码及勘误",
+      "检查定理、量词、隐含条件及干预合法性",
+      "逐条检查保留假设",
+      "验证结论失败或冗余推导",
+      "复核同源构造分组及更广义机制泄漏"
+    ],
+    "present_evidence": [
+      "原创数学论证",
+      "作者资料入口已访问",
+      "2026-11-03逐项AI复核并修订；不是人工核验"
+    ],
+    "missing_evidence": [
+      "独立人工数学审阅",
+      "人工复核当前来源定位与教材约定"
+    ],
+    "suggested_method": "数学教师逐项审阅并签署；新反例按义务审，不匹配字面答案",
+    "impact": "不能用作可靠金标准或正式RSI来源",
+    "ai_review_report": "reports/review-2026-11-03-analysis.json",
+    "current_dataset_version": "0.2.0"
+  },
+  {
+    "task_id": "MA03",
+    "file": "evaluation/development/cases.jsonl",
+    "family_id": "extreme",
+    "reviewer": null,
+    "status": "pending",
+    "required_checks": [
+      "核对教材准确版本与页码及勘误",
+      "检查定理、量词、隐含条件及干预合法性",
+      "逐条检查保留假设",
+      "验证结论失败或冗余推导",
+      "复核同源构造分组及更广义机制泄漏"
+    ],
+    "present_evidence": [
+      "原创数学论证",
+      "作者资料入口已访问",
+      "2026-11-03逐项AI复核并修订；不是人工核验"
+    ],
+    "missing_evidence": [
+      "独立人工数学审阅",
+      "人工复核当前来源定位与教材约定"
+    ],
+    "suggested_method": "数学教师逐项审阅并签署；新反例按义务审，不匹配字面答案",
+    "impact": "不能用作可靠金标准或正式RSI来源",
+    "ai_review_report": "reports/review-2026-11-03-analysis.json",
+    "current_dataset_version": "0.2.0"
+  },
+  {
+    "task_id": "MA04",
+    "file": "evaluation/development/cases.jsonl",
+    "family_id": "uniform-limit",
+    "reviewer": null,
+    "status": "pending",
+    "required_checks": [
+      "核对教材准确版本与页码及勘误",
+      "检查定理、量词、隐含条件及干预合法性",
+      "逐条检查保留假设",
+      "验证结论失败或冗余推导",
+      "复核同源构造分组及更广义机制泄漏"
+    ],
+    "present_evidence": [
+      "原创数学论证",
+      "作者资料入口已访问",
+      "2026-11-03逐项AI复核并修订；不是人工核验"
+    ],
+    "missing_evidence": [
+      "独立人工数学审阅",
+      "人工复核当前来源定位与教材约定"
+    ],
+    "suggested_method": "数学教师逐项审阅并签署；新反例按义务审，不匹配字面答案",
+    "impact": "不能用作可靠金标准或正式RSI来源",
+    "ai_review_report": "reports/review-2026-11-03-analysis.json",
+    "current_dataset_version": "0.2.0"
+  },
+  {
+    "task_id": "MA05",
+    "file": "evaluation/validation/cases.jsonl",
+    "family_id": "differentiability-continuity",
+    "reviewer": null,
+    "status": "pending",
+    "required_checks": [
+      "核对教材准确版本与页码及勘误",
+      "检查定理、量词、隐含条件及干预合法性",
+      "逐条检查保留假设",
+      "验证结论失败或冗余推导",
+      "复核同源构造分组及更广义机制泄漏"
+    ],
+    "present_evidence": [
+      "原创数学论证",
+      "作者资料入口已访问",
+      "2026-11-03逐项AI复核并修订；不是人工核验"
+    ],
+    "missing_evidence": [
+      "独立人工数学审阅",
+      "人工复核当前来源定位与教材约定"
+    ],
+    "suggested_method": "数学教师逐项审阅并签署；新反例按义务审，不匹配字面答案",
+    "impact": "不能用作可靠金标准或正式RSI来源",
+    "ai_review_report": "reports/review-2026-11-03-analysis.json",
+    "current_dataset_version": "0.2.0"
+  },
+  {
+    "task_id": "MA06",
+    "file": "evaluation/validation/cases.jsonl",
+    "family_id": "joint-boundedness",
+    "reviewer": null,
+    "status": "pending",
+    "required_checks": [
+      "核对教材准确版本与页码及勘误",
+      "检查定理、量词、隐含条件及干预合法性",
+      "逐条检查保留假设",
+      "验证结论失败或冗余推导",
+      "复核同源构造分组及更广义机制泄漏"
+    ],
+    "present_evidence": [
+      "原创数学论证",
+      "作者资料入口已访问",
+      "2026-11-03逐项AI复核并修订；不是人工核验"
+    ],
+    "missing_evidence": [
+      "独立人工数学审阅",
+      "人工复核当前来源定位与教材约定"
+    ],
+    "suggested_method": "数学教师逐项审阅并签署；新反例按义务审，不匹配字面答案",
+    "impact": "不能用作可靠金标准或正式RSI来源",
+    "ai_review_report": "reports/review-2026-11-03-analysis.json",
+    "current_dataset_version": "0.2.0"
+  },
+  {
+    "task_id": "MA07",
+    "file": "evaluation/validation/cases.jsonl",
+    "family_id": "joint-boundedness",
+    "reviewer": null,
+    "status": "pending",
+    "required_checks": [
+      "核对教材准确版本与页码及勘误",
+      "检查定理、量词、隐含条件及干预合法性",
+      "逐条检查保留假设",
+      "验证结论失败或冗余推导",
+      "复核同源构造分组及更广义机制泄漏"
+    ],
+    "present_evidence": [
+      "原创数学论证",
+      "作者资料入口已访问",
+      "2026-11-03逐项AI复核并修订；不是人工核验"
+    ],
+    "missing_evidence": [
+      "独立人工数学审阅",
+      "人工复核当前来源定位与教材约定"
+    ],
+    "suggested_method": "数学教师逐项审阅并签署；新反例按义务审，不匹配字面答案",
+    "impact": "不能用作可靠金标准或正式RSI来源",
+    "ai_review_report": "reports/review-2026-11-03-analysis.json",
+    "current_dataset_version": "0.2.0"
+  },
+  {
+    "task_id": "MA08",
+    "file": "evaluation/validation/cases.jsonl",
+    "family_id": "joint-boundedness",
+    "reviewer": null,
+    "status": "pending",
+    "required_checks": [
+      "核对教材准确版本与页码及勘误",
+      "检查定理、量词、隐含条件及干预合法性",
+      "逐条检查保留假设",
+      "验证结论失败或冗余推导",
+      "复核同源构造分组及更广义机制泄漏"
+    ],
+    "present_evidence": [
+      "原创数学论证",
+      "作者资料入口已访问",
+      "2026-11-03逐项AI复核并修订；不是人工核验"
+    ],
+    "missing_evidence": [
+      "独立人工数学审阅",
+      "人工复核当前来源定位与教材约定"
+    ],
+    "suggested_method": "数学教师逐项审阅并签署；新反例按义务审，不匹配字面答案",
+    "impact": "不能用作可靠金标准或正式RSI来源",
+    "ai_review_report": "reports/review-2026-11-03-analysis.json",
+    "current_dataset_version": "0.2.0"
+  },
+  {
+    "task_id": "MA09",
+    "file": "evaluation/heldout/cases.jsonl",
+    "family_id": "intermediate",
+    "reviewer": null,
+    "status": "pending",
+    "required_checks": [
+      "核对教材准确版本与页码及勘误",
+      "检查定理、量词、隐含条件及干预合法性",
+      "逐条检查保留假设",
+      "验证结论失败或冗余推导",
+      "复核同源构造分组及更广义机制泄漏"
+    ],
+    "present_evidence": [
+      "原创数学论证",
+      "作者资料入口已访问",
+      "2026-11-03逐项AI复核并修订；不是人工核验"
+    ],
+    "missing_evidence": [
+      "独立人工数学审阅",
+      "人工复核当前来源定位与教材约定"
+    ],
+    "suggested_method": "数学教师逐项审阅并签署；新反例按义务审，不匹配字面答案",
+    "impact": "不能用作可靠金标准或正式RSI来源",
+    "ai_review_report": "reports/review-2026-11-03-analysis.json",
+    "current_dataset_version": "0.2.0"
+  },
+  {
+    "task_id": "AL01",
+    "file": "evaluation/development/cases.jsonl",
+    "family_id": "jordan-diagonalization",
+    "reviewer": null,
+    "status": "pending",
+    "required_checks": [
+      "核对教材准确版本与页码及勘误",
+      "检查定理、量词、隐含条件及干预合法性",
+      "逐条检查保留假设",
+      "验证结论失败或冗余推导",
+      "复核同源构造分组及更广义机制泄漏"
+    ],
+    "present_evidence": [
+      "原创数学论证",
+      "作者资料入口已访问",
+      "精确局部计算已运行：reports/witness-results/AL01.json；不覆盖全部数学义务",
+      "2026-11-03逐项AI复核并修订；不是人工核验"
+    ],
+    "missing_evidence": [
+      "独立人工数学审阅",
+      "人工复核当前来源定位与教材约定"
+    ],
+    "suggested_method": "数学教师逐项审阅并签署；新反例按义务审，不匹配字面答案",
+    "impact": "不能用作可靠金标准或正式RSI来源",
+    "ai_review_report": "reports/review-2026-11-03-algebra-complex.json",
+    "current_dataset_version": "0.2.0"
+  },
+  {
+    "task_id": "AL02",
+    "file": "evaluation/development/cases.jsonl",
+    "family_id": "eigenvalue",
+    "reviewer": null,
+    "status": "pending",
+    "required_checks": [
+      "核对教材准确版本与页码及勘误",
+      "检查定理、量词、隐含条件及干预合法性",
+      "逐条检查保留假设",
+      "验证结论失败或冗余推导",
+      "复核同源构造分组及更广义机制泄漏"
+    ],
+    "present_evidence": [
+      "原创数学论证",
+      "作者资料入口已访问",
+      "精确局部计算已运行：reports/witness-results/AL02.json；不覆盖全部数学义务",
+      "2026-11-03逐项AI复核并修订；不是人工核验"
+    ],
+    "missing_evidence": [
+      "独立人工数学审阅",
+      "人工复核当前来源定位与教材约定"
+    ],
+    "suggested_method": "数学教师逐项审阅并签署；新反例按义务审，不匹配字面答案",
+    "impact": "不能用作可靠金标准或正式RSI来源",
+    "ai_review_report": "reports/review-2026-11-03-algebra-complex.json",
+    "current_dataset_version": "0.2.0"
+  },
+  {
+    "task_id": "AL03",
+    "file": "evaluation/development/cases.jsonl",
+    "family_id": "rank-nullity",
+    "reviewer": null,
+    "status": "pending",
+    "required_checks": [
+      "核对教材准确版本与页码及勘误",
+      "检查定理、量词、隐含条件及干预合法性",
+      "逐条检查保留假设",
+      "验证结论失败或冗余推导",
+      "复核同源构造分组及更广义机制泄漏"
+    ],
+    "present_evidence": [
+      "原创数学论证",
+      "作者资料入口已访问",
+      "2026-11-03逐项AI复核并修订；不是人工核验"
+    ],
+    "missing_evidence": [
+      "独立人工数学审阅",
+      "人工复核当前来源定位与教材约定"
+    ],
+    "suggested_method": "数学教师逐项审阅并签署；新反例按义务审，不匹配字面答案",
+    "impact": "不能用作可靠金标准或正式RSI来源",
+    "ai_review_report": "reports/review-2026-11-03-algebra-complex.json",
+    "current_dataset_version": "0.2.0"
+  },
+  {
+    "task_id": "AL04",
+    "file": "evaluation/development/cases.jsonl",
+    "family_id": "jordan-diagonalization",
+    "reviewer": null,
+    "status": "pending",
+    "required_checks": [
+      "核对教材准确版本与页码及勘误",
+      "检查定理、量词、隐含条件及干预合法性",
+      "逐条检查保留假设",
+      "验证结论失败或冗余推导",
+      "复核同源构造分组及更广义机制泄漏"
+    ],
+    "present_evidence": [
+      "原创数学论证",
+      "作者资料入口已访问",
+      "精确局部计算已运行：reports/witness-results/AL04.json；不覆盖全部数学义务",
+      "2026-11-03逐项AI复核并修订；不是人工核验"
+    ],
+    "missing_evidence": [
+      "独立人工数学审阅",
+      "人工复核当前来源定位与教材约定"
+    ],
+    "suggested_method": "数学教师逐项审阅并签署；新反例按义务审，不匹配字面答案",
+    "impact": "不能用作可靠金标准或正式RSI来源",
+    "ai_review_report": "reports/review-2026-11-03-algebra-complex.json",
+    "current_dataset_version": "0.2.0"
+  },
+  {
+    "task_id": "AL05",
+    "file": "evaluation/validation/cases.jsonl",
+    "family_id": "redundant-invertibility",
+    "reviewer": null,
+    "status": "pending",
+    "required_checks": [
+      "核对教材准确版本与页码及勘误",
+      "检查定理、量词、隐含条件及干预合法性",
+      "逐条检查保留假设",
+      "验证结论失败或冗余推导",
+      "复核同源构造分组及更广义机制泄漏"
+    ],
+    "present_evidence": [
+      "原创数学论证",
+      "作者资料入口已访问",
+      "2026-11-03逐项AI复核并修订；不是人工核验"
+    ],
+    "missing_evidence": [
+      "独立人工数学审阅",
+      "人工复核当前来源定位与教材约定"
+    ],
+    "suggested_method": "数学教师逐项审阅并签署；新反例按义务审，不匹配字面答案",
+    "impact": "不能用作可靠金标准或正式RSI来源",
+    "ai_review_report": "reports/review-2026-11-03-algebra-complex.json",
+    "current_dataset_version": "0.2.0"
+  },
+  {
+    "task_id": "AL06",
+    "file": "evaluation/heldout/cases.jsonl",
+    "family_id": "zero-product",
+    "reviewer": null,
+    "status": "pending",
+    "required_checks": [
+      "核对教材准确版本与页码及勘误",
+      "检查定理、量词、隐含条件及干预合法性",
+      "逐条检查保留假设",
+      "验证结论失败或冗余推导",
+      "复核同源构造分组及更广义机制泄漏"
+    ],
+    "present_evidence": [
+      "原创数学论证",
+      "作者资料入口已访问",
+      "2026-11-03逐项AI复核并修订；不是人工核验"
+    ],
+    "missing_evidence": [
+      "独立人工数学审阅",
+      "人工复核当前来源定位与教材约定"
+    ],
+    "suggested_method": "数学教师逐项审阅并签署；新反例按义务审，不匹配字面答案",
+    "impact": "不能用作可靠金标准或正式RSI来源",
+    "ai_review_report": "reports/review-2026-11-03-algebra-complex.json",
+    "current_dataset_version": "0.2.0"
+  },
+  {
+    "task_id": "RA01",
+    "file": "evaluation/development/cases.jsonl",
+    "family_id": "shrinking-spikes",
+    "reviewer": null,
+    "status": "pending",
+    "required_checks": [
+      "核对教材准确版本与页码及勘误",
+      "检查定理、量词、隐含条件及干预合法性",
+      "逐条检查保留假设",
+      "验证结论失败或冗余推导",
+      "复核同源构造分组及更广义机制泄漏"
+    ],
+    "present_evidence": [
+      "原创数学论证",
+      "作者资料入口已访问",
+      "精确局部计算已运行：reports/witness-results/RA01.json；不覆盖全部数学义务",
+      "2026-11-03逐项AI复核并修订；不是人工核验"
+    ],
+    "missing_evidence": [
+      "独立人工数学审阅",
+      "人工复核当前来源定位与教材约定"
+    ],
+    "suggested_method": "数学教师逐项审阅并签署；新反例按义务审，不匹配字面答案",
+    "impact": "不能用作可靠金标准或正式RSI来源",
+    "ai_review_report": "reports/review-2026-11-03-analysis.json",
+    "current_dataset_version": "0.2.0"
+  },
+  {
+    "task_id": "RA02",
+    "file": "evaluation/development/cases.jsonl",
+    "family_id": "shrinking-spikes",
+    "reviewer": null,
+    "status": "pending",
+    "required_checks": [
+      "核对教材准确版本与页码及勘误",
+      "检查定理、量词、隐含条件及干预合法性",
+      "逐条检查保留假设",
+      "验证结论失败或冗余推导",
+      "复核同源构造分组及更广义机制泄漏"
+    ],
+    "present_evidence": [
+      "原创数学论证",
+      "作者资料入口已访问",
+      "精确局部计算已运行：reports/witness-results/RA02.json；不覆盖全部数学义务",
+      "2026-11-03逐项AI复核并修订；不是人工核验"
+    ],
+    "missing_evidence": [
+      "独立人工数学审阅",
+      "人工复核当前来源定位与教材约定"
+    ],
+    "suggested_method": "数学教师逐项审阅并签署；新反例按义务审，不匹配字面答案",
+    "impact": "不能用作可靠金标准或正式RSI来源",
+    "ai_review_report": "reports/review-2026-11-03-analysis.json",
+    "current_dataset_version": "0.2.0"
+  },
+  {
+    "task_id": "RA03",
+    "file": "evaluation/development/cases.jsonl",
+    "family_id": "continuity-above",
+    "reviewer": null,
+    "status": "pending",
+    "required_checks": [
+      "核对教材准确版本与页码及勘误",
+      "检查定理、量词、隐含条件及干预合法性",
+      "逐条检查保留假设",
+      "验证结论失败或冗余推导",
+      "复核同源构造分组及更广义机制泄漏"
+    ],
+    "present_evidence": [
+      "原创数学论证",
+      "作者资料入口已访问",
+      "2026-11-03逐项AI复核并修订；不是人工核验"
+    ],
+    "missing_evidence": [
+      "独立人工数学审阅",
+      "人工复核当前来源定位与教材约定"
+    ],
+    "suggested_method": "数学教师逐项审阅并签署；新反例按义务审，不匹配字面答案",
+    "impact": "不能用作可靠金标准或正式RSI来源",
+    "ai_review_report": "reports/review-2026-11-03-analysis.json",
+    "current_dataset_version": "0.2.0"
+  },
+  {
+    "task_id": "RA04",
+    "file": "evaluation/heldout/cases.jsonl",
+    "family_id": "escaping-mass",
+    "reviewer": null,
+    "status": "pending",
+    "required_checks": [
+      "核对教材准确版本与页码及勘误",
+      "检查定理、量词、隐含条件及干预合法性",
+      "逐条检查保留假设",
+      "验证结论失败或冗余推导",
+      "复核同源构造分组及更广义机制泄漏"
+    ],
+    "present_evidence": [
+      "原创数学论证",
+      "作者资料入口已访问",
+      "2026-11-03逐项AI复核并修订；不是人工核验"
+    ],
+    "missing_evidence": [
+      "独立人工数学审阅",
+      "人工复核当前来源定位与教材约定"
+    ],
+    "suggested_method": "数学教师逐项审阅并签署；新反例按义务审，不匹配字面答案",
+    "impact": "不能用作可靠金标准或正式RSI来源",
+    "ai_review_report": "reports/review-2026-11-03-analysis.json",
+    "current_dataset_version": "0.2.0"
+  },
+  {
+    "task_id": "RA05",
+    "file": "evaluation/validation/cases.jsonl",
+    "family_id": "redundant-integrable",
+    "reviewer": null,
+    "status": "pending",
+    "required_checks": [
+      "核对教材准确版本与页码及勘误",
+      "检查定理、量词、隐含条件及干预合法性",
+      "逐条检查保留假设",
+      "验证结论失败或冗余推导",
+      "复核同源构造分组及更广义机制泄漏"
+    ],
+    "present_evidence": [
+      "原创数学论证",
+      "作者资料入口已访问",
+      "2026-11-03逐项AI复核并修订；不是人工核验"
+    ],
+    "missing_evidence": [
+      "独立人工数学审阅",
+      "人工复核当前来源定位与教材约定"
+    ],
+    "suggested_method": "数学教师逐项审阅并签署；新反例按义务审，不匹配字面答案",
+    "impact": "不能用作可靠金标准或正式RSI来源",
+    "ai_review_report": "reports/review-2026-11-03-analysis.json",
+    "current_dataset_version": "0.2.0"
+  },
+  {
+    "task_id": "RA06",
+    "file": "evaluation/heldout/cases.jsonl",
+    "family_id": "escaping-mass",
+    "reviewer": null,
+    "status": "pending",
+    "required_checks": [
+      "核对教材准确版本与页码及勘误",
+      "检查定理、量词、隐含条件及干预合法性",
+      "逐条检查保留假设",
+      "验证结论失败或冗余推导",
+      "复核同源构造分组及更广义机制泄漏"
+    ],
+    "present_evidence": [
+      "原创数学论证",
+      "作者资料入口已访问",
+      "2026-11-03逐项AI复核并修订；不是人工核验"
+    ],
+    "missing_evidence": [
+      "独立人工数学审阅",
+      "人工复核当前来源定位与教材约定"
+    ],
+    "suggested_method": "数学教师逐项审阅并签署；新反例按义务审，不匹配字面答案",
+    "impact": "不能用作可靠金标准或正式RSI来源",
+    "ai_review_report": "reports/review-2026-11-03-analysis.json",
+    "current_dataset_version": "0.2.0"
+  },
+  {
+    "task_id": "CA01",
+    "file": "evaluation/development/cases.jsonl",
+    "family_id": "liouville",
+    "reviewer": null,
+    "status": "pending",
+    "required_checks": [
+      "核对教材准确版本与页码及勘误",
+      "检查定理、量词、隐含条件及干预合法性",
+      "逐条检查保留假设",
+      "验证结论失败或冗余推导",
+      "复核同源构造分组及更广义机制泄漏"
+    ],
+    "present_evidence": [
+      "原创数学论证",
+      "作者资料入口已访问",
+      "2026-11-03逐项AI复核并修订；不是人工核验"
+    ],
+    "missing_evidence": [
+      "独立人工数学审阅",
+      "人工复核当前来源定位与教材约定"
+    ],
+    "suggested_method": "数学教师逐项审阅并签署；新反例按义务审，不匹配字面答案",
+    "impact": "不能用作可靠金标准或正式RSI来源",
+    "ai_review_report": "reports/review-2026-11-03-algebra-complex.json",
+    "current_dataset_version": "0.2.0"
+  },
+  {
+    "task_id": "CA02",
+    "file": "evaluation/development/cases.jsonl",
+    "family_id": "liouville",
+    "reviewer": null,
+    "status": "pending",
+    "required_checks": [
+      "核对教材准确版本与页码及勘误",
+      "检查定理、量词、隐含条件及干预合法性",
+      "逐条检查保留假设",
+      "验证结论失败或冗余推导",
+      "复核同源构造分组及更广义机制泄漏"
+    ],
+    "present_evidence": [
+      "原创数学论证",
+      "作者资料入口已访问",
+      "2026-11-03逐项AI复核并修订；不是人工核验"
+    ],
+    "missing_evidence": [
+      "独立人工数学审阅",
+      "人工复核当前来源定位与教材约定"
+    ],
+    "suggested_method": "数学教师逐项审阅并签署；新反例按义务审，不匹配字面答案",
+    "impact": "不能用作可靠金标准或正式RSI来源",
+    "ai_review_report": "reports/review-2026-11-03-algebra-complex.json",
+    "current_dataset_version": "0.2.0"
+  },
+  {
+    "task_id": "CA03",
+    "file": "evaluation/heldout/cases.jsonl",
+    "family_id": "disconnected-constancy",
+    "reviewer": null,
+    "status": "pending",
+    "required_checks": [
+      "核对教材准确版本与页码及勘误",
+      "检查定理、量词、隐含条件及干预合法性",
+      "逐条检查保留假设",
+      "验证结论失败或冗余推导",
+      "复核同源构造分组及更广义机制泄漏"
+    ],
+    "present_evidence": [
+      "原创数学论证",
+      "作者资料入口已访问",
+      "2026-11-03逐项AI复核并修订；不是人工核验"
+    ],
+    "missing_evidence": [
+      "独立人工数学审阅",
+      "人工复核当前来源定位与教材约定"
+    ],
+    "suggested_method": "数学教师逐项审阅并签署；新反例按义务审，不匹配字面答案",
+    "impact": "不能用作可靠金标准或正式RSI来源",
+    "ai_review_report": "reports/review-2026-11-03-algebra-complex.json",
+    "current_dataset_version": "0.2.0"
+  },
+  {
+    "task_id": "CA04",
+    "file": "evaluation/development/cases.jsonl",
+    "family_id": "identity-boundary",
+    "reviewer": null,
+    "status": "pending",
+    "required_checks": [
+      "核对教材准确版本与页码及勘误",
+      "检查定理、量词、隐含条件及干预合法性",
+      "逐条检查保留假设",
+      "验证结论失败或冗余推导",
+      "复核同源构造分组及更广义机制泄漏"
+    ],
+    "present_evidence": [
+      "原创数学论证",
+      "作者资料入口已访问",
+      "2026-11-03逐项AI复核并修订；不是人工核验"
+    ],
+    "missing_evidence": [
+      "独立人工数学审阅",
+      "人工复核当前来源定位与教材约定"
+    ],
+    "suggested_method": "数学教师逐项审阅并签署；新反例按义务审，不匹配字面答案",
+    "impact": "不能用作可靠金标准或正式RSI来源",
+    "ai_review_report": "reports/review-2026-11-03-algebra-complex.json",
+    "current_dataset_version": "0.2.0"
+  },
+  {
+    "task_id": "CA05",
+    "file": "evaluation/development/cases.jsonl",
+    "family_id": "maximum",
+    "reviewer": null,
+    "status": "pending",
+    "required_checks": [
+      "核对教材准确版本与页码及勘误",
+      "检查定理、量词、隐含条件及干预合法性",
+      "逐条检查保留假设",
+      "验证结论失败或冗余推导",
+      "复核同源构造分组及更广义机制泄漏"
+    ],
+    "present_evidence": [
+      "原创数学论证",
+      "作者资料入口已访问",
+      "2026-11-03逐项AI复核并修订；不是人工核验"
+    ],
+    "missing_evidence": [
+      "独立人工数学审阅",
+      "人工复核当前来源定位与教材约定"
+    ],
+    "suggested_method": "数学教师逐项审阅并签署；新反例按义务审，不匹配字面答案",
+    "impact": "不能用作可靠金标准或正式RSI来源",
+    "ai_review_report": "reports/review-2026-11-03-algebra-complex.json",
+    "current_dataset_version": "0.2.0"
+  },
+  {
+    "task_id": "CA06",
+    "file": "evaluation/validation/cases.jsonl",
+    "family_id": "cauchy",
+    "reviewer": null,
+    "status": "pending",
+    "required_checks": [
+      "核对教材准确版本与页码及勘误",
+      "检查定理、量词、隐含条件及干预合法性",
+      "逐条检查保留假设",
+      "验证结论失败或冗余推导",
+      "复核同源构造分组及更广义机制泄漏"
+    ],
+    "present_evidence": [
+      "原创数学论证",
+      "作者资料入口已访问",
+      "2026-11-03逐项AI复核并修订；不是人工核验"
+    ],
+    "missing_evidence": [
+      "独立人工数学审阅",
+      "人工复核当前来源定位与教材约定"
+    ],
+    "suggested_method": "数学教师逐项审阅并签署；新反例按义务审，不匹配字面答案",
+    "impact": "不能用作可靠金标准或正式RSI来源",
+    "ai_review_report": "reports/review-2026-11-03-algebra-complex.json",
+    "current_dataset_version": "0.2.0"
+  },
+  {
+    "task_id": "CA07",
+    "file": "evaluation/validation/cases.jsonl",
+    "family_id": "differentiability-continuity",
+    "reviewer": null,
+    "status": "pending",
+    "required_checks": [
+      "核对教材准确版本与页码及勘误",
+      "检查定理、量词、隐含条件及干预合法性",
+      "逐条检查保留假设",
+      "验证结论失败或冗余推导",
+      "复核同源构造分组及更广义机制泄漏"
+    ],
+    "present_evidence": [
+      "原创数学论证",
+      "作者资料入口已访问",
+      "2026-11-03逐项AI复核并修订；不是人工核验"
+    ],
+    "missing_evidence": [
+      "独立人工数学审阅",
+      "人工复核当前来源定位与教材约定"
+    ],
+    "suggested_method": "数学教师逐项审阅并签署；新反例按义务审，不匹配字面答案",
+    "impact": "不能用作可靠金标准或正式RSI来源",
+    "ai_review_report": "reports/review-2026-11-03-algebra-complex.json",
+    "current_dataset_version": "0.2.0"
+  },
+  {
+    "task_id": "CA08",
+    "file": "evaluation/heldout/cases.jsonl",
+    "family_id": "disconnected-constancy",
+    "reviewer": null,
+    "status": "pending",
+    "required_checks": [
+      "核对教材准确版本与页码及勘误",
+      "检查定理、量词、隐含条件及干预合法性",
+      "逐条检查保留假设",
+      "验证结论失败或冗余推导",
+      "复核同源构造分组及更广义机制泄漏"
+    ],
+    "present_evidence": [
+      "原创数学论证",
+      "作者资料入口已访问",
+      "2026-11-03逐项AI复核并修订；不是人工核验"
+    ],
+    "missing_evidence": [
+      "独立人工数学审阅",
+      "人工复核当前来源定位与教材约定"
+    ],
+    "suggested_method": "数学教师逐项审阅并签署；新反例按义务审，不匹配字面答案",
+    "impact": "不能用作可靠金标准或正式RSI来源",
+    "ai_review_report": "reports/review-2026-11-03-algebra-complex.json",
+    "current_dataset_version": "0.2.0"
+  }
+]

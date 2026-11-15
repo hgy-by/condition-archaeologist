@@ -1,0 +1,32 @@
+[
+  {
+    "task_id": "AL07",
+    "file": "evaluation/additional_validation/cases.jsonl",
+    "status": "pending",
+    "specific_claim": "F=F₂，V=F₂²，B(u,v)=u₁v₂+u₂v₁。；原定理由0=B(u+v,u+v)=2B(u,v)得到结论；特征2时无法除以2。",
+    "current_evidence": "项目数学论证与已访问来源；尚无人工核验",
+    "missing_evidence": "原定理、全部保留/替代条件、结论失败、来源定位及家族划分的人工确认",
+    "method": "按题册逐条核验并记录意见，替代反例按义务检查",
+    "impact": "不能自动作正式金标准或RSI更新来源"
+  },
+  {
+    "task_id": "RA07",
+    "file": "evaluation/additional_validation/cases.jsonl",
+    "status": "pending",
+    "specific_claim": "X=[0,1]取Lebesgue测度；f=1于[0,1/2)，f=−1于[1/2,1]。；原定理可用μ({f≥1/n})≤n∫f=0及可数并证明；删非负性后正负质量可以抵消。",
+    "current_evidence": "项目数学论证与已访问来源；尚无人工核验",
+    "missing_evidence": "原定理、全部保留/替代条件、结论失败、来源定位及家族划分的人工确认",
+    "method": "按题册逐条核验并记录意见，替代反例按义务检查",
+    "impact": "不能自动作正式金标准或RSI更新来源"
+  },
+  {
+    "task_id": "CA09",
+    "file": "evaluation/additional_validation/cases.jsonl",
+    "status": "pending",
+    "specific_claim": "对所有n令aₙ=1，R=1，取z=1。；反例满足弱化后的条件但原严格条件不成立；半径边界不能一概纳入收敛保证。",
+    "current_evidence": "项目数学论证与已访问来源；尚无人工核验",
+    "missing_evidence": "原定理、全部保留/替代条件、结论失败、来源定位及家族划分的人工确认",
+    "method": "按题册逐条核验并记录意见，替代反例按义务检查",
+    "impact": "不能自动作正式金标准或RSI更新来源"
+  }
+]

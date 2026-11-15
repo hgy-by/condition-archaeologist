@@ -1,0 +1,629 @@
+[
+  {
+    "task_id": "MA01",
+    "review_id": "MA01-A",
+    "prediction_digest": "1509c48ed7b35314dfa766c8e62a4c5f25d10563d655794384aaabaa079054bd",
+    "reviewer": "current_user",
+    "reviewed_at": "2026-11-05",
+    "independent": true,
+    "independence_scope": "human reviewer is separate from generating model; credentials and examiner-controlled blinding not asserted",
+    "judgment_correct": true,
+    "witness_claimed": true,
+    "witness_valid": true,
+    "hypothesis_matches": 4,
+    "prediction_hypothesis_count": 4,
+    "hypothesis_mapping": [
+      {
+        "id": "H1",
+        "reference_text": "f 在 [a,b] 连续",
+        "prediction_text": "f 在 [a,b] 连续",
+        "controller_mapping": "exact"
+      },
+      {
+        "id": "H2",
+        "reference_text": "f 在 (a,b) 可微",
+        "prediction_text": "f 在 (a,b) 可微",
+        "controller_mapping": "exact"
+      },
+      {
+        "id": "H3",
+        "reference_text": "a<b 为有限实数",
+        "prediction_text": "a<b 为有限实数",
+        "controller_mapping": "exact"
+      },
+      {
+        "id": "H4",
+        "reference_text": "f(a)=f(b)",
+        "prediction_text": "f(a)=f(b)",
+        "controller_mapping": "exact"
+      }
+    ],
+    "all_retained_valid": true,
+    "conclusion_refuted": true,
+    "argument_valid": true,
+    "intervention_valid": true,
+    "evidence_honest": true,
+    "dependency_correct": true,
+    "field_provenance": "Controller maps user acceptance and specific finding to rubric booleans; user did not personally fill individual boolean fields.",
+    "human_reporting_gap": false,
+    "notes": "用户确认其余回答均无需修改；原始回答不改动。"
+  },
+  {
+    "task_id": "MA02",
+    "review_id": "MA02-A",
+    "prediction_digest": "af5ab65077d21f7d4c99f9277a4f73c9f4844935a71245356b67d3fd796b584a",
+    "reviewer": "current_user",
+    "reviewed_at": "2026-11-05",
+    "independent": true,
+    "independence_scope": "human reviewer is separate from generating model; credentials and examiner-controlled blinding not asserted",
+    "judgment_correct": true,
+    "witness_claimed": true,
+    "witness_valid": true,
+    "hypothesis_matches": 4,
+    "prediction_hypothesis_count": 4,
+    "hypothesis_mapping": [
+      {
+        "id": "H1",
+        "reference_text": "f 在 [a,b] 连续",
+        "prediction_text": "f 在 [a,b] 连续",
+        "controller_mapping": "exact"
+      },
+      {
+        "id": "H2",
+        "reference_text": "f 在 (a,b) 可微",
+        "prediction_text": "f 在 (a,b) 可微",
+        "controller_mapping": "exact"
+      },
+      {
+        "id": "H3",
+        "reference_text": "a<b 为有限实数",
+        "prediction_text": "a<b 为有限实数",
+        "controller_mapping": "exact"
+      },
+      {
+        "id": "H4",
+        "reference_text": "f(a)=f(b)",
+        "prediction_text": "f(a)=f(b)",
+        "controller_mapping": "exact"
+      }
+    ],
+    "all_retained_valid": true,
+    "conclusion_refuted": true,
+    "argument_valid": true,
+    "intervention_valid": true,
+    "evidence_honest": true,
+    "dependency_correct": true,
+    "field_provenance": "Controller maps user acceptance and specific finding to rubric booleans; user did not personally fill individual boolean fields.",
+    "human_reporting_gap": false,
+    "notes": "用户确认其余回答均无需修改；原始回答不改动。"
+  },
+  {
+    "task_id": "MA03",
+    "review_id": "MA03-A",
+    "prediction_digest": "91f9979d31b5a6f38dde286ac3e4097d2d3f2a8a21166f794747903f3ca6b266",
+    "reviewer": "current_user",
+    "reviewed_at": "2026-11-05",
+    "independent": true,
+    "independence_scope": "human reviewer is separate from generating model; credentials and examiner-controlled blinding not asserted",
+    "judgment_correct": true,
+    "witness_claimed": true,
+    "witness_valid": true,
+    "hypothesis_matches": 3,
+    "prediction_hypothesis_count": 3,
+    "hypothesis_mapping": [
+      {
+        "id": "H1",
+        "reference_text": "K为紧集",
+        "prediction_text": "K为紧集",
+        "controller_mapping": "exact"
+      },
+      {
+        "id": "H2",
+        "reference_text": "f:K→R连续",
+        "prediction_text": "f:K→R连续",
+        "controller_mapping": "exact"
+      },
+      {
+        "id": "H3",
+        "reference_text": "K非空",
+        "prediction_text": "K非空",
+        "controller_mapping": "exact"
+      }
+    ],
+    "all_retained_valid": true,
+    "conclusion_refuted": true,
+    "argument_valid": true,
+    "intervention_valid": true,
+    "evidence_honest": true,
+    "dependency_correct": true,
+    "field_provenance": "Controller maps user acceptance and specific finding to rubric booleans; user did not personally fill individual boolean fields.",
+    "human_reporting_gap": false,
+    "notes": "用户确认其余回答均无需修改；原始回答不改动。"
+  },
+  {
+    "task_id": "MA04",
+    "review_id": "MA04-B",
+    "prediction_digest": "a51d1d75d71f97ff098b19bb9244da660c4659d31882b9773bc330aa26af7652",
+    "reviewer": "current_user",
+    "reviewed_at": "2026-11-05",
+    "independent": true,
+    "independence_scope": "human reviewer is separate from generating model; credentials and examiner-controlled blinding not asserted",
+    "judgment_correct": true,
+    "witness_claimed": true,
+    "witness_valid": true,
+    "hypothesis_matches": 2,
+    "prediction_hypothesis_count": 2,
+    "hypothesis_mapping": [
+      {
+        "id": "H1",
+        "reference_text": "各 f_n 在[0,1]连续",
+        "prediction_text": "各 f_n 在[0,1]连续",
+        "controller_mapping": "exact"
+      },
+      {
+        "id": "H2",
+        "reference_text": "f_n一致收敛于f",
+        "prediction_text": "f_n 一致收敛于 f",
+        "controller_mapping": "equivalent_under_declared_ambient_conventions"
+      }
+    ],
+    "all_retained_valid": true,
+    "conclusion_refuted": true,
+    "argument_valid": true,
+    "intervention_valid": true,
+    "evidence_honest": true,
+    "dependency_correct": true,
+    "field_provenance": "Controller maps user acceptance and specific finding to rubric booleans; user did not personally fill individual boolean fields.",
+    "human_reporting_gap": false,
+    "notes": "用户确认其余回答均无需修改；原始回答不改动。"
+  },
+  {
+    "task_id": "AL01",
+    "review_id": "AL01-B",
+    "prediction_digest": "c8998c99e762578194f105a330f48786d7360aa414cbb8c9610f26944267f5a0",
+    "reviewer": "current_user",
+    "reviewed_at": "2026-11-05",
+    "independent": true,
+    "independence_scope": "human reviewer is separate from generating model; credentials and examiner-controlled blinding not asserted",
+    "judgment_correct": true,
+    "witness_claimed": true,
+    "witness_valid": true,
+    "hypothesis_matches": 2,
+    "prediction_hypothesis_count": 2,
+    "hypothesis_mapping": [
+      {
+        "id": "H1",
+        "reference_text": "A为实方阵",
+        "prediction_text": "A为实方阵",
+        "controller_mapping": "exact"
+      },
+      {
+        "id": "H2",
+        "reference_text": "A^T=A",
+        "prediction_text": "A^T=A",
+        "controller_mapping": "exact"
+      }
+    ],
+    "all_retained_valid": true,
+    "conclusion_refuted": true,
+    "argument_valid": true,
+    "intervention_valid": true,
+    "evidence_honest": true,
+    "dependency_correct": true,
+    "field_provenance": "Controller maps user acceptance and specific finding to rubric booleans; user did not personally fill individual boolean fields.",
+    "human_reporting_gap": false,
+    "notes": "用户确认其余回答均无需修改；原始回答不改动。"
+  },
+  {
+    "task_id": "AL02",
+    "review_id": "AL02-B",
+    "prediction_digest": "acfc0cb4ba3c94cdc3aa8e230a9b5cd543927f2766bc9e3483b5ea98bad9775b",
+    "reviewer": "current_user",
+    "reviewed_at": "2026-11-05",
+    "independent": true,
+    "independence_scope": "human reviewer is separate from generating model; credentials and examiner-controlled blinding not asserted",
+    "judgment_correct": true,
+    "witness_claimed": true,
+    "witness_valid": true,
+    "hypothesis_matches": 3,
+    "prediction_hypothesis_count": 3,
+    "hypothesis_mapping": [
+      {
+        "id": "H1",
+        "reference_text": "F=C",
+        "prediction_text": "F=C",
+        "controller_mapping": "exact"
+      },
+      {
+        "id": "H2",
+        "reference_text": "V为正维有限维F向量空间",
+        "prediction_text": "V为正维有限维F向量空间",
+        "controller_mapping": "exact"
+      },
+      {
+        "id": "H3",
+        "reference_text": "T:V→V为F线性自映射",
+        "prediction_text": "T:V→V为F线性自映射",
+        "controller_mapping": "exact"
+      }
+    ],
+    "all_retained_valid": true,
+    "conclusion_refuted": true,
+    "argument_valid": true,
+    "intervention_valid": true,
+    "evidence_honest": true,
+    "dependency_correct": true,
+    "field_provenance": "Controller maps user acceptance and specific finding to rubric booleans; user did not personally fill individual boolean fields.",
+    "human_reporting_gap": false,
+    "notes": "用户确认其余回答均无需修改；原始回答不改动。"
+  },
+  {
+    "task_id": "AL03",
+    "review_id": "AL03-B",
+    "prediction_digest": "7ce6e361b8359de32efb0d867f4e68c2d7035081ca72d4912bab29ceb2041969",
+    "reviewer": "current_user",
+    "reviewed_at": "2026-11-05",
+    "independent": true,
+    "independence_scope": "human reviewer is separate from generating model; credentials and examiner-controlled blinding not asserted",
+    "judgment_correct": true,
+    "witness_claimed": true,
+    "witness_valid": true,
+    "hypothesis_matches": 2,
+    "prediction_hypothesis_count": 2,
+    "hypothesis_mapping": [
+      {
+        "id": "H1",
+        "reference_text": "V有限维",
+        "prediction_text": "V有限维",
+        "controller_mapping": "exact"
+      },
+      {
+        "id": "H2",
+        "reference_text": "T:V→V线性",
+        "prediction_text": "T:V→V线性",
+        "controller_mapping": "exact"
+      }
+    ],
+    "all_retained_valid": true,
+    "conclusion_refuted": true,
+    "argument_valid": true,
+    "intervention_valid": true,
+    "evidence_honest": true,
+    "dependency_correct": true,
+    "field_provenance": "Controller maps user acceptance and specific finding to rubric booleans; user did not personally fill individual boolean fields.",
+    "human_reporting_gap": false,
+    "notes": "用户确认其余回答均无需修改；原始回答不改动。"
+  },
+  {
+    "task_id": "AL04",
+    "review_id": "AL04-A",
+    "prediction_digest": "e85b6e6420d260aa1787c78b1de78462d2da200411ade4a4c93ff9aed2ca589c",
+    "reviewer": "current_user",
+    "reviewed_at": "2026-11-05",
+    "independent": true,
+    "independence_scope": "human reviewer is separate from generating model; credentials and examiner-controlled blinding not asserted",
+    "judgment_correct": true,
+    "witness_claimed": true,
+    "witness_valid": true,
+    "hypothesis_matches": 2,
+    "prediction_hypothesis_count": 2,
+    "hypothesis_mapping": [
+      {
+        "id": "H1",
+        "reference_text": "A为n×n复矩阵 n≥1",
+        "prediction_text": "A为n×n复矩阵，n≥1",
+        "controller_mapping": "equivalent_under_declared_ambient_conventions"
+      },
+      {
+        "id": "H2",
+        "reference_text": "A有n个互异特征值",
+        "prediction_text": "A有n个互异特征值",
+        "controller_mapping": "exact"
+      }
+    ],
+    "all_retained_valid": true,
+    "conclusion_refuted": true,
+    "argument_valid": true,
+    "intervention_valid": true,
+    "evidence_honest": true,
+    "dependency_correct": true,
+    "field_provenance": "Controller maps user acceptance and specific finding to rubric booleans; user did not personally fill individual boolean fields.",
+    "human_reporting_gap": false,
+    "notes": "用户确认其余回答均无需修改；原始回答不改动。"
+  },
+  {
+    "task_id": "RA01",
+    "review_id": "RA01-A",
+    "prediction_digest": "9ff649ead147714626684c21fc8857312cd3e2d5e95c1ae93e8e0edca905a525",
+    "reviewer": "current_user",
+    "reviewed_at": "2026-11-05",
+    "independent": true,
+    "independence_scope": "human reviewer is separate from generating model; credentials and examiner-controlled blinding not asserted",
+    "judgment_correct": true,
+    "witness_claimed": true,
+    "witness_valid": true,
+    "hypothesis_matches": 4,
+    "prediction_hypothesis_count": 4,
+    "hypothesis_mapping": [
+      {
+        "id": "H1",
+        "reference_text": "f_n可测且逐项可积",
+        "prediction_text": "f_n可测且逐项可积",
+        "controller_mapping": "exact"
+      },
+      {
+        "id": "H2",
+        "reference_text": "f_n→f a.e.",
+        "prediction_text": "f_n→f a.e.",
+        "controller_mapping": "exact"
+      },
+      {
+        "id": "H3",
+        "reference_text": "存在可积g使|f_n|≤g",
+        "prediction_text": "存在可积g使|f_n|≤g",
+        "controller_mapping": "exact"
+      },
+      {
+        "id": "H4",
+        "reference_text": "f∈L¹(X,μ)",
+        "prediction_text": "f∈L¹(X,μ)",
+        "controller_mapping": "exact"
+      }
+    ],
+    "all_retained_valid": true,
+    "conclusion_refuted": true,
+    "argument_valid": true,
+    "intervention_valid": true,
+    "evidence_honest": true,
+    "dependency_correct": true,
+    "field_provenance": "Controller maps user acceptance and specific finding to rubric booleans; user did not personally fill individual boolean fields.",
+    "human_reporting_gap": false,
+    "notes": "用户确认其余回答均无需修改；原始回答不改动。"
+  },
+  {
+    "task_id": "RA02",
+    "review_id": "RA02-B",
+    "prediction_digest": "062b0d985517841e3b021d2206983546f4f4e57af5f8df175344328f49cd6a79",
+    "reviewer": "current_user",
+    "reviewed_at": "2026-11-05",
+    "independent": true,
+    "independence_scope": "human reviewer is separate from generating model; credentials and examiner-controlled blinding not asserted",
+    "judgment_correct": true,
+    "witness_claimed": true,
+    "witness_valid": true,
+    "hypothesis_matches": 3,
+    "prediction_hypothesis_count": 3,
+    "hypothesis_mapping": [
+      {
+        "id": "H1",
+        "reference_text": "f_n可测",
+        "prediction_text": "每个 f_n 可测",
+        "controller_mapping": "equivalent_under_declared_ambient_conventions"
+      },
+      {
+        "id": "H2",
+        "reference_text": "f_n≥0",
+        "prediction_text": "每个 f_n≥0",
+        "controller_mapping": "equivalent_under_declared_ambient_conventions"
+      },
+      {
+        "id": "H3",
+        "reference_text": "每个∫f_n及∫liminf f_n均有定义，允许扩展实数",
+        "prediction_text": "每个 ∫f_n 及 ∫liminf f_n 均有定义，允许取扩展实数",
+        "controller_mapping": "equivalent_under_declared_ambient_conventions"
+      }
+    ],
+    "all_retained_valid": true,
+    "conclusion_refuted": true,
+    "argument_valid": true,
+    "intervention_valid": true,
+    "evidence_honest": true,
+    "dependency_correct": true,
+    "field_provenance": "Controller maps user acceptance and specific finding to rubric booleans; user did not personally fill individual boolean fields.",
+    "human_reporting_gap": false,
+    "notes": "用户确认其余回答均无需修改；原始回答不改动。"
+  },
+  {
+    "task_id": "RA03",
+    "review_id": "RA03-A",
+    "prediction_digest": "917b7b1578a1e2c01ffac0844f896998fac302e4e7662a65a25ce0816dec97a4",
+    "reviewer": "current_user",
+    "reviewed_at": "2026-11-05",
+    "independent": true,
+    "independence_scope": "human reviewer is separate from generating model; credentials and examiner-controlled blinding not asserted",
+    "judgment_correct": true,
+    "witness_claimed": true,
+    "witness_valid": true,
+    "hypothesis_matches": 2,
+    "prediction_hypothesis_count": 2,
+    "hypothesis_mapping": [
+      {
+        "id": "H1",
+        "reference_text": "E_n可测且递减",
+        "prediction_text": "E_n可测且递减",
+        "controller_mapping": "exact"
+      },
+      {
+        "id": "H2",
+        "reference_text": "μ(E1)<∞",
+        "prediction_text": "μ(E1)<∞",
+        "controller_mapping": "exact"
+      }
+    ],
+    "all_retained_valid": true,
+    "conclusion_refuted": true,
+    "argument_valid": true,
+    "intervention_valid": true,
+    "evidence_honest": true,
+    "dependency_correct": true,
+    "field_provenance": "Controller maps user acceptance and specific finding to rubric booleans; user did not personally fill individual boolean fields.",
+    "human_reporting_gap": false,
+    "notes": "用户确认其余回答均无需修改；原始回答不改动。"
+  },
+  {
+    "task_id": "CA01",
+    "review_id": "CA01-B",
+    "prediction_digest": "bfcd54a4d34b44a6b27bd824adcd11b70053b0afa6e6bbff1775e779e0369e42",
+    "reviewer": "current_user",
+    "reviewed_at": "2026-11-05",
+    "independent": true,
+    "independence_scope": "human reviewer is separate from generating model; credentials and examiner-controlled blinding not asserted",
+    "judgment_correct": true,
+    "witness_claimed": true,
+    "witness_valid": true,
+    "hypothesis_matches": 2,
+    "prediction_hypothesis_count": 2,
+    "hypothesis_mapping": [
+      {
+        "id": "H1",
+        "reference_text": "f在C上全纯",
+        "prediction_text": "f在复平面C上全纯",
+        "controller_mapping": "equivalent_under_declared_ambient_conventions"
+      },
+      {
+        "id": "H2",
+        "reference_text": "f在C上有界",
+        "prediction_text": "f在复平面C上有界",
+        "controller_mapping": "equivalent_under_declared_ambient_conventions"
+      }
+    ],
+    "all_retained_valid": true,
+    "conclusion_refuted": true,
+    "argument_valid": true,
+    "intervention_valid": true,
+    "evidence_honest": true,
+    "dependency_correct": true,
+    "field_provenance": "Controller maps user acceptance and specific finding to rubric booleans; user did not personally fill individual boolean fields.",
+    "human_reporting_gap": true,
+    "notes": "用户指出未显式证明f(z)=z无界。保留条件和非恒定结论的反例核验成立；这是表达完整性遗漏，未将其当作反例无效，也未虚构百分制扣分。"
+  },
+  {
+    "task_id": "CA02",
+    "review_id": "CA02-B",
+    "prediction_digest": "bf15e75d077dd0cc2346fcc0324be6347b9898a1c06dd8469f4b8a9f795c31ae",
+    "reviewer": "current_user",
+    "reviewed_at": "2026-11-05",
+    "independent": true,
+    "independence_scope": "human reviewer is separate from generating model; credentials and examiner-controlled blinding not asserted",
+    "judgment_correct": true,
+    "witness_claimed": true,
+    "witness_valid": true,
+    "hypothesis_matches": 2,
+    "prediction_hypothesis_count": 2,
+    "hypothesis_mapping": [
+      {
+        "id": "H1",
+        "reference_text": "f在C上全纯",
+        "prediction_text": "f在C上全纯",
+        "controller_mapping": "exact"
+      },
+      {
+        "id": "H2",
+        "reference_text": "f在C上有界",
+        "prediction_text": "f在C上有界",
+        "controller_mapping": "exact"
+      }
+    ],
+    "all_retained_valid": true,
+    "conclusion_refuted": true,
+    "argument_valid": true,
+    "intervention_valid": true,
+    "evidence_honest": true,
+    "dependency_correct": true,
+    "field_provenance": "Controller maps user acceptance and specific finding to rubric booleans; user did not personally fill individual boolean fields.",
+    "human_reporting_gap": false,
+    "notes": "用户确认其余回答均无需修改；原始回答不改动。"
+  },
+  {
+    "task_id": "CA04",
+    "review_id": "CA04-B",
+    "prediction_digest": "d26e0b4470edcd532385c35911db66d390405acf4f8b01f7685b5b8006e7ffdc",
+    "reviewer": "current_user",
+    "reviewed_at": "2026-11-05",
+    "independent": true,
+    "independence_scope": "human reviewer is separate from generating model; credentials and examiner-controlled blinding not asserted",
+    "judgment_correct": true,
+    "witness_claimed": true,
+    "witness_valid": true,
+    "hypothesis_matches": 4,
+    "prediction_hypothesis_count": 4,
+    "hypothesis_mapping": [
+      {
+        "id": "H1",
+        "reference_text": "Ω连通",
+        "prediction_text": "Ω连通",
+        "controller_mapping": "exact"
+      },
+      {
+        "id": "H2",
+        "reference_text": "f在Ω全纯",
+        "prediction_text": "f在Ω全纯",
+        "controller_mapping": "exact"
+      },
+      {
+        "id": "H3",
+        "reference_text": "零点在Ω内有聚点",
+        "prediction_text": "零点在Ω内有聚点",
+        "controller_mapping": "exact"
+      },
+      {
+        "id": "H4",
+        "reference_text": "Ω为非空开集",
+        "prediction_text": "Ω为非空开集",
+        "controller_mapping": "exact"
+      }
+    ],
+    "all_retained_valid": true,
+    "conclusion_refuted": true,
+    "argument_valid": true,
+    "intervention_valid": true,
+    "evidence_honest": true,
+    "dependency_correct": true,
+    "field_provenance": "Controller maps user acceptance and specific finding to rubric booleans; user did not personally fill individual boolean fields.",
+    "human_reporting_gap": false,
+    "notes": "用户确认其余回答均无需修改；原始回答不改动。"
+  },
+  {
+    "task_id": "CA05",
+    "review_id": "CA05-A",
+    "prediction_digest": "9920584ea3c8bc46636bf55f03b8518472a51a61e63934a1758ea179e494b370",
+    "reviewer": "current_user",
+    "reviewed_at": "2026-11-05",
+    "independent": true,
+    "independence_scope": "human reviewer is separate from generating model; credentials and examiner-controlled blinding not asserted",
+    "judgment_correct": true,
+    "witness_claimed": true,
+    "witness_valid": true,
+    "hypothesis_matches": 3,
+    "prediction_hypothesis_count": 3,
+    "hypothesis_mapping": [
+      {
+        "id": "H1",
+        "reference_text": "Ω连通开",
+        "prediction_text": "Ω连通开",
+        "controller_mapping": "exact"
+      },
+      {
+        "id": "H2",
+        "reference_text": "f在Ω全纯",
+        "prediction_text": "f在Ω全纯",
+        "controller_mapping": "exact"
+      },
+      {
+        "id": "H3",
+        "reference_text": "|f|在内点有局部最大",
+        "prediction_text": "|f|在内点有局部最大",
+        "controller_mapping": "exact"
+      }
+    ],
+    "all_retained_valid": true,
+    "conclusion_refuted": true,
+    "argument_valid": true,
+    "intervention_valid": true,
+    "evidence_honest": true,
+    "dependency_correct": true,
+    "field_provenance": "Controller maps user acceptance and specific finding to rubric booleans; user did not personally fill individual boolean fields.",
+    "human_reporting_gap": false,
+    "notes": "用户确认其余回答均无需修改；原始回答不改动。"
+  }
+]

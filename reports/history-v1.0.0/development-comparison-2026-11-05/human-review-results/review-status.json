@@ -1,0 +1,11 @@
+{
+  "human_answer_reviews_recorded": 30,
+  "accepted_without_change": 29,
+  "specific_reporting_gaps": 1,
+  "mathematically_valid_counterexamples": 30,
+  "formal_gold_updated": false,
+  "score_status": "provisional_internal",
+  "numeric_100_point_scores": null,
+  "RSI_improvement_proven": false,
+  "skill_or_answers_modified": false
+}

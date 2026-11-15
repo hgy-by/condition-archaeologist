@@ -1,0 +1,13 @@
+{
+  "http_status": 523,
+  "elapsed_seconds": 6.310166599985678,
+  "raw": null,
+  "error": "HTTP 523",
+  "task_id": "F-CA",
+  "arm": "full_skill",
+  "kind": "full_theorem",
+  "prediction": null,
+  "structure_errors": null,
+  "attempt": 1,
+  "task_digest": "fadd14b4aee44842b61d3f2761584d5d6db54207719bb2df5933a68134a84f02"
+}

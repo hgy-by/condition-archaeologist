@@ -1,0 +1,50 @@
+{
+  "release_candidate": {
+    "skill": "1.0.0",
+    "web": "0.1.1",
+    "scope": [
+      "数学分析",
+      "高等代数",
+      "实分析",
+      "复分析"
+    ],
+    "git_repository_initialized": true,
+    "remote_repository": null,
+    "public_release": false,
+    "authors": [
+      "侯冠伊",
+      "徐炳涵"
+    ],
+    "planned_visibility": "public",
+    "license": "not included; no license requested or selected"
+  },
+  "state": {
+    "files_generated": true,
+    "engineering_checks": "see engineering-summary.json and logs",
+    "real_chat_ecnu_calls_this_turn": 0,
+    "real_model_math_scores_this_turn": null,
+    "independent_human_review_this_turn": false,
+    "formal_verification": false,
+    "poster": {
+      "final_source": "user-provided A2 PDF; do not regenerate",
+      "source_page_count": 1,
+      "page_size_points": [
+        1191.12,
+        1684.08
+      ],
+      "text_extraction": "completed",
+      "visual_inspection_by_agent": "not performed",
+      "project_A3_files": "older maintenance draft; not the final poster"
+    },
+    "website_browser_interaction_review": "not run; separate live page/manual check remains",
+    "rsi_gain_for_maintenance_version": "not demonstrated",
+    "poster_submission": "excluded by project decision",
+    "github_repository": "not created or pushed; assignment requires link by 2026-11-30"
+  },
+  "pending_external_decisions": [
+    "GitHub account/repository URL needed for remote push",
+    "manual browser review",
+    "teacher confirmation only if additional deliverables are required"
+  ],
+  "current_math_review_status": "AI checked four authored subject examples and their listed witness obligations; entries in review-register.json state limitations. No new model answers have been reviewed."
+}

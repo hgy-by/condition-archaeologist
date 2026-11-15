@@ -1,0 +1,63 @@
+
+test_bad_budget_rejected (test_chatecnu.ChatECNUAdapter.test_bad_budget_rejected) ... ok
+test_chat_network_failure_does_not_echo_secret (test_chatecnu.ChatECNUAdapter.test_chat_network_failure_does_not_echo_secret) ... ok
+test_chat_request_and_final_report_use_documented_fields (test_chatecnu.ChatECNUAdapter.test_chat_request_and_final_report_use_documented_fields) ... ok
+test_chat_still_rejects_missing_retained_obligation (test_chatecnu.ChatECNUAdapter.test_chat_still_rejects_missing_retained_obligation) ... ok
+test_content_filter_and_refusal_handled (test_chatecnu.ChatECNUAdapter.test_content_filter_and_refusal_handled) ... ok
+test_ecnu_host_selects_documented_protocol_without_extra_setting (test_chatecnu.ChatECNUAdapter.test_ecnu_host_selects_documented_protocol_without_extra_setting) ... ok
+test_missing_or_multiple_choices_rejected (test_chatecnu.ChatECNUAdapter.test_missing_or_multiple_choices_rejected) ... ok
+test_non_json_and_code_fences_rejected_without_repair (test_chatecnu.ChatECNUAdapter.test_non_json_and_code_fences_rejected_without_repair) ... ok
+test_reasoning_only_output_never_substituted_for_answer (test_chatecnu.ChatECNUAdapter.test_reasoning_only_output_never_substituted_for_answer) ... ok
+test_tool_request_not_claimed_as_execution (test_chatecnu.ChatECNUAdapter.test_tool_request_not_claimed_as_execution) ... ok
+test_truncated_final_content_never_parsed_as_success (test_chatecnu.ChatECNUAdapter.test_truncated_final_content_never_parsed_as_success) ... ok
+test_unknown_protocol_fails_before_model_call (test_chatecnu.ChatECNUAdapter.test_unknown_protocol_fails_before_model_call) ... ok
+test_valid_chat_output (test_chatecnu.ChatECNUAdapter.test_valid_chat_output) ... ok
+test_auth_failure_is_actionable_and_redacted (test_chatecnu.TokenPreflight.test_auth_failure_is_actionable_and_redacted) ... ok
+test_copy_prefix_and_outer_whitespace_handled (test_chatecnu.TokenPreflight.test_copy_prefix_and_outer_whitespace_handled) ... ok
+test_invalid_token_input_rejected (test_chatecnu.TokenPreflight.test_invalid_token_input_rejected) ... ok
+test_model_listing_parse_failure_rejected (test_chatecnu.TokenPreflight.test_model_listing_parse_failure_rejected) ... ok
+test_models_read_only_request_checks_exact_requested_model (test_chatecnu.TokenPreflight.test_models_read_only_request_checks_exact_requested_model) ... ok
+test_no_silent_model_substitution (test_chatecnu.TokenPreflight.test_no_silent_model_substitution) ... ok
+test_budget_selection_is_explicit_in_both_protocols (test_maintenance.Maintenance.test_budget_selection_is_explicit_in_both_protocols) ... ok
+test_empty_evidence_is_rejected (test_maintenance.Maintenance.test_empty_evidence_is_rejected) ... ok
+test_joint_only_does_not_count_as_each_single (test_maintenance.Maintenance.test_joint_only_does_not_count_as_each_single) ... ok
+test_statement_issue_does_not_count_all_conditions (test_maintenance.Maintenance.test_statement_issue_does_not_count_all_conditions) ... ok
+test_unknown_depth_rejected_before_transport (test_maintenance.Maintenance.test_unknown_depth_rejected_before_transport) ... ok
+test_unresolved_and_missing_are_distinct (test_maintenance.Maintenance.test_unresolved_and_missing_are_distinct) ... ok
+test_whitespace_summary_and_scope_are_rejected (test_maintenance.Maintenance.test_whitespace_summary_and_scope_are_rejected) ... ok
+test_config_exposes_no_credentials (test_web.HttpBoundaries.test_config_exposes_no_credentials) ... ok
+test_cross_origin_request_rejected (test_web.HttpBoundaries.test_cross_origin_request_rejected) ... ok
+test_example_explicitly_labeled (test_web.HttpBoundaries.test_example_explicitly_labeled) ... ok
+test_host_header_rejected (test_web.HttpBoundaries.test_host_header_rejected) ... ok
+test_input_not_forwarded_without_access_code (test_web.HttpBoundaries.test_input_not_forwarded_without_access_code) ... ok
+test_invalid_subject_rejected (test_web.HttpBoundaries.test_invalid_subject_rejected) ... ok
+test_lan_requires_access_code (test_web.HttpBoundaries.test_lan_requires_access_code) ... ok
+test_model_unconfigured_is_not_success (test_web.HttpBoundaries.test_model_unconfigured_is_not_success) ... ok
+test_rate_limit_prevents_extra_model_calls (test_web.HttpBoundaries.test_rate_limit_prevents_extra_model_calls) ... ok
+test_server_never_serves_skill_or_settings (test_web.HttpBoundaries.test_server_never_serves_skill_or_settings) ... ok
+test_static_has_csp_and_correct_types (test_web.HttpBoundaries.test_static_has_csp_and_correct_types) ... ok
+test_changed_assumption_text_is_not_accepted (test_web.ReportValidation.test_changed_assumption_text_is_not_accepted) ... ok
+test_clarification_must_ask_a_question (test_web.ReportValidation.test_clarification_must_ask_a_question) ... ok
+test_dependency_requires_actual_intervention_id (test_web.ReportValidation.test_dependency_requires_actual_intervention_id) ... ok
+test_duplicate_intervention_ids_are_not_accepted (test_web.ReportValidation.test_duplicate_intervention_ids_are_not_accepted) ... ok
+test_fake_independent_review_is_not_accepted (test_web.ReportValidation.test_fake_independent_review_is_not_accepted) ... ok
+test_four_authored_examples_cover_retained_obligations (test_web.ReportValidation.test_four_authored_examples_cover_retained_obligations) ... ok
+test_http_auth_failure_never_echoes_upstream_error_or_key (test_web.ReportValidation.test_http_auth_failure_never_echoes_upstream_error_or_key) ... ok
+test_incomplete_response_never_becomes_success (test_web.ReportValidation.test_incomplete_response_never_becomes_success) ... ok
+test_invalid_field_types_rejected (test_web.ReportValidation.test_invalid_field_types_rejected) ... ok
+test_malformed_provider_json_is_rejected (test_web.ReportValidation.test_malformed_provider_json_is_rejected) ... ok
+test_missing_retained_check_is_not_accepted (test_web.ReportValidation.test_missing_retained_check_is_not_accepted) ... ok
+test_provider_error_is_not_an_answer (test_web.ReportValidation.test_provider_error_is_not_an_answer) ... ok
+test_real_adapter_wiring_with_explicit_transport_fixture (test_web.ReportValidation.test_real_adapter_wiring_with_explicit_transport_fixture)
+Mock HTTP only; verifies payload and parsing, not live model quality. ... ok
+test_refusal_is_reported (test_web.ReportValidation.test_refusal_is_reported) ... ok
+test_removable_cannot_claim_counterexample (test_web.ReportValidation.test_removable_cannot_claim_counterexample) ... ok
+test_statement_issue_cannot_delete_hypothesis (test_web.ReportValidation.test_statement_issue_cannot_delete_hypothesis) ... ok
+test_unresolved_requires_real_gap (test_web.ReportValidation.test_unresolved_requires_real_gap) ... ok
+test_valid_clarification_does_not_claim_completed_report (test_web.ReportValidation.test_valid_clarification_does_not_claim_completed_report) ... ok
+test_valid_response_parsing_uses_actual_report (test_web.ReportValidation.test_valid_response_parsing_uses_actual_report) ... ok
+
+----------------------------------------------------------------------
+Ran 56 tests in 5.692s
+
+OK

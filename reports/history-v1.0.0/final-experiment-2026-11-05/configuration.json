@@ -1,0 +1,22 @@
+{
+  "max_output_tokens": 6000,
+  "timeout_seconds": 90,
+  "concurrency": 2,
+  "reasoning_effort": "high",
+  "model": "gpt-6-sol",
+  "provider_origin": "api.aixhan.com",
+  "max_transport_retries": 0,
+  "jobs_digest": "8b13b80b9fcf3cf2bb0c8a0c066c339e66d369098baaa7e977e73f9a3d9114f8",
+  "plan_digest": "7b0d4e4ba2e861fd93f0f9d49523360d957ca3315c17c9047511b4d5d07ed16c",
+  "candidate_runtime_hash": "570004a032846c098f5b4f339a302b0c702d638cf09604f7ebb2365ae349c611",
+  "old_runtime_hash": "9b210d02e4161ec8c39ea1882ee4ca7b53b9a3882b471568522f2747401123b6",
+  "reference_answers_sent": false,
+  "seeds_sent": false,
+  "tools": false,
+  "history": false,
+  "repeats": 1,
+  "sampling_settings": "provider default except explicit effort/token budget; hidden routing unknown",
+  "common_contract_sha256": "feced0bb58cd22dddbdcbf4bde33008ea8b68f098e7ab2b90ebd20c3b58131ad",
+  "max_calls": 58,
+  "actual_usd": null
+}

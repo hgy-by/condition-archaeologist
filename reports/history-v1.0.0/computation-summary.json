@@ -1,0 +1,27 @@
+[
+  {
+    "task_id": "AL01",
+    "claims_pass": true,
+    "scope": "partial_computation"
+  },
+  {
+    "task_id": "AL02",
+    "claims_pass": true,
+    "scope": "partial_computation"
+  },
+  {
+    "task_id": "AL04",
+    "claims_pass": true,
+    "scope": "partial_computation"
+  },
+  {
+    "task_id": "RA01",
+    "claims_pass": true,
+    "scope": "partial_computation"
+  },
+  {
+    "task_id": "RA02",
+    "claims_pass": true,
+    "scope": "partial_computation"
+  }
+]

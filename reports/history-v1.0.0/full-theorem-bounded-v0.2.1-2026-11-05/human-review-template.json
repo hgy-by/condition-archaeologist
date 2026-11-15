@@ -1,0 +1,31 @@
+{
+  "run_digest": "6720be23b01d31c64950a5dbe7f686a7da63d085a559616a59f04b3806d64988",
+  "reviewer": "",
+  "reviewed_at": "",
+  "records": [
+    {
+      "review_id": "B-MA-A",
+      "response_digest": "aad7261134a5e8502a48b0815af4ee78330156bd17bdb7490afe4e7eaa944953",
+      "decision": "待审核",
+      "notes": ""
+    },
+    {
+      "review_id": "B-AL-A",
+      "response_digest": "9a9021c7786ddef33c266988c8dd2c92037b5cb846ba0200af0ad7752b5c5d4f",
+      "decision": "待审核",
+      "notes": ""
+    },
+    {
+      "review_id": "B-RA-A",
+      "response_digest": "676b0d96d186c89bbea54377c3909867bec35ba4f2874986bae37d44f9d1199e",
+      "decision": "待审核",
+      "notes": ""
+    },
+    {
+      "review_id": "B-CA-A",
+      "response_digest": "97a688171ea1a898f1561c2820b21216dec6cb58a6d6913f22887dd3c64dc962",
+      "decision": "待审核",
+      "notes": ""
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "frozen_before_calls": true,
+  "same_four_full_tasks": true,
+  "same_candidate": true,
+  "change": "Uniform max_output_tokens 6000→12000 and timeout 90→120 for all 4 full_skill tasks",
+  "not_a_paired_baseline_comparison": true,
+  "no_best_answer_selection": "All four outputs reported separately from the original 29-job experiment",
+  "planned_calls": 4,
+  "max_calls_with_single_no_answer_recovery": 8,
+  "capability_scope": "AI-reviewed internal confirmation on previously attempted tasks; no new blind transfer claim"
+}

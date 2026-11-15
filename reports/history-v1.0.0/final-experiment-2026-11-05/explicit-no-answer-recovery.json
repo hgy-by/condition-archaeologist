@@ -1,0 +1,9 @@
+{
+  "policy": "One identical-payload recovery for NO answer only; not answer repair or score selection.",
+  "jobs": [
+    {
+      "task_id": "FINAL-CA",
+      "arm": "without_verification"
+    }
+  ]
+}

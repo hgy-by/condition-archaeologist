@@ -1,0 +1,24 @@
+{
+  "model": "gpt-6-sol",
+  "provider_origin": "api.aixhan.com",
+  "reasoning_effort": "high",
+  "max_output_tokens": 8000,
+  "timeout_seconds": 180,
+  "concurrency": 2,
+  "max_transport_retries": 1,
+  "expected_answers": 30,
+  "model_tools": false,
+  "history": false,
+  "reference_answers_sent": false,
+  "mode": "text_loaded_skill_without_seeds",
+  "formal_score": null,
+  "skill_files_sha256": {
+    "SKILL.md": "0520fd7e83acb2036913eb2ebc67a0d700e5eb8c935c2db9aecde88c99268401",
+    "references/judgment-protocol.md": "1409cf8c085e9cd37910e54b9c7f58e45f0b30de5e7be2bc19de950cd917994e",
+    "references/strategies.md": "e31024610927be833441e0f4851fde323a97c56d5911969e834fe638a6881f32",
+    "references/verification.md": "d1edb1a83f3f336a46a595cc0dbbe5306b8110a93623e8f9352a57ae21985181",
+    "references/output-schema.md": "a538011dabaf38ae14953b38a637fea1e43f5c29dbdf0d9bfddf584244d24f17"
+  },
+  "jobs_digest": "8b272284b176b281ce1d39cc0cea10b6aabfd620aac3e6a1db6f87e6f06dfad9",
+  "actual_cost_usd": null
+}

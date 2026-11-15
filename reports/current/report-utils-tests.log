@@ -1,0 +1,16 @@
+✔ four reports export assumptions, counterexamples and evidence scopes (1.7065ms)
+✔ export preserves live provenance, usage, questions and next steps (0.2797ms)
+✔ joint analysis cannot fill single coverage (0.1812ms)
+✔ unresolved is displayed separately from missing analysis (0.1184ms)
+✔ evidence badge follows recorded kinds (0.1278ms)
+✔ clarification is preserved intact or rejected before modification (0.3591ms)
+✔ clarification report can be exported without completed interventions (0.1934ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 8.2834
+

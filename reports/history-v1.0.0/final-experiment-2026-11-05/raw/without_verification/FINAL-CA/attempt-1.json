@@ -1,0 +1,15 @@
+{
+  "http_status": 200,
+  "elapsed_seconds": 185.31088209996233,
+  "raw": "\n\n\n\n\n\n\n\n\n\n\n\n{\"error\":{\"message\":\"Upstream request failed (cch_session_id: codex_k11785_01a1ab60-c597-770b-8287-6d0f40900df6)\",\"type\":\"service_unavailable_error\",\"code\":\"service_unavailable_error\"}}",
+  "error": null,
+  "task_id": "FINAL-CA",
+  "arm": "without_verification",
+  "kind": "full_theorem",
+  "prediction": null,
+  "structure_errors": null,
+  "provider_error_type": "service_unavailable_error",
+  "parse_error": "Provider error envelope; no model answer",
+  "attempt": 1,
+  "task_digest": "df20c8cbd230ea0fbf82789e2f5298d5d085407bd807c3aab99e3aaf9d9052b4"
+}

@@ -1,0 +1,20 @@
+{
+  "version": "0.2.0",
+  "date": "2026-11-03",
+  "normal_entry": "Codex chat: $condition-archaeologist",
+  "installed": true,
+  "skill_structure_validated": true,
+  "software_tests": 37,
+  "software_tests_passed": true,
+  "cases_AI_rechecked": 29,
+  "cases_clarified_or_corrected": 13,
+  "human_gold_promoted": false,
+  "forward_subjects": 4,
+  "forward_interventions": 15,
+  "local_computations": 5,
+  "human_math_review": "pending",
+  "formal_capability_score": null,
+  "RSI_improvement_proven": false,
+  "batch_CLI_model_runner": "blocked_by_initialization_access_denied",
+  "chat_and_local_tools_ready": true
+}

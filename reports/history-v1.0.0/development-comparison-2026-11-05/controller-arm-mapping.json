@@ -1,0 +1,212 @@
+[
+  {
+    "review_id": "MA01-A",
+    "task_id": "MA01",
+    "arm": "direct_model",
+    "prediction_digest": "1509c48ed7b35314dfa766c8e62a4c5f25d10563d655794384aaabaa079054bd",
+    "raw_prediction_digest": "a233d726eedecf6adb4544dd6a69b6a5cd5e32b5faa5f8b1da48ba652aa01781"
+  },
+  {
+    "review_id": "MA01-B",
+    "task_id": "MA01",
+    "arm": "full_skill",
+    "prediction_digest": "cdb3396c13d21c86888feb7cf5444ebc3727b8369a34b38a10c59b018740480b",
+    "raw_prediction_digest": "fe1d6c8e0e2962e11980ca7959b9faede2b802e3660883f9790c0ce50cb0a536"
+  },
+  {
+    "review_id": "MA02-A",
+    "task_id": "MA02",
+    "arm": "direct_model",
+    "prediction_digest": "af5ab65077d21f7d4c99f9277a4f73c9f4844935a71245356b67d3fd796b584a",
+    "raw_prediction_digest": "9399cd7bfb7c0c39e528f3d091a4d969294b653a88989ee23914de9f74f13056"
+  },
+  {
+    "review_id": "MA02-B",
+    "task_id": "MA02",
+    "arm": "full_skill",
+    "prediction_digest": "c99ec72ef4aed9c9a50247285be7d67657c7c1862165155d241b675fca7a5df1",
+    "raw_prediction_digest": "fa5a6978339fb2f470daab2507fe6ed435d32b1639391dd138d07566a97bf723"
+  },
+  {
+    "review_id": "MA03-A",
+    "task_id": "MA03",
+    "arm": "direct_model",
+    "prediction_digest": "91f9979d31b5a6f38dde286ac3e4097d2d3f2a8a21166f794747903f3ca6b266",
+    "raw_prediction_digest": "786f89b16b2f427f38c73ffe7d04a9f3ac6996a9f35479e4f261d1cedaeeca72"
+  },
+  {
+    "review_id": "MA03-B",
+    "task_id": "MA03",
+    "arm": "full_skill",
+    "prediction_digest": "7429039de3fc4946cd93a0920255415a0a3ed81373e23fffab4e69b21a079c4d",
+    "raw_prediction_digest": "af4d06b73e42bcbb695ff6414df9738ed042ff5fe7097b8b9666741d78cb6977"
+  },
+  {
+    "review_id": "MA04-A",
+    "task_id": "MA04",
+    "arm": "full_skill",
+    "prediction_digest": "df5de63d9e4db1693f88d9dd1f553d00e1a3f15bdbbd56e68b5e3822f7c1219b",
+    "raw_prediction_digest": "f5655bb89e5ed22db0f7c225732cf6bb9bd22628b0c051bf2e0becebd72c7ebe"
+  },
+  {
+    "review_id": "MA04-B",
+    "task_id": "MA04",
+    "arm": "direct_model",
+    "prediction_digest": "a51d1d75d71f97ff098b19bb9244da660c4659d31882b9773bc330aa26af7652",
+    "raw_prediction_digest": "640ba2a75cda3d7bc87dd7045a1525768c4f23e1bd98394bf9ace6f8083da4e6"
+  },
+  {
+    "review_id": "AL01-A",
+    "task_id": "AL01",
+    "arm": "full_skill",
+    "prediction_digest": "da25722c7a23766c5dffa85322d460907d7b914423d19dbab3456acda3c5fbbd",
+    "raw_prediction_digest": "322fbf670aa84066c2910aaaf39d51adebde2b0cc5cabc8869861455493cd5fb"
+  },
+  {
+    "review_id": "AL01-B",
+    "task_id": "AL01",
+    "arm": "direct_model",
+    "prediction_digest": "c8998c99e762578194f105a330f48786d7360aa414cbb8c9610f26944267f5a0",
+    "raw_prediction_digest": "c1625e1eeb649ebadae7953ae87a481bdcc9cf9fb8f9dc24ddc7fa49908f30f0"
+  },
+  {
+    "review_id": "AL02-A",
+    "task_id": "AL02",
+    "arm": "full_skill",
+    "prediction_digest": "31bdd7dfb2f78536ff60b7f6aaed4c4f973dc064194340c93a05037849c77c3c",
+    "raw_prediction_digest": "f2d80268171ccef585649f3c282a22fc57030411da087cc4c694afb0a214e5a3"
+  },
+  {
+    "review_id": "AL02-B",
+    "task_id": "AL02",
+    "arm": "direct_model",
+    "prediction_digest": "acfc0cb4ba3c94cdc3aa8e230a9b5cd543927f2766bc9e3483b5ea98bad9775b",
+    "raw_prediction_digest": "d1aa0ba638fa22117167d6a3ff93033603af423cb26de24f4ff79ab45d85db2b"
+  },
+  {
+    "review_id": "AL03-A",
+    "task_id": "AL03",
+    "arm": "full_skill",
+    "prediction_digest": "38651af965f6c9874b7a33d7e881949be6bea57b01a9c1011e8402b03e58f51b",
+    "raw_prediction_digest": "75b55a163b245bb8a2ae4cac877d6809f3db3e4e21e001b26e2bcc9c8e92ce7e"
+  },
+  {
+    "review_id": "AL03-B",
+    "task_id": "AL03",
+    "arm": "direct_model",
+    "prediction_digest": "7ce6e361b8359de32efb0d867f4e68c2d7035081ca72d4912bab29ceb2041969",
+    "raw_prediction_digest": "b2c1bfb9aafeca0440b833e2e8852ea0f695a9f95051b5b20104fbbf662a589a"
+  },
+  {
+    "review_id": "AL04-A",
+    "task_id": "AL04",
+    "arm": "direct_model",
+    "prediction_digest": "e85b6e6420d260aa1787c78b1de78462d2da200411ade4a4c93ff9aed2ca589c",
+    "raw_prediction_digest": "d68ce061d2282347c7428345d325938743801a6f54af57bb80114b9fdef23190"
+  },
+  {
+    "review_id": "AL04-B",
+    "task_id": "AL04",
+    "arm": "full_skill",
+    "prediction_digest": "3df0935d2f7776ebf7ef17ec5c830b8fac755497cf5869e59efc4908c1609f03",
+    "raw_prediction_digest": "f03d46edf209190a2cc0409cc0059249ba07fe26ba9a9d8e5e96d7eb5aa055fa"
+  },
+  {
+    "review_id": "RA01-A",
+    "task_id": "RA01",
+    "arm": "direct_model",
+    "prediction_digest": "9ff649ead147714626684c21fc8857312cd3e2d5e95c1ae93e8e0edca905a525",
+    "raw_prediction_digest": "0bc31eac775debb2bd37bac6ecd507220562ded2d1e51bccbef46c123fb341bd"
+  },
+  {
+    "review_id": "RA01-B",
+    "task_id": "RA01",
+    "arm": "full_skill",
+    "prediction_digest": "5b18148a4f870ea65e7516d6e8b0e590ff93641892025b33b7e51f9b9e7350ba",
+    "raw_prediction_digest": "4f96e2f9846effa330a790d2f64ec29ece99b5fee8f915bc30d21398c6797388"
+  },
+  {
+    "review_id": "RA02-A",
+    "task_id": "RA02",
+    "arm": "full_skill",
+    "prediction_digest": "04d814be53f6e20de07173dccac8e9f136ed4873150a5e2248647c685addd81e",
+    "raw_prediction_digest": "d87c6cfd3a864a8f5f0a6139d88aabcfa3a83cc9cb3c4b38e9d52aab9a83fc65"
+  },
+  {
+    "review_id": "RA02-B",
+    "task_id": "RA02",
+    "arm": "direct_model",
+    "prediction_digest": "062b0d985517841e3b021d2206983546f4f4e57af5f8df175344328f49cd6a79",
+    "raw_prediction_digest": "5044e2519251c305d9d3f6c3651a42d8c3be14b0cf52b73c6beb62dfcf3b42c5"
+  },
+  {
+    "review_id": "RA03-A",
+    "task_id": "RA03",
+    "arm": "direct_model",
+    "prediction_digest": "917b7b1578a1e2c01ffac0844f896998fac302e4e7662a65a25ce0816dec97a4",
+    "raw_prediction_digest": "a036357af7bff00bb442035e272f4104ad190f7f9567e30bb20c5e2ddfe94842"
+  },
+  {
+    "review_id": "RA03-B",
+    "task_id": "RA03",
+    "arm": "full_skill",
+    "prediction_digest": "afdfc78933ac6e144d1c5384418622bfa0da249476a96407b6dd4966c11db5a6",
+    "raw_prediction_digest": "e12061d097190df4596c992b5bdbb28c996f00b7329698719b386c196e7ee7ac"
+  },
+  {
+    "review_id": "CA01-A",
+    "task_id": "CA01",
+    "arm": "full_skill",
+    "prediction_digest": "fe7f9a15aa08eca37ef945c9c2d4082f5225a49fedf7c02a981d4fc6fd1cc057",
+    "raw_prediction_digest": "d29e042fca2398406d2936f336e359879345a7a298a313b625dc9f2d4eda853c"
+  },
+  {
+    "review_id": "CA01-B",
+    "task_id": "CA01",
+    "arm": "direct_model",
+    "prediction_digest": "bfcd54a4d34b44a6b27bd824adcd11b70053b0afa6e6bbff1775e779e0369e42",
+    "raw_prediction_digest": "dbeffb54603ac896efe6b74c23dcf707f2dd3cff1c30d8e3edf1334e6fc17f66"
+  },
+  {
+    "review_id": "CA02-A",
+    "task_id": "CA02",
+    "arm": "full_skill",
+    "prediction_digest": "1391b1d984ad3b848b07be3199eb66f3052495c08d96e1e8c61dd218f42b3aaf",
+    "raw_prediction_digest": "2c73d6d3c36763a77c64b310d41a14a0171806d6550fafbd624e5fb3d057731e"
+  },
+  {
+    "review_id": "CA02-B",
+    "task_id": "CA02",
+    "arm": "direct_model",
+    "prediction_digest": "bf15e75d077dd0cc2346fcc0324be6347b9898a1c06dd8469f4b8a9f795c31ae",
+    "raw_prediction_digest": "c57683dc4ef2df2e10cc1e35fbc856d62d794d9cbb1dd14786e9fd6804ce6ff5"
+  },
+  {
+    "review_id": "CA04-A",
+    "task_id": "CA04",
+    "arm": "full_skill",
+    "prediction_digest": "200675f42f96e2749afa95e95226ac4004eea9b669d783378b8ee7a2fa2f766b",
+    "raw_prediction_digest": "3d2d01b699b1f3b781c80e3c67e8f36b7745d3c40aa0da071ab62a710af3c13f"
+  },
+  {
+    "review_id": "CA04-B",
+    "task_id": "CA04",
+    "arm": "direct_model",
+    "prediction_digest": "d26e0b4470edcd532385c35911db66d390405acf4f8b01f7685b5b8006e7ffdc",
+    "raw_prediction_digest": "5ac7f63002afdf3d6f3f57ab8b519203bd3d2a7d70677bccb15e2254c4d3b580"
+  },
+  {
+    "review_id": "CA05-A",
+    "task_id": "CA05",
+    "arm": "direct_model",
+    "prediction_digest": "9920584ea3c8bc46636bf55f03b8518472a51a61e63934a1758ea179e494b370",
+    "raw_prediction_digest": "46de5cbd6b7063deacd64a6a4887c49ce61f72a01c4b9a97f5416238523d907c"
+  },
+  {
+    "review_id": "CA05-B",
+    "task_id": "CA05",
+    "arm": "full_skill",
+    "prediction_digest": "ab737dc91ba1a953d1c39bd648b4b1263099166470a91449b0aec974ff74818f",
+    "raw_prediction_digest": "45c561ab708a19036673133825cc1be8b2ffebaf9c6694c55de568f7d0b3d809"
+  }
+]

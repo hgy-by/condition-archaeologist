@@ -1,0 +1,15 @@
+{
+  "paired_success_gain": 0.09090909090909091,
+  "family_count": 8,
+  "bootstrap_samples": 2000,
+  "family_cluster_bootstrap95": [
+    0,
+    0.2727272727272727
+  ],
+  "seed": 20261102,
+  "status": "ai_reviewed_internal",
+  "comparison_type": "direct_model_vs_v0.2.1_skill",
+  "RSI_old_vs_new": false,
+  "judging_independent": false,
+  "interpretation": "Observed strict classification difference, not a demonstrated general capability or RSI gain."
+}

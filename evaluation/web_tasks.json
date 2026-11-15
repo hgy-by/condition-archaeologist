@@ -1,0 +1,13 @@
+{
+  "scope": "公开的工程验收与模型内部评测输入；不是严格盲测，尚无本轮模型输出或数学评分。",
+  "tasks": [
+    {"id":"WEB-MA-01","family_id":"extreme-value","subject":"数学分析","theorem":"设 a<b 为实数，f:[a,b]→ℝ 连续，则 f 在 [a,b] 上取得最大值和最小值。分析条件的作用并区分各项结论。"},
+    {"id":"WEB-AL-01","family_id":"real-spectral","subject":"高等代数","theorem":"设 n≥1 为整数，A 是 n×n 实对称矩阵，则 A 的全部复特征值均为实数，并且 A 可在实数域上正交对角化。"},
+    {"id":"WEB-RA-01","family_id":"continuity-from-above","subject":"实分析","theorem":"在测度空间 (X,Σ,μ) 上，若 E_n∈Σ 且 E_1⊇E_2⊇⋯，并且 μ(E_1)<∞，则 μ(∩_{n≥1}E_n)=lim_{n→∞}μ(E_n)。"},
+    {"id":"WEB-CA-01","family_id":"identity-theorem","subject":"复分析","theorem":"设 Ω⊂ℂ 为非空连通开集，f,g:Ω→ℂ 全纯。存在互异点序列 z_n∈Ω 收敛到 a∈Ω，且对每个 n 有 f(z_n)=g(z_n)，则 f=g 在 Ω 上恒成立。"},
+    {"id":"WEB-EDGE-01","family_id":"ambiguous-lebesgue","subject":"实分析","theorem":"请分析 Lebesgue 收敛定理。"},
+    {"id":"WEB-EDGE-02","family_id":"false-entire-injectivity","subject":"复分析","theorem":"若整函数 f:ℂ→ℂ 的导数在每点均非零，则 f 在 ℂ 上单射。请先判断原命题是否正确，再分析条件。"},
+    {"id":"WEB-EDGE-03","family_id":"derivative-implies-continuity","subject":"数学分析","theorem":"设 f:(-1,2)→ℝ 在整个定义域可微且连续，则 f 在 [0,1] 上取得最大值。请特别分析连续性假设与可微性假设之间的关系。"},
+    {"id":"WEB-TRANSFER-01","family_id":"commuting-diagonalization","subject":"高等代数","theorem":"设 A,B 是同阶复方阵。若 A、B 各自可对角化且 AB=BA，则存在同一个可逆复矩阵 P 使 P^{-1}AP 和 P^{-1}BP 都为对角矩阵。"}
+  ]
+}

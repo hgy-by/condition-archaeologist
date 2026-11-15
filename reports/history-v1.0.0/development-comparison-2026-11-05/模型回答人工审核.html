@@ -1,0 +1,2961 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>开发集模型回答人工审核</title>
+<style>body{font:17px/1.65 system-ui;max-width:1050px;margin:30px auto;padding:20px;background:#f6f7f8}article{background:white;padding:24px;margin:25px 0;border:1px solid #ccc}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:16px/1.7 system-ui}textarea{width:97%}button{padding:12px;cursor:pointer}</style>
+<h1>开发集模型回答人工审核</h1><p>共15个任务，每题A、B两份独立回答。组别暂隐藏；请勿先看组别映射文件。这只是便于审核的隐藏标识，不是访问权限隔离。参考答案未展示。结构通过不等于数学正确。本页含真实回答，尚未人工评分。</p>
+<p>判断标签：indispensable＝单项条件不可删；removable＝删后仍成立；implied＝由保留条件推出；joint＝联合删除有反例；type_constraint＝定义或类型限制；unresolved＝尚未判定；statement_issue＝原命题存在问题。请按论证有效性审核，反例不同于教材不一定错误。</p>
+<p>审核人或代称：<input id="reviewer"> 日期：<input id="date" type="date"></p>
+<p>填写后点击导出记录，下载JSON并交回。浏览器不会自动保存；也可以复制文字另存。需要继续编辑时，可导入之前导出的JSON。</p>
+<button onclick="downloadReviews()">导出审核记录</button> <input type="file" accept=".json" onchange="restoreReviews(this)">
+<article><h2>MA01-A</h2><h3>题目</h3><pre>{
+  &quot;task_id&quot;: &quot;MA01&quot;,
+  &quot;subject&quot;: &quot;数学分析&quot;,
+  &quot;statement&quot;: &quot;设a&lt;b为有限实数，f:[a,b]→R在[a,b]连续、在(a,b)可微，且f(a)=f(b)，则存在c∈(a,b)使f′(c)=0。&quot;,
+  &quot;hypotheses&quot;: [
+    {
+      &quot;id&quot;: &quot;H1&quot;,
+      &quot;text&quot;: &quot;f 在 [a,b] 连续&quot;
+    },
+    {
+      &quot;id&quot;: &quot;H2&quot;,
+      &quot;text&quot;: &quot;f 在 (a,b) 可微&quot;
+    },
+    {
+      &quot;id&quot;: &quot;H3&quot;,
+      &quot;text&quot;: &quot;a&lt;b 为有限实数&quot;
+    },
+    {
+      &quot;id&quot;: &quot;H4&quot;,
+      &quot;text&quot;: &quot;f(a)=f(b)&quot;
+    }
+  ],
+  &quot;intervention&quot;: {
+    &quot;removed&quot;: [
+      &quot;H2&quot;
+    ],
+    &quot;replacement&quot;: null
+  },
+  &quot;conclusions&quot;: [
+    {
+      &quot;id&quot;: &quot;C1&quot;,
+      &quot;text&quot;: &quot;存在内部导数为0的点&quot;
+    }
+  ],
+  &quot;ambient&quot;: &quot;f:[a,b]→R；a,b为实数，导数为实导数。&quot;
+}</pre><h3>模型回答</h3><pre>判断：indispensable
+
+反例：取 a=-1，b=1，f(x)=|x|（x∈[-1,1]）。
+
+保留条件核验：
+[
+  {
+    &quot;id&quot;: &quot;H1&quot;,
+    &quot;argument&quot;: &quot;绝对值函数在 [-1,1] 连续。&quot;
+  },
+  {
+    &quot;id&quot;: &quot;H3&quot;,
+    &quot;argument&quot;: &quot;-1&lt;1，且两端点均为有限实数。&quot;
+  },
+  {
+    &quot;id&quot;: &quot;H4&quot;,
+    &quot;argument&quot;: &quot;f(-1)=f(1)=1。&quot;
+  }
+]
+
+替代条件核验：
+[]
+
+结论失效：
+{
+  &quot;id&quot;: &quot;C1&quot;,
+  &quot;argument&quot;: &quot;在 (-1,0) 上 f′(x)=-1，在 (0,1) 上 f′(x)=1；在 x=0 处导数不存在。因此不存在内部导数为 0 的点。&quot;
+}
+
+整体论证：
+删去 H2 后，此例满足全部保留假设，却不满足 C1，故 H2 对该结论不可缺少。
+
+证据：
+[
+  {
+    &quot;kind&quot;: &quot;mathematical_argument&quot;,
+    &quot;artifact&quot;: null,
+    &quot;scope&quot;: &quot;反例满足 H1、H3、H4 且否定 C1&quot;
+  }
+]
+
+条件依赖：
+[]
+
+不确定性：
+[]</pre><details><summary>展开完整原始回答（含模型提取的假设与干预）</summary><pre>{
+  &quot;task_id&quot;: &quot;MA01&quot;,
+  &quot;hypotheses&quot;: [
+    {&quot;id&quot;: &quot;H1&quot;, &quot;text&quot;: &quot;f 在 [a,b] 连续&quot;},
+    {&quot;id&quot;: &quot;H2&quot;, &quot;text&quot;: &quot;f 在 (a,b) 可微&quot;},
+    {&quot;id&quot;: &quot;H3&quot;, &quot;text&quot;: &quot;a&lt;b 为有限实数&quot;},
+    {&quot;id&quot;: &quot;H4&quot;, &quot;text&quot;: &quot;f(a)=f(b)&quot;}
+  ],
+  &quot;intervention&quot;: {&quot;removed&quot;: [&quot;H2&quot;], &quot;replacement&quot;: null},
+  &quot;judgment&quot;: &quot;indispensable&quot;,
+  &quot;witness&quot;: &quot;取 a=-1，b=1，f(x)=|x|（x∈[-1,1]）。&quot;,
+  &quot;retained_checks&quot;: [
+    {&quot;id&quot;: &quot;H1&quot;, &quot;argument&quot;: &quot;绝对值函数在 [-1,1] 连续。&quot;},
+    {&quot;id&quot;: &quot;H3&quot;, &quot;argument&quot;: &quot;-1&lt;1，且两端点均为有限实数。&quot;},
+    {&quot;id&quot;: &quot;H4&quot;, &quot;argument&quot;: &quot;f(-1)=f(1)=1。&quot;}
+  ],
+  &quot;replacement_checks&quot;: [],
+  &quot;target_failure&quot;: {
+    &quot;id&quot;: &quot;C1&quot;,
+    &quot;argument&quot;: &quot;在 (-1,0) 上 f′(x)=-1，在 (0,1) 上 f′(x)=1；在 x=0 处导数不存在。因此不存在内部导数为 0 的点。&quot;
+  },
+  &quot;argument&quot;: &quot;删去 H2 后，此例满足全部保留假设，却不满足 C1，故 H2 对该结论不可缺少。&quot;,
+  &quot;evidence&quot;: [
+    {&quot;kind&quot;: &quot;mathematical_argument&quot;, &quot;artifact&quot;: null, &quot;scope&quot;: &quot;反例满足 H1、H3、H4 且否定 C1&quot;}
+  ],
+  &quot;dependencies&quot;: [],
+  &quot;uncertainties&quot;: [],
+  &quot;next_steps&quot;: [],
+  &quot;cost&quot;: {&quot;elapsed_seconds&quot;: null, &quot;model_calls&quot;: null, &quot;tool_calls&quot;: null, &quot;usd&quot;: null}
+}</pre></details><label>审核结论 <select data-id="MA01-A"><option>待审核</option><option>通过</option><option>部分正确</option><option>错误</option><option>待确认</option></select></label><p>请记录：干预是否准确、保留条件是否成立、反例或证明是否有效、证据是否诚实。</p><textarea data-id="MA01-A" rows="5" placeholder="具体理由、疑点及核验依据"></textarea></article><article><h2>MA01-B</h2><h3>题目</h3><pre>{
+  &quot;task_id&quot;: &quot;MA01&quot;,
+  &quot;subject&quot;: &quot;数学分析&quot;,
+  &quot;statement&quot;: &quot;设a&lt;b为有限实数，f:[a,b]→R在[a,b]连续、在(a,b)可微，且f(a)=f(b)，则存在c∈(a,b)使f′(c)=0。&quot;,
+  &quot;hypotheses&quot;: [
+    {
+      &quot;id&quot;: &quot;H1&quot;,
+      &quot;text&quot;: &quot;f 在 [a,b] 连续&quot;
+    },
+    {
+      &quot;id&quot;: &quot;H2&quot;,
+      &quot;text&quot;: &quot;f 在 (a,b) 可微&quot;
+    },
+    {
+      &quot;id&quot;: &quot;H3&quot;,
+      &quot;text&quot;: &quot;a&lt;b 为有限实数&quot;
+    },
+    {
+      &quot;id&quot;: &quot;H4&quot;,
+      &quot;text&quot;: &quot;f(a)=f(b)&quot;
+    }
+  ],
+  &quot;intervention&quot;: {
+    &quot;removed&quot;: [
+      &quot;H2&quot;
+    ],
+    &quot;replacement&quot;: null
+  },
+  &quot;conclusions&quot;: [
+    {
+      &quot;id&quot;: &quot;C1&quot;,
+      &quot;text&quot;: &quot;存在内部导数为0的点&quot;
+    }
+  ],
+  &quot;ambient&quot;: &quot;f:[a,b]→R；a,b为实数，导数为实导数。&quot;
+}</pre><h3>模型回答</h3><pre>判断：indispensable
+
+反例：取 a=0，b=2，f:[0,2]→R，f(x)=|x−1|。
+
+保留条件核验：
+[
+  {
+    &quot;id&quot;: &quot;H1&quot;,
+    &quot;argument&quot;: &quot;绝对值函数及 x−1 均连续，故 f 在 [0,2] 连续。&quot;
+  },
+  {
+    &quot;id&quot;: &quot;H3&quot;,
+    &quot;argument&quot;: &quot;0&lt;2，且两端点都是有限实数。&quot;
+  },
+  {
+    &quot;id&quot;: &quot;H4&quot;,
+    &quot;argument&quot;: &quot;f(0)=1=f(2)。&quot;
+  }
+]
+
+替代条件核验：
+[]
+
+结论失效：
+{
+  &quot;id&quot;: &quot;C1&quot;,
+  &quot;argument&quot;: &quot;当 0&lt;x&lt;1 时 f′(x)=−1；当 1&lt;x&lt;2 时 f′(x)=1；在 x=1 处导数不存在。因此不存在 c∈(0,2) 使 f′(c) 存在且等于 0。&quot;
+}
+
+整体论证：
+该函数满足全部保留假设，但在内部点 1 不可微，确实不满足被删除的 H2；其余内部点的导数均非零。故删除 H2 后，结论 C1 不成立。
+
+证据：
+[
+  {
+    &quot;kind&quot;: &quot;mathematical_argument&quot;,
+    &quot;artifact&quot;: null,
+    &quot;scope&quot;: &quot;反例的对象合法性、全部保留假设、H2 不成立及 C1 失败&quot;
+  }
+]
+
+条件依赖：
+[]
+
+不确定性：
+[]</pre><details><summary>展开完整原始回答（含模型提取的假设与干预）</summary><pre>{
+  &quot;task_id&quot;: &quot;MA01&quot;,
+  &quot;hypotheses&quot;: [
+    {&quot;id&quot;: &quot;H1&quot;, &quot;text&quot;: &quot;f 在 [a,b] 连续&quot;},
+    {&quot;id&quot;: &quot;H2&quot;, &quot;text&quot;: &quot;f 在 (a,b) 可微&quot;},
+    {&quot;id&quot;: &quot;H3&quot;, &quot;text&quot;: &quot;a&lt;b 为有限实数&quot;},
+    {&quot;id&quot;: &quot;H4&quot;, &quot;text&quot;: &quot;f(a)=f(b)&quot;}
+  ],
+  &quot;intervention&quot;: {&quot;removed&quot;: [&quot;H2&quot;], &quot;replacement&quot;: null},
+  &quot;judgment&quot;: &quot;indispensable&quot;,
+  &quot;witness&quot;: &quot;取 a=0，b=2，f:[0,2]→R，f(x)=|x−1|。&quot;,
+  &quot;retained_checks&quot;: [
+    {&quot;id&quot;: &quot;H1&quot;, &quot;argument&quot;: &quot;绝对值函数及 x−1 均连续，故 f 在 [0,2] 连续。&quot;},
+    {&quot;id&quot;: &quot;H3&quot;, &quot;argument&quot;: &quot;0&lt;2，且两端点都是有限实数。&quot;},
+    {&quot;id&quot;: &quot;H4&quot;, &quot;argument&quot;: &quot;f(0)=1=f(2)。&quot;}
+  ],
+  &quot;replacement_checks&quot;: [],
+  &quot;target_failure&quot;: {
+    &quot;id&quot;: &quot;C1&quot;,
+    &quot;argument&quot;: &quot;当 0&lt;x&lt;1 时 f′(x)=−1；当 1&lt;x&lt;2 时 f′(x)=1；在 x=1 处导数不存在。因此不存在 c∈(0,2) 使 f′(c) 存在且等于 0。&quot;
+  },
+  &quot;argument&quot;: &quot;该函数满足全部保留假设，但在内部点 1 不可微，确实不满足被删除的 H2；其余内部点的导数均非零。故删除 H2 后，结论 C1 不成立。&quot;,
+  &quot;evidence&quot;: [
+    {&quot;kind&quot;: &quot;mathematical_argument&quot;, &quot;artifact&quot;: null, &quot;scope&quot;: &quot;反例的对象合法性、全部保留假设、H2 不成立及 C1 失败&quot;}
+  ],
+  &quot;dependencies&quot;: [],
+  &quot;uncertainties&quot;: [],
+  &quot;next_steps&quot;: [],
+  &quot;cost&quot;: {&quot;elapsed_seconds&quot;: null, &quot;model_calls&quot;: null, &quot;tool_calls&quot;: null, &quot;usd&quot;: null}
+}</pre></details><label>审核结论 <select data-id="MA01-B"><option>待审核</option><option>通过</option><option>部分正确</option><option>错误</option><option>待确认</option></select></label><p>请记录：干预是否准确、保留条件是否成立、反例或证明是否有效、证据是否诚实。</p><textarea data-id="MA01-B" rows="5" placeholder="具体理由、疑点及核验依据"></textarea></article><article><h2>MA02-A</h2><h3>题目</h3><pre>{
+  &quot;task_id&quot;: &quot;MA02&quot;,
+  &quot;subject&quot;: &quot;数学分析&quot;,
+  &quot;statement&quot;: &quot;设a&lt;b为有限实数，f:[a,b]→R在[a,b]连续、在(a,b)可微，且f(a)=f(b)，则存在c∈(a,b)使f′(c)=0。&quot;,
+  &quot;hypotheses&quot;: [
+    {
+      &quot;id&quot;: &quot;H1&quot;,
+      &quot;text&quot;: &quot;f 在 [a,b] 连续&quot;
+    },
+    {
+      &quot;id&quot;: &quot;H2&quot;,
+      &quot;text&quot;: &quot;f 在 (a,b) 可微&quot;
+    },
+    {
+      &quot;id&quot;: &quot;H3&quot;,
+      &quot;text&quot;: &quot;a&lt;b 为有限实数&quot;
+    },
+    {
+      &quot;id&quot;: &quot;H4&quot;,
+      &quot;text&quot;: &quot;f(a)=f(b)&quot;
+    }
+  ],
+  &quot;intervention&quot;: {
+    &quot;removed&quot;: [
+      &quot;H1&quot;
+    ],
+    &quot;replacement&quot;: null
+  },
+  &quot;conclusions&quot;: [
+    {
+      &quot;id&quot;: &quot;C1&quot;,
+      &quot;text&quot;: &quot;存在内部导数为0的点&quot;
+    }
+  ],
+  &quot;ambient&quot;: &quot;f:[a,b]→R；a,b为实数，导数为实导数。&quot;
+}</pre><h3>模型回答</h3><pre>判断：indispensable
+
+反例：取 a=0、b=1，令 f(0)=1，且对 0&lt;x≤1 令 f(x)=x。
+
+保留条件核验：
+[
+  {
+    &quot;id&quot;: &quot;H2&quot;,
+    &quot;argument&quot;: &quot;在 (0,1) 上 f(x)=x，故处处可微，且 f′(x)=1。&quot;
+  },
+  {
+    &quot;id&quot;: &quot;H3&quot;,
+    &quot;argument&quot;: &quot;0&lt;1，且两者均为有限实数。&quot;
+  },
+  {
+    &quot;id&quot;: &quot;H4&quot;,
+    &quot;argument&quot;: &quot;f(0)=1=f(1)。&quot;
+  }
+]
+
+替代条件核验：
+[]
+
+结论失效：
+{
+  &quot;id&quot;: &quot;C1&quot;,
+  &quot;argument&quot;: &quot;对每个 c∈(0,1)，都有 f′(c)=1≠0，因此不存在内部导数为零的点。&quot;
+}
+
+整体论证：
+此函数在 0 处不连续；删去 H1 后，它满足全部保留的假设，却不满足结论。因此 H1 不可删去。
+
+证据：
+[
+  {
+    &quot;kind&quot;: &quot;mathematical_argument&quot;,
+    &quot;artifact&quot;: null,
+    &quot;scope&quot;: &quot;构造反例，逐项检查保留假设并否定 C1&quot;
+  }
+]
+
+条件依赖：
+[]
+
+不确定性：
+[]</pre><details><summary>展开完整原始回答（含模型提取的假设与干预）</summary><pre>{
+  &quot;task_id&quot;: &quot;MA02&quot;,
+  &quot;hypotheses&quot;: [
+    {&quot;id&quot;: &quot;H1&quot;, &quot;text&quot;: &quot;f 在 [a,b] 连续&quot;},
+    {&quot;id&quot;: &quot;H2&quot;, &quot;text&quot;: &quot;f 在 (a,b) 可微&quot;},
+    {&quot;id&quot;: &quot;H3&quot;, &quot;text&quot;: &quot;a&lt;b 为有限实数&quot;},
+    {&quot;id&quot;: &quot;H4&quot;, &quot;text&quot;: &quot;f(a)=f(b)&quot;}
+  ],
+  &quot;intervention&quot;: {&quot;removed&quot;: [&quot;H1&quot;], &quot;replacement&quot;: null},
+  &quot;judgment&quot;: &quot;indispensable&quot;,
+  &quot;witness&quot;: &quot;取 a=0、b=1，令 f(0)=1，且对 0&lt;x≤1 令 f(x)=x。&quot;,
+  &quot;retained_checks&quot;: [
+    {&quot;id&quot;: &quot;H2&quot;, &quot;argument&quot;: &quot;在 (0,1) 上 f(x)=x，故处处可微，且 f′(x)=1。&quot;},
+    {&quot;id&quot;: &quot;H3&quot;, &quot;argument&quot;: &quot;0&lt;1，且两者均为有限实数。&quot;},
+    {&quot;id&quot;: &quot;H4&quot;, &quot;argument&quot;: &quot;f(0)=1=f(1)。&quot;}
+  ],
+  &quot;replacement_checks&quot;: [],
+  &quot;target_failure&quot;: {
+    &quot;id&quot;: &quot;C1&quot;,
+    &quot;argument&quot;: &quot;对每个 c∈(0,1)，都有 f′(c)=1≠0，因此不存在内部导数为零的点。&quot;
+  },
+  &quot;argument&quot;: &quot;此函数在 0 处不连续；删去 H1 后，它满足全部保留的假设，却不满足结论。因此 H1 不可删去。&quot;,
+  &quot;evidence&quot;: [
+    {&quot;kind&quot;: &quot;mathematical_argument&quot;, &quot;artifact&quot;: null, &quot;scope&quot;: &quot;构造反例，逐项检查保留假设并否定 C1&quot;}
+  ],
+  &quot;dependencies&quot;: [],
+  &quot;uncertainties&quot;: [],
+  &quot;next_steps&quot;: [],
+  &quot;cost&quot;: {&quot;elapsed_seconds&quot;: null, &quot;model_calls&quot;: null, &quot;tool_calls&quot;: null, &quot;usd&quot;: null}
+}</pre></details><label>审核结论 <select data-id="MA02-A"><option>待审核</option><option>通过</option><option>部分正确</option><option>错误</option><option>待确认</option></select></label><p>请记录：干预是否准确、保留条件是否成立、反例或证明是否有效、证据是否诚实。</p><textarea data-id="MA02-A" rows="5" placeholder="具体理由、疑点及核验依据"></textarea></article><article><h2>MA02-B</h2><h3>题目</h3><pre>{
+  &quot;task_id&quot;: &quot;MA02&quot;,
+  &quot;subject&quot;: &quot;数学分析&quot;,
+  &quot;statement&quot;: &quot;设a&lt;b为有限实数，f:[a,b]→R在[a,b]连续、在(a,b)可微，且f(a)=f(b)，则存在c∈(a,b)使f′(c)=0。&quot;,
+  &quot;hypotheses&quot;: [
+    {
+      &quot;id&quot;: &quot;H1&quot;,
+      &quot;text&quot;: &quot;f 在 [a,b] 连续&quot;
+    },
+    {
+      &quot;id&quot;: &quot;H2&quot;,
+      &quot;text&quot;: &quot;f 在 (a,b) 可微&quot;
+    },
+    {
+      &quot;id&quot;: &quot;H3&quot;,
+      &quot;text&quot;: &quot;a&lt;b 为有限实数&quot;
+    },
+    {
+      &quot;id&quot;: &quot;H4&quot;,
+      &quot;text&quot;: &quot;f(a)=f(b)&quot;
+    }
+  ],
+  &quot;intervention&quot;: {
+    &quot;removed&quot;: [
+      &quot;H1&quot;
+    ],
+    &quot;replacement&quot;: null
+  },
+  &quot;conclusions&quot;: [
+    {
+      &quot;id&quot;: &quot;C1&quot;,
+      &quot;text&quot;: &quot;存在内部导数为0的点&quot;
+    }
+  ],
+  &quot;ambient&quot;: &quot;f:[a,b]→R；a,b为实数，导数为实导数。&quot;
+}</pre><h3>模型回答</h3><pre>判断：indispensable
+
+反例：取 a=0，b=1；定义 f:[0,1]→R 为 f(x)=x（0≤x&lt;1），f(1)=0。
+
+保留条件核验：
+[
+  {
+    &quot;id&quot;: &quot;H2&quot;,
+    &quot;argument&quot;: &quot;对每个 x∈(0,1)，f 在 x 的邻域内等于 x，故 f′(x)=1，特别地 f 在 (0,1) 可微。&quot;
+  },
+  {
+    &quot;id&quot;: &quot;H3&quot;,
+    &quot;argument&quot;: &quot;0&lt;1，且两个端点均为有限实数。&quot;
+  },
+  {
+    &quot;id&quot;: &quot;H4&quot;,
+    &quot;argument&quot;: &quot;f(0)=0=f(1)。&quot;
+  }
+]
+
+替代条件核验：
+[]
+
+结论失效：
+{
+  &quot;id&quot;: &quot;C1&quot;,
+  &quot;argument&quot;: &quot;对所有 c∈(0,1) 都有 f′(c)=1≠0，因此不存在内部导数为 0 的点。&quot;
+}
+
+整体论证：
+该函数是所声明区间上的实值函数，满足全部保留假设；但 lim_{x→1−}f(x)=1≠f(1)=0，故确实不满足被删除的 H1。删去 H1 后结论 C1 不成立。
+
+证据：
+[
+  {
+    &quot;kind&quot;: &quot;mathematical_argument&quot;,
+    &quot;artifact&quot;: null,
+    &quot;scope&quot;: &quot;核对对象、全部保留假设、H1 的不成立及 C1 的否定&quot;
+  }
+]
+
+条件依赖：
+[]
+
+不确定性：
+[]</pre><details><summary>展开完整原始回答（含模型提取的假设与干预）</summary><pre>{
+  &quot;task_id&quot;: &quot;MA02&quot;,
+  &quot;hypotheses&quot;: [
+    {&quot;id&quot;: &quot;H1&quot;, &quot;text&quot;: &quot;f 在 [a,b] 连续&quot;},
+    {&quot;id&quot;: &quot;H2&quot;, &quot;text&quot;: &quot;f 在 (a,b) 可微&quot;},
+    {&quot;id&quot;: &quot;H3&quot;, &quot;text&quot;: &quot;a&lt;b 为有限实数&quot;},
+    {&quot;id&quot;: &quot;H4&quot;, &quot;text&quot;: &quot;f(a)=f(b)&quot;}
+  ],
+  &quot;intervention&quot;: {&quot;removed&quot;: [&quot;H1&quot;], &quot;replacement&quot;: null},
+  &quot;judgment&quot;: &quot;indispensable&quot;,
+  &quot;witness&quot;: &quot;取 a=0，b=1；定义 f:[0,1]→R 为 f(x)=x（0≤x&lt;1），f(1)=0。&quot;,
+  &quot;retained_checks&quot;: [
+    {&quot;id&quot;: &quot;H2&quot;, &quot;argument&quot;: &quot;对每个 x∈(0,1)，f 在 x 的邻域内等于 x，故 f′(x)=1，特别地 f 在 (0,1) 可微。&quot;},
+    {&quot;id&quot;: &quot;H3&quot;, &quot;argument&quot;: &quot;0&lt;1，且两个端点均为有限实数。&quot;},
+    {&quot;id&quot;: &quot;H4&quot;, &quot;argument&quot;: &quot;f(0)=0=f(1)。&quot;}
+  ],
+  &quot;replacement_checks&quot;: [],
+  &quot;target_failure&quot;: {
+    &quot;id&quot;: &quot;C1&quot;,
+    &quot;argument&quot;: &quot;对所有 c∈(0,1) 都有 f′(c)=1≠0，因此不存在内部导数为 0 的点。&quot;
+  },
+  &quot;argument&quot;: &quot;该函数是所声明区间上的实值函数，满足全部保留假设；但 lim_{x→1−}f(x)=1≠f(1)=0，故确实不满足被删除的 H1。删去 H1 后结论 C1 不成立。&quot;,
+  &quot;evidence&quot;: [
+    {&quot;kind&quot;: &quot;mathematical_argument&quot;, &quot;artifact&quot;: null, &quot;scope&quot;: &quot;核对对象、全部保留假设、H1 的不成立及 C1 的否定&quot;}
+  ],
+  &quot;dependencies&quot;: [],
+  &quot;uncertainties&quot;: [],
+  &quot;next_steps&quot;: [],
+  &quot;cost&quot;: {&quot;elapsed_seconds&quot;: null, &quot;model_calls&quot;: null, &quot;tool_calls&quot;: null, &quot;usd&quot;: null}
+}</pre></details><label>审核结论 <select data-id="MA02-B"><option>待审核</option><option>通过</option><option>部分正确</option><option>错误</option><option>待确认</option></select></label><p>请记录：干预是否准确、保留条件是否成立、反例或证明是否有效、证据是否诚实。</p><textarea data-id="MA02-B" rows="5" placeholder="具体理由、疑点及核验依据"></textarea></article><article><h2>MA03-A</h2><h3>题目</h3><pre>{
+  &quot;task_id&quot;: &quot;MA03&quot;,
+  &quot;subject&quot;: &quot;数学分析&quot;,
+  &quot;statement&quot;: &quot;非空紧集 K⊂R 上连续实函数取到最大最小值&quot;,
+  &quot;hypotheses&quot;: [
+    {
+      &quot;id&quot;: &quot;H1&quot;,
+      &quot;text&quot;: &quot;K为紧集&quot;
+    },
+    {
+      &quot;id&quot;: &quot;H2&quot;,
+      &quot;text&quot;: &quot;f:K→R连续&quot;
+    },
+    {
+      &quot;id&quot;: &quot;H3&quot;,
+      &quot;text&quot;: &quot;K非空&quot;
+    }
+  ],
+  &quot;intervention&quot;: {
+    &quot;removed&quot;: [
+      &quot;H1&quot;
+    ],
+    &quot;replacement&quot;: null
+  },
+  &quot;conclusions&quot;: [
+    {
+      &quot;id&quot;: &quot;C1&quot;,
+      &quot;text&quot;: &quot;取到最大最小值&quot;
+    }
+  ],
+  &quot;ambient&quot;: &quot;K⊂R，f为定义在K上的实值函数。&quot;
+}</pre><h3>模型回答</h3><pre>判断：indispensable
+
+反例：取K=(0,1)，定义f:K→R，f(x)=x。
+
+保留条件核验：
+[
+  {
+    &quot;id&quot;: &quot;H2&quot;,
+    &quot;argument&quot;: &quot;恒等函数f(x)=x在(0,1)上连续。&quot;
+  },
+  {
+    &quot;id&quot;: &quot;H3&quot;,
+    &quot;argument&quot;: &quot;1/2∈(0,1)，故K非空。&quot;
+  }
+]
+
+替代条件核验：
+[]
+
+结论失效：
+{
+  &quot;id&quot;: &quot;C1&quot;,
+  &quot;argument&quot;: &quot;对任意x∈(0,1)，均有x/2∈K且f(x/2)&lt;f(x)，又有(x+1)/2∈K且f((x+1)/2)&gt;f(x)。因此f既不取到最小值，也不取到最大值。&quot;
+}
+
+整体论证：
+删除紧性假设后，上述例子满足所有保留的假设，却不满足结论，故H1不可删去。
+
+证据：
+[
+  {
+    &quot;kind&quot;: &quot;mathematical_argument&quot;,
+    &quot;artifact&quot;: null,
+    &quot;scope&quot;: &quot;验证保留假设并构造不取到最大值和最小值的反例&quot;
+  }
+]
+
+条件依赖：
+[]
+
+不确定性：
+[]</pre><details><summary>展开完整原始回答（含模型提取的假设与干预）</summary><pre>{
+  &quot;task_id&quot;: &quot;MA03&quot;,
+  &quot;hypotheses&quot;: [
+    {&quot;id&quot;: &quot;H1&quot;, &quot;text&quot;: &quot;K为紧集&quot;},
+    {&quot;id&quot;: &quot;H2&quot;, &quot;text&quot;: &quot;f:K→R连续&quot;},
+    {&quot;id&quot;: &quot;H3&quot;, &quot;text&quot;: &quot;K非空&quot;}
+  ],
+  &quot;intervention&quot;: {&quot;removed&quot;: [&quot;H1&quot;], &quot;replacement&quot;: null},
+  &quot;judgment&quot;: &quot;indispensable&quot;,
+  &quot;witness&quot;: &quot;取K=(0,1)，定义f:K→R，f(x)=x。&quot;,
+  &quot;retained_checks&quot;: [
+    {&quot;id&quot;: &quot;H2&quot;, &quot;argument&quot;: &quot;恒等函数f(x)=x在(0,1)上连续。&quot;},
+    {&quot;id&quot;: &quot;H3&quot;, &quot;argument&quot;: &quot;1/2∈(0,1)，故K非空。&quot;}
+  ],
+  &quot;replacement_checks&quot;: [],
+  &quot;target_failure&quot;: {
+    &quot;id&quot;: &quot;C1&quot;,
+    &quot;argument&quot;: &quot;对任意x∈(0,1)，均有x/2∈K且f(x/2)&lt;f(x)，又有(x+1)/2∈K且f((x+1)/2)&gt;f(x)。因此f既不取到最小值，也不取到最大值。&quot;
+  },
+  &quot;argument&quot;: &quot;删除紧性假设后，上述例子满足所有保留的假设，却不满足结论，故H1不可删去。&quot;,
+  &quot;evidence&quot;: [
+    {&quot;kind&quot;: &quot;mathematical_argument&quot;, &quot;artifact&quot;: null, &quot;scope&quot;: &quot;验证保留假设并构造不取到最大值和最小值的反例&quot;}
+  ],
+  &quot;dependencies&quot;: [],
+  &quot;uncertainties&quot;: [],
+  &quot;next_steps&quot;: [],
+  &quot;cost&quot;: {&quot;elapsed_seconds&quot;: null, &quot;model_calls&quot;: null, &quot;tool_calls&quot;: null, &quot;usd&quot;: null}
+}</pre></details><label>审核结论 <select data-id="MA03-A"><option>待审核</option><option>通过</option><option>部分正确</option><option>错误</option><option>待确认</option></select></label><p>请记录：干预是否准确、保留条件是否成立、反例或证明是否有效、证据是否诚实。</p><textarea data-id="MA03-A" rows="5" placeholder="具体理由、疑点及核验依据"></textarea></article><article><h2>MA03-B</h2><h3>题目</h3><pre>{
+  &quot;task_id&quot;: &quot;MA03&quot;,
+  &quot;subject&quot;: &quot;数学分析&quot;,
+  &quot;statement&quot;: &quot;非空紧集 K⊂R 上连续实函数取到最大最小值&quot;,
+  &quot;hypotheses&quot;: [
+    {
+      &quot;id&quot;: &quot;H1&quot;,
+      &quot;text&quot;: &quot;K为紧集&quot;
+    },
+    {
+      &quot;id&quot;: &quot;H2&quot;,
+      &quot;text&quot;: &quot;f:K→R连续&quot;
+    },
+    {
+      &quot;id&quot;: &quot;H3&quot;,
+      &quot;text&quot;: &quot;K非空&quot;
+    }
+  ],
+  &quot;intervention&quot;: {
+    &quot;removed&quot;: [
+      &quot;H1&quot;
+    ],
+    &quot;replacement&quot;: null
+  },
+  &quot;conclusions&quot;: [
+    {
+      &quot;id&quot;: &quot;C1&quot;,
+      &quot;text&quot;: &quot;取到最大最小值&quot;
+    }
+  ],
+  &quot;ambient&quot;: &quot;K⊂R，f为定义在K上的实值函数。&quot;
+}</pre><h3>模型回答</h3><pre>判断：indispensable
+
+反例：取K=(0,1)，f:K→R，f(x)=x。
+
+保留条件核验：
+[
+  {
+    &quot;id&quot;: &quot;H2&quot;,
+    &quot;argument&quot;: &quot;恒等函数在K上连续。&quot;
+  },
+  {
+    &quot;id&quot;: &quot;H3&quot;,
+    &quot;argument&quot;: &quot;1/2∈K，故K非空。&quot;
+  }
+]
+
+替代条件核验：
+[]
+
+结论失效：
+{
+  &quot;id&quot;: &quot;C1&quot;,
+  &quot;argument&quot;: &quot;任取x∈(0,1)，均有x/2&lt;x&lt;(1+x)/2，且x/2、(1+x)/2均属于K。因此f既取不到最小值，也取不到最大值。&quot;
+}
+
+整体论证：
+K不紧：序列1/n（n≥2）在K中收敛到不属于K的0。删除H1而保留H2、H3后，上述对象满足全部保留假设，却不满足C1。
+
+证据：
+[
+  {
+    &quot;kind&quot;: &quot;mathematical_argument&quot;,
+    &quot;artifact&quot;: null,
+    &quot;scope&quot;: &quot;核验K不紧、f连续、K非空，以及最大值和最小值均未取到&quot;
+  }
+]
+
+条件依赖：
+[]
+
+不确定性：
+[]</pre><details><summary>展开完整原始回答（含模型提取的假设与干预）</summary><pre>{
+  &quot;task_id&quot;: &quot;MA03&quot;,
+  &quot;hypotheses&quot;: [
+    {&quot;id&quot;: &quot;H1&quot;, &quot;text&quot;: &quot;K⊂R为紧集&quot;},
+    {&quot;id&quot;: &quot;H2&quot;, &quot;text&quot;: &quot;f:K→R连续&quot;},
+    {&quot;id&quot;: &quot;H3&quot;, &quot;text&quot;: &quot;K非空&quot;}
+  ],
+  &quot;intervention&quot;: {&quot;removed&quot;: [&quot;H1&quot;], &quot;replacement&quot;: null},
+  &quot;judgment&quot;: &quot;indispensable&quot;,
+  &quot;witness&quot;: &quot;取K=(0,1)，f:K→R，f(x)=x。&quot;,
+  &quot;retained_checks&quot;: [
+    {&quot;id&quot;: &quot;H2&quot;, &quot;argument&quot;: &quot;恒等函数在K上连续。&quot;},
+    {&quot;id&quot;: &quot;H3&quot;, &quot;argument&quot;: &quot;1/2∈K，故K非空。&quot;}
+  ],
+  &quot;replacement_checks&quot;: [],
+  &quot;target_failure&quot;: {
+    &quot;id&quot;: &quot;C1&quot;,
+    &quot;argument&quot;: &quot;任取x∈(0,1)，均有x/2&lt;x&lt;(1+x)/2，且x/2、(1+x)/2均属于K。因此f既取不到最小值，也取不到最大值。&quot;
+  },
+  &quot;argument&quot;: &quot;K不紧：序列1/n（n≥2）在K中收敛到不属于K的0。删除H1而保留H2、H3后，上述对象满足全部保留假设，却不满足C1。&quot;,
+  &quot;evidence&quot;: [
+    {
+      &quot;kind&quot;: &quot;mathematical_argument&quot;,
+      &quot;artifact&quot;: null,
+      &quot;scope&quot;: &quot;核验K不紧、f连续、K非空，以及最大值和最小值均未取到&quot;
+    }
+  ],
+  &quot;dependencies&quot;: [],
+  &quot;uncertainties&quot;: [],
+  &quot;next_steps&quot;: [],
+  &quot;cost&quot;: {&quot;elapsed_seconds&quot;: null, &quot;model_calls&quot;: null, &quot;tool_calls&quot;: null, &quot;usd&quot;: null}
+}</pre></details><label>审核结论 <select data-id="MA03-B"><option>待审核</option><option>通过</option><option>部分正确</option><option>错误</option><option>待确认</option></select></label><p>请记录：干预是否准确、保留条件是否成立、反例或证明是否有效、证据是否诚实。</p><textarea data-id="MA03-B" rows="5" placeholder="具体理由、疑点及核验依据"></textarea></article><article><h2>MA04-A</h2><h3>题目</h3><pre>{
+  &quot;task_id&quot;: &quot;MA04&quot;,
+  &quot;subject&quot;: &quot;数学分析&quot;,
+  &quot;statement&quot;: &quot;连续实函数列f_n:[0,1]→R一致收敛于f，则f在[0,1]连续。&quot;,
+  &quot;hypotheses&quot;: [
+    {
+      &quot;id&quot;: &quot;H1&quot;,
+      &quot;text&quot;: &quot;各 f_n 在[0,1]连续&quot;
+    },
+    {
+      &quot;id&quot;: &quot;H2&quot;,
+      &quot;text&quot;: &quot;f_n一致收敛于f&quot;
+    }
+  ],
+  &quot;intervention&quot;: {
+    &quot;removed&quot;: [
+      &quot;H2&quot;
+    ],
+    &quot;replacement&quot;: {
+      &quot;id&quot;: &quot;H2w&quot;,
+      &quot;text&quot;: &quot;f_n逐点收敛于f&quot;
+    }
+  },
+  &quot;conclusions&quot;: [
+    {
+      &quot;id&quot;: &quot;C1&quot;,
+      &quot;text&quot;: &quot;极限f连续&quot;
+    }
+  ],
+  &quot;ambient&quot;: &quot;n=1,2,...；f_n,f均为[0,1]上的实值函数。&quot;
+}</pre><h3>模型回答</h3><pre>判断：indispensable
+
+反例：令 f_n(x)=x^n（x∈[0,1]），f(x)=0（0≤x&lt;1），f(1)=1。
+
+保留条件核验：
+[
+  {
+    &quot;id&quot;: &quot;H1&quot;,
+    &quot;argument&quot;: &quot;每个 f_n(x)=x^n 都是多项式函数，因此在 [0,1] 连续。&quot;
+  }
+]
+
+替代条件核验：
+[
+  {
+    &quot;id&quot;: &quot;H2w&quot;,
+    &quot;argument&quot;: &quot;对每个 0≤x&lt;1，有 x^n→0；在 x=1 处，x^n=1。因此 f_n 在 [0,1] 逐点收敛于所给 f。&quot;
+  }
+]
+
+结论失效：
+{
+  &quot;id&quot;: &quot;C1&quot;,
+  &quot;argument&quot;: &quot;当 x 从左侧趋于 1 时，f(x)=0，而 f(1)=1，故 f 在 1 处不连续。&quot;
+}
+
+整体论证：
+该对象满足保留的连续性条件及替代的逐点收敛条件，却不满足结论。它也确实不满足被替换的一致收敛条件：对任意 n，sup_{x∈[0,1]}|f_n(x)-f(x)|=1。
+
+证据：
+[
+  {
+    &quot;kind&quot;: &quot;mathematical_argument&quot;,
+    &quot;artifact&quot;: null,
+    &quot;scope&quot;: &quot;核验 H1、H2w、非一致收敛及 C1 失败&quot;
+  }
+]
+
+条件依赖：
+[]
+
+不确定性：
+[]</pre><details><summary>展开完整原始回答（含模型提取的假设与干预）</summary><pre>{
+  &quot;task_id&quot;: &quot;MA04&quot;,
+  &quot;hypotheses&quot;: [
+    {&quot;id&quot;: &quot;H1&quot;, &quot;text&quot;: &quot;各 f_n 在 [0,1] 连续&quot;},
+    {&quot;id&quot;: &quot;H2&quot;, &quot;text&quot;: &quot;f_n 一致收敛于 f&quot;}
+  ],
+  &quot;intervention&quot;: {
+    &quot;removed&quot;: [&quot;H2&quot;],
+    &quot;replacement&quot;: {&quot;id&quot;: &quot;H2w&quot;, &quot;text&quot;: &quot;f_n 逐点收敛于 f&quot;}
+  },
+  &quot;judgment&quot;: &quot;indispensable&quot;,
+  &quot;witness&quot;: &quot;令 f_n(x)=x^n（x∈[0,1]），f(x)=0（0≤x&lt;1），f(1)=1。&quot;,
+  &quot;retained_checks&quot;: [
+    {&quot;id&quot;: &quot;H1&quot;, &quot;argument&quot;: &quot;每个 f_n(x)=x^n 都是多项式函数，因此在 [0,1] 连续。&quot;}
+  ],
+  &quot;replacement_checks&quot;: [
+    {&quot;id&quot;: &quot;H2w&quot;, &quot;argument&quot;: &quot;对每个 0≤x&lt;1，有 x^n→0；在 x=1 处，x^n=1。因此 f_n 在 [0,1] 逐点收敛于所给 f。&quot;}
+  ],
+  &quot;target_failure&quot;: {
+    &quot;id&quot;: &quot;C1&quot;,
+    &quot;argument&quot;: &quot;当 x 从左侧趋于 1 时，f(x)=0，而 f(1)=1，故 f 在 1 处不连续。&quot;
+  },
+  &quot;argument&quot;: &quot;该对象满足保留的连续性条件及替代的逐点收敛条件，却不满足结论。它也确实不满足被替换的一致收敛条件：对任意 n，sup_{x∈[0,1]}|f_n(x)-f(x)|=1。&quot;,
+  &quot;evidence&quot;: [
+    {&quot;kind&quot;: &quot;mathematical_argument&quot;, &quot;artifact&quot;: null, &quot;scope&quot;: &quot;核验 H1、H2w、非一致收敛及 C1 失败&quot;}
+  ],
+  &quot;dependencies&quot;: [],
+  &quot;uncertainties&quot;: [],
+  &quot;next_steps&quot;: [],
+  &quot;cost&quot;: {
+    &quot;elapsed_seconds&quot;: null,
+    &quot;model_calls&quot;: null,
+    &quot;tool_calls&quot;: null,
+    &quot;usd&quot;: null
+  }
+}</pre></details><label>审核结论 <select data-id="MA04-A"><option>待审核</option><option>通过</option><option>部分正确</option><option>错误</option><option>待确认</option></select></label><p>请记录：干预是否准确、保留条件是否成立、反例或证明是否有效、证据是否诚实。</p><textarea data-id="MA04-A" rows="5" placeholder="具体理由、疑点及核验依据"></textarea></article><article><h2>MA04-B</h2><h3>题目</h3><pre>{
+  &quot;task_id&quot;: &quot;MA04&quot;,
+  &quot;subject&quot;: &quot;数学分析&quot;,
+  &quot;statement&quot;: &quot;连续实函数列f_n:[0,1]→R一致收敛于f，则f在[0,1]连续。&quot;,
+  &quot;hypotheses&quot;: [
+    {
+      &quot;id&quot;: &quot;H1&quot;,
+      &quot;text&quot;: &quot;各 f_n 在[0,1]连续&quot;
+    },
+    {
+      &quot;id&quot;: &quot;H2&quot;,
+      &quot;text&quot;: &quot;f_n一致收敛于f&quot;
+    }
+  ],
+  &quot;intervention&quot;: {
+    &quot;removed&quot;: [
+      &quot;H2&quot;
+    ],
+    &quot;replacement&quot;: {
+      &quot;id&quot;: &quot;H2w&quot;,
+      &quot;text&quot;: &quot;f_n逐点收敛于f&quot;
+    }
+  },
+  &quot;conclusions&quot;: [
+    {
+      &quot;id&quot;: &quot;C1&quot;,
+      &quot;text&quot;: &quot;极限f连续&quot;
+    }
+  ],
+  &quot;ambient&quot;: &quot;n=1,2,...；f_n,f均为[0,1]上的实值函数。&quot;
+}</pre><h3>模型回答</h3><pre>判断：indispensable
+
+反例：取 f_n(x)=x^n（x∈[0,1]），并令 f(x)=0（0≤x&lt;1），f(1)=1。
+
+保留条件核验：
+[
+  {
+    &quot;id&quot;: &quot;H1&quot;,
+    &quot;argument&quot;: &quot;每个 f_n(x)=x^n 都是多项式函数，故在[0,1]连续。&quot;
+  }
+]
+
+替代条件核验：
+[
+  {
+    &quot;id&quot;: &quot;H2w&quot;,
+    &quot;argument&quot;: &quot;对每个固定的 0≤x&lt;1，有 x^n→0；在 x=1 处，f_n(1)=1。因此 f_n 在[0,1]逐点收敛于所给的 f。&quot;
+  }
+]
+
+结论失效：
+{
+  &quot;id&quot;: &quot;C1&quot;,
+  &quot;argument&quot;: &quot;取 x_k=1−1/k（k≥2），则 x_k→1，但 f(x_k)=0 不收敛于 f(1)=1；故 f 在 1 处不连续。&quot;
+}
+
+整体论证：
+该函数列满足保留的连续性假设及替换后的逐点收敛假设，却不满足结论。因此，不能在原命题中以逐点收敛替代一致收敛。
+
+证据：
+[
+  {
+    &quot;kind&quot;: &quot;mathematical_argument&quot;,
+    &quot;artifact&quot;: null,
+    &quot;scope&quot;: &quot;反例满足 H1、H2w 且否定 C1&quot;
+  }
+]
+
+条件依赖：
+[]
+
+不确定性：
+[]</pre><details><summary>展开完整原始回答（含模型提取的假设与干预）</summary><pre>{
+  &quot;task_id&quot;: &quot;MA04&quot;,
+  &quot;hypotheses&quot;: [
+    {&quot;id&quot;: &quot;H1&quot;, &quot;text&quot;: &quot;各 f_n 在[0,1]连续&quot;},
+    {&quot;id&quot;: &quot;H2&quot;, &quot;text&quot;: &quot;f_n 一致收敛于 f&quot;}
+  ],
+  &quot;intervention&quot;: {
+    &quot;removed&quot;: [&quot;H2&quot;],
+    &quot;replacement&quot;: {&quot;id&quot;: &quot;H2w&quot;, &quot;text&quot;: &quot;f_n 逐点收敛于 f&quot;}
+  },
+  &quot;judgment&quot;: &quot;indispensable&quot;,
+  &quot;witness&quot;: &quot;取 f_n(x)=x^n（x∈[0,1]），并令 f(x)=0（0≤x&lt;1），f(1)=1。&quot;,
+  &quot;retained_checks&quot;: [
+    {&quot;id&quot;: &quot;H1&quot;, &quot;argument&quot;: &quot;每个 f_n(x)=x^n 都是多项式函数，故在[0,1]连续。&quot;}
+  ],
+  &quot;replacement_checks&quot;: [
+    {&quot;id&quot;: &quot;H2w&quot;, &quot;argument&quot;: &quot;对每个固定的 0≤x&lt;1，有 x^n→0；在 x=1 处，f_n(1)=1。因此 f_n 在[0,1]逐点收敛于所给的 f。&quot;}
+  ],
+  &quot;target_failure&quot;: {
+    &quot;id&quot;: &quot;C1&quot;,
+    &quot;argument&quot;: &quot;取 x_k=1−1/k（k≥2），则 x_k→1，但 f(x_k)=0 不收敛于 f(1)=1；故 f 在 1 处不连续。&quot;
+  },
+  &quot;argument&quot;: &quot;该函数列满足保留的连续性假设及替换后的逐点收敛假设，却不满足结论。因此，不能在原命题中以逐点收敛替代一致收敛。&quot;,
+  &quot;evidence&quot;: [
+    {&quot;kind&quot;: &quot;mathematical_argument&quot;, &quot;artifact&quot;: null, &quot;scope&quot;: &quot;反例满足 H1、H2w 且否定 C1&quot;}
+  ],
+  &quot;dependencies&quot;: [],
+  &quot;uncertainties&quot;: [],
+  &quot;next_steps&quot;: [],
+  &quot;cost&quot;: {
+    &quot;elapsed_seconds&quot;: null,
+    &quot;model_calls&quot;: null,
+    &quot;tool_calls&quot;: null,
+    &quot;usd&quot;: null
+  }
+}</pre></details><label>审核结论 <select data-id="MA04-B"><option>待审核</option><option>通过</option><option>部分正确</option><option>错误</option><option>待确认</option></select></label><p>请记录：干预是否准确、保留条件是否成立、反例或证明是否有效、证据是否诚实。</p><textarea data-id="MA04-B" rows="5" placeholder="具体理由、疑点及核验依据"></textarea></article><article><h2>AL01-A</h2><h3>题目</h3><pre>{
+  &quot;task_id&quot;: &quot;AL01&quot;,
+  &quot;subject&quot;: &quot;高等代数&quot;,
+  &quot;statement&quot;: &quot;实对称方阵可实正交对角化&quot;,
+  &quot;hypotheses&quot;: [
+    {
+      &quot;id&quot;: &quot;H1&quot;,
+      &quot;text&quot;: &quot;A为实方阵&quot;
+    },
+    {
+      &quot;id&quot;: &quot;H2&quot;,
+      &quot;text&quot;: &quot;A^T=A&quot;
+    }
+  ],
+  &quot;intervention&quot;: {
+    &quot;removed&quot;: [
+      &quot;H2&quot;
+    ],
+    &quot;replacement&quot;: null
+  },
+  &quot;conclusions&quot;: [
+    {
+      &quot;id&quot;: &quot;C1&quot;,
+      &quot;text&quot;: &quot;A可实正交对角化&quot;
+    }
+  ],
+  &quot;ambient&quot;: &quot;按定理的明确对象约定&quot;
+}</pre><h3>模型回答</h3><pre>判断：indispensable
+
+反例：A=[[0,1],[0,0]]
+
+保留条件核验：
+[
+  {
+    &quot;id&quot;: &quot;H1&quot;,
+    &quot;argument&quot;: &quot;A是2×2实方阵。&quot;
+  }
+]
+
+替代条件核验：
+[]
+
+结论失效：
+{
+  &quot;id&quot;: &quot;C1&quot;,
+  &quot;argument&quot;: &quot;若A能实正交对角化，则存在实正交矩阵Q和实对角矩阵D，使A=QDQ^T，从而A^T=QD^TQ^T=A。但此处A^T=[[0,0],[1,0]]≠A，故A不能实正交对角化。&quot;
+}
+
+整体论证：
+该矩阵满足保留的H1，却不满足被删除的H2，且C1失败。因此在保留H1的背景下，H2不可删除。
+
+证据：
+[
+  {
+    &quot;kind&quot;: &quot;mathematical_argument&quot;,
+    &quot;artifact&quot;: null,
+    &quot;scope&quot;: &quot;核对反例的对象类别、H1、非H2及非C1&quot;
+  }
+]
+
+条件依赖：
+[]
+
+不确定性：
+[]</pre><details><summary>展开完整原始回答（含模型提取的假设与干预）</summary><pre>{
+  &quot;task_id&quot;: &quot;AL01&quot;,
+  &quot;hypotheses&quot;: [
+    {&quot;id&quot;: &quot;H1&quot;, &quot;text&quot;: &quot;A为实方阵&quot;},
+    {&quot;id&quot;: &quot;H2&quot;, &quot;text&quot;: &quot;A^T=A&quot;}
+  ],
+  &quot;intervention&quot;: {&quot;removed&quot;: [&quot;H2&quot;], &quot;replacement&quot;: null},
+  &quot;judgment&quot;: &quot;indispensable&quot;,
+  &quot;witness&quot;: &quot;A=[[0,1],[0,0]]&quot;,
+  &quot;retained_checks&quot;: [
+    {&quot;id&quot;: &quot;H1&quot;, &quot;argument&quot;: &quot;A是2×2实方阵。&quot;}
+  ],
+  &quot;replacement_checks&quot;: [],
+  &quot;target_failure&quot;: {
+    &quot;id&quot;: &quot;C1&quot;,
+    &quot;argument&quot;: &quot;若A能实正交对角化，则存在实正交矩阵Q和实对角矩阵D，使A=QDQ^T，从而A^T=QD^TQ^T=A。但此处A^T=[[0,0],[1,0]]≠A，故A不能实正交对角化。&quot;
+  },
+  &quot;argument&quot;: &quot;该矩阵满足保留的H1，却不满足被删除的H2，且C1失败。因此在保留H1的背景下，H2不可删除。&quot;,
+  &quot;evidence&quot;: [
+    {&quot;kind&quot;: &quot;mathematical_argument&quot;, &quot;artifact&quot;: null, &quot;scope&quot;: &quot;核对反例的对象类别、H1、非H2及非C1&quot;}
+  ],
+  &quot;dependencies&quot;: [],
+  &quot;uncertainties&quot;: [],
+  &quot;next_steps&quot;: [],
+  &quot;cost&quot;: {&quot;elapsed_seconds&quot;: null, &quot;model_calls&quot;: null, &quot;tool_calls&quot;: null, &quot;usd&quot;: null}
+}</pre></details><label>审核结论 <select data-id="AL01-A"><option>待审核</option><option>通过</option><option>部分正确</option><option>错误</option><option>待确认</option></select></label><p>请记录：干预是否准确、保留条件是否成立、反例或证明是否有效、证据是否诚实。</p><textarea data-id="AL01-A" rows="5" placeholder="具体理由、疑点及核验依据"></textarea></article><article><h2>AL01-B</h2><h3>题目</h3><pre>{
+  &quot;task_id&quot;: &quot;AL01&quot;,
+  &quot;subject&quot;: &quot;高等代数&quot;,
+  &quot;statement&quot;: &quot;实对称方阵可实正交对角化&quot;,
+  &quot;hypotheses&quot;: [
+    {
+      &quot;id&quot;: &quot;H1&quot;,
+      &quot;text&quot;: &quot;A为实方阵&quot;
+    },
+    {
+      &quot;id&quot;: &quot;H2&quot;,
+      &quot;text&quot;: &quot;A^T=A&quot;
+    }
+  ],
+  &quot;intervention&quot;: {
+    &quot;removed&quot;: [
+      &quot;H2&quot;
+    ],
+    &quot;replacement&quot;: null
+  },
+  &quot;conclusions&quot;: [
+    {
+      &quot;id&quot;: &quot;C1&quot;,
+      &quot;text&quot;: &quot;A可实正交对角化&quot;
+    }
+  ],
+  &quot;ambient&quot;: &quot;按定理的明确对象约定&quot;
+}</pre><h3>模型回答</h3><pre>判断：indispensable
+
+反例：A=[[0,1],[0,0]]
+
+保留条件核验：
+[
+  {
+    &quot;id&quot;: &quot;H1&quot;,
+    &quot;argument&quot;: &quot;A是2×2实方阵，满足保留的假设。&quot;
+  }
+]
+
+替代条件核验：
+[]
+
+结论失效：
+{
+  &quot;id&quot;: &quot;C1&quot;,
+  &quot;argument&quot;: &quot;A^T=[[0,0],[1,0]]≠A。若A可实正交对角化，则存在实正交矩阵Q和实对角矩阵D，使A=QDQ^T；这必然推出A^T=A，矛盾。&quot;
+}
+
+整体论证：
+删去对称性条件后，保留条件允许上述不能实正交对角化的矩阵，因此H2不可缺少。
+
+证据：
+[
+  {
+    &quot;kind&quot;: &quot;mathematical_argument&quot;,
+    &quot;artifact&quot;: null,
+    &quot;scope&quot;: &quot;验证反例满足H1且否定C1&quot;
+  }
+]
+
+条件依赖：
+[]
+
+不确定性：
+[]</pre><details><summary>展开完整原始回答（含模型提取的假设与干预）</summary><pre>{
+  &quot;task_id&quot;: &quot;AL01&quot;,
+  &quot;hypotheses&quot;: [
+    {&quot;id&quot;: &quot;H1&quot;, &quot;text&quot;: &quot;A为实方阵&quot;},
+    {&quot;id&quot;: &quot;H2&quot;, &quot;text&quot;: &quot;A^T=A&quot;}
+  ],
+  &quot;intervention&quot;: {&quot;removed&quot;: [&quot;H2&quot;], &quot;replacement&quot;: null},
+  &quot;judgment&quot;: &quot;indispensable&quot;,
+  &quot;witness&quot;: &quot;A=[[0,1],[0,0]]&quot;,
+  &quot;retained_checks&quot;: [
+    {&quot;id&quot;: &quot;H1&quot;, &quot;argument&quot;: &quot;A是2×2实方阵，满足保留的假设。&quot;}
+  ],
+  &quot;replacement_checks&quot;: [],
+  &quot;target_failure&quot;: {
+    &quot;id&quot;: &quot;C1&quot;,
+    &quot;argument&quot;: &quot;A^T=[[0,0],[1,0]]≠A。若A可实正交对角化，则存在实正交矩阵Q和实对角矩阵D，使A=QDQ^T；这必然推出A^T=A，矛盾。&quot;
+  },
+  &quot;argument&quot;: &quot;删去对称性条件后，保留条件允许上述不能实正交对角化的矩阵，因此H2不可缺少。&quot;,
+  &quot;evidence&quot;: [
+    {&quot;kind&quot;: &quot;mathematical_argument&quot;, &quot;artifact&quot;: null, &quot;scope&quot;: &quot;验证反例满足H1且否定C1&quot;}
+  ],
+  &quot;dependencies&quot;: [],
+  &quot;uncertainties&quot;: [],
+  &quot;next_steps&quot;: [],
+  &quot;cost&quot;: {&quot;elapsed_seconds&quot;: null, &quot;model_calls&quot;: null, &quot;tool_calls&quot;: null, &quot;usd&quot;: null}
+}</pre></details><label>审核结论 <select data-id="AL01-B"><option>待审核</option><option>通过</option><option>部分正确</option><option>错误</option><option>待确认</option></select></label><p>请记录：干预是否准确、保留条件是否成立、反例或证明是否有效、证据是否诚实。</p><textarea data-id="AL01-B" rows="5" placeholder="具体理由、疑点及核验依据"></textarea></article><article><h2>AL02-A</h2><h3>题目</h3><pre>{
+  &quot;task_id&quot;: &quot;AL02&quot;,
+  &quot;subject&quot;: &quot;高等代数&quot;,
+  &quot;statement&quot;: &quot;令F∈{R,C}，V为正维有限维F向量空间，T:V→V为F线性映射。若F=C，则T在F中有特征值。&quot;,
+  &quot;hypotheses&quot;: [
+    {
+      &quot;id&quot;: &quot;H1&quot;,
+      &quot;text&quot;: &quot;F=C&quot;
+    },
+    {
+      &quot;id&quot;: &quot;H2&quot;,
+      &quot;text&quot;: &quot;V为正维有限维F向量空间&quot;
+    },
+    {
+      &quot;id&quot;: &quot;H3&quot;,
+      &quot;text&quot;: &quot;T:V→V为F线性自映射&quot;
+    }
+  ],
+  &quot;intervention&quot;: {
+    &quot;removed&quot;: [
+      &quot;H1&quot;
+    ],
+    &quot;replacement&quot;: null
+  },
+  &quot;conclusions&quot;: [
+    {
+      &quot;id&quot;: &quot;C1&quot;,
+      &quot;text&quot;: &quot;在声明底域中有特征值&quot;
+    }
+  ],
+  &quot;ambient&quot;: &quot;F∈{R,C}；特征值和线性性均相对于所声明的F。&quot;
+}</pre><h3>模型回答</h3><pre>判断：indispensable
+
+反例：取F=R，V=R²，T(x,y)=(-y,x)，其矩阵为[[0,-1],[1,0]]。
+
+保留条件核验：
+[
+  {
+    &quot;id&quot;: &quot;H2&quot;,
+    &quot;argument&quot;: &quot;R²是正维、有限维的R向量空间，维数为2。&quot;
+  },
+  {
+    &quot;id&quot;: &quot;H3&quot;,
+    &quot;argument&quot;: &quot;T由实矩阵定义，是从R²到R²的R线性自映射。&quot;
+  }
+]
+
+替代条件核验：
+[]
+
+结论失效：
+{
+  &quot;id&quot;: &quot;C1&quot;,
+  &quot;argument&quot;: &quot;不存在实数λ及非零v∈R²使Tv=λv：因为T²=-I，若有这样的λ、v，则λ²v=-v，从而λ²=-1，与λ∈R矛盾。&quot;
+}
+
+整体论证：
+该对象满足所有保留假设，但F=R不满足被删的H1，且T在声明底域R中没有特征值。因此H1在保留H2、H3的条件下不可删。
+
+证据：
+[
+  {
+    &quot;kind&quot;: &quot;mathematical_argument&quot;,
+    &quot;artifact&quot;: null,
+    &quot;scope&quot;: &quot;核对对象及保留假设，并证明不存在实特征值。&quot;
+  }
+]
+
+条件依赖：
+[]
+
+不确定性：
+[]</pre><details><summary>展开完整原始回答（含模型提取的假设与干预）</summary><pre>{
+  &quot;task_id&quot;: &quot;AL02&quot;,
+  &quot;hypotheses&quot;: [
+    {&quot;id&quot;: &quot;H1&quot;, &quot;text&quot;: &quot;F=C&quot;},
+    {&quot;id&quot;: &quot;H2&quot;, &quot;text&quot;: &quot;V为正维有限维F向量空间&quot;},
+    {&quot;id&quot;: &quot;H3&quot;, &quot;text&quot;: &quot;T:V→V为F线性自映射&quot;}
+  ],
+  &quot;intervention&quot;: {&quot;removed&quot;: [&quot;H1&quot;], &quot;replacement&quot;: null},
+  &quot;judgment&quot;: &quot;indispensable&quot;,
+  &quot;witness&quot;: &quot;取F=R，V=R²，T(x,y)=(-y,x)，其矩阵为[[0,-1],[1,0]]。&quot;,
+  &quot;retained_checks&quot;: [
+    {&quot;id&quot;: &quot;H2&quot;, &quot;argument&quot;: &quot;R²是正维、有限维的R向量空间，维数为2。&quot;},
+    {&quot;id&quot;: &quot;H3&quot;, &quot;argument&quot;: &quot;T由实矩阵定义，是从R²到R²的R线性自映射。&quot;}
+  ],
+  &quot;replacement_checks&quot;: [],
+  &quot;target_failure&quot;: {
+    &quot;id&quot;: &quot;C1&quot;,
+    &quot;argument&quot;: &quot;不存在实数λ及非零v∈R²使Tv=λv：因为T²=-I，若有这样的λ、v，则λ²v=-v，从而λ²=-1，与λ∈R矛盾。&quot;
+  },
+  &quot;argument&quot;: &quot;该对象满足所有保留假设，但F=R不满足被删的H1，且T在声明底域R中没有特征值。因此H1在保留H2、H3的条件下不可删。&quot;,
+  &quot;evidence&quot;: [
+    {&quot;kind&quot;: &quot;mathematical_argument&quot;, &quot;artifact&quot;: null, &quot;scope&quot;: &quot;核对对象及保留假设，并证明不存在实特征值。&quot;}
+  ],
+  &quot;dependencies&quot;: [],
+  &quot;uncertainties&quot;: [],
+  &quot;next_steps&quot;: [],
+  &quot;cost&quot;: {&quot;elapsed_seconds&quot;: null, &quot;model_calls&quot;: null, &quot;tool_calls&quot;: null, &quot;usd&quot;: null}
+}</pre></details><label>审核结论 <select data-id="AL02-A"><option>待审核</option><option>通过</option><option>部分正确</option><option>错误</option><option>待确认</option></select></label><p>请记录：干预是否准确、保留条件是否成立、反例或证明是否有效、证据是否诚实。</p><textarea data-id="AL02-A" rows="5" placeholder="具体理由、疑点及核验依据"></textarea></article><article><h2>AL02-B</h2><h3>题目</h3><pre>{
+  &quot;task_id&quot;: &quot;AL02&quot;,
+  &quot;subject&quot;: &quot;高等代数&quot;,
+  &quot;statement&quot;: &quot;令F∈{R,C}，V为正维有限维F向量空间，T:V→V为F线性映射。若F=C，则T在F中有特征值。&quot;,
+  &quot;hypotheses&quot;: [
+    {
+      &quot;id&quot;: &quot;H1&quot;,
+      &quot;text&quot;: &quot;F=C&quot;
+    },
+    {
+      &quot;id&quot;: &quot;H2&quot;,
+      &quot;text&quot;: &quot;V为正维有限维F向量空间&quot;
+    },
+    {
+      &quot;id&quot;: &quot;H3&quot;,
+      &quot;text&quot;: &quot;T:V→V为F线性自映射&quot;
+    }
+  ],
+  &quot;intervention&quot;: {
+    &quot;removed&quot;: [
+      &quot;H1&quot;
+    ],
+    &quot;replacement&quot;: null
+  },
+  &quot;conclusions&quot;: [
+    {
+      &quot;id&quot;: &quot;C1&quot;,
+      &quot;text&quot;: &quot;在声明底域中有特征值&quot;
+    }
+  ],
+  &quot;ambient&quot;: &quot;F∈{R,C}；特征值和线性性均相对于所声明的F。&quot;
+}</pre><h3>模型回答</h3><pre>判断：indispensable
+
+反例：取F=R、V=R²，令T(x,y)=(-y,x)，其矩阵为[[0,-1],[1,0]]。
+
+保留条件核验：
+[
+  {
+    &quot;id&quot;: &quot;H2&quot;,
+    &quot;argument&quot;: &quot;R²是正维有限维实向量空间。&quot;
+  },
+  {
+    &quot;id&quot;: &quot;H3&quot;,
+    &quot;argument&quot;: &quot;T由实矩阵定义，是R²上的实线性自映射。&quot;
+  }
+]
+
+替代条件核验：
+[]
+
+结论失效：
+{
+  &quot;id&quot;: &quot;C1&quot;,
+  &quot;argument&quot;: &quot;T的特征多项式为λ²+1，在声明底域R中没有根，因此T没有实特征值。&quot;
+}
+
+整体论证：
+删去H1后允许F=R；上述满足其余假设的例子不满足C1，故H1不可删去。
+
+证据：
+[
+  {
+    &quot;kind&quot;: &quot;mathematical_argument&quot;,
+    &quot;artifact&quot;: null,
+    &quot;scope&quot;: &quot;核对保留假设，并以特征多项式证明C1失败&quot;
+  }
+]
+
+条件依赖：
+[]
+
+不确定性：
+[]</pre><details><summary>展开完整原始回答（含模型提取的假设与干预）</summary><pre>{
+  &quot;task_id&quot;: &quot;AL02&quot;,
+  &quot;hypotheses&quot;: [
+    {&quot;id&quot;: &quot;H1&quot;, &quot;text&quot;: &quot;F=C&quot;},
+    {&quot;id&quot;: &quot;H2&quot;, &quot;text&quot;: &quot;V为正维有限维F向量空间&quot;},
+    {&quot;id&quot;: &quot;H3&quot;, &quot;text&quot;: &quot;T:V→V为F线性自映射&quot;}
+  ],
+  &quot;intervention&quot;: {&quot;removed&quot;: [&quot;H1&quot;], &quot;replacement&quot;: null},
+  &quot;judgment&quot;: &quot;indispensable&quot;,
+  &quot;witness&quot;: &quot;取F=R、V=R²，令T(x,y)=(-y,x)，其矩阵为[[0,-1],[1,0]]。&quot;,
+  &quot;retained_checks&quot;: [
+    {&quot;id&quot;: &quot;H2&quot;, &quot;argument&quot;: &quot;R²是正维有限维实向量空间。&quot;},
+    {&quot;id&quot;: &quot;H3&quot;, &quot;argument&quot;: &quot;T由实矩阵定义，是R²上的实线性自映射。&quot;}
+  ],
+  &quot;replacement_checks&quot;: [],
+  &quot;target_failure&quot;: {
+    &quot;id&quot;: &quot;C1&quot;,
+    &quot;argument&quot;: &quot;T的特征多项式为λ²+1，在声明底域R中没有根，因此T没有实特征值。&quot;
+  },
+  &quot;argument&quot;: &quot;删去H1后允许F=R；上述满足其余假设的例子不满足C1，故H1不可删去。&quot;,
+  &quot;evidence&quot;: [
+    {&quot;kind&quot;: &quot;mathematical_argument&quot;, &quot;artifact&quot;: null, &quot;scope&quot;: &quot;核对保留假设，并以特征多项式证明C1失败&quot;}
+  ],
+  &quot;dependencies&quot;: [],
+  &quot;uncertainties&quot;: [],
+  &quot;next_steps&quot;: [],
+  &quot;cost&quot;: {&quot;elapsed_seconds&quot;: null, &quot;model_calls&quot;: null, &quot;tool_calls&quot;: null, &quot;usd&quot;: null}
+}</pre></details><label>审核结论 <select data-id="AL02-B"><option>待审核</option><option>通过</option><option>部分正确</option><option>错误</option><option>待确认</option></select></label><p>请记录：干预是否准确、保留条件是否成立、反例或证明是否有效、证据是否诚实。</p><textarea data-id="AL02-B" rows="5" placeholder="具体理由、疑点及核验依据"></textarea></article><article><h2>AL03-A</h2><h3>题目</h3><pre>{
+  &quot;task_id&quot;: &quot;AL03&quot;,
+  &quot;subject&quot;: &quot;高等代数&quot;,
+  &quot;statement&quot;: &quot;有限维 V 上线性自映射单射当且仅当满射&quot;,
+  &quot;hypotheses&quot;: [
+    {
+      &quot;id&quot;: &quot;H1&quot;,
+      &quot;text&quot;: &quot;V有限维&quot;
+    },
+    {
+      &quot;id&quot;: &quot;H2&quot;,
+      &quot;text&quot;: &quot;T:V→V线性&quot;
+    }
+  ],
+  &quot;intervention&quot;: {
+    &quot;removed&quot;: [
+      &quot;H1&quot;
+    ],
+    &quot;replacement&quot;: null
+  },
+  &quot;conclusions&quot;: [
+    {
+      &quot;id&quot;: &quot;C1&quot;,
+      &quot;text&quot;: &quot;单射当且仅当满射&quot;
+    }
+  ],
+  &quot;ambient&quot;: &quot;按定理的明确对象约定&quot;
+}</pre><h3>模型回答</h3><pre>判断：indispensable
+
+反例：取V为实数域上仅有有限个非零项的数列空间，令T(a₁,a₂,… )=(0,a₁,a₂,… )。
+
+保留条件核验：
+[
+  {
+    &quot;id&quot;: &quot;H2&quot;,
+    &quot;argument&quot;: &quot;右移后数列仍只有有限个非零项，故T是V到V的映射；逐坐标计算可知T(x+y)=T(x)+T(y)，T(cx)=cT(x)。&quot;
+  }
+]
+
+替代条件核验：
+[]
+
+结论失效：
+{
+  &quot;id&quot;: &quot;C1&quot;,
+  &quot;argument&quot;: &quot;T(x)=0蕴含x的每个坐标均为零，所以T单射；但T(x)的首项恒为零，故e₁=(1,0,0,…)不在像中，T不满射。因此“单射当且仅当满射”为假。&quot;
+}
+
+整体论证：
+标准单位数列e₁,e₂,…线性无关，故V不满足H1。此对象满足保留的H2，却推翻C1，表明在保留H2时H1不可删。
+
+证据：
+[
+  {
+    &quot;kind&quot;: &quot;mathematical_argument&quot;,
+    &quot;artifact&quot;: null,
+    &quot;scope&quot;: &quot;验证对象不满足H1、满足H2，以及T单射但不满射&quot;
+  }
+]
+
+条件依赖：
+[]
+
+不确定性：
+[]</pre><details><summary>展开完整原始回答（含模型提取的假设与干预）</summary><pre>{
+  &quot;task_id&quot;: &quot;AL03&quot;,
+  &quot;hypotheses&quot;: [
+    {&quot;id&quot;: &quot;H1&quot;, &quot;text&quot;: &quot;V有限维&quot;},
+    {&quot;id&quot;: &quot;H2&quot;, &quot;text&quot;: &quot;T:V→V线性&quot;}
+  ],
+  &quot;intervention&quot;: {&quot;removed&quot;: [&quot;H1&quot;], &quot;replacement&quot;: null},
+  &quot;judgment&quot;: &quot;indispensable&quot;,
+  &quot;witness&quot;: &quot;取V为实数域上仅有有限个非零项的数列空间，令T(a₁,a₂,… )=(0,a₁,a₂,… )。&quot;,
+  &quot;retained_checks&quot;: [
+    {&quot;id&quot;: &quot;H2&quot;, &quot;argument&quot;: &quot;右移后数列仍只有有限个非零项，故T是V到V的映射；逐坐标计算可知T(x+y)=T(x)+T(y)，T(cx)=cT(x)。&quot;}
+  ],
+  &quot;replacement_checks&quot;: [],
+  &quot;target_failure&quot;: {
+    &quot;id&quot;: &quot;C1&quot;,
+    &quot;argument&quot;: &quot;T(x)=0蕴含x的每个坐标均为零，所以T单射；但T(x)的首项恒为零，故e₁=(1,0,0,…)不在像中，T不满射。因此“单射当且仅当满射”为假。&quot;
+  },
+  &quot;argument&quot;: &quot;标准单位数列e₁,e₂,…线性无关，故V不满足H1。此对象满足保留的H2，却推翻C1，表明在保留H2时H1不可删。&quot;,
+  &quot;evidence&quot;: [
+    {&quot;kind&quot;: &quot;mathematical_argument&quot;, &quot;artifact&quot;: null, &quot;scope&quot;: &quot;验证对象不满足H1、满足H2，以及T单射但不满射&quot;}
+  ],
+  &quot;dependencies&quot;: [],
+  &quot;uncertainties&quot;: [],
+  &quot;next_steps&quot;: [],
+  &quot;cost&quot;: {&quot;elapsed_seconds&quot;: null, &quot;model_calls&quot;: null, &quot;tool_calls&quot;: null, &quot;usd&quot;: null}
+}</pre></details><label>审核结论 <select data-id="AL03-A"><option>待审核</option><option>通过</option><option>部分正确</option><option>错误</option><option>待确认</option></select></label><p>请记录：干预是否准确、保留条件是否成立、反例或证明是否有效、证据是否诚实。</p><textarea data-id="AL03-A" rows="5" placeholder="具体理由、疑点及核验依据"></textarea></article><article><h2>AL03-B</h2><h3>题目</h3><pre>{
+  &quot;task_id&quot;: &quot;AL03&quot;,
+  &quot;subject&quot;: &quot;高等代数&quot;,
+  &quot;statement&quot;: &quot;有限维 V 上线性自映射单射当且仅当满射&quot;,
+  &quot;hypotheses&quot;: [
+    {
+      &quot;id&quot;: &quot;H1&quot;,
+      &quot;text&quot;: &quot;V有限维&quot;
+    },
+    {
+      &quot;id&quot;: &quot;H2&quot;,
+      &quot;text&quot;: &quot;T:V→V线性&quot;
+    }
+  ],
+  &quot;intervention&quot;: {
+    &quot;removed&quot;: [
+      &quot;H1&quot;
+    ],
+    &quot;replacement&quot;: null
+  },
+  &quot;conclusions&quot;: [
+    {
+      &quot;id&quot;: &quot;C1&quot;,
+      &quot;text&quot;: &quot;单射当且仅当满射&quot;
+    }
+  ],
+  &quot;ambient&quot;: &quot;按定理的明确对象约定&quot;
+}</pre><h3>模型回答</h3><pre>判断：indispensable
+
+反例：取任意域F，令V=F[x]，定义T:V→V为T(p(x))=xp(x)。
+
+保留条件核验：
+[
+  {
+    &quot;id&quot;: &quot;H2&quot;,
+    &quot;argument&quot;: &quot;对任意p,q∈F[x]及a,b∈F，有T(ap+bq)=x(ap+bq)=aT(p)+bT(q)，故T是V上的线性自映射。&quot;
+  }
+]
+
+替代条件核验：
+[]
+
+结论失效：
+{
+  &quot;id&quot;: &quot;C1&quot;,
+  &quot;argument&quot;: &quot;若T(p)=0，则xp=0，故p=0，T单射；但常数多项式1不在T的像中，故T不满射。因此“单射当且仅当满射”为假。&quot;
+}
+
+整体论证：
+删去有限维假设后，允许取无限维空间F[x]。上述线性自映射单射而不满射，说明H1对该结论不可缺少。
+
+证据：
+[
+  {
+    &quot;kind&quot;: &quot;mathematical_argument&quot;,
+    &quot;artifact&quot;: null,
+    &quot;scope&quot;: &quot;构造满足H2但不满足C1的反例&quot;
+  }
+]
+
+条件依赖：
+[]
+
+不确定性：
+[]</pre><details><summary>展开完整原始回答（含模型提取的假设与干预）</summary><pre>{
+  &quot;task_id&quot;: &quot;AL03&quot;,
+  &quot;hypotheses&quot;: [
+    {&quot;id&quot;: &quot;H1&quot;, &quot;text&quot;: &quot;V有限维&quot;},
+    {&quot;id&quot;: &quot;H2&quot;, &quot;text&quot;: &quot;T:V→V线性&quot;}
+  ],
+  &quot;intervention&quot;: {&quot;removed&quot;: [&quot;H1&quot;], &quot;replacement&quot;: null},
+  &quot;judgment&quot;: &quot;indispensable&quot;,
+  &quot;witness&quot;: &quot;取任意域F，令V=F[x]，定义T:V→V为T(p(x))=xp(x)。&quot;,
+  &quot;retained_checks&quot;: [
+    {&quot;id&quot;: &quot;H2&quot;, &quot;argument&quot;: &quot;对任意p,q∈F[x]及a,b∈F，有T(ap+bq)=x(ap+bq)=aT(p)+bT(q)，故T是V上的线性自映射。&quot;}
+  ],
+  &quot;replacement_checks&quot;: [],
+  &quot;target_failure&quot;: {
+    &quot;id&quot;: &quot;C1&quot;,
+    &quot;argument&quot;: &quot;若T(p)=0，则xp=0，故p=0，T单射；但常数多项式1不在T的像中，故T不满射。因此“单射当且仅当满射”为假。&quot;
+  },
+  &quot;argument&quot;: &quot;删去有限维假设后，允许取无限维空间F[x]。上述线性自映射单射而不满射，说明H1对该结论不可缺少。&quot;,
+  &quot;evidence&quot;: [
+    {&quot;kind&quot;: &quot;mathematical_argument&quot;, &quot;artifact&quot;: null, &quot;scope&quot;: &quot;构造满足H2但不满足C1的反例&quot;}
+  ],
+  &quot;dependencies&quot;: [],
+  &quot;uncertainties&quot;: [],
+  &quot;next_steps&quot;: [],
+  &quot;cost&quot;: {&quot;elapsed_seconds&quot;: null, &quot;model_calls&quot;: null, &quot;tool_calls&quot;: null, &quot;usd&quot;: null}
+}</pre></details><label>审核结论 <select data-id="AL03-B"><option>待审核</option><option>通过</option><option>部分正确</option><option>错误</option><option>待确认</option></select></label><p>请记录：干预是否准确、保留条件是否成立、反例或证明是否有效、证据是否诚实。</p><textarea data-id="AL03-B" rows="5" placeholder="具体理由、疑点及核验依据"></textarea></article><article><h2>AL04-A</h2><h3>题目</h3><pre>{
+  &quot;task_id&quot;: &quot;AL04&quot;,
+  &quot;subject&quot;: &quot;高等代数&quot;,
+  &quot;statement&quot;: &quot;n×n复矩阵有n个互异特征值则可对角化&quot;,
+  &quot;hypotheses&quot;: [
+    {
+      &quot;id&quot;: &quot;H1&quot;,
+      &quot;text&quot;: &quot;A为n×n复矩阵 n≥1&quot;
+    },
+    {
+      &quot;id&quot;: &quot;H2&quot;,
+      &quot;text&quot;: &quot;A有n个互异特征值&quot;
+    }
+  ],
+  &quot;intervention&quot;: {
+    &quot;removed&quot;: [
+      &quot;H2&quot;
+    ],
+    &quot;replacement&quot;: null
+  },
+  &quot;conclusions&quot;: [
+    {
+      &quot;id&quot;: &quot;C1&quot;,
+      &quot;text&quot;: &quot;A可对角化&quot;
+    }
+  ],
+  &quot;ambient&quot;: &quot;按定理的明确对象约定&quot;
+}</pre><h3>模型回答</h3><pre>判断：indispensable
+
+反例：取n=2，A=[[0,1],[0,0]]。
+
+保留条件核验：
+[
+  {
+    &quot;id&quot;: &quot;H1&quot;,
+    &quot;argument&quot;: &quot;所取A是2×2复矩阵，且2≥1。&quot;
+  }
+]
+
+替代条件核验：
+[]
+
+结论失效：
+{
+  &quot;id&quot;: &quot;C1&quot;,
+  &quot;argument&quot;: &quot;A不为零，但A²=0。若A可对角化，则与A相似的对角矩阵D满足D²=0，因此D=0，进而A=0，矛盾。&quot;
+}
+
+整体论证：
+删去H2后，保留的H1允许上述不可对角化的矩阵，因此H1不能推出C1；对原命题而言，H2不可删。
+
+证据：
+[
+  {
+    &quot;kind&quot;: &quot;mathematical_argument&quot;,
+    &quot;artifact&quot;: null,
+    &quot;scope&quot;: &quot;验证反例满足保留假设并否定结论&quot;
+  }
+]
+
+条件依赖：
+[]
+
+不确定性：
+[]</pre><details><summary>展开完整原始回答（含模型提取的假设与干预）</summary><pre>{
+  &quot;task_id&quot;: &quot;AL04&quot;,
+  &quot;hypotheses&quot;: [
+    {&quot;id&quot;: &quot;H1&quot;, &quot;text&quot;: &quot;A为n×n复矩阵，n≥1&quot;},
+    {&quot;id&quot;: &quot;H2&quot;, &quot;text&quot;: &quot;A有n个互异特征值&quot;}
+  ],
+  &quot;intervention&quot;: {&quot;removed&quot;: [&quot;H2&quot;], &quot;replacement&quot;: null},
+  &quot;judgment&quot;: &quot;indispensable&quot;,
+  &quot;witness&quot;: &quot;取n=2，A=[[0,1],[0,0]]。&quot;,
+  &quot;retained_checks&quot;: [
+    {&quot;id&quot;: &quot;H1&quot;, &quot;argument&quot;: &quot;所取A是2×2复矩阵，且2≥1。&quot;}
+  ],
+  &quot;replacement_checks&quot;: [],
+  &quot;target_failure&quot;: {
+    &quot;id&quot;: &quot;C1&quot;,
+    &quot;argument&quot;: &quot;A不为零，但A²=0。若A可对角化，则与A相似的对角矩阵D满足D²=0，因此D=0，进而A=0，矛盾。&quot;
+  },
+  &quot;argument&quot;: &quot;删去H2后，保留的H1允许上述不可对角化的矩阵，因此H1不能推出C1；对原命题而言，H2不可删。&quot;,
+  &quot;evidence&quot;: [
+    {&quot;kind&quot;: &quot;mathematical_argument&quot;, &quot;artifact&quot;: null, &quot;scope&quot;: &quot;验证反例满足保留假设并否定结论&quot;}
+  ],
+  &quot;dependencies&quot;: [],
+  &quot;uncertainties&quot;: [],
+  &quot;next_steps&quot;: [],
+  &quot;cost&quot;: {&quot;elapsed_seconds&quot;: null, &quot;model_calls&quot;: null, &quot;tool_calls&quot;: null, &quot;usd&quot;: null}
+}</pre></details><label>审核结论 <select data-id="AL04-A"><option>待审核</option><option>通过</option><option>部分正确</option><option>错误</option><option>待确认</option></select></label><p>请记录：干预是否准确、保留条件是否成立、反例或证明是否有效、证据是否诚实。</p><textarea data-id="AL04-A" rows="5" placeholder="具体理由、疑点及核验依据"></textarea></article><article><h2>AL04-B</h2><h3>题目</h3><pre>{
+  &quot;task_id&quot;: &quot;AL04&quot;,
+  &quot;subject&quot;: &quot;高等代数&quot;,
+  &quot;statement&quot;: &quot;n×n复矩阵有n个互异特征值则可对角化&quot;,
+  &quot;hypotheses&quot;: [
+    {
+      &quot;id&quot;: &quot;H1&quot;,
+      &quot;text&quot;: &quot;A为n×n复矩阵 n≥1&quot;
+    },
+    {
+      &quot;id&quot;: &quot;H2&quot;,
+      &quot;text&quot;: &quot;A有n个互异特征值&quot;
+    }
+  ],
+  &quot;intervention&quot;: {
+    &quot;removed&quot;: [
+      &quot;H2&quot;
+    ],
+    &quot;replacement&quot;: null
+  },
+  &quot;conclusions&quot;: [
+    {
+      &quot;id&quot;: &quot;C1&quot;,
+      &quot;text&quot;: &quot;A可对角化&quot;
+    }
+  ],
+  &quot;ambient&quot;: &quot;按定理的明确对象约定&quot;
+}</pre><h3>模型回答</h3><pre>判断：indispensable
+
+反例：取n=2，A=[[0,1],[0,0]]。
+
+保留条件核验：
+[
+  {
+    &quot;id&quot;: &quot;H1&quot;,
+    &quot;argument&quot;: &quot;A是2×2复矩阵，且2≥1。&quot;
+  }
+]
+
+替代条件核验：
+[]
+
+结论失效：
+{
+  &quot;id&quot;: &quot;C1&quot;,
+  &quot;argument&quot;: &quot;A的特征多项式为λ²，唯一特征值是0。若A可对角化，则它相似于对角矩阵diag(0,0)=0，从而A=0，与A的右上角元素为1矛盾。&quot;
+}
+
+整体论证：
+该矩阵不满足H2，因为它只有一个互异特征值；它满足保留的H1，却不满足C1。因此删除H2后，结论不再普遍成立。
+
+证据：
+[
+  {
+    &quot;kind&quot;: &quot;mathematical_argument&quot;,
+    &quot;artifact&quot;: null,
+    &quot;scope&quot;: &quot;核对反例的矩阵类型、H2不成立及C1失败&quot;
+  }
+]
+
+条件依赖：
+[]
+
+不确定性：
+[]</pre><details><summary>展开完整原始回答（含模型提取的假设与干预）</summary><pre>{
+  &quot;task_id&quot;: &quot;AL04&quot;,
+  &quot;hypotheses&quot;: [
+    {&quot;id&quot;: &quot;H1&quot;, &quot;text&quot;: &quot;A为n×n复矩阵，n≥1&quot;},
+    {&quot;id&quot;: &quot;H2&quot;, &quot;text&quot;: &quot;A有n个互异特征值&quot;}
+  ],
+  &quot;intervention&quot;: {&quot;removed&quot;: [&quot;H2&quot;], &quot;replacement&quot;: null},
+  &quot;judgment&quot;: &quot;indispensable&quot;,
+  &quot;witness&quot;: &quot;取n=2，A=[[0,1],[0,0]]。&quot;,
+  &quot;retained_checks&quot;: [
+    {&quot;id&quot;: &quot;H1&quot;, &quot;argument&quot;: &quot;A是2×2复矩阵，且2≥1。&quot;}
+  ],
+  &quot;replacement_checks&quot;: [],
+  &quot;target_failure&quot;: {
+    &quot;id&quot;: &quot;C1&quot;,
+    &quot;argument&quot;: &quot;A的特征多项式为λ²，唯一特征值是0。若A可对角化，则它相似于对角矩阵diag(0,0)=0，从而A=0，与A的右上角元素为1矛盾。&quot;
+  },
+  &quot;argument&quot;: &quot;该矩阵不满足H2，因为它只有一个互异特征值；它满足保留的H1，却不满足C1。因此删除H2后，结论不再普遍成立。&quot;,
+  &quot;evidence&quot;: [
+    {&quot;kind&quot;: &quot;mathematical_argument&quot;, &quot;artifact&quot;: null, &quot;scope&quot;: &quot;核对反例的矩阵类型、H2不成立及C1失败&quot;}
+  ],
+  &quot;dependencies&quot;: [],
+  &quot;uncertainties&quot;: [],
+  &quot;next_steps&quot;: [],
+  &quot;cost&quot;: {&quot;elapsed_seconds&quot;: null, &quot;model_calls&quot;: null, &quot;tool_calls&quot;: null, &quot;usd&quot;: null}
+}</pre></details><label>审核结论 <select data-id="AL04-B"><option>待审核</option><option>通过</option><option>部分正确</option><option>错误</option><option>待确认</option></select></label><p>请记录：干预是否准确、保留条件是否成立、反例或证明是否有效、证据是否诚实。</p><textarea data-id="AL04-B" rows="5" placeholder="具体理由、疑点及核验依据"></textarea></article><article><h2>RA01-A</h2><h3>题目</h3><pre>{
+  &quot;task_id&quot;: &quot;RA01&quot;,
+  &quot;subject&quot;: &quot;实分析&quot;,
+  &quot;statement&quot;: &quot;在固定测度空间上，设实可测f_n逐项可积，f∈L¹，且f_n→f a.e.。若存在可积g≥|f_n| a.e.对所有n成立，则∫f_n→∫f。&quot;,
+  &quot;hypotheses&quot;: [
+    {
+      &quot;id&quot;: &quot;H1&quot;,
+      &quot;text&quot;: &quot;f_n可测且逐项可积&quot;
+    },
+    {
+      &quot;id&quot;: &quot;H2&quot;,
+      &quot;text&quot;: &quot;f_n→f a.e.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;H3&quot;,
+      &quot;text&quot;: &quot;存在可积g使|f_n|≤g&quot;
+    },
+    {
+      &quot;id&quot;: &quot;H4&quot;,
+      &quot;text&quot;: &quot;f∈L¹(X,μ)&quot;
+    }
+  ],
+  &quot;intervention&quot;: {
+    &quot;removed&quot;: [
+      &quot;H3&quot;
+    ],
+    &quot;replacement&quot;: null
+  },
+  &quot;conclusions&quot;: [
+    {
+      &quot;id&quot;: &quot;C1&quot;,
+      &quot;text&quot;: &quot;∫f_n→∫f&quot;
+    }
+  ],
+  &quot;ambient&quot;: &quot;固定测度空间；f_n及f为实可测函数，积分为Lebesgue积分；反例取(0,1)上的Lebesgue测度。&quot;
+}</pre><h3>模型回答</h3><pre>判断：indispensable
+
+反例：取X=(0,1)，赋予Lebesgue测度；令f_n(x)=n·1_(0,1/n)(x)，f(x)=0。
+
+保留条件核验：
+[
+  {
+    &quot;id&quot;: &quot;H1&quot;,
+    &quot;argument&quot;: &quot;每个f_n均可测，且∫|f_n|=n·(1/n)=1，故逐项可积。&quot;
+  },
+  {
+    &quot;id&quot;: &quot;H2&quot;,
+    &quot;argument&quot;: &quot;对每个x∈(0,1)，当n足够大时有1/n≤x，因而f_n(x)=0；所以f_n逐点收敛于f。&quot;
+  },
+  {
+    &quot;id&quot;: &quot;H4&quot;,
+    &quot;argument&quot;: &quot;f恒为零，因此f∈L¹(X,μ)。&quot;
+  }
+]
+
+替代条件核验：
+[]
+
+结论失效：
+{
+  &quot;id&quot;: &quot;C1&quot;,
+  &quot;argument&quot;: &quot;对所有n，∫f_n=1，而∫f=0，故∫f_n不收敛于∫f。&quot;
+}
+
+整体论证：
+删除H3后，其余假设允许质量集中于越来越小的区间而积分保持不变。此例确实不满足H3：若可积g同时支配所有|f_n|，则在每个(1/(n+1),1/n)上几乎处处有g≥n，从而∫g≥∑_{n=1}^∞n(1/n−1/(n+1))=∑_{n=1}^∞1/(n+1)=∞，矛盾。
+
+证据：
+[
+  {
+    &quot;kind&quot;: &quot;mathematical_argument&quot;,
+    &quot;artifact&quot;: null,
+    &quot;scope&quot;: &quot;构造反例，逐项核对保留假设，并否定C1及H3&quot;
+  }
+]
+
+条件依赖：
+[]
+
+不确定性：
+[]</pre><details><summary>展开完整原始回答（含模型提取的假设与干预）</summary><pre>{
+  &quot;task_id&quot;: &quot;RA01&quot;,
+  &quot;hypotheses&quot;: [
+    {&quot;id&quot;: &quot;H1&quot;, &quot;text&quot;: &quot;f_n可测且逐项可积&quot;},
+    {&quot;id&quot;: &quot;H2&quot;, &quot;text&quot;: &quot;f_n→f a.e.&quot;},
+    {&quot;id&quot;: &quot;H3&quot;, &quot;text&quot;: &quot;存在可积g使|f_n|≤g&quot;},
+    {&quot;id&quot;: &quot;H4&quot;, &quot;text&quot;: &quot;f∈L¹(X,μ)&quot;}
+  ],
+  &quot;intervention&quot;: {&quot;removed&quot;: [&quot;H3&quot;], &quot;replacement&quot;: null},
+  &quot;judgment&quot;: &quot;indispensable&quot;,
+  &quot;witness&quot;: &quot;取X=(0,1)，赋予Lebesgue测度；令f_n(x)=n·1_(0,1/n)(x)，f(x)=0。&quot;,
+  &quot;retained_checks&quot;: [
+    {&quot;id&quot;: &quot;H1&quot;, &quot;argument&quot;: &quot;每个f_n均可测，且∫|f_n|=n·(1/n)=1，故逐项可积。&quot;},
+    {&quot;id&quot;: &quot;H2&quot;, &quot;argument&quot;: &quot;对每个x∈(0,1)，当n足够大时有1/n≤x，因而f_n(x)=0；所以f_n逐点收敛于f。&quot;},
+    {&quot;id&quot;: &quot;H4&quot;, &quot;argument&quot;: &quot;f恒为零，因此f∈L¹(X,μ)。&quot;}
+  ],
+  &quot;replacement_checks&quot;: [],
+  &quot;target_failure&quot;: {&quot;id&quot;: &quot;C1&quot;, &quot;argument&quot;: &quot;对所有n，∫f_n=1，而∫f=0，故∫f_n不收敛于∫f。&quot;},
+  &quot;argument&quot;: &quot;删除H3后，其余假设允许质量集中于越来越小的区间而积分保持不变。此例确实不满足H3：若可积g同时支配所有|f_n|，则在每个(1/(n+1),1/n)上几乎处处有g≥n，从而∫g≥∑_{n=1}^∞n(1/n−1/(n+1))=∑_{n=1}^∞1/(n+1)=∞，矛盾。&quot;,
+  &quot;evidence&quot;: [
+    {&quot;kind&quot;: &quot;mathematical_argument&quot;, &quot;artifact&quot;: null, &quot;scope&quot;: &quot;构造反例，逐项核对保留假设，并否定C1及H3&quot;}
+  ],
+  &quot;dependencies&quot;: [],
+  &quot;uncertainties&quot;: [],
+  &quot;next_steps&quot;: [],
+  &quot;cost&quot;: {&quot;elapsed_seconds&quot;: null, &quot;model_calls&quot;: null, &quot;tool_calls&quot;: null, &quot;usd&quot;: null}
+}</pre></details><label>审核结论 <select data-id="RA01-A"><option>待审核</option><option>通过</option><option>部分正确</option><option>错误</option><option>待确认</option></select></label><p>请记录：干预是否准确、保留条件是否成立、反例或证明是否有效、证据是否诚实。</p><textarea data-id="RA01-A" rows="5" placeholder="具体理由、疑点及核验依据"></textarea></article><article><h2>RA01-B</h2><h3>题目</h3><pre>{
+  &quot;task_id&quot;: &quot;RA01&quot;,
+  &quot;subject&quot;: &quot;实分析&quot;,
+  &quot;statement&quot;: &quot;在固定测度空间上，设实可测f_n逐项可积，f∈L¹，且f_n→f a.e.。若存在可积g≥|f_n| a.e.对所有n成立，则∫f_n→∫f。&quot;,
+  &quot;hypotheses&quot;: [
+    {
+      &quot;id&quot;: &quot;H1&quot;,
+      &quot;text&quot;: &quot;f_n可测且逐项可积&quot;
+    },
+    {
+      &quot;id&quot;: &quot;H2&quot;,
+      &quot;text&quot;: &quot;f_n→f a.e.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;H3&quot;,
+      &quot;text&quot;: &quot;存在可积g使|f_n|≤g&quot;
+    },
+    {
+      &quot;id&quot;: &quot;H4&quot;,
+      &quot;text&quot;: &quot;f∈L¹(X,μ)&quot;
+    }
+  ],
+  &quot;intervention&quot;: {
+    &quot;removed&quot;: [
+      &quot;H3&quot;
+    ],
+    &quot;replacement&quot;: null
+  },
+  &quot;conclusions&quot;: [
+    {
+      &quot;id&quot;: &quot;C1&quot;,
+      &quot;text&quot;: &quot;∫f_n→∫f&quot;
+    }
+  ],
+  &quot;ambient&quot;: &quot;固定测度空间；f_n及f为实可测函数，积分为Lebesgue积分；反例取(0,1)上的Lebesgue测度。&quot;
+}</pre><h3>模型回答</h3><pre>判断：indispensable
+
+反例：取X=(0,1)，赋予Lebesgue测度；对n≥1令f_n(x)=n·1_(0,1/n)(x)，f(x)=0。
+
+保留条件核验：
+[
+  {
+    &quot;id&quot;: &quot;H1&quot;,
+    &quot;argument&quot;: &quot;每个f_n都是实可测简单函数，且∫_X|f_n|=n·(1/n)=1，故逐项可积。&quot;
+  },
+  {
+    &quot;id&quot;: &quot;H2&quot;,
+    &quot;argument&quot;: &quot;对每个x∈(0,1)，当n&gt;1/x时f_n(x)=0，故f_n(x)→0=f(x)。&quot;
+  },
+  {
+    &quot;id&quot;: &quot;H4&quot;,
+    &quot;argument&quot;: &quot;f=0，故f∈L¹(X)。&quot;
+  }
+]
+
+替代条件核验：
+[]
+
+结论失效：
+{
+  &quot;id&quot;: &quot;C1&quot;,
+  &quot;argument&quot;: &quot;对所有n，∫_X f_n=1，而∫_X f=0，因此∫f_n不收敛于∫f。&quot;
+}
+
+整体论证：
+反例确实不满足H3：若可积g对所有n几乎处处满足g≥|f_n|，则在每个区间(1/(k+1),1/k)上几乎处处有g≥f_k=k。因此对任意N，∫_X g≥∑_{k=1}^N k(1/k−1/(k+1))=∑_{k=1}^N 1/(k+1)。右端随N发散，与g可积矛盾。故在保留H1、H2、H4时，删除H3会使C1失效。
+
+证据：
+[
+  {
+    &quot;kind&quot;: &quot;mathematical_argument&quot;,
+    &quot;artifact&quot;: null,
+    &quot;scope&quot;: &quot;核对反例的所有保留假设、H3不成立及C1失效&quot;
+  }
+]
+
+条件依赖：
+[]
+
+不确定性：
+[]</pre><details><summary>展开完整原始回答（含模型提取的假设与干预）</summary><pre>{
+  &quot;task_id&quot;: &quot;RA01&quot;,
+  &quot;hypotheses&quot;: [
+    {&quot;id&quot;: &quot;H1&quot;, &quot;text&quot;: &quot;f_n可测且逐项可积&quot;},
+    {&quot;id&quot;: &quot;H2&quot;, &quot;text&quot;: &quot;f_n→f a.e.&quot;},
+    {&quot;id&quot;: &quot;H3&quot;, &quot;text&quot;: &quot;存在可积g使|f_n|≤g a.e.对所有n成立&quot;},
+    {&quot;id&quot;: &quot;H4&quot;, &quot;text&quot;: &quot;f∈L¹(X,μ)&quot;}
+  ],
+  &quot;intervention&quot;: {&quot;removed&quot;: [&quot;H3&quot;], &quot;replacement&quot;: null},
+  &quot;judgment&quot;: &quot;indispensable&quot;,
+  &quot;witness&quot;: &quot;取X=(0,1)，赋予Lebesgue测度；对n≥1令f_n(x)=n·1_(0,1/n)(x)，f(x)=0。&quot;,
+  &quot;retained_checks&quot;: [
+    {&quot;id&quot;: &quot;H1&quot;, &quot;argument&quot;: &quot;每个f_n都是实可测简单函数，且∫_X|f_n|=n·(1/n)=1，故逐项可积。&quot;},
+    {&quot;id&quot;: &quot;H2&quot;, &quot;argument&quot;: &quot;对每个x∈(0,1)，当n&gt;1/x时f_n(x)=0，故f_n(x)→0=f(x)。&quot;},
+    {&quot;id&quot;: &quot;H4&quot;, &quot;argument&quot;: &quot;f=0，故f∈L¹(X)。&quot;}
+  ],
+  &quot;replacement_checks&quot;: [],
+  &quot;target_failure&quot;: {
+    &quot;id&quot;: &quot;C1&quot;,
+    &quot;argument&quot;: &quot;对所有n，∫_X f_n=1，而∫_X f=0，因此∫f_n不收敛于∫f。&quot;
+  },
+  &quot;argument&quot;: &quot;反例确实不满足H3：若可积g对所有n几乎处处满足g≥|f_n|，则在每个区间(1/(k+1),1/k)上几乎处处有g≥f_k=k。因此对任意N，∫_X g≥∑_{k=1}^N k(1/k−1/(k+1))=∑_{k=1}^N 1/(k+1)。右端随N发散，与g可积矛盾。故在保留H1、H2、H4时，删除H3会使C1失效。&quot;,
+  &quot;evidence&quot;: [
+    {
+      &quot;kind&quot;: &quot;mathematical_argument&quot;,
+      &quot;artifact&quot;: null,
+      &quot;scope&quot;: &quot;核对反例的所有保留假设、H3不成立及C1失效&quot;
+    }
+  ],
+  &quot;dependencies&quot;: [],
+  &quot;uncertainties&quot;: [],
+  &quot;next_steps&quot;: [],
+  &quot;cost&quot;: {
+    &quot;elapsed_seconds&quot;: null,
+    &quot;model_calls&quot;: null,
+    &quot;tool_calls&quot;: null,
+    &quot;usd&quot;: null
+  }
+}</pre></details><label>审核结论 <select data-id="RA01-B"><option>待审核</option><option>通过</option><option>部分正确</option><option>错误</option><option>待确认</option></select></label><p>请记录：干预是否准确、保留条件是否成立、反例或证明是否有效、证据是否诚实。</p><textarea data-id="RA01-B" rows="5" placeholder="具体理由、疑点及核验依据"></textarea></article><article><h2>RA02-A</h2><h3>题目</h3><pre>{
+  &quot;task_id&quot;: &quot;RA02&quot;,
+  &quot;subject&quot;: &quot;实分析&quot;,
+  &quot;statement&quot;: &quot;非负可测函数列满足∫liminf f_n≤liminf∫f_n&quot;,
+  &quot;hypotheses&quot;: [
+    {
+      &quot;id&quot;: &quot;H1&quot;,
+      &quot;text&quot;: &quot;f_n可测&quot;
+    },
+    {
+      &quot;id&quot;: &quot;H2&quot;,
+      &quot;text&quot;: &quot;f_n≥0&quot;
+    },
+    {
+      &quot;id&quot;: &quot;H3&quot;,
+      &quot;text&quot;: &quot;每个∫f_n及∫liminf f_n均有定义，允许扩展实数&quot;
+    }
+  ],
+  &quot;intervention&quot;: {
+    &quot;removed&quot;: [
+      &quot;H2&quot;
+    ],
+    &quot;replacement&quot;: null
+  },
+  &quot;conclusions&quot;: [
+    {
+      &quot;id&quot;: &quot;C1&quot;,
+      &quot;text&quot;: &quot;Fatou不等式&quot;
+    }
+  ],
+  &quot;ambient&quot;: &quot;固定测度空间，函数实值；使用Lebesgue积分，排除∞−∞。&quot;
+}</pre><h3>模型回答</h3><pre>判断：indispensable
+
+反例：取测度空间 ((0,1), Lebesgue测度)，令 f_n(x)=−n·1_(0,1/n)(x)，n≥1。
+
+保留条件核验：
+[
+  {
+    &quot;id&quot;: &quot;H1&quot;,
+    &quot;argument&quot;: &quot;区间示性函数可测，故每个 f_n 可测。&quot;
+  },
+  {
+    &quot;id&quot;: &quot;H3&quot;,
+    &quot;argument&quot;: &quot;每个 ∫f_n=−n·(1/n)=−1；对每个 x∈(0,1)，f_n(x)最终为0，故 ∫liminf f_n=∫0=0。所有积分均为有限实数。&quot;
+  }
+]
+
+替代条件核验：
+[]
+
+结论失效：
+{
+  &quot;id&quot;: &quot;C1&quot;,
+  &quot;argument&quot;: &quot;左边 ∫liminf f_n=0，右边 liminf ∫f_n=−1；断言 0≤−1 为假。&quot;
+}
+
+整体论证：
+该函数列满足全部保留条件，但在 (0,1/n) 上取负值，不满足 H2。因此，删除非负性后，所述 Fatou 不等式不再普遍成立。
+
+证据：
+[
+  {
+    &quot;kind&quot;: &quot;mathematical_argument&quot;,
+    &quot;artifact&quot;: null,
+    &quot;scope&quot;: &quot;验证函数列的可测性、积分有定义、逐点下极限，以及 C1 的失效&quot;
+  }
+]
+
+条件依赖：
+[]
+
+不确定性：
+[]</pre><details><summary>展开完整原始回答（含模型提取的假设与干预）</summary><pre>{
+  &quot;task_id&quot;: &quot;RA02&quot;,
+  &quot;hypotheses&quot;: [
+    {&quot;id&quot;: &quot;H1&quot;, &quot;text&quot;: &quot;每个 f_n 可测&quot;},
+    {&quot;id&quot;: &quot;H2&quot;, &quot;text&quot;: &quot;每个 f_n≥0&quot;},
+    {&quot;id&quot;: &quot;H3&quot;, &quot;text&quot;: &quot;每个 ∫f_n 及 ∫liminf f_n 均有定义，允许扩展实数但排除 ∞−∞&quot;}
+  ],
+  &quot;intervention&quot;: {&quot;removed&quot;: [&quot;H2&quot;], &quot;replacement&quot;: null},
+  &quot;judgment&quot;: &quot;indispensable&quot;,
+  &quot;witness&quot;: &quot;取测度空间 ((0,1), Lebesgue测度)，令 f_n(x)=−n·1_(0,1/n)(x)，n≥1。&quot;,
+  &quot;retained_checks&quot;: [
+    {&quot;id&quot;: &quot;H1&quot;, &quot;argument&quot;: &quot;区间示性函数可测，故每个 f_n 可测。&quot;},
+    {&quot;id&quot;: &quot;H3&quot;, &quot;argument&quot;: &quot;每个 ∫f_n=−n·(1/n)=−1；对每个 x∈(0,1)，f_n(x)最终为0，故 ∫liminf f_n=∫0=0。所有积分均为有限实数。&quot;}
+  ],
+  &quot;replacement_checks&quot;: [],
+  &quot;target_failure&quot;: {&quot;id&quot;: &quot;C1&quot;, &quot;argument&quot;: &quot;左边 ∫liminf f_n=0，右边 liminf ∫f_n=−1；断言 0≤−1 为假。&quot;},
+  &quot;argument&quot;: &quot;该函数列满足全部保留条件，但在 (0,1/n) 上取负值，不满足 H2。因此，删除非负性后，所述 Fatou 不等式不再普遍成立。&quot;,
+  &quot;evidence&quot;: [
+    {&quot;kind&quot;: &quot;mathematical_argument&quot;, &quot;artifact&quot;: null, &quot;scope&quot;: &quot;验证函数列的可测性、积分有定义、逐点下极限，以及 C1 的失效&quot;}
+  ],
+  &quot;dependencies&quot;: [],
+  &quot;uncertainties&quot;: [],
+  &quot;next_steps&quot;: [],
+  &quot;cost&quot;: {&quot;elapsed_seconds&quot;: null, &quot;model_calls&quot;: null, &quot;tool_calls&quot;: null, &quot;usd&quot;: null}
+}</pre></details><label>审核结论 <select data-id="RA02-A"><option>待审核</option><option>通过</option><option>部分正确</option><option>错误</option><option>待确认</option></select></label><p>请记录：干预是否准确、保留条件是否成立、反例或证明是否有效、证据是否诚实。</p><textarea data-id="RA02-A" rows="5" placeholder="具体理由、疑点及核验依据"></textarea></article><article><h2>RA02-B</h2><h3>题目</h3><pre>{
+  &quot;task_id&quot;: &quot;RA02&quot;,
+  &quot;subject&quot;: &quot;实分析&quot;,
+  &quot;statement&quot;: &quot;非负可测函数列满足∫liminf f_n≤liminf∫f_n&quot;,
+  &quot;hypotheses&quot;: [
+    {
+      &quot;id&quot;: &quot;H1&quot;,
+      &quot;text&quot;: &quot;f_n可测&quot;
+    },
+    {
+      &quot;id&quot;: &quot;H2&quot;,
+      &quot;text&quot;: &quot;f_n≥0&quot;
+    },
+    {
+      &quot;id&quot;: &quot;H3&quot;,
+      &quot;text&quot;: &quot;每个∫f_n及∫liminf f_n均有定义，允许扩展实数&quot;
+    }
+  ],
+  &quot;intervention&quot;: {
+    &quot;removed&quot;: [
+      &quot;H2&quot;
+    ],
+    &quot;replacement&quot;: null
+  },
+  &quot;conclusions&quot;: [
+    {
+      &quot;id&quot;: &quot;C1&quot;,
+      &quot;text&quot;: &quot;Fatou不等式&quot;
+    }
+  ],
+  &quot;ambient&quot;: &quot;固定测度空间，函数实值；使用Lebesgue积分，排除∞−∞。&quot;
+}</pre><h3>模型回答</h3><pre>判断：indispensable
+
+反例：在测度空间 ([0,1], Lebesgue测度) 上，令 f_n(x)=-n·1_(0,1/n)(x)。
+
+保留条件核验：
+[
+  {
+    &quot;id&quot;: &quot;H1&quot;,
+    &quot;argument&quot;: &quot;区间 (0,1/n) 可测，故 f_n 可测。&quot;
+  },
+  {
+    &quot;id&quot;: &quot;H3&quot;,
+    &quot;argument&quot;: &quot;对每个 n，∫f_n=-1；又因 liminf f_n 恒为0，其积分为0。所涉积分均有限且有定义。&quot;
+  }
+]
+
+替代条件核验：
+[]
+
+结论失效：
+{
+  &quot;id&quot;: &quot;C1&quot;,
+  &quot;argument&quot;: &quot;∫liminf f_n=0，而 liminf∫f_n=-1；所要求的 0≤-1 不成立。&quot;
+}
+
+整体论证：
+对任意 x∈[0,1]，x 至多属于有限多个区间 (0,1/n)，因此 f_n(x) 最终为0。删去非负性后，即使保留可测性和积分有定义，Fatou不等式也不再普遍成立。
+
+证据：
+[
+  {
+    &quot;kind&quot;: &quot;mathematical_argument&quot;,
+    &quot;artifact&quot;: null,
+    &quot;scope&quot;: &quot;构造反例、核对保留假设并否定C1&quot;
+  }
+]
+
+条件依赖：
+[]
+
+不确定性：
+[]</pre><details><summary>展开完整原始回答（含模型提取的假设与干预）</summary><pre>{
+  &quot;task_id&quot;: &quot;RA02&quot;,
+  &quot;hypotheses&quot;: [
+    {&quot;id&quot;: &quot;H1&quot;, &quot;text&quot;: &quot;每个 f_n 可测&quot;},
+    {&quot;id&quot;: &quot;H2&quot;, &quot;text&quot;: &quot;每个 f_n≥0&quot;},
+    {&quot;id&quot;: &quot;H3&quot;, &quot;text&quot;: &quot;每个 ∫f_n 及 ∫liminf f_n 均有定义，允许取扩展实数&quot;}
+  ],
+  &quot;intervention&quot;: {&quot;removed&quot;: [&quot;H2&quot;], &quot;replacement&quot;: null},
+  &quot;judgment&quot;: &quot;indispensable&quot;,
+  &quot;witness&quot;: &quot;在测度空间 ([0,1], Lebesgue测度) 上，令 f_n(x)=-n·1_(0,1/n)(x)。&quot;,
+  &quot;retained_checks&quot;: [
+    {&quot;id&quot;: &quot;H1&quot;, &quot;argument&quot;: &quot;区间 (0,1/n) 可测，故 f_n 可测。&quot;},
+    {&quot;id&quot;: &quot;H3&quot;, &quot;argument&quot;: &quot;对每个 n，∫f_n=-1；又因 liminf f_n 恒为0，其积分为0。所涉积分均有限且有定义。&quot;}
+  ],
+  &quot;replacement_checks&quot;: [],
+  &quot;target_failure&quot;: {
+    &quot;id&quot;: &quot;C1&quot;,
+    &quot;argument&quot;: &quot;∫liminf f_n=0，而 liminf∫f_n=-1；所要求的 0≤-1 不成立。&quot;
+  },
+  &quot;argument&quot;: &quot;对任意 x∈[0,1]，x 至多属于有限多个区间 (0,1/n)，因此 f_n(x) 最终为0。删去非负性后，即使保留可测性和积分有定义，Fatou不等式也不再普遍成立。&quot;,
+  &quot;evidence&quot;: [
+    {&quot;kind&quot;: &quot;mathematical_argument&quot;, &quot;artifact&quot;: null, &quot;scope&quot;: &quot;构造反例、核对保留假设并否定C1&quot;}
+  ],
+  &quot;dependencies&quot;: [],
+  &quot;uncertainties&quot;: [],
+  &quot;next_steps&quot;: [],
+  &quot;cost&quot;: {&quot;elapsed_seconds&quot;: null, &quot;model_calls&quot;: null, &quot;tool_calls&quot;: null, &quot;usd&quot;: null}
+}</pre></details><label>审核结论 <select data-id="RA02-B"><option>待审核</option><option>通过</option><option>部分正确</option><option>错误</option><option>待确认</option></select></label><p>请记录：干预是否准确、保留条件是否成立、反例或证明是否有效、证据是否诚实。</p><textarea data-id="RA02-B" rows="5" placeholder="具体理由、疑点及核验依据"></textarea></article><article><h2>RA03-A</h2><h3>题目</h3><pre>{
+  &quot;task_id&quot;: &quot;RA03&quot;,
+  &quot;subject&quot;: &quot;实分析&quot;,
+  &quot;statement&quot;: &quot;测度可测集E_n递减且μ(E1)&lt;∞，则μ(∩E_n)=lim μ(E_n)&quot;,
+  &quot;hypotheses&quot;: [
+    {
+      &quot;id&quot;: &quot;H1&quot;,
+      &quot;text&quot;: &quot;E_n可测且递减&quot;
+    },
+    {
+      &quot;id&quot;: &quot;H2&quot;,
+      &quot;text&quot;: &quot;μ(E1)&lt;∞&quot;
+    }
+  ],
+  &quot;intervention&quot;: {
+    &quot;removed&quot;: [
+      &quot;H2&quot;
+    ],
+    &quot;replacement&quot;: null
+  },
+  &quot;conclusions&quot;: [
+    {
+      &quot;id&quot;: &quot;C1&quot;,
+      &quot;text&quot;: &quot;测度从上连续&quot;
+    }
+  ],
+  &quot;ambient&quot;: &quot;按定理的明确对象约定&quot;
+}</pre><h3>模型回答</h3><pre>判断：indispensable
+
+反例：取实数集上的勒贝格测度，令E_n=[n,∞)（n≥1）。
+
+保留条件核验：
+[
+  {
+    &quot;id&quot;: &quot;H1&quot;,
+    &quot;argument&quot;: &quot;每个E_n都是闭集，因而可测；且E_{n+1}⊆E_n。&quot;
+  }
+]
+
+替代条件核验：
+[]
+
+结论失效：
+{
+  &quot;id&quot;: &quot;C1&quot;,
+  &quot;argument&quot;: &quot;∩_{n≥1}E_n=∅，故μ(∩_{n≥1}E_n)=0；但每个μ(E_n)=∞，故lim_{n→∞}μ(E_n)=∞，两者不相等。&quot;
+}
+
+整体论证：
+删去H2后，上述对象满足保留的全部假设，却不满足测度从上连续的结论，因此H2不可缺少。
+
+证据：
+[
+  {
+    &quot;kind&quot;: &quot;mathematical_argument&quot;,
+    &quot;artifact&quot;: null,
+    &quot;scope&quot;: &quot;核对保留假设并构造结论不成立的反例&quot;
+  }
+]
+
+条件依赖：
+[]
+
+不确定性：
+[]</pre><details><summary>展开完整原始回答（含模型提取的假设与干预）</summary><pre>{
+  &quot;task_id&quot;: &quot;RA03&quot;,
+  &quot;hypotheses&quot;: [
+    {&quot;id&quot;: &quot;H1&quot;, &quot;text&quot;: &quot;E_n可测且递减&quot;},
+    {&quot;id&quot;: &quot;H2&quot;, &quot;text&quot;: &quot;μ(E1)&lt;∞&quot;}
+  ],
+  &quot;intervention&quot;: {&quot;removed&quot;: [&quot;H2&quot;], &quot;replacement&quot;: null},
+  &quot;judgment&quot;: &quot;indispensable&quot;,
+  &quot;witness&quot;: &quot;取实数集上的勒贝格测度，令E_n=[n,∞)（n≥1）。&quot;,
+  &quot;retained_checks&quot;: [
+    {&quot;id&quot;: &quot;H1&quot;, &quot;argument&quot;: &quot;每个E_n都是闭集，因而可测；且E_{n+1}⊆E_n。&quot;}
+  ],
+  &quot;replacement_checks&quot;: [],
+  &quot;target_failure&quot;: {
+    &quot;id&quot;: &quot;C1&quot;,
+    &quot;argument&quot;: &quot;∩_{n≥1}E_n=∅，故μ(∩_{n≥1}E_n)=0；但每个μ(E_n)=∞，故lim_{n→∞}μ(E_n)=∞，两者不相等。&quot;
+  },
+  &quot;argument&quot;: &quot;删去H2后，上述对象满足保留的全部假设，却不满足测度从上连续的结论，因此H2不可缺少。&quot;,
+  &quot;evidence&quot;: [
+    {&quot;kind&quot;: &quot;mathematical_argument&quot;, &quot;artifact&quot;: null, &quot;scope&quot;: &quot;核对保留假设并构造结论不成立的反例&quot;}
+  ],
+  &quot;dependencies&quot;: [],
+  &quot;uncertainties&quot;: [],
+  &quot;next_steps&quot;: [],
+  &quot;cost&quot;: {&quot;elapsed_seconds&quot;: null, &quot;model_calls&quot;: null, &quot;tool_calls&quot;: null, &quot;usd&quot;: null}
+}</pre></details><label>审核结论 <select data-id="RA03-A"><option>待审核</option><option>通过</option><option>部分正确</option><option>错误</option><option>待确认</option></select></label><p>请记录：干预是否准确、保留条件是否成立、反例或证明是否有效、证据是否诚实。</p><textarea data-id="RA03-A" rows="5" placeholder="具体理由、疑点及核验依据"></textarea></article><article><h2>RA03-B</h2><h3>题目</h3><pre>{
+  &quot;task_id&quot;: &quot;RA03&quot;,
+  &quot;subject&quot;: &quot;实分析&quot;,
+  &quot;statement&quot;: &quot;测度可测集E_n递减且μ(E1)&lt;∞，则μ(∩E_n)=lim μ(E_n)&quot;,
+  &quot;hypotheses&quot;: [
+    {
+      &quot;id&quot;: &quot;H1&quot;,
+      &quot;text&quot;: &quot;E_n可测且递减&quot;
+    },
+    {
+      &quot;id&quot;: &quot;H2&quot;,
+      &quot;text&quot;: &quot;μ(E1)&lt;∞&quot;
+    }
+  ],
+  &quot;intervention&quot;: {
+    &quot;removed&quot;: [
+      &quot;H2&quot;
+    ],
+    &quot;replacement&quot;: null
+  },
+  &quot;conclusions&quot;: [
+    {
+      &quot;id&quot;: &quot;C1&quot;,
+      &quot;text&quot;: &quot;测度从上连续&quot;
+    }
+  ],
+  &quot;ambient&quot;: &quot;按定理的明确对象约定&quot;
+}</pre><h3>模型回答</h3><pre>判断：indispensable
+
+反例：取实数上的勒贝格测度，令E_n=[n,∞)，n≥1。
+
+保留条件核验：
+[
+  {
+    &quot;id&quot;: &quot;H1&quot;,
+    &quot;argument&quot;: &quot;每个E_n都是闭集，因而可测；且E_{n+1}⊆E_n。&quot;
+  }
+]
+
+替代条件核验：
+[]
+
+结论失效：
+{
+  &quot;id&quot;: &quot;C1&quot;,
+  &quot;argument&quot;: &quot;∩_{n≥1}E_n=∅，故μ(∩_{n≥1}E_n)=0；但每个μ(E_n)=∞，所以lim_{n→∞}μ(E_n)=∞，两者不相等。&quot;
+}
+
+整体论证：
+此例中μ(E_1)=∞，确实不满足被删除的H2；保留H1后，结论C1仍失败。因此H2在其余条件不变时不可删。
+
+证据：
+[
+  {
+    &quot;kind&quot;: &quot;mathematical_argument&quot;,
+    &quot;artifact&quot;: null,
+    &quot;scope&quot;: &quot;核对保留假设、被删假设不成立及C1的精确否定&quot;
+  }
+]
+
+条件依赖：
+[]
+
+不确定性：
+[]</pre><details><summary>展开完整原始回答（含模型提取的假设与干预）</summary><pre>{
+  &quot;task_id&quot;: &quot;RA03&quot;,
+  &quot;hypotheses&quot;: [
+    {&quot;id&quot;: &quot;H1&quot;, &quot;text&quot;: &quot;E_n可测且递减&quot;},
+    {&quot;id&quot;: &quot;H2&quot;, &quot;text&quot;: &quot;μ(E_1)&lt;∞&quot;}
+  ],
+  &quot;intervention&quot;: {&quot;removed&quot;: [&quot;H2&quot;], &quot;replacement&quot;: null},
+  &quot;judgment&quot;: &quot;indispensable&quot;,
+  &quot;witness&quot;: &quot;取实数上的勒贝格测度，令E_n=[n,∞)，n≥1。&quot;,
+  &quot;retained_checks&quot;: [
+    {&quot;id&quot;: &quot;H1&quot;, &quot;argument&quot;: &quot;每个E_n都是闭集，因而可测；且E_{n+1}⊆E_n。&quot;}
+  ],
+  &quot;replacement_checks&quot;: [],
+  &quot;target_failure&quot;: {
+    &quot;id&quot;: &quot;C1&quot;,
+    &quot;argument&quot;: &quot;∩_{n≥1}E_n=∅，故μ(∩_{n≥1}E_n)=0；但每个μ(E_n)=∞，所以lim_{n→∞}μ(E_n)=∞，两者不相等。&quot;
+  },
+  &quot;argument&quot;: &quot;此例中μ(E_1)=∞，确实不满足被删除的H2；保留H1后，结论C1仍失败。因此H2在其余条件不变时不可删。&quot;,
+  &quot;evidence&quot;: [
+    {&quot;kind&quot;: &quot;mathematical_argument&quot;, &quot;artifact&quot;: null, &quot;scope&quot;: &quot;核对保留假设、被删假设不成立及C1的精确否定&quot;}
+  ],
+  &quot;dependencies&quot;: [],
+  &quot;uncertainties&quot;: [],
+  &quot;next_steps&quot;: [],
+  &quot;cost&quot;: {&quot;elapsed_seconds&quot;: null, &quot;model_calls&quot;: null, &quot;tool_calls&quot;: null, &quot;usd&quot;: null}
+}</pre></details><label>审核结论 <select data-id="RA03-B"><option>待审核</option><option>通过</option><option>部分正确</option><option>错误</option><option>待确认</option></select></label><p>请记录：干预是否准确、保留条件是否成立、反例或证明是否有效、证据是否诚实。</p><textarea data-id="RA03-B" rows="5" placeholder="具体理由、疑点及核验依据"></textarea></article><article><h2>CA01-A</h2><h3>题目</h3><pre>{
+  &quot;task_id&quot;: &quot;CA01&quot;,
+  &quot;subject&quot;: &quot;复分析&quot;,
+  &quot;statement&quot;: &quot;有界整函数为常数&quot;,
+  &quot;hypotheses&quot;: [
+    {
+      &quot;id&quot;: &quot;H1&quot;,
+      &quot;text&quot;: &quot;f在C上全纯&quot;
+    },
+    {
+      &quot;id&quot;: &quot;H2&quot;,
+      &quot;text&quot;: &quot;f在C上有界&quot;
+    }
+  ],
+  &quot;intervention&quot;: {
+    &quot;removed&quot;: [
+      &quot;H2&quot;
+    ],
+    &quot;replacement&quot;: null
+  },
+  &quot;conclusions&quot;: [
+    {
+      &quot;id&quot;: &quot;C1&quot;,
+      &quot;text&quot;: &quot;f为常数&quot;
+    }
+  ],
+  &quot;ambient&quot;: &quot;按定理的明确对象约定&quot;
+}</pre><h3>模型回答</h3><pre>判断：indispensable
+
+反例：f:ℂ→ℂ，f(z)=z
+
+保留条件核验：
+[
+  {
+    &quot;id&quot;: &quot;H1&quot;,
+    &quot;argument&quot;: &quot;f(z)=z是多项式，因此在ℂ上全纯。&quot;
+  }
+]
+
+替代条件核验：
+[]
+
+结论失效：
+{
+  &quot;id&quot;: &quot;C1&quot;,
+  &quot;argument&quot;: &quot;f(0)=0而f(1)=1，故f不是常数。&quot;
+}
+
+整体论证：
+对任意M≥0，取实数z&gt;M，则|f(z)|=z&gt;M，故该函数不满足被删除的H2。它满足全部保留假设却不满足C1，因此H2在保留H1的背景下不可删除。
+
+证据：
+[
+  {
+    &quot;kind&quot;: &quot;mathematical_argument&quot;,
+    &quot;artifact&quot;: null,
+    &quot;scope&quot;: &quot;核对反例的对象类别、H1、非H2及非C1&quot;
+  }
+]
+
+条件依赖：
+[]
+
+不确定性：
+[]</pre><details><summary>展开完整原始回答（含模型提取的假设与干预）</summary><pre>{
+  &quot;task_id&quot;: &quot;CA01&quot;,
+  &quot;hypotheses&quot;: [
+    {&quot;id&quot;: &quot;H1&quot;, &quot;text&quot;: &quot;f:ℂ→ℂ在ℂ上全纯&quot;},
+    {&quot;id&quot;: &quot;H2&quot;, &quot;text&quot;: &quot;f在ℂ上有界&quot;}
+  ],
+  &quot;intervention&quot;: {&quot;removed&quot;: [&quot;H2&quot;], &quot;replacement&quot;: null},
+  &quot;judgment&quot;: &quot;indispensable&quot;,
+  &quot;witness&quot;: &quot;f:ℂ→ℂ，f(z)=z&quot;,
+  &quot;retained_checks&quot;: [
+    {&quot;id&quot;: &quot;H1&quot;, &quot;argument&quot;: &quot;f(z)=z是多项式，因此在ℂ上全纯。&quot;}
+  ],
+  &quot;replacement_checks&quot;: [],
+  &quot;target_failure&quot;: {
+    &quot;id&quot;: &quot;C1&quot;,
+    &quot;argument&quot;: &quot;f(0)=0而f(1)=1，故f不是常数。&quot;
+  },
+  &quot;argument&quot;: &quot;对任意M≥0，取实数z&gt;M，则|f(z)|=z&gt;M，故该函数不满足被删除的H2。它满足全部保留假设却不满足C1，因此H2在保留H1的背景下不可删除。&quot;,
+  &quot;evidence&quot;: [
+    {
+      &quot;kind&quot;: &quot;mathematical_argument&quot;,
+      &quot;artifact&quot;: null,
+      &quot;scope&quot;: &quot;核对反例的对象类别、H1、非H2及非C1&quot;
+    }
+  ],
+  &quot;dependencies&quot;: [],
+  &quot;uncertainties&quot;: [],
+  &quot;next_steps&quot;: [],
+  &quot;cost&quot;: {
+    &quot;elapsed_seconds&quot;: null,
+    &quot;model_calls&quot;: null,
+    &quot;tool_calls&quot;: null,
+    &quot;usd&quot;: null
+  }
+}</pre></details><label>审核结论 <select data-id="CA01-A"><option>待审核</option><option>通过</option><option>部分正确</option><option>错误</option><option>待确认</option></select></label><p>请记录：干预是否准确、保留条件是否成立、反例或证明是否有效、证据是否诚实。</p><textarea data-id="CA01-A" rows="5" placeholder="具体理由、疑点及核验依据"></textarea></article><article><h2>CA01-B</h2><h3>题目</h3><pre>{
+  &quot;task_id&quot;: &quot;CA01&quot;,
+  &quot;subject&quot;: &quot;复分析&quot;,
+  &quot;statement&quot;: &quot;有界整函数为常数&quot;,
+  &quot;hypotheses&quot;: [
+    {
+      &quot;id&quot;: &quot;H1&quot;,
+      &quot;text&quot;: &quot;f在C上全纯&quot;
+    },
+    {
+      &quot;id&quot;: &quot;H2&quot;,
+      &quot;text&quot;: &quot;f在C上有界&quot;
+    }
+  ],
+  &quot;intervention&quot;: {
+    &quot;removed&quot;: [
+      &quot;H2&quot;
+    ],
+    &quot;replacement&quot;: null
+  },
+  &quot;conclusions&quot;: [
+    {
+      &quot;id&quot;: &quot;C1&quot;,
+      &quot;text&quot;: &quot;f为常数&quot;
+    }
+  ],
+  &quot;ambient&quot;: &quot;按定理的明确对象约定&quot;
+}</pre><h3>模型回答</h3><pre>判断：indispensable
+
+反例：f(z)=z（z∈C）
+
+保留条件核验：
+[
+  {
+    &quot;id&quot;: &quot;H1&quot;,
+    &quot;argument&quot;: &quot;f(z)=z在每一点的复导数均为1，因此在C上全纯。&quot;
+  }
+]
+
+替代条件核验：
+[]
+
+结论失效：
+{
+  &quot;id&quot;: &quot;C1&quot;,
+  &quot;argument&quot;: &quot;f(0)=0而f(1)=1，故f不是常数。&quot;
+}
+
+整体论证：
+删除H2后，f(z)=z满足保留的全部假设，却不满足结论C1。因此H2对该结论不可缺少。
+
+证据：
+[
+  {
+    &quot;kind&quot;: &quot;mathematical_argument&quot;,
+    &quot;artifact&quot;: null,
+    &quot;scope&quot;: &quot;反例满足H1且否定C1&quot;
+  }
+]
+
+条件依赖：
+[]
+
+不确定性：
+[]</pre><details><summary>展开完整原始回答（含模型提取的假设与干预）</summary><pre>{
+  &quot;task_id&quot;: &quot;CA01&quot;,
+  &quot;hypotheses&quot;: [
+    {&quot;id&quot;: &quot;H1&quot;, &quot;text&quot;: &quot;f在复平面C上全纯&quot;},
+    {&quot;id&quot;: &quot;H2&quot;, &quot;text&quot;: &quot;f在复平面C上有界&quot;}
+  ],
+  &quot;intervention&quot;: {&quot;removed&quot;: [&quot;H2&quot;], &quot;replacement&quot;: null},
+  &quot;judgment&quot;: &quot;indispensable&quot;,
+  &quot;witness&quot;: &quot;f(z)=z（z∈C）&quot;,
+  &quot;retained_checks&quot;: [
+    {&quot;id&quot;: &quot;H1&quot;, &quot;argument&quot;: &quot;f(z)=z在每一点的复导数均为1，因此在C上全纯。&quot;}
+  ],
+  &quot;replacement_checks&quot;: [],
+  &quot;target_failure&quot;: {
+    &quot;id&quot;: &quot;C1&quot;,
+    &quot;argument&quot;: &quot;f(0)=0而f(1)=1，故f不是常数。&quot;
+  },
+  &quot;argument&quot;: &quot;删除H2后，f(z)=z满足保留的全部假设，却不满足结论C1。因此H2对该结论不可缺少。&quot;,
+  &quot;evidence&quot;: [
+    {&quot;kind&quot;: &quot;mathematical_argument&quot;, &quot;artifact&quot;: null, &quot;scope&quot;: &quot;反例满足H1且否定C1&quot;}
+  ],
+  &quot;dependencies&quot;: [],
+  &quot;uncertainties&quot;: [],
+  &quot;next_steps&quot;: [],
+  &quot;cost&quot;: {&quot;elapsed_seconds&quot;: null, &quot;model_calls&quot;: null, &quot;tool_calls&quot;: null, &quot;usd&quot;: null}
+}</pre></details><label>审核结论 <select data-id="CA01-B"><option>待审核</option><option>通过</option><option>部分正确</option><option>错误</option><option>待确认</option></select></label><p>请记录：干预是否准确、保留条件是否成立、反例或证明是否有效、证据是否诚实。</p><textarea data-id="CA01-B" rows="5" placeholder="具体理由、疑点及核验依据"></textarea></article><article><h2>CA02-A</h2><h3>题目</h3><pre>{
+  &quot;task_id&quot;: &quot;CA02&quot;,
+  &quot;subject&quot;: &quot;复分析&quot;,
+  &quot;statement&quot;: &quot;有界整函数为常数&quot;,
+  &quot;hypotheses&quot;: [
+    {
+      &quot;id&quot;: &quot;H1&quot;,
+      &quot;text&quot;: &quot;f在C上全纯&quot;
+    },
+    {
+      &quot;id&quot;: &quot;H2&quot;,
+      &quot;text&quot;: &quot;f在C上有界&quot;
+    }
+  ],
+  &quot;intervention&quot;: {
+    &quot;removed&quot;: [
+      &quot;H1&quot;
+    ],
+    &quot;replacement&quot;: null
+  },
+  &quot;conclusions&quot;: [
+    {
+      &quot;id&quot;: &quot;C1&quot;,
+      &quot;text&quot;: &quot;f为常数&quot;
+    }
+  ],
+  &quot;ambient&quot;: &quot;按定理的明确对象约定&quot;
+}</pre><h3>模型回答</h3><pre>判断：indispensable
+
+反例：f(z)=z̄/(1+|z|²)，定义于整个 ℂ。
+
+保留条件核验：
+[
+  {
+    &quot;id&quot;: &quot;H2&quot;,
+    &quot;argument&quot;: &quot;令 t=|z|≥0，则 |f(z)|=t/(1+t²)≤1/2，故 f 在 ℂ 上有界。&quot;
+  }
+]
+
+替代条件核验：
+[]
+
+结论失效：
+{
+  &quot;id&quot;: &quot;C1&quot;,
+  &quot;argument&quot;: &quot;f(0)=0，而 f(1)=1/2，因此 f 不是常数。&quot;
+}
+
+整体论证：
+删除全纯性后，对象仍是定义于 ℂ 的复值函数。此例满足保留的有界性条件，却不是常数；且 f 在 0 处不复可微：沿实轴趋于 0 时 f(h)/h→1，沿虚轴趋于 0 时 f(h)/h→−1。因此它确实不满足被删除的 H1。
+
+证据：
+[
+  {
+    &quot;kind&quot;: &quot;mathematical_argument&quot;,
+    &quot;artifact&quot;: null,
+    &quot;scope&quot;: &quot;核对函数的定义域、有界性、非全纯性及结论 C1 失效。&quot;
+  }
+]
+
+条件依赖：
+[]
+
+不确定性：
+[]</pre><details><summary>展开完整原始回答（含模型提取的假设与干预）</summary><pre>{
+  &quot;task_id&quot;: &quot;CA02&quot;,
+  &quot;hypotheses&quot;: [
+    {&quot;id&quot;: &quot;H1&quot;, &quot;text&quot;: &quot;f:ℂ→ℂ 在 ℂ 上全纯&quot;},
+    {&quot;id&quot;: &quot;H2&quot;, &quot;text&quot;: &quot;f 在 ℂ 上有界&quot;}
+  ],
+  &quot;intervention&quot;: {&quot;removed&quot;: [&quot;H1&quot;], &quot;replacement&quot;: null},
+  &quot;judgment&quot;: &quot;indispensable&quot;,
+  &quot;witness&quot;: &quot;f(z)=z̄/(1+|z|²)，定义于整个 ℂ。&quot;,
+  &quot;retained_checks&quot;: [
+    {&quot;id&quot;: &quot;H2&quot;, &quot;argument&quot;: &quot;令 t=|z|≥0，则 |f(z)|=t/(1+t²)≤1/2，故 f 在 ℂ 上有界。&quot;}
+  ],
+  &quot;replacement_checks&quot;: [],
+  &quot;target_failure&quot;: {
+    &quot;id&quot;: &quot;C1&quot;,
+    &quot;argument&quot;: &quot;f(0)=0，而 f(1)=1/2，因此 f 不是常数。&quot;
+  },
+  &quot;argument&quot;: &quot;删除全纯性后，对象仍是定义于 ℂ 的复值函数。此例满足保留的有界性条件，却不是常数；且 f 在 0 处不复可微：沿实轴趋于 0 时 f(h)/h→1，沿虚轴趋于 0 时 f(h)/h→−1。因此它确实不满足被删除的 H1。&quot;,
+  &quot;evidence&quot;: [
+    {&quot;kind&quot;: &quot;mathematical_argument&quot;, &quot;artifact&quot;: null, &quot;scope&quot;: &quot;核对函数的定义域、有界性、非全纯性及结论 C1 失效。&quot;}
+  ],
+  &quot;dependencies&quot;: [],
+  &quot;uncertainties&quot;: [],
+  &quot;next_steps&quot;: [],
+  &quot;cost&quot;: {&quot;elapsed_seconds&quot;: null, &quot;model_calls&quot;: null, &quot;tool_calls&quot;: null, &quot;usd&quot;: null}
+}</pre></details><label>审核结论 <select data-id="CA02-A"><option>待审核</option><option>通过</option><option>部分正确</option><option>错误</option><option>待确认</option></select></label><p>请记录：干预是否准确、保留条件是否成立、反例或证明是否有效、证据是否诚实。</p><textarea data-id="CA02-A" rows="5" placeholder="具体理由、疑点及核验依据"></textarea></article><article><h2>CA02-B</h2><h3>题目</h3><pre>{
+  &quot;task_id&quot;: &quot;CA02&quot;,
+  &quot;subject&quot;: &quot;复分析&quot;,
+  &quot;statement&quot;: &quot;有界整函数为常数&quot;,
+  &quot;hypotheses&quot;: [
+    {
+      &quot;id&quot;: &quot;H1&quot;,
+      &quot;text&quot;: &quot;f在C上全纯&quot;
+    },
+    {
+      &quot;id&quot;: &quot;H2&quot;,
+      &quot;text&quot;: &quot;f在C上有界&quot;
+    }
+  ],
+  &quot;intervention&quot;: {
+    &quot;removed&quot;: [
+      &quot;H1&quot;
+    ],
+    &quot;replacement&quot;: null
+  },
+  &quot;conclusions&quot;: [
+    {
+      &quot;id&quot;: &quot;C1&quot;,
+      &quot;text&quot;: &quot;f为常数&quot;
+    }
+  ],
+  &quot;ambient&quot;: &quot;按定理的明确对象约定&quot;
+}</pre><h3>模型回答</h3><pre>判断：indispensable
+
+反例：定义f:C→C，f(z)=|z|/(1+|z|)。
+
+保留条件核验：
+[
+  {
+    &quot;id&quot;: &quot;H2&quot;,
+    &quot;argument&quot;: &quot;对任意z∈C，有0≤f(z)&lt;1，因此f在C上有界。&quot;
+  }
+]
+
+替代条件核验：
+[]
+
+结论失效：
+{
+  &quot;id&quot;: &quot;C1&quot;,
+  &quot;argument&quot;: &quot;f(0)=0，而f(1)=1/2，故f不是常数。&quot;
+}
+
+整体论证：
+删去全纯假设后，仅要求定义在C上的函数有界；上述函数满足保留的假设，却不满足结论。
+
+证据：
+[
+  {
+    &quot;kind&quot;: &quot;mathematical_argument&quot;,
+    &quot;artifact&quot;: null,
+    &quot;scope&quot;: &quot;构造反例并检验H2成立、C1不成立&quot;
+  }
+]
+
+条件依赖：
+[]
+
+不确定性：
+[]</pre><details><summary>展开完整原始回答（含模型提取的假设与干预）</summary><pre>{
+  &quot;task_id&quot;: &quot;CA02&quot;,
+  &quot;hypotheses&quot;: [
+    {&quot;id&quot;: &quot;H1&quot;, &quot;text&quot;: &quot;f在C上全纯&quot;},
+    {&quot;id&quot;: &quot;H2&quot;, &quot;text&quot;: &quot;f在C上有界&quot;}
+  ],
+  &quot;intervention&quot;: {&quot;removed&quot;: [&quot;H1&quot;], &quot;replacement&quot;: null},
+  &quot;judgment&quot;: &quot;indispensable&quot;,
+  &quot;witness&quot;: &quot;定义f:C→C，f(z)=|z|/(1+|z|)。&quot;,
+  &quot;retained_checks&quot;: [
+    {&quot;id&quot;: &quot;H2&quot;, &quot;argument&quot;: &quot;对任意z∈C，有0≤f(z)&lt;1，因此f在C上有界。&quot;}
+  ],
+  &quot;replacement_checks&quot;: [],
+  &quot;target_failure&quot;: {&quot;id&quot;: &quot;C1&quot;, &quot;argument&quot;: &quot;f(0)=0，而f(1)=1/2，故f不是常数。&quot;},
+  &quot;argument&quot;: &quot;删去全纯假设后，仅要求定义在C上的函数有界；上述函数满足保留的假设，却不满足结论。&quot;,
+  &quot;evidence&quot;: [
+    {&quot;kind&quot;: &quot;mathematical_argument&quot;, &quot;artifact&quot;: null, &quot;scope&quot;: &quot;构造反例并检验H2成立、C1不成立&quot;}
+  ],
+  &quot;dependencies&quot;: [],
+  &quot;uncertainties&quot;: [],
+  &quot;next_steps&quot;: [],
+  &quot;cost&quot;: {&quot;elapsed_seconds&quot;: null, &quot;model_calls&quot;: null, &quot;tool_calls&quot;: null, &quot;usd&quot;: null}
+}</pre></details><label>审核结论 <select data-id="CA02-B"><option>待审核</option><option>通过</option><option>部分正确</option><option>错误</option><option>待确认</option></select></label><p>请记录：干预是否准确、保留条件是否成立、反例或证明是否有效、证据是否诚实。</p><textarea data-id="CA02-B" rows="5" placeholder="具体理由、疑点及核验依据"></textarea></article><article><h2>CA04-A</h2><h3>题目</h3><pre>{
+  &quot;task_id&quot;: &quot;CA04&quot;,
+  &quot;subject&quot;: &quot;复分析&quot;,
+  &quot;statement&quot;: &quot;连通开集Ω上全纯f的零点在Ω有聚点，则f恒零&quot;,
+  &quot;hypotheses&quot;: [
+    {
+      &quot;id&quot;: &quot;H1&quot;,
+      &quot;text&quot;: &quot;Ω连通&quot;
+    },
+    {
+      &quot;id&quot;: &quot;H2&quot;,
+      &quot;text&quot;: &quot;f在Ω全纯&quot;
+    },
+    {
+      &quot;id&quot;: &quot;H3&quot;,
+      &quot;text&quot;: &quot;零点在Ω内有聚点&quot;
+    },
+    {
+      &quot;id&quot;: &quot;H4&quot;,
+      &quot;text&quot;: &quot;Ω为非空开集&quot;
+    }
+  ],
+  &quot;intervention&quot;: {
+    &quot;removed&quot;: [
+      &quot;H3&quot;
+    ],
+    &quot;replacement&quot;: null
+  },
+  &quot;conclusions&quot;: [
+    {
+      &quot;id&quot;: &quot;C1&quot;,
+      &quot;text&quot;: &quot;f恒零&quot;
+    }
+  ],
+  &quot;ambient&quot;: &quot;Ω⊂C，f:Ω→C；全纯按开集上的逐点定义，不预设连通性。&quot;
+}</pre><h3>模型回答</h3><pre>判断：indispensable
+
+反例：取Ω=ℂ，f:ℂ→ℂ，f(z)=z。
+
+保留条件核验：
+[
+  {
+    &quot;id&quot;: &quot;H1&quot;,
+    &quot;argument&quot;: &quot;ℂ是路径连通的，因此连通。&quot;
+  },
+  {
+    &quot;id&quot;: &quot;H2&quot;,
+    &quot;argument&quot;: &quot;f(z)=z在ℂ上处处复可微，故全纯。&quot;
+  },
+  {
+    &quot;id&quot;: &quot;H4&quot;,
+    &quot;argument&quot;: &quot;ℂ是非空开集。&quot;
+  }
+]
+
+替代条件核验：
+[]
+
+结论失效：
+{
+  &quot;id&quot;: &quot;C1&quot;,
+  &quot;argument&quot;: &quot;f(1)=1≠0，因此f不恒零。&quot;
+}
+
+整体论证：
+f的零点集仅为{0}，在Ω内没有聚点，故H3确实不成立；其余假设均成立而C1不成立。
+
+证据：
+[
+  {
+    &quot;kind&quot;: &quot;mathematical_argument&quot;,
+    &quot;artifact&quot;: null,
+    &quot;scope&quot;: &quot;验证对象及全部保留假设、被删假设不成立和C1失败&quot;
+  }
+]
+
+条件依赖：
+[]
+
+不确定性：
+[]</pre><details><summary>展开完整原始回答（含模型提取的假设与干预）</summary><pre>{
+  &quot;task_id&quot;: &quot;CA04&quot;,
+  &quot;hypotheses&quot;: [
+    {&quot;id&quot;: &quot;H1&quot;, &quot;text&quot;: &quot;Ω连通&quot;},
+    {&quot;id&quot;: &quot;H2&quot;, &quot;text&quot;: &quot;f在Ω全纯&quot;},
+    {&quot;id&quot;: &quot;H3&quot;, &quot;text&quot;: &quot;f的零点在Ω内有聚点&quot;},
+    {&quot;id&quot;: &quot;H4&quot;, &quot;text&quot;: &quot;Ω为非空开集&quot;}
+  ],
+  &quot;intervention&quot;: {&quot;removed&quot;: [&quot;H3&quot;], &quot;replacement&quot;: null},
+  &quot;judgment&quot;: &quot;indispensable&quot;,
+  &quot;witness&quot;: &quot;取Ω=ℂ，f:ℂ→ℂ，f(z)=z。&quot;,
+  &quot;retained_checks&quot;: [
+    {&quot;id&quot;: &quot;H1&quot;, &quot;argument&quot;: &quot;ℂ是路径连通的，因此连通。&quot;},
+    {&quot;id&quot;: &quot;H2&quot;, &quot;argument&quot;: &quot;f(z)=z在ℂ上处处复可微，故全纯。&quot;},
+    {&quot;id&quot;: &quot;H4&quot;, &quot;argument&quot;: &quot;ℂ是非空开集。&quot;}
+  ],
+  &quot;replacement_checks&quot;: [],
+  &quot;target_failure&quot;: {&quot;id&quot;: &quot;C1&quot;, &quot;argument&quot;: &quot;f(1)=1≠0，因此f不恒零。&quot;},
+  &quot;argument&quot;: &quot;f的零点集仅为{0}，在Ω内没有聚点，故H3确实不成立；其余假设均成立而C1不成立。&quot;,
+  &quot;evidence&quot;: [
+    {&quot;kind&quot;: &quot;mathematical_argument&quot;, &quot;artifact&quot;: null, &quot;scope&quot;: &quot;验证对象及全部保留假设、被删假设不成立和C1失败&quot;}
+  ],
+  &quot;dependencies&quot;: [],
+  &quot;uncertainties&quot;: [],
+  &quot;next_steps&quot;: [],
+  &quot;cost&quot;: {&quot;elapsed_seconds&quot;: null, &quot;model_calls&quot;: null, &quot;tool_calls&quot;: null, &quot;usd&quot;: null}
+}</pre></details><label>审核结论 <select data-id="CA04-A"><option>待审核</option><option>通过</option><option>部分正确</option><option>错误</option><option>待确认</option></select></label><p>请记录：干预是否准确、保留条件是否成立、反例或证明是否有效、证据是否诚实。</p><textarea data-id="CA04-A" rows="5" placeholder="具体理由、疑点及核验依据"></textarea></article><article><h2>CA04-B</h2><h3>题目</h3><pre>{
+  &quot;task_id&quot;: &quot;CA04&quot;,
+  &quot;subject&quot;: &quot;复分析&quot;,
+  &quot;statement&quot;: &quot;连通开集Ω上全纯f的零点在Ω有聚点，则f恒零&quot;,
+  &quot;hypotheses&quot;: [
+    {
+      &quot;id&quot;: &quot;H1&quot;,
+      &quot;text&quot;: &quot;Ω连通&quot;
+    },
+    {
+      &quot;id&quot;: &quot;H2&quot;,
+      &quot;text&quot;: &quot;f在Ω全纯&quot;
+    },
+    {
+      &quot;id&quot;: &quot;H3&quot;,
+      &quot;text&quot;: &quot;零点在Ω内有聚点&quot;
+    },
+    {
+      &quot;id&quot;: &quot;H4&quot;,
+      &quot;text&quot;: &quot;Ω为非空开集&quot;
+    }
+  ],
+  &quot;intervention&quot;: {
+    &quot;removed&quot;: [
+      &quot;H3&quot;
+    ],
+    &quot;replacement&quot;: null
+  },
+  &quot;conclusions&quot;: [
+    {
+      &quot;id&quot;: &quot;C1&quot;,
+      &quot;text&quot;: &quot;f恒零&quot;
+    }
+  ],
+  &quot;ambient&quot;: &quot;Ω⊂C，f:Ω→C；全纯按开集上的逐点定义，不预设连通性。&quot;
+}</pre><h3>模型回答</h3><pre>判断：indispensable
+
+反例：取Ω=ℂ，f(z)=1（z∈ℂ）。
+
+保留条件核验：
+[
+  {
+    &quot;id&quot;: &quot;H1&quot;,
+    &quot;argument&quot;: &quot;ℂ连通。&quot;
+  },
+  {
+    &quot;id&quot;: &quot;H2&quot;,
+    &quot;argument&quot;: &quot;常值函数f(z)=1在ℂ全纯。&quot;
+  },
+  {
+    &quot;id&quot;: &quot;H4&quot;,
+    &quot;argument&quot;: &quot;ℂ是非空开集。&quot;
+  }
+]
+
+替代条件核验：
+[]
+
+结论失效：
+{
+  &quot;id&quot;: &quot;C1&quot;,
+  &quot;argument&quot;: &quot;对任意z∈Ω，f(z)=1≠0，因此f不恒零。&quot;
+}
+
+整体论证：
+删去H3后，此例满足全部保留假设，却不满足结论，故H3不可删。
+
+证据：
+[
+  {
+    &quot;kind&quot;: &quot;mathematical_argument&quot;,
+    &quot;artifact&quot;: null,
+    &quot;scope&quot;: &quot;反例满足H1、H2、H4且否定C1&quot;
+  }
+]
+
+条件依赖：
+[]
+
+不确定性：
+[]</pre><details><summary>展开完整原始回答（含模型提取的假设与干预）</summary><pre>{
+  &quot;task_id&quot;: &quot;CA04&quot;,
+  &quot;hypotheses&quot;: [
+    {&quot;id&quot;: &quot;H1&quot;, &quot;text&quot;: &quot;Ω连通&quot;},
+    {&quot;id&quot;: &quot;H2&quot;, &quot;text&quot;: &quot;f在Ω全纯&quot;},
+    {&quot;id&quot;: &quot;H3&quot;, &quot;text&quot;: &quot;零点在Ω内有聚点&quot;},
+    {&quot;id&quot;: &quot;H4&quot;, &quot;text&quot;: &quot;Ω为非空开集&quot;}
+  ],
+  &quot;intervention&quot;: {&quot;removed&quot;: [&quot;H3&quot;], &quot;replacement&quot;: null},
+  &quot;judgment&quot;: &quot;indispensable&quot;,
+  &quot;witness&quot;: &quot;取Ω=ℂ，f(z)=1（z∈ℂ）。&quot;,
+  &quot;retained_checks&quot;: [
+    {&quot;id&quot;: &quot;H1&quot;, &quot;argument&quot;: &quot;ℂ连通。&quot;},
+    {&quot;id&quot;: &quot;H2&quot;, &quot;argument&quot;: &quot;常值函数f(z)=1在ℂ全纯。&quot;},
+    {&quot;id&quot;: &quot;H4&quot;, &quot;argument&quot;: &quot;ℂ是非空开集。&quot;}
+  ],
+  &quot;replacement_checks&quot;: [],
+  &quot;target_failure&quot;: {&quot;id&quot;: &quot;C1&quot;, &quot;argument&quot;: &quot;对任意z∈Ω，f(z)=1≠0，因此f不恒零。&quot;},
+  &quot;argument&quot;: &quot;删去H3后，此例满足全部保留假设，却不满足结论，故H3不可删。&quot;,
+  &quot;evidence&quot;: [
+    {&quot;kind&quot;: &quot;mathematical_argument&quot;, &quot;artifact&quot;: null, &quot;scope&quot;: &quot;反例满足H1、H2、H4且否定C1&quot;}
+  ],
+  &quot;dependencies&quot;: [],
+  &quot;uncertainties&quot;: [],
+  &quot;next_steps&quot;: [],
+  &quot;cost&quot;: {&quot;elapsed_seconds&quot;: null, &quot;model_calls&quot;: null, &quot;tool_calls&quot;: null, &quot;usd&quot;: null}
+}</pre></details><label>审核结论 <select data-id="CA04-B"><option>待审核</option><option>通过</option><option>部分正确</option><option>错误</option><option>待确认</option></select></label><p>请记录：干预是否准确、保留条件是否成立、反例或证明是否有效、证据是否诚实。</p><textarea data-id="CA04-B" rows="5" placeholder="具体理由、疑点及核验依据"></textarea></article><article><h2>CA05-A</h2><h3>题目</h3><pre>{
+  &quot;task_id&quot;: &quot;CA05&quot;,
+  &quot;subject&quot;: &quot;复分析&quot;,
+  &quot;statement&quot;: &quot;连通域上全纯函数若模在内点取得局部最大则为常数&quot;,
+  &quot;hypotheses&quot;: [
+    {
+      &quot;id&quot;: &quot;H1&quot;,
+      &quot;text&quot;: &quot;Ω连通开&quot;
+    },
+    {
+      &quot;id&quot;: &quot;H2&quot;,
+      &quot;text&quot;: &quot;f在Ω全纯&quot;
+    },
+    {
+      &quot;id&quot;: &quot;H3&quot;,
+      &quot;text&quot;: &quot;|f|在内点有局部最大&quot;
+    }
+  ],
+  &quot;intervention&quot;: {
+    &quot;removed&quot;: [
+      &quot;H2&quot;
+    ],
+    &quot;replacement&quot;: null
+  },
+  &quot;conclusions&quot;: [
+    {
+      &quot;id&quot;: &quot;C1&quot;,
+      &quot;text&quot;: &quot;f为常数&quot;
+    }
+  ],
+  &quot;ambient&quot;: &quot;按定理的明确对象约定&quot;
+}</pre><h3>模型回答</h3><pre>判断：indispensable
+
+反例：取Ω={z∈ℂ:|z|&lt;1}，f(z)=1−|z|²。
+
+保留条件核验：
+[
+  {
+    &quot;id&quot;: &quot;H1&quot;,
+    &quot;argument&quot;: &quot;单位圆盘Ω是连通开集。&quot;
+  },
+  {
+    &quot;id&quot;: &quot;H3&quot;,
+    &quot;argument&quot;: &quot;对所有z∈Ω，有|f(z)|=1−|z|²≤1=|f(0)|；因此|f|在内点0取得局部最大。&quot;
+  }
+]
+
+替代条件核验：
+[]
+
+结论失效：
+{
+  &quot;id&quot;: &quot;C1&quot;,
+  &quot;argument&quot;: &quot;f(0)=1，而f(1/2)=3/4，故f不是常数。&quot;
+}
+
+整体论证：
+删除全纯性后，上述函数满足其余全部假设，却不满足结论。因此H2不可删去。
+
+证据：
+[
+  {
+    &quot;kind&quot;: &quot;mathematical_argument&quot;,
+    &quot;artifact&quot;: null,
+    &quot;scope&quot;: &quot;构造反例并逐项核对保留假设及结论的否定&quot;
+  }
+]
+
+条件依赖：
+[]
+
+不确定性：
+[]</pre><details><summary>展开完整原始回答（含模型提取的假设与干预）</summary><pre>{
+  &quot;task_id&quot;: &quot;CA05&quot;,
+  &quot;hypotheses&quot;: [
+    {&quot;id&quot;: &quot;H1&quot;, &quot;text&quot;: &quot;Ω连通开&quot;},
+    {&quot;id&quot;: &quot;H2&quot;, &quot;text&quot;: &quot;f在Ω全纯&quot;},
+    {&quot;id&quot;: &quot;H3&quot;, &quot;text&quot;: &quot;|f|在内点有局部最大&quot;}
+  ],
+  &quot;intervention&quot;: {&quot;removed&quot;: [&quot;H2&quot;], &quot;replacement&quot;: null},
+  &quot;judgment&quot;: &quot;indispensable&quot;,
+  &quot;witness&quot;: &quot;取Ω={z∈ℂ:|z|&lt;1}，f(z)=1−|z|²。&quot;,
+  &quot;retained_checks&quot;: [
+    {&quot;id&quot;: &quot;H1&quot;, &quot;argument&quot;: &quot;单位圆盘Ω是连通开集。&quot;},
+    {&quot;id&quot;: &quot;H3&quot;, &quot;argument&quot;: &quot;对所有z∈Ω，有|f(z)|=1−|z|²≤1=|f(0)|；因此|f|在内点0取得局部最大。&quot;}
+  ],
+  &quot;replacement_checks&quot;: [],
+  &quot;target_failure&quot;: {
+    &quot;id&quot;: &quot;C1&quot;,
+    &quot;argument&quot;: &quot;f(0)=1，而f(1/2)=3/4，故f不是常数。&quot;
+  },
+  &quot;argument&quot;: &quot;删除全纯性后，上述函数满足其余全部假设，却不满足结论。因此H2不可删去。&quot;,
+  &quot;evidence&quot;: [
+    {&quot;kind&quot;: &quot;mathematical_argument&quot;, &quot;artifact&quot;: null, &quot;scope&quot;: &quot;构造反例并逐项核对保留假设及结论的否定&quot;}
+  ],
+  &quot;dependencies&quot;: [],
+  &quot;uncertainties&quot;: [],
+  &quot;next_steps&quot;: [],
+  &quot;cost&quot;: {&quot;elapsed_seconds&quot;: null, &quot;model_calls&quot;: null, &quot;tool_calls&quot;: null, &quot;usd&quot;: null}
+}</pre></details><label>审核结论 <select data-id="CA05-A"><option>待审核</option><option>通过</option><option>部分正确</option><option>错误</option><option>待确认</option></select></label><p>请记录：干预是否准确、保留条件是否成立、反例或证明是否有效、证据是否诚实。</p><textarea data-id="CA05-A" rows="5" placeholder="具体理由、疑点及核验依据"></textarea></article><article><h2>CA05-B</h2><h3>题目</h3><pre>{
+  &quot;task_id&quot;: &quot;CA05&quot;,
+  &quot;subject&quot;: &quot;复分析&quot;,
+  &quot;statement&quot;: &quot;连通域上全纯函数若模在内点取得局部最大则为常数&quot;,
+  &quot;hypotheses&quot;: [
+    {
+      &quot;id&quot;: &quot;H1&quot;,
+      &quot;text&quot;: &quot;Ω连通开&quot;
+    },
+    {
+      &quot;id&quot;: &quot;H2&quot;,
+      &quot;text&quot;: &quot;f在Ω全纯&quot;
+    },
+    {
+      &quot;id&quot;: &quot;H3&quot;,
+      &quot;text&quot;: &quot;|f|在内点有局部最大&quot;
+    }
+  ],
+  &quot;intervention&quot;: {
+    &quot;removed&quot;: [
+      &quot;H2&quot;
+    ],
+    &quot;replacement&quot;: null
+  },
+  &quot;conclusions&quot;: [
+    {
+      &quot;id&quot;: &quot;C1&quot;,
+      &quot;text&quot;: &quot;f为常数&quot;
+    }
+  ],
+  &quot;ambient&quot;: &quot;按定理的明确对象约定&quot;
+}</pre><h3>模型回答</h3><pre>判断：indispensable
+
+反例：取Ω={z∈ℂ:|z|&lt;1}，f(z)=1−|z|²。
+
+保留条件核验：
+[
+  {
+    &quot;id&quot;: &quot;H1&quot;,
+    &quot;argument&quot;: &quot;Ω是开单位圆盘，且为凸集，故连通。&quot;
+  },
+  {
+    &quot;id&quot;: &quot;H3&quot;,
+    &quot;argument&quot;: &quot;0是Ω的内点；对所有z∈Ω，有|f(z)|=1−|z|²≤1=|f(0)|，故|f|在0取得局部最大。&quot;
+  }
+]
+
+替代条件核验：
+[]
+
+结论失效：
+{
+  &quot;id&quot;: &quot;C1&quot;,
+  &quot;argument&quot;: &quot;f(0)=1，而f(1/2)=3/4，因此f不是常数。&quot;
+}
+
+整体论证：
+删除全纯性后，仍以f:Ω→ℂ为对象。在z₀=1/2处，沿实方向的差商极限为−1，沿纯虚方向的差商极限为0，故f在z₀不可复微，确实不满足H2。该对象满足全部保留假设，却否定C1。
+
+证据：
+[
+  {
+    &quot;kind&quot;: &quot;mathematical_argument&quot;,
+    &quot;artifact&quot;: null,
+    &quot;scope&quot;: &quot;对象合法性、H1与H3、被删条件H2不成立及C1失败&quot;
+  }
+]
+
+条件依赖：
+[]
+
+不确定性：
+[]</pre><details><summary>展开完整原始回答（含模型提取的假设与干预）</summary><pre>{
+  &quot;task_id&quot;: &quot;CA05&quot;,
+  &quot;hypotheses&quot;: [
+    {&quot;id&quot;: &quot;H1&quot;, &quot;text&quot;: &quot;Ω是连通开集&quot;},
+    {&quot;id&quot;: &quot;H2&quot;, &quot;text&quot;: &quot;f:Ω→ℂ在Ω全纯&quot;},
+    {&quot;id&quot;: &quot;H3&quot;, &quot;text&quot;: &quot;|f|在Ω的内点取得局部最大&quot;}
+  ],
+  &quot;intervention&quot;: {&quot;removed&quot;: [&quot;H2&quot;], &quot;replacement&quot;: null},
+  &quot;judgment&quot;: &quot;indispensable&quot;,
+  &quot;witness&quot;: &quot;取Ω={z∈ℂ:|z|&lt;1}，f(z)=1−|z|²。&quot;,
+  &quot;retained_checks&quot;: [
+    {&quot;id&quot;: &quot;H1&quot;, &quot;argument&quot;: &quot;Ω是开单位圆盘，且为凸集，故连通。&quot;},
+    {&quot;id&quot;: &quot;H3&quot;, &quot;argument&quot;: &quot;0是Ω的内点；对所有z∈Ω，有|f(z)|=1−|z|²≤1=|f(0)|，故|f|在0取得局部最大。&quot;}
+  ],
+  &quot;replacement_checks&quot;: [],
+  &quot;target_failure&quot;: {&quot;id&quot;: &quot;C1&quot;, &quot;argument&quot;: &quot;f(0)=1，而f(1/2)=3/4，因此f不是常数。&quot;},
+  &quot;argument&quot;: &quot;删除全纯性后，仍以f:Ω→ℂ为对象。在z₀=1/2处，沿实方向的差商极限为−1，沿纯虚方向的差商极限为0，故f在z₀不可复微，确实不满足H2。该对象满足全部保留假设，却否定C1。&quot;,
+  &quot;evidence&quot;: [
+    {&quot;kind&quot;: &quot;mathematical_argument&quot;, &quot;artifact&quot;: null, &quot;scope&quot;: &quot;对象合法性、H1与H3、被删条件H2不成立及C1失败&quot;}
+  ],
+  &quot;dependencies&quot;: [],
+  &quot;uncertainties&quot;: [],
+  &quot;next_steps&quot;: [],
+  &quot;cost&quot;: {&quot;elapsed_seconds&quot;: null, &quot;model_calls&quot;: null, &quot;tool_calls&quot;: null, &quot;usd&quot;: null}
+}</pre></details><label>审核结论 <select data-id="CA05-B"><option>待审核</option><option>通过</option><option>部分正确</option><option>错误</option><option>待确认</option></select></label><p>请记录：干预是否准确、保留条件是否成立、反例或证明是否有效、证据是否诚实。</p><textarea data-id="CA05-B" rows="5" placeholder="具体理由、疑点及核验依据"></textarea></article><script>
+function downloadReviews(){const data={reviewer:document.querySelector('#reviewer').value,date:document.querySelector('#date').value,records:[...document.querySelectorAll('select[data-id]')].map(s=>({review_id:s.dataset.id,result:s.value,notes:document.querySelector('textarea[data-id="'+s.dataset.id+'"]').value}))};const a=document.createElement('a');const u=URL.createObjectURL(new Blob([JSON.stringify(data,null,2)],{type:'application/json'}));a.href=u;a.download='模型回答人工审核记录.json';a.click();setTimeout(()=>URL.revokeObjectURL(u),1000)}
+async function restoreReviews(input){if(!input.files[0])return;try{const d=JSON.parse(await input.files[0].text());document.querySelector('#reviewer').value=d.reviewer||'';document.querySelector('#date').value=d.date||'';for(const r of d.records||[]){const s=[...document.querySelectorAll('select[data-id]')].find(x=>x.dataset.id===r.review_id);if(s){s.value=r.result;document.querySelector('textarea[data-id="'+s.dataset.id+'"]').value=r.notes||''}}}catch(e){alert('导入失败：'+e.message)}}
+</script></html>

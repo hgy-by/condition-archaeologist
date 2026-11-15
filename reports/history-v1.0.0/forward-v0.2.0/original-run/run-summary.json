@@ -1,0 +1,25 @@
+{
+  "status": "four_subject_forward_outputs_written",
+  "kind": "actual_AI_reasoning",
+  "human_reviewed": false,
+  "formal_verified": false,
+  "benchmark_score": null,
+  "task_files": [
+    "math-analysis",
+    "higher-algebra",
+    "real-analysis",
+    "complex-analysis"
+  ],
+  "intervention_counts": [
+    3,
+    3,
+    4,
+    5
+  ],
+  "interface_findings": [
+    "输出规范示例需要显式包含replacement_checks，尤其弱化条件任务。",
+    "statement_issue在文字说明出现，但数学状态列表应同步列出。",
+    "类型前提与定义蕴含的优先分类需统一：例如全纯要求定义域开。",
+    "integral defined不等于L1；单调收敛删除非负性的结论依赖是否另保留可积下界。"
+  ]
+}

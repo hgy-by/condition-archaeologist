@@ -1,0 +1,29 @@
+{
+  "status": "revised_outputs_checked",
+  "kind": "actual_AI_reasoning",
+  "human_reviewed": false,
+  "formal_verified": false,
+  "benchmark_score": null,
+  "task_files": [
+    "math-analysis",
+    "higher-algebra",
+    "real-analysis",
+    "complex-analysis"
+  ],
+  "intervention_counts": [
+    3,
+    3,
+    4,
+    5
+  ],
+  "interface_findings": [
+    "replacement_checks与statement_issue规范已由主代理补齐。",
+    "开集条件分类已按统一规则更正；保留定义直接蕴含者优先implied。",
+    "有定义积分与L¹的区别在单调收敛版本中仍须明确说明。"
+  ],
+  "original_run": "original-run/run-summary.json",
+  "classification_corrections": 1,
+  "revised_structure_checks_passed": 4,
+  "remaining_core_math_errors_found": 0,
+  "revision_report": "revision-check.json"
+}

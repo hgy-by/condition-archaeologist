@@ -1,0 +1,19 @@
+{
+  "kind": "matrix",
+  "A": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "field": "real",
+  "claims": {
+    "square": true,
+    "symmetric": false,
+    "diagonalizable": false
+  }
+}

@@ -1,0 +1,223 @@
+[
+  {
+    "task_id": "EDGE-MA-ISSUE",
+    "subject": "数学分析",
+    "statement": "命题：若f:R→R处处可微，则f′在R连续。",
+    "hypotheses": [
+      {
+        "id": "H1",
+        "text": "f在R每一点可微"
+      }
+    ],
+    "intervention": {
+      "removed": [],
+      "replacement": null
+    },
+    "conclusions": [
+      {
+        "id": "C1",
+        "text": "f′在R连续"
+      }
+    ],
+    "request": "核对原命题是否正确，再按指定干预分析；需要改变定义或对象类型时明说。"
+  },
+  {
+    "task_id": "EDGE-AL-ISSUE",
+    "subject": "高等代数",
+    "statement": "命题：一个实方阵只要全部特征值均为实数，就一定可在R上对角化。",
+    "hypotheses": [
+      {
+        "id": "H1",
+        "text": "A为实方阵"
+      },
+      {
+        "id": "H2",
+        "text": "A的全部复特征值均为实数"
+      }
+    ],
+    "intervention": {
+      "removed": [],
+      "replacement": null
+    },
+    "conclusions": [
+      {
+        "id": "C1",
+        "text": "A可在R上对角化"
+      }
+    ],
+    "request": "核对原命题是否正确，再按指定干预分析；需要改变定义或对象类型时明说。"
+  },
+  {
+    "task_id": "EDGE-RA-ISSUE",
+    "subject": "实分析",
+    "statement": "命题：在[0,1]的勒贝格测度下，若可积f_n几乎处处趋于可积f，则∫f_n→∫f。",
+    "hypotheses": [
+      {
+        "id": "H1",
+        "text": "每个f_n和f都属于L¹[0,1]"
+      },
+      {
+        "id": "H2",
+        "text": "f_n几乎处处趋于f"
+      }
+    ],
+    "intervention": {
+      "removed": [],
+      "replacement": null
+    },
+    "conclusions": [
+      {
+        "id": "C1",
+        "text": "∫f_n→∫f"
+      }
+    ],
+    "request": "核对原命题是否正确，再按指定干预分析；需要改变定义或对象类型时明说。"
+  },
+  {
+    "task_id": "EDGE-CA-ISSUE",
+    "subject": "复分析",
+    "statement": "命题：整函数f的导数在所有点均不为零，则f在C单射。",
+    "hypotheses": [
+      {
+        "id": "H1",
+        "text": "f在C全纯"
+      },
+      {
+        "id": "H2",
+        "text": "对所有z∈C有f′(z)≠0"
+      }
+    ],
+    "intervention": {
+      "removed": [],
+      "replacement": null
+    },
+    "conclusions": [
+      {
+        "id": "C1",
+        "text": "f在C单射"
+      }
+    ],
+    "request": "核对原命题是否正确，再按指定干预分析；需要改变定义或对象类型时明说。"
+  },
+  {
+    "task_id": "EDGE-TYPE",
+    "subject": "数学分析",
+    "statement": "Darboux定理：若f:R→R处处可微，则其导函数f′有介值性质。本题f′仅在处处可微的前提下定义为一个R上函数；删去假设时不能偷偷改成广义导数或把结论改写为可微性。",
+    "hypotheses": [
+      {
+        "id": "H1",
+        "text": "f在R处处可微"
+      }
+    ],
+    "intervention": {
+      "removed": [
+        "H1"
+      ],
+      "replacement": null
+    },
+    "conclusions": [
+      {
+        "id": "C1",
+        "text": "导函数f′在R上有介值性质"
+      }
+    ],
+    "request": "核对原命题是否正确，再按指定干预分析；需要改变定义或对象类型时明说。"
+  },
+  {
+    "task_id": "EDGE-AL-IMPLIED",
+    "subject": "高等代数",
+    "statement": "定理：实对称对角矩阵A可在R上对角化。原对象类别是所有实方阵，n≥1；“对称”和“已为对角矩阵”作为两个独立条件。",
+    "hypotheses": [
+      {
+        "id": "H1",
+        "text": "A为实n×n方阵，n≥1"
+      },
+      {
+        "id": "H2",
+        "text": "A对称"
+      },
+      {
+        "id": "H3",
+        "text": "A已经是对角矩阵"
+      }
+    ],
+    "intervention": {
+      "removed": [
+        "H2"
+      ],
+      "replacement": null
+    },
+    "conclusions": [
+      {
+        "id": "C1",
+        "text": "A可在R上对角化"
+      }
+    ],
+    "request": "核对原命题是否正确，再按指定干预分析；需要改变定义或对象类型时明说。"
+  },
+  {
+    "task_id": "EDGE-AL-REMOVABLE",
+    "subject": "高等代数",
+    "statement": "定理：实对称对角矩阵A可在R上对角化。原对象类别是所有实方阵，n≥1；“对称”和“已为对角矩阵”作为两个独立条件。",
+    "hypotheses": [
+      {
+        "id": "H1",
+        "text": "A为实n×n方阵，n≥1"
+      },
+      {
+        "id": "H2",
+        "text": "A对称"
+      },
+      {
+        "id": "H3",
+        "text": "A已经是对角矩阵"
+      }
+    ],
+    "intervention": {
+      "removed": [
+        "H3"
+      ],
+      "replacement": null
+    },
+    "conclusions": [
+      {
+        "id": "C1",
+        "text": "A可在R上对角化"
+      }
+    ],
+    "request": "核对原命题是否正确，再按指定干预分析；需要改变定义或对象类型时明说。"
+  },
+  {
+    "task_id": "EDGE-AL-JOINT",
+    "subject": "高等代数",
+    "statement": "定理：实对称对角矩阵A可在R上对角化。原对象类别是所有实方阵，n≥1；“对称”和“已为对角矩阵”作为两个独立条件。",
+    "hypotheses": [
+      {
+        "id": "H1",
+        "text": "A为实n×n方阵，n≥1"
+      },
+      {
+        "id": "H2",
+        "text": "A对称"
+      },
+      {
+        "id": "H3",
+        "text": "A已经是对角矩阵"
+      }
+    ],
+    "intervention": {
+      "removed": [
+        "H2",
+        "H3"
+      ],
+      "replacement": null
+    },
+    "conclusions": [
+      {
+        "id": "C1",
+        "text": "A可在R上对角化"
+      }
+    ],
+    "request": "核对原命题是否正确，再按指定干预分析；需要改变定义或对象类型时明说。"
+  }
+]

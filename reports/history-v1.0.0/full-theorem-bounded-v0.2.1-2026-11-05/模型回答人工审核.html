@@ -1,0 +1,205 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>第二轮模型回答审核</title>
+<style>body{font:17px/1.7 system-ui;max-width:1100px;margin:auto;padding:25px;background:#f6f7f8}article{background:white;margin:24px 0;padding:24px;border:1px solid #ccc}pre{font:16px/1.7 system-ui;white-space:pre-wrap;overflow-wrap:anywhere}textarea{width:97%}button{padding:12px}</style>
+<h1>第二轮模型回答审核</h1><p>两组已按题打乱。不要先查看controller-arm-mapping.json。A/B只隐藏组别，不构成文件访问隔离。先独立审核，再参考AI意见。</p>
+<p>通过＝关键数学任务完成；部分正确＝存在关键遗漏；错误＝有实质错误；待确认＝暂时无法判断。歧义任务看是否合理澄清、条件化分析和诚实报告；完整定理看解析、逐项干预、依赖与剩余工作。不同于参考答案的有效反例应认可。</p>
+<p>审核人或代称 <input id="reviewer"> 日期 <input id="date" type="date"></p>
+<button onclick="exportData()">导出审核记录</button> <input type="file" accept=".json" onchange="restore(this)">
+<p>填写不会自动保存，请导出记录。可导入已导出的文件继续填写。尚未完成的条目保持“待审核”。</p>
+<article><h2>B-MA-A</h2><p>full_theorem；需检查运行或输出格式：None</p><h3>输入</h3><pre>{
+  &quot;task_id&quot;: &quot;B-MA&quot;,
+  &quot;subject&quot;: &quot;数学分析&quot;,
+  &quot;statement&quot;: &quot;连续f:[0,1]→R且f(0)&lt;0&lt;f(1)，则存在c∈(0,1)使f(c)=0。&quot;,
+  &quot;request&quot;: &quot;这是有限预算的完整流程试用：自行提取所有条件和结论，但只分析最多2个单项干预和最多1个相关组合；其余明确列入remaining_work，不声称穷尽。每项给简洁充分的数学论证。&quot;
+}</pre><h3>原始回答</h3><pre>没有取得模型回答。属于运行缺口，不应伪造数学答案。</pre><label>审核结论 <select data-id="B-MA-A"><option>待审核</option><option>通过</option><option>部分正确</option><option>错误</option><option>待确认</option></select></label><p>请记录数学错误、遗漏或需要进一步确认之处；完整定理还要检查条件与结论是否遗漏。</p><textarea data-id="B-MA-A" rows="5"></textarea></article><article><h2>B-AL-A</h2><p>full_theorem；结构检查通过（不等于数学正确）</p><h3>输入</h3><pre>{
+  &quot;task_id&quot;: &quot;B-AL&quot;,
+  &quot;subject&quot;: &quot;高等代数&quot;,
+  &quot;statement&quot;: &quot;设n≥1，A为n×n复矩阵，若A有n个互异特征值，则A可对角化。&quot;,
+  &quot;request&quot;: &quot;这是有限预算的完整流程试用：自行提取所有条件和结论，但只分析最多2个单项干预和最多1个相关组合；其余明确列入remaining_work，不声称穷尽。每项给简洁充分的数学论证。&quot;
+}</pre><h3>原始回答</h3><pre>{
+  &quot;task_id&quot;: &quot;B-AL&quot;,
+  &quot;theorem&quot;: {
+    &quot;statement&quot;: &quot;设 n 为非负整数，A 为 n×n 复矩阵。若 n≥1 且 A 有 n 个互异特征值，则 A 可在复数域上对角化。&quot;,
+    &quot;hypotheses&quot;: [
+      {&quot;id&quot;: &quot;H1&quot;, &quot;text&quot;: &quot;n≥1&quot;},
+      {&quot;id&quot;: &quot;H2&quot;, &quot;text&quot;: &quot;矩阵的底域为复数域&quot;},
+      {&quot;id&quot;: &quot;H3&quot;, &quot;text&quot;: &quot;A 是 n×n 方阵&quot;},
+      {&quot;id&quot;: &quot;H4&quot;, &quot;text&quot;: &quot;A 有 n 个互异特征值&quot;}
+    ],
+    &quot;conclusions&quot;: [{&quot;id&quot;: &quot;C1&quot;, &quot;text&quot;: &quot;A 可在其底域上对角化&quot;}],
+    &quot;convention&quot;: &quot;允许 0×0 矩阵；它以空基为基，视为可对角化。&quot;
+  },
+  &quot;interventions&quot;: [
+    {
+      &quot;task_id&quot;: &quot;B-AL-H1&quot;,
+      &quot;hypotheses&quot;: [
+        {&quot;id&quot;: &quot;H1&quot;, &quot;text&quot;: &quot;n≥1&quot;},
+        {&quot;id&quot;: &quot;H2&quot;, &quot;text&quot;: &quot;矩阵的底域为复数域&quot;},
+        {&quot;id&quot;: &quot;H3&quot;, &quot;text&quot;: &quot;A 是 n×n 方阵&quot;},
+        {&quot;id&quot;: &quot;H4&quot;, &quot;text&quot;: &quot;A 有 n 个互异特征值&quot;}
+      ],
+      &quot;intervention&quot;: {&quot;removed&quot;: [&quot;H1&quot;], &quot;replacement&quot;: null},
+      &quot;judgment&quot;: &quot;removable&quot;,
+      &quot;witness&quot;: null,
+      &quot;retained_checks&quot;: [
+        {&quot;id&quot;: &quot;H2&quot;, &quot;argument&quot;: &quot;证明始终针对复矩阵。&quot;},
+        {&quot;id&quot;: &quot;H3&quot;, &quot;argument&quot;: &quot;证明始终针对 n×n 方阵，包括 n=0。&quot;},
+        {&quot;id&quot;: &quot;H4&quot;, &quot;argument&quot;: &quot;n≥1 时，取所给 n 个互异特征值各自的特征向量；n=0 时，此条件为空条件。&quot;}
+      ],
+      &quot;replacement_checks&quot;: [],
+      &quot;target_failure&quot;: null,
+      &quot;argument&quot;: &quot;n≥1 时，互异特征值对应的 n 个特征向量线性无关，因而构成基，A 在此基下为对角矩阵。n=0 时，空基给出对角化。因此删除 H1 后结论仍成立。&quot;,
+      &quot;evidence&quot;: [{&quot;kind&quot;: &quot;mathematical_argument&quot;, &quot;artifact&quot;: null, &quot;scope&quot;: &quot;删除 H1 后的全部非负整数维数&quot;}],
+      &quot;dependencies&quot;: [],
+      &quot;uncertainties&quot;: [],
+      &quot;next_steps&quot;: [],
+      &quot;cost&quot;: {&quot;elapsed_seconds&quot;: null, &quot;model_calls&quot;: null, &quot;tool_calls&quot;: null, &quot;usd&quot;: null}
+    },
+    {
+      &quot;task_id&quot;: &quot;B-AL-H4&quot;,
+      &quot;hypotheses&quot;: [
+        {&quot;id&quot;: &quot;H1&quot;, &quot;text&quot;: &quot;n≥1&quot;},
+        {&quot;id&quot;: &quot;H2&quot;, &quot;text&quot;: &quot;矩阵的底域为复数域&quot;},
+        {&quot;id&quot;: &quot;H3&quot;, &quot;text&quot;: &quot;A 是 n×n 方阵&quot;},
+        {&quot;id&quot;: &quot;H4&quot;, &quot;text&quot;: &quot;A 有 n 个互异特征值&quot;}
+      ],
+      &quot;intervention&quot;: {&quot;removed&quot;: [&quot;H4&quot;], &quot;replacement&quot;: null},
+      &quot;judgment&quot;: &quot;indispensable&quot;,
+      &quot;witness&quot;: &quot;n=2，A=[[0,1],[0,0]]。&quot;,
+      &quot;retained_checks&quot;: [
+        {&quot;id&quot;: &quot;H1&quot;, &quot;argument&quot;: &quot;n=2≥1。&quot;},
+        {&quot;id&quot;: &quot;H2&quot;, &quot;argument&quot;: &quot;A 的元素均为复数。&quot;},
+        {&quot;id&quot;: &quot;H3&quot;, &quot;argument&quot;: &quot;A 是 2×2 方阵。&quot;}
+      ],
+      &quot;replacement_checks&quot;: [],
+      &quot;target_failure&quot;: {&quot;id&quot;: &quot;C1&quot;, &quot;argument&quot;: &quot;A 唯一的特征值为 0，而 ker A={(z,0):z∈ℂ} 仅一维，不存在由两个特征向量组成的基，故 A 不可对角化。&quot;},
+      &quot;argument&quot;: &quot;该矩阵只具有一个互异特征值，不满足 H4；保留 H1—H3 时，它推翻 C1。&quot;,
+      &quot;evidence&quot;: [{&quot;kind&quot;: &quot;mathematical_argument&quot;, &quot;artifact&quot;: null, &quot;scope&quot;: &quot;反例的保留条件、H4 的不满足及 C1 的失败&quot;}],
+      &quot;dependencies&quot;: [],
+      &quot;uncertainties&quot;: [],
+      &quot;next_steps&quot;: [],
+      &quot;cost&quot;: {&quot;elapsed_seconds&quot;: null, &quot;model_calls&quot;: null, &quot;tool_calls&quot;: null, &quot;usd&quot;: null}
+    }
+  ],
+  &quot;dependency_map&quot;: {
+    &quot;relations&quot;: [
+      {
+        &quot;condition&quot;: &quot;H1&quot;,
+        &quot;background&quot;: &quot;保留 H2、H3、H4，并采用所述零维约定&quot;,
+        &quot;target&quot;: &quot;C1&quot;,
+        &quot;result&quot;: &quot;H1 可删除&quot;,
+        &quot;evidence&quot;: &quot;零维情形可对角化；正维情形由互异特征值的特征向量构成基。&quot;
+      },
+      {
+        &quot;condition&quot;: &quot;H4&quot;,
+        &quot;background&quot;: &quot;保留 H1、H2、H3&quot;,
+        &quot;target&quot;: &quot;C1&quot;,
+        &quot;result&quot;: &quot;H4 的单项删除有反例&quot;,
+        &quot;evidence&quot;: &quot;二阶非零幂零 Jordan 块的特征空间仅一维。&quot;
+      }
+    ],
+    &quot;unexplored_combinations&quot;: [&quot;未分析 H1 与 H4 的联合删除，也未分析涉及 H2 或 H3 的组合。&quot;]
+  },
+  &quot;remaining_work&quot;: [
+    &quot;H2 与 H3 尚未单项干预；放宽复矩阵或方阵的对象类别前，须先明确新的底域、特征值及对角化的含义。&quot;,
+    &quot;尚未分析条件组合；上述单项结论不构成完整依赖图。&quot;
+  ]
+}</pre><label>审核结论 <select data-id="B-AL-A"><option>待审核</option><option>通过</option><option>部分正确</option><option>错误</option><option>待确认</option></select></label><p>请记录数学错误、遗漏或需要进一步确认之处；完整定理还要检查条件与结论是否遗漏。</p><textarea data-id="B-AL-A" rows="5"></textarea></article><article><h2>B-RA-A</h2><p>full_theorem；需检查运行或输出格式：None</p><h3>输入</h3><pre>{
+  &quot;task_id&quot;: &quot;B-RA&quot;,
+  &quot;subject&quot;: &quot;实分析&quot;,
+  &quot;statement&quot;: &quot;在固定测度空间上，实可测函数列f_n几乎处处收敛于实可测f；若存在非负g∈L¹且对每个n有|f_n|≤g几乎处处，则f_n,f∈L¹，∫|f_n−f|→0，且∫f_n→∫f。&quot;,
+  &quot;request&quot;: &quot;这是有限预算的完整流程试用：自行提取所有条件和结论，但只分析最多2个单项干预和最多1个相关组合；其余明确列入remaining_work，不声称穷尽。每项给简洁充分的数学论证。&quot;
+}</pre><h3>原始回答</h3><pre>没有取得模型回答。属于运行缺口，不应伪造数学答案。</pre><label>审核结论 <select data-id="B-RA-A"><option>待审核</option><option>通过</option><option>部分正确</option><option>错误</option><option>待确认</option></select></label><p>请记录数学错误、遗漏或需要进一步确认之处；完整定理还要检查条件与结论是否遗漏。</p><textarea data-id="B-RA-A" rows="5"></textarea></article><article><h2>B-CA-A</h2><p>full_theorem；需检查运行或输出格式：[&#x27;duplicate task_id B-CA&#x27;]</p><h3>输入</h3><pre>{
+  &quot;task_id&quot;: &quot;B-CA&quot;,
+  &quot;subject&quot;: &quot;复分析&quot;,
+  &quot;statement&quot;: &quot;定义于整个复平面的全纯函数若有界，则为常数。&quot;,
+  &quot;request&quot;: &quot;这是有限预算的完整流程试用：自行提取所有条件和结论，但只分析最多2个单项干预和最多1个相关组合；其余明确列入remaining_work，不声称穷尽。每项给简洁充分的数学论证。&quot;
+}</pre><h3>原始回答</h3><pre>{
+  &quot;task_id&quot;: &quot;B-CA&quot;,
+  &quot;theorem&quot;: {
+    &quot;statement&quot;: &quot;设Ω为非空开集，f:Ω→ℂ。若Ω=ℂ、f在Ω上全纯且f在Ω上有界，则f在Ω上为常数。&quot;,
+    &quot;background&quot;: &quot;非空开集及其上的复值函数是干预时固定的对象类别；删除Ω=ℂ后仍可谈论全纯性。&quot;,
+    &quot;hypotheses&quot;: [
+      {&quot;id&quot;: &quot;H1&quot;, &quot;text&quot;: &quot;Ω=ℂ。&quot;},
+      {&quot;id&quot;: &quot;H2&quot;, &quot;text&quot;: &quot;f在Ω上全纯。&quot;},
+      {&quot;id&quot;: &quot;H3&quot;, &quot;text&quot;: &quot;f在Ω上有界。&quot;}
+    ],
+    &quot;conclusions&quot;: [
+      {&quot;id&quot;: &quot;C1&quot;, &quot;text&quot;: &quot;f在Ω上为常数。&quot;}
+    ]
+  },
+  &quot;interventions&quot;: [
+    {
+      &quot;task_id&quot;: &quot;B-CA&quot;,
+      &quot;id&quot;: &quot;I1&quot;,
+      &quot;hypotheses&quot;: [
+        {&quot;id&quot;: &quot;H1&quot;, &quot;text&quot;: &quot;Ω=ℂ。&quot;},
+        {&quot;id&quot;: &quot;H2&quot;, &quot;text&quot;: &quot;f在Ω上全纯。&quot;},
+        {&quot;id&quot;: &quot;H3&quot;, &quot;text&quot;: &quot;f在Ω上有界。&quot;}
+      ],
+      &quot;intervention&quot;: {&quot;removed&quot;: [&quot;H1&quot;], &quot;replacement&quot;: null},
+      &quot;judgment&quot;: &quot;indispensable&quot;,
+      &quot;witness&quot;: &quot;Ω={z∈ℂ:|z|&lt;1}，f(z)=z。&quot;,
+      &quot;retained_checks&quot;: [
+        {&quot;id&quot;: &quot;H2&quot;, &quot;argument&quot;: &quot;恒等函数在Ω上全纯。&quot;},
+        {&quot;id&quot;: &quot;H3&quot;, &quot;argument&quot;: &quot;对每个z∈Ω，有|f(z)|&lt;1。&quot;}
+      ],
+      &quot;replacement_checks&quot;: [],
+      &quot;target_failure&quot;: {&quot;id&quot;: &quot;C1&quot;, &quot;argument&quot;: &quot;f(0)=0而f(1/2)=1/2，故f不是常数。&quot;},
+      &quot;argument&quot;: &quot;Ω是非空开集，但Ω≠ℂ；该对象保留H2、H3而否定C1。&quot;,
+      &quot;evidence&quot;: [
+        {&quot;kind&quot;: &quot;mathematical_argument&quot;, &quot;artifact&quot;: null, &quot;scope&quot;: &quot;对象类别、保留条件H2和H3及结论C1的否定&quot;}
+      ],
+      &quot;dependencies&quot;: [],
+      &quot;uncertainties&quot;: [],
+      &quot;next_steps&quot;: [],
+      &quot;cost&quot;: {&quot;elapsed_seconds&quot;: null, &quot;model_calls&quot;: null, &quot;tool_calls&quot;: null, &quot;usd&quot;: null}
+    },
+    {
+      &quot;task_id&quot;: &quot;B-CA&quot;,
+      &quot;id&quot;: &quot;I2&quot;,
+      &quot;hypotheses&quot;: [
+        {&quot;id&quot;: &quot;H1&quot;, &quot;text&quot;: &quot;Ω=ℂ。&quot;},
+        {&quot;id&quot;: &quot;H2&quot;, &quot;text&quot;: &quot;f在Ω上全纯。&quot;},
+        {&quot;id&quot;: &quot;H3&quot;, &quot;text&quot;: &quot;f在Ω上有界。&quot;}
+      ],
+      &quot;intervention&quot;: {&quot;removed&quot;: [&quot;H3&quot;], &quot;replacement&quot;: null},
+      &quot;judgment&quot;: &quot;indispensable&quot;,
+      &quot;witness&quot;: &quot;Ω=ℂ，f(z)=z。&quot;,
+      &quot;retained_checks&quot;: [
+        {&quot;id&quot;: &quot;H1&quot;, &quot;argument&quot;: &quot;函数的定义域是整个复平面。&quot;},
+        {&quot;id&quot;: &quot;H2&quot;, &quot;argument&quot;: &quot;恒等函数在ℂ上全纯。&quot;}
+      ],
+      &quot;replacement_checks&quot;: [],
+      &quot;target_failure&quot;: {&quot;id&quot;: &quot;C1&quot;, &quot;argument&quot;: &quot;f(0)=0而f(1)=1，故f不是常数。&quot;},
+      &quot;argument&quot;: &quot;沿正实轴有|f(n)|=n→∞，所以H3确实不成立；保留H1、H2仍不足以推出C1。&quot;,
+      &quot;evidence&quot;: [
+        {&quot;kind&quot;: &quot;mathematical_argument&quot;, &quot;artifact&quot;: null, &quot;scope&quot;: &quot;保留条件H1和H2、被删条件H3的不成立及结论C1的否定&quot;}
+      ],
+      &quot;dependencies&quot;: [],
+      &quot;uncertainties&quot;: [],
+      &quot;next_steps&quot;: [],
+      &quot;cost&quot;: {&quot;elapsed_seconds&quot;: null, &quot;model_calls&quot;: null, &quot;tool_calls&quot;: null, &quot;usd&quot;: null}
+    }
+  ],
+  &quot;dependency_map&quot;: [
+    {
+      &quot;relation&quot;: &quot;在保留H2、H3时，删除H1可使C1失败。&quot;,
+      &quot;background&quot;: &quot;H2、H3&quot;,
+      &quot;target&quot;: &quot;C1&quot;,
+      &quot;evidence&quot;: &quot;I1的单位圆盘恒等函数反例&quot;
+    },
+    {
+      &quot;relation&quot;: &quot;在保留H1、H2时，删除H3可使C1失败。&quot;,
+      &quot;background&quot;: &quot;H1、H2&quot;,
+      &quot;target&quot;: &quot;C1&quot;,
+      &quot;evidence&quot;: &quot;I2的整平面恒等函数反例&quot;
+    }
+  ],
+  &quot;remaining_work&quot;: [
+    &quot;预算内只分析了两个单项干预；删除H2尚未分析。&quot;,
+    &quot;未分析联合删除，也不据上述单删结果声称已穷尽条件依赖。&quot;
+  ]
+}</pre><label>审核结论 <select data-id="B-CA-A"><option>待审核</option><option>通过</option><option>部分正确</option><option>错误</option><option>待确认</option></select></label><p>请记录数学错误、遗漏或需要进一步确认之处；完整定理还要检查条件与结论是否遗漏。</p><textarea data-id="B-CA-A" rows="5"></textarea></article><script>const bound={"digest": "6720be23b01d31c64950a5dbe7f686a7da63d085a559616a59f04b3806d64988", "records": [{"review_id": "B-MA-A", "response_digest": "aad7261134a5e8502a48b0815af4ee78330156bd17bdb7490afe4e7eaa944953"}, {"review_id": "B-AL-A", "response_digest": "9a9021c7786ddef33c266988c8dd2c92037b5cb846ba0200af0ad7752b5c5d4f"}, {"review_id": "B-RA-A", "response_digest": "676b0d96d186c89bbea54377c3909867bec35ba4f2874986bae37d44f9d1199e"}, {"review_id": "B-CA-A", "response_digest": "97a688171ea1a898f1561c2820b21216dec6cb58a6d6913f22887dd3c64dc962"}]};
+function exportData(){const d={run_digest:bound.digest,reviewer:document.querySelector('#reviewer').value,reviewed_at:document.querySelector('#date').value,records:bound.records.map(r=>({...r,decision:document.querySelector('select[data-id="'+r.review_id+'"]').value,notes:document.querySelector('textarea[data-id="'+r.review_id+'"]').value}))};const u=URL.createObjectURL(new Blob([JSON.stringify(d,null,2)],{type:'application/json'}));const a=document.createElement('a');a.href=u;a.download='第二轮人工审核记录.json';a.click();setTimeout(()=>URL.revokeObjectURL(u),1000)}
+async function restore(i){try{const d=JSON.parse(await i.files[0].text());if(d.run_digest!==bound.digest)throw Error('记录属于其他运行或回答已经变化');document.querySelector('#reviewer').value=d.reviewer||'';document.querySelector('#date').value=d.reviewed_at||'';for(const r of d.records){const expected=bound.records.find(e=>e.review_id===r.review_id);if(!expected||expected.response_digest!==r.response_digest)throw Error('回答摘要不匹配');document.querySelector('select[data-id="'+r.review_id+'"]').value=r.decision;document.querySelector('textarea[data-id="'+r.review_id+'"]').value=r.notes||''}}catch(e){alert(e.message)}}
+</script></html>

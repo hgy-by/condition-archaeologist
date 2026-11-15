@@ -1,0 +1,13 @@
+{
+  "status": "pass",
+  "tasks": 29,
+  "families": 20,
+  "splits": {
+    "development": 15,
+    "validation": 8,
+    "heldout": 6
+  },
+  "pending_review": 29,
+  "errors": [],
+  "scope": "data consistency only, not mathematical truth"
+}

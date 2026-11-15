@@ -1,0 +1,647 @@
+[
+  {
+    "task_id": "MA05",
+    "arm": "direct_model",
+    "reviewer_type": "ai",
+    "reviewer": "Codex（本聊天主Agent，读取实际回答后逐义务复核）",
+    "reviewed_at": "2026-11-05",
+    "independent": false,
+    "case_digest": "43bbc70622b3235ad0f6474fe1128e67e84e0cacc93ffe3bc4337d25ccdf2d11",
+    "source_file": "raw/direct_model/MA05/attempt-1.json",
+    "source_sha256": "b73b6b813c8370434f48dbc3a8f5aa3474339e1cb8a0197ba12589a566a67c0a",
+    "prediction_digest": "44b19a8a09e50b0270c1edd12714f696ff0f470b4849d86f015fb421456e49dc",
+    "objects": {
+      "valid": true,
+      "reason": "实际对象符合题目固定背景。对每个x，f(x+h)−f(x)=h·差商→0，故各点连续；这还直接推出被删H3。"
+    },
+    "intervention": {
+      "valid": true,
+      "reason": "原输出removed及replacement与输入逐项相同；未改变指定目标结论。"
+    },
+    "hypothesis_alignment": {
+      "valid": true,
+      "reason": "逐ID对照输入及中文含义，未删改保留条件。输入已提供假设，这不是从自然语言提取测试。"
+    },
+    "retained": {
+      "H1": {
+        "valid": true,
+        "reason": "开区间保证每点可在域内取趋零增量。"
+      },
+      "H2": {
+        "valid": true,
+        "reason": "差商趋于有限实导数；乘趋零增量后函数增量趋零。"
+      }
+    },
+    "replacement": {},
+    "deleted": {},
+    "target": null,
+    "preservation_proof": {
+      "valid": true,
+      "reason": "对每个x，f(x+h)−f(x)=h·差商→0，故各点连续；这还直接推出被删H3。"
+    },
+    "argument": {
+      "valid": true,
+      "reason": "对每个x，f(x+h)−f(x)=h·差商→0，故各点连续；这还直接推出被删H3。"
+    },
+    "evidence_honesty": {
+      "valid": true,
+      "reason": "原输出只列数学论证，未声称调用计算、人工审阅或形式化核验；未知费用保持null。"
+    },
+    "witness_claimed": false,
+    "dependency_report": {
+      "complete": false,
+      "reason": "未给出完整带背景的结构化依赖边；该缺口与单次干预是否数学正确分开记录。"
+    },
+    "notes": [
+      "直接组removable的数学保留结论正确，但本协议优先implied，属于分类精度差异。"
+    ]
+  },
+  {
+    "task_id": "MA06",
+    "arm": "direct_model",
+    "reviewer_type": "ai",
+    "reviewer": "Codex（本聊天主Agent，读取实际回答后逐义务复核）",
+    "reviewed_at": "2026-11-05",
+    "independent": false,
+    "case_digest": "7b51ce62e59710f5eb2ef4c2fd1e6e8d7930659b1921731218816aa8c29cfebd",
+    "source_file": "raw/direct_model/MA06/attempt-1.json",
+    "source_sha256": "326bdf4aac22bd22944531d7a3b2262e4386489426789a7bd2bb037f4cc3d71c",
+    "prediction_digest": "ef5d26bb177ed2b49d6a98f2abc05695ec7ea92edb792046fbb094f82e44a6dd",
+    "objects": {
+      "valid": true,
+      "reason": "实际对象符合题目固定背景。M=max_i|ai|是所有元素绝对值的共同上界，证明作用于任意非空有限实数集。"
+    },
+    "intervention": {
+      "valid": true,
+      "reason": "原输出removed及replacement与输入逐项相同；未改变指定目标结论。"
+    },
+    "hypothesis_alignment": {
+      "valid": true,
+      "reason": "逐ID对照输入及中文含义，未删改保留条件。输入已提供假设，这不是从自然语言提取测试。"
+    },
+    "retained": {
+      "H1": {
+        "valid": true,
+        "reason": "A是非空实数集合；n≥1使有限最大值存在。"
+      },
+      "H3": {
+        "valid": true,
+        "reason": "A有限，可列为a1,…,an。"
+      }
+    },
+    "replacement": {},
+    "deleted": {},
+    "target": null,
+    "preservation_proof": {
+      "valid": true,
+      "reason": "M=max_i|ai|是所有元素绝对值的共同上界，证明作用于任意非空有限实数集。"
+    },
+    "argument": {
+      "valid": true,
+      "reason": "M=max_i|ai|是所有元素绝对值的共同上界，证明作用于任意非空有限实数集。"
+    },
+    "evidence_honesty": {
+      "valid": true,
+      "reason": "原输出只列数学论证，未声称调用计算、人工审阅或形式化核验；未知费用保持null。"
+    },
+    "witness_claimed": false,
+    "dependency_report": {
+      "complete": false,
+      "reason": "未给出完整带背景的结构化依赖边；该缺口与单次干预是否数学正确分开记录。"
+    },
+    "notes": [
+      "有限并不推出A⊂[0,1]，例如{2}；因此应为removable而非implied。"
+    ]
+  },
+  {
+    "task_id": "MA07",
+    "arm": "direct_model",
+    "reviewer_type": "ai",
+    "reviewer": "Codex（本聊天主Agent，读取实际回答后逐义务复核）",
+    "reviewed_at": "2026-11-05",
+    "independent": false,
+    "case_digest": "c71d025aaab217a5d7951816b2621108bf5dadc2b51f9fa84eb483ff4464f2d3",
+    "source_file": "raw/direct_model/MA07/attempt-1.json",
+    "source_sha256": "c2b16f57fe780ecc645f69cdf991a16a9721de06b0124d666e5f348b05e249de",
+    "prediction_digest": "8c98777baa7e2d350f323e8241e05a892d6a53d3f8ee66dd0ff56e0e7d47c7e2",
+    "objects": {
+      "valid": true,
+      "reason": "实际对象符合题目固定背景。取共同界1，不需要有限性；例如[0,1]本身表明保留条件不推出有限。"
+    },
+    "intervention": {
+      "valid": true,
+      "reason": "原输出removed及replacement与输入逐项相同；未改变指定目标结论。"
+    },
+    "hypothesis_alignment": {
+      "valid": true,
+      "reason": "逐ID对照输入及中文含义，未删改保留条件。输入已提供假设，这不是从自然语言提取测试。"
+    },
+    "retained": {
+      "H1": {
+        "valid": true,
+        "reason": "非空实数集对象约定保留。"
+      },
+      "H2": {
+        "valid": true,
+        "reason": "每个a满足0≤a≤1，即−1≤a≤1。"
+      }
+    },
+    "replacement": {},
+    "deleted": {},
+    "target": null,
+    "preservation_proof": {
+      "valid": true,
+      "reason": "取共同界1，不需要有限性；例如[0,1]本身表明保留条件不推出有限。"
+    },
+    "argument": {
+      "valid": true,
+      "reason": "取共同界1，不需要有限性；例如[0,1]本身表明保留条件不推出有限。"
+    },
+    "evidence_honesty": {
+      "valid": true,
+      "reason": "原输出只列数学论证，未声称调用计算、人工审阅或形式化核验；未知费用保持null。"
+    },
+    "witness_claimed": false,
+    "dependency_report": {
+      "complete": false,
+      "reason": "未给出完整带背景的结构化依赖边；该缺口与单次干预是否数学正确分开记录。"
+    },
+    "notes": []
+  },
+  {
+    "task_id": "MA08",
+    "arm": "direct_model",
+    "reviewer_type": "ai",
+    "reviewer": "Codex（本聊天主Agent，读取实际回答后逐义务复核）",
+    "reviewed_at": "2026-11-05",
+    "independent": false,
+    "case_digest": "cc3904740a63f6d836af46fd02cbc8970f7cf5fc94831a56c6f268469e7d306e",
+    "source_file": "raw/direct_model/MA08/attempt-1.json",
+    "source_sha256": "b242c9b2b01d7980df1a28f3a9c839e70d50bcd050e6df8b5e81570a63bfa021",
+    "prediction_digest": "26cb457bd64f3c0f05bb3cea3bd77417c44bd205ae1210fa1499ad265673cd87",
+    "objects": {
+      "valid": true,
+      "reason": "实际对象符合题目固定背景。直接组对M≥0取M+1；Skill组用阿基米德性取整数n>M。均否定有界性。"
+    },
+    "intervention": {
+      "valid": true,
+      "reason": "原输出removed及replacement与输入逐项相同；未改变指定目标结论。"
+    },
+    "hypothesis_alignment": {
+      "valid": true,
+      "reason": "逐ID对照输入及中文含义，未删改保留条件。输入已提供假设，这不是从自然语言提取测试。"
+    },
+    "retained": {
+      "H1": {
+        "valid": true,
+        "reason": "直接组A=R非空；Skill组正整数集含1，二者均为实数集。"
+      }
+    },
+    "replacement": {},
+    "deleted": {
+      "H2": {
+        "valid": true,
+        "reason": "R和正整数集都含2，故均非[0,1]的子集。"
+      },
+      "H3": {
+        "valid": true,
+        "reason": "R及正整数集均为无限集。"
+      }
+    },
+    "target": {
+      "valid": true,
+      "reason": "直接组对M≥0取M+1；Skill组用阿基米德性取整数n>M。均否定有界性。"
+    },
+    "preservation_proof": null,
+    "argument": {
+      "valid": true,
+      "reason": "直接组对M≥0取M+1；Skill组用阿基米德性取整数n>M。均否定有界性。"
+    },
+    "evidence_honesty": {
+      "valid": true,
+      "reason": "原输出只列数学论证，未声称调用计算、人工审阅或形式化核验；未知费用保持null。"
+    },
+    "witness_claimed": true,
+    "dependency_report": {
+      "complete": false,
+      "reason": "未给出完整带背景的结构化依赖边；该缺口与单次干预是否数学正确分开记录。"
+    },
+    "notes": [
+      "两份输出dependencies均为空。指定联合删除的反例成立，但未在该答案中证明两项单删仍成立，不能算完整依赖分析。"
+    ]
+  },
+  {
+    "task_id": "AL05",
+    "arm": "direct_model",
+    "reviewer_type": "ai",
+    "reviewer": "Codex（本聊天主Agent，读取实际回答后逐义务复核）",
+    "reviewed_at": "2026-11-05",
+    "independent": false,
+    "case_digest": "541baa9e08a6b5a74336c5a86686371d4d50c1eeb9462f839bf398a65484a9d9",
+    "source_file": "raw/direct_model/AL05/attempt-1.json",
+    "source_sha256": "7f317e7d0e2c56f957f2c67cf6fc6b36d90102da2fd7ca7248eb7005cb20860d",
+    "prediction_digest": "f72a9e405cb49971e2ae718e0df67343714cfbdbc145443a7fca493ee60557e6",
+    "objects": {
+      "valid": true,
+      "reason": "实际对象符合题目固定背景。det(A)det(A⁻¹)=1，故det(A)≠0；逆也直接保证单射。"
+    },
+    "intervention": {
+      "valid": true,
+      "reason": "原输出removed及replacement与输入逐项相同；未改变指定目标结论。"
+    },
+    "hypothesis_alignment": {
+      "valid": true,
+      "reason": "逐ID对照输入及中文含义，未删改保留条件。输入已提供假设，这不是从自然语言提取测试。"
+    },
+    "retained": {
+      "H1": {
+        "valid": true,
+        "reason": "有限阶实方阵的行列式与线性算子均有定义。"
+      },
+      "H2": {
+        "valid": true,
+        "reason": "存在双侧逆A⁻¹；Ax=0时左乘逆得到x=0。"
+      }
+    },
+    "replacement": {},
+    "deleted": {},
+    "target": null,
+    "preservation_proof": {
+      "valid": true,
+      "reason": "det(A)det(A⁻¹)=1，故det(A)≠0；逆也直接保证单射。"
+    },
+    "argument": {
+      "valid": true,
+      "reason": "det(A)det(A⁻¹)=1，故det(A)≠0；逆也直接保证单射。"
+    },
+    "evidence_honesty": {
+      "valid": true,
+      "reason": "原输出只列数学论证，未声称调用计算、人工审阅或形式化核验；未知费用保持null。"
+    },
+    "witness_claimed": false,
+    "dependency_report": {
+      "complete": false,
+      "reason": "未给出完整带背景的结构化依赖边；该缺口与单次干预是否数学正确分开记录。"
+    },
+    "notes": []
+  },
+  {
+    "task_id": "RA05",
+    "arm": "direct_model",
+    "reviewer_type": "ai",
+    "reviewer": "Codex（本聊天主Agent，读取实际回答后逐义务复核）",
+    "reviewed_at": "2026-11-05",
+    "independent": false,
+    "case_digest": "538979c3f0c024f8b351c11f51130f1fbbbe4b5de6e6e6a46b2ba7cb9b4caa0b",
+    "source_file": "raw/direct_model/RA05/attempt-2.json",
+    "source_sha256": "5c5b2e79ac7f6c82318fe7f36bb1e8ab1a8279589de4ed90e2bed13a90fe9000",
+    "prediction_digest": "a8b859c37a506bff636129cb6671452458908ee9dd95bdd9d940d5d3be5504f1",
+    "objects": {
+      "valid": true,
+      "reason": "实际对象符合题目固定背景。∫|f|≤Mμ(X)<∞，这正是题中L1条件及结论；不需要反例。"
+    },
+    "intervention": {
+      "valid": true,
+      "reason": "原输出removed及replacement与输入逐项相同；未改变指定目标结论。"
+    },
+    "hypothesis_alignment": {
+      "valid": true,
+      "reason": "逐ID对照输入及中文含义，未删改保留条件。输入已提供假设，这不是从自然语言提取测试。"
+    },
+    "retained": {
+      "H1": {
+        "valid": true,
+        "reason": "总测度有限，因此常数M的积分有限。"
+      },
+      "H2": {
+        "valid": true,
+        "reason": "f可测、|f|≤M，所以|f|为非负可测函数且可用单调性。"
+      }
+    },
+    "replacement": {},
+    "deleted": {},
+    "target": null,
+    "preservation_proof": {
+      "valid": true,
+      "reason": "∫|f|≤Mμ(X)<∞，这正是题中L1条件及结论；不需要反例。"
+    },
+    "argument": {
+      "valid": true,
+      "reason": "∫|f|≤Mμ(X)<∞，这正是题中L1条件及结论；不需要反例。"
+    },
+    "evidence_honesty": {
+      "valid": true,
+      "reason": "原输出只列数学论证，未声称调用计算、人工审阅或形式化核验；未知费用保持null。"
+    },
+    "witness_claimed": false,
+    "dependency_report": {
+      "complete": false,
+      "reason": "未给出完整带背景的结构化依赖边；该缺口与单次干预是否数学正确分开记录。"
+    },
+    "notes": []
+  },
+  {
+    "task_id": "CA06",
+    "arm": "direct_model",
+    "reviewer_type": "ai",
+    "reviewer": "Codex（本聊天主Agent，读取实际回答后逐义务复核）",
+    "reviewed_at": "2026-11-05",
+    "independent": false,
+    "case_digest": "3983b20a843976df906364362e29516ad54f4fa7c8434ca4da65d55ce1e0824a",
+    "source_file": "raw/direct_model/CA06/attempt-2.json",
+    "source_sha256": "2449b7d523fb0fc7517e90b868007906a38919f14c9effc82496681fe036066c",
+    "prediction_digest": "8d822f2594e870634248d65a85761cca7c2d0323c1953f7cb2149d4e8c70746f",
+    "objects": {
+      "valid": true,
+      "reason": "实际对象符合题目固定背景。代入dz=ie^(it)dt，积分为∫0到2π i dt=2πi≠0。"
+    },
+    "intervention": {
+      "valid": true,
+      "reason": "原输出removed及replacement与输入逐项相同；未改变指定目标结论。"
+    },
+    "hypothesis_alignment": {
+      "valid": true,
+      "reason": "逐ID对照输入及中文含义，未删改保留条件。输入已提供假设，这不是从自然语言提取测试。"
+    },
+    "retained": {
+      "H2": {
+        "valid": true,
+        "reason": "z≠0时1/z复可微，导数−1/z²。"
+      },
+      "H3": {
+        "valid": true,
+        "reason": "e^(it)在[0,2π]上光滑、首尾1、模恒1，所以路径不穿过0。"
+      },
+      "H4": {
+        "valid": true,
+        "reason": "C去原点为非空开集；任意两点可由径向与圆弧路径连通。"
+      }
+    },
+    "replacement": {},
+    "deleted": {
+      "H1": {
+        "valid": true,
+        "reason": "单位圆绕0的绕数1在避开0的同伦中不变，故不能缩到点；穿孔平面非单连通。"
+      }
+    },
+    "target": {
+      "valid": true,
+      "reason": "代入dz=ie^(it)dt，积分为∫0到2π i dt=2πi≠0。"
+    },
+    "preservation_proof": null,
+    "argument": {
+      "valid": true,
+      "reason": "代入dz=ie^(it)dt，积分为∫0到2π i dt=2πi≠0。"
+    },
+    "evidence_honesty": {
+      "valid": true,
+      "reason": "原输出只列数学论证，未声称调用计算、人工审阅或形式化核验；未知费用保持null。"
+    },
+    "witness_claimed": true,
+    "dependency_report": {
+      "complete": false,
+      "reason": "未给出完整带背景的结构化依赖边；该缺口与单次干预是否数学正确分开记录。"
+    },
+    "notes": [
+      "直接组没有显式写非单连通论证。AI确认该性质，但不把本条补充冒充原回答已写内容。"
+    ]
+  },
+  {
+    "task_id": "CA07",
+    "arm": "direct_model",
+    "reviewer_type": "ai",
+    "reviewer": "Codex（本聊天主Agent，读取实际回答后逐义务复核）",
+    "reviewed_at": "2026-11-05",
+    "independent": false,
+    "case_digest": "4d66e0146024921288f599e732a8afdf84117ed0bf2e2583510d271baff318f8",
+    "source_file": "raw/direct_model/CA07/attempt-2.json",
+    "source_sha256": "a4a88cc130b655fe1bd19a45c10541ca913aa57f29f9c899b284d69d1b828607",
+    "prediction_digest": "8ec9a6c79bfc571141f9aceaeaeb72177640202f1d0bab86e92177766e1d070b",
+    "objects": {
+      "valid": true,
+      "reason": "实际对象符合题目固定背景。函数增量=复增量×有界差商→0，各点连续，故保留条件推出H3。"
+    },
+    "intervention": {
+      "valid": true,
+      "reason": "原输出removed及replacement与输入逐项相同；未改变指定目标结论。"
+    },
+    "hypothesis_alignment": {
+      "valid": true,
+      "reason": "逐ID对照输入及中文含义，未删改保留条件。输入已提供假设，这不是从自然语言提取测试。"
+    },
+    "retained": {
+      "H1": {
+        "valid": true,
+        "reason": "题中Ω为域，尤其为开集，可在每个点附近取复增量。"
+      },
+      "H2": {
+        "valid": true,
+        "reason": "全纯意味着每点复差商有有限极限。"
+      }
+    },
+    "replacement": {},
+    "deleted": {},
+    "target": null,
+    "preservation_proof": {
+      "valid": true,
+      "reason": "函数增量=复增量×有界差商→0，各点连续，故保留条件推出H3。"
+    },
+    "argument": {
+      "valid": true,
+      "reason": "函数增量=复增量×有界差商→0，各点连续，故保留条件推出H3。"
+    },
+    "evidence_honesty": {
+      "valid": true,
+      "reason": "原输出只列数学论证，未声称调用计算、人工审阅或形式化核验；未知费用保持null。"
+    },
+    "witness_claimed": false,
+    "dependency_report": {
+      "complete": false,
+      "reason": "未给出完整带背景的结构化依赖边；该缺口与单次干预是否数学正确分开记录。"
+    },
+    "notes": []
+  },
+  {
+    "task_id": "AL07",
+    "arm": "direct_model",
+    "reviewer_type": "ai",
+    "reviewer": "Codex（本聊天主Agent，读取实际回答后逐义务复核）",
+    "reviewed_at": "2026-11-05",
+    "independent": false,
+    "case_digest": "61288cabad751cc5a96415434a454d2775a9f2310a5be51e8fb405c4e2669276",
+    "source_file": "raw/direct_model/AL07/attempt-1.json",
+    "source_sha256": "dda792bd7cf8243e6eedca68522fbea95fa674aece057a33709d1f5948e57ff3",
+    "prediction_digest": "7bb8e5e5348eadad1642350d286f2d3c031026d594360e56ec568f98769ef50d",
+    "objects": {
+      "valid": true,
+      "reason": "实际对象符合题目固定背景。B(e1,e2)=1，故不是零双线性形式。"
+    },
+    "intervention": {
+      "valid": true,
+      "reason": "原输出removed及replacement与输入逐项相同；未改变指定目标结论。"
+    },
+    "hypothesis_alignment": {
+      "valid": true,
+      "reason": "逐ID对照输入及中文含义，未删改保留条件。输入已提供假设，这不是从自然语言提取测试。"
+    },
+    "retained": {
+      "H2": {
+        "valid": true,
+        "reason": "F2上xt+ys（或ad+bc）对每个变量分别线性；交换变量因乘加交换而不变。"
+      },
+      "H3": {
+        "valid": true,
+        "reason": "B((x,y),(x,y))=2xy=0，因char(F2)=2。"
+      }
+    },
+    "replacement": {},
+    "deleted": {
+      "H1": {
+        "valid": true,
+        "reason": "F2的特征为2，与char(F)≠2相反。"
+      }
+    },
+    "target": {
+      "valid": true,
+      "reason": "B(e1,e2)=1，故不是零双线性形式。"
+    },
+    "preservation_proof": null,
+    "argument": {
+      "valid": true,
+      "reason": "B(e1,e2)=1，故不是零双线性形式。"
+    },
+    "evidence_honesty": {
+      "valid": true,
+      "reason": "原输出只列数学论证，未声称调用计算、人工审阅或形式化核验；未知费用保持null。"
+    },
+    "witness_claimed": true,
+    "dependency_report": {
+      "complete": false,
+      "reason": "未给出完整带背景的结构化依赖边；该缺口与单次干预是否数学正确分开记录。"
+    },
+    "notes": []
+  },
+  {
+    "task_id": "RA07",
+    "arm": "direct_model",
+    "reviewer_type": "ai",
+    "reviewer": "Codex（本聊天主Agent，读取实际回答后逐义务复核）",
+    "reviewed_at": "2026-11-05",
+    "independent": false,
+    "case_digest": "e01b244dc7bb71d2e78550c3d97e42fe12896e5e4ba51a45aefd15327635e625",
+    "source_file": "raw/direct_model/RA07/attempt-1.json",
+    "source_sha256": "2c9aac6535e76df514782dec69f15ce0f5ba9fca9a0d20764cbbb2eacf26113d",
+    "prediction_digest": "317f2906fa91da7fe66387e5f0b6b1a1b6fa2b17297feefc0efedf651f3e7de8",
+    "objects": {
+      "valid": true,
+      "reason": "实际对象符合题目固定背景。非零集合的测度均为2，因此非几乎处处为零。"
+    },
+    "intervention": {
+      "valid": true,
+      "reason": "原输出removed及replacement与输入逐项相同；未改变指定目标结论。"
+    },
+    "hypothesis_alignment": {
+      "valid": true,
+      "reason": "逐ID对照输入及中文含义，未删改保留条件。输入已提供假设，这不是从自然语言提取测试。"
+    },
+    "retained": {
+      "H1": {
+        "valid": true,
+        "reason": "直接组有限计数空间f取±1，绝对积分2；Skill组两个不交单位区间上的指示函数差，可测且绝对积分2。"
+      },
+      "H3": {
+        "valid": true,
+        "reason": "直接组1−1=0；Skill组两个单位区间测度之差1−1=0。"
+      }
+    },
+    "replacement": {},
+    "deleted": {
+      "H2": {
+        "valid": true,
+        "reason": "直接组b点测度1且f(b)=−1；Skill组[1,2)测度1且函数为−1。"
+      }
+    },
+    "target": {
+      "valid": true,
+      "reason": "非零集合的测度均为2，因此非几乎处处为零。"
+    },
+    "preservation_proof": null,
+    "argument": {
+      "valid": true,
+      "reason": "非零集合的测度均为2，因此非几乎处处为零。"
+    },
+    "evidence_honesty": {
+      "valid": true,
+      "reason": "原输出只列数学论证，未声称调用计算、人工审阅或形式化核验；未知费用保持null。"
+    },
+    "witness_claimed": true,
+    "dependency_report": {
+      "complete": false,
+      "reason": "未给出完整带背景的结构化依赖边；该缺口与单次干预是否数学正确分开记录。"
+    },
+    "notes": [
+      "两个构造均合法；测度空间不必与参考答案[0,1]相同。"
+    ]
+  },
+  {
+    "task_id": "CA09",
+    "arm": "direct_model",
+    "reviewer_type": "ai",
+    "reviewer": "Codex（本聊天主Agent，读取实际回答后逐义务复核）",
+    "reviewed_at": "2026-11-05",
+    "independent": false,
+    "case_digest": "b8009db7d0a208a55291317929d40b892ffab6080530e56fee20e9e0bf72bd40",
+    "source_file": "raw/direct_model/CA09/attempt-1.json",
+    "source_sha256": "2ab0f7f843ad1c842bf295a7b71cd71a018556a1446379c9754f633486b2c49f",
+    "prediction_digest": "0e54dfe7110db5299c43c21772253fa74e92d73519c7522d486ad458c1c225d9",
+    "objects": {
+      "valid": true,
+      "reason": "实际对象符合题目固定背景。绝对值级数各项均1，前N+1项和为N+1，发散。"
+    },
+    "intervention": {
+      "valid": true,
+      "reason": "原输出removed及replacement与输入逐项相同；未改变指定目标结论。"
+    },
+    "hypothesis_alignment": {
+      "valid": true,
+      "reason": "逐ID对照输入及中文含义，未删改保留条件。输入已提供假设，这不是从自然语言提取测试。"
+    },
+    "retained": {
+      "H1": {
+        "valid": true,
+        "reason": "几何级数在|z|<1收敛、|z|>1通项不趋零，所以收敛半径恰为1，正且有限。"
+      }
+    },
+    "replacement": {
+      "H2w": {
+        "valid": true,
+        "reason": "取z=1、R=1，有|z|≤R。"
+      }
+    },
+    "deleted": {
+      "H2": {
+        "valid": true,
+        "reason": "|z|=R=1，不满足严格不等式。"
+      }
+    },
+    "target": {
+      "valid": true,
+      "reason": "绝对值级数各项均1，前N+1项和为N+1，发散。"
+    },
+    "preservation_proof": null,
+    "argument": {
+      "valid": true,
+      "reason": "绝对值级数各项均1，前N+1项和为N+1，发散。"
+    },
+    "evidence_honesty": {
+      "valid": true,
+      "reason": "原输出只列数学论证，未声称调用计算、人工审阅或形式化核验；未知费用保持null。"
+    },
+    "witness_claimed": true,
+    "dependency_report": {
+      "complete": false,
+      "reason": "未给出完整带背景的结构化依赖边；该缺口与单次干预是否数学正确分开记录。"
+    },
+    "notes": []
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "command": [
+    "C:\\Users\\hougu\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "-X",
+    "utf8",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "evaluation/tests",
+    "-v"
+  ],
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "test_abstention_not_perfect_precision (test_lab.MeaningfulChecks.test_abstention_not_perfect_precision) ... ok\ntest_alternative_witness_scored_by_obligations (test_lab.MeaningfulChecks.test_alternative_witness_scored_by_obligations) ... ok\ntest_broken_retained_hypothesis_fails (test_lab.MeaningfulChecks.test_broken_retained_hypothesis_fails) ... ok\ntest_conflicting_boolean_claim_rejected (test_lab.MeaningfulChecks.test_conflicting_boolean_claim_rejected) ... ok\ntest_data_obligations_and_family_isolation (test_lab.MeaningfulChecks.test_data_obligations_and_family_isolation) ... ok\ntest_empty_claims_never_prove (test_lab.MeaningfulChecks.test_empty_claims_never_prove) ... ok\ntest_export_omits_references_and_sources (test_lab.MeaningfulChecks.test_export_omits_references_and_sources) ... ok\ntest_float_rejected (test_lab.MeaningfulChecks.test_float_rejected) ... ok\ntest_gate_refuses_unreviewed_small_sample (test_lab.MeaningfulChecks.test_gate_refuses_unreviewed_small_sample) ... ok\ntest_incorrect_matrix_claim_rejected (test_lab.MeaningfulChecks.test_incorrect_matrix_claim_rejected) ... ok\ntest_modified_prediction_invalidates_review (test_lab.MeaningfulChecks.test_modified_prediction_invalidates_review) ... ok\ntest_nilpotent_rejects_diagonalization (test_lab.MeaningfulChecks.test_nilpotent_rejects_diagonalization) ... ok\ntest_pending_gold_blocks (test_lab.MeaningfulChecks.test_pending_gold_blocks) ... ok\ntest_polynomial_stationary (test_lab.MeaningfulChecks.test_polynomial_stationary) ... ok\ntest_rational_denominator (test_lab.MeaningfulChecks.test_rational_denominator) ... ok\ntest_real_complex_distinction (test_lab.MeaningfulChecks.test_real_complex_distinction) ... ok\ntest_rsi_missing_source_blocked (test_lab.MeaningfulChecks.test_rsi_missing_source_blocked) ... ok\ntest_rsi_unreviewed_source_blocked (test_lab.MeaningfulChecks.test_rsi_unreviewed_source_blocked) ... ok\ntest_spike_exact_integral (test_lab.MeaningfulChecks.test_spike_exact_integral) ... ok\ntest_unknown_claim_is_unknown (test_lab.MeaningfulChecks.test_unknown_claim_is_unknown) ... ok\ntest_unsupported_is_unknown (test_lab.MeaningfulChecks.test_unsupported_is_unknown) ... ok\ntest_untrusted_expression_rejected (test_lab.MeaningfulChecks.test_untrusted_expression_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 22 tests in 0.366s\n\nOK\n"
+}

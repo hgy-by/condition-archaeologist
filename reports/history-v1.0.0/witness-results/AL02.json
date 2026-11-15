@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "status": "partial_computation",
+  "claims_pass": true,
+  "checks": {
+    "square": true,
+    "diagonalizable": true,
+    "has_eigenvalue_in_field": true
+  },
+  "actual": {
+    "square": true,
+    "symmetric": false,
+    "invertible": true,
+    "diagonalizable": false,
+    "has_eigenvalue_in_field": false
+  },
+  "details": {
+    "matrix": "Matrix([[0, -1], [1, 0]])",
+    "determinant": "1",
+    "field": "real"
+  },
+  "elapsed_seconds": 0.20745639997767285,
+  "limitation": "Does not establish all retained hypotheses or whole counterexample validity."
+}

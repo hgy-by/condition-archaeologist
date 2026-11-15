@@ -1,0 +1,22 @@
+{
+  "direct_model": {
+    "attempts": 14,
+    "final_answers": 11,
+    "request_seconds_sum_including_retries": 356.1244639000506,
+    "final_request_seconds_mean": 18.13014406363734,
+    "reported_total_tokens": 11268,
+    "attempts_with_usage": 11,
+    "usd": null,
+    "limitations": "Request times exclude scheduling and overlap; missing failed-request usage is unknown, not zero billing."
+  },
+  "full_skill": {
+    "attempts": 13,
+    "final_answers": 11,
+    "request_seconds_sum_including_retries": 241.78349739999976,
+    "final_request_seconds_mean": 16.26986865454819,
+    "reported_total_tokens": 60899,
+    "attempts_with_usage": 11,
+    "usd": null,
+    "limitations": "Request times exclude scheduling and overlap; missing failed-request usage is unknown, not zero billing."
+  }
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "file": "reports/user-review-attestation-v0.2.2.json",
+    "case_id": "ALL32",
+    "claim_or_step": "用户报告通过的具体展开过程",
+    "evidence_and_missing": "有用户原话与版本摘要；没有逐题详细审阅文本",
+    "suggested_method": "若以后需要独立论文级金标准，再由独立评审给具体记录",
+    "impact": "不影响本轮AI工作模式；不自动满足独立审阅门槛",
+    "requires_user_action_now": false
+  },
+  {
+    "file": "reports/ai-review-v0.2.2/*-reviews.json",
+    "case_id": "22份干预回答",
+    "claim_or_step": "AI判断可能与生成模型存在相关偏差",
+    "evidence_and_missing": "有逐义务理由、源文件哈希和6组局部计算；没有形式化证明",
+    "suggested_method": "继续由AI复查难点，或在独立研究评测中另设审阅者",
+    "impact": "AI内部评分可用，不能声称独立认证",
+    "requires_user_action_now": false
+  },
+  {
+    "file": "reports/ai-review-v0.2.2/extended-reviews.json",
+    "case_id": "B-MA/B-RA",
+    "claim_or_step": "尚未取得整题模型回答",
+    "evidence_and_missing": "保存服务错误原文；没有数学答案",
+    "suggested_method": "稳定接口后按冻结任务另开新运行",
+    "impact": "不计为已通过整题能力",
+    "requires_user_action_now": false
+  },
+  {
+    "file": "reports/ai-review-v0.2.2/extended-reviews.json",
+    "case_id": "B-CA",
+    "claim_or_step": "整题输出重复编号",
+    "evidence_and_missing": "数学反例有效；原始结构失败",
+    "suggested_method": "对新版本重新请求并保留新旧回答",
+    "impact": "提示已修改，尚未证明模型会遵循",
+    "requires_user_action_now": false
+  },
+  {
+    "file": "evaluation/additional_validation/cases.jsonl",
+    "case_id": "AL07/RA07/CA09",
+    "claim_or_step": "部分引用的精确出处定位",
+    "evidence_and_missing": "有背景来源、完整论证、计算及用户通过确认；部分文献无精确段落定位",
+    "suggested_method": "可由AI查原教材/讲义，补页码或命题号",
+    "impact": "不把背景来源误当直接证明；不阻塞本轮使用",
+    "requires_user_action_now": false
+  },
+  {
+    "file": "reports/rsi-readiness.json",
+    "case_id": "RSI",
+    "claim_or_step": "候选是否带来隔离任务收益",
+    "evidence_and_missing": "只有旧Skill与直接模型比较；没有旧新版配对",
+    "suggested_method": "另备未参与修改的新题，冻结模型预算和版本做配对与消融",
+    "impact": "不宣称RSI已有效",
+    "requires_user_action_now": false
+  }
+]

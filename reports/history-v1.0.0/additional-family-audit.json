@@ -1,0 +1,8 @@
+{
+  "original_validation_families": 5,
+  "candidate_additional_families": 3,
+  "combined_named_families": 8,
+  "exact_family_id_overlap": false,
+  "limits": "不同标签不证明统计独立；更广义机制关联仍需人工复核。",
+  "new_cases_human_review": "pending"
+}

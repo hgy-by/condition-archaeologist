@@ -1,0 +1,79 @@
+{
+  "version": "1.0.0",
+  "skill_root": "C:\\Users\\hougu\\Documents\\Codex\\2026-11-02\\du\\outputs\\condition-archaeologist-project\\skill",
+  "python": "C:\\Users\\hougu\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+  "python_version": "3.12.8",
+  "core_files": "pass",
+  "sympy_available": true,
+  "computation_checks": [
+    {
+      "version": "0.2.0",
+      "status": "partial_computation",
+      "claims_pass": true,
+      "checks": {
+        "diagonalizable": true
+      },
+      "actual": {
+        "square": true,
+        "symmetric": false,
+        "invertible": false,
+        "diagonalizable": false,
+        "has_eigenvalue_in_field": true
+      },
+      "details": {
+        "matrix": "Matrix([[0, 1], [0, 0]])",
+        "determinant": "0",
+        "field": "complex"
+      },
+      "elapsed_seconds": 0.0012531999964267015,
+      "limitation": "Does not establish all retained hypotheses or whole counterexample validity."
+    },
+    {
+      "version": "0.2.0",
+      "status": "partial_computation",
+      "claims_pass": true,
+      "checks": {
+        "has_eigenvalue_in_field": true
+      },
+      "actual": {
+        "square": true,
+        "symmetric": false,
+        "invertible": true,
+        "diagonalizable": false,
+        "has_eigenvalue_in_field": false
+      },
+      "details": {
+        "matrix": "Matrix([[0, -1], [1, 0]])",
+        "determinant": "1",
+        "field": "real"
+      },
+      "elapsed_seconds": 0.18539190012961626,
+      "limitation": "Does not establish all retained hypotheses or whole counterexample validity."
+    },
+    {
+      "version": "0.2.0",
+      "status": "partial_computation",
+      "claims_pass": true,
+      "checks": {
+        "integral_power": true,
+        "integral_coefficient": true
+      },
+      "actual": {
+        "integral_power": 0,
+        "integral_coefficient": "1"
+      },
+      "details": {
+        "integral": "1*n**(0)",
+        "scope": "arithmetic identity only; measurable support and convergence require argument"
+      },
+      "elapsed_seconds": 0.0001938000787049532,
+      "limitation": "Does not establish all retained hypotheses or whole counterexample validity."
+    }
+  ],
+  "issues": [],
+  "chat_workflow_ready": true,
+  "local_computation_ready": true,
+  "human_math_review": "not_performed_by_this_check",
+  "limitation": "Core reasoning runs in Codex chat. This is not a standalone theorem-solving program or a capability benchmark."
+}
+

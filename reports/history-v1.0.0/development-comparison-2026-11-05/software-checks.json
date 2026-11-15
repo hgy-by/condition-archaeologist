@@ -1,0 +1,10 @@
+{
+  "date": "2026-11-05",
+  "command": "python -X utf8 -m unittest discover -s evaluation/tests -v",
+  "cwd": "outputs/condition-archaeologist-release",
+  "exit_code": 0,
+  "tests_run": 37,
+  "test_runner_elapsed_seconds": 3.454,
+  "result": "OK",
+  "scope": "software regression tests; not model capability score"
+}

@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-03",
+  "entry": "desktop bundled executable",
+  "result": {
+    "exit_code": 1,
+    "stdout": "",
+    "stderr": "2026-11-03T05:58:06.086504Z  WARN codex_features: unknown feature key in config: plan_tool\n2026-11-03T05:58:06.086527Z  WARN codex_features: unknown feature key in config: rmcp_client\n2026-11-03T05:58:06.086531Z  WARN codex_features: unknown feature key in config: streamable_shell\n2026-11-03T05:58:06.086534Z  WARN codex_features: unknown feature key in config: view_image_tool\n2026-11-03T05:58:06.092557Z  WARN codex_features: unknown feature key in config: plan_tool\n2026-11-03T05:58:06.092575Z  WARN codex_features: unknown feature key in config: rmcp_client\n2026-11-03T05:58:06.092579Z  WARN codex_features: unknown feature key in config: streamable_shell\n2026-11-03T05:58:06.092582Z  WARN codex_features: unknown feature key in config: view_image_tool\nError: failed to initialize in-process app-server client: 拒绝访问。 (os error 5)\n"
+  },
+  "chat_mode": "operational_in_current_app",
+  "batch_model_experiments": "not_run"
+}

@@ -1,0 +1,3929 @@
+[
+  {
+    "task_id": "FINAL-MA",
+    "arm": "direct_model",
+    "family_id": "monotone-sequence-completeness",
+    "reviewer_type": "ai",
+    "reviewer": "Codex主Agent（本聊天读取实际输出后复核）",
+    "reviewed_at": "2026-11-05",
+    "independent_human": false,
+    "source_digest": "bb3e9990284124ecb9d6858dc7052a0867b9c5877e581f227f95b928df18b743",
+    "task_digest": "d305ae57ed4f0f49b1a9951eab2b1519cbbaabf7c67867a6e362648281cc0041",
+    "source_file": "raw\\direct_model\\FINAL-MA\\attempt-1.json",
+    "hypothesis_expected": 3,
+    "status": "reviewed",
+    "prediction_digest": "3afe54f9b1f65fadc1473a1e0b7c6596e2f2c743a3e18d82790060fac7af921e",
+    "objects": {
+      "pass": true,
+      "reason": "对象及其原题类型背景已核对；可计算性质和全称论证分开。"
+    },
+    "mathematical_correctness": {
+      "pass": true,
+      "reason": "已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。"
+    },
+    "uncertainty_honesty": {
+      "pass": true,
+      "reason": "原答只列数学论证，不宣称调用工具、人工或形式化验证；未探索组合明确报告。"
+    },
+    "interventions": [
+      {
+        "index": 0,
+        "output_digest": "a0abd7faef11dc0ee09b994eef7566b7b54d1682aacc1cc471ef789aae62a355",
+        "retained": {
+          "H2": {
+            "pass": true,
+            "reason": "AI核对：已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。 本义务 H2=存在M∈ℝ，使所有n≥1均有a_n≤M。。原答相应步骤：对所有n，a_n≤1，故1是上界。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。 原答指定否定：偶数项恒为1，奇数项恒为−1；两子列极限不同，故数列不收敛。"
+        },
+        "deleted": {
+          "H1": {
+            "pass": true,
+            "reason": "已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。 删除条件为对所有n≥1，a_{n+1}≥a_n。；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      },
+      {
+        "index": 1,
+        "output_digest": "720b978f27ec3d082a86763396eaf3998fdc3cebd39c9ce2f00491b27d928869",
+        "retained": {
+          "H1": {
+            "pass": true,
+            "reason": "AI核对：已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。 本义务 H1=对所有n≥1，a_{n+1}≥a_n。。原答相应步骤：a_{n+1}=n+1≥n=a_n。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。 原答指定否定：a_n=n→+∞，不收敛于任何有限实数。"
+        },
+        "deleted": {
+          "H2": {
+            "pass": true,
+            "reason": "已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。 删除条件为存在M∈ℝ，使所有n≥1均有a_n≤M。；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      },
+      {
+        "index": 2,
+        "output_digest": "21e8600c7675ec0485ecd170d9cf5c1327307d06ed24160ba10792493ff4ec9a",
+        "retained": {},
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。 原答指定否定：偶数子列a_{2k}=2k→+∞，故数列不收敛于有限实数。"
+        },
+        "deleted": {
+          "H1": {
+            "pass": true,
+            "reason": "已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。 删除条件为对所有n≥1，a_{n+1}≥a_n。；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          },
+          "H2": {
+            "pass": true,
+            "reason": "已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。 删除条件为存在M∈ℝ，使所有n≥1均有a_n≤M。；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      }
+    ],
+    "hypothesis_extraction": {
+      "pass": true,
+      "reason": "已逐一对照原文的实质条件和类型背景；不按ID字面匹配。非空/正维可作为明确约定另拆，未丢失原条件。"
+    },
+    "conclusion_extraction": {
+      "pass": true,
+      "reason": "各输出结论与原文等价；AL把实谱和严格正性拆成C1/C2也是等价分解。"
+    },
+    "single_condition_coverage": {
+      "pass": true,
+      "reason": "全部原文实质假设均在单删中处理。额外拆出的可测/非空/正维也给出判定；固定背景按题意允许。"
+    },
+    "dependency_reporting": {
+      "pass": true,
+      "reason": "关系可回查各干预的构造/论证；单删与合删背景明确，未把联合失效错误解释成必须同时删才失效。"
+    },
+    "remaining_work": {
+      "pass": true,
+      "reason": "明示其他组合和弱化未探索。MA初轮full_skill未选联合删除，符合“至多1”限制并如实列入剩余，不冒称穷尽。"
+    },
+    "hypothesis_matches": 3,
+    "hypothesis_reported": 3,
+    "limitations": [
+      "抽取计数按原文语义单元：包括固定背景，不因不同原子化/编号方式惩罚；不是形式化解析器的输出。",
+      "只检验全部单项干预及至多一个组合，不检验任意弱化或全组合。",
+      "直接组共同提示提供单项字段示例但没有Skill里的唯一编号细则；其格式失败不据以宣称数学能力差。AL保留核验还带额外背景ID，按原结构协议失败。"
+    ]
+  },
+  {
+    "task_id": "FINAL-MA",
+    "arm": "old_skill",
+    "family_id": "monotone-sequence-completeness",
+    "reviewer_type": "ai",
+    "reviewer": "Codex主Agent（本聊天读取实际输出后复核）",
+    "reviewed_at": "2026-11-05",
+    "independent_human": false,
+    "source_digest": "2f38f85023d5920577c6d01da164f6dba5a28a42af04b51adbf3baee828c051f",
+    "task_digest": "d305ae57ed4f0f49b1a9951eab2b1519cbbaabf7c67867a6e362648281cc0041",
+    "source_file": "raw\\old_skill\\FINAL-MA\\attempt-1.json",
+    "hypothesis_expected": 3,
+    "status": "reviewed",
+    "prediction_digest": "5639c0a72f199d71759f53ff4e59d15bc2179c87b2baababd07caa37bd811667",
+    "objects": {
+      "pass": true,
+      "reason": "对象及其原题类型背景已核对；可计算性质和全称论证分开。"
+    },
+    "mathematical_correctness": {
+      "pass": true,
+      "reason": "已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。"
+    },
+    "uncertainty_honesty": {
+      "pass": true,
+      "reason": "原答只列数学论证，不宣称调用工具、人工或形式化验证；未探索组合明确报告。"
+    },
+    "interventions": [
+      {
+        "index": 0,
+        "output_digest": "441d223da8081065f336b5a5dd15075178bcfb10240c3451ccb1c2a6f1a3c66b",
+        "retained": {
+          "H2": {
+            "pass": true,
+            "reason": "AI核对：已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。 本义务 H2=存在实数上界M，使所有a_n≤M。。原答相应步骤：a_n∈{−1,1}，故1是实数上界。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。 原答指定否定：偶数项恒为1，奇数项恒为−1；两子列极限不同，故数列不收敛。"
+        },
+        "deleted": {
+          "H1": {
+            "pass": true,
+            "reason": "已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。 删除条件为对所有n≥1，a_{n+1}≥a_n。；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      },
+      {
+        "index": 1,
+        "output_digest": "508c7b42f059c9d6743d09ea4f7ecdf6cd2ba0f4d83f2f538a684e816a45035e",
+        "retained": {
+          "H1": {
+            "pass": true,
+            "reason": "AI核对：已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。 本义务 H1=对所有n≥1，a_{n+1}≥a_n。。原答相应步骤：a_{n+1}=n+1>n=a_n。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。 原答指定否定：a_n=n趋于正无穷，不收敛于有限实数。"
+        },
+        "deleted": {
+          "H2": {
+            "pass": true,
+            "reason": "已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。 删除条件为存在实数上界M，使所有a_n≤M。；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      },
+      {
+        "index": 2,
+        "output_digest": "47f29df699104b26676b2d73527edec2cd8006c61e1e02a7bd5aa26364f0e601",
+        "retained": {},
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。 原答指定否定：偶数子列a_{2k}=2k趋于正无穷，故原数列不收敛于有限实数。"
+        },
+        "deleted": {
+          "H1": {
+            "pass": true,
+            "reason": "已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。 删除条件为对所有n≥1，a_{n+1}≥a_n。；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          },
+          "H2": {
+            "pass": true,
+            "reason": "已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。 删除条件为存在实数上界M，使所有a_n≤M。；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      }
+    ],
+    "hypothesis_extraction": {
+      "pass": true,
+      "reason": "已逐一对照原文的实质条件和类型背景；不按ID字面匹配。非空/正维可作为明确约定另拆，未丢失原条件。"
+    },
+    "conclusion_extraction": {
+      "pass": true,
+      "reason": "各输出结论与原文等价；AL把实谱和严格正性拆成C1/C2也是等价分解。"
+    },
+    "single_condition_coverage": {
+      "pass": true,
+      "reason": "全部原文实质假设均在单删中处理。额外拆出的可测/非空/正维也给出判定；固定背景按题意允许。"
+    },
+    "dependency_reporting": {
+      "pass": true,
+      "reason": "关系可回查各干预的构造/论证；单删与合删背景明确，未把联合失效错误解释成必须同时删才失效。"
+    },
+    "remaining_work": {
+      "pass": true,
+      "reason": "明示其他组合和弱化未探索。MA初轮full_skill未选联合删除，符合“至多1”限制并如实列入剩余，不冒称穷尽。"
+    },
+    "hypothesis_matches": 3,
+    "hypothesis_reported": 3,
+    "limitations": [
+      "抽取计数按原文语义单元：包括固定背景，不因不同原子化/编号方式惩罚；不是形式化解析器的输出。",
+      "只检验全部单项干预及至多一个组合，不检验任意弱化或全组合。"
+    ]
+  },
+  {
+    "task_id": "FINAL-MA",
+    "arm": "full_skill",
+    "family_id": "monotone-sequence-completeness",
+    "reviewer_type": "ai",
+    "reviewer": "Codex主Agent（本聊天读取实际输出后复核）",
+    "reviewed_at": "2026-11-05",
+    "independent_human": false,
+    "source_digest": "67d3795a5336928031a122384b6ce5b5c7bbb2df93e56cdcd85374a4a6929c47",
+    "task_digest": "d305ae57ed4f0f49b1a9951eab2b1519cbbaabf7c67867a6e362648281cc0041",
+    "source_file": "raw\\full_skill\\FINAL-MA\\attempt-1.json",
+    "hypothesis_expected": 3,
+    "status": "reviewed",
+    "prediction_digest": "9e6f63778893af78684e15f251b121b80225bdc0a88f65688f0f8aa3ac5a1677",
+    "objects": {
+      "pass": true,
+      "reason": "对象及其原题类型背景已核对；可计算性质和全称论证分开。"
+    },
+    "mathematical_correctness": {
+      "pass": true,
+      "reason": "已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。"
+    },
+    "uncertainty_honesty": {
+      "pass": true,
+      "reason": "原答只列数学论证，不宣称调用工具、人工或形式化验证；未探索组合明确报告。"
+    },
+    "interventions": [
+      {
+        "index": 0,
+        "output_digest": "603f8977c2b28e00ee4a227469826d6b9884c9ee594e0c26041de4cfedf3a816",
+        "retained": {
+          "H2": {
+            "pass": true,
+            "reason": "AI核对：已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。 本义务 H2=存在实数M，使每个正整数n均满足a_n≤M。。原答相应步骤：所有项均不超过1，故1是上界。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。 原答指定否定：偶数项恒为1，奇数项恒为−1；两子列极限不同，故数列不收敛。"
+        },
+        "deleted": {
+          "H1": {
+            "pass": true,
+            "reason": "已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。 删除条件为对每个正整数n，a_n≤a_{n+1}。；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      },
+      {
+        "index": 1,
+        "output_digest": "3d50e20a7f14023b0d0cc05dc56cdff23305d5c82b67b0ecd9e558dc73a22ef5",
+        "retained": {
+          "H1": {
+            "pass": true,
+            "reason": "AI核对：已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。 本义务 H1=对每个正整数n，a_n≤a_{n+1}。。原答相应步骤：对每个正整数n，n<n+1，故数列单调不减。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。 原答指定否定：任取实数L，存在N使n>L+1对所有n≥N成立，故a_n不趋于L。"
+        },
+        "deleted": {
+          "H2": {
+            "pass": true,
+            "reason": "已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。 删除条件为存在实数M，使每个正整数n均满足a_n≤M。；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      }
+    ],
+    "hypothesis_extraction": {
+      "pass": true,
+      "reason": "已逐一对照原文的实质条件和类型背景；不按ID字面匹配。非空/正维可作为明确约定另拆，未丢失原条件。"
+    },
+    "conclusion_extraction": {
+      "pass": true,
+      "reason": "各输出结论与原文等价；AL把实谱和严格正性拆成C1/C2也是等价分解。"
+    },
+    "single_condition_coverage": {
+      "pass": true,
+      "reason": "全部原文实质假设均在单删中处理。额外拆出的可测/非空/正维也给出判定；固定背景按题意允许。"
+    },
+    "dependency_reporting": {
+      "pass": true,
+      "reason": "关系可回查各干预的构造/论证；单删与合删背景明确，未把联合失效错误解释成必须同时删才失效。"
+    },
+    "remaining_work": {
+      "pass": true,
+      "reason": "明示其他组合和弱化未探索。MA初轮full_skill未选联合删除，符合“至多1”限制并如实列入剩余，不冒称穷尽。"
+    },
+    "hypothesis_matches": 3,
+    "hypothesis_reported": 3,
+    "limitations": [
+      "抽取计数按原文语义单元：包括固定背景，不因不同原子化/编号方式惩罚；不是形式化解析器的输出。",
+      "只检验全部单项干预及至多一个组合，不检验任意弱化或全组合。"
+    ]
+  },
+  {
+    "task_id": "FINAL-MA",
+    "arm": "without_strategies",
+    "family_id": "monotone-sequence-completeness",
+    "reviewer_type": "ai",
+    "reviewer": "Codex主Agent（本聊天读取实际输出后复核）",
+    "reviewed_at": "2026-11-05",
+    "independent_human": false,
+    "source_digest": "25b148953aba7f1c89318cbce6998e43dfeb4fcdcaf108a5ed45fc1c1cf4189e",
+    "task_digest": "d305ae57ed4f0f49b1a9951eab2b1519cbbaabf7c67867a6e362648281cc0041",
+    "source_file": "raw\\without_strategies\\FINAL-MA\\attempt-1.json",
+    "hypothesis_expected": 3,
+    "status": "reviewed",
+    "prediction_digest": "f1b84e32ca68c881f643e153fae1ebcecf8406d27dd63814b2283424b4b75f7f",
+    "objects": {
+      "pass": true,
+      "reason": "对象及其原题类型背景已核对；可计算性质和全称论证分开。"
+    },
+    "mathematical_correctness": {
+      "pass": true,
+      "reason": "已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。"
+    },
+    "uncertainty_honesty": {
+      "pass": true,
+      "reason": "原答只列数学论证，不宣称调用工具、人工或形式化验证；未探索组合明确报告。"
+    },
+    "interventions": [
+      {
+        "index": 0,
+        "output_digest": "17af41e12b3d241ff2910efb2a2cfefe12ff2453d99e974e6600ee68891462e5",
+        "retained": {
+          "H2": {
+            "pass": true,
+            "reason": "AI核对：已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。 本义务 H2=存在实数上界M。。原答相应步骤：各项均不超过1，故1是实数上界。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。 原答指定否定：偶数项恒为1，奇数项恒为−1；两个子列极限不同，故数列不收敛。"
+        },
+        "deleted": {
+          "H1": {
+            "pass": true,
+            "reason": "已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。 删除条件为对所有n≥1，a_n≤a_{n+1}。；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      },
+      {
+        "index": 1,
+        "output_digest": "c36b33b140dfc91be2adec3a72bbb8270172642bd91b4f3f134f532ef91e0e1a",
+        "retained": {
+          "H1": {
+            "pass": true,
+            "reason": "AI核对：已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。 本义务 H1=对所有n≥1，a_n≤a_{n+1}。。原答相应步骤：对每个n≥1，n<n+1，故数列单调不减。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。 原答指定否定：a_n=n→+∞，不存在有限实数极限。"
+        },
+        "deleted": {
+          "H2": {
+            "pass": true,
+            "reason": "已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。 删除条件为存在实数上界M。；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      },
+      {
+        "index": 2,
+        "output_digest": "6a96aa75d179c19550c6e37685cbfa5d25c66bb468d99203ed8beb7cd3623cf3",
+        "retained": {},
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。 原答指定否定：偶数子列a_{2k}=2k→+∞，因此不存在有限实数极限。"
+        },
+        "deleted": {
+          "H1": {
+            "pass": true,
+            "reason": "已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。 删除条件为对所有n≥1，a_n≤a_{n+1}。；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          },
+          "H2": {
+            "pass": true,
+            "reason": "已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。 删除条件为存在实数上界M。；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      }
+    ],
+    "hypothesis_extraction": {
+      "pass": true,
+      "reason": "已逐一对照原文的实质条件和类型背景；不按ID字面匹配。非空/正维可作为明确约定另拆，未丢失原条件。"
+    },
+    "conclusion_extraction": {
+      "pass": true,
+      "reason": "各输出结论与原文等价；AL把实谱和严格正性拆成C1/C2也是等价分解。"
+    },
+    "single_condition_coverage": {
+      "pass": true,
+      "reason": "全部原文实质假设均在单删中处理。额外拆出的可测/非空/正维也给出判定；固定背景按题意允许。"
+    },
+    "dependency_reporting": {
+      "pass": true,
+      "reason": "关系可回查各干预的构造/论证；单删与合删背景明确，未把联合失效错误解释成必须同时删才失效。"
+    },
+    "remaining_work": {
+      "pass": true,
+      "reason": "明示其他组合和弱化未探索。MA初轮full_skill未选联合删除，符合“至多1”限制并如实列入剩余，不冒称穷尽。"
+    },
+    "hypothesis_matches": 3,
+    "hypothesis_reported": 3,
+    "limitations": [
+      "抽取计数按原文语义单元：包括固定背景，不因不同原子化/编号方式惩罚；不是形式化解析器的输出。",
+      "只检验全部单项干预及至多一个组合，不检验任意弱化或全组合。"
+    ]
+  },
+  {
+    "task_id": "FINAL-MA",
+    "arm": "without_verification",
+    "family_id": "monotone-sequence-completeness",
+    "reviewer_type": "ai",
+    "reviewer": "Codex主Agent（本聊天读取实际输出后复核）",
+    "reviewed_at": "2026-11-05",
+    "independent_human": false,
+    "source_digest": "89f0c645d17e249604c6c6a5bb8b755b4960f054709382cc37abfa34cd79e748",
+    "task_digest": "d305ae57ed4f0f49b1a9951eab2b1519cbbaabf7c67867a6e362648281cc0041",
+    "source_file": "raw\\without_verification\\FINAL-MA\\attempt-1.json",
+    "hypothesis_expected": 3,
+    "status": "reviewed",
+    "prediction_digest": "a6d1544d3f89ba5be25bceaef4f20739762b76772a71a0a358c9e583fac6eb4d",
+    "objects": {
+      "pass": true,
+      "reason": "对象及其原题类型背景已核对；可计算性质和全称论证分开。"
+    },
+    "mathematical_correctness": {
+      "pass": true,
+      "reason": "已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。"
+    },
+    "uncertainty_honesty": {
+      "pass": true,
+      "reason": "原答只列数学论证，不宣称调用工具、人工或形式化验证；未探索组合明确报告。"
+    },
+    "interventions": [
+      {
+        "index": 0,
+        "output_digest": "b97f1e00876a3cde369065e2506d04cc2a8c37969348bbf8f467564512d0141b",
+        "retained": {
+          "H2": {
+            "pass": true,
+            "reason": "AI核对：已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。 本义务 H2=存在M∈ℝ，对任意n≥1，a_n≤M。。原答相应步骤：所有项均为±1，取上界M=1。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。 原答指定否定：偶数项恒为1，奇数项恒为−1；两子列极限不同，故数列不收敛。"
+        },
+        "deleted": {
+          "H1": {
+            "pass": true,
+            "reason": "已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。 删除条件为对任意n≥1，a_n≤a_{n+1}。；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      },
+      {
+        "index": 1,
+        "output_digest": "32822dd1c1d1e538c4ea2ee5bbb903b079684542fb2d1778cbbeb32d2bed43da",
+        "retained": {
+          "H1": {
+            "pass": true,
+            "reason": "AI核对：已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。 本义务 H1=对任意n≥1，a_n≤a_{n+1}。。原答相应步骤：对任意n≥1，a_{n+1}=n+1>n=a_n。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。 原答指定否定：对任意M∈ℝ，存在n>M；故a_n→+∞，不收敛于有限实数。"
+        },
+        "deleted": {
+          "H2": {
+            "pass": true,
+            "reason": "已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。 删除条件为存在M∈ℝ，对任意n≥1，a_n≤M。；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      },
+      {
+        "index": 2,
+        "output_digest": "bfdfc5e7533614ccbb23e65210952ee3cb6cda5782b658c08aa779d756895b3d",
+        "retained": {},
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。 原答指定否定：偶数项2k→+∞，奇数项−(2k−1)→−∞，故不存在有限实数极限。"
+        },
+        "deleted": {
+          "H1": {
+            "pass": true,
+            "reason": "已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。 删除条件为对任意n≥1，a_n≤a_{n+1}。；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          },
+          "H2": {
+            "pass": true,
+            "reason": "已核对实际±1振荡、n以及(−1)^n n构造。上界1、单调性及相应子列或无界性论证均成立。原命题用上确界性质证明。 删除条件为存在M∈ℝ，对任意n≥1，a_n≤M。；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      }
+    ],
+    "hypothesis_extraction": {
+      "pass": true,
+      "reason": "已逐一对照原文的实质条件和类型背景；不按ID字面匹配。非空/正维可作为明确约定另拆，未丢失原条件。"
+    },
+    "conclusion_extraction": {
+      "pass": true,
+      "reason": "各输出结论与原文等价；AL把实谱和严格正性拆成C1/C2也是等价分解。"
+    },
+    "single_condition_coverage": {
+      "pass": true,
+      "reason": "全部原文实质假设均在单删中处理。额外拆出的可测/非空/正维也给出判定；固定背景按题意允许。"
+    },
+    "dependency_reporting": {
+      "pass": true,
+      "reason": "关系可回查各干预的构造/论证；单删与合删背景明确，未把联合失效错误解释成必须同时删才失效。"
+    },
+    "remaining_work": {
+      "pass": true,
+      "reason": "明示其他组合和弱化未探索。MA初轮full_skill未选联合删除，符合“至多1”限制并如实列入剩余，不冒称穷尽。"
+    },
+    "hypothesis_matches": 3,
+    "hypothesis_reported": 3,
+    "limitations": [
+      "抽取计数按原文语义单元：包括固定背景，不因不同原子化/编号方式惩罚；不是形式化解析器的输出。",
+      "只检验全部单项干预及至多一个组合，不检验任意弱化或全组合。"
+    ]
+  },
+  {
+    "task_id": "FINAL-AL",
+    "arm": "direct_model",
+    "family_id": "quadratic-positive-spectrum",
+    "reviewer_type": "ai",
+    "reviewer": "Codex主Agent（本聊天读取实际输出后复核）",
+    "reviewed_at": "2026-11-05",
+    "independent_human": false,
+    "source_digest": "5c16ebea4f0bca4fb1efcf920052621f21f8c90ec811e6b14c63e52881627cd8",
+    "task_digest": "c6218cb2148a70341ec61c31c81651609255378b704baa6b8311a55343c7b88d",
+    "source_file": "raw\\direct_model\\FINAL-AL\\attempt-1.json",
+    "hypothesis_expected": 4,
+    "status": "reviewed",
+    "prediction_digest": "9090496a6b03b5ac714fd61805f1635b3fc4a414d09cff97628fdf2a336c6b7a",
+    "objects": {
+      "pass": true,
+      "reason": "对象及其原题类型背景已核对；可计算性质和全称论证分开。"
+    },
+    "mathematical_correctness": {
+      "pass": true,
+      "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。"
+    },
+    "uncertainty_honesty": {
+      "pass": true,
+      "reason": "原答只列数学论证，不宣称调用工具、人工或形式化验证；未探索组合明确报告。"
+    },
+    "interventions": [
+      {
+        "index": 0,
+        "output_digest": "3c3240184036ca9658f3f44a14ca841890293faf983d9f4150d69e33fbb457d0",
+        "retained": {
+          "H2": {
+            "pass": true,
+            "reason": "AI核对：已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 本义务 H2=对每个非零x∈R^n，x^TAx>0。原答相应步骤：任意非零x=(x₁,x₂)^T满足x^TAx=x₁²+x₂²>0。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 原答指定否定：特征多项式为(λ-1)²+1，特征值1±i不是实数。"
+        },
+        "deleted": {
+          "H1": {
+            "pass": true,
+            "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 删除条件为A对称，即A^T=A；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      },
+      {
+        "index": 1,
+        "output_digest": "68167ca68a96f5c433749554368469b5da6c2ad5cf12c2b4addeb8ca280fe9a3",
+        "retained": {
+          "H1": {
+            "pass": true,
+            "reason": "AI核对：已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 本义务 H1=A对称，即A^T=A。原答相应步骤：对角矩阵满足A^T=A。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 原答指定否定：A有特征值-1，不是正实数。"
+        },
+        "deleted": {
+          "H2": {
+            "pass": true,
+            "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 删除条件为对每个非零x∈R^n，x^TAx>0；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      },
+      {
+        "index": 2,
+        "output_digest": "0bfa62c946b535faafba724152ed99b4c786aa3d891df35a51466f62bb46d057",
+        "retained": {},
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 原答指定否定：特征多项式为λ²+1，特征值±i不是正实数。"
+        },
+        "deleted": {
+          "H1": {
+            "pass": true,
+            "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 删除条件为A对称，即A^T=A；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          },
+          "H2": {
+            "pass": true,
+            "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 删除条件为对每个非零x∈R^n，x^TAx>0；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      }
+    ],
+    "hypothesis_extraction": {
+      "pass": true,
+      "reason": "已逐一对照原文的实质条件和类型背景；不按ID字面匹配。非空/正维可作为明确约定另拆，未丢失原条件。"
+    },
+    "conclusion_extraction": {
+      "pass": true,
+      "reason": "各输出结论与原文等价；AL把实谱和严格正性拆成C1/C2也是等价分解。"
+    },
+    "single_condition_coverage": {
+      "pass": true,
+      "reason": "全部原文实质假设均在单删中处理。额外拆出的可测/非空/正维也给出判定；固定背景按题意允许。"
+    },
+    "dependency_reporting": {
+      "pass": true,
+      "reason": "关系可回查各干预的构造/论证；单删与合删背景明确，未把联合失效错误解释成必须同时删才失效。"
+    },
+    "remaining_work": {
+      "pass": true,
+      "reason": "明示其他组合和弱化未探索。MA初轮full_skill未选联合删除，符合“至多1”限制并如实列入剩余，不冒称穷尽。"
+    },
+    "hypothesis_matches": 4,
+    "hypothesis_reported": 4,
+    "limitations": [
+      "抽取计数按原文语义单元：包括固定背景，不因不同原子化/编号方式惩罚；不是形式化解析器的输出。",
+      "只检验全部单项干预及至多一个组合，不检验任意弱化或全组合。",
+      "直接组共同提示提供单项字段示例但没有Skill里的唯一编号细则；其格式失败不据以宣称数学能力差。AL保留核验还带额外背景ID，按原结构协议失败。"
+    ]
+  },
+  {
+    "task_id": "FINAL-AL",
+    "arm": "old_skill",
+    "family_id": "quadratic-positive-spectrum",
+    "reviewer_type": "ai",
+    "reviewer": "Codex主Agent（本聊天读取实际输出后复核）",
+    "reviewed_at": "2026-11-05",
+    "independent_human": false,
+    "source_digest": "56297c06137f3672f66a7dc92ba4e9ae82586d2722452377aad159e0ad80cc3c",
+    "task_digest": "c6218cb2148a70341ec61c31c81651609255378b704baa6b8311a55343c7b88d",
+    "source_file": "raw\\old_skill\\FINAL-AL\\attempt-1.json",
+    "hypothesis_expected": 4,
+    "status": "reviewed",
+    "prediction_digest": "4cda1c6b3c340fc835624274e46b2c850b5bb6086f0319385f07a130456ed47a",
+    "objects": {
+      "pass": true,
+      "reason": "对象及其原题类型背景已核对；可计算性质和全称论证分开。"
+    },
+    "mathematical_correctness": {
+      "pass": true,
+      "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。"
+    },
+    "uncertainty_honesty": {
+      "pass": true,
+      "reason": "原答只列数学论证，不宣称调用工具、人工或形式化验证；未探索组合明确报告。"
+    },
+    "interventions": [
+      {
+        "index": 0,
+        "output_digest": "c93c486af2e13f12fd5ae336639e4943ca190eee0c5c35af005d58ec3da88a42",
+        "retained": {
+          "H2": {
+            "pass": true,
+            "reason": "AI核对：已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 本义务 H2=对每个非零实向量x，x^TAx>0。。原答相应步骤：对x=(s,t)^T≠0，有x^TAx=s²+t²>0。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 原答指定否定：A的特征多项式为(λ−1)²+1，故特征值1±i不是实数。"
+        },
+        "deleted": {
+          "H1": {
+            "pass": true,
+            "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 删除条件为A^T=A。；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      },
+      {
+        "index": 1,
+        "output_digest": "8637c966d80b526fd369ad6afabf7a4164845e24bf228c55051e6d5ab3fd71c8",
+        "retained": {
+          "H1": {
+            "pass": true,
+            "reason": "AI核对：已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 本义务 H1=A^T=A。。原答相应步骤：一阶矩阵[-1]等于其转置。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 原答指定否定：A的实特征值为−1，并非严格正数。"
+        },
+        "deleted": {
+          "H2": {
+            "pass": true,
+            "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 删除条件为对每个非零实向量x，x^TAx>0。；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      },
+      {
+        "index": 2,
+        "output_digest": "024b2fc58f0a08fdcc41b082f5d24a8fb3a37d03b6d3fb2342e1c024cd91b931",
+        "retained": {},
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 原答指定否定：A的特征多项式为λ²+1，特征值±i不是实数。"
+        },
+        "deleted": {
+          "H1": {
+            "pass": true,
+            "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 删除条件为A^T=A。；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          },
+          "H2": {
+            "pass": true,
+            "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 删除条件为对每个非零实向量x，x^TAx>0。；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      }
+    ],
+    "hypothesis_extraction": {
+      "pass": true,
+      "reason": "已逐一对照原文的实质条件和类型背景；不按ID字面匹配。非空/正维可作为明确约定另拆，未丢失原条件。"
+    },
+    "conclusion_extraction": {
+      "pass": true,
+      "reason": "各输出结论与原文等价；AL把实谱和严格正性拆成C1/C2也是等价分解。"
+    },
+    "single_condition_coverage": {
+      "pass": true,
+      "reason": "全部原文实质假设均在单删中处理。额外拆出的可测/非空/正维也给出判定；固定背景按题意允许。"
+    },
+    "dependency_reporting": {
+      "pass": true,
+      "reason": "关系可回查各干预的构造/论证；单删与合删背景明确，未把联合失效错误解释成必须同时删才失效。"
+    },
+    "remaining_work": {
+      "pass": true,
+      "reason": "明示其他组合和弱化未探索。MA初轮full_skill未选联合删除，符合“至多1”限制并如实列入剩余，不冒称穷尽。"
+    },
+    "hypothesis_matches": 4,
+    "hypothesis_reported": 4,
+    "limitations": [
+      "抽取计数按原文语义单元：包括固定背景，不因不同原子化/编号方式惩罚；不是形式化解析器的输出。",
+      "只检验全部单项干预及至多一个组合，不检验任意弱化或全组合。"
+    ]
+  },
+  {
+    "task_id": "FINAL-AL",
+    "arm": "full_skill",
+    "family_id": "quadratic-positive-spectrum",
+    "reviewer_type": "ai",
+    "reviewer": "Codex主Agent（本聊天读取实际输出后复核）",
+    "reviewed_at": "2026-11-05",
+    "independent_human": false,
+    "source_digest": "c27a86c695f7c2de0f551bfe991402bc7dfe88e53e84fcacbb505246cbf332d6",
+    "task_digest": "c6218cb2148a70341ec61c31c81651609255378b704baa6b8311a55343c7b88d",
+    "source_file": "raw\\full_skill\\FINAL-AL\\attempt-1.json",
+    "hypothesis_expected": 4,
+    "status": "reviewed",
+    "prediction_digest": "461cf32bdd15b6d520bba82684eb77f50ef58fc93f92e95a0512e348bbb66629",
+    "objects": {
+      "pass": true,
+      "reason": "对象及其原题类型背景已核对；可计算性质和全称论证分开。"
+    },
+    "mathematical_correctness": {
+      "pass": true,
+      "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。"
+    },
+    "uncertainty_honesty": {
+      "pass": true,
+      "reason": "原答只列数学论证，不宣称调用工具、人工或形式化验证；未探索组合明确报告。"
+    },
+    "interventions": [
+      {
+        "index": 0,
+        "output_digest": "2119538002470e5c89496a3da5bd0b37f17d12f0ce3a339235e8bc3c7b39330c",
+        "retained": {
+          "H2": {
+            "pass": true,
+            "reason": "AI核对：已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 本义务 H2=A^T=A。。原答相应步骤：n=0时0阶矩阵对称；n≥1时将对称性用于特征值证明。"
+          },
+          "H3": {
+            "pass": true,
+            "reason": "AI核对：已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 本义务 H3=每个非零实向量x均满足x^TAx>0。。原答相应步骤：n=0时不存在非零向量，条件真；n≥1时将其用于证明正性。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "preservation_proof": {
+          "pass": true,
+          "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 原答删后证明：n=0时无特征值，结论真。n≥1时若Av=λv，写v=u+iw，则v*Av=u^TAu+w^TAw>0；对称性使其为实数，故λ=(v*Av)/(v*v)>0。"
+        }
+      },
+      {
+        "index": 1,
+        "output_digest": "80b2136f3f55af4887df8976eadc270c92b30af8794de58a34885b3875170c72",
+        "retained": {
+          "H1": {
+            "pass": true,
+            "reason": "AI核对：已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 本义务 H1=n≥1。。原答相应步骤：n=2≥1。"
+          },
+          "H3": {
+            "pass": true,
+            "reason": "AI核对：已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 本义务 H3=每个非零实向量x均满足x^TAx>0。。原答相应步骤：任意非零实向量x=(a,b)^T满足x^TAx=a²+b²>0。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 原答指定否定：A的复特征值为1±2i，并非正实数。"
+        },
+        "deleted": {
+          "H2": {
+            "pass": true,
+            "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 删除条件为A^T=A。；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      },
+      {
+        "index": 2,
+        "output_digest": "ce91d4490e8e6449c089066fc3d4d9c03105e996adff0cb6344303a85e7def43",
+        "retained": {
+          "H1": {
+            "pass": true,
+            "reason": "AI核对：已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 本义务 H1=n≥1。。原答相应步骤：n=1≥1。"
+          },
+          "H2": {
+            "pass": true,
+            "reason": "AI核对：已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 本义务 H2=A^T=A。。原答相应步骤：一阶实矩阵[-1]等于其转置。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 原答指定否定：A的特征值为−1，不是正实数。"
+        },
+        "deleted": {
+          "H3": {
+            "pass": true,
+            "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 删除条件为每个非零实向量x均满足x^TAx>0。；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      },
+      {
+        "index": 3,
+        "output_digest": "253df73e84f1d3d51b31a4c4b103b9360a0a59d98e234725c24e1900d29815e4",
+        "retained": {
+          "H1": {
+            "pass": true,
+            "reason": "AI核对：已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 本义务 H1=n≥1。。原答相应步骤：n=2≥1。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 原答指定否定：A的特征值为−1±2i，均不是正实数。"
+        },
+        "deleted": {
+          "H2": {
+            "pass": true,
+            "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 删除条件为A^T=A。；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          },
+          "H3": {
+            "pass": true,
+            "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 删除条件为每个非零实向量x均满足x^TAx>0。；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      }
+    ],
+    "hypothesis_extraction": {
+      "pass": true,
+      "reason": "已逐一对照原文的实质条件和类型背景；不按ID字面匹配。非空/正维可作为明确约定另拆，未丢失原条件。"
+    },
+    "conclusion_extraction": {
+      "pass": true,
+      "reason": "各输出结论与原文等价；AL把实谱和严格正性拆成C1/C2也是等价分解。"
+    },
+    "single_condition_coverage": {
+      "pass": true,
+      "reason": "全部原文实质假设均在单删中处理。额外拆出的可测/非空/正维也给出判定；固定背景按题意允许。"
+    },
+    "dependency_reporting": {
+      "pass": true,
+      "reason": "关系可回查各干预的构造/论证；单删与合删背景明确，未把联合失效错误解释成必须同时删才失效。"
+    },
+    "remaining_work": {
+      "pass": true,
+      "reason": "明示其他组合和弱化未探索。MA初轮full_skill未选联合删除，符合“至多1”限制并如实列入剩余，不冒称穷尽。"
+    },
+    "hypothesis_matches": 4,
+    "hypothesis_reported": 4,
+    "limitations": [
+      "抽取计数按原文语义单元：包括固定背景，不因不同原子化/编号方式惩罚；不是形式化解析器的输出。",
+      "只检验全部单项干预及至多一个组合，不检验任意弱化或全组合。"
+    ]
+  },
+  {
+    "task_id": "FINAL-AL",
+    "arm": "without_strategies",
+    "family_id": "quadratic-positive-spectrum",
+    "reviewer_type": "ai",
+    "reviewer": "Codex主Agent（本聊天读取实际输出后复核）",
+    "reviewed_at": "2026-11-05",
+    "independent_human": false,
+    "source_digest": "a8c188428968ebe4bfed8360c67e6c82869959bab2cce0e352cdb5c834e48640",
+    "task_digest": "c6218cb2148a70341ec61c31c81651609255378b704baa6b8311a55343c7b88d",
+    "source_file": "raw\\without_strategies\\FINAL-AL\\attempt-1.json",
+    "hypothesis_expected": 4,
+    "status": "reviewed",
+    "prediction_digest": "9838137115ca67b51e5c672ddbf542e3ca5660be1dae7946cc5569c9807aa3bf",
+    "objects": {
+      "pass": true,
+      "reason": "对象及其原题类型背景已核对；可计算性质和全称论证分开。"
+    },
+    "mathematical_correctness": {
+      "pass": true,
+      "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。"
+    },
+    "uncertainty_honesty": {
+      "pass": true,
+      "reason": "原答只列数学论证，不宣称调用工具、人工或形式化验证；未探索组合明确报告。"
+    },
+    "interventions": [
+      {
+        "index": 0,
+        "output_digest": "c1e150dff28540488359db4048ca7712a80b23ead68ec652f0e3dbe17406cf36",
+        "retained": {
+          "H2": {
+            "pass": true,
+            "reason": "AI核对：已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 本义务 H2=对每个非零x∈R^n，x^TAx>0。。原答相应步骤：任取非零x=(a,b)^T，有x^TAx=a²+b²>0。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 原答指定否定：A的特征多项式为(λ−1)²+1，故有非实特征值1±i。"
+        },
+        "deleted": {
+          "H1": {
+            "pass": true,
+            "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 删除条件为A对称，即A^T=A。；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      },
+      {
+        "index": 1,
+        "output_digest": "849e55a2182ec0c34ecf8e065676b176406d4737c9fcb657bfbf31d63187335e",
+        "retained": {
+          "H1": {
+            "pass": true,
+            "reason": "AI核对：已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 本义务 H1=A对称，即A^T=A。。原答相应步骤：一阶矩阵A满足A^T=A。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 原答指定否定：A的特征值为−1，不是正实数。"
+        },
+        "deleted": {
+          "H2": {
+            "pass": true,
+            "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 删除条件为对每个非零x∈R^n，x^TAx>0。；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      },
+      {
+        "index": 2,
+        "output_digest": "e82e5760c1a5959fe73bf4e748144323ea65c0d39af0efb3bc081fd001a31567",
+        "retained": {},
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 原答指定否定：A的特征多项式为λ²+1，特征值±i均非正实数。"
+        },
+        "deleted": {
+          "H1": {
+            "pass": true,
+            "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 删除条件为A对称，即A^T=A。；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          },
+          "H2": {
+            "pass": true,
+            "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 删除条件为对每个非零x∈R^n，x^TAx>0。；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      }
+    ],
+    "hypothesis_extraction": {
+      "pass": true,
+      "reason": "已逐一对照原文的实质条件和类型背景；不按ID字面匹配。非空/正维可作为明确约定另拆，未丢失原条件。"
+    },
+    "conclusion_extraction": {
+      "pass": true,
+      "reason": "各输出结论与原文等价；AL把实谱和严格正性拆成C1/C2也是等价分解。"
+    },
+    "single_condition_coverage": {
+      "pass": true,
+      "reason": "全部原文实质假设均在单删中处理。额外拆出的可测/非空/正维也给出判定；固定背景按题意允许。"
+    },
+    "dependency_reporting": {
+      "pass": true,
+      "reason": "关系可回查各干预的构造/论证；单删与合删背景明确，未把联合失效错误解释成必须同时删才失效。"
+    },
+    "remaining_work": {
+      "pass": true,
+      "reason": "明示其他组合和弱化未探索。MA初轮full_skill未选联合删除，符合“至多1”限制并如实列入剩余，不冒称穷尽。"
+    },
+    "hypothesis_matches": 4,
+    "hypothesis_reported": 4,
+    "limitations": [
+      "抽取计数按原文语义单元：包括固定背景，不因不同原子化/编号方式惩罚；不是形式化解析器的输出。",
+      "只检验全部单项干预及至多一个组合，不检验任意弱化或全组合。"
+    ]
+  },
+  {
+    "task_id": "FINAL-AL",
+    "arm": "without_verification",
+    "family_id": "quadratic-positive-spectrum",
+    "reviewer_type": "ai",
+    "reviewer": "Codex主Agent（本聊天读取实际输出后复核）",
+    "reviewed_at": "2026-11-05",
+    "independent_human": false,
+    "source_digest": "c69d82ec707a636de7eecd0ca75331620ad1f7f2fe182b8a51aee5d0972fcbc7",
+    "task_digest": "c6218cb2148a70341ec61c31c81651609255378b704baa6b8311a55343c7b88d",
+    "source_file": "raw\\without_verification\\FINAL-AL\\attempt-1.json",
+    "hypothesis_expected": 4,
+    "status": "reviewed",
+    "prediction_digest": "71f6ffea87ab4cad6d3c68ff16f0ab651adf245bbe232b1b411af8b6d9156088",
+    "objects": {
+      "pass": true,
+      "reason": "对象及其原题类型背景已核对；可计算性质和全称论证分开。"
+    },
+    "mathematical_correctness": {
+      "pass": true,
+      "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。"
+    },
+    "uncertainty_honesty": {
+      "pass": true,
+      "reason": "原答只列数学论证，不宣称调用工具、人工或形式化验证；未探索组合明确报告。"
+    },
+    "interventions": [
+      {
+        "index": 0,
+        "output_digest": "0289445290d3e090d3e91b446a5a248aa0e0e2ec52e38154f439f05c4e9a657b",
+        "retained": {
+          "H2": {
+            "pass": true,
+            "reason": "AI核对：已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 本义务 H2=A^T=A。原答相应步骤：任取满足剩余条件的A，保留A^T=A。"
+          },
+          "H3": {
+            "pass": true,
+            "reason": "AI核对：已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 本义务 H3=对每个非零x∈R^n，x^TAx>0。原答相应步骤：任取满足剩余条件的A，保留非零实向量上的严格正性。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "preservation_proof": {
+          "pass": true,
+          "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 原答删后证明：n=0时无特征值。n≥1时，若Az=λz、z=u+iv≠0，则z*Az=u^TAu+v^TAv>0，且z*z>0，故λ=(z*Az)/(z*z)>0。"
+        }
+      },
+      {
+        "index": 1,
+        "output_digest": "142eff948b2bd964d1348c7c64643f3c18f3153d53b6582297c9cf0a059ad11f",
+        "retained": {
+          "H1": {
+            "pass": true,
+            "reason": "AI核对：已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 本义务 H1=n≥1。原答相应步骤：n=2≥1。"
+          },
+          "H3": {
+            "pass": true,
+            "reason": "AI核对：已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 本义务 H3=对每个非零x∈R^n，x^TAx>0。原答相应步骤：对非零x=(a,b)^T，x^TAx=a²+b²>0。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 原答指定否定：A的特征值为1+i及1−i，均非实数。"
+        },
+        "deleted": {
+          "H2": {
+            "pass": true,
+            "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 删除条件为A^T=A；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      },
+      {
+        "index": 2,
+        "output_digest": "006b63635bec01a16a2a9a17baa57b143ea76730573923ecab12a740c64eebba",
+        "retained": {
+          "H1": {
+            "pass": true,
+            "reason": "AI核对：已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 本义务 H1=n≥1。原答相应步骤：n=1≥1。"
+          },
+          "H2": {
+            "pass": true,
+            "reason": "AI核对：已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 本义务 H2=A^T=A。原答相应步骤：一阶矩阵满足A^T=A。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 原答指定否定：唯一特征值为−1，其实部−1不大于0。"
+        },
+        "deleted": {
+          "H3": {
+            "pass": true,
+            "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 删除条件为对每个非零x∈R^n，x^TAx>0；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      },
+      {
+        "index": 3,
+        "output_digest": "d6349aa7f9a62401680c758d2735108879ebb6b9ff2806ec9f3fc4ddff462935",
+        "retained": {
+          "H1": {
+            "pass": true,
+            "reason": "AI核对：已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 本义务 H1=n≥1。原答相应步骤：n=2≥1。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 原答指定否定：特征值为−1±i，虚部非零；同时其实部为−1，C2也失效。"
+        },
+        "deleted": {
+          "H2": {
+            "pass": true,
+            "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 删除条件为A^T=A；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          },
+          "H3": {
+            "pass": true,
+            "reason": "已核对各实矩阵：I加非零反对称矩阵时x^TAx=||x||²但特征值1±ki；负对角元反驳正性；纯旋转或负I加旋转反驳联合结论。所述复特征向量商公式交叉项由对称性抵消。 删除条件为对每个非零x∈R^n，x^TAx>0；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      }
+    ],
+    "hypothesis_extraction": {
+      "pass": true,
+      "reason": "已逐一对照原文的实质条件和类型背景；不按ID字面匹配。非空/正维可作为明确约定另拆，未丢失原条件。"
+    },
+    "conclusion_extraction": {
+      "pass": true,
+      "reason": "各输出结论与原文等价；AL把实谱和严格正性拆成C1/C2也是等价分解。"
+    },
+    "single_condition_coverage": {
+      "pass": true,
+      "reason": "全部原文实质假设均在单删中处理。额外拆出的可测/非空/正维也给出判定；固定背景按题意允许。"
+    },
+    "dependency_reporting": {
+      "pass": true,
+      "reason": "关系可回查各干预的构造/论证；单删与合删背景明确，未把联合失效错误解释成必须同时删才失效。"
+    },
+    "remaining_work": {
+      "pass": true,
+      "reason": "明示其他组合和弱化未探索。MA初轮full_skill未选联合删除，符合“至多1”限制并如实列入剩余，不冒称穷尽。"
+    },
+    "hypothesis_matches": 4,
+    "hypothesis_reported": 4,
+    "limitations": [
+      "抽取计数按原文语义单元：包括固定背景，不因不同原子化/编号方式惩罚；不是形式化解析器的输出。",
+      "只检验全部单项干预及至多一个组合，不检验任意弱化或全组合。"
+    ]
+  },
+  {
+    "task_id": "FINAL-RA",
+    "arm": "direct_model",
+    "family_id": "zero-integral-sign-cancellation",
+    "reviewer_type": "ai",
+    "reviewer": "Codex主Agent（本聊天读取实际输出后复核）",
+    "reviewed_at": "2026-11-05",
+    "independent_human": false,
+    "source_digest": "851c8bbbe1de0500f1c74936154390353b82a35f76f2fb272c0440fbd1d859cc",
+    "task_digest": "cbe8c5da0e4a15603d1c756aa41884a2c1e607a361970f2608e570567e0bc210",
+    "source_file": "raw\\direct_model\\FINAL-RA\\attempt-1.json",
+    "hypothesis_expected": 5,
+    "status": "reviewed",
+    "prediction_digest": "847a41eeb4df8e1b860a4167363ee2efb91e99174ad2d0ec1401f978fe526974",
+    "objects": {
+      "pass": true,
+      "reason": "对象及其原题类型背景已核对；可计算性质和全称论证分开。"
+    },
+    "mathematical_correctness": {
+      "pass": true,
+      "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。"
+    },
+    "uncertainty_honesty": {
+      "pass": true,
+      "reason": "原答只列数学论证，不宣称调用工具、人工或形式化验证；未探索组合明确报告。"
+    },
+    "interventions": [
+      {
+        "index": 0,
+        "output_digest": "e32c4af8c1f005cef3049ab0c58e1fb00542fb5971a0a07701d7bdeffa578f76",
+        "retained": {
+          "H2": {
+            "pass": true,
+            "reason": "AI核对：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 本义务 H2=f≥0几乎处处。。原答相应步骤：对满足保留条件的任意f，负值集为零测集。"
+          },
+          "H3": {
+            "pass": true,
+            "reason": "AI核对：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 本义务 H3=∫_X f dμ=0。。原答相应步骤：保留条件给出有限积分0；按通常勒贝格积分定义，∫f⁺与∫f⁻均有限。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "preservation_proof": {
+          "pass": true,
+          "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 原答删后证明：H3已推出∫|f|=∫f⁺+∫f⁻<∞，即H1。又令A_n={f≥1/n}，有0=∫f⁺≥μ(A_n)/n；结合H2，得f=0几乎处处。"
+        }
+      },
+      {
+        "index": 1,
+        "output_digest": "03c2f3116c9018ab9b197a55a47c0f65e5d6e456288e862c523ae011cd7209f3",
+        "retained": {
+          "H1": {
+            "pass": true,
+            "reason": "AI核对：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 本义务 H1=f∈L¹(μ)。。原答相应步骤：∫|f|dμ=|1|+|-1|=2<∞。"
+          },
+          "H3": {
+            "pass": true,
+            "reason": "AI核对：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 本义务 H3=∫_X f dμ=0。。原答相应步骤：∫f dμ=1+(-1)=0。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 原答指定否定：f在a、b两点均不为0，且两点的测度均为1。"
+        },
+        "deleted": {
+          "H2": {
+            "pass": true,
+            "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 删除条件为f≥0几乎处处。；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      },
+      {
+        "index": 2,
+        "output_digest": "b3747aaf9fb38df6168f49a94fe551c2896c4799708210b3f6f66c9a154578e6",
+        "retained": {
+          "H1": {
+            "pass": true,
+            "reason": "AI核对：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 本义务 H1=f∈L¹(μ)。。原答相应步骤：∫|f|dμ=1<∞。"
+          },
+          "H2": {
+            "pass": true,
+            "reason": "AI核对：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 本义务 H2=f≥0几乎处处。。原答相应步骤：f(a)=1≥0，故处处非负。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 原答指定否定：f(a)=1≠0，且μ({a})=1。"
+        },
+        "deleted": {
+          "H3": {
+            "pass": true,
+            "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 删除条件为∫_X f dμ=0。；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      },
+      {
+        "index": 3,
+        "output_digest": "acd995edc48c9bf8516e390dd4b7337fcc53d9080a0dd093671ad1f25942e207",
+        "retained": {
+          "H1": {
+            "pass": true,
+            "reason": "AI核对：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 本义务 H1=f∈L¹(μ)。。原答相应步骤：∫|f|dμ=1<∞。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 原答指定否定：f(a)=-1≠0，且μ({a})=1。"
+        },
+        "deleted": {
+          "H2": {
+            "pass": true,
+            "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 删除条件为f≥0几乎处处。；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          },
+          "H3": {
+            "pass": true,
+            "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 删除条件为∫_X f dμ=0。；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      }
+    ],
+    "hypothesis_extraction": {
+      "pass": true,
+      "reason": "已逐一对照原文的实质条件和类型背景；不按ID字面匹配。非空/正维可作为明确约定另拆，未丢失原条件。"
+    },
+    "conclusion_extraction": {
+      "pass": true,
+      "reason": "各输出结论与原文等价；AL把实谱和严格正性拆成C1/C2也是等价分解。"
+    },
+    "single_condition_coverage": {
+      "pass": true,
+      "reason": "全部原文实质假设均在单删中处理。额外拆出的可测/非空/正维也给出判定；固定背景按题意允许。"
+    },
+    "dependency_reporting": {
+      "pass": true,
+      "reason": "关系可回查各干预的构造/论证；单删与合删背景明确，未把联合失效错误解释成必须同时删才失效。"
+    },
+    "remaining_work": {
+      "pass": true,
+      "reason": "明示其他组合和弱化未探索。MA初轮full_skill未选联合删除，符合“至多1”限制并如实列入剩余，不冒称穷尽。"
+    },
+    "hypothesis_matches": 5,
+    "hypothesis_reported": 5,
+    "limitations": [
+      "抽取计数按原文语义单元：包括固定背景，不因不同原子化/编号方式惩罚；不是形式化解析器的输出。",
+      "只检验全部单项干预及至多一个组合，不检验任意弱化或全组合。",
+      "直接组共同提示提供单项字段示例但没有Skill里的唯一编号细则；其格式失败不据以宣称数学能力差。AL保留核验还带额外背景ID，按原结构协议失败。"
+    ]
+  },
+  {
+    "task_id": "FINAL-RA",
+    "arm": "old_skill",
+    "family_id": "zero-integral-sign-cancellation",
+    "reviewer_type": "ai",
+    "reviewer": "Codex主Agent（本聊天读取实际输出后复核）",
+    "reviewed_at": "2026-11-05",
+    "independent_human": false,
+    "source_digest": "1fd8fef2bf2b8a03549e956ccb9ccfcf4239a2433397beaa89d8df35ed1feae7",
+    "task_digest": "cbe8c5da0e4a15603d1c756aa41884a2c1e607a361970f2608e570567e0bc210",
+    "source_file": "raw\\old_skill\\FINAL-RA\\attempt-1.json",
+    "hypothesis_expected": 5,
+    "status": "reviewed",
+    "prediction_digest": "27fe4cb43141a939d083e6ce4613bdf9194c05c24c5bfc7e8ac60bbeced1d09f",
+    "objects": {
+      "pass": true,
+      "reason": "对象及其原题类型背景已核对；可计算性质和全称论证分开。"
+    },
+    "mathematical_correctness": {
+      "pass": true,
+      "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。"
+    },
+    "uncertainty_honesty": {
+      "pass": true,
+      "reason": "原答只列数学论证，不宣称调用工具、人工或形式化验证；未探索组合明确报告。"
+    },
+    "interventions": [
+      {
+        "index": 0,
+        "output_digest": "86805c5acf2280afd025c6b8bde0f158cf63533b9a22f16dc3d6156e84cebe8e",
+        "retained": {
+          "H2": {
+            "pass": true,
+            "reason": "AI核对：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 本义务 H2=f∈L¹(μ)。原答相应步骤：按声明的L¹定义，f∈L¹已要求f可测。"
+          },
+          "H3": {
+            "pass": true,
+            "reason": "AI核对：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 本义务 H3=f≥0几乎处处。原答相应步骤：保留非负几乎处处；推出H1不需此条件。"
+          },
+          "H4": {
+            "pass": true,
+            "reason": "AI核对：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 本义务 H4=∫_X f dμ=0。原答相应步骤：保留积分为零；推出H1不需此条件。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "preservation_proof": {
+          "pass": true,
+          "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 原答删后证明：H2直接蕴含H1；删去重复写出的可测性后，原定理仍适用。"
+        }
+      },
+      {
+        "index": 1,
+        "output_digest": "35a4ed747bbae1f2bf1269dfd2f1ac8540887491a73127a35074b369085350d4",
+        "retained": {
+          "H1": {
+            "pass": true,
+            "reason": "AI核对：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 本义务 H1=f可测。原答相应步骤：f可测，故f⁺、f⁻及|f|可测。"
+          },
+          "H3": {
+            "pass": true,
+            "reason": "AI核对：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 本义务 H3=f≥0几乎处处。原答相应步骤：f≥0几乎处处，故∫f⁻dμ=0。"
+          },
+          "H4": {
+            "pass": true,
+            "reason": "AI核对：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 本义务 H4=∫_X f dμ=0。原答相应步骤：∫f dμ=0；结合∫f⁻dμ=0，得∫f⁺dμ=0。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "preservation_proof": {
+          "pass": true,
+          "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 原答删后证明：∫|f|dμ=∫f⁺dμ+∫f⁻dμ=0，故f∈L¹。且非负函数积分为零，推出f=0几乎处处。"
+        }
+      },
+      {
+        "index": 2,
+        "output_digest": "b2bf246ec0fe71d25e9dd91bc22da8a183a8bdb91d40210683228e6fa343c615",
+        "retained": {
+          "H1": {
+            "pass": true,
+            "reason": "AI核对：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 本义务 H1=f可测。原答相应步骤：f(x)=x连续，因而可测。"
+          },
+          "H2": {
+            "pass": true,
+            "reason": "AI核对：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 本义务 H2=f∈L¹(μ)。原答相应步骤：∫_[−1,1]|x|dx=1<∞。"
+          },
+          "H4": {
+            "pass": true,
+            "reason": "AI核对：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 本义务 H4=∫_X f dμ=0。原答相应步骤：由奇函数对称性，∫_[−1,1]x dx=0。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 原答指定否定：仅在x=0处f(x)=0，故f不为零的集合测度为2，而非零。"
+        },
+        "deleted": {
+          "H3": {
+            "pass": true,
+            "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 删除条件为f≥0几乎处处；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      },
+      {
+        "index": 3,
+        "output_digest": "a52cfe5895ee1cb27e80521011195c94771cdc6c50cbe0c9de91bce73a74a473",
+        "retained": {
+          "H1": {
+            "pass": true,
+            "reason": "AI核对：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 本义务 H1=f可测。原答相应步骤：常值函数可测。"
+          },
+          "H2": {
+            "pass": true,
+            "reason": "AI核对：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 本义务 H2=f∈L¹(μ)。原答相应步骤：∫_[0,1]|f|dμ=1<∞。"
+          },
+          "H3": {
+            "pass": true,
+            "reason": "AI核对：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 本义务 H3=f≥0几乎处处。原答相应步骤：f(x)=1≥0处处成立。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 原答指定否定：f在测度为1的整个X上均不为零。"
+        },
+        "deleted": {
+          "H4": {
+            "pass": true,
+            "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 删除条件为∫_X f dμ=0；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      },
+      {
+        "index": 4,
+        "output_digest": "5909a302e2bf7a177cd9cc364da39f39525b303e59963ea69543c1c7f695fc0c",
+        "retained": {
+          "H1": {
+            "pass": true,
+            "reason": "AI核对：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 本义务 H1=f可测。原答相应步骤：常值函数可测。"
+          },
+          "H3": {
+            "pass": true,
+            "reason": "AI核对：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 本义务 H3=f≥0几乎处处。原答相应步骤：f(x)=1≥0处处成立。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 原答指定否定：f在整个ℝ上不为零；该集合的测度为+∞。"
+        },
+        "deleted": {
+          "H4": {
+            "pass": true,
+            "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 删除条件为∫_X f dμ=0；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          },
+          "H2": {
+            "pass": true,
+            "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 删除条件为f∈L¹(μ)；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      }
+    ],
+    "hypothesis_extraction": {
+      "pass": true,
+      "reason": "已逐一对照原文的实质条件和类型背景；不按ID字面匹配。非空/正维可作为明确约定另拆，未丢失原条件。"
+    },
+    "conclusion_extraction": {
+      "pass": true,
+      "reason": "各输出结论与原文等价；AL把实谱和严格正性拆成C1/C2也是等价分解。"
+    },
+    "single_condition_coverage": {
+      "pass": true,
+      "reason": "全部原文实质假设均在单删中处理。额外拆出的可测/非空/正维也给出判定；固定背景按题意允许。"
+    },
+    "dependency_reporting": {
+      "pass": true,
+      "reason": "关系可回查各干预的构造/论证；单删与合删背景明确，未把联合失效错误解释成必须同时删才失效。"
+    },
+    "remaining_work": {
+      "pass": true,
+      "reason": "明示其他组合和弱化未探索。MA初轮full_skill未选联合删除，符合“至多1”限制并如实列入剩余，不冒称穷尽。"
+    },
+    "hypothesis_matches": 5,
+    "hypothesis_reported": 5,
+    "limitations": [
+      "抽取计数按原文语义单元：包括固定背景，不因不同原子化/编号方式惩罚；不是形式化解析器的输出。",
+      "只检验全部单项干预及至多一个组合，不检验任意弱化或全组合。"
+    ]
+  },
+  {
+    "task_id": "FINAL-RA",
+    "arm": "full_skill",
+    "family_id": "zero-integral-sign-cancellation",
+    "reviewer_type": "ai",
+    "reviewer": "Codex主Agent（本聊天读取实际输出后复核）",
+    "reviewed_at": "2026-11-05",
+    "independent_human": false,
+    "source_digest": "c69379ef448f0776450508b56fc13f5a1f1a97de74ed6e8b32e1a5d782c3fb0c",
+    "task_digest": "cbe8c5da0e4a15603d1c756aa41884a2c1e607a361970f2608e570567e0bc210",
+    "source_file": "raw\\full_skill\\FINAL-RA\\attempt-1.json",
+    "hypothesis_expected": 5,
+    "status": "reviewed",
+    "prediction_digest": "409edf960fc0bf5a64329f37c1757cb9c3813c72d05c4b0f4b3bdbc4c54e7b09",
+    "objects": {
+      "pass": true,
+      "reason": "对象及其原题类型背景已核对；可计算性质和全称论证分开。"
+    },
+    "mathematical_correctness": {
+      "pass": true,
+      "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。"
+    },
+    "uncertainty_honesty": {
+      "pass": true,
+      "reason": "原答只列数学论证，不宣称调用工具、人工或形式化验证；未探索组合明确报告。"
+    },
+    "interventions": [
+      {
+        "index": 0,
+        "output_digest": "01582a996e0c1fa0d7d91eee7b5ea77845a2c507ac8bba337f0926c2bb9f184c",
+        "retained": {
+          "H2": {
+            "pass": true,
+            "reason": "AI核对：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 本义务 H2=f≥0几乎处处。。原答相应步骤：保留f≥0几乎处处，故f⁻=0几乎处处。"
+          },
+          "H3": {
+            "pass": true,
+            "reason": "AI核对：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 本义务 H3=∫_X f dμ=0。。原答相应步骤：保留∫f=0；有限的有符号勒贝格积分意味着∫f⁺、∫f⁻均有限。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "preservation_proof": {
+          "pass": true,
+          "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 原答删后证明：由H3，∫|f|=∫f⁺+∫f⁻<∞，故H1由其余条件推出。再由H2、H3得∫f⁺=0，故f=0几乎处处。"
+        }
+      },
+      {
+        "index": 1,
+        "output_digest": "f41410c4be2a61b488d65e6c4e8f1597a2b9f65092dbdf6ef9fdb2e9fa354d01",
+        "retained": {
+          "H1": {
+            "pass": true,
+            "reason": "AI核对：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 本义务 H1=f∈L¹(μ)。。原答相应步骤：∫|f|=|1|+|−1|=2<∞。"
+          },
+          "H3": {
+            "pass": true,
+            "reason": "AI核对：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 本义务 H3=∫_X f dμ=0。。原答相应步骤：∫f=1+(−1)=0。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 原答指定否定：μ({x:f(x)≠0})=2>0，故f并非几乎处处为零。"
+        },
+        "deleted": {
+          "H2": {
+            "pass": true,
+            "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 删除条件为f≥0几乎处处。；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      },
+      {
+        "index": 2,
+        "output_digest": "f591e7309ee29f5f0a8791a5ed48e2cc3a49437ebd01bbaa93df0ebb9ba70fb1",
+        "retained": {
+          "H1": {
+            "pass": true,
+            "reason": "AI核对：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 本义务 H1=f∈L¹(μ)。。原答相应步骤：∫|f|=1<∞。"
+          },
+          "H2": {
+            "pass": true,
+            "reason": "AI核对：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 本义务 H2=f≥0几乎处处。。原答相应步骤：f(a)=1≥0，故f≥0几乎处处。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 原答指定否定：μ({x:f(x)≠0})=1>0。"
+        },
+        "deleted": {
+          "H3": {
+            "pass": true,
+            "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 删除条件为∫_X f dμ=0。；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      },
+      {
+        "index": 3,
+        "output_digest": "17036a6def9dba763808132bd147e264748b13ca136fad18ce578e45c25e64f1",
+        "retained": {
+          "H2": {
+            "pass": true,
+            "reason": "AI核对：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 本义务 H2=f≥0几乎处处。。原答相应步骤：每个x∈R均有f(x)=1≥0。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 原答指定否定：μ({x:f(x)≠0})=μ(R)=+∞>0。"
+        },
+        "deleted": {
+          "H1": {
+            "pass": true,
+            "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 删除条件为f∈L¹(μ)。；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          },
+          "H3": {
+            "pass": true,
+            "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 删除条件为∫_X f dμ=0。；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      }
+    ],
+    "hypothesis_extraction": {
+      "pass": true,
+      "reason": "已逐一对照原文的实质条件和类型背景；不按ID字面匹配。非空/正维可作为明确约定另拆，未丢失原条件。"
+    },
+    "conclusion_extraction": {
+      "pass": true,
+      "reason": "各输出结论与原文等价；AL把实谱和严格正性拆成C1/C2也是等价分解。"
+    },
+    "single_condition_coverage": {
+      "pass": true,
+      "reason": "全部原文实质假设均在单删中处理。额外拆出的可测/非空/正维也给出判定；固定背景按题意允许。"
+    },
+    "dependency_reporting": {
+      "pass": true,
+      "reason": "关系可回查各干预的构造/论证；单删与合删背景明确，未把联合失效错误解释成必须同时删才失效。"
+    },
+    "remaining_work": {
+      "pass": true,
+      "reason": "明示其他组合和弱化未探索。MA初轮full_skill未选联合删除，符合“至多1”限制并如实列入剩余，不冒称穷尽。"
+    },
+    "hypothesis_matches": 5,
+    "hypothesis_reported": 5,
+    "limitations": [
+      "抽取计数按原文语义单元：包括固定背景，不因不同原子化/编号方式惩罚；不是形式化解析器的输出。",
+      "只检验全部单项干预及至多一个组合，不检验任意弱化或全组合。"
+    ]
+  },
+  {
+    "task_id": "FINAL-RA",
+    "arm": "without_strategies",
+    "family_id": "zero-integral-sign-cancellation",
+    "reviewer_type": "ai",
+    "reviewer": "Codex主Agent（本聊天读取实际输出后复核）",
+    "reviewed_at": "2026-11-05",
+    "independent_human": false,
+    "source_digest": "f53a07c555a52efb2264e164b45b69596867871dc2175c0f119f483a3cd7d98a",
+    "task_digest": "cbe8c5da0e4a15603d1c756aa41884a2c1e607a361970f2608e570567e0bc210",
+    "source_file": "raw\\without_strategies\\FINAL-RA\\attempt-1.json",
+    "hypothesis_expected": 5,
+    "status": "reviewed",
+    "prediction_digest": "228ee06ad4a23ea865d3969f9c6852cb8525ea494dc1e4c9ae9b4d70f3c16f71",
+    "objects": {
+      "pass": true,
+      "reason": "对象及其原题类型背景已核对；可计算性质和全称论证分开。"
+    },
+    "mathematical_correctness": {
+      "pass": true,
+      "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。"
+    },
+    "uncertainty_honesty": {
+      "pass": true,
+      "reason": "原答只列数学论证，不宣称调用工具、人工或形式化验证；未探索组合明确报告。"
+    },
+    "interventions": [
+      {
+        "index": 0,
+        "output_digest": "bbd20027de900fc71690b5beb6a92109482f96f02c3ddb464164c5644b88f55d",
+        "retained": {
+          "H2": {
+            "pass": true,
+            "reason": "AI核对：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 本义务 H2=f∈L¹(μ)。原答相应步骤：按已声明的L¹定义，f∈L¹即包含f可测。"
+          },
+          "H3": {
+            "pass": true,
+            "reason": "AI核对：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 本义务 H3=f≥0几乎处处。原答相应步骤：仍要求f≥0几乎处处，故负值集合是零测集。"
+          },
+          "H4": {
+            "pass": true,
+            "reason": "AI核对：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 本义务 H4=∫_X f dμ=0。原答相应步骤：仍要求积分为0；H2保证该积分有定义。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "preservation_proof": {
+          "pass": true,
+          "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 原答删后证明：H2推出H1。由H3、H4，∫f⁺dμ=0；对每个n≥1，μ({f≥1/n})=0。故{f>0}是零测集，结合H3得C1。"
+        }
+      },
+      {
+        "index": 1,
+        "output_digest": "b09d884cee3d8c43fde1b3e805f02068846c862f586b47015fa6ce214b9dcba0",
+        "retained": {
+          "H1": {
+            "pass": true,
+            "reason": "AI核对：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 本义务 H1=f可测。原答相应步骤：f仍可测，故f⁺、f⁻及其非负积分有定义。"
+          },
+          "H3": {
+            "pass": true,
+            "reason": "AI核对：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 本义务 H3=f≥0几乎处处。原答相应步骤：仍要求f≥0几乎处处。"
+          },
+          "H4": {
+            "pass": true,
+            "reason": "AI核对：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 本义务 H4=∫_X f dμ=0。原答相应步骤：仍要求带符号积分为有限值0。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "preservation_proof": {
+          "pass": true,
+          "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 原答删后证明：有限的带符号积分0要求∫f⁺、∫f⁻均有限，故∫|f|=∫f⁺+∫f⁻<∞，即H2。再由非负性和零积分得C1。"
+        }
+      },
+      {
+        "index": 2,
+        "output_digest": "993a655ec6960651fd33ecef5f8c192c028955e151a480edc3049d25b8ad8406",
+        "retained": {
+          "H1": {
+            "pass": true,
+            "reason": "AI核对：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 本义务 H1=f可测。原答相应步骤：幂集上的每个实值函数均可测。"
+          },
+          "H2": {
+            "pass": true,
+            "reason": "AI核对：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 本义务 H2=f∈L¹(μ)。原答相应步骤：∫|f|dμ=|1|+|−1|=2<∞。"
+          },
+          "H4": {
+            "pass": true,
+            "reason": "AI核对：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 本义务 H4=∫_X f dμ=0。原答相应步骤：∫f dμ=1+(−1)=0。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 原答指定否定：两个点均有正测度且f均不为0，因此f不等于0几乎处处。"
+        },
+        "deleted": {
+          "H3": {
+            "pass": true,
+            "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 删除条件为f≥0几乎处处；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      },
+      {
+        "index": 3,
+        "output_digest": "72d9c850e3333b316317f48f9f7fb5fb5a3e71b29dfbd8001413a8cce3d74a1a",
+        "retained": {
+          "H1": {
+            "pass": true,
+            "reason": "AI核对：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 本义务 H1=f可测。原答相应步骤：幂集上的f可测。"
+          },
+          "H2": {
+            "pass": true,
+            "reason": "AI核对：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 本义务 H2=f∈L¹(μ)。原答相应步骤：∫|f|dμ=1<∞。"
+          },
+          "H3": {
+            "pass": true,
+            "reason": "AI核对：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 本义务 H3=f≥0几乎处处。原答相应步骤：f(a)=1≥0，故处处非负。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 原答指定否定：μ({a})=1且f(a)=1，故f不等于0几乎处处。"
+        },
+        "deleted": {
+          "H4": {
+            "pass": true,
+            "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 删除条件为∫_X f dμ=0；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      },
+      {
+        "index": 4,
+        "output_digest": "f66740bf044b1fe61d3334a72036d2da6516ffee707038df59ba69ab30cd0e87",
+        "retained": {
+          "H1": {
+            "pass": true,
+            "reason": "AI核对：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 本义务 H1=f可测。原答相应步骤：幂集上的f可测。"
+          },
+          "H3": {
+            "pass": true,
+            "reason": "AI核对：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 本义务 H3=f≥0几乎处处。原答相应步骤：f恒等于1，故处处非负。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 原答指定否定：每个单点都有正测度且f(n)=1，故f不等于0几乎处处。"
+        },
+        "deleted": {
+          "H4": {
+            "pass": true,
+            "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 删除条件为∫_X f dμ=0；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          },
+          "H2": {
+            "pass": true,
+            "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 删除条件为f∈L¹(μ)；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      }
+    ],
+    "hypothesis_extraction": {
+      "pass": true,
+      "reason": "已逐一对照原文的实质条件和类型背景；不按ID字面匹配。非空/正维可作为明确约定另拆，未丢失原条件。"
+    },
+    "conclusion_extraction": {
+      "pass": true,
+      "reason": "各输出结论与原文等价；AL把实谱和严格正性拆成C1/C2也是等价分解。"
+    },
+    "single_condition_coverage": {
+      "pass": true,
+      "reason": "全部原文实质假设均在单删中处理。额外拆出的可测/非空/正维也给出判定；固定背景按题意允许。"
+    },
+    "dependency_reporting": {
+      "pass": true,
+      "reason": "关系可回查各干预的构造/论证；单删与合删背景明确，未把联合失效错误解释成必须同时删才失效。"
+    },
+    "remaining_work": {
+      "pass": true,
+      "reason": "明示其他组合和弱化未探索。MA初轮full_skill未选联合删除，符合“至多1”限制并如实列入剩余，不冒称穷尽。"
+    },
+    "hypothesis_matches": 5,
+    "hypothesis_reported": 5,
+    "limitations": [
+      "抽取计数按原文语义单元：包括固定背景，不因不同原子化/编号方式惩罚；不是形式化解析器的输出。",
+      "只检验全部单项干预及至多一个组合，不检验任意弱化或全组合。"
+    ]
+  },
+  {
+    "task_id": "FINAL-RA",
+    "arm": "without_verification",
+    "family_id": "zero-integral-sign-cancellation",
+    "reviewer_type": "ai",
+    "reviewer": "Codex主Agent（本聊天读取实际输出后复核）",
+    "reviewed_at": "2026-11-05",
+    "independent_human": false,
+    "source_digest": "1ac2750d607c5b33f827b00ac9d165db0688ce88a91fc931953234fae4c48acd",
+    "task_digest": "cbe8c5da0e4a15603d1c756aa41884a2c1e607a361970f2608e570567e0bc210",
+    "source_file": "raw\\without_verification\\FINAL-RA\\attempt-1.json",
+    "hypothesis_expected": 5,
+    "status": "reviewed",
+    "prediction_digest": "f870908aef12fb365bbcd027e9a5317cbb0c3fadb933f4b5e6be5d9585053e80",
+    "objects": {
+      "pass": true,
+      "reason": "对象及其原题类型背景已核对；可计算性质和全称论证分开。"
+    },
+    "mathematical_correctness": {
+      "pass": true,
+      "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。"
+    },
+    "uncertainty_honesty": {
+      "pass": true,
+      "reason": "原答只列数学论证，不宣称调用工具、人工或形式化验证；未探索组合明确报告。"
+    },
+    "interventions": [
+      {
+        "index": 0,
+        "output_digest": "324febf7c8db560549c51b9e9b287d9471137ec68fe7a643ccd4ccdb12d9ca32",
+        "retained": {
+          "H2": {
+            "pass": true,
+            "reason": "AI核对：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 本义务 H2=f≥0几乎处处。原答相应步骤：保留f≥0几乎处处。"
+          },
+          "H3": {
+            "pass": true,
+            "reason": "AI核对：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 本义务 H3=∫_X f dμ=0。原答相应步骤：保留积分等于有限数0；该等式使正负部积分均有限。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "preservation_proof": {
+          "pass": true,
+          "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 原答删后证明：由H3，∫f⁺与∫f⁻均有限，故∫|f|有限，推出H1。再由H2、H3及非负积分为零，得f=0几乎处处。"
+        }
+      },
+      {
+        "index": 1,
+        "output_digest": "644e8cc1026c919aeeb681236e5e4bd39cad61986c3d37ce46c2f41f72354c77",
+        "retained": {
+          "H1": {
+            "pass": true,
+            "reason": "AI核对：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 本义务 H1=f∈L¹(μ)。原答相应步骤：∫|f|dμ=2，故f∈L¹(μ)。"
+          },
+          "H3": {
+            "pass": true,
+            "reason": "AI核对：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 本义务 H3=∫_X f dμ=0。原答相应步骤：∫f dμ=1−1=0。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 原答指定否定：μ({f≠0})=2，故f并非几乎处处为零。"
+        },
+        "deleted": {
+          "H2": {
+            "pass": true,
+            "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 删除条件为f≥0几乎处处；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      },
+      {
+        "index": 2,
+        "output_digest": "285eab07db44d0d9904e96813b1531f002d7ab8af4dee062b62a1582441c5b09",
+        "retained": {
+          "H1": {
+            "pass": true,
+            "reason": "AI核对：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 本义务 H1=f∈L¹(μ)。原答相应步骤：∫|f|dμ=1，故f∈L¹(μ)。"
+          },
+          "H2": {
+            "pass": true,
+            "reason": "AI核对：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 本义务 H2=f≥0几乎处处。原答相应步骤：f(a)=1≥0，故f≥0几乎处处。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 原答指定否定：μ({f≠0})=1，故f并非几乎处处为零。"
+        },
+        "deleted": {
+          "H3": {
+            "pass": true,
+            "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 删除条件为∫_X f dμ=0；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      },
+      {
+        "index": 3,
+        "output_digest": "7bf0293f0766c50758e9292bd5a68d94b813bde7563afabb2025ed2617343e13",
+        "retained": {
+          "H3": {
+            "pass": true,
+            "reason": "AI核对：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 本义务 H3=∫_X f dμ=0。原答相应步骤：∫f dμ=1−1=0。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 原答指定否定：μ({f≠0})=2，故f并非几乎处处为零。"
+        },
+        "deleted": {
+          "H1": {
+            "pass": true,
+            "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 删除条件为f∈L¹(μ)；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          },
+          "H2": {
+            "pass": true,
+            "reason": "有限积分等于0在通常带符号勒贝格定义下推出绝对可积。非负与零积分一起用阈值集推出ae零。两点±1、单点1、自然数/实线常1或(0,1)上1/x的具体构造均合法；允许+∞的联合任务没有未定义积分。 删除条件为f≥0几乎处处；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      }
+    ],
+    "hypothesis_extraction": {
+      "pass": true,
+      "reason": "已逐一对照原文的实质条件和类型背景；不按ID字面匹配。非空/正维可作为明确约定另拆，未丢失原条件。"
+    },
+    "conclusion_extraction": {
+      "pass": true,
+      "reason": "各输出结论与原文等价；AL把实谱和严格正性拆成C1/C2也是等价分解。"
+    },
+    "single_condition_coverage": {
+      "pass": true,
+      "reason": "全部原文实质假设均在单删中处理。额外拆出的可测/非空/正维也给出判定；固定背景按题意允许。"
+    },
+    "dependency_reporting": {
+      "pass": true,
+      "reason": "关系可回查各干预的构造/论证；单删与合删背景明确，未把联合失效错误解释成必须同时删才失效。"
+    },
+    "remaining_work": {
+      "pass": true,
+      "reason": "明示其他组合和弱化未探索。MA初轮full_skill未选联合删除，符合“至多1”限制并如实列入剩余，不冒称穷尽。"
+    },
+    "hypothesis_matches": 5,
+    "hypothesis_reported": 5,
+    "limitations": [
+      "抽取计数按原文语义单元：包括固定背景，不因不同原子化/编号方式惩罚；不是形式化解析器的输出。",
+      "只检验全部单项干预及至多一个组合，不检验任意弱化或全组合。"
+    ]
+  },
+  {
+    "task_id": "FINAL-CA",
+    "arm": "direct_model",
+    "family_id": "linear-growth-polynomial",
+    "reviewer_type": "ai",
+    "reviewer": "Codex主Agent（本聊天读取实际输出后复核）",
+    "reviewed_at": "2026-11-05",
+    "independent_human": false,
+    "source_digest": "999ddc1682da8fdaad534d78229a6d24ef81d305fc68f091197ce671bb6f5b6b",
+    "task_digest": "df20c8cbd230ea0fbf82789e2f5298d5d085407bd807c3aab99e3aaf9d9052b4",
+    "source_file": "raw\\direct_model\\FINAL-CA\\attempt-1.json",
+    "hypothesis_expected": 5,
+    "status": "reviewed",
+    "prediction_digest": "1ec035258302f5882683a7191f1678933e10340604049ed4c58d1fff64c03b91",
+    "objects": {
+      "pass": true,
+      "reason": "对象及其原题类型背景已核对；可计算性质和全称论证分开。"
+    },
+    "mathematical_correctness": {
+      "pass": true,
+      "reason": "已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。"
+    },
+    "uncertainty_honesty": {
+      "pass": true,
+      "reason": "原答只列数学论证，不宣称调用工具、人工或形式化验证；未探索组合明确报告。"
+    },
+    "interventions": [
+      {
+        "index": 0,
+        "output_digest": "c8bea1cb1bec41abd6b84f504b5e6f8188d775fe65f1c1a9391ca9e2d7cff80d",
+        "retained": {
+          "H2": {
+            "pass": true,
+            "reason": "AI核对：已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 本义务 H2=f在Ω全纯。。原答相应步骤：2不在Ω中，故f在Ω全纯。"
+          },
+          "H3": {
+            "pass": true,
+            "reason": "AI核对：已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 本义务 H3=存在有限常数C>0，使每个z∈Ω均满足|f(z)|≤C(1+|z|)。。原答相应步骤：在Ω中|2-z|>1，故|f(z)|<1≤1+|z|；可取C=1。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 原答指定否定：f″(0)=1/4≠0，故f不可能在Ω上等于一次或常数多项式。"
+        },
+        "deleted": {
+          "H1": {
+            "pass": true,
+            "reason": "已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 删除条件为Ω=C。；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      },
+      {
+        "index": 1,
+        "output_digest": "5a563713c7feecda428e1df832a0e57d4b7d165dece2683cdeb6cb4c0814c7b7",
+        "retained": {
+          "H1": {
+            "pass": true,
+            "reason": "AI核对：已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 本义务 H1=Ω=C。。原答相应步骤：所取定义域正是C。"
+          },
+          "H3": {
+            "pass": true,
+            "reason": "AI核对：已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 本义务 H3=存在有限常数C>0，使每个z∈Ω均满足|f(z)|≤C(1+|z|)。。原答相应步骤：|f(z)|=|z|≤1+|z|；可取C=1。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 原答指定否定：若f(z)=az+b，则代入0、1得b=0、a=1；代入i却要求i=−i，矛盾。"
+        },
+        "deleted": {
+          "H2": {
+            "pass": true,
+            "reason": "已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 删除条件为f在Ω全纯。；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      },
+      {
+        "index": 2,
+        "output_digest": "087519160b8d99969642a8bd958ca70c3f47f297a3056254e009cb80501569c6",
+        "retained": {
+          "H1": {
+            "pass": true,
+            "reason": "AI核对：已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 本义务 H1=Ω=C。。原答相应步骤：所取定义域正是C。"
+          },
+          "H2": {
+            "pass": true,
+            "reason": "AI核对：已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 本义务 H2=f在Ω全纯。。原答相应步骤：z²是多项式，在C上全纯。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 原答指定否定：f″(z)=2，而次数至多1的多项式二阶导数恒为0。"
+        },
+        "deleted": {
+          "H3": {
+            "pass": true,
+            "reason": "已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 删除条件为存在有限常数C>0，使每个z∈Ω均满足|f(z)|≤C(1+|z|)。；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      },
+      {
+        "index": 3,
+        "output_digest": "164150eccbd689890ca0fb9f80600aa8451fd3439e5d39291a6889eb1e8c0722",
+        "retained": {
+          "H2": {
+            "pass": true,
+            "reason": "AI核对：已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 本义务 H2=f在Ω全纯。。原答相应步骤：1不在Ω中，故f在Ω全纯。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 原答指定否定：f″(0)=2≠0，故f不在Ω上等于次数至多1的多项式。"
+        },
+        "deleted": {
+          "H1": {
+            "pass": true,
+            "reason": "已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 删除条件为Ω=C。；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          },
+          "H3": {
+            "pass": true,
+            "reason": "已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 删除条件为存在有限常数C>0，使每个z∈Ω均满足|f(z)|≤C(1+|z|)。；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      }
+    ],
+    "hypothesis_extraction": {
+      "pass": true,
+      "reason": "已逐一对照原文的实质条件和类型背景；不按ID字面匹配。非空/正维可作为明确约定另拆，未丢失原条件。"
+    },
+    "conclusion_extraction": {
+      "pass": true,
+      "reason": "各输出结论与原文等价；AL把实谱和严格正性拆成C1/C2也是等价分解。"
+    },
+    "single_condition_coverage": {
+      "pass": true,
+      "reason": "全部原文实质假设均在单删中处理。额外拆出的可测/非空/正维也给出判定；固定背景按题意允许。"
+    },
+    "dependency_reporting": {
+      "pass": true,
+      "reason": "关系可回查各干预的构造/论证；单删与合删背景明确，未把联合失效错误解释成必须同时删才失效。"
+    },
+    "remaining_work": {
+      "pass": true,
+      "reason": "明示其他组合和弱化未探索。MA初轮full_skill未选联合删除，符合“至多1”限制并如实列入剩余，不冒称穷尽。"
+    },
+    "hypothesis_matches": 5,
+    "hypothesis_reported": 5,
+    "limitations": [
+      "抽取计数按原文语义单元：包括固定背景，不因不同原子化/编号方式惩罚；不是形式化解析器的输出。",
+      "只检验全部单项干预及至多一个组合，不检验任意弱化或全组合。",
+      "直接组共同提示提供单项字段示例但没有Skill里的唯一编号细则；其格式失败不据以宣称数学能力差。AL保留核验还带额外背景ID，按原结构协议失败。"
+    ]
+  },
+  {
+    "task_id": "FINAL-CA",
+    "arm": "old_skill",
+    "family_id": "linear-growth-polynomial",
+    "reviewer_type": "ai",
+    "reviewer": "Codex主Agent（本聊天读取实际输出后复核）",
+    "reviewed_at": "2026-11-05",
+    "independent_human": false,
+    "source_digest": "bc240bb3397aaa4b0c92309f4010e1591f41d42465ce040e815815c66c318a56",
+    "task_digest": "df20c8cbd230ea0fbf82789e2f5298d5d085407bd807c3aab99e3aaf9d9052b4",
+    "source_file": "raw\\old_skill\\FINAL-CA\\attempt-1.json",
+    "hypothesis_expected": 5,
+    "status": "reviewed",
+    "prediction_digest": "ce5e31714b6323624780e550fec0d32090d446ca07cacabbde9e53cef2a57569",
+    "objects": {
+      "pass": true,
+      "reason": "对象及其原题类型背景已核对；可计算性质和全称论证分开。"
+    },
+    "mathematical_correctness": {
+      "pass": true,
+      "reason": "已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。"
+    },
+    "uncertainty_honesty": {
+      "pass": true,
+      "reason": "原答只列数学论证，不宣称调用工具、人工或形式化验证；未探索组合明确报告。"
+    },
+    "interventions": [
+      {
+        "index": 0,
+        "output_digest": "a440dc177e030aaa2abe0e0bccdac273ed9801ddf29becebbb77b510ee79cc8b",
+        "retained": {
+          "H2": {
+            "pass": true,
+            "reason": "AI核对：已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 本义务 H2=Ω=ℂ。。原答相应步骤：保留Ω=ℂ；ℂ非空，直接推出H1。"
+          },
+          "H3": {
+            "pass": true,
+            "reason": "AI核对：已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 本义务 H3=f在Ω全纯。。原答相应步骤：保留全纯性；它不是推出H1所必需的条件。"
+          },
+          "H4": {
+            "pass": true,
+            "reason": "AI核对：已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 本义务 H4=存在M>0，使|f(z)|≤M(1+|z|)。。原答相应步骤：保留增长界；它不是推出H1所必需的条件。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "preservation_proof": {
+          "pass": true,
+          "reason": "已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 原答删后证明：H2直接推出被删的H1；原定理的柯西估计证明仍适用。"
+        }
+      },
+      {
+        "index": 1,
+        "output_digest": "9f190ab423a7476a9f6635db1add973417d4780b3f70f3bb4476d796ab10e665",
+        "retained": {
+          "H1": {
+            "pass": true,
+            "reason": "AI核对：已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 本义务 H1=Ω非空。。原答相应步骤：0∈Ω，故Ω非空；Ω也是开集。"
+          },
+          "H3": {
+            "pass": true,
+            "reason": "AI核对：已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 本义务 H3=f在Ω全纯。。原答相应步骤：2∉Ω，分母在Ω上不为零，故f在Ω全纯。"
+          },
+          "H4": {
+            "pass": true,
+            "reason": "AI核对：已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 本义务 H4=存在M>0，使|f(z)|≤M(1+|z|)。。原答相应步骤：在Ω上|z−2|>1，故|f(z)|<1≤1+|z|。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 原答指定否定：若f=az+b于Ω，则多项式恒等式(z−2)(az+b)=1成立；代入z=2得到0=1。"
+        },
+        "deleted": {
+          "H2": {
+            "pass": true,
+            "reason": "已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 删除条件为Ω=ℂ。；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      },
+      {
+        "index": 2,
+        "output_digest": "14f7d81d435eab175d640f906753eaea8e1de6172a831d4b499ad8752f79750c",
+        "retained": {
+          "H1": {
+            "pass": true,
+            "reason": "AI核对：已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 本义务 H1=Ω非空。。原答相应步骤：ℂ非空。"
+          },
+          "H2": {
+            "pass": true,
+            "reason": "AI核对：已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 本义务 H2=Ω=ℂ。。原答相应步骤：取Ω=ℂ。"
+          },
+          "H4": {
+            "pass": true,
+            "reason": "AI核对：已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 本义务 H4=存在M>0，使|f(z)|≤M(1+|z|)。。原答相应步骤：|f(z)|=|z|≤1+|z|，故M=1可用。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 原答指定否定：若f(z)=az+b，则由z=0、1得b=0、a=1；但在z=i处，f(i)=−i≠i。"
+        },
+        "deleted": {
+          "H3": {
+            "pass": true,
+            "reason": "已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 删除条件为f在Ω全纯。；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      },
+      {
+        "index": 3,
+        "output_digest": "062b92ed9ace1a4efe382e376acb51efa4941173dd59bf56ae923991167bc8ab",
+        "retained": {
+          "H1": {
+            "pass": true,
+            "reason": "AI核对：已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 本义务 H1=Ω非空。。原答相应步骤：ℂ非空。"
+          },
+          "H2": {
+            "pass": true,
+            "reason": "AI核对：已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 本义务 H2=Ω=ℂ。。原答相应步骤：取Ω=ℂ。"
+          },
+          "H3": {
+            "pass": true,
+            "reason": "AI核对：已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 本义务 H3=f在Ω全纯。。原答相应步骤：多项式z²在ℂ上全纯。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 原答指定否定：z²与任何az+b均不可能作为多项式恒等；其次数为2。"
+        },
+        "deleted": {
+          "H4": {
+            "pass": true,
+            "reason": "已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 删除条件为存在M>0，使|f(z)|≤M(1+|z|)。；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      },
+      {
+        "index": 4,
+        "output_digest": "79c5e18987fb97854d3d87d290520875014e3bd054ddb31e4a691e49696873d7",
+        "retained": {
+          "H3": {
+            "pass": true,
+            "reason": "AI核对：已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 本义务 H3=f在Ω全纯。。原答相应步骤：Ω为开集且2∉Ω，故f在Ω全纯。"
+          },
+          "H4": {
+            "pass": true,
+            "reason": "AI核对：已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 本义务 H4=存在M>0，使|f(z)|≤M(1+|z|)。。原答相应步骤：在Ω上|z−2|>1，故|f(z)|<1≤1+|z|。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 原答指定否定：若f=az+b于Ω，便有(z−2)(az+b)=1作为多项式恒等式；代入2矛盾。"
+        },
+        "deleted": {
+          "H1": {
+            "pass": true,
+            "reason": "已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 删除条件为Ω非空。；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          },
+          "H2": {
+            "pass": true,
+            "reason": "已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 删除条件为Ω=ℂ。；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      }
+    ],
+    "hypothesis_extraction": {
+      "pass": true,
+      "reason": "已逐一对照原文的实质条件和类型背景；不按ID字面匹配。非空/正维可作为明确约定另拆，未丢失原条件。"
+    },
+    "conclusion_extraction": {
+      "pass": true,
+      "reason": "各输出结论与原文等价；AL把实谱和严格正性拆成C1/C2也是等价分解。"
+    },
+    "single_condition_coverage": {
+      "pass": true,
+      "reason": "全部原文实质假设均在单删中处理。额外拆出的可测/非空/正维也给出判定；固定背景按题意允许。"
+    },
+    "dependency_reporting": {
+      "pass": true,
+      "reason": "关系可回查各干预的构造/论证；单删与合删背景明确，未把联合失效错误解释成必须同时删才失效。"
+    },
+    "remaining_work": {
+      "pass": true,
+      "reason": "明示其他组合和弱化未探索。MA初轮full_skill未选联合删除，符合“至多1”限制并如实列入剩余，不冒称穷尽。"
+    },
+    "hypothesis_matches": 5,
+    "hypothesis_reported": 5,
+    "limitations": [
+      "抽取计数按原文语义单元：包括固定背景，不因不同原子化/编号方式惩罚；不是形式化解析器的输出。",
+      "只检验全部单项干预及至多一个组合，不检验任意弱化或全组合。"
+    ]
+  },
+  {
+    "task_id": "FINAL-CA",
+    "arm": "full_skill",
+    "family_id": "linear-growth-polynomial",
+    "reviewer_type": "ai",
+    "reviewer": "Codex主Agent（本聊天读取实际输出后复核）",
+    "reviewed_at": "2026-11-05",
+    "independent_human": false,
+    "source_digest": "833472252b81176ebfb3ffbd85f66be07aff8095cbb06a66560f19cffd19287e",
+    "task_digest": "df20c8cbd230ea0fbf82789e2f5298d5d085407bd807c3aab99e3aaf9d9052b4",
+    "source_file": "raw\\full_skill\\FINAL-CA\\attempt-1.json",
+    "hypothesis_expected": 5,
+    "status": "invalid_output",
+    "runtime_reason": "原输出未完成或无法解析；保留原始文本，不修复后重计成功。{'reason': 'max_output_tokens'}"
+  },
+  {
+    "task_id": "FINAL-CA",
+    "arm": "without_strategies",
+    "family_id": "linear-growth-polynomial",
+    "reviewer_type": "ai",
+    "reviewer": "Codex主Agent（本聊天读取实际输出后复核）",
+    "reviewed_at": "2026-11-05",
+    "independent_human": false,
+    "source_digest": "b60a93874fee2d51e895e8ce2597dbdc3e21a304c03e5ee9d72516d3eda3008d",
+    "task_digest": "df20c8cbd230ea0fbf82789e2f5298d5d085407bd807c3aab99e3aaf9d9052b4",
+    "source_file": "raw\\without_strategies\\FINAL-CA\\attempt-1.json",
+    "hypothesis_expected": 5,
+    "status": "invalid_output",
+    "runtime_reason": "原输出未完成或无法解析；保留原始文本，不修复后重计成功。{'reason': 'max_output_tokens'}"
+  },
+  {
+    "task_id": "FINAL-CA",
+    "arm": "without_verification",
+    "family_id": "linear-growth-polynomial",
+    "reviewer_type": "ai",
+    "reviewer": "Codex主Agent（本聊天读取实际输出后复核）",
+    "reviewed_at": "2026-11-05",
+    "independent_human": false,
+    "source_digest": "9f2566138e63858a8f9b3e3dbfc554edd3529302c53c30bb4775398b4abbd864",
+    "task_digest": "df20c8cbd230ea0fbf82789e2f5298d5d085407bd807c3aab99e3aaf9d9052b4",
+    "source_file": "raw\\without_verification\\FINAL-CA\\attempt-2.json",
+    "hypothesis_expected": 5,
+    "status": "reviewed",
+    "prediction_digest": "3cdfb9db979d000668c94edf741051b2a1a20d7b7375a40d9e7eade77e473d26",
+    "objects": {
+      "pass": true,
+      "reason": "对象及其原题类型背景已核对；可计算性质和全称论证分开。"
+    },
+    "mathematical_correctness": {
+      "pass": true,
+      "reason": "已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。"
+    },
+    "uncertainty_honesty": {
+      "pass": true,
+      "reason": "原答只列数学论证，不宣称调用工具、人工或形式化验证；未探索组合明确报告。"
+    },
+    "interventions": [
+      {
+        "index": 0,
+        "output_digest": "09e1c39c53227071891e9a71028ca0baef31e9c31421dbb2cbdf96af56876176",
+        "retained": {
+          "H2": {
+            "pass": true,
+            "reason": "AI核对：已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 本义务 H2=Ω=ℂ。。原答相应步骤：保留Ω=ℂ，因此Ω非空。"
+          },
+          "H3": {
+            "pass": true,
+            "reason": "AI核对：已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 本义务 H3=f在Ω上全纯。。原答相应步骤：仍要求f在Ω上全纯。"
+          },
+          "H4": {
+            "pass": true,
+            "reason": "AI核对：已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 本义务 H4=存在M>0，使|f(z)|≤M(1+|z|)对所有z∈Ω成立。。原答相应步骤：仍要求所述统一增长界成立。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "preservation_proof": {
+          "pass": true,
+          "reason": "已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 原答删后证明：H2直接推出H1；删去H1不改变适用对象。由柯西估计，n≥2时|f⁽ⁿ⁾(0)|/n!≤M(1+R)/Rⁿ→0，故f为一次以下多项式。"
+        }
+      },
+      {
+        "index": 1,
+        "output_digest": "8f268eb39c376225a8afa8369b1b04047a5162be364827efea8eb61dc28416d6",
+        "retained": {
+          "H1": {
+            "pass": true,
+            "reason": "AI核对：已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 本义务 H1=Ω非空。。原答相应步骤：0∈Ω，故Ω非空。"
+          },
+          "H3": {
+            "pass": true,
+            "reason": "AI核对：已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 本义务 H3=f在Ω上全纯。。原答相应步骤：2−z在Ω上不为零，故f全纯。"
+          },
+          "H4": {
+            "pass": true,
+            "reason": "AI核对：已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 本义务 H4=存在M>0，使|f(z)|≤M(1+|z|)对所有z∈Ω成立。。原答相应步骤：在Ω上|2−z|>1，故|f(z)|<1≤1+|z|。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 原答指定否定：若多项式P在Ω上等于f，则多项式(2−z)P(z)−1恒为零；代入z=2得−1=0。"
+        },
+        "deleted": {
+          "H2": {
+            "pass": true,
+            "reason": "已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 删除条件为Ω=ℂ。；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      },
+      {
+        "index": 2,
+        "output_digest": "a2a4fe80a392440ef65a5497aec1f1d4efcd2590884b1c42ca6faa985fd1df58",
+        "retained": {
+          "H1": {
+            "pass": true,
+            "reason": "AI核对：已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 本义务 H1=Ω非空。。原答相应步骤：ℂ非空。"
+          },
+          "H2": {
+            "pass": true,
+            "reason": "AI核对：已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 本义务 H2=Ω=ℂ。。原答相应步骤：所取Ω恰为ℂ。"
+          },
+          "H4": {
+            "pass": true,
+            "reason": "AI核对：已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 本义务 H4=存在M>0，使|f(z)|≤M(1+|z|)对所有z∈Ω成立。。原答相应步骤：|f(z)|=|z|≤1+|z|，故M=1适用。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 原答指定否定：f在0处沿实轴的差商为1，沿虚轴为−1，故不全纯；它不可能等于复多项式。"
+        },
+        "deleted": {
+          "H3": {
+            "pass": true,
+            "reason": "已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 删除条件为f在Ω上全纯。；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      },
+      {
+        "index": 3,
+        "output_digest": "07443f3ed0b85b8049e98e815717f2c51ea8208e04ab5fe884deddfecbe43138",
+        "retained": {
+          "H1": {
+            "pass": true,
+            "reason": "AI核对：已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 本义务 H1=Ω非空。。原答相应步骤：ℂ非空。"
+          },
+          "H2": {
+            "pass": true,
+            "reason": "AI核对：已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 本义务 H2=Ω=ℂ。。原答相应步骤：所取Ω恰为ℂ。"
+          },
+          "H3": {
+            "pass": true,
+            "reason": "AI核对：已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 本义务 H3=f在Ω上全纯。。原答相应步骤：z²是整函数，故在Ω上全纯。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 原答指定否定：z²的次数为2，不可能在ℂ上等于次数至多1的多项式。"
+        },
+        "deleted": {
+          "H4": {
+            "pass": true,
+            "reason": "已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 删除条件为存在M>0，使|f(z)|≤M(1+|z|)对所有z∈Ω成立。；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      },
+      {
+        "index": 4,
+        "output_digest": "19bc6b74206e965117bc81fe56c5a829d242eea97ab4ce5caf933e163b33cf3d",
+        "retained": {
+          "H1": {
+            "pass": true,
+            "reason": "AI核对：已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 本义务 H1=Ω非空。。原答相应步骤：0∈Ω，故Ω非空。"
+          },
+          "H4": {
+            "pass": true,
+            "reason": "AI核对：已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 本义务 H4=存在M>0，使|f(z)|≤M(1+|z|)对所有z∈Ω成立。。原答相应步骤：|f(z)|=|z|≤1+|z|，故M=1适用。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 原答指定否定：f在0处沿实轴、虚轴的差商分别为1、−1，不可能在Ω上等于复多项式。"
+        },
+        "deleted": {
+          "H2": {
+            "pass": true,
+            "reason": "已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 删除条件为Ω=ℂ。；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          },
+          "H3": {
+            "pass": true,
+            "reason": "已核对单位圆盘z²或1/(2−z)、1/(z−2)有增长界但非仿射；全平面共轭或|z|有线性增长却非复多项式；全平面z²无统一线性界；圆盘1/(1−z)在边界无界。柯西估计使f″=0的删后证明成立。 删除条件为f在Ω上全纯。；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      }
+    ],
+    "hypothesis_extraction": {
+      "pass": true,
+      "reason": "已逐一对照原文的实质条件和类型背景；不按ID字面匹配。非空/正维可作为明确约定另拆，未丢失原条件。"
+    },
+    "conclusion_extraction": {
+      "pass": true,
+      "reason": "各输出结论与原文等价；AL把实谱和严格正性拆成C1/C2也是等价分解。"
+    },
+    "single_condition_coverage": {
+      "pass": true,
+      "reason": "全部原文实质假设均在单删中处理。额外拆出的可测/非空/正维也给出判定；固定背景按题意允许。"
+    },
+    "dependency_reporting": {
+      "pass": true,
+      "reason": "关系可回查各干预的构造/论证；单删与合删背景明确，未把联合失效错误解释成必须同时删才失效。"
+    },
+    "remaining_work": {
+      "pass": true,
+      "reason": "明示其他组合和弱化未探索。MA初轮full_skill未选联合删除，符合“至多1”限制并如实列入剩余，不冒称穷尽。"
+    },
+    "hypothesis_matches": 5,
+    "hypothesis_reported": 5,
+    "limitations": [
+      "抽取计数按原文语义单元：包括固定背景，不因不同原子化/编号方式惩罚；不是形式化解析器的输出。",
+      "只检验全部单项干预及至多一个组合，不检验任意弱化或全组合。"
+    ]
+  },
+  {
+    "task_id": "EDGE-MA-ISSUE",
+    "arm": "full_skill",
+    "family_id": "derivative-continuity-false-converse",
+    "reviewer_type": "ai",
+    "reviewer": "Codex主Agent（本聊天读取实际输出后复核）",
+    "reviewed_at": "2026-11-05",
+    "independent_human": false,
+    "source_digest": "8bc10fa5e7cc18850cb7590d49b2d57f9c40bdb00b01cc340153095e49900230",
+    "task_digest": "417e470f01a1cf9729e4700f955fda6d28fa28ea3573131ec99db2ec84b8f602",
+    "source_file": "raw\\full_skill\\EDGE-MA-ISSUE\\attempt-1.json",
+    "hypothesis_expected": 0,
+    "status": "reviewed",
+    "prediction_digest": "605f97b7acf0660a3a93d10d4dd0822bc2d54a9b8432a19cbbd8fe72fcca1e13",
+    "objects": {
+      "pass": true,
+      "reason": "对象及其原题类型背景已核对；可计算性质和全称论证分开。"
+    },
+    "mathematical_correctness": {
+      "pass": true,
+      "reason": "实际回答使用x²sin(1/x²)，不是参考的x²sin(1/x)。在0差商h sin(1/h²)→0，非零点导数2xsin(1/x²)−2cos(1/x²)/x，在x_n=(2πn)^−1/2处趋−∞，故反例有效。"
+    },
+    "uncertainty_honesty": {
+      "pass": true,
+      "reason": "原答只列数学论证，不宣称调用工具、人工或形式化验证；未探索组合明确报告。"
+    },
+    "interventions": [
+      {
+        "index": 0,
+        "output_digest": "605f97b7acf0660a3a93d10d4dd0822bc2d54a9b8432a19cbbd8fe72fcca1e13",
+        "retained": {
+          "H1": {
+            "pass": true,
+            "reason": "AI核对：实际回答使用x²sin(1/x²)，不是参考的x²sin(1/x)。在0差商h sin(1/h²)→0，非零点导数2xsin(1/x²)−2cos(1/x²)/x，在x_n=(2πn)^−1/2处趋−∞，故反例有效。 本义务 H1=f:ℝ→ℝ在每一点可微。原答相应步骤：x≠0时由求导法则可微；在0处，(f(h)−f(0))/h=h sin(1/h²)→0，故f′(0)=0。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：实际回答使用x²sin(1/x²)，不是参考的x²sin(1/x)。在0差商h sin(1/h²)→0，非零点导数2xsin(1/x²)−2cos(1/x²)/x，在x_n=(2πn)^−1/2处趋−∞，故反例有效。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "实际回答使用x²sin(1/x²)，不是参考的x²sin(1/x)。在0差商h sin(1/h²)→0，非零点导数2xsin(1/x²)−2cos(1/x²)/x，在x_n=(2πn)^−1/2处趋−∞，故反例有效。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "实际回答使用x²sin(1/x²)，不是参考的x²sin(1/x)。在0差商h sin(1/h²)→0，非零点导数2xsin(1/x²)−2cos(1/x²)/x，在x_n=(2πn)^−1/2处趋−∞，故反例有效。 原答指定否定：取x_n=(2πn)^(−1/2)→0，则f′(x_n)=−2/x_n→−∞，而f′(0)=0；故f′在0处不连续。"
+        },
+        "deleted": {}
+      }
+    ]
+  },
+  {
+    "task_id": "EDGE-AL-ISSUE",
+    "arm": "full_skill",
+    "family_id": "real-spectrum-jordan",
+    "reviewer_type": "ai",
+    "reviewer": "Codex主Agent（本聊天读取实际输出后复核）",
+    "reviewed_at": "2026-11-05",
+    "independent_human": false,
+    "source_digest": "6c41e4a2c7846881b318322e673a76e01978359d2ad4cfcdc30cd17675686237",
+    "task_digest": "b0c2986b641f4613cd183f350db3fdc66ba81a2a84c3f24c497ba92d678d7d28",
+    "source_file": "raw\\full_skill\\EDGE-AL-ISSUE\\attempt-1.json",
+    "hypothesis_expected": 0,
+    "status": "reviewed",
+    "prediction_digest": "db5e9e07c6788d8b33c0208283ed21512973ebf4de416e9147fe8f3da093f5fa",
+    "objects": {
+      "pass": true,
+      "reason": "对象及其原题类型背景已核对；可计算性质和全称论证分开。"
+    },
+    "mathematical_correctness": {
+      "pass": true,
+      "reason": "实际矩阵[[1,1],[0,1]]只有实特征值1，但ker(A−I)一维，不能在R²取特征向量基。"
+    },
+    "uncertainty_honesty": {
+      "pass": true,
+      "reason": "原答只列数学论证，不宣称调用工具、人工或形式化验证；未探索组合明确报告。"
+    },
+    "interventions": [
+      {
+        "index": 0,
+        "output_digest": "db5e9e07c6788d8b33c0208283ed21512973ebf4de416e9147fe8f3da093f5fa",
+        "retained": {
+          "H1": {
+            "pass": true,
+            "reason": "AI核对：实际矩阵[[1,1],[0,1]]只有实特征值1，但ker(A−I)一维，不能在R²取特征向量基。 本义务 H1=A为实方阵。原答相应步骤：A是二阶实方阵。"
+          },
+          "H2": {
+            "pass": true,
+            "reason": "AI核对：实际矩阵[[1,1],[0,1]]只有实特征值1，但ker(A−I)一维，不能在R²取特征向量基。 本义务 H2=A的全部复特征值均为实数。原答相应步骤：特征多项式为(t−1)²，唯一复特征值1为实数。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：实际矩阵[[1,1],[0,1]]只有实特征值1，但ker(A−I)一维，不能在R²取特征向量基。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "实际矩阵[[1,1],[0,1]]只有实特征值1，但ker(A−I)一维，不能在R²取特征向量基。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "实际矩阵[[1,1],[0,1]]只有实特征值1，但ker(A−I)一维，不能在R²取特征向量基。 原答指定否定：ker(A−I)仅一维，不足以构成R²的一组特征向量基，故A不可在R上对角化。"
+        },
+        "deleted": {}
+      }
+    ]
+  },
+  {
+    "task_id": "EDGE-RA-ISSUE",
+    "arm": "full_skill",
+    "family_id": "pointwise-spike-integral",
+    "reviewer_type": "ai",
+    "reviewer": "Codex主Agent（本聊天读取实际输出后复核）",
+    "reviewed_at": "2026-11-05",
+    "independent_human": false,
+    "source_digest": "44ab5cdcee1e24671b638d03c5792f2a851390b935f8ea8aa92a328c6293c44f",
+    "task_digest": "8a227eccc40fc8793539abc737248fa09b49333ec5702d7b744e59a075af7a04",
+    "source_file": "raw\\full_skill\\EDGE-RA-ISSUE\\attempt-1.json",
+    "hypothesis_expected": 0,
+    "status": "reviewed",
+    "prediction_digest": "0142378079342e389086bb1730f952f20ecbeacb0911cc797353b0dbb143829f",
+    "objects": {
+      "pass": true,
+      "reason": "对象及其原题类型背景已核对；可计算性质和全称论证分开。"
+    },
+    "mathematical_correctness": {
+      "pass": true,
+      "reason": "n·1_(0,1/n)在[0,1]每一点最终为0；每项绝对积分1，极限积分0，满足全部原假设而反驳原结论。"
+    },
+    "uncertainty_honesty": {
+      "pass": true,
+      "reason": "原答只列数学论证，不宣称调用工具、人工或形式化验证；未探索组合明确报告。"
+    },
+    "interventions": [
+      {
+        "index": 0,
+        "output_digest": "0142378079342e389086bb1730f952f20ecbeacb0911cc797353b0dbb143829f",
+        "retained": {
+          "H1": {
+            "pass": true,
+            "reason": "AI核对：n·1_(0,1/n)在[0,1]每一点最终为0；每项绝对积分1，极限积分0，满足全部原假设而反驳原结论。 本义务 H1=每个f_n和f都属于L¹[0,1]。原答相应步骤：f_n可测且∫|f_n|=n·(1/n)=1；f=0亦可积。"
+          },
+          "H2": {
+            "pass": true,
+            "reason": "AI核对：n·1_(0,1/n)在[0,1]每一点最终为0；每项绝对积分1，极限积分0，满足全部原假设而反驳原结论。 本义务 H2=f_n几乎处处趋于f。原答相应步骤：对每个x∈[0,1]，当n充分大时x不在(0,1/n)内，故f_n(x)→0=f(x)。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：n·1_(0,1/n)在[0,1]每一点最终为0；每项绝对积分1，极限积分0，满足全部原假设而反驳原结论。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "n·1_(0,1/n)在[0,1]每一点最终为0；每项绝对积分1，极限积分0，满足全部原假设而反驳原结论。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "n·1_(0,1/n)在[0,1]每一点最终为0；每项绝对积分1，极限积分0，满足全部原假设而反驳原结论。 原答指定否定：对所有n，∫f_n=1，而∫f=0，故∫f_n不趋于∫f。"
+        },
+        "deleted": {}
+      }
+    ]
+  },
+  {
+    "task_id": "EDGE-CA-ISSUE",
+    "arm": "full_skill",
+    "family_id": "local-vs-global-injectivity",
+    "reviewer_type": "ai",
+    "reviewer": "Codex主Agent（本聊天读取实际输出后复核）",
+    "reviewed_at": "2026-11-05",
+    "independent_human": false,
+    "source_digest": "310aa7722e88b5a61988e4427187f412b85599143ce1ecc7b79792dd018781a3",
+    "task_digest": "a40c8066e750af8084f3e6af771f42421601d5f6ab618e489b8f1b9a64e9ff61",
+    "source_file": "raw\\full_skill\\EDGE-CA-ISSUE\\attempt-1.json",
+    "hypothesis_expected": 0,
+    "status": "reviewed",
+    "prediction_digest": "d7220a76c911e5f25656ac9fd7758223b9113cff55e836576db83ccfa5d3a168",
+    "objects": {
+      "pass": true,
+      "reason": "对象及其原题类型背景已核对；可计算性质和全称论证分开。"
+    },
+    "mathematical_correctness": {
+      "pass": true,
+      "reason": "exp(z)整且导数exp(z)处处不为零；0与2πi不同却同像1。只说明局部可逆不保证全局单射。"
+    },
+    "uncertainty_honesty": {
+      "pass": true,
+      "reason": "原答只列数学论证，不宣称调用工具、人工或形式化验证；未探索组合明确报告。"
+    },
+    "interventions": [
+      {
+        "index": 0,
+        "output_digest": "d7220a76c911e5f25656ac9fd7758223b9113cff55e836576db83ccfa5d3a168",
+        "retained": {
+          "H1": {
+            "pass": true,
+            "reason": "AI核对：exp(z)整且导数exp(z)处处不为零；0与2πi不同却同像1。只说明局部可逆不保证全局单射。 本义务 H1=f在C全纯。原答相应步骤：指数函数在整个复平面全纯。"
+          },
+          "H2": {
+            "pass": true,
+            "reason": "AI核对：exp(z)整且导数exp(z)处处不为零；0与2πi不同却同像1。只说明局部可逆不保证全局单射。 本义务 H2=对所有z∈C有f′(z)≠0。原答相应步骤：f′(z)=e^z，对所有z∈C均不为零。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：exp(z)整且导数exp(z)处处不为零；0与2πi不同却同像1。只说明局部可逆不保证全局单射。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "exp(z)整且导数exp(z)处处不为零；0与2πi不同却同像1。只说明局部可逆不保证全局单射。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "exp(z)整且导数exp(z)处处不为零；0与2πi不同却同像1。只说明局部可逆不保证全局单射。 原答指定否定：0≠2πi，但f(0)=f(2πi)=1，故f在C不是单射。"
+        },
+        "deleted": {}
+      }
+    ]
+  },
+  {
+    "task_id": "EDGE-TYPE",
+    "arm": "full_skill",
+    "family_id": "undefined-derivative-type",
+    "reviewer_type": "ai",
+    "reviewer": "Codex主Agent（本聊天读取实际输出后复核）",
+    "reviewed_at": "2026-11-05",
+    "independent_human": false,
+    "source_digest": "3a0ca8a8345c3d2f792d0135dcb6b4504102acbba86b9afe95eadc1a3d79e867",
+    "task_digest": "12f997a7b6be4d4e6b15db62b9d29f8169ff49163e929ee9242f8a071949bdfc",
+    "source_file": "raw\\full_skill\\EDGE-TYPE\\attempt-1.json",
+    "hypothesis_expected": 0,
+    "status": "reviewed",
+    "prediction_digest": "ae0fa763146cb6e3c7289a4c499df2ab23c5941ffd8d04e840b6a0b1cbbf61e2",
+    "objects": {
+      "pass": true,
+      "reason": "对象及其原题类型背景已核对；可计算性质和全称论证分开。"
+    },
+    "mathematical_correctness": {
+      "pass": true,
+      "reason": "删除处处可微后f′未必在R上有定义，按题目明确约定不能把未定义导数当反例。原Darboux证明由f−λx在闭区间的内部极值和Fermat引理成立。"
+    },
+    "uncertainty_honesty": {
+      "pass": true,
+      "reason": "原答只列数学论证，不宣称调用工具、人工或形式化验证；未探索组合明确报告。"
+    },
+    "interventions": [
+      {
+        "index": 0,
+        "output_digest": "ae0fa763146cb6e3c7289a4c499df2ab23c5941ffd8d04e840b6a0b1cbbf61e2",
+        "retained": {},
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：删除处处可微后f′未必在R上有定义，按题目明确约定不能把未定义导数当反例。原Darboux证明由f−λx在闭区间的内部极值和Fermat引理成立。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "删除处处可微后f′未必在R上有定义，按题目明确约定不能把未定义导数当反例。原Darboux证明由f−λx在闭区间的内部极值和Fermat引理成立。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "definition_or_gap": {
+          "pass": true,
+          "reason": "删除处处可微后f′未必在R上有定义，按题目明确约定不能把未定义导数当反例。原Darboux证明由f−λx在闭区间的内部极值和Fermat引理成立。"
+        }
+      }
+    ]
+  },
+  {
+    "task_id": "EDGE-AL-IMPLIED",
+    "arm": "full_skill",
+    "family_id": "symmetry-vs-diagonal-sufficiency",
+    "reviewer_type": "ai",
+    "reviewer": "Codex主Agent（本聊天读取实际输出后复核）",
+    "reviewed_at": "2026-11-05",
+    "independent_human": false,
+    "source_digest": "7075999de0e02c06db476afa2306e0a980f7e35a0c0d6615d5e75b0bba969a5c",
+    "task_digest": "28f9a5d29e065d3c188402849f9a847599deb7b749494e0c7160f4093f9bd7fd",
+    "source_file": "raw\\full_skill\\EDGE-AL-IMPLIED\\attempt-1.json",
+    "hypothesis_expected": 0,
+    "status": "reviewed",
+    "prediction_digest": "56919faaaafbafba379a35732743bbd453445b1fb6a5e61e635d548f1584fb0f",
+    "objects": {
+      "pass": true,
+      "reason": "对象及其原题类型背景已核对；可计算性质和全称论证分开。"
+    },
+    "mathematical_correctness": {
+      "pass": true,
+      "reason": "实对角矩阵的转置等于自身，保留H1/H3直接推出H2；取恒等相似变换已对角化。"
+    },
+    "uncertainty_honesty": {
+      "pass": true,
+      "reason": "原答只列数学论证，不宣称调用工具、人工或形式化验证；未探索组合明确报告。"
+    },
+    "interventions": [
+      {
+        "index": 0,
+        "output_digest": "56919faaaafbafba379a35732743bbd453445b1fb6a5e61e635d548f1584fb0f",
+        "retained": {
+          "H1": {
+            "pass": true,
+            "reason": "AI核对：实对角矩阵的转置等于自身，保留H1/H3直接推出H2；取恒等相似变换已对角化。 本义务 H1=A为实n×n方阵，n≥1。原答相应步骤：仍取A∈M_n(R)，n≥1；对象类别不变。"
+          },
+          "H3": {
+            "pass": true,
+            "reason": "AI核对：实对角矩阵的转置等于自身，保留H1/H3直接推出H2；取恒等相似变换已对角化。 本义务 H3=A已经是对角矩阵。原答相应步骤：仍要求A=diag(d₁,…,dₙ)，其中dᵢ∈R。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：实对角矩阵的转置等于自身，保留H1/H3直接推出H2；取恒等相似变换已对角化。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "实对角矩阵的转置等于自身，保留H1/H3直接推出H2；取恒等相似变换已对角化。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "preservation_proof": {
+          "pass": true,
+          "reason": "实对角矩阵的转置等于自身，保留H1/H3直接推出H2；取恒等相似变换已对角化。 原答删后证明：原命题正确：A已是实对角矩阵，取单位矩阵即得实对角化。且Aᵀ=A，故保留的H1、H3推出被删的H2；无需改变定义或对象类型。"
+        }
+      }
+    ]
+  },
+  {
+    "task_id": "EDGE-AL-REMOVABLE",
+    "arm": "full_skill",
+    "family_id": "symmetry-vs-diagonal-sufficiency",
+    "reviewer_type": "ai",
+    "reviewer": "Codex主Agent（本聊天读取实际输出后复核）",
+    "reviewed_at": "2026-11-05",
+    "independent_human": false,
+    "source_digest": "b56d8e2f9e8ad7c3103dbe40065f5103b6c8061c9640f8780bf7d0741dee109a",
+    "task_digest": "a1d90a95e38fbe0160e2be30ab12ff47874bb5475a81feca1d000b9f1ad9ee0f",
+    "source_file": "raw\\full_skill\\EDGE-AL-REMOVABLE\\attempt-1.json",
+    "hypothesis_expected": 0,
+    "status": "reviewed",
+    "prediction_digest": "73ba8a235053f482e7c04dddbacd50b36fa1d7489b8de7b93257ce132a3fb94b",
+    "objects": {
+      "pass": true,
+      "reason": "对象及其原题类型背景已核对；可计算性质和全称论证分开。"
+    },
+    "mathematical_correctness": {
+      "pass": true,
+      "reason": "实对称谱定理给正交特征向量基，所以删去“已经对角”仍成立；[[0,1],[1,0]]表明对称不推出已对角。"
+    },
+    "uncertainty_honesty": {
+      "pass": true,
+      "reason": "原答只列数学论证，不宣称调用工具、人工或形式化验证；未探索组合明确报告。"
+    },
+    "interventions": [
+      {
+        "index": 0,
+        "output_digest": "73ba8a235053f482e7c04dddbacd50b36fa1d7489b8de7b93257ce132a3fb94b",
+        "retained": {
+          "H1": {
+            "pass": true,
+            "reason": "AI核对：实对称谱定理给正交特征向量基，所以删去“已经对角”仍成立；[[0,1],[1,0]]表明对称不推出已对角。 本义务 H1=A为实n×n方阵，n≥1。原答相应步骤：删去H3后，A仍是n≥1的实方阵，原对象类别不变。"
+          },
+          "H2": {
+            "pass": true,
+            "reason": "AI核对：实对称谱定理给正交特征向量基，所以删去“已经对角”仍成立；[[0,1],[1,0]]表明对称不推出已对角。 本义务 H2=A对称。原答相应步骤：保留Aᵀ=A；实对称矩阵的谱定理适用。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：实对称谱定理给正交特征向量基，所以删去“已经对角”仍成立；[[0,1],[1,0]]表明对称不推出已对角。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "实对称谱定理给正交特征向量基，所以删去“已经对角”仍成立；[[0,1],[1,0]]表明对称不推出已对角。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "preservation_proof": {
+          "pass": true,
+          "reason": "实对称谱定理给正交特征向量基，所以删去“已经对角”仍成立；[[0,1],[1,0]]表明对称不推出已对角。 原答删后证明：原命题正确：对角矩阵取恒等矩阵作相似变换即可。删去H3后，实对称矩阵由谱定理有实正交特征向量基，故仍可在R上对角化。H2不蕴含H3，例如[[0,1],[1,0]]。"
+        }
+      }
+    ]
+  },
+  {
+    "task_id": "EDGE-AL-JOINT",
+    "arm": "full_skill",
+    "family_id": "symmetry-vs-diagonal-sufficiency",
+    "reviewer_type": "ai",
+    "reviewer": "Codex主Agent（本聊天读取实际输出后复核）",
+    "reviewed_at": "2026-11-05",
+    "independent_human": false,
+    "source_digest": "c5cf580b6c1617610a159ca255dcda11d7b3cfcef884a2171123ceaec505a54d",
+    "task_digest": "a80cfbc19a3fe570c4e13b05795b5c60d557aa1ca47d604997a90ec92ec6d4e8",
+    "source_file": "raw\\full_skill\\EDGE-AL-JOINT\\attempt-1.json",
+    "hypothesis_expected": 0,
+    "status": "reviewed",
+    "prediction_digest": "fbe5a448b556539e6194785c97752cfd5dd889d66eec4f6a09d9fb90cfc8a273",
+    "objects": {
+      "pass": true,
+      "reason": "对象及其原题类型背景已核对；可计算性质和全称论证分开。"
+    },
+    "mathematical_correctness": {
+      "pass": true,
+      "reason": "实际二阶非零幂零矩阵平方零；若相似对角化，其对角元只能全0，矛盾。每项单删的成立理由也分别给出，联合删除失败说明有背景限定的依赖。"
+    },
+    "uncertainty_honesty": {
+      "pass": true,
+      "reason": "原答只列数学论证，不宣称调用工具、人工或形式化验证；未探索组合明确报告。"
+    },
+    "interventions": [
+      {
+        "index": 0,
+        "output_digest": "fbe5a448b556539e6194785c97752cfd5dd889d66eec4f6a09d9fb90cfc8a273",
+        "retained": {
+          "H1": {
+            "pass": true,
+            "reason": "AI核对：实际二阶非零幂零矩阵平方零；若相似对角化，其对角元只能全0，矛盾。每项单删的成立理由也分别给出，联合删除失败说明有背景限定的依赖。 本义务 H1=A为实n×n方阵，n≥1。原答相应步骤：A是实2×2方阵，且2≥1。"
+          }
+        },
+        "replacement": {},
+        "judgment": {
+          "pass": true,
+          "reason": "按实际干预和原题语义检查分类：实际二阶非零幂零矩阵平方零；若相似对角化，其对角元只能全0，矛盾。每项单删的成立理由也分别给出，联合删除失败说明有背景限定的依赖。"
+        },
+        "argument": {
+          "pass": true,
+          "reason": "实际二阶非零幂零矩阵平方零；若相似对角化，其对角元只能全0，矛盾。每项单删的成立理由也分别给出，联合删除失败说明有背景限定的依赖。"
+        },
+        "intervention": {
+          "pass": true,
+          "reason": "原始removed、对象改写与指定目标一致。原命题有误的4题保持removed=[]；联合任务不要求每个被删条件都违反，不能宣称最小性。"
+        },
+        "target_falsity": {
+          "pass": true,
+          "reason": "实际二阶非零幂零矩阵平方零；若相似对角化，其对角元只能全0，矛盾。每项单删的成立理由也分别给出，联合删除失败说明有背景限定的依赖。 原答指定否定：A²=0但A≠0。若A可对角化，其相似对角矩阵的对角元平方均为0，故A=0，矛盾。"
+        },
+        "deleted": {
+          "H2": {
+            "pass": true,
+            "reason": "实际二阶非零幂零矩阵平方零；若相似对角化，其对角元只能全0，矛盾。每项单删的成立理由也分别给出，联合删除失败说明有背景限定的依赖。 删除条件为A对称；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          },
+          "H3": {
+            "pass": true,
+            "reason": "实际二阶非零幂零矩阵平方零；若相似对角化，其对角元只能全0，矛盾。每项单删的成立理由也分别给出，联合删除失败说明有背景限定的依赖。 删除条件为A已经是对角矩阵；单删的反例确实不满足它。联合反例若仍满足其中一项，原答已说明不代表协同最小性。"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "task_id": "EDGE-AMBIGUOUS",
+    "arm": "full_skill",
+    "family_id": "ambiguous-Lebesgue-convergence",
+    "reviewer_type": "ai",
+    "reviewer": "Codex主Agent（本聊天读取实际输出后复核）",
+    "reviewed_at": "2026-11-05",
+    "independent_human": false,
+    "source_digest": "7c394ad773738d9be8bf5de9c8873fa013a363b0c53eb8f03ccbf285ce22ed38",
+    "task_digest": "5c22bda0805dda3426ae473ccbccf1c06dd8c2f97548ce7321f85996cbc49e66",
+    "source_file": "raw\\full_skill\\EDGE-AMBIGUOUS\\attempt-1.json",
+    "hypothesis_expected": 0,
+    "status": "reviewed",
+    "prediction_digest": "fd3957ff2397e7a9b0c3ec6569814a82c740e579b6cc1ce3bc02108c937b717e",
+    "objects": {
+      "pass": true,
+      "reason": "对象及其原题类型背景已核对；可计算性质和全称论证分开。"
+    },
+    "mathematical_correctness": {
+      "pass": true,
+      "reason": "歧义名称下的条件化分析已分别核对。"
+    },
+    "uncertainty_honesty": {
+      "pass": true,
+      "reason": "原答只列数学论证，不宣称调用工具、人工或形式化验证；未探索组合明确报告。"
+    },
+    "interventions": [],
+    "ambiguity_handling": {
+      "pass": true,
+      "reason": "实际回答列控制/有界/单调收敛三种解释并询问。对应尖峰、移动单位区间及删单调的尖峰反例各满足保留条件，不把名称锁为唯一命题。"
+    }
+  }
+]

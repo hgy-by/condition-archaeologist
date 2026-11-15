@@ -1,0 +1,44 @@
+{
+  "version": "0.2.0",
+  "status": "frozen_historical_references_plus_AI_reviewed_final_acceptance",
+  "subjects": [
+    "数学分析",
+    "高等代数",
+    "实分析",
+    "复分析"
+  ],
+  "tasks": 29,
+  "family_count": 20,
+  "sources": {
+    "analysis": {
+      "url": "https://www.jirka.org/ra/html/lim_chapter.html",
+      "title": "Jiří Lebl, Basic Analysis, Continuous Functions",
+      "status": "author_page_opened; exact passage mapping pending"
+    },
+    "algebra": {
+      "url": "https://linear.axler.net/",
+      "title": "Sheldon Axler, Linear Algebra Done Right",
+      "status": "author_page_opened; exact theorem mapping pending"
+    },
+    "measure": {
+      "url": "https://terrytao.wordpress.com/books/an-introduction-to-measure-theory/",
+      "title": "Terence Tao, An Introduction to Measure Theory",
+      "status": "author_page_opened; exact passage and errata mapping pending"
+    },
+    "complex": {
+      "url": "https://www.jirka.org/ca/",
+      "title": "Jiří Lebl, Guide to Cultivating Complex Analysis",
+      "status": "author_page_opened; exact passage mapping pending"
+    }
+  },
+  "split_policy": "Same family never crosses the 4 stored pools. Directory separation is not strict blind access isolation. Mechanism overlaps remain.",
+  "strict_blind": "Requires separate account/container; directory separation alone is not access isolation. Author has seen all supplied tasks; use fresh tasks for independent evaluation.",
+  "updated": "2026-11-03",
+  "release_version": "1.0.0",
+  "canonical_tasks": 29,
+  "additional_validation_tasks": 3,
+  "current_status_record": "../reports/current-status.json",
+  "gold_policy": "Frozen raw case review fields are historical. User confirms 32 passes; detailed independent records were not supplied. AI scores remain internal; no automatic gold promotion.",
+  "final_acceptance_tasks": 13,
+  "strict_blind_testing": false
+}

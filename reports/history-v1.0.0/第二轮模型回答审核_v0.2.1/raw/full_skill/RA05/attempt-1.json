@@ -1,0 +1,13 @@
+{
+  "http_status": 520,
+  "elapsed_seconds": 41.43208399997093,
+  "raw": null,
+  "error": "HTTP 520",
+  "task_id": "RA05",
+  "arm": "full_skill",
+  "kind": "intervention",
+  "prediction": null,
+  "structure_errors": null,
+  "attempt": 1,
+  "task_digest": "5a7a43c03ff24f57b03be766de12e64c35b007a9cc2f271b53c04341d112585e"
+}
