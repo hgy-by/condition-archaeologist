@@ -1,5 +1,6 @@
 """Guard evidence boundaries and transport recovery; fixtures are not capability results."""
 import copy
+import hashlib
 import json
 from pathlib import Path
 import sys
@@ -40,6 +41,15 @@ class AIReviewBoundary(unittest.TestCase):
     def test_edited_source_invalidates_review(self):
         self.reviews[0]['source_sha256']='changed'
         with self.assertRaisesRegex(ValueError,'Response changed'):self.evaluate()
+
+    def test_source_hash_ignores_platform_line_endings_but_detects_content_changes(self):
+        lf=b'{"answer":"same"}\n'
+        crlf=b'{"answer":"same"}\r\n'
+        changed=b'{"answer":"changed"}\r\n'
+        windows_digest=hashlib.sha256(crlf).hexdigest()
+        self.assertIn(windows_digest,ai_score.content_hashes(lf))
+        self.assertIn(windows_digest,ai_score.content_hashes(crlf))
+        self.assertNotIn(windows_digest,ai_score.content_hashes(changed))
 
     def test_edited_reference_invalidates_review(self):
         self.cases[0]['statement']+=' changed'

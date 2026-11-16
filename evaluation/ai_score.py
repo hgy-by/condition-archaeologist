@@ -13,8 +13,21 @@ from pathlib import Path
 import lab
 
 
-def file_hash(path):
-    return hashlib.sha256(path.read_bytes()).hexdigest()
+def content_hashes(content):
+    """Hash exact bytes and equivalent LF/CRLF text representations.
+
+    Historical review records were produced on Windows while CI evaluates
+    them on Linux.  CRLF versus LF is a transport detail, so it must not make
+    an otherwise unchanged model response look edited.  All other bytes,
+    including content changes, remain covered by the digest.
+    """
+    lf=content.replace(b'\r\n',b'\n').replace(b'\r',b'\n')
+    variants={content,lf,lf.replace(b'\n',b'\r\n')}
+    return {hashlib.sha256(value).hexdigest() for value in variants}
+
+
+def file_hash_matches(path,expected):
+    return expected in content_hashes(path.read_bytes())
 
 
 def finding(value, name):
@@ -45,7 +58,7 @@ def evaluate(cases, reviews, run):
         if review.get('case_digest') != lab.digest(case):
             raise ValueError('Reference changed since review: '+tid)
         path = source_path(run, review['source_file'])
-        if file_hash(path) != review.get('source_sha256'):
+        if not file_hash_matches(path,review.get('source_sha256')):
             raise ValueError('Response changed since review: '+tid)
         record = lab.read(path)
         pred = record.get('prediction')
